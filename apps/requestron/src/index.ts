@@ -7,10 +7,10 @@ export = (app: Application) => {
 
   async function issueOpened(context: Context) {
     try {
-      // note for Cailey: sample here
-      const issueComment = context.issue({ body: 'Thanks for opening this issue!' })
-      await context.github.issues.createComment(issueComment)
-      // note for Cailey: call the fn you've define in ./lib
+      //const issueComment = context.issue({ body: 'Thanks for opening this issue!' })
+      //await context.github.issues.createComment(issueComment)
+      const repoNumber = context.repo()
+      console.log(repoNumber)
       await setEstimate()
     } catch (err) {
       throw Error('Unable to handle issue')

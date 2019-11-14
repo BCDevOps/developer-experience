@@ -21,7 +21,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.0.1"
+    "probot": "^9.6.4"
   },
   "devDependencies": {
     "@types/jest": "^24.0.0",
