@@ -1,7 +1,7 @@
 FROM alpine:3.10
 MAINTAINER leo.lou@gov.bc.ca
 
-ARG DVER=3.4.1
+ARG DVER=3.5.0
 
 COPY entrypoint.sh /usr/bin/entrypoint.sh
 RUN apk update \
