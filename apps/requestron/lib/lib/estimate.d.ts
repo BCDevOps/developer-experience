@@ -1,4 +1,1 @@
-/**
- * Comment for this function
- */
-export declare const setEstimate: () => boolean;
+export declare function setEstimate(issueID: number): Promise<boolean>;

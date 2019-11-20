@@ -35,39 +35,29 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var estimate_1 = require("./lib/estimate"); // eslint-disable-line no-unused-vars
+var estimate_1 = require("./lib/estimate");
 module.exports = function (app) {
     app.on('issues.opened', issueOpened);
     function issueOpened(context) {
         return __awaiter(this, void 0, void 0, function () {
-            var issueComment, err_1;
+            var newIssue, err_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 3, , 4]);
-                        issueComment = context.issue({ body: 'Thanks for opening this issue!' });
-                        return [4 /*yield*/, context.github.issues.createComment(issueComment)
-                            // note for Cailey: call the fn you've define in ./lib
-                        ];
+                        _a.trys.push([0, 2, , 3]);
+                        newIssue = context.issue();
+                        console.log(newIssue.number);
+                        return [4 /*yield*/, estimate_1.setEstimate(newIssue.number)];
                     case 1:
                         _a.sent();
-                        // note for Cailey: call the fn you've define in ./lib
-                        return [4 /*yield*/, estimate_1.setEstimate()];
+                        return [3 /*break*/, 3];
                     case 2:
-                        // note for Cailey: call the fn you've define in ./lib
-                        _a.sent();
-                        return [3 /*break*/, 4];
-                    case 3:
                         err_1 = _a.sent();
-                        throw Error('Unable to handle issue');
-                    case 4: return [2 /*return*/];
+                        throw Error('Unable to handle issue: ' + err_1);
+                    case 3: return [2 /*return*/];
                 }
             });
         });
     }
-    // For more information on building apps:
-    // https://probot.github.io/docs/
-    // To get your app running against GitHub, see:
-    // https://probot.github.io/docs/development/
 };
 //# sourceMappingURL=index.js.map
