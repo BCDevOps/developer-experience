@@ -1,5 +1,5 @@
 import { Application, Context } from 'probot'
-import { setEstimate } from './lib/estimate' // eslint-disable-line no-unused-vars
+import { setEstimate } from './lib/estimate'
 
 export = (app: Application) => {
 
@@ -7,19 +7,15 @@ export = (app: Application) => {
 
   async function issueOpened(context: Context) {
     try {
-      // note for Cailey: sample here
-      const issueComment = context.issue({ body: 'Thanks for opening this issue!' })
-      await context.github.issues.createComment(issueComment)
-      // note for Cailey: call the fn you've define in ./lib
-      await setEstimate()
+      //
+      //const issueComment = context.issue({ body: 'Thank your for making your request. We will try and get back to you as soon as possible.' })
+      //await context.github.issues.createComment(issueComment)
+
+      const newIssue = context.issue()
+      console.log(newIssue.number)
+      await setEstimate(newIssue.number)
     } catch (err) {
-      throw Error('Unable to handle issue')
+      throw Error('Unable to handle issue: ' + err)
     }
   }
-
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
 }
