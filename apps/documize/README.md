@@ -23,16 +23,24 @@ The application is built and deployed on OpenShift Project Set `hmg6pw-*`. Pipel
 ## Admin Configurations:
 
 ### Authentication
-Documize has been configured to leverage on RedHat Keycloak and accept GitHub and IDIR identity providers. Instead of hooking up with a realm in KeyCloak, Documize requires full control. Thus, a separate [Keycloak instance](https://sso-doc.pathfinder.gov.bc.ca/) has been setup for direct communication with Documize. In order to use IDIR and GitHub, the new KeyCloak relies on a realm from BCGov Keycloak as its IDP.
+Documize has been configured to leverage on RedHat Keycloak and accept GitHub and IDIR identity providers.
+See reference [here](https://docs.documize.com/s/WNEpptWJ9AABRnha/administration-guides/d/WNEp8tWJ9AABRnhj/authenticating-with-redhat-keycloak)
+For BCGov Documize settings, there are
+- a local user in the master realm for the application realm user query (view users permission)
+- a dedicated client in the `devhub` realm
+- IDIR and GitHub identity providers
+
 
 ### Space Settings:
-- space visibility (public/private)
+- space visibility
+  - public: all users could see the content from the space
+  - protected: only users with permission could see/edit
 - space label
-  - one label per space
-  - creating new labels is admin only action
-- clone space:
-  - template
-  - permission (helpful for admin management, the new space owner will need to be updated)
+  - only one label could be assigned to a space
+  - creating new labels is admin only action (the current labels correspond to different ministries)
+- clone
+  - template from existing spaces
+  - permission from existing spaces (helpful for admin management, the new space owner will need to be updated)
 
 
 ### User Groups/Roles:
