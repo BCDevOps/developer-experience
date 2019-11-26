@@ -40,6 +40,7 @@ module.exports = function (app) {
     app.on('issues.opened', issueOpened);
     function issueOpened(context) {
         return __awaiter(this, void 0, void 0, function () {
+
             var newIssue, err_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -59,5 +60,6 @@ module.exports = function (app) {
             });
         });
     }
+
 };
 //# sourceMappingURL=index.js.map
