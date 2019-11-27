@@ -36,8 +36,8 @@ objects:
           deploymentconfig: ${NAME}${SUFFIX}
       spec:
         containers:
-        - image: ${NAME}:${VERSION}
-          name: requestron
+        - image: ${NAME}${VERSION}
+          name: ${NAME}
           ports:
           - containerPort: 8000
             protocol: TCP
@@ -76,7 +76,7 @@ objects:
     - imageChangeParams:
         automatic: true
         containerNames:
-        - requestron
+        - ${NAME}
         from:
           kind: ImageStreamTag
           namespace: devhub-tools
