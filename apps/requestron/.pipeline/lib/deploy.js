@@ -11,6 +11,8 @@ module.exports = settings => {
   const templatesLocalBaseUrl = oc.toFileUrl(path.resolve(__dirname, '../../openshift'));
   var objects = [];
 
+
+
   console.log('processing template...')
   objects = objects.concat(
     oc.processDeploymentTemplate(`${templatesLocalBaseUrl}/dc.yml`, {
