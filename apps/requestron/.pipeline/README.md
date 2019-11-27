@@ -1,37 +1,26 @@
-# How does it work?
-
-The `.pipeline` folder is a node/npm module/project folder which has a dependency to `pipeline-cli`.
-
-`pipeline-cli` (CLI) is a library with a thin wrapper around the `oc` CLI.
-
-Stages (e.: build, deploy) of the pipeline are represented as npm `scripts` defined in `package.json`
-
-The `lib` folder contains the pipelinestage script represented as node module so that it can be called as a `npm run-script` or mixing as depdenencies of a script (e.g.: `pipeline.js`)
-
-
-# Running stages of pipeline
+# Build
 ```
-#From within he pipeline folder
-npm run-script build
+( cd "$(git rev-parse --show-toplevel)/apps/documize/.pipeline" && npm run build -- --pr=0 --dev-mode=true )
+```
+Where:
+`--pr=0` is used to set the pull request number to build from.
+`--dev-mode=true` is used to indicate that the build will actually take the files in the current working directory, as opposed to a fresh `git clone`
+
+# Deploy to DEV
+```
+( cd "$(git rev-parse --show-toplevel)/apps/documize/.pipeline" && npm run deploy -- --pr=0 --env=dev )
 ```
 
-# Running the pipeline
+# Deploy to PROD
 ```
-#From within the pipeline folder
-npm run pipeline
-
-#Delete state
-rm -rf *.state.json
+( cd "$(git rev-parse --show-toplevel)/apps/documize/.pipeline" && npm run deploy -- --pr=0 --env=prod )
 ```
 
-# Developing/Troubleshooting with the pipeline-cli
-- clone the pipeline-cli repository
-- in the pipeline-cli run:
+# Clean
+The clean script can run against each persistent environment, starting from `build`.
 ```
-npm link
+( cd "$(git rev-parse --show-toplevel)/apps/documize/.pipeline" && npm run clean -- --pr=0 --env=build )
+( cd "$(git rev-parse --show-toplevel)/apps/documize/.pipeline" && npm run clean -- --pr=0 --env=dev )
 ```
 
-- From within this .pipeline folder, run:
-```
-rm -rf node_modules; npm install; npm link pipeline-cli
-```
+*Warning*: Do *NOT* run against `test` or `prod`. It will cause *PERMANENT* deletion of all objects including `PVC`! be warned!
