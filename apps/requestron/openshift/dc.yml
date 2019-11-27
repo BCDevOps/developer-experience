@@ -79,7 +79,6 @@ objects:
         - ${NAME}
         from:
           kind: ImageStreamTag
-          namespace: devhub-tools
           name: ${NAME}:${VERSION}
       type: ImageChange
 - apiVersion: v1
