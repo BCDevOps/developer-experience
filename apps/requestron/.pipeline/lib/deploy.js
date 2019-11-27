@@ -31,9 +31,9 @@ module.exports = settings => {
     phases[phase].instance,
   );
 
-  console.log('importing image stream...')
+  console.log('importing image stream... (' + phases[phase].tag + ', ' + phases.build.namespace + ' , ' + phases.build.tag + ')')
   oc.importImageStreams(objects, phases[phase].tag, phases.build.namespace, phases.build.tag);
 
-  console.log('deploying...')
+  console.log('deploying... (' + phases[phase].instance + ')')
   oc.applyAndDeploy(objects, phases[phase].instance);
 };
