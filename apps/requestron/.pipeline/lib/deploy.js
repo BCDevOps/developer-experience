@@ -11,14 +11,7 @@ module.exports = settings => {
   const templatesLocalBaseUrl = oc.toFileUrl(path.resolve(__dirname, '../../openshift'));
   var objects = [];
 
-  // The deployment of your cool app goes here ▼▼▼
-
-  /**
-   * Documize app:
-   * - deployment config
-   * - route
-   * - service
-   */
+  console.log('processing template...')
   objects = objects.concat(
     oc.processDeploymentTemplate(`${templatesLocalBaseUrl}/dc.yml`, {
       param: {
@@ -29,6 +22,7 @@ module.exports = settings => {
     }),
   );
 
+  console.log('applying labels...')
   oc.applyRecommendedLabels(
     objects,
     phases[phase].name,
@@ -37,6 +31,9 @@ module.exports = settings => {
     phases[phase].instance,
   );
 
+  console.log('importing image stream...')
   oc.importImageStreams(objects, phases[phase].tag, phases.build.namespace, phases.build.tag);
+
+  console.log('deploying...')
   oc.applyAndDeploy(objects, phases[phase].instance);
 };
