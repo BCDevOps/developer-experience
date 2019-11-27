@@ -1,42 +1,42 @@
 'use strict';
-
 const { OpenShiftClientX } = require('pipeline-cli');
 const path = require('path');
 
-module.exports = () => {
-  const oc = new OpenShiftClientX();
-  oc.globalArgs.namespace = `devhub-${oc.options.env}`;
-  const templateFile = path.resolve(__dirname, '../openshift/dc.yaml');
-  const appName = 'requestron';
-  const buildNamespace = 'devhub-tools';
-  const buildVersion = `build-v${oc.options.pr}`;
-  const deploymentVersion = `${oc.options.env}-1.0.0`;
-  // remove pr in prefix for test and prod environemnt:
-  const projectPrefix =
-    oc.options.env === 'dev' ? `-${oc.options.env}-${oc.options.pr}` : `-${oc.options.env}`;
+module.exports = settings => {
+  const phases = settings.phases;
+  const options = settings.options;
+  const phase = options.env;
+  const changeId = phases[phase].changeId;
+  const oc = new OpenShiftClientX(Object.assign({ namespace: phases[phase].namespace }, options));
+  const templatesLocalBaseUrl = oc.toFileUrl(path.resolve(__dirname, '../../openshift'));
+  var objects = [];
 
-  // set the rest of the env vars:
-  const extraParams = {
-    RM_HOST_VALUE: 'https://repo-mountie-devhub-prod.pathfinder.gov.bc.ca/bot/github/membership',
-    API_URL_VALUE: `https://${appName}${projectPrefix}-devhub-${
-      oc.options.env
-    }.pathfinder.gov.bc.ca`,
-  };
+  // The deployment of your cool app goes here ▼▼▼
 
-  const objects = oc.process(oc.toFileUrl(templateFile), {
-    param: {
-      ...{
-        NAME: appName,
-        SUFFIX: projectPrefix,
-        VERSION: `${deploymentVersion}`,
+  /**
+   * Documize app:
+   * - deployment config
+   * - route
+   * - service
+   */
+  objects = objects.concat(
+    oc.processDeploymentTemplate(`${templatesLocalBaseUrl}/dc.yml`, {
+      param: {
+        NAME: phases[phase].name,
+        SUFFIX: phases[phase].suffix,
+        VERSION: phases[phase].tag,
       },
-      ...extraParams,
-    },
-  });
+    }),
+  );
 
-  oc.applyBestPractices(objects);
-  oc.applyRecommendedLabels(objects, appName, oc.options.env, oc.options.pr);
-  oc.fetchSecretsAndConfigMaps(objects);
-  oc.importImageStreams(objects, deploymentVersion, buildNamespace, buildVersion);
-  oc.applyAndDeploy(objects, `${appName}${projectPrefix}`);
+  oc.applyRecommendedLabels(
+    objects,
+    phases[phase].name,
+    phase,
+    `${changeId}`,
+    phases[phase].instance,
+  );
+
+  oc.importImageStreams(objects, phases[phase].tag, phases.build.namespace, phases.build.tag);
+  oc.applyAndDeploy(objects, phases[phase].instance);
 };
