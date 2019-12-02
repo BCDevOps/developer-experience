@@ -202,5 +202,4 @@ Create the Custom Resource:
 
 ``` bash
  oc --as=system:serviceaccount:openshift:bcdevops-admin process -f artifactory-cr-template.yaml --param-file=team-type-locator.env --ignore-unknown-parameters=true | oc --as=system:serviceaccount:openshift:bcdevops-admin create -f -
- ocas process -f artifactory-cr-template.yaml --param-file=team-type-locator.env --ignore-unknown-parameters=true | ocas create -f -
 ```
