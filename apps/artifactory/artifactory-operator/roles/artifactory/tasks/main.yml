@@ -9,7 +9,7 @@
     body_format: json
     headers:
       Content-type: "application/json" 
-    body: '{"name": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","email" : "artifactory-ci-{{ team_name }}-{{ repository_type }}-{{ repository_locator }}@pathfinder.gov.bc.ca","password": "{{ lookup("password", "/tmp/passwordfile chars=ascii_letters,digits,hexdigits,punctuation") }}","admin": false,"profileUpdatable": false,"disableUIAccess" : true,"internalPasswordDisabled": false,"realm": "Internal","groups" : [ "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}-manage" ]}'
+    body: '{"name": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","email" : "artifactory-ci-{{ team_name }}-{{ repository_type }}-{{ repository_locator }}@pathfinder.gov.bc.ca","password": "{{ lookup("password", "/tmp/passwordfile chars=ascii_letters,digits,hexdigits,punctuation") }}","admin": false,"profileUpdatable": false,"disableUIAccess" : true,"internalPasswordDisabled": false,"realm": "Internal","groups" : []}'
     force_basic_auth: yes
     status_code: 201
   ignore_errors: yes
