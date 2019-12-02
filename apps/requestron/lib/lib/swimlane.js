@@ -41,34 +41,31 @@ var axios = require('axios');
  * Set the Estimate in Zenhub to 0.5
  */
 var instance = axios.create({
-    baseURL: 'https://api.github.com/',
+    baseURL: 'https://api.zenhub.io/',
     timeout: 1000,
-    headers: { 'Authorization': 'token ' + process.env.GITHUB_TOKEN }
+    headers: { 'X-Authentication-Token': process.env.ZENHUB_TOKEN }
 });
-function setMilestone(context) {
+function setSwimlane(issueID) {
     return __awaiter(this, void 0, void 0, function () {
-        var get_response, milestones, most_recent_milestone, i, milestone, issueMilestone, err_1;
+        var opPipelineID, board, i, pipeline, post_response, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, , 4]);
-                    return [4 /*yield*/, instance.get('repos/bcdevops/devops-requests/milestones')];
+                    opPipelineID = '5bb7c5abe135e46293df16aa';
+                    return [4 /*yield*/, instance.get('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/board')];
                 case 1:
-                    get_response = _a.sent();
-                    milestones = get_response["data"];
-                    most_recent_milestone = milestones[0];
-                    //figure out which milestone is the most recent one (based on due date).
-                    //we normally only have the one milestone active at a time anyway, but just in case.
-                    for (i = 0; i < milestones.length; i++) {
-                        milestone = milestones[i];
-                        if (milestone["state"] == 'open' && milestone["due_on"] > most_recent_milestone["due_on"]) {
-                            most_recent_milestone = milestone;
+                    board = _a.sent();
+                    for (i = 0; i < board.data.pipelines.length; i++) {
+                        pipeline = board.data.pipelines[i];
+                        if (pipeline.name == "Operations") {
+                            opPipelineID = pipeline.id;
                         }
                     }
-                    issueMilestone = context.issue({ milestone: most_recent_milestone["number"] });
-                    return [4 /*yield*/, context.github.issues.update(issueMilestone)];
+                    return [4 /*yield*/, instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/issues/' + issueID + "/moves", { "pipeline_id": opPipelineID, "position": "bottom" })];
                 case 2:
-                    _a.sent();
+                    post_response = _a.sent();
+                    console.log(post_response);
                     return [2 /*return*/, true];
                 case 3:
                     err_1 = _a.sent();
@@ -78,6 +75,6 @@ function setMilestone(context) {
         });
     });
 }
-exports.setMilestone = setMilestone;
+exports.setSwimlane = setSwimlane;
 ;
-//# sourceMappingURL=milestone.js.map
+//# sourceMappingURL=swimlane.js.map

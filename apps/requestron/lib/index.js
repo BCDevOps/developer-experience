@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var estimate_1 = require("./lib/estimate");
+var swimlane_1 = require("./lib/swimlane");
 var milestone_1 = require("./lib/milestone");
 module.exports = function (app) {
     app.on('issues.opened', issueOpened);
@@ -45,20 +46,32 @@ module.exports = function (app) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 3, , 4]);
+                        _a.trys.push([0, 4, , 5]);
                         newIssue = context.issue();
-                        console.log(newIssue.number);
-                        return [4 /*yield*/, estimate_1.setEstimate(newIssue.number)];
+                        //set the estimate at 0.5 for each new ticket.
+                        return [4 /*yield*/, estimate_1.setEstimate(newIssue.number)
+                            //update the milestone to the most recent one for each new ticket.
+                        ];
                     case 1:
+                        //set the estimate at 0.5 for each new ticket.
                         _a.sent();
-                        return [4 /*yield*/, milestone_1.setMilestone(context)];
+                        //update the milestone to the most recent one for each new ticket.
+                        return [4 /*yield*/, milestone_1.setMilestone(context)
+                            //set the swimlane in Zenhub to Operations
+                        ];
                     case 2:
+                        //update the milestone to the most recent one for each new ticket.
                         _a.sent();
-                        return [3 /*break*/, 4];
+                        //set the swimlane in Zenhub to Operations
+                        return [4 /*yield*/, swimlane_1.setSwimlane(newIssue.number)];
                     case 3:
+                        //set the swimlane in Zenhub to Operations
+                        _a.sent();
+                        return [3 /*break*/, 5];
+                    case 4:
                         err_1 = _a.sent();
                         throw Error('Unable to handle issue: ' + err_1);
-                    case 4: return [2 /*return*/];
+                    case 5: return [2 /*return*/];
                 }
             });
         });
