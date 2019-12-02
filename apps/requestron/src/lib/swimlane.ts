@@ -25,7 +25,7 @@ export async function setSwimlane(issueID: number) {
         }
 
         //move the issue from into the Operations swimlane
-        const post_response = await instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/issues/' + issueID + "/moves", {"pipeline_id": opPipelineID, "position": "bottom"})
+        await instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/issues/' + issueID + "/moves", {"pipeline_id": opPipelineID, "position": "bottom"})
         return true;
 
     } catch (err) {
