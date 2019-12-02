@@ -65,7 +65,6 @@ function setSwimlane(issueID) {
                     return [4 /*yield*/, instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/issues/' + issueID + "/moves", { "pipeline_id": opPipelineID, "position": "bottom" })];
                 case 2:
                     post_response = _a.sent();
-                    console.log(post_response);
                     return [2 /*return*/, true];
                 case 3:
                     err_1 = _a.sent();
