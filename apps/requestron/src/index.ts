@@ -1,5 +1,6 @@
 import { Application, Context } from 'probot'
 import { setEstimate } from './lib/estimate'
+import { setMilestone } from "./lib/milestone";
 
 export = (app: Application) => {
 
@@ -7,15 +8,19 @@ export = (app: Application) => {
 
   async function issueOpened(context: Context) {
     try {
-      //
-      //const issueComment = context.issue({ body: 'Thank your for making your request. We will try and get back to you as soon as possible.' })
-      //await context.github.issues.createComment(issueComment)
 
       const newIssue = context.issue()
-      console.log(newIssue.number)
+
+      //set the estimate at 0.5 for each new ticket.
       await setEstimate(newIssue.number)
+
+      //update the milestone to the most recent one for each new ticket.
+      await setMilestone(context)
+
     } catch (err) {
+
       throw Error('Unable to handle issue: ' + err)
+
     }
   }
 }

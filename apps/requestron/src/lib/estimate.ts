@@ -1,5 +1,3 @@
-
-import { request } from 'http';
 const axios = require('axios')
 /**
  * Set the Estimate in Zenhub to 0.5
@@ -12,10 +10,16 @@ const instance = axios.create({
 });
 
 export async function setEstimate(issueID: number) {
-    console.log("i'm waiting")
-    const response = await instance.put('p1/repositories/219808631/issues/' + issueID + "/estimate", { "estimate" : 0.5 })
-    console.log("i'm finished waiting")
-    console.log(response)
-  return true;
+    try {
+
+        //issue a PUT to the Zenhub API instructing it to create an estimate of 0.5 for the new issue.
+        await instance.put('p1/repositories/219808631/issues/' + issueID + "/estimate", {"estimate": 0.5})
+        return true;
+
+    } catch (err) {
+
+        throw Error('Unable to handle issue: ' + err)
+
+    }
 };
 

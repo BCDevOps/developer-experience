@@ -41,33 +41,48 @@ var axios = require('axios');
  * Set the Estimate in Zenhub to 0.5
  */
 var instance = axios.create({
-    baseURL: 'https://api.zenhub.io/',
+    baseURL: 'https://api.github.com/',
     timeout: 1000,
-    headers: { 'X-Authentication-Token': process.env.ZENHUB_TOKEN }
+    headers: { 'Authorization': 'token ' + process.env.GITHUB_TOKEN }
 });
-function setEstimate(issueID) {
+function setMilestone(context) {
     return __awaiter(this, void 0, void 0, function () {
-        var response, err_1;
+        var get_response, milestones, most_recent_milestone, i, milestone, issueMilestone, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    _a.trys.push([0, 2, , 3]);
+                    _a.trys.push([0, 3, , 4]);
                     console.log("i'm waiting");
-                    return [4 /*yield*/, instance.put('p1/repositories/219808631/issues/' + issueID + "/estimate", { "estimate": 0.5 })];
+                    return [4 /*yield*/, instance.get('repos/bcdevops/devops-requests/milestones')];
                 case 1:
-                    response = _a.sent();
-                    console.log("i'm finished waiting");
-                    //console.log(response)
-                    //console.log(response)
-                    return [2 /*return*/, true];
+                    get_response = _a.sent();
+                    milestones = get_response["data"];
+                    most_recent_milestone = milestones[0];
+                    for (i = 0; i < milestones.length; i++) {
+                        milestone = milestones[i];
+                        if (milestone["state"] == 'open' && milestone["due_on"] > most_recent_milestone["due_on"]) {
+                            most_recent_milestone = milestone;
+                        }
+                    }
+                    issueMilestone = context.issue({ milestone: most_recent_milestone["number"] });
+                    return [4 /*yield*/, context.github.issues.update(issueMilestone)
+                        //const patch_response = await instance.patch('repos/bcdevops/devops-requests/issues/' + newIssue.number, { "milestone" : most_recent_milestone["number"] })
+                        //const patch_response = await instance.get('repos/bcdevops/devops-requests/issues/' + issueID)
+                    ];
                 case 2:
+                    _a.sent();
+                    //const patch_response = await instance.patch('repos/bcdevops/devops-requests/issues/' + newIssue.number, { "milestone" : most_recent_milestone["number"] })
+                    //const patch_response = await instance.get('repos/bcdevops/devops-requests/issues/' + issueID)
+                    console.log("i'm finished waiting");
+                    return [2 /*return*/, true];
+                case 3:
                     err_1 = _a.sent();
                     throw Error('Unable to handle issue: ' + err_1);
-                case 3: return [2 /*return*/];
+                case 4: return [2 /*return*/];
             }
         });
     });
 }
-exports.setEstimate = setEstimate;
+exports.setMilestone = setMilestone;
 ;
-//# sourceMappingURL=estimate.js.map
+//# sourceMappingURL=milestone.js.map
