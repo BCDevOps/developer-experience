@@ -47,18 +47,16 @@ var instance = axios.create({
 });
 function setEstimate(issueID) {
     return __awaiter(this, void 0, void 0, function () {
-        var response, err_1;
+        var err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    console.log("i'm waiting");
+                    //issue a PUT to the Zenhub API instructing it to create an estimate of 0.5 for the new issue.
                     return [4 /*yield*/, instance.put('p1/repositories/219808631/issues/' + issueID + "/estimate", { "estimate": 0.5 })];
                 case 1:
-                    response = _a.sent();
-                    console.log("i'm finished waiting");
-                    //console.log(response)
-                    //console.log(response)
+                    //issue a PUT to the Zenhub API instructing it to create an estimate of 0.5 for the new issue.
+                    _a.sent();
                     return [2 /*return*/, true];
                 case 2:
                     err_1 = _a.sent();

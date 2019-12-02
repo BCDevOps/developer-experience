@@ -1,6 +1,7 @@
 import { Application, Context } from 'probot'
 import { setEstimate } from './lib/estimate'
-import { setMilestone } from "./lib/milestone";
+import { setSwimlane } from './lib/swimlane'
+import { setMilestone } from './lib/milestone';
 
 export = (app: Application) => {
 
@@ -16,6 +17,9 @@ export = (app: Application) => {
 
       //update the milestone to the most recent one for each new ticket.
       await setMilestone(context)
+
+      //set the swimlane in Zenhub to Operations
+      await setSwimlane(newIssue.number)
 
     } catch (err) {
 
