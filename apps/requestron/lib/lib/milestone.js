@@ -35,46 +35,49 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var estimate_1 = require("./lib/estimate");
-var swimlane_1 = require("./lib/swimlane");
-var milestone_1 = require("./lib/milestone");
-module.exports = function (app) {
-    app.on('issues.opened', issueOpened);
-    function issueOpened(context) {
-        return __awaiter(this, void 0, void 0, function () {
-            var newIssue, err_1;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        _a.trys.push([0, 4, , 5]);
-                        newIssue = context.issue();
-                        //set the estimate at 0.5 for each new ticket.
-                        return [4 /*yield*/, estimate_1.setEstimate(newIssue.number)
-                            //update the milestone to the most recent one for each new ticket.
-                        ];
-                    case 1:
-                        //set the estimate at 0.5 for each new ticket.
-                        _a.sent();
-                        //update the milestone to the most recent one for each new ticket.
-                        return [4 /*yield*/, milestone_1.setMilestone(context)
-                            //set the swimlane in Zenhub to Operations
-                        ];
-                    case 2:
-                        //update the milestone to the most recent one for each new ticket.
-                        _a.sent();
-                        //set the swimlane in Zenhub to Operations
-                        return [4 /*yield*/, swimlane_1.setSwimlane(newIssue.number)];
-                    case 3:
-                        //set the swimlane in Zenhub to Operations
-                        _a.sent();
-                        return [3 /*break*/, 5];
-                    case 4:
-                        err_1 = _a.sent();
-                        throw Error('Unable to handle issue: ' + err_1);
-                    case 5: return [2 /*return*/];
-                }
-            });
+Object.defineProperty(exports, "__esModule", { value: true });
+var axios = require('axios');
+/**
+ * Set the Estimate in Zenhub to 0.5
+ */
+var instance = axios.create({
+    baseURL: 'https://api.github.com/',
+    timeout: 1000,
+    headers: { 'Authorization': 'token ' + process.env.GITHUB_TOKEN }
+});
+function setMilestone(context) {
+    return __awaiter(this, void 0, void 0, function () {
+        var get_response, milestones, most_recent_milestone, i, milestone, issueMilestone, err_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 3, , 4]);
+                    return [4 /*yield*/, instance.get('repos/bcdevops/devops-requests/milestones')];
+                case 1:
+                    get_response = _a.sent();
+                    milestones = get_response["data"];
+                    most_recent_milestone = milestones[0];
+                    //figure out which milestone is the most recent one (based on due date).
+                    //we normally only have the one milestone active at a time anyway, but just in case.
+                    for (i = 0; i < milestones.length; i++) {
+                        milestone = milestones[i];
+                        if (milestone["state"] == 'open' && milestone["due_on"] > most_recent_milestone["due_on"]) {
+                            most_recent_milestone = milestone;
+                        }
+                    }
+                    issueMilestone = context.issue({ milestone: most_recent_milestone["number"] });
+                    return [4 /*yield*/, context.github.issues.update(issueMilestone)];
+                case 2:
+                    _a.sent();
+                    return [2 /*return*/, true];
+                case 3:
+                    err_1 = _a.sent();
+                    throw Error('Unable to handle issue: ' + err_1);
+                case 4: return [2 /*return*/];
+            }
         });
-    }
-};
-//# sourceMappingURL=index.js.map
+    });
+}
+exports.setMilestone = setMilestone;
+;
+//# sourceMappingURL=milestone.js.map
