@@ -47,6 +47,20 @@
   when: repository_locator == "virtual"
   ignore_errors: yes
 
+- name: Check if there is already a permission for repository
+  uri:
+    url: "{{ artifactory_url }}/{{ artifactory_permission_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    user: "{{ user }}"
+    password: "{{ lookup('file', '/tmp/ansible-operator/password') }}"
+    method: GET
+    body_format: json
+    headers:
+      Content-type: "application/json"
+    force_basic_auth: yes
+  register: repo_permission
+  when: repository_locator == "local"
+  ignore_errors: yes
+
 - name: Add permission for repository
   uri:
     url: "{{ artifactory_url }}/{{ artifactory_permission_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
@@ -58,7 +72,7 @@
       Content-type: "application/json"
     body: '{"name": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","repo":{"include-patterns": ["**"],"exclude-patterns": [""], "repositories": ["{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"], "actions": {"users" : {"{{ team_name }}-{{ repository_type }}-{{ repository_locator }}" : ["manage","read","write","annotate","delete","manage"], "{{ requester }}" : ["manage","read","write","annotate","delete","manage"]}}}}'
     force_basic_auth: yes
-  when: repository_locator == "local"
+  when: repository_locator == "local" and repo_permission.status == 404
 
 - name: Create route for docker registry
   k8s:

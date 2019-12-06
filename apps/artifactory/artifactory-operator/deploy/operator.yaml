@@ -21,7 +21,7 @@ spec:
           - stdout
           # Replace this with the built image name
           image: "docker-registry.default.svc:5000/devops-artifactory/artifactory-operator:v3-stable"
-          imagePullPolicy: "Always"
+          #imagePullPolicy: "Always"
           volumeMounts:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
