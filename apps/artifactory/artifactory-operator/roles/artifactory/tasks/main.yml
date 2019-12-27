@@ -74,7 +74,7 @@
     force_basic_auth: yes
   when: repository_locator == "local" and repo_permission.status == 404
 
-- name: Create route for docker registry
+- name: Create route for prod docker registry
   k8s:
     state: present
     definition:
@@ -84,7 +84,7 @@
         labels:
           app: artifactory
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
-        namespace: "{{ meta.namespace }}"
+        namespace: "devops-artifactory"
       spec:
         host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.pathfinder.gov.bc.ca"
         port:
@@ -99,7 +99,7 @@
         wildcardPolicy: None
   when: repository_type == "docker" and console == "prod"
 
-- name: Create route for docker registry
+- name: Create route for lab docker registry
   k8s:
     state: present
     definition:
@@ -109,7 +109,7 @@
         labels:
           app: artifactory
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
-        namespace: "{{ meta.namespace }}"
+        namespace: "devops-artifactory""
       spec:
         host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.lab.pathfinder.gov.bc.ca"
         port:
