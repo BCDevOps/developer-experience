@@ -86,7 +86,7 @@
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
         namespace: "devops-artifactory"
       spec:
-        host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.pathfinder.gov.bc.ca"
+        host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.artifacts.developer.gov.bc.ca"
         port:
           targetPort: http
         tls:
@@ -111,7 +111,7 @@
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
         namespace: "devops-artifactory"
       spec:
-        host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.lab.pathfinder.gov.bc.ca"
+        host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.artifacts.lab.developer.gov.bc.ca"
         port:
           targetPort: http
         tls:
