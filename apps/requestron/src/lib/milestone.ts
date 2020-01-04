@@ -1,6 +1,6 @@
 const axios = require('axios')
 /**
- * Set the Estimate in Zenhub to 0.5
+ * Set the milestone in github to the most recent one
  */
 
 const instance = axios.create({
