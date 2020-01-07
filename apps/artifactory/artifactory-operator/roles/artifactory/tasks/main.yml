@@ -28,7 +28,7 @@
     body_format: json
     headers:
       Content-type: "application/json" 
-    body: '{"key":"{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","rclass":"local","packageType":"{{ repository_type }}","description":"{{ repository_description }}"}'
+    body: '{"key":"{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","rclass":"local","packageType":"{{ repository_type }}","repoLayoutRef":"{{ dict_repo_layout[repository_type] }}","description":"{{ repository_description }}"}'
     force_basic_auth: yes
   when: repository_locator == "local"
   ignore_errors: yes

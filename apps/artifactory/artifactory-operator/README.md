@@ -100,65 +100,7 @@ $ oc -n <namespace> tag <image-name>:latest <image-name>:v1-stable
 Replace the image name in the Operator deployment:
 
 ``` bash
-$ cat deploy/operator.yaml
-```
-
-``` yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: artifactory-operator
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      name: artifactory-operator
-  template:
-    metadata:
-      labels:
-        name: artifactory-operator
-    spec:
-      serviceAccountName: artifactory-operator
-      containers:
-        - name: ansible
-          command:
-          - /usr/local/bin/ao-logs
-          - /tmp/ansible-operator/runner
-          - stdout
-          # Replace this with the built image name
-          image: "<REPLACE-ME>" <<<REPLACE IMAGE>>>
-          imagePullPolicy: "Always"
-          volumeMounts:
-          - mountPath: /tmp/ansible-operator/runner
-            name: runner
-            readOnly: true
-        - name: operator
-          # Replace this with the built image name
-          image: "<REPLACE-ME>" <<<REPLACE IMAGE>>>
-          imagePullPolicy: "Always"
-          volumeMounts:
-          - mountPath: /tmp/ansible-operator/runner
-            name: runner
-          - mountPath: /tmp/ansible-operator/
-            name: artifactory-secret
-            readOnly: true
-          env:
-            - name: WATCH_NAMESPACE
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.namespace
-            - name: POD_NAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.name
-            - name: OPERATOR_NAME
-              value: "artifactory-operator"
-      volumes:
-        - name: runner
-          emptyDir: {}
-        - name: artifactory-secret
-          secret:
-            secretName: artifactory-admin
+$ vi deploy/operator.yaml
 ```
 
 ## How to run
