@@ -1,0 +1,11 @@
+{
+    "kind": "ConfigMap",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "backup-conf",
+        "creationTimestamp": null
+    },
+    "data": {
+        "backup.conf": "# ============================================================\n# Databases:\n# ------------------------------------------------------------\n# List the databases you want backed up here.\n# Databases will be backed up in the order they are listed.\n#\n# The entries must be in one of the following forms:\n# - \u003cHostname/\u003e/\u003cDatabaseName/\u003e\n# - \u003cHostname/\u003e:\u003cPort/\u003e/\u003cDatabaseName/\u003e\n#\n# Examples:\n# - postgresql/my_database\n# - postgresql:5432/my_database\n# -----------------------------------------------------------\n# Cron Scheduling:\n# -----------------------------------------------------------\n# List your backup and verification schedule(s) here as well.\n# The schedule(s) must be listed as cron tabs that \n# execute the script in 'scheduled' mode:\n#   - ./backup.sh -s\n#\n# Examples (assuming system's TZ is set to UTC):\n# - 0 1 * * * default ./backup.sh -s\n#   - Run a backup at 1am Pacific every day.\n#\n# - 0 4 * * * default ./backup.sh -s -v all\n#   - Verify the most recent backups for all datbases\n#     at 4am Pacific every day.\n# -----------------------------------------------------------\n# Full Example:\n# -----------------------------------------------------------\n# postgresql:5432/TheOrgBook_Database\n# wallet-db:5432/tob_holder\n# wallet-db/tob_issuer\n#\n# 0 1 * * * default ./backup.sh -s\n# 0 4 * * * default ./backup.sh -s -v all\n# ============================================================\n\npostgresql:5432/documize\n\n# Schedule backup for 1am PST; system TZ is UTC\n0 9 * * * default ./backup.sh -s\n\n# Schedule backup verification for 4am PST; system TZ is UTC\n0 12 * * * default ./backup.sh -s -v all\n"
+    }
+}
