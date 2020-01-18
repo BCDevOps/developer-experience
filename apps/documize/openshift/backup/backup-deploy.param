@@ -6,12 +6,13 @@
 NAME=backup
 SOURCE_IMAGE_NAME=backup
 IMAGE_NAMESPACE=hmg6pw-prod
-TAG_NAME=
+TAG_NAME=prod
 # secrete name:
-DATABASE_DEPLOYMENT_NAME=
+DATABASE_DEPLOYMENT_NAME=postgresql
+POSTGRES_SECRET=documize-patroni-prod
 # should be corresponding to the db host name:
-SSO_PGSQL_MASTER_USER_KEY_NAME=
-SSO_PGSQL_MASTER_PASSWORD_KEY_NAME=
+DATABASE_USER_KEY_NAME=app-db-username
+DATABASE_PASSWORD_KEY_NAME=app-db-password
 BACKUP_STRATEGY=rolling
 WEBHOOK_URL=https://chat.pathfinder.gov.bc.ca/hooks/amTveMfX6EqitxkqY/Fwo7eYtwhrSvqyEi332ZXJF23fMs2QdPxMGaCKJDE4jtm3Ct
 ENVIRONMENT_FRIENDLY_NAME=documize

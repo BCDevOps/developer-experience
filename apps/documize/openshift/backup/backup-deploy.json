@@ -184,7 +184,7 @@
                     "name": "POSTGRESQL_USER",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "name": "${DATABASE_DEPLOYMENT_NAME}",
+                        "name": "${POSTGRES_SECRET}",
                         "key": "${DATABASE_USER_KEY_NAME}"
                       }
                     }
@@ -193,30 +193,8 @@
                     "name": "POSTGRESQL_PASSWORD",
                     "valueFrom": {
                       "secretKeyRef": {
-                        "name": "${DATABASE_DEPLOYMENT_NAME}",
+                        "name": "${POSTGRES_SECRET}",
                         "key": "${DATABASE_PASSWORD_KEY_NAME}"
-                      }
-                    }
-                  },
-                  {
-                    "name": "FTP_URL",
-                    "value": "${FTP_URL}"
-                  },
-                  {
-                    "name": "FTP_USER",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "name": "${FTP_SECRET_KEY}",
-                        "key": "ftp-user"
-                      }
-                    }
-                  },
-                  {
-                    "name": "FTP_PASSWORD",
-                    "valueFrom": {
-                      "secretKeyRef": {
-                        "name": "${FTP_SECRET_KEY}",
-                        "key": "ftp-password"
                       }
                     }
                   },
@@ -299,7 +277,7 @@
       "displayName": "Database Service Name",
       "description": "The name of the database service.",
       "required": true,
-      "value": "postgresql"
+      "value": "documize-patroni-prod"
     },
     {
       "name": "DATABASE_NAME",
@@ -313,21 +291,27 @@
       "displayName": "Database Deployment Name",
       "description": "The name associated to the database deployment resources.  In particular, this is used to wire up the credentials associated to the database.",
       "required": true,
-      "value": "postgresql"
+      "value": "documize-patroni-prod"
+    },
+    {
+      "name": "POSTGRES_SECRET",
+      "displayName": "Postgres Secret Name",
+      "required": true,
+      "value": "documize-patroni-prod"
     },
     {
       "name": "DATABASE_USER_KEY_NAME",
       "displayName": "Database User Key Name",
       "description": "The datbase user key name stoed in database deployment resources specified by DATABASE_DEPLOYMENT_NAME.",
       "required": true,
-      "value": "database-user"
+      "value": "app-db-username"
     },
     {
       "name": "DATABASE_PASSWORD_KEY_NAME",
       "displayName": "Database Password Key Name",
       "description": "The database password key name stored in database deployment resources specified by DATABASE_DEPLOYMENT_NAME.",
       "required": true,
-      "value": "database-password"
+      "value": "app-db-password"
     },
     {
       "name": "TABLE_SCHEMA",
