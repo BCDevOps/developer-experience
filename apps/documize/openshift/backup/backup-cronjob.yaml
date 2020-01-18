@@ -42,7 +42,7 @@ parameters:
     displayName: "Database Service Name"
     description: "The name of the database service."
     required: true
-    value: "postgresql"
+    value: "documize-patroni-prod"
   - name: "DATABASE_DEFAULT_PORT"
     displayName: "Database Service Port"
     description: "The configured port for the database service"
