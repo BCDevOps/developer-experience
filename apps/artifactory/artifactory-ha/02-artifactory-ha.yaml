@@ -122,7 +122,7 @@ objects:
           - name: HA_NODE_ID
             valueFrom:
               fieldRef:
-                apiVersion: v1
+                apiVersion: v1 f
                 fieldPath: metadata.name
           - name: HA_DATA_DIR
             value: "/var/opt/jfrog/artifactory-ha"

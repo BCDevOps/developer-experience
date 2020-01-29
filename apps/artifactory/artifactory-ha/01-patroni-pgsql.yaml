@@ -75,7 +75,7 @@ objects:
     annotations:
       config: |
         {
-          "synchronous_mode":"yes",
+          "synchronous_mode":"no",
           "synchronous_mode_strict":false,
           "postgresql":{
             "parameters":{
@@ -198,8 +198,8 @@ objects:
             value: 0.0.0.0:5432
           - name: PATRONI_RESTAPI_LISTEN
             value: 0.0.0.0:8008
-          - name: POSTGRESQL_SYNCHRONOUS_MODE
-            value: "on"
+#          - name: POSTGRESQL_SYNCHRONOUS_MODE
+#            value: "on"
 #          - name: POSTGRESQL_SYNCHRONOUS_MODE_STRICT
 #            value: "false"
 #          - name: POSTGRESQL_SYNC_STANDBY_NAMES

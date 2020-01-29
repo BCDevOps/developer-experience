@@ -98,14 +98,16 @@ The following steps will deploy artifactory:
 
 ``` bash
 # Deploy pre-requisite objects (secrets and storage)
-oc process -f 00-artifactory-prereq.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
-oc process -f 00-patroni-pgsql-prereq.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
+oc process -f 00-artifactory-prereq.yaml --param-file=lab-artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
+oc process -f 00-patroni-pgsql-prereq.yaml --param-file=lab-artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
 
 # Deploy postgresql DB
-oc process -f 01-patroni-pgsql.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
+oc process -f 01-patroni-pgsql.yaml --param-file=lab-artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
 # Wait for patroni statefulSet to complete startup before next step.
 
-oc process -f 02-artifactory-ha.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
+#Update patroni's config map to turn on strict sync.
+
+oc process -f 02-artifactory-ha.yaml --param-file=lab-artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
 ```
 
 ### Access Artifactory
