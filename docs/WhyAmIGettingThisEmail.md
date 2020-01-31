@@ -13,7 +13,7 @@ You should have been involved in the on-boarding process. But things do not alwa
 #How Do We Fix This?
 
 Sadly, the platform services team cannot stay informed about the team members on every single one of the hundreds of projects on the platform, 
-so, chances are, we don't know who should be the product owner instead of you.
+so we don't know who should be the product owner instead of you.
 
 Ask around your branch/division. Chances are, someone knows what the project is, and can either take ownership of it or can tell you who should.
 
