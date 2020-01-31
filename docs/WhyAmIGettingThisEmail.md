@@ -19,14 +19,11 @@ Ask around your branch/division. Chances are, someone knows what the project is,
 
 #I Found Someone. What Now?
 
-Now, that person can contact the development team working on your project and ask them to update their namespace annotations.
-They'll need to do this for *every* namespace (tools, dev, test and prod) and they need to make sure they change both PO email
-and rocketchat handle, or you'll keep getting pinged in future communications.
+Now you can [open an issue](https://github.com/BCDevOps/devops-requests/issues/new/choose) with the platform services team to have the project
+namespaces updated to reflect the appropriate product owner.
 
-That's it! 
+You'll need the name of the project set (the dev team can get this for you - it's a random string of 6 characters) and the contact information of the new PO.
 
-If you want to make sure that you won't get pinged like this again, head on over to the DevExchange rocketchat 
-let the platform services team know that there's been a change so we can update our existing email lists. 
-We update regularly regardless, but this will make sure!
+The issue template contains more information. If you're still unsure, pop into the #devops-how-to channel on rocketchat and ask!
 
 
