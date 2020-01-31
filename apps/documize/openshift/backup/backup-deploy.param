@@ -1,0 +1,39 @@
+#=========================================================
+# OpenShift template parameters for:
+# Component: backup
+# Template File: templates/backup-deploy.json
+#=========================================================
+NAME=backup
+SOURCE_IMAGE_NAME=backup
+IMAGE_NAMESPACE=hmg6pw-prod
+TAG_NAME=prod
+# secrete name:
+DATABASE_DEPLOYMENT_NAME=postgresql
+POSTGRES_SECRET=documize-patroni-prod
+# should be corresponding to the db host name:
+DATABASE_USER_KEY_NAME=app-db-username
+DATABASE_PASSWORD_KEY_NAME=app-db-password
+BACKUP_STRATEGY=rolling
+WEBHOOK_URL=https://chat.pathfinder.gov.bc.ca/hooks/amTveMfX6EqitxkqY/Fwo7eYtwhrSvqyEi332ZXJF23fMs2QdPxMGaCKJDE4jtm3Ct
+ENVIRONMENT_FRIENDLY_NAME=documize
+ENVIRONMENT_NAME=documize
+BACKUP_DIR=/backups/
+NUM_BACKUPS=
+DAILY_BACKUPS=3
+WEEKLY_BACKUPS=1
+MONTHLY_BACKUPS=0
+BACKUP_PERIOD=1d
+CONFIG_FILE_NAME=backup.conf
+CONFIG_MAP_NAME=backup-conf
+CONFIG_MOUNT_PATH=/
+BACKUP_VOLUME_NAME=documize-backup
+BACKUP_VOLUME_SIZE=5Gi
+BACKUP_VOLUME_CLASS=netapp-file-standard
+VERIFICATION_VOLUME_NAME=documize-backup-verification
+VERIFICATION_VOLUME_SIZE=5Gi
+VERIFICATION_VOLUME_CLASS=netapp-block-standard
+VERIFICATION_VOLUME_MOUNT_PATH=/var/lib/pgsql/data
+CPU_REQUEST=0
+CPU_LIMIT=0
+MEMORY_REQUEST=0Mi
+MEMORY_LIMIT=0Mi
