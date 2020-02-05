@@ -33,6 +33,7 @@
         Content-type: "text/plain"
       body: "{{ artifactory_url }}/artifactory"
       force_basic_auth: yes
+    ignore_errors: yes
 
   - name: Create Admin pass secret
     k8s:
@@ -46,6 +47,7 @@
         type: kubernetes.io/basic-auth
         stringData:
           password: "{{ newPass }}"
+    ignore_errors: yes
 
   - name: Create authenticated_users group
     uri:
