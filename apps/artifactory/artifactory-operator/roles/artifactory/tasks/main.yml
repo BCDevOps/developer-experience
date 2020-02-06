@@ -73,6 +73,7 @@
     body: '{"name": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}","repo":{"include-patterns": ["**"],"exclude-patterns": [""], "repositories": ["{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"], "actions": {"users" : {"{{ team_name }}-{{ repository_type }}-{{ repository_locator }}" : ["manage","read","write","annotate","delete","manage"], "{{ requester }}" : ["manage","read","write","annotate","delete","manage"]}}}}'
     force_basic_auth: yes
   when: repository_locator == "local" and repo_permission.status == 404
+  ignore_errors: yes
 
 - name: Create route for prod docker registry
   k8s:
@@ -83,6 +84,7 @@
       metadata:
         labels:
           app: artifactory
+          certbot-managed: 'true'
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
         namespace: "devops-artifactory"
       spec:
