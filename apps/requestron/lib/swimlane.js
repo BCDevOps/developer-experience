@@ -30,7 +30,7 @@ module.exports = async function setSwimlane(issueID) {
 
     } catch (err) {
 
-        throw Error('Unable to handle issue: ' + err)
+        throw Error('Unable to handle issue in swimlane: ' + err)
 
     }
 };

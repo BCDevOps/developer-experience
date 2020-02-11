@@ -33,7 +33,7 @@ module.exports = async function setMilestone(context) {
 
     } catch (err) {
 
-        throw Error('Unable to handle issue: ' + err)
+        throw Error('Unable to handle issue in milestone: ' + err)
 
     }
 };

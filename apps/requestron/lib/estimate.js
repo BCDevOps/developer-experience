@@ -25,7 +25,7 @@ module.exports = async function setEstimate(context) {
 
     } catch (err) {
 
-        throw Error('Unable to handle issue: ' + err)
+        throw Error('Unable to handle issue in estimate: ' + err)
 
     }
 };
