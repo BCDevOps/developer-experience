@@ -14,11 +14,11 @@ module.exports = async function setEstimate(context) {
     try {
 
         const openingIssue = context.issue();
-        const issueUrl = 'https://github.com/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + openingIssue.number;
-        const getResponse = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues?labels=ops-controller');
+        const issueUrl = 'https://github.com/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + openingIssue.number;
+        const getResponse = await instance.get('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues?labels=ops-controller');
         const controllerIssueNumber = getResponse.data[0].number;
         const contollerIssueComment = { body: issueUrl };
-        const postResponse = await instance.post('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + controllerIssueNumber + '/comments', contollerIssueComment);
+        const postResponse = await instance.post('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + controllerIssueNumber + '/comments', contollerIssueComment);
         //console.log(postResponse)
 
         return true;
