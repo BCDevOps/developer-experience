@@ -1,19 +1,25 @@
-const axios = require('axios')
+const axios = require('axios');
+import { Context } from 'probot'
+const where = require('lodash.where');
 /**
  * Set the Estimate in Zenhub to 0.5
  */
 
 const instance = axios.create({
-  baseURL: 'https://api.zenhub.io/',
+  baseURL: 'https://api.github.com/',
   timeout: 1000,
-  headers: {'X-Authentication-Token': process.env.ZENHUB_TOKEN}
+  headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
 });
 
-export async function setEstimate(issueID: number) {
+export async function setEstimate(context: Context) {
     try {
 
-        //issue a PUT to the Zenhub API instructing it to create an estimate of 0.5 for the new issue.
-        await instance.put('p1/repositories/219808631/issues/' + issueID + "/estimate", {"estimate": 0.5})
+        const openingIssue = context.issue();
+        const get_response = await instance.get('repos/caggles/testing-repo/issues');
+        console.log(get_response.data)
+        //const labeled_issues = get_response.data.filter(issue => issue.labels == ['ops-controller']);
+        //console.log(labeled_issues)
+
         return true;
 
     } catch (err) {
