@@ -18,10 +18,10 @@ module.exports = (app) => {
       await setEstimate(context);
 
       //update the milestone to the most recent one for each new ticket.
-      //await setMilestone(context);
+      await setMilestone(context);
 
       //set the swimlane in Zenhub to Operations
-      //await setSwimlane(newIssue.number)
+      await setSwimlane(newIssue.number)
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
