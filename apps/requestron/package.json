@@ -13,12 +13,8 @@
     "probot-app"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
     "dev": "nodemon --exec \"npm start\"",
-    "start": "probot run ./lib/index.js",
-    "lint": "standard **/*.ts --fix",
-    "test": "jest && standard **/*.ts",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    "start": "probot run ./lib/index.js"
   },
   "dependencies": {
     "acorn": "^7.1.0",
