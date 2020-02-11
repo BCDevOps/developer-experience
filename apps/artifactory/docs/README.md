@@ -9,7 +9,7 @@
 
 To request creation of a private repository, a request in the devops-requests channel needs to be made of the form:
 
-''' yaml
+``` yaml
 Artifact Repository Request
 Project Shortname: projectSet shortname (example: {shortname}-[tools|dev|test|prod])
 Repository Type: [docker|maven|npm| ... ] (full list of supported repsitories TBD)
@@ -18,7 +18,7 @@ Repository Description: "Descriptive information about repository"
 
 [virtual only]
 Repository List: "comma separated list of existing repositories to merge, must all be of same type"
-'''
+```
 
 Once your repository has been provisioned, you will be given a service-account and Token that can be used to access your repository.  (better secret distribution TBD)
 
