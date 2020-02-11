@@ -68,15 +68,15 @@ objects:
                 name: github-token
                 key: GITHUB_TOKEN
           - name: REPO_NAME
-              valueFrom:
-                secretKeyRef:
-                  name: repo-secret
-                  key: REPO_NAME
+            valueFrom:
+              secretKeyRef:
+                name: repo-secret
+                key: REPO_NAME
           - name: REPO_OWNER
-              valueFrom:
-                secretKeyRef:
-                  name: repo-secret
-                  key: REPO_OWNER
+            valueFrom:
+              secretKeyRef:
+                name: repo-secret
+                key: REPO_OWNER
           - name: REPO_ID
             value: ${REPO_ID_VALUE}
           - name: APP_ID
