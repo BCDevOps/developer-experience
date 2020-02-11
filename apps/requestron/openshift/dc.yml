@@ -70,12 +70,12 @@ objects:
           - name: REPO_NAME
             valueFrom:
               secretKeyRef:
-                name: repo-secret
+                name: requestron-repo
                 key: REPO_NAME
           - name: REPO_OWNER
             valueFrom:
               secretKeyRef:
-                name: repo-secret
+                name: requestron-repo
                 key: REPO_OWNER
           - name: REPO_ID
             value: ${REPO_ID_VALUE}
