@@ -15,7 +15,7 @@ module.exports = async function setEstimate(context) {
 
         const openingIssue = context.issue();
         const issueUrl = 'https://github.com/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + openingIssue.number;
-        const getResponse = await instance.get('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues?labels=ops-controller');
+        const getResponse = await instance.get('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues?labels=ops-controller&status=open');
         const controllerIssueNumber = getResponse.data[0].number;
         const contollerIssueComment = { body: issueUrl };
         const postResponse = await instance.post('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + controllerIssueNumber + '/comments', contollerIssueComment);
