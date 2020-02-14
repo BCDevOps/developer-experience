@@ -32,3 +32,15 @@ need better communication/notification backup
 ## Outage Response Guides
 
 - build list of primary steps for outage situations
+
+## Testing
+
+- dump a backup of prod onto test.
+- test to see if we can reproduce the issue.
+  - how do you create load on a rocketchat app?
+- once we are able to reproduce the issue, test the following (in order) until the issue is resolved:
+    - rebuild all indexes to see if that reduces/eliminates long-running queries.
+    - seek out corrupted data and, based on what's found, develop a plan to get rid of it.
+    - fix the permissions problem that keeps cropping up.
+    - find source of the queries (assuming it's not rocketchat itself)
+    - determine if there are malformed api queries coming in.

@@ -1,3 +1,5 @@
 *output/
 setenv-prod.sh
+apps/artifactory/artifactory-ha/upgrade/backup/artifactory-primary.yaml
+apps/artifactory/artifactory-ha/upgrade/backup/artifactory-member.yaml
 
