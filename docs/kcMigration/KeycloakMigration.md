@@ -7,7 +7,8 @@ Part of the migration required you (application teams using this existing Single
 Here are the migration plan tasks for SSO admin team:
 - provision new DNS and obtain IDIM approval
 - test out the impact on KeyCloak in a multi-domain setup
-- migrate to the new DNS
+- plan and migrate to the new DNS
 
-More details to come as we progress.
-Epic: https://app.zenhub.com/workspaces/developer-experience-5bb7c5ab4b5806bc2beb9d15/issues/bcdevops/developer-experience/144
+More details on the the current status:
+- Link for the Epic: https://app.zenhub.com/workspaces/developer-experience-5bb7c5ab4b5806bc2beb9d15/issues/bcdevops/developer-experience/144
+- Link to progress: [doc](./kc-admin.md)
