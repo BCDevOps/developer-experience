@@ -1,0 +1,65 @@
+---
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: test-vars.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        admin_user: "admin"
+
+    - name: Set account name
+      set_fact:
+        service_account_name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+
+    - name: Find secret if exists
+      k8s_info:
+        api_version: v1
+        kind: Secret
+        name: "{{ service_account_name }}"
+        namespace: "{{ meta.namespace }}"
+      register: admin_secret
+      ignore_errors: yes
+    
+    - set_fact:
+        auth_user: "{{ admin_secret.resources[0].data.username | b64decode }}"
+        auth_password: "{{ admin_secret.resources[0].data.password | b64decode }}"
+      
+    - name: Get existing Permission object
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/v2/security/permissions/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+        user: "{{ auth_user }}"
+        password: "{{ auth_password }}"
+        method: GET
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        force_basic_auth: yes
+        status_code: 200,404
+      register: repo_permission
+
+    - set_fact:
+        people:
+          - name: "cailey2-docker-local"
+            perms: ["read", "write", "delete"]
+
+            
+    - name: Update existing Permission object
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/v2/security/permissions/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+        user: "{{ auth_user }}"
+        password: "{{ auth_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('template', './UpdatePermissionTarget.json.j2') }}"
+        force_basic_auth: yes
+        status_code: 200,201
+      register: create_perm
+      when: repo_permission.status == 200
+      changed_when: create_perm.status == 201

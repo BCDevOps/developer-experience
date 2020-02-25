@@ -1,6 +1,6 @@
 # Using Artifactory
 
-## Artifactory: What It Does and What It Doesn't.
+## Artifactory: What it is, and What it isn't
 
 Artifactory is an artifact repository by JFrog. The software documentation can be found here: https://www.jfrog.com/confluence/display/RTF/Welcome+to+Artifactory
 
@@ -24,17 +24,14 @@ Artifactory can be found here: https://artifacts.developer.gov.bc.ca
 
 Sign in with Keycloak.
 
-The resulting account will be in the form of `<github_name>@github ` or `<idir_name>@idir`, depending on which method you use to sign in through Keycloak. 
-This will allow you to log in and see the proxy repos mentioned in the previous section.
-See Step 4 below to learn how to gain access to private local and virtual repos.
+The resulting account will be in the form of `<github_name>@github ` or `<idir_name>@idir`, depending on which method you use to sign in through Keycloak.  This will allow you to log in and see the proxy repos mentioned in the previous section.
+See Step 4 below to learn how to gain access to private local and virtual repositories.
 
 ### Step 2: Create an Artifactory Service Account
 
 When connecting to Artifactory for the purposes of pulling artifacts for your application to use, you should not use your personal credentials. Instead, use an artifactory service account.
 
-There is an operator running on the cluster which watches for the creation of ArtifactorySA objects in any project on the cluster. 
-When one is created, it automatically acts to create a matching service account in artifactory. This service account will have a "license-plate" style name, and the ArtifactorySA object will be updated to include this name once the operator has created the account.
-It will also create a secret in the same project with both the name of the service account and a token for accessing the account.
+There is an operator running on the cluster which watches for the creation of ArtifactorySA objects in any project on the cluster.  When one is created, it automatically acts to create a matching service account in artifactory.  This service account will have a "license-plate" style name, and the ArtifactorySA object will be updated to include this name once the operator has created the account.  A secret in the same project will also be created with both the name of the service account and a token for accessing the account.
 
 Find a template for creating an ArtifactorySA object at `artifactory-sa-operator/deploy/crds/artifactory-sa-cr-template.yaml`
 
