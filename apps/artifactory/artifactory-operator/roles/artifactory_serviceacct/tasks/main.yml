@@ -1,0 +1,80 @@
+---
+  # tasks file for artifactory service account
+- name: Check artifactory user
+  uri:
+    url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: GET
+    body_format: json
+    headers:
+      Content-type: "application/json"
+    force_basic_auth: yes
+    status_code: 200,404
+  register: sa_exists
+
+- fail:
+    msg: "Service Account user already exists: {{ service_account_name }}"
+  when: sa_exists.status == 200
+
+- name: Create artifactory user
+  uri:
+    url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: PUT
+    body_format: json
+    headers:
+      Content-type: "application/json" 
+    body: "{{ lookup('template', 'create_account.json.j2') }}"
+    force_basic_auth: yes
+    status_code: 201
+  register: created_sa
+  changed_when: created_sa.status == 201
+  when: sa_exists.status == 404
+
+- name: Create Secret for Service Account
+  k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: "{{ service_account_name }}"
+        namespace: "{{ meta.namespace }}"
+      type: kubernetes.io/basic-auth
+      data:
+        username: "{{ service_account_name | b64encode }}"
+        password: "{{ generated_password | b64encode }}"
+  when: created_sa.changed
+
+- name: Update CR ServiceAccount detail
+  k8s:
+    state: present
+    definition:
+      apiVersion: artifactorysa.operators.bcgov/v1alpha1
+      kind: ArtifactorySA
+      metadata:
+        name: "{{ cr_name }}"
+        namespace: "{{ meta.namespace }}"
+      spec:
+        cr_name: "{{ cr_name }}"
+        sa_name: "{{ license_plate }}"
+        descriptor: "{{ descriptor }}"
+  when: sa_name is defined
+
+# # Generating an admin token (to replace a service account user), requires adding to a group for access controls.
+# - name: Generate admin token
+#   uri:
+#     url: "{{ artifactory_url }}/{{ artifactory_token_endpoint }}"
+#     user: "{{ admin_user }}"
+#     password: "{{ lookup('file', '/tmp/ansible-operator/password') }}"
+#     method: POST
+#     headers:
+#       Content-type: "application/x-www-form-urlencoded"
+#     body_format: form-urlencoded
+#     body: '{"username":"{{ service_account_name }}", "expires_in":"0", "scope":"member-of-groups:*", "token_type":"Bearer"}'
+#     force_basic_auth: yes
+#     #status_code: 200
+#   register: token_gen
+#   when: sa_name == ""

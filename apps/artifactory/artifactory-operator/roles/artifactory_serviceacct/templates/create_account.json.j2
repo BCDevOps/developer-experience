@@ -1,0 +1,10 @@
+{
+  "name": "{{ service_account_name }}",
+  "email" : "{{ service_account_name }}@{{ meta.namespace }}.local",
+  "password": "{{ generated_password }}",
+  "admin": false,
+  "profileUpdatable": false,
+  "disableUIAccess" : true,
+  "internalPasswordDisabled": false,
+  "realm": "Internal"
+}

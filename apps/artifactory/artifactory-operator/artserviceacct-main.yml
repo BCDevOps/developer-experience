@@ -1,0 +1,24 @@
+---
+
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: test-vars.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
+        license_plate: "{{ lookup('password', '/dev/null length=6 chars=ascii_letters') | lower }}"
+        generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+
+    - name: Set Role Variables
+      set_fact:
+        service_account_name: "{{ meta.name }}-{{ project_plate }}-{{ license_plate }}"
+      when: username is undefined
+
+    - import_role:
+        name: "artifactory_serviceacct"
