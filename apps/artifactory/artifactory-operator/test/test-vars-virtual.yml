@@ -1,0 +1,19 @@
+---
+# Operator common CR variables
+meta:
+  namespace: jefkel-dev
+
+# Operator Repo-CR variables
+team_name: "jtest"
+repository_type: "docker"
+repository_locator: "virtual"
+repository_description: "Test Docker repo"
+list_virtual_repositories: "example-repo-local,jeff-docker-local"
+
+# Operator ServiceAcct CR variables
+
+# Operator build/deploy variables
+console: ""
+artifactory_url: "https://artifacts.lab.pathfinder.gov.bc.ca"
+admin_pass_loc: "./creds_admin"
+external_dns_suffix: "artifacts.lab.pathfinder.gov.bc.ca"

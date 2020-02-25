@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+Creates an artifactory account with a generated password, and stores the access detail within an openshift secret.
 
 Requirements
 ------------
