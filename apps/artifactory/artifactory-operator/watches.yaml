@@ -2,6 +2,10 @@
 - version: v1alpha1
   group: artifactoryrepo.operators.bcgov
   kind: ArtifactoryRepo
-  role: /opt/ansible/roles/artifactory
-  playbook: /opt/ansible/roles/main.yml
+  playbook: /opt/ansible/roles/artrepository-main.yml
+  reconcilePeriod: 0
+- version: v1alpha1
+  group: artifactorysa.operators.bcgov
+  kind: ArtifactorySA
+  playbook: /opt/ansible/roles/artserviceacct-main.yml
   reconcilePeriod: 0
