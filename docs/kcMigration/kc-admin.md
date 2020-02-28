@@ -28,6 +28,15 @@
   - action: instead of creating new IDP, try updating the existing IDP everything from R0 to R1 (and optionally the clientID)
   - result: works! The same GUID returned for the user
 
+  - action: update all R0 to R1 in the KC instance
+  - result:
+
+  - action: test customized authentication flows and themes
+  - result:
+
+  - action: remove R0 route
+  - result:
+
 
 [ ] test multi-domain setup in two instances:
 
