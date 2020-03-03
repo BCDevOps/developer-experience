@@ -5,7 +5,7 @@ const axios = require('axios')
 
 const instance = axios.create({
   baseURL: 'https://api.github.com/',
-  timeout: 1000,
+  timeout: 10000,
   headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
 });
 
