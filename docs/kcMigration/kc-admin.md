@@ -4,7 +4,11 @@
 
 [x] create a separate route (R1) for KC and connect to it
 
-[x] setup an app that use SSO, and switch configuration between R0 and R1
+[x] setup an app that use SSO, and switch configuration between R0 and R1. Test with different types:
+  - [x] single app: RocketChat
+  - [ ] frontend + backend: reggie
+  - [ ] multiple applications in one realm: RC + reggie + KC auth flow
+
 
 [x] test multi-domain setup in single instance:
   - action: when only have R1 redirect
@@ -44,7 +48,6 @@
   - action: remove R0 route
   - result: done!
 
-  - tested applications: RocketChat, 
 
 [ ] test multi-domain setup in two instances:
   - this might not be needed
