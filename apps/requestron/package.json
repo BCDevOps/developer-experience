@@ -13,16 +13,19 @@
     "probot-app"
   ],
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "dev": "nodemon --exec \"npm start\"",
-    "start": "probot run ./lib/index.js"
+    "start": "probot run ./lib/index.js",
+    "lint": "standard **/*.ts --fix",
+    "test": "jest && standard **/*.ts",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
     "acorn": "^7.1.0",
     "axios": "^0.19.0",
-    "lodash.where": "^3.1.0",
     "octokit": "^1.0.0-hello-world",
-    "probot": "^9.6.6",
-    "smee-client": "^1.0.2"
+    "smee-client": "^1.0.2",
+    "probot": "^9.6.6"
   },
   "devDependencies": {
     "@types/jest": "^24.0.0",
