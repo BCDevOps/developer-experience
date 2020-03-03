@@ -6,8 +6,10 @@ repository_type: ""
 repository_locator: ""
 repository_description: ""
 admin_user: admin
-external_dns_suffix: artifacts.developer.gov.bc.ca
-artifactory_url: http://artifactory.devops-artifactory.svc.cluster.local:8081 
+admin_pass_loc: /tmp/ansible-operator/password
+external_dns_suffix: "{{ lookup('env', 'ARTIFACTORY_BASE_DNS')}}"
+#artifactory_url: http://artifactory.devops-artifactory.svc.cluster.local:8081 
+artifactory_url: https://artifacts.lab.pathfinder.gov.bc.ca
 artifactory_repo_endpoint: artifactory/api/repositories
 artifactory_permission_endpoint: artifactory/api/v2/security/permissions
 artifactory_group_endpoint: artifactory/api/security/groups

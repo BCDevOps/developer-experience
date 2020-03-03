@@ -14,5 +14,5 @@ repository_description: "Test Docker repo"
 # Operator build/deploy variables
 console: ""
 artifactory_url: "https://artifacts.lab.pathfinder.gov.bc.ca"
-admin_pass_loc: "./creds_admin"
+admin_pass_loc: "~/projects/bcdevops/art_creds"
 external_dns_suffix: "artifacts.lab.pathfinder.gov.bc.ca"
