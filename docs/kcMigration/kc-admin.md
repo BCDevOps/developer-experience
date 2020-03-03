@@ -25,20 +25,29 @@
   - action: update GitHub Oauth app setting
   - result: doesn't work, the IDP's mapper has a different alias that will create a different user record (but same `Provider User ID`) -> which means we are good to continue with the next step
 
-  - action: instead of creating new IDP, try updating the existing IDP everything from R0 to R1 (and optionally the clientID)
+  - action: instead of creating new IDP, try updating the existing IDP
+  - details: first update the client in the IDP realm to use R1, add R1 `valid redirect uri` (both R0 and R1 should exists); then update the `oidc config` IDP in the app realm to use R1
   - result: works! The same GUID returned for the user
 
-  - action: update all R0 to R1 in the KC instance
-  - result:
+  - *action on app team*
+  - action: switch application's KC settings
+  - result: now that both R1 and R0 work fine. If not working, figure out which part is missing!
 
+  - *action on app team*≈
   - action: test customized authentication flows and themes
-  - result:
+  - result: 
+
+  - action: update all R0 to R1 in the KC instance
+  - details: remove the R0 `valid redirect uri` from the IDP realm's client
+  - result: since no reference to R0 anymore, will not break anything
 
   - action: remove R0 route
-  - result:
+  - result: done!
 
+  - tested applications: RocketChat, 
 
 [ ] test multi-domain setup in two instances:
+  - this might not be needed
 
 [ ] test KC instance migration on platform:
 
