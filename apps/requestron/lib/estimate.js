@@ -18,7 +18,9 @@ module.exports = async function setEstimate(context) {
         const getResponse = await instance.get('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues?labels=ops-controller&status=open');
         const controllerIssueNumber = getResponse.data[0].number;
         const contollerIssueComment = { body: issueUrl };
-        const postResponse = await instance.post('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + controllerIssueNumber + '/comments', contollerIssueComment);
+        if (openingIssue.number != controllerIssueNumber){
+            const postResponse = await instance.post('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues/' + controllerIssueNumber + '/comments', contollerIssueComment);
+        }
         //console.log(postResponse)
 
         return true;
