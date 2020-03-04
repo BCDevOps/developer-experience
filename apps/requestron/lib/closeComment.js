@@ -42,7 +42,7 @@ module.exports = async function createClosingComment(context) {
         }
         commentContent += '\nIf you have additional problems or questions, please feel free to ask the community on RocketChat on the `#devops-howto` channel!';
 
-        const issueComment = context.issue({ body: commentContent});
+        const issueComment = context.issue({ body: commentContent });
         await context.github.issues.createComment(issueComment);
         return true;
 
