@@ -7,16 +7,16 @@ pipeline {
         stage('Build') {
             agent { label 'build' }
             steps {
-//                 script {
-//                     def filesInThisCommitAsString = sh(script:"git diff --name-only HEAD~1..HEAD | grep '^apps/requestron/' | grep -v -e 'apps/requestron/README.md' -e 'apps/requestron/Jenkinsfile' || echo -n ''", returnStatus: false, returnStdout: true).trim()
-//                     def hasChangesInPath = (filesInThisCommitAsString.length() > 0)
-//                     echo "${filesInThisCommitAsString}"
-//                     if (!currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') && !hasChangesInPath){
-//                         currentBuild.rawBuild.delete()
-//                         echo "No changes detected in the path (apps/requestron/ other than Jenkinsfile and docs)"
-//                         return
-//                     }
-//                 }
+                script {
+                    def filesInThisCommitAsString = sh(script:"git diff --name-only HEAD~1..HEAD | grep '^apps/requestron/' | grep -v -e 'apps/requestron/README.md' -e 'apps/requestron/Jenkinsfile' || echo -n ''", returnStatus: false, returnStdout: true).trim()
+                    def hasChangesInPath = (filesInThisCommitAsString.length() > 0)
+                    echo "${filesInThisCommitAsString}"
+                    if (!currentBuild.rawBuild.getCauses()[0].toString().contains('UserIdCause') && !hasChangesInPath){
+                        currentBuild.rawBuild.delete()
+                        echo "No changes detected in the path (apps/requestron/ other than Jenkinsfile and docs)"
+                        return
+                    }
+                }
                 echo "Aborting all running jobs ..."
                 script {
                     abortAllPreviousBuildInProgress(currentBuild)
