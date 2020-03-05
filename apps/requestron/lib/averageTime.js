@@ -1,8 +1,7 @@
 const axios = require('axios');
 require('probot');
 /**
- * Adds link to new ticket in ops-controller
- * Calculates total number of ops tickets in ops-controller
+ * Calculates average time open for each ticket in ops-controller
  */
 
 const instance = axios.create({
@@ -38,24 +37,25 @@ module.exports = async function setEstimate(context) {
             let openTime = getIssue.data.created_at;
             let closeTime = getIssue.data.closed_at;
             if ( closeTime != null ) {
-                openTime = Date.parse(openTime)/1000;
+                openTime = Date.parse(openTime)/1000; // date.parse returns milliseconds, we want seconds
                 closeTime = Date.parse(closeTime)/1000;
                 let diffTime = closeTime - openTime;
                 timeList.push(diffTime)
             }
         }
 
+        // add up all the open-time for all the tickets
         let timeTotal = 0;
-        console.log(timeList);
         for (let i = 0; i < timeList.length; i++) {
             timeTotal += timeList[i];
             timeList[i] = secondsToDhms(timeList[i]);
         }
-        console.log(timeTotal);
-        console.log(timeList);
+
+        // divide up the total by the number of closed tickets
         let timeAvg = timeTotal/timeList.length;
+
+        // convert timeAvg from number of seconds to a more human-readable format in days/hours/minutes/seconds
         timeAvg = secondsToDhms(timeAvg);
-        console.log(timeAvg);
 
 
         // if the "avg time to close" line already exists, delete it
@@ -65,9 +65,7 @@ module.exports = async function setEstimate(context) {
             }
         }
 
-
-
-        // add a new "number of tickets" line and update the body
+        // add a new "avg time to close" line and update the body
         controllerBody.push('Average time to close: ' + timeAvg);
         controllerBody = controllerBody.filter(function(value, index, arr){return value != ''});
         controllerBody = controllerBody.join('\n');

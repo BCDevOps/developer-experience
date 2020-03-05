@@ -15,13 +15,13 @@ module.exports = (app) => {
 
       const newIssue = context.issue();
 
-      //set the estimate at 0.5 for each new ticket.
+      // track number of tickets on ops-controller
       await setEstimate(context);
 
-      //update the milestone to the most recent one for each new ticket.
+      // update the milestone to the most recent one for each new ticket.
       await setMilestone(context);
 
-      //set the swimlane in Zenhub to Operations
+      // set the swimlane in Zenhub to Operations
       await setSwimlane(newIssue.number)
 
     } catch (err) {
@@ -34,8 +34,10 @@ module.exports = (app) => {
 
       const closedIssue = context.issue();
 
+      // add a comment to every closed ops ticket explaining stuff
       await createClosingComment(context);
 
+      // find the average time to close of all ops tickets and stick it on ops-controller
       await averageTime(context);
 
     } catch (err) {
