@@ -28,6 +28,7 @@
 
   - action: update GitHub Oauth app setting
   - result: doesn't work, the IDP's mapper has a different alias that will create a different user record (but same `Provider User ID`) -> which means we are good to continue with the next step
+  - note: once updated here, rolling back to R0 will break. Need to update the GitHub callback to R0. 
 
   - action: instead of creating new IDP, try updating the existing IDP
   - details: first update the client in the IDP realm to use R1, add R1 `valid redirect uri` (both R0 and R1 should exists); then update the `oidc config` IDP in the app realm to use R1
@@ -49,9 +50,13 @@
   - result: done!
 
 
+[x] create scripts for the IDP migration
+
 [ ] test multi-domain setup in two instances:
   - this might not be needed
 
 [ ] test KC instance migration on platform:
+
+[ ] create scripts for instance migration
 
 [ ] setup traffic monitoring on the old KC instance:
