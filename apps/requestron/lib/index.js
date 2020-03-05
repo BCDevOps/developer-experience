@@ -3,6 +3,7 @@ const setEstimate = require('./estimate');
 const setSwimlane = require('./swimlane');
 const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
+const averageTime = require('./averageTime');
 
 module.exports = (app) => {
 
@@ -31,9 +32,11 @@ module.exports = (app) => {
   async function issueClosed(context) {
     try {
 
-      const closedIssue = context.issue()
+      const closedIssue = context.issue();
 
-      await createClosingComment(context)
+      await createClosingComment(context);
+
+      await averageTime(context);
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
