@@ -17,7 +17,7 @@
 
     - name: Set existing service account info
       set_fact:
-        service_account_name: "{{ sa_name }}"
+        service_account_name: "{{ spec.sa_name }}"
 
     - name: Delete artifactory user
       uri:

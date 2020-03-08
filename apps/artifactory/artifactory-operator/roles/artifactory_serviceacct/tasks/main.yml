@@ -13,9 +13,19 @@
     status_code: 200,404
   register: sa_exists
 
-- fail:
-    msg: "Service Account user already exists: {{ service_account_name }}"
-  when: sa_exists.status == 200
+# - name: Check SA k8s secret
+#   k8s_info:
+#     api_version: v1
+#     kind: secret
+#     name: "{{ service_account_name }}"
+#     namespace: "{{ meta.namespace }}"
+#   register: check_sa_secret
+
+- name: Generate Password
+  set_fact:
+    generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+#  when: (check_sa_secret.resources|length<1)
+  when: sa_exists.status == 404
 
 - name: Create artifactory user
   uri:
@@ -33,6 +43,8 @@
   changed_when: created_sa.status == 201
   when: sa_exists.status == 404
 
+# - name: Change artifactory SA Password
+
 - name: Create Secret for Service Account
   k8s:
     state: present
@@ -48,20 +60,28 @@
         password: "{{ generated_password | b64encode }}"
   when: created_sa.changed
 
+- name: Check ServiceAccount CR
+  k8s_info:
+    api_version: v1alpha1
+    kind: ArtifactorySA
+    name: "{{ meta.name }}"
+    namespace: "{{ meta.namespace }}"
+  register: check_sa_cr
+
 - name: Update CR ServiceAccount detail
   k8s:
     state: present
     definition:
-      apiVersion: artifactorysa.operators.bcgov/v1alpha1
+      apiVersion: v1alpha1
       kind: ArtifactorySA
       metadata:
-        name: "{{ cr_name }}"
+        name: "{{ meta.name }}"
         namespace: "{{ meta.namespace }}"
       spec:
-        cr_name: "{{ cr_name }}"
-        sa_name: "{{ license_plate }}"
-        descriptor: "{{ descriptor }}"
-  when: sa_name is defined
+        cr_name: "{{ spec.cr_name }}"
+        sa_name: "{{ service_account_name }}"
+        descriptor: "{{ spec.descriptor }}"
+  when: created_sa.changed and (check_sa_cr.resources|length>0)
 
 # # Generating an admin token (to replace a service account user), requires adding to a group for access controls.
 # - name: Generate admin token

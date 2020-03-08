@@ -5,6 +5,7 @@ license_plate: ""
 descriptor: ""
 admin_user: admin
 admin_pass_loc: /tmp/ansible-operator/password
+external_dns_suffix: "{{ lookup('env', 'ARTIFACTORY_BASE_DNS')}}"
 artifactory_url: http://artifactory.devops-artifactory.svc.cluster.local:8081 
 artifactory_repo_endpoint: artifactory/api/repositories
 artifactory_permission_endpoint: artifactory/api/v2/security/permissions

@@ -12,8 +12,12 @@
     force_basic_auth: yes
     status_code: 200,400,404
   register: repo_exists
-- fail:
-    msg: "Repository already exists: {{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+
+- block:
+    - name: "End play if repo already exists"
+      debug:
+        msg: "Repository already exists: {{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    - meta: end_play
   when: repo_exists.status == 200
 
 - name: Create Repository
