@@ -1,4 +1,10 @@
-### KeyCloak Service Migration
+---
+description: KeyCloak (RH-SSO) Migration from Pathfinder to BCGov service
+resourceType: Documentation
+title: BC Government KeyCloak (RH-SSO) Service Migration Plan
+---
+
+## KeyCloak Service Migration
 
 Hi team, we are in the process of transforming KeyCloak from a pathfinder service to an organizational BCGov service. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
 
@@ -41,3 +47,4 @@ Phase 5. production migration
 More details on the the current status:
 - Link for the Epic: https://app.zenhub.com/workspaces/developer-experience-5bb7c5ab4b5806bc2beb9d15/issues/bcdevops/developer-experience/144
 - Link to progress: [doc](./kc-admin.md)
+- Follow up/ ask on [RocketChat #sso channel](https://chat.pathfinder.gov.bc.ca/channel/sso)
