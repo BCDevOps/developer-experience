@@ -52,11 +52,6 @@
 
 [x] create scripts for the IDP migration
 
-[ ] test multi-domain setup in two instances:
-  - this might not be needed
-
-[ ] test KC instance migration on platform:
-
-[ ] create scripts for instance migration
+[ ] Optional: test multi-domain setup in two instances:
 
 [ ] setup traffic monitoring on the old KC instance:
