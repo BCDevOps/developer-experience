@@ -21,6 +21,7 @@ If your team is not on the OpenShift platform, please also provide contact infor
 - Product owner: 
 - Technical lead: 
 
+At this point, there are no immediate actions required to migrate.  Once the new service name(s) are in place, you will be required to update your realm's KeyCloak configurations as well as any application links to the keycloak DNS.  We will inform the community in [RocketChat #sso channel](https://chat.pathfinder.gov.bc.ca/channel/sso) as well as product owners as the start date approaches so that you can plan ahead for some sprint time to work on the relevant tasks.
 
 ### Migration plan and phases:
 Phase 1. test out the impact on KeyCloak in a multi-domain setup
