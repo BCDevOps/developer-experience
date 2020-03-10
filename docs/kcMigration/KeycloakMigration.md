@@ -11,7 +11,6 @@ tags:
 
 Hi team, we are in the process of transforming KeyCloak from a pathfinder service to an organizational BCGov service. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
 
-Part of the migration requires you (application teams using this existing SSO) to update the KeyCloak configurations. As for now, there is no immediate actions to migrate. We will inform the community in [RocketChat #sso channel](https://chat.pathfinder.gov.bc.ca/channel/sso) as well as product owners when ready so that you could plan ahead for some sprint time to work on the relevant tasks.
 
 At the moment, we are collecting application team information for each KC realm. Please visit the rocketchat discussion [here](to-be-generated), find your realm and provide the details listed:
 - Project Name: 
