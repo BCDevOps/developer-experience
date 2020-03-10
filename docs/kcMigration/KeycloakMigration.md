@@ -10,7 +10,7 @@ Hi team, we are in the process of transforming KeyCloak from a pathfinder servic
 
 Part of the migration requires you (application teams using this existing SSO) to update the KeyCloak configurations. As for now, there is no immediate actions to migrate. We will inform the community in [RocketChat #sso channel](https://chat.pathfinder.gov.bc.ca/channel/sso) as well as product owners when ready so that you could plan ahead for some sprint time to work on the relevant tasks.
 
-At the moment, we are collecting application team information for each KC realm. Please visit the GitHub issue (or rocketchat discussion) [here](tbd) and provide the details listed:
+At the moment, we are collecting application team information for each KC realm. Please visit the rocketchat discussion [here](to-be-generated), find your realm and provide the details listed:
 - Project Name: 
 - KC realm ID: 
 - OpenShift project set/s: 
