@@ -12,7 +12,7 @@ tags:
 Hi team, we are in the process of transforming KeyCloak from a pathfinder service to an organizational BCGov service. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
 
 
-At the moment, we are collecting application team information for each KC realm. Please visit the rocketchat discussion [here](to-be-generated), find your realm and provide the details listed:
+The first step of the migration involving you (Application teams using the existing SSO) is the collection of project team contact information for each KC realm.  Please visit the Rocket.Chat discussion [here](to-be-generated), find your realm and provide the details listed:
 - Project Name: 
 - KC realm ID: 
 - OpenShift project set/s: 
