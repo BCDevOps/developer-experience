@@ -17,7 +17,7 @@ At the moment, we are collecting application team information for each KC realm.
 - KC realm ID: 
 - OpenShift project set/s: 
 
-If your team is not on the OpenShift platform, please provide contact information for:
+If your team is not on the OpenShift platform, please also provide contact information for:
 - Product owner: 
 - Technical lead: 
 
