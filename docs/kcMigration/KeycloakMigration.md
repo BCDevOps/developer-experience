@@ -9,7 +9,7 @@ tags:
 
 ## KeyCloak Service Migration
 
-Hi team, the pathfinder KeyCloak SSO service is undergoing a transformation to an organizational BCGov service. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
+Hi team, the KeyCloak SSO service is finally removing its *Pathfinder* sticker and getting a new name.  This change does not affect the service offering but does change how you will access it.  The name is changing from sso.pathfinder.gov.bc.ca to oidc.gov.bc.ca.  For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
 
 The first step of the migration involving Application teams (who's using the existing SSO) is the collection of project team contact information for each KC realm.  Please visit the Rocket.Chat discussion [here](https://chat.pathfinder.gov.bc.ca/channel/sso-migration), find your realm and provide the details listed:
 - Project Name: 
