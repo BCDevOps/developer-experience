@@ -10,7 +10,7 @@
   - [ ] multiple applications in one realm: RC + reggie + KC auth flow
 
 
-[x] test multi-domain setup in single instance:
+[x] test multi-domain setup in single instance (R0 as current existing hostname, R1 as new migration hostname):
   - action: when only have R1 redirect
   - result: user will see `Invalid parameter: redirect_uri` when hitting the client in IDP-realm
 
