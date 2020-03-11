@@ -34,14 +34,11 @@ There are two possibilities here:
 1. You're not supposed to do this thing.
 2. You *are* supposed to do this thing, and there should be an appropriate issue template for it, but there isn't one (yet).
 
-Either way, you can jump onto rocketchat to ask. 
-If you're looking for something to do with one of our services (rocketchat, keycloak, etc), try asking in one of the service-specific channels (`#rocketchat-help`, `#sso`, etc).
-Otherwise, asking in `#devops-how-to` is a good place to start (or `#devops-sos` if this is an issue that is causing immediate problems with your production deployment).
+Either way, you can submit an issue requesting this new issue type [here](https://github.com/BCDevOps/devops-requests/issues/new?assignees=caggles%2C+ShellyXueHan&labels=new-request-type&template=new_request_type.md&title=).
+Once you submit that issue, someone from Platform Services will either create the new issue type or will close the ticket with an explanation of why you're not supposed to do the thing. 
+You're always free to chat us up on rocketchat if you want some help finding an alternative in the case that your request isn't permitted!
 
-Someone (likely from the Platform Services team) will respond to your request. In the case of #1, they'll explain why you're not supposed to do the thing. In the case of #2, they'll ask you to wait for a little while, while they set up a new template to serve that requirement, and they'll ping you when they're done!
-If you find your request hasn't gotten any attention, reply to your original post and tag Cailey and Shelly. 
-
-# Tips on asking for help
+# Tips on asking for help on RocketChat (and anywhere else!)
 
 A good question is more likely to get an answer - and they're likely to get a better answer more quickly, too!
 
