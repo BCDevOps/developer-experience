@@ -20,6 +20,7 @@ const commentDetails = {
     'openshift-project-set': 'Assuming this task was approved, you will find your project set by logging into the Openshift console and navigating to the Application Console.' +
         'There, you will find a list of all projects to which you have access. The technical steward will have admin access and can add new users to the projects as required.'
 };
+
 const instance = axios.create({
   baseURL: 'https://api.github.com/',
   timeout: 10000,
@@ -31,8 +32,12 @@ module.exports = async function createClosingComment(context) {
 
         const closingIssue = context.issue();
         const getResponse = await instance.get('repos/' + closingIssue.owner + '/' + closingIssue.repo + '/issues/' + closingIssue.number + '/labels');
+
+        // make the common open statement of the closing comment
         let commentContent = 'This issue has now been closed. It has been completed, unless a comment indicates otherwise.\n';
-        console.log(getResponse.data.length)
+
+        // add the unique closing comment lines for each appropriate label
+        // this probably shouldn't result in multiple lines at the moment, but just in case we want to add different stuff for the "approved" vs "rejected" labels later.
         for (let i = 0; i < getResponse.data.length; i++) {
             let label = getResponse.data[i]['name']
             console.log(label)
@@ -40,9 +45,12 @@ module.exports = async function createClosingComment(context) {
                 commentContent += '\n' + commentDetails[label] + '\n';
             }
         }
+
+        // add the comment closing statement of the closing comment
         commentContent += '\nIf you have additional problems or questions, please feel free to ask the community on RocketChat on the `#devops-howto` channel!';
 
-        const issueComment = context.issue({ body: commentContent});
+        // post the closing comment
+        const issueComment = context.issue({ body: commentContent });
         await context.github.issues.createComment(issueComment);
         return true;
 
