@@ -14,7 +14,13 @@ We are a community-supported platform - that means you should look to the commun
 Let us know if you think there are any missing from this list! :)
 
 If that doesn't help, your next stop should be `#devops-how-to` on Rocketchat. There are plenty of people in our 2000+ strong community who can offer their expertise!
-If your issue is causing immediate production problems, try `#devops-sos` instead.
+To find out if there is a current service alert or operational work that might be impacting your application, you can check the following:
+- https://status.pathfinder.gov.bc.ca
+- #bcdevops-alerts
+- #bcdevops-operations
+- #bcdevops-sos
+
+Please note: the channels above are not "please help" channels, and are used for communication related to the platform itself (not individual application support).
 
 ## I suspect there's an outage or service problem.
 
@@ -50,7 +56,6 @@ To that end, you'll want to include plenty of detail. Generally speaking, you sh
 4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
 
 Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure. 
-
 
 
 
