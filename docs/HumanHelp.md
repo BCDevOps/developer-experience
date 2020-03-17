@@ -1,8 +1,29 @@
-# Help, I can't find an issue template that gets me what I need! What do I do now?!
+---
+resourceType: Documentation
+personas: 
+  - Developer
+  - Product Owner
+  - Designer
+tags:
+  - rocketchat
+  - github
+  - issues
+  - troubleshooting
+  - questions
+description: Learn where to ask for help with issues not covered by devops-requests
+---
+
+# Getting human support for issues not covered by devops-requests
+
+Ideally, the devops-requests issue sets will cover all appropriate issues requiring support from the platform teams.
+However, we recognize that this is not always the case.
+If you don't see an issue that suits your needs, what do you do?
+
+## Help, I can't find an issue template that gets me what I need! What do I do now?!
 
 The answer to this question depends on what you're trying to do.
 
-## I'm looking for help building my application, deploying to OpenShift, using one of the platform services and/or help with an app on my computer.
+###I'm looking for help building my application, deploying to OpenShift, using one of the platform services and/or help with an app on my computer.
 
 We are a community-supported platform - that means you should look to the community! Checking the documentation for the specific application is a good start:
 * [Openshift Docs](https://docs.openshift.com/container-platform/3.11/welcome/index.html)
@@ -22,7 +43,7 @@ To find out if there is a current service alert or operational work that might b
 
 Please note: the channels above are not "please help" channels, and are used for communication related to the platform itself (not individual application support).
 
-## I suspect there's an outage or service problem.
+### I suspect there's an outage or service problem.
 
 As above, check the available platform alerts and operations channels and please feel free to raise a suspected platform issue there.  (The `#devops-sos` is the **Everything is on FIRE** channel, that can be leveraged for emergency assistance.)
 
@@ -33,7 +54,7 @@ Next, check `#general` and `#devops-alerts` to see if any member of Platform Ser
 
 If you don't see anything about the team already working on the problem, then feel free to `#devops-how-to` or `#devops-operations` to ask about the issue.
 
-## I know what I want to do, I just don't have the permissions to do it.
+### I know what I want to do, I just don't have the permissions to do it.
 
 There are two possibilities here:
 
@@ -44,7 +65,7 @@ Either way, you can submit an issue requesting this new issue type [here](https:
 Once you submit that issue, someone from Platform Services will either create the new issue type or will close the ticket with an explanation of why you're not supposed to do the thing. 
 You're always free to chat us up on rocketchat if you want some help finding an alternative in the case that your request isn't supported!
 
-# Tips on asking for help on RocketChat (and anywhere else!)
+## Tips on asking for help on RocketChat (and anywhere else!)
 
 A good question is more likely to get an answer - and they're likely to get a better answer more quickly, too!
 
