@@ -5,10 +5,10 @@ const axios = require('axios');
  */
 
 const commentDetails = {
-    'annotation-update': 'You can view your project annotations by running the command `oc describe namespace [namespace-name]`.',
+    'annotation-update': 'You can view your project annotations by running the command `oc describe namespace [namespace-name]`. ',
     'artifactory-repo': 'You can find the custom resource for your repo in the listed tools namespace by running `oc get artifactoryrepos`. ' +
-        'For information on the status of the resource, run `oc describe artifactoryrepo [repo-name]`.',
-    'documize-space': 'You should expect to receive an invitation to your Documize space in your email inbox.',
+        'For information on the status of the resource, run `oc describe artifactoryrepo [repo-name]`. ',
+    'documize-space': 'You should expect to receive an invitation to your Documize space in your email inbox. ',
     'duplicate': 'This task will not be completed because it is a duplicate of another task.',
     'github-membership': 'The invitation should appear in the relevant user\'s inbox very soon. Please ensure that they\'re checking the correct inbox. ' +
         'The invitation will show up in the inbox of whatever email address is listed as their primary address in their github profile. ' +
@@ -21,7 +21,7 @@ const commentDetails = {
     'openshift-access': 'The user in question should receive an invitation to the BCDevOps organization on GitHub. They must accept this invitation before they will be able to access Openshift. ' +
         'The invitation will show up in the inbox of whatever email address is listed as their primary address in their github profile.',
     'openshift-project-set': 'Assuming this task was approved, you will find your project set by logging into the Openshift console and navigating to the Application Console. ' +
-        'There, you will find a list of all projects to which you have access. The technical steward will have admin access and can add new users to the projects as required.',
+        'There, you will find a list of all projects to which you have access. The technical steward will have admin access and can add new users to the projects as required. ',
     'quota-update': 'Assuming this request has been approved, the closure of this ticket means that the platform services team has submitted this change to be implemented on the platform by DXCAS. ' +
         'It is *not* completed yet, and you may need to wait for a while longer before you see the change in your namespace. ' +
         'If you are concerned by how long it is taking, please ask for further information on rocketchat.',
