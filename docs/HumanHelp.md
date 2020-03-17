@@ -42,7 +42,7 @@ There are two possibilities here:
 
 Either way, you can submit an issue requesting this new issue type [here](https://github.com/BCDevOps/devops-requests/issues/new?assignees=caggles%2C+ShellyXueHan&labels=new-request-type&template=new_request_type.md&title=).
 Once you submit that issue, someone from Platform Services will either create the new issue type or will close the ticket with an explanation of why you're not supposed to do the thing. 
-You're always free to chat us up on rocketchat if you want some help finding an alternative in the case that your request isn't permitted!
+You're always free to chat us up on rocketchat if you want some help finding an alternative in the case that your request isn't supported!
 
 # Tips on asking for help on RocketChat (and anywhere else!)
 
@@ -56,5 +56,4 @@ To that end, you'll want to include plenty of detail. Generally speaking, you sh
 4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
 
 Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure. 
-
 
