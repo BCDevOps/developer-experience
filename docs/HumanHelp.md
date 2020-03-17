@@ -24,7 +24,7 @@ Please note: the channels above are not "please help" channels, and are used for
 
 ## I suspect there's an outage or service problem.
 
-If it's affecting your production instance, head on over to `#devops-sos` for some immediate attention.
+As above, check the available platform alerts and operations channels and please feel free to raise a suspected platform issue there.  (The `#devops-sos` is the **Everything is on FIRE** channel, that can be leveraged for emergency assistance.)
 
 Otherwise, go to our [Status Page](https://status.pathfinder.gov.bc.ca/d/homedashboard/bcgov-devhub-status-page) to check on the status of our services. 
 Make sure you scroll down to check the Operations Notices - if there's something there about this issue, the Platform Services team is aware and is working on it!
@@ -56,6 +56,5 @@ To that end, you'll want to include plenty of detail. Generally speaking, you sh
 4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
 
 Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure. 
-
 
 
