@@ -23,7 +23,7 @@ If you don't see an issue that suits your needs, what do you do?
 
 The answer to this question depends on what you're trying to do.
 
-###I'm looking for help building my application, deploying to OpenShift, using one of the platform services and/or help with an app on my computer.
+### I'm looking for help building my application, deploying to OpenShift, using one of the platform services and/or help with an app on my computer.
 
 We are a community-supported platform - that means you should look to the community! Checking the documentation for the specific application is a good start:
 * [Openshift Docs](https://docs.openshift.com/container-platform/3.11/welcome/index.html)
