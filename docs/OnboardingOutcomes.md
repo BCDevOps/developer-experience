@@ -73,7 +73,7 @@ We are here to help you as much as we can, but we take the community-supported s
 
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the platform. At the moment, these include:
 * RocketChat (https://chat.pathfinder.gov.bc.ca or download an app), on-prem hosted
-* Keycloak Single Sign-On and Federated Identity Service (https://sso.pathfinder.gov.bc.ca/), on-prem hosted
+* Keycloak Single Sign-On and Federated Identity Service (https://sso.pathfinder.gov.bc.ca/ and https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition#features--functions), on-prem hosted
 * Aporeto (coming in the new OCP 4 Platform in summer 2020), on-prem and SaaS components
 * Documize Document Management (https://docs.pathfinder.gov.bc.ca/), on-prem hosted, supports public and protected content
 * GitHub - online code management for open-source projects SaaS, all government repos are part of  the **bcgov** organization.
