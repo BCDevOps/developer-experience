@@ -76,7 +76,7 @@ One of our primary mandates is to provide the whole community with a suite of to
 * Keycloak Single Sign-On and Federated Identity Service (https://sso.pathfinder.gov.bc.ca/), on-prem hosted
 * Aporeto (coming in the new OCP 4 Platform in summer 2020), on-prem and SaaS components
 * Documize Document Management (https://docs.pathfinder.gov.bc.ca/), on-prem hosted, supports public and protected content
-* Github organizations (bcgov and BCDevOps)
+* GitHub - online code management for open-source projects SaaS, all government repos are part of  the **bcgov** organization.
 * ... and obviously the platform itself, Openshift.
 
 We are also working on rolling out new tools for the community to use. We are always interested in hearing recommendations for more - just make sure that, whatever you suggest, it's something that would be useful to the *community* and not just your team!
