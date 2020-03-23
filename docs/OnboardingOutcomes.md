@@ -96,7 +96,7 @@ Part of the community support model also means that teams can and should make su
 If your team makes a login script, it's very likely that such code would be useful to other teams. However, we also understand that making that code modular and generalized for use by other teams isn't always easy.
 To that end, we have a whole team dedicated to the creation of such components, as well as supporting teams who want to provide easy-to-use components to other teams.
 
-You can find them at #team-coco on RocketChat
+You can find them at #team-coco on RocketChat. They will be happy to work with you to help you find an existing component that meets your needs or help you refactor the code specific to your app into a common component that other teams can benefit from.
 
 ## Tips on asking for help on RocketChat (and anywhere else!)
 
