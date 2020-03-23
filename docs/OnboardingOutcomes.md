@@ -26,7 +26,7 @@ You're building the path that others will follow. That means that you will be ex
 
 ### A Community Supported Platform
 
-In short, this just means one thing: help each other. If you're having problems - with *anything* to do with being a DevOps team - your first stop for help should be the community.
+In short, this just means one thing: help each other. If you're having problems - with *anything* to do with being a DevOps team - **your first stop for help should be the community.**
 This refers to both the Developer Exchange community, and the larger development community on the web.
 
 When you're having a problem, your first stop should be to seek out the rest of the community. This probably means RocketChat (#devops-how-to is always a good place to start), and can also mean seeking out help from the community that exists around your chosen open-source tools on the wider web, as well.
@@ -108,5 +108,4 @@ To that end, you'll want to include plenty of detail. Generally speaking, you sh
 4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
 
 Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure. 
-
 
