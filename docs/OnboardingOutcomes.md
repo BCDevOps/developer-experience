@@ -74,7 +74,7 @@ We are here to help you as much as we can, but we take the community-supported s
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the platform. At the moment, these include:
 * RocketChat
 * Keycloak
-* Aporeto
+* Aporeto (coming in the new OCP 4 Platform in summer 2020), on-prem and SaaS components
 * Documize
 * Github organizations (bcgov and BCDevOps)
 * ... and obviously the platform itself, Openshift.
