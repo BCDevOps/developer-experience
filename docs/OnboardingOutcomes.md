@@ -86,7 +86,7 @@ We are also working on rolling out new tools for the community to use. We are al
 We support the platform, making sure that it works properly and that it is available for everyone to use. It is *not* tech support for the platform. Here's a good example of the difference:
 
 * If you're having problems getting your RocketChat application to work, that's a *community* support issue. Reach out to the community for help.
-* If you suspect that the RocketChat service is having an outage, that's a *platform* support issue.
+* If you suspect that the RocketChat service is having an outage, that's a *platform* support issue. Check out the Platform Services Status Page (https://status.pathfinder.gov.bc.ca) for outage updates.
 
 It is our responsibility to make sure that the services we provide are available and stable.
 
