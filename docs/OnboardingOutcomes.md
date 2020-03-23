@@ -75,7 +75,7 @@ One of our primary mandates is to provide the whole community with a suite of to
 * RocketChat (https://chat.pathfinder.gov.bc.ca or download an app), on-prem hosted
 * Keycloak Single Sign-On and Federated Identity Service (https://sso.pathfinder.gov.bc.ca/), on-prem hosted
 * Aporeto (coming in the new OCP 4 Platform in summer 2020), on-prem and SaaS components
-* Documize
+* Documize Document Management (https://docs.pathfinder.gov.bc.ca/), on-prem hosted, supports public and protected content
 * Github organizations (bcgov and BCDevOps)
 * ... and obviously the platform itself, Openshift.
 
