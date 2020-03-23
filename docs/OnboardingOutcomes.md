@@ -33,7 +33,7 @@ When you're having a non-urgent question or a problem, your first stop should be
 
 Use RocketChat's #devops-sos for urgent **production** issues only. 
 
-It also means that you should be keeping a close eye on rocketchat yourself, and offering support to other teams as they encounter problems. It's a two-way street!
+It also means that you should be keeping a close eye on Rocketchat yourself, and offering support to other teams as they encounter problems. It's a two-way street!
 
 If you're from elsewhere in government, this is probably a process that is different from what you're used to - normally, you'd call 7-7000 and someone else would swing in to fix it for you.
 Self-service cuts both ways: you have all kinds of freedom and flexibility, but it also means responsibility. The more you provide your support to others, the more others will be able to support you.
