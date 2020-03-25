@@ -72,9 +72,10 @@ A good question is more likely to get an answer - and they're likely to get a be
 To that end, you'll want to include plenty of detail. Generally speaking, you should include the following:
 
 1. **What are you trying to do?** Provide plenty of detail about exactly what you're hoping to achieve. What end result are you looking for?
-2. **How are you trying to do it?** Provide details about what you've already done to solve your problem and what tools you're using. If you're having problems logging into rocketchat, are you using IDIR or Github? Website or App? On Windows or Mac? Include all the details you can think of!
-3. **What kind of help do you want?** What is it that you're hoping the community can provide for you?
-4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
+2. **Where are you trying to do it?** Tell us about the context of the problem and the tools you're using. If you are having a problem with a specific pod in Openshift, **tell us the project and pod name**.
+3. **How are you trying to do it?** Provide details about what you've already done to solve your problem. If you're having problems logging into rocketchat, are you using IDIR or Github? Website or App? On Windows or Mac? Include all the details you can think of!
+4. **What kind of help do you want?** What is it that you're hoping the community can provide for you?
+5. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose - it's important for the community to know that, too!
 
 Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure. 
 
