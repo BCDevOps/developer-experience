@@ -37,9 +37,9 @@ Let us know if you think there are any missing from this list! :)
 If that doesn't help, your next stop should be `#devops-how-to` on Rocketchat. There are plenty of people in our 2000+ strong community who can offer their expertise!
 To find out if there is a current service alert or operational work that might be impacting your application, you can check the following:
 - https://status.pathfinder.gov.bc.ca
-- #bcdevops-alerts
-- #bcdevops-operations
-- #bcdevops-sos
+- `#bcdevops-alerts`
+- `#bcdevops-operations`
+- `#bcdevops-sos`
 
 Please note: the channels above are not "please help" channels, and are used for communication related to the platform itself (not individual application support).
 
