@@ -46,3 +46,58 @@ There are a large number of ways to organize your branches. We at the lab use a 
 Github Flow means that you have one master branch to which you never make direct edits. Instead, if you want to make a change, you make a branch. Each and every feature should make its own branch, and each branch should be made directly from the master branch.
 There is an amazing in-depth explanation (with graphics!) of Github Flow available [here](https://guides.github.com/introduction/flow/).
 
+In short, this means there are two things to keep in mind when you're making changes to things using git:
+1. Make a new branch for each new 'feature' you are adding.
+2. Always make your branch from master, rather than from another branch.
+
+When you're looking at branches that already exist and are wondering how to read them, keep these rules in mind as well - it will help you to understand what they are.
+
+Lastly, make sure your branch-name is very clear. Include: your name (or username), the type of change you're making (feature, bug-fix, etc), and a short but clear indication of the purpose of the branch.
+For example, this document was originally written under the branch name `cailey/docs/git-intro`. 
+
+## Installing git
+
+You can find a great walkthrough of how to install git on your preferred OS [here](https://www.atlassian.com/git/tutorials/install-git).
+
+This document will, for now, include instructions for only the terminal. GUI options may be added later. For now, if you plan to follow this doc, don't bother with the Sourcetree option.
+
+## Setting Up Your Local Machine
+
+You should start by finding a place to store your repositories. I highly recommend just creating a folder on your H: drive (or somewhere similar) called `repos`.
+
+Now, open your command prompt or terminal and navigate to your new folder!
+
+Once there, you can type `git --version` to make sure you have git installed properly.
+
+### How Do I Navigate the Terminal?!
+
+Like when you use Windows Explorer or Finder, you will find yourself in a specific folder when you're in the terminal, and you can move around from folder to folder using commands (instead of just clicking).
+
+* Typing `ls` on Mac or `dir` on Windows will show you what that folder contains.
+* Typing `cd [foldername]` will move you into that folder.
+* Typing `cd ..` will move you up one folder.
+
+So, assuming you put your repo in `H:\repos`, type `cd H:` and then `cd repos` to get into your new folder!
+
+## Getting a Repo
+
+First, before you can do anything to edit it, you'll need to download a repo onto your local machine. Begin by navigating to the repository you want on the github website.
+
+There, you'll find a big green button that says `Clone or Download`. When you click on that, make sure the popup window says "Clone with HTTPS" and then copy the address in the box.
+
+Now, return to your terminal (make sure you're in your repo folder!) and type `git clone [address you just copied]`
+It will probably look something like this: `git clone https://github.com/BCDevOps/nr-pipeline-ext.git`
+
+It may ask you to log into Github, and then you should see this:
+
+```
+Cloning into 'nr-pipeline-ext'...
+remote: Enumerating objects: 76, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (68/68), done.
+remote: Total 962 (delta 19), reused 21 (delta 6), pack-reused 886
+Receiving objects: 100% (962/962), 472.03 KiB | 1.84 MiB/s, done.
+Resolving deltas: 100% (623/623), done.
+```
+
+Congratulations, you just cloned your first git repo! Now type `ls` or `dir` to see the new folder with all the content in it!
