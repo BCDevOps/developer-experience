@@ -101,3 +101,85 @@ Resolving deltas: 100% (623/623), done.
 ```
 
 Congratulations, you just cloned your first git repo! Now type `ls` or `dir` to see the new folder with all the content in it!
+
+## Making A New Branch
+
+Begin by making sure that you've navigated into the project folder you cloned in the last step. Type `cd [repo-name]` to get into that folder if you haven't done so already.
+
+Whenever you want to start a new branch, you should begin by checking out the master branch. 
+When we say that a branch is **checked out**, this means that this is the branch you're currently working on.
+You want to check out master when making a new branch because this means that you are forking your branch from master, instead of from another branch. Remember that Github Flow dictates that you should always fork from master!
+If you've just cloned your repository, you won't need to do this, but let's cover it just in case you're returning to a repo you have already cloned.
+
+Type `git branch` to see a list of all the available branches. The one you currently have checked out will be highlighted, usually in yellow.
+
+If the highlighted branch is already master, then you can skip this step. Otherwise, type `git checkout master` to switch over to your master branch.
+
+Now type `git pull`. The **pull** command downloads all the updates that have been made to your current branch since the last time you pulled (or cloned). 
+It's important to pull often - this is how you make sure that your cloned repository is up-to-date with the one on Github!
+
+Now you're ready to make your new branch! Type `git checkout -b [branch-name]` to create a new branch and check it out at the same time.
+Remember to make your branch name highly descriptive (see the `Workflows and Branches` section for more details).
+
+## Making Edits
+
+Make sure that you've either made a new branch or have checked out an existing branch before you make your edits!
+
+Now, using either Windows Explorer or Finder, navigate to the file you want to change. 
+If you're planning to edit a markdown file of some kind (and any documentation or readmes on Github are written in markdown), you'll likely want to use a markdown editor. 
+You can use Notepad on Windows or TextEdit on Mac, but I would *highly* recommend finding a specialized markdown editor for this purpose. 
+I recommend [Typora](https://typora.io/) - it's very much like typing in Word.
+
+As you make your changes, git is aware that there have been edits made to specific files in the repo.
+You'll need to group your changes together into a **commit** - each commit is a snapshot of the whole repo, saving its state.
+Commits are how Github is able to give you the ability to revert to a previous version of the repository.
+
+In order to create a commit, make sure first that you navigate to the folder containing your cloned repository in command prompt or terminal. Then type the following:
+
+`git add .` to tell git "I want to add all the changed files to my next commit"
+
+`git commit -m 'comment'` to take all the changes and package them up into a single commit. 
+You'll need to fill in the comment yourself - you should provide here a concise (preferably 1 sentence) explanation of what changes are contained within this commit.
+
+You can (and should!) use commits liberally. Think of it like saving a Word document - every time you've done enough work to want to save it (like, say, every time you finish a section or paragraph), you should commit that work.
+
+Once you've made all your changes and saved them using your commits, you now need to **push** these changes back up to Github.
+This is the opposite of a pull - instead of downloading changes from Github to your local machine, you're uploading changes from your local machine to Github.
+Perform a push like this (make sure you've committed all your changes first!):
+
+`git push`
+
+Very simple! And that's it - your changes are now on Github!
+
+## Creating a Pull Request
+
+Of course, just uploading your changes to Github doesn't mean you're done *quite* yet. 
+Your changes are still on your personal branch - in order to make them official, you need to merge them to the master branch.
+You do this by submitting a Pull Request (often shortened to PR).
+
+So, once again, log onto Github on your browser and navigate to the repo you've just edited. You may notice that your changes aren't visible.
+This is because, when you first view a repo, you're looking at the master branch, and your changes aren't there yet.
+
+On about the middle of the page, you'll see a row of buttons. The left-most one should say `Branch: master` on it. Click on this button and it will reveal a list of all the branches that currently exist for this repository.
+If you click on your branch name, the button will update to say `Branch: your-branch-name` and you should see a button just to the right that says either `Create Pull Request` or `View #XXX`.
+If you see the `View` one, you've already made a PR for this branch. If you see the `Create Pull Request` button, click on it to get started.
+
+Either way, if you click on the button, it will take you to your pull request - either to view the one that already exists, or to create a new one.
+
+Make sure your PR has a clear title and a full description of everything you've changed.
+
+You'll also need to assign reviewers to your PR - on the right-hand side of the PR page, make sure there are names under the `Reviewers` section.
+If there isn't anyone listed there (some repos automatically assign reviewers, so you don't need to do this yourself), then click on the `Reviewer` heading and pick someone (preferably multiple someones) to review your changes.
+Presumably you know who would make an appropriate reviewer to this repo - it should be someone who owns the repository, or at least works very closely with it.
+
+If you're really not sure, go back to the repo 'homepage' (click on the Code tab near the top, under the repo title) and find the "Contributors" button to learn who contributes often to the repo. They would usually be a great pick for reviewer.
+
+Once you're finished, you need only to wait for them to make a review of your changes and approve it. 
+Keep an eye on your PRs by clicking on the `Pull Requests` button on the black bar that's at the top of every Github page.
+
+Often, you can expect your reviewer to provide feedback that must be actioned before your branch can be merged.
+If that happens, you can follow all the same steps from the `Making Edits` section all over again - just make sure that you're using the same branch!
+
+Once your reviewer has approved your branch, they may merge it for you or they may expect you to merge your own changes. Check with them if you're not sure what's expected - every team will use slightly different rules for this.
+
+And that's it! You've made your first edit to a Github repository! Congratulations :)
