@@ -149,6 +149,21 @@ Perform a push like this (make sure you've committed all your changes first!):
 
 `git push`
 
+The first time you do this, you'll get a message that looks like this:
+
+```
+fatal: The current branch branch-name has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch-name
+
+```
+
+This is just telling you that you are pushing a branch from your local machine that github doesn't have yet, and you need to issue a special command to create the branch on github as well as push your changes to it.
+The command you need has been provided; just copy-paste it to your command prompt or terminal and press enter.
+
+`git push --set-upstream origin branch-name`
+
 Very simple! And that's it - your changes are now on Github!
 
 ## Creating a Pull Request
