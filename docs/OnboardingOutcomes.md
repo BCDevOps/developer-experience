@@ -108,15 +108,14 @@ Part of the community support model also means that teams can and should make su
 
 You can find them at `#team-coco` on RocketChat
 
-## Final Tips: Asking for help (on RocketChat, or elsewhere!)
-
-A good question is more likely to get an answer - and it’s likely to get a better answer more quickly, too! To that end, you'll want to include plenty of detail:
-
-1. **What are you trying to do?** Provide full details about exactly what you're hoping to achieve. What end result are you looking for?
-2. **How are you trying to do it?** Provide full details about what you've already done to solve your problem and what tools you're using. If you're having problems logging into RocketChat, are you using IDIR or Github? Website or App? On Windows or Mac? Include all the details you can think of!
-3. **What kind of help do you want?** What is it that you're hoping the community can provide for you?
-4. **Why are you trying to do it?** Why is this important in the first place? Maybe there's another simpler way that can serve your purpose—it’s important for the community to know that, too!
-
-Granted, not all of these questions will apply to all problems, but err on the side of including more information if you're not sure.
-
 ## We thank you
+
+### Where to go from here
+
+We're working on a whole Onboarding Journey to guide you through this process and to point you at some particularly useful documentation to get started.
+
+But, in the meantime, here are some quick links to take you to some useful docs:
+
+* [RocketChat](https://developer.gov.bc.ca/Beginner-Guide-to-Developing-on-the-Platform/Leveraging-Rocket.Chat)
+* [How to Contribute to Devhub](https://developer.gov.bc.ca/topic/featured/Contributing-To-The-Devhub)
+* [Self-Service Tools](https://developer.gov.bc.ca/self-service-tools)
