@@ -74,7 +74,7 @@ Once there, you can type `git --version` to make sure you have git installed pro
 Like when you use Windows Explorer or Finder, you will find yourself in a specific folder when you're in the terminal, and you can move around from folder to folder using commands (instead of just clicking).
 
 * Typing `ls` on Mac or `dir` on Windows will show you what that folder contains.
-* Typing `cd [foldername]` will move you into that folder.
+* Typing `cd foldername` will move you into that folder.
 * Typing `cd ..` will move you up one folder.
 
 So, assuming you put your repo in `H:\repos`, type `cd H:` and then `cd repos` to get into your new folder!
@@ -85,7 +85,7 @@ First, before you can do anything to edit it, you'll need to download a repo ont
 
 There, you'll find a big green button that says `Clone or Download`. When you click on that, make sure the popup window says "Clone with HTTPS" and then copy the address in the box.
 
-Now, return to your terminal (make sure you're in your repo folder!) and type `git clone [address you just copied]`
+Now, return to your terminal (make sure you're in your repo folder!) and type `git clone address-you-just-copied`
 It will probably look something like this: `git clone https://github.com/BCDevOps/nr-pipeline-ext.git`
 
 It may ask you to log into Github, and then you should see this:
@@ -104,7 +104,7 @@ Congratulations, you just cloned your first git repo! Now type `ls` or `dir` to 
 
 ## Making A New Branch
 
-Begin by making sure that you've navigated into the project folder you cloned in the last step. Type `cd [repo-name]` to get into that folder if you haven't done so already.
+Begin by making sure that you've navigated into the project folder you cloned in the last step. Type `cd repo-name` to get into that folder if you haven't done so already.
 
 Whenever you want to start a new branch, you should begin by checking out the master branch. 
 When we say that a branch is **checked out**, this means that this is the branch you're currently working on.
@@ -118,7 +118,7 @@ If the highlighted branch is already master, then you can skip this step. Otherw
 Now type `git pull`. The **pull** command downloads all the updates that have been made to your current branch since the last time you pulled (or cloned). 
 It's important to pull often - this is how you make sure that your cloned repository is up-to-date with the one on Github!
 
-Now you're ready to make your new branch! Type `git checkout -b [branch-name]` to create a new branch and check it out at the same time.
+Now you're ready to make your new branch! Type `git checkout -b branch-name` to create a new branch and check it out at the same time.
 Remember to make your branch name highly descriptive (see the `Workflows and Branches` section for more details).
 
 ## Making Edits
