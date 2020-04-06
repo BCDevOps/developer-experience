@@ -1,4 +1,5 @@
 ---
+title: Welcome to our Platform Community!
 resourceType: Documentation
 personas: 
   - Developer
