@@ -21,6 +21,8 @@ The platform is adaptable and recoverable in a way that legacy architecture is n
 Still, there is always the possibility that something will affect the platform as a whole and will bring down the applications hosted there. 
 In those cases, speedy recovery becomes the order of the day. To that end, here's a checklist of what you should do to ensure your application recovers quickly and effectively in this situation.
 
+> ***NOTE***: This a living document. Any team that has any additional tips for how to build a resilient application and/or how to recover an application can and **should fork this doc and make updates!**
+
 ## Preventative Medicine
 
 There are a number of things you can do now to make sure that your application can be quickly and easily recovered in the event of an outage.
@@ -86,3 +88,40 @@ If you do have problems with your Jenkins installation, delete the slave pods an
 ### RabbitMQ
 
 If you're running rabbitMQ as part of your application, it may require manual intervention to restart in the case of outages that cause network issues. 
+
+## Keeping Track
+
+Chances are that, while helpful, this doc isn't going to be the ideal way for your team to keep up track of the specific things you'll want/need to do in order to ensure effective recovery from an outage.
+To that end, we recommend that you create an issue template in github for your application which details all the specific things that you'll need to check to feel secure that your outage is up and running.
+
+Here, you'll find an example of a github template to get you started.
+If/when your team finds something new to add to the template, don't forget to generalize it and bring it back her for others to use as well :)
+
+_If you choose to use this template, don't forget to change the name of the template and make sure the assignees are changed to your technical team!_
+
+```
+
+---
+name: Application Recovery Checklist
+title: 'Application Recovery Checklist [DATE]'
+labels: high-priority
+assignees: caggles, ShellyXueHan
+---
+
+## Deployments
+- [ ] Rocketchat pods (minimum 3) are up and communicating with the database.
+- [ ] Jenkins pods have been restarted.
+- [ ] BCBot has been restarted.
+
+## Stateful Sets
+- [ ] MongoDB pods are up, running, communicating with each other and with the application.
+
+## Routes
+- [ ] Is Rocketchat Prod available through it's normal route?
+- [ ] Fix route to re-point to the production instance if we've swapped over to the maintenace instance during this outage.
+
+## Backups
+- [ ] Manually run the recovery test script to make sure that the most recent backup is working.
+- [ ] Ensure that next scheduled backup occurs as expected.
+
+```
