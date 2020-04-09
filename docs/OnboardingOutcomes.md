@@ -34,7 +34,8 @@ In short, it means that the value you bring to our community is not just what yo
 
 Our Platform is supported by our community. Quite simply, this means: we help each other. **Your first stop for help should always be the community**. This refers to both the Developer Exchange community, and the larger development community on the web.
 
-* Don’t know what to do? Say it out loud to our community and chances are that someone who does know will offer help.
+* Stuck on a problem? Say it out loud to our community and chances are that someone who does know will offer help.
+* Getting started with our tools and have newbie questions? Research our shared documentation, ask a team member, or tap into the community channels for help (e.g., Rocket.Chat). ( _Pro tip: The Platform Services team provides the tools and our self-serve model means you work with each other to learn how to use them._ )
 * Holding onto a great idea, or have a brilliant answer? Contribute it and watch the community come together to evolve it.  
 
 As part of our community, you’ll need to keep a close eye on our communication channels (especially RocketChat) to contribute and offer support to other teams as they encounter problems. **The stronger we get as individuals, the stronger those around us become too**. 
@@ -81,7 +82,19 @@ Your team also should have a **Scrum Master** and at least one **DevOps Speciali
 
 We’re here for you as part of the Platform Services Community. We foster the love in our community-supported self-service model—and take it seriously—so let’s chat about what you should (and shouldn't!) expect the Platform Services Team to provide.
 
+### We Provide Platform Support
+
+We get up every morning to keep the lights on. Our focus (and passion!) is to make sure the Platform and tools are working properly and are available for everyone to use. That’s Platform support. What we don’t offer is tech support and troubleshooting for general user issues (have another look at `Community Support`, above, and `Community-Wide Tools`, below). 
+
+Here's a good example of the difference:
+
+* If you're having problems figuring out how get RocketChat working for you, that's a general troubleshooting issue that the community supports. Reach out to the community for help.
+* If you suspect that the RocketChat service is experiencing an outage, that's a Platform tool availability issue and requires Platform support. Reach out to the Platform Services Team for help.
+
+
 ### We Provide Community-Wide Tools
+
+If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the Platform Services team is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
 
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the Platform. At the moment, these include:
 
@@ -93,15 +106,6 @@ One of our primary mandates is to provide the whole community with a suite of to
 * ... and obviously the Platform itself: OpenShift.
 
 We’re also working on rolling out new tools for community use. And, we’re always interested in hearing recommendations for more—just be sure that, whatever you suggest, is something that would be useful to the entire community and not just your team!
-
-### We Provide Platform Support
-
-We get up every morning to keep the lights on. Our focus (and passion!) is to make sure the Platform and tools are working properly and are available for everyone to use. That’s Platform support. What we don’t offer is tech support and troubleshooting for general user issues (have another look at Community support, above). 
-
-Here's a good example of the difference:
-
-* If you're having problems figuring out how get RocketChat working for you, that's a general troubleshooting issue that the community supports. Reach out to the community for help.
-* If you suspect that the RocketChat service is experiencing an outage, that's a Platform tool availability issue and requires Platform support. Reach out to the Platform Services Team for help.
 
 ### We Strive for Common Components
 

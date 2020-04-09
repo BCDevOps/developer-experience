@@ -19,6 +19,8 @@ To that end, here is a quick and easy introduction to using git for our non-tech
 
 ## What is Git?
 
+Git and GitHub are **not the same thing**! So, what are the differences?
+
 Git is a version control system. It provides two key services to users:
 1. It allows multiple users to work on the same repository at the same time without (much) concern about interfering with each others' work.
 2. It allows users to view and return to previous versions of the repository.
@@ -29,6 +31,8 @@ In the BC Government, the vast majority of our repositories are each for one app
 **Github** is a place for people to store and share these repositories in one central location, allowing code (or other content) to be accessed quickly and easily across the whole team.
 Github is open-source, meaning that the public is able to view all of the content you put in your repository.
 All of the lab teams use Github to store their code. Being open-source is a requirement of being a part of the lab.
+
+So, to compare: git is a particular system for creating and using a repository, and GitHub is an online place where you can upload, download and share git-formatted repositories with other people.
 
 ## Workflows and Branches
 
