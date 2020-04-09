@@ -11,46 +11,89 @@ This Ansible Operator has been written for Artifactory to handle multi-tenancy, 
 ```
 $ tree
 .
-├── README.md
+├── artrepository-destroy.yml
+├── artrepository-main.yml
+├── artserviceacct-destroy.yml
+├── artserviceacct-main.yml
 ├── build
-│   ├── Dockerfile
-│   └── test-framework
-│       ├── ansible-test.sh
-│       └── Dockerfile
+│   ├── Dockerfile
+│   └── test-framework
+│       ├── ansible-test.sh
+│       └── Dockerfile
 ├── cleanup.md
 ├── deploy
-│   ├── crds
-│   │   ├── artifactory-cr-template.yaml
-│   │   ├── artifactoryrepo_v1alpha1_artifactoryrepo_crd.yaml
-│   │   ├── lab-ops-rolebinding.yaml
-│   │   └── team-type-locator.env
-│   ├── operator.yaml
-│   ├── role_binding.yaml
-│   ├── role.yaml
-│   └── service_account.yaml
+│   ├── clusterrole-artifactory-sa-aggregate.yaml
+│   ├── crds
+│   │   ├── artifactory-cr-template.yaml
+│   │   ├── artifactoryrepo_v1alpha1_artifactoryrepo_crd.yaml
+│   │   ├── jeff-docker-local.env
+│   │   ├── lab-ops-rolebinding.yaml
+│   │   └── team-type-locator.env
+│   ├── lab-operator-live.yaml
+│   ├── lab-operator.yaml
+│   ├── operator-tmpl.yaml
+│   ├── repo-role-binding.yaml
+│   ├── repo-role.yaml
+│   ├── sa-role-binding.yaml
+│   ├── sa-role.yaml
+│   └── service_account.yaml
 ├── images
-│   ├── admin-secret.png
-│   └── Artifactory-operator.png
+│   ├── admin-secret.png
+│   ├── Artifactory-operator.png
+│   ├── Artifactory-repo-automation.drawio
+│   └── Artifactory-repo-automation.png
+├── README.md
 ├── roles
-│   ├── artifactory
-│   │   ├── defaults
-│   │   │   └── main.yml
-│   │   ├── files
-│   │   │   └── repo.json
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   ├── meta
-│   │   │   └── main.yml
-│   │   ├── README.md
-│   │   ├── tasks
-│   │   │   └── main.yml
-│   │   └── vars
-│   │       └── main.yml
-│   └── main.yml
+│   ├── artifactory_repo
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── files
+│   │   │   └── repo.json
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── README.md
+│   │   ├── tasks
+│   │   │   ├── docker-local.yml
+│   │   │   ├── local.yml
+│   │   │   ├── main.yml
+│   │   │   ├── remote.yml
+│   │   │   └── virtual.yml
+│   │   ├── templates
+│   │   │   ├── artRepository-local.json.j2
+│   │   │   ├── artRepository-virtual.json.j2
+│   │   │   └── PermissionTargetV2.json.j2
+│   │   └── vars
+│   │       └── main.yml
+│   └── artifactory_serviceacct
+│       ├── defaults
+│       │   └── main.yml
+│       ├── files
+│       ├── handlers
+│       │   └── main.yml
+│       ├── meta
+│       │   └── main.yml
+│       ├── README.md
+│       ├── tasks
+│       │   └── main.yml
+│       ├── templates
+│       │   └── create_account.json.j2
+│       └── vars
+│           └── main.yml
+├── test
+│   ├── add-permission-user.yml
+│   ├── clean-test.yml
+│   ├── find-artifactorysa-obj.yml
+│   ├── test-vars-artifactoryRepo.yml
+│   ├── test-vars-artifactorySA.yml
+│   ├── test-vars-virtual.yml
+│   ├── token-tests.yml
+│   ├── UpdatePermissionTarget.json.j2
+│   └── user-auth-check.yml
 └── watches.yaml
-
-18 directories, 32 files
 ```
+
 #### Create Custom Resource Definition for Artifactory
 
 Cluster admin will be required to create the cluster wide CRD and associated role (for managing the CR objects).
@@ -65,20 +108,24 @@ $pwd
 Adding a cluster-rolebinding for the artifactory-admin role is not covered by this installation, but will be required for any accounts that will be managing the lifecycle of the CRs.
 A separate PR to add a cluster CR role to the bcdevex-admin team has been created in the devops-platform-operations-docs repo (PR-13)
 
-Admins must run the following:
+Admins must deploy the following using `oc apply` or `oc create`:
 
 ``` bash
-crds/crd-artifactoryrepo.yaml
-rbac/clusterrole-artifactory-operator.yaml
-rbac/clusterrole-artifactory-admin.yaml
-rbac/clusterrolebinding-artifactory-operator.yaml
-rbac/clusterrolebinding-artifactory-admins.yaml
+deploy/crds/crd-artifactoryrepo.yaml
+deploy/crds/crd-artifactorysa.yaml
+oc apply -f deploy/clusterrole-artifactory-aggregate.yaml
+oc apply -f deploy/clusterrole-artifactory-operator.yaml
+oc apply -f deploy/role-artifactory-operator.yaml
 ```
 
 example command to add this cluster-role to an account:
 
 ``` bash
-oc adm policy add-cluster-role-to-user artifactory-admin <username>
+oc adm policy add-cluster-role-to-user artifactory-cluster-operator system:serviceaccount:devops-artifactory:artifactory-operator
+
+oc adm policy add-cluster-role-to-user artifactory-object-admin system:serviceaccount:openshift:bcdevops-admin
+
+oc policy add-role-to-user artifactory-operator -z artifactory-operator -n devops-artifactory
 ```
 
 #### Build Operator Image
@@ -95,12 +142,6 @@ $ docker push <image-name>
 # ../oc-push-image.sh -i <image-name> -n <namespace> -r docker-registry.pathfinder.gov.bc.ca
 
 $ oc -n <namespace> tag <image-name>:latest <image-name>:v1-stable
-```
-
-Replace the image name in the Operator deployment:
-
-``` bash
-# vi deploy/operator.yaml
 ```
 
 ## How to run
@@ -120,7 +161,7 @@ In the project, confirm that the secret `artifactory-admin` exists with a passwo
 #### Deploy Artifactory Operator
 
 ``` bash
-oc apply -f deploy/operator.yaml
+oc process -f deploy/operator-tmpl.yaml -p ARTIFACTORY_BASE_DNS=artifacts.lab.pathfinder.gov.bc.ca -p IMAGE_TAG=v1-stable
 ```
 
 ## Creating Artifactory Custom Resources and Objects
@@ -179,3 +220,4 @@ Instead of service accounts, we could create non-user tokens and add them to spe
 
 Create artifactory "group" as an openshift service account idea.. then can generate 2 tokens and add them to separate "user" secrets.  update the artifactory-group object with the secret names in the status
 Can delete a secret, and have the operator delete the art token, and create a new one.
+
