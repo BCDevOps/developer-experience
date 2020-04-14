@@ -184,6 +184,10 @@ objects:
         securityContext: {}
         serviceAccountName: ${NAME}${SUFFIX}
         terminationGracePeriodSeconds: 0
+        volumes:
+        - name: postgresql
+          persistentVolumeClaim:
+            claimName: postgresql
     updateStrategy:
       type: RollingUpdate
     volumeClaimTemplates:
@@ -308,9 +312,8 @@ parameters:
   name: PVC_SIZE
   value: 1Gi
 - name: STORAGE_CLASS
-  value: gluster-block
+  value: netapp-block-standard
 - name: IMAGE_REGISTRY
-  #docker-registry.default.svc:5000
   value: docker-registry.default.svc:5000
 - description: The name of the secret
   displayName: Secret Name
