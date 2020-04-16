@@ -4,6 +4,7 @@ const setSwimlane = require('./swimlane');
 const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
 const averageTime = require('./averageTime');
+const onboardingComment = require('./onboarding')
 
 module.exports = (app) => {
 
@@ -22,7 +23,10 @@ module.exports = (app) => {
       await setMilestone(context);
 
       // set the swimlane in Zenhub to Operations
-      await setSwimlane(newIssue.number)
+      await setSwimlane(newIssue.number);
+
+      // create a link to the Onboarding Journey for new project sets
+      await onboardingComment(context);
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
