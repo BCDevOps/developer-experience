@@ -12,7 +12,7 @@ objects:
       app: ${ARTIFACTORY_NAME}-pv
     name: ${ARTIFACTORY_NAME}-artifactory-ha-data-pvc-0
   spec:
-    storageClassName: gluster-file-db
+    storageClassName: ${STORAGE_CLASS}
     accessModes: 
       - ReadWriteMany
     resources:
@@ -25,38 +25,12 @@ objects:
       app: ${ARTIFACTORY_NAME}-pv
     name: ${ARTIFACTORY_NAME}-artifactory-ha-backup-pvc
   spec:
-    storageClassName: gluster-file-db
+    storageClassName: ${STORAGE_CLASS}
     accessModes:
       - ReadWriteMany
     resources:
       requests:
         storage: ${ARTIFACTORY_BACKUP_PVC_SIZE}
-#- apiVersion: v1
-#  kind: PersistentVolumeClaim
-#  metadata:
-#    labels:
-#      app: ${ARTIFACTORY_NAME}-pv
-#    name: volume-${ARTIFACTORY_NAME}-artifactory-ha-primary-0
-#  spec:
-#    storageClassName: gluster-file
-#    accessModes:
-#      - ReadWriteOnce
-#    resources:
-#      requests:
-#        storage: ${ARTIFACTORY_SS_SIZE}
-#- apiVersion: v1
-#  kind: PersistentVolumeClaim
-#  metadata:
-#    labels:
-#      app: ${ARTIFACTORY_NAME}-pv
-#    name: volume-${ARTIFACTORY_NAME}-artifactory-ha-member-0
-#  spec:
-#    storageClassName: gluster-file
-#    accessModes:
-#      - ReadWriteOnce
-#    resources:
-#      requests:
-#        storage: ${ARTIFACTORY_SS_SIZE}
 
 parameters:
 - description: Artifactory name
@@ -72,3 +46,6 @@ parameters:
 - description: Artifactory statefulSet storage size
   name: ARTIFACTORY_SS_SIZE
   default: 5Gi
+- description: Storage class name
+  name: STORAGE_CLASS
+  required: true

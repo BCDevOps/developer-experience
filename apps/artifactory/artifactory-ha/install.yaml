@@ -1,0 +1,84 @@
+- hosts: localhost
+  vars_files:
+    vars.yaml
+  tasks:
+
+      # setup
+    - name: make sure we're in the artifactory namespace
+      command: >
+        oc project devops-artifactory
+
+      # make secrets
+    - name: process 00-artifactory-prereq
+      command: >
+        oc process -f ./00-artifactory-prereq.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: secrets_processed
+    - copy: content="{{ secrets_processed.stdout }}" dest=./processed/00-artifactory-prereq.json
+    - name: apply 00-artifactory-prereq
+      command: >
+        oc apply -f ./processed/00-artifactory-prereq.json
+
+      # make storage
+    - name: process 00-patroni-pgsql-prereq
+      command: >
+        oc process -f ./00-patroni-pgsql-prereq.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: storage_prereq_processed
+    - copy: content="{{ storage_prereq_processed.stdout }}" dest=./processed/00-patroni-pgsql-prereq.json
+    - name: apply 00-patroni-pgsql-prereq
+      command: >
+        oc apply -f ./processed/00-patroni-pgsql-prereq.json
+
+      # wait until they're done.
+    - pause:
+        prompt: "Hit enter to continue once the storage is fully provisioned"
+
+      # deploy patroni stateful set
+    - name: process 01-patroni-pgsql
+      command: >
+        oc process -f ./01-patroni-pgsql.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: storage_processed
+    - copy: content="{{ storage_processed.stdout }}" dest=./processed/01-patroni-pgsql.json
+    - name: apply 01-patroni-pgsql
+      command: >
+        oc apply -f ./processed/01-patroni-pgsql.json
+
+      # wait until they're done.
+    - pause:
+        prompt: "Hit enter to continue once the patroni stateful set is fully deployed"
+
+      # deploy artifactory stateful sets
+    - name: process 02-artifactory-ha-pre
+      command: >
+        oc process -f ./02-artifactory-ha-pre.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: pre_processed
+    - copy: content="{{ pre_processed.stdout }}" dest=./processed/02-artifactory-ha-pre.json
+    - name: apply 02-artifactory-ha-pre
+      command: >
+        oc apply -f ./processed/02-artifactory-ha-pre.json
+
+    - name: process 03a-artifactory-ha-primary
+      command: >
+        oc process -f ./03a-artifactory-ha-primary.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: primary_processed
+    - copy: content="{{ primary_processed.stdout }}" dest=./processed/03a-artifactory-ha-primary.json
+    - name: apply 03a-artifactory-ha-primary
+      command: >
+        oc apply -f ./processed/03a-artifactory-ha-primary.json
+
+    - name: process 03b-artifactory-ha-member
+      command: >
+        oc process -f ./03b-artifactory-ha-member.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: member_processed
+    - copy: content="{{ member_processed.stdout }}" dest=./processed/03b-artifactory-ha-member.json
+    - name: apply 03b-artifactory-ha-member
+      command: >
+        oc apply -f ./processed/03b-artifactory-ha-member.json
+
+    - name: process 04-artifactory-ha-post
+      command: >
+        oc process -f ./04-artifactory-ha-post.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: post_processed
+    - copy: content="{{ post_processed.stdout }}" dest=./processed/04-artifactory-ha-post.json
+    - name: apply 04-artifactory-ha-post
+      command: >
+        oc apply -f ./processed/04-artifactory-ha-post.json
