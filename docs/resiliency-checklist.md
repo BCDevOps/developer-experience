@@ -28,7 +28,7 @@ All you need to do is make sure that your application takes advantage of this th
 
 ### Set up your application to be Highly Available. 
 
-You should have multiple accessible pods running your application at once - three is the ideal minimum.
+You should have multiple accessible pods running your application at once - **three is the ideal minimum**.
 If any single pod fails, you will still have two other pods in operation while your broken pod recovers.
 In the case of most applications, this is relatively straight-forward and is covered in our Openshift 101 course.
 It can be a little more complicated to set up a highly available database, depending on your database of choice.
