@@ -31,7 +31,7 @@ Just keep an eye on the status and be ready to jump into action when the outage 
 
 ## Outage Recovery
 
-Once the platform is back up, the benefit of having such a resilient application (because you followed all the advice from the Preventative Medicine section!) is that there's a high chance everything will quickly recover on its own.
+Once the platform is back up, the benefit of having such a resilient application (see our Resiliency Checklist for details!) is that there's a high chance everything will quickly recover on its own.
 However, there are a few things that should be additionally checked to make sure everything is working as expected once the outage is over.
 
 ### Pods
