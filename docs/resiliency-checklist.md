@@ -32,7 +32,7 @@ You should have multiple accessible pods running your application at once - thre
 If any single pod fails, you will still have two other pods in operation while your broken pod recovers.
 In the case of most applications, this is relatively straight-forward and is covered in our Openshift 101 course.
 It can be a little more complicated to set up a highly available database, depending on your database of choice.
-If you're looking to use Postgres, check out Patroni - an open-source, highly-available version of Postgres for use on containerized platforms.
+If you're looking to use Postgres, check out [Patroni](https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni) - an open-source, highly-available version of Postgres for use on containerized platforms.
 
 ### Ensure all of your containers have appropriate health checks. 
 
