@@ -45,6 +45,7 @@ It's also an important part of making sure that the pod restarts on another node
 If data recovery is necessary, having access to regularly updated off-site data is key to that process.
 You'll also want to  script the recovery of those databases regularly. 
 Scripting your data recovery can often mean the difference between bringing your application back up in 5 minutes or 5 hours.
+If you're using Patroni or MongoDB, there is a [backup-container](https://github.com/BCDevOps/backup-container) application developed by and for the community that can help you get started.
 
 ### Follow implementation-as-code best practices. 
 
