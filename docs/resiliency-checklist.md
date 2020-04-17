@@ -21,7 +21,7 @@ If a node needs to go down for patching purposes, a correctly designed applicati
 ## What does "Correctly Designed" mean?
 
 In order to take advantage of this feature of the cluster, the development team will have to take a design approach that's a little different from legacy design methods.
-In short, this means that your application needs to be highly available - it should have multiple pods running simultaneously on different nodes. That way, if one pod goes down (because, for example, it was running on a node that is being evacuated for patching), the others - which will be on different nodes - will continue to chug along without issue.
+In short, this means that your application needs to be **highly available** - it should have multiple pods running simultaneously on different nodes. That way, if one pod goes down (because, for example, it was running on a node that is being evacuated for patching), the others - which will be on different nodes - will continue to chug along without issue and none of your end users will even notice.
 This means that the pod that went down can restart automatically on another pod, and none of your end users will even notice.
 
 All you need to do is make sure that your application takes advantage of this through some specific design requirements:
