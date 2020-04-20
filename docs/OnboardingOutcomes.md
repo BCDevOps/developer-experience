@@ -26,6 +26,8 @@ You’re here to explore a new, more digital government. You’re building the p
 
 Try. Experiment. Iterate. Fail. Try again. Change the world, together.
 
+We’re better together. The Platform Services team and Delivery teams share a mutually symbiotic relationship with interwoven dependencies.  While the Platform team takes the lead on infrastructure stability and continual improvement of services, Delivery teams are responsible for developing and operationalizing resilient applications for the OpenShift Platform.
+
 ## What this means for you
 
 In short, it means that the value you bring to our community is not just what you take away for yourself, but what you give back. **Your value is determined by what you do for others**. You get to work with a sense of purpose, cause and belief as you contribute to something even bigger than your own project. Not bad for a paid gig.
