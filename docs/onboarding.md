@@ -25,3 +25,12 @@ Platform Patterns:
 - the application(s) can be built by vendors but require atleast 1 BC Gov employee with administrator access to the namespace set
 - the team is provided a namespace/project set of __four__ named `dev`, `test`, `prod`, and `tools`.
 - the team is encouraged to take training to learn more about the platform (Openshift 101/201)
+
+
+Communication:
+- [Rocket.Chat](https://chat.pathfinder.gov.bc.ca) is the primary means of communications, platform updates, troubleshooting
+- [Status Page](https://status.developer.gov.bc.ca) is the primary status keeper of platform supported tools
+
+
+### How Do I Book an Alignment Meeting?
+
