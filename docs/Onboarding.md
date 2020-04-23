@@ -1,3 +1,14 @@
+---
+description: Learn how to get started with the Openshift platform
+tags:
+- platform services
+- alignment
+- new project set
+- new namespace set
+- provisioning
+- start
+- new
+---
 ## Onboarding to the Platform
 
 Whether you have a team or not, the first step in your journey to delivering apps in the platform is a 30 minute in-person (or online) 
@@ -32,7 +43,7 @@ Communication:
 - [Rocket.Chat](https://chat.pathfinder.gov.bc.ca) is the primary means of communications, platform updates, troubleshooting
 - [Status Page](https://status.developer.gov.bc.ca) is the primary status keeper of platform supported tools
 
-
+More detail can be found in [Onboarding Outcomes](./OnboardingOutcomes.md)
 ### How Do I Book an Alignment Meeting?
 
 To start the alignment meeting process, [make an Openshift Project Set Request](https://github.com/bcdevops/devops-requests/issues/choose) and fill out the details. You will be contacted by the platform team to schedule an alignment meeting after. 
