@@ -24,6 +24,7 @@ Platform Patterns:
 - the application(s) must have a dedicated team and product owner for its operating lifetime
 - the application(s) can be built by vendors but require atleast 1 BC Gov employee with administrator access to the namespace set
 - the team is provided a namespace/project set of __four__ named `dev`, `test`, `prod`, and `tools`.
+- each namespace has dedicated quota in the form of memory, cpu, and storage
 - the team is encouraged to take training to learn more about the platform (Openshift 101/201)
 
 
@@ -34,3 +35,4 @@ Communication:
 
 ### How Do I Book an Alignment Meeting?
 
+To start the alignment meeting process, [make an Openshift Project Set Request](https://github.com/bcdevops/devops-requests/issues/choose) and fill out the details. You will be contacted by the platform team to schedule an alignment meeting after. 
