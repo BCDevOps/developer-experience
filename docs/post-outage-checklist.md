@@ -3,14 +3,11 @@ title: Post-Outage Application Health Checklist
 resourceType: Documentation
 personas: 
   - Developer
-  - Product Owner
-  - Designer
 tags:
   - openshift
-  - new
-  - onboarding
-  - project set
   - devops
+  - outage
+  - recovery
 description: In the event of a problem with the platform, follow this checklist to ensure that your application recovers correctly.
 ---
 
@@ -23,36 +20,7 @@ In those cases, speedy recovery becomes the order of the day. To that end, here'
 
 > ***NOTE***: This a living document. Any team that has any additional tips for how to build a resilient application and/or how to recover an application can and **should fork this doc and make updates!**
 
-## Preventative Medicine
-
-There are a number of things you can do now to make sure that your application can be quickly and easily recovered in the event of an outage.
-There's truth in the adage that one minute of work now saves one hour of work later!
-
-### Ensure all of your containers have appropriate health checks. 
-
-A health check is a simple script that activates on a schedule. 
-If the expected response does not return in a certain amount of time, the container can be restarted, which often is enough to fix whatever issue has caused the application to fail.
-
-### Ensure you have regular backups taken of your database(s). 
-
-If data recovery is necessary, having access to regularly updated off-site data is key to that process.
-You'll also want to  script the recovery of those databases regularly. 
-Scripting your data recovery can often mean the difference between bringing your application back up in 5 minutes or 5 hours.
-
-### Follow implementation-as-code best practices. 
-
-The deployment scripts should be kept up-to-date in your Github repo. 
-If you need to recover by rebuilding from Github, keeping these scripts up-to-date means that you can have your application up and running again nearly at the push of a button, instead of having to fiddle with settings.
-
-### Set up your application to be Highly Available. 
-
-In short, this means you should have multiple accessible pods running your application at once - three is the ideal minimum.
-If any single pod fails, you will still have two other pods in operation while your broken pod recovers.
-In the case of most applications, this is relatively straight-forward and is covered in our Openshift 101 course.
-It can be a little more complicated to set up a highly available database, depending on your database of choice.
-If you're looking to use Postgres, check out Patroni - an open-source, highly-available version of Postgres for use on containerized platforms.
-
-## In The Heat of the Moment
+## During the Outage
 
 The application is down! What now?
 
@@ -61,10 +29,15 @@ If you can't access rocketchat, try our off-site [status page](https://status.de
 We'll keep the community informed about the status of the outage. There isn't much for our teams to do while the outage is in progress.
 Just keep an eye on the status and be ready to jump into action when the outage is over!
 
-## Rest and Recovery
+## Outage Recovery
 
-Once the platform is back up, the benefit of having such a resilient application (because you followed all the advice from the Preventative Medicine section!) is that there's a high chance everything will quickly recover on its own.
+Once the platform is back up, the benefit of having such a resilient application (see our Resiliency Checklist for details!) is that there's a high chance everything will quickly recover on its own.
 However, there are a few things that should be additionally checked to make sure everything is working as expected once the outage is over.
+
+### Check Your App
+
+The first thing to do here is simply to try to connect to your app and see if it's up. If it is - if an initial check of functionality suggests that all is well - then there's nothing more for you to do.
+You may, of course, wish to check on these individual steps as a matter of course, but you shouldn't act to do anything like restart pods unless there's a reason to do so.
 
 ### Pods
 
@@ -72,6 +45,15 @@ You can generally expect that your pods will all scale back up on their own, onc
 If it hasn't, this may indicate a problem with your deployment-config or with your health checks.
 If you're having problems connecting to your application and your pods look healthy, restarting them is a good first place to start.
 If that works, that indicates that you may need to build a more complex and robust health check for the pods in question.
+
+#### Crash Loop Backoff
+This error usually indicates a problem with your application - it is repeatedly attempting to boot and failing.
+Your application logs should have more information and may provide further information about how to fix this issue.
+
+#### Image Pull Backoff
+This error generally indicates that the pod is having trouble getting to the image it needs to spin up.
+This is usually an indication that there is still a problem with the cluster (check RocketChat or the status page) or with your image (check that it still exists and hasn't been corrupted).
+Rebuilding your image may be a good first place to start.
 
 ### Routes
 
