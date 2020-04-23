@@ -58,3 +58,6 @@ The design needs for a highly available chat application are very different from
 
 This is where the community comes in - if you have a highly available application, please feel free to fork this document and add links to examples from your application (along with information about your stack and any explanations you feel might be necessary).
 The more you reach out to help your fellow developer, the stronger a community we will be!
+
+And it's very important to remember that we in the BC Government are part of a larger, international community of developers working to create better and more resilient applications.
+There are a lot of great resources available on the broader internet that we could never hope to match on our own. A great place to start when looking into these resources would be https://12factor.net/.
