@@ -21,16 +21,16 @@ If a node needs to go down for patching purposes, a correctly designed applicati
 ## What does "Correctly Designed" mean?
 
 In order to take advantage of this feature of the cluster, the development team will have to take a design approach that's a little different from legacy design methods.
-In short, this means that your application needs to be highly available - it should have multiple pods running simultaneously on different nodes. That way, if one pod goes down (because, for example, it was running on a node that is being evacuated for patching), the others - which will be on different nodes - will continue to chug along without issue.
-This means that the pod that went down can restart automatically on another pod, and none of your end users will even notice.
+In short, this means that your application needs to be **highly available** - it should have multiple pods running simultaneously on different nodes. That way, if one pod goes down (because, for example, it was running on a node that is being evacuated for patching), the others - which will be on different nodes - will continue to chug along without issue and none of your end users will even notice.
+The pod that went down will restart automatically on another node.
 
 All you need to do is make sure that your application takes advantage of this through some specific design requirements:
 
 ### Set up your application to be Highly Available. 
 
-You should have multiple accessible pods running your application at once - three is the ideal minimum.
+You should have multiple accessible pods running your application at once - **three is the ideal minimum**.
 If any single pod fails, you will still have two other pods in operation while your broken pod recovers.
-In the case of most applications, this is relatively straight-forward and is covered in our Openshift 101 course.
+In the case of most applications, this is relatively straight-forward and is covered in our [Openshift 101](https://developer.gov.bc.ca/ExchangeLab-Course:-Openshift-101) course.
 It can be a little more complicated to set up a highly available database, depending on your database of choice.
 If you're looking to use Postgres, check out [Patroni](https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni) - an open-source, highly-available version of Postgres for use on containerized platforms.
 
@@ -42,7 +42,7 @@ If the expected response does not return in a certain amount of time, the contai
 ### Ensure you have regular backups taken of your database(s). 
 
 If data recovery is necessary, having access to regularly updated off-site data is key to that process.
-You'll also want to  script the recovery of those databases regularly. 
+You'll also want to script the recovery of those databases regularly. 
 Scripting your data recovery can often mean the difference between bringing your application back up in 5 minutes or 5 hours.
 If you're using Patroni or MongoDB, there is a [backup-container](https://github.com/BCDevOps/backup-container) application developed by and for the community that can help you get started.
 
