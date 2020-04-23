@@ -34,12 +34,26 @@ Just keep an eye on the status and be ready to jump into action when the outage 
 Once the platform is back up, the benefit of having such a resilient application (see our Resiliency Checklist for details!) is that there's a high chance everything will quickly recover on its own.
 However, there are a few things that should be additionally checked to make sure everything is working as expected once the outage is over.
 
+### Check Your App
+
+The first thing to do here is simply to try to connect to your app and see if it's up. If it is - if an initial check of functionality suggests that all is well - then there's nothing more for you to do.
+You may, of course, wish to check on these individual steps as a matter of course, but you shouldn't act to do anything like restart pods unless there's a reason to do so.
+
 ### Pods
 
 You can generally expect that your pods will all scale back up on their own, once the outage is over. However, it's still a good idea to ensure that this has occurred as expected.
 If it hasn't, this may indicate a problem with your deployment-config or with your health checks.
 If you're having problems connecting to your application and your pods look healthy, restarting them is a good first place to start.
 If that works, that indicates that you may need to build a more complex and robust health check for the pods in question.
+
+#### Crash Loop Backoff
+This error usually indicates a problem with your application - it is repeatedly attempting to boot and failing.
+Your application logs should have more information and may provide further information about how to fix this issue.
+
+#### Image Pull Backoff
+This error generally indicates that the pod is having trouble getting to the image it needs to spin up.
+This is usually an indication that there is still a problem with the cluster (check RocketChat or the status page) or with your image (check that it still exists and hasn't been corrupted).
+Rebuilding your image may be a good first place to start.
 
 ### Routes
 
