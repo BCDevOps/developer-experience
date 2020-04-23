@@ -38,7 +38,6 @@ If you're looking to use Postgres, check out [Patroni](https://github.com/BCDevO
 
 A health check is a simple script that activates on a schedule. 
 If the expected response does not return in a certain amount of time, the container can be restarted, which often is enough to fix whatever issue has caused the application to fail.
-It's also an important part of making sure that the pod restarts on another node, if necessary.
 
 ### Ensure you have regular backups taken of your database(s). 
 
