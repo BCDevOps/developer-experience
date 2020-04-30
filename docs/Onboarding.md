@@ -1,13 +1,13 @@
 ---
 description: Learn how to get started with the Openshift platform
 tags:
-- platform services
-- alignment
-- new project set
-- new namespace set
-- provisioning
-- start
-- new
+  - platform services
+  - alignment
+  - new project set
+  - new namespace set
+  - provisioning
+  - start
+  - new
 ---
 ## Onboarding to the Platform
 
