@@ -1,5 +1,5 @@
 ---
-title: Resiliency Checklist
+title: Resiliency Guidelines
 resourceType: Documentation
 personas: 
   - Developer
@@ -12,7 +12,7 @@ tags:
 description: How to design your application to have as much uptime as possible.
 ---
 
-# Resiliency Checklist
+# Resiliency Guidelines
 
 One of the most amazing benefits of working on the Openshift Platform is that, when your application has been designed with a few key ideas in mind, you can avoid many of the regular outages that are almost unavoidable on legacy infrastructure.
 All that time you used to spend with your application down because you needed to patch a server? Gone.
