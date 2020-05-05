@@ -127,7 +127,7 @@ You can find them at `#team-coco` on RocketChat
 
 ### Where to go from here
 
-We're working on a whole Onboarding Journey to guide you through this process and to point you at some particularly useful documentation to get started.
+We're working on a whole [Onboarding Journey](https://developer.gov.bc.ca/Onboarding-Journey) to guide you through this process and to point you at some particularly useful documentation to get started.
 
 But, in the meantime, here are some quick links to take you to some useful docs:
 
