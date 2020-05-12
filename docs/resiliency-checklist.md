@@ -31,6 +31,10 @@ All you need to do is make sure that your application takes advantage of this th
 Monitoring a alerting to issues are key! Regardless of the effort you put into availability and robustness, things happen.
 Your ability to respond to things in a timely manner may be the single most effective tool at your disposal to make sure that your application is up.
 
+Monitoring can be performed through health checks - these are scripts which check for a certain outcome on your pod, and can alert you if the expected outcome doesn't occur.
+They can be a great first indicator of problems, and can also cause the pod to restart on its own, which may be enough to fix the issue without requiring your intervention.
+
+There are other options for monitoring as well, but these often vary depending on the specific nature of the project/application in question.
 
 ### Set up your application to be Highly Available!
 
