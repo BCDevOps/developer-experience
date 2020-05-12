@@ -1,0 +1,45 @@
+artifactory:
+  name: "artifactory"
+  masterKey: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
+  joinKey: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
+  primary:
+    resources:
+      requests:
+        memory: "2Gi"
+        cpu: "2"
+      limits:
+        memory: "3Gi"
+        cpu: "3"
+    javaOpts:
+      xms: "2g"
+      xmx: "2g"
+  node:
+    replicaCount: 0
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "1"
+      limits:
+        memory: "2Gi"
+        cpu: "2"
+    javaOpts:
+      xms: "2g"
+      xmx: "2g"
+  uid: 1000680000
+  persistence:
+    name: artifactory
+    size: 10Gi
+securityContext:
+  enabled: true
+  fsGroup: 1000680000
+  runAsUser: 1000680000
+postgresql:
+  enabled: true
+  persistence:
+    enabled: true
+    size: 10Gi
+nginx:
+  enabled: false
+#  uid: 1000680000
+#  gid: 1000680000
+

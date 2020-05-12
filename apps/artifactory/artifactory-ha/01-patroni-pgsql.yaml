@@ -40,31 +40,6 @@ objects:
     type: ClusterIP
   status:
     loadBalancer: {}
-#- apiVersion: v1
-#  kind: Service
-#  metadata:
-#    creationTimestamp: null
-#    labels:
-#      cluster-name: ${NAME}${SUFFIX}
-#    name: ${NAME}-replica${SUFFIX}
-#  spec:
-#    ports:
-#    - port: 5432
-##      name: 'postgresql'
-#      protocol: TCP
-#      targetPort: 5432
-#    selector:
-#      cluster-name: ${NAME}${SUFFIX}
-#      app.kubernetes.io/name: patroni
-#      role: replica
-#    sessionAffinity: None
-#    type: ClusterIP
-#  status:
-#    loadBalancer: {}
-# - apiVersion: v1
-#   kind: ConfigMap
-#   metadata:
-#     name: ${NAME}${SUFFIX}-leader
 - apiVersion: v1
   kind: ConfigMap
   metadata:
@@ -130,15 +105,6 @@ objects:
               fieldRef:
                 apiVersion: v1
                 fieldPath: status.podIP
-#          - name: PATRONI_KUBERNETES_USE_ENDPOINTS
-#            value: 'true'
-#          - name: PATRONI_KUBERNETES_POD_IP
-#            valueFrom:
-#              fieldRef:
-#                apiVersion: v1
-#                fieldPath: status.podIP
-#          - name: PATRONI_KUBERNETES_PORTS
-#            value: '{[{"name": "postgresql", "port": 5432}]}'
           - name: PATRONI_KUBERNETES_NAMESPACE
             valueFrom:
               fieldRef:

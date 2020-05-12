@@ -1,0 +1,881 @@
+---
+# Source: artifactory-ha/templates/artifactory-serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+  name: artifactory-ha
+---
+# Source: artifactory-ha/charts/postgresql/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: artifactory-ha-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.7.3
+    release: "artifactory-ha"
+    heritage: "Helm"
+type: Opaque
+data:
+  postgresql-password: "TUl1aTJZRWlocQ=="
+---
+# Source: artifactory-ha/templates/artifactory-binarystore-secret.yaml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: artifactory-ha-binarystore
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    heritage: Helm
+    release: artifactory-ha
+stringData:
+  binarystore.xml: |-
+    
+    <!-- File system replication -->
+    <config version="2">
+        <chain>
+            <provider id="cache-fs" type="cache-fs">
+                <provider id="sharding-cluster" type="sharding-cluster">
+                    <readBehavior>crossNetworkStrategy</readBehavior>
+                    <writeBehavior>crossNetworkStrategy</writeBehavior>
+                    <redundancy>3</redundancy>
+                    <lenientLimit>2</lenientLimit>
+                    <minSpareUploaderExecutor>2</minSpareUploaderExecutor>
+                    <sub-provider id="state-aware" type="state-aware"/>
+                    <dynamic-provider id="remote" type="remote"/>
+                    <property name="zones" value="local,remote"/>
+                </provider>
+            </provider>
+        </chain>
+    
+        <provider id="cache-fs" type="cache-fs">
+            <maxCacheSize>5e+10</maxCacheSize>
+            <cacheProviderDir>cache</cacheProviderDir>
+        </provider>
+    
+        <!-- Shards add local file-system provider configuration -->
+        <provider id="state-aware" type="state-aware">
+            <fileStoreDir>shard-fs-1</fileStoreDir>
+            <zone>local</zone>
+        </provider>
+    
+        <!-- Shards dynamic remote provider configuration -->
+        <provider id="remote" type="remote">
+            <checkPeriod>30</checkPeriod>
+            <serviceId>tester-remote1</serviceId>
+            <timeout>10000</timeout>
+            <zone>remote</zone>
+            <property name="header.remote.block" value="true"/>
+        </provider>
+    </config>
+---
+# Source: artifactory-ha/templates/artifactory-secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: artifactory-ha
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    heritage: Helm
+    release: artifactory-ha
+type: Opaque
+stringData:
+  master-key: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
+---
+# Source: artifactory-ha/templates/artifactory-system-yaml.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: artifactory-ha-artifactory-ha-primary-system-yaml
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+type: Opaque
+stringData:
+  system.yaml: |
+    shared:
+      logging:
+        consoleLog:
+          enabled: false
+      extraJavaOpts: >
+        -Dartifactory.async.corePoolSize=16
+      database:
+        type: postgresql
+        url: "jdbc:postgresql://artifactory-ha-postgresql:5432/artifactory"
+        host: ""
+        driver: org.postgresql.Driver
+        username: "artifactory"
+      
+    artifactory:
+      database:
+        maxOpenConnections: 80
+    access:
+      database:
+        maxOpenConnections: "80"
+---
+# Source: artifactory-ha/charts/postgresql/templates/extended-config-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: artifactory-ha-postgresql-extended-configuration
+  labels:
+    app: postgresql
+    chart: postgresql-8.7.3
+    release: "artifactory-ha"
+    heritage: "Helm"
+data:
+
+  override.conf: |
+    listen_addresses='*'
+    max_connections=1500
+---
+# Source: artifactory-ha/templates/artifactory-installer-info.yaml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: artifactory-ha-installer-info
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    heritage: Helm
+    release: artifactory-ha
+data:
+  installer-info.json: |
+    {"productId": "Helm_artifactory-ha/2.4.6", "features": [ { "featureId": "Platform/kubernetes"}]}
+---
+# Source: artifactory-ha/templates/artifactory-role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+  name: artifactory-ha
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - services
+  - endpoints
+  - pods
+  verbs:
+  - get
+  - watch
+  - list
+---
+# Source: artifactory-ha/templates/artifactory-rolebinding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+  name: artifactory-ha
+subjects:
+- kind: ServiceAccount
+  name: artifactory-ha
+roleRef:
+  kind: Role
+  apiGroup: rbac.authorization.k8s.io
+  name: artifactory-ha
+---
+# Source: artifactory-ha/charts/postgresql/templates/svc-headless.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: artifactory-ha-postgresql-headless
+  labels:
+    app: postgresql
+    chart: postgresql-8.7.3
+    release: "artifactory-ha"
+    heritage: "Helm"
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - name: tcp-postgresql
+      port: 5432
+      targetPort: tcp-postgresql
+  selector:
+    app: postgresql
+    release: "artifactory-ha"
+---
+# Source: artifactory-ha/charts/postgresql/templates/svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: artifactory-ha-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.7.3
+    release: "artifactory-ha"
+    heritage: "Helm"
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-postgresql
+      port: 5432
+      targetPort: tcp-postgresql
+  selector:
+    app: postgresql
+    release: "artifactory-ha"
+    role: master
+---
+# Source: artifactory-ha/templates/artifactory-service.yaml
+# Service for all Artifactory cluster nodes.
+apiVersion: v1
+kind: Service
+metadata:
+  name: artifactory-ha
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8082
+    targetPort: 8082
+    protocol: TCP
+    name: router
+  - port: 8081
+    targetPort: 8081
+    protocol: TCP
+    name: artifactory
+  selector:
+    role: artifactory-ha-artifactory-ha-member
+    app: artifactory-ha
+    component: "artifactory-ha"
+    release: artifactory-ha
+---
+# Source: artifactory-ha/templates/artifactory-service.yaml
+# Internal service for Artifactory primary node only!
+# Used by member nodes to check readiness of primary node before starting up
+apiVersion: v1
+kind: Service
+metadata:
+  name: artifactory-ha-artifactory-ha-primary
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8082
+    targetPort: 8082
+    protocol: TCP
+    name: router
+  - port: 8081
+    targetPort: 8081
+    protocol: TCP
+    name: artifactory
+  selector:
+    role: artifactory-ha-artifactory-ha-primary
+    app: artifactory-ha
+    component: "artifactory-ha"
+    release: artifactory-ha
+---
+# Source: artifactory-ha/charts/postgresql/templates/statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: artifactory-ha-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.7.3
+    release: "artifactory-ha"
+    heritage: "Helm"
+spec:
+  serviceName: artifactory-ha-postgresql-headless
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: postgresql
+      release: "artifactory-ha"
+      role: master
+  template:
+    metadata:
+      name: artifactory-ha-postgresql
+      labels:
+        app: postgresql
+        chart: postgresql-8.7.3
+        release: "artifactory-ha"
+        heritage: "Helm"
+        role: master
+    spec:      
+      securityContext:
+        fsGroup: 1000680000
+      containers:
+        - name: artifactory-ha-postgresql
+          image: docker.bintray.io/bitnami/postgresql:9.6.17-debian-10-r72
+          imagePullPolicy: "IfNotPresent"
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+          securityContext:
+            runAsUser: 1000680000
+          env:
+            - name: BITNAMI_DEBUG
+              value: "false"
+            - name: POSTGRESQL_PORT_NUMBER
+              value: "5432"
+            - name: POSTGRESQL_VOLUME_DIR
+              value: "/bitnami/postgresql"
+            - name: PGDATA
+              value: "/bitnami/postgresql/data"
+            - name: POSTGRES_USER
+              value: "artifactory"
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: artifactory-ha-postgresql
+                  key: postgresql-password
+            - name: POSTGRES_DB
+              value: "artifactory"
+            - name: POSTGRESQL_ENABLE_LDAP
+              value: "no"
+          ports:
+            - name: tcp-postgresql
+              containerPort: 5432
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - exec pg_isready -U "artifactory" -d "artifactory" -h 127.0.0.1 -p 5432
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
+          readinessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - -e
+                - |
+                  exec pg_isready -U "artifactory" -d "artifactory" -h 127.0.0.1 -p 5432
+                  [ -f /opt/bitnami/postgresql/tmp/.initialized ] || [ -f /bitnami/postgresql/.initialized ]
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
+          volumeMounts:
+            - name: postgresql-extended-config
+              mountPath: /bitnami/postgresql/conf/conf.d/
+            - name: dshm
+              mountPath: /dev/shm
+            - name: data
+              mountPath: /bitnami/postgresql
+              subPath: 
+      volumes:
+        - name: postgresql-extended-config
+          configMap:
+            name: artifactory-ha-postgresql-extended-configuration
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 1Gi
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes:
+          - "ReadWriteOnce"
+        resources:
+          requests:
+            storage: "10Gi"
+---
+# Source: artifactory-ha/templates/artifactory-node-statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: artifactory-ha-artifactory-ha-member
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    heritage: Helm
+    release: artifactory-ha
+spec:
+  serviceName: artifactory-ha-artifactory-ha-member
+  replicas: 0
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: artifactory-ha
+      role: artifactory-ha-artifactory-ha-member
+      release: artifactory-ha
+  template:
+    metadata:
+      labels:
+        app: artifactory-ha
+        chart: artifactory-ha-2.4.6
+        role: artifactory-ha-artifactory-ha-member
+        heritage: Helm
+        component: artifactory-ha
+        release: artifactory-ha
+      annotations:
+        checksum/binarystore: e9cd76c12b40e8b28672db176a4e9cffda1cec14741343e31f4fb7c2164db3c2
+        checksum/systemyaml: 5c1836765fd85c38ff453d689f2ebe82125ae125003d75ae5ecfb3561c2f4abb
+    spec:
+      serviceAccountName: artifactory-ha
+      terminationGracePeriodSeconds: 30
+      securityContext:
+        runAsUser: 1000680000
+        fsGroup: 1000680000
+      initContainers:
+      - name: "delete-db-properties"
+        image: "alpine:3.10"
+        imagePullPolicy: IfNotPresent
+        command:
+          - 'sh'
+          - '-c'
+          - 'rm -fv /var/opt/jfrog/artifactory/etc/db.properties'
+        resources:
+          {}
+        volumeMounts:
+          - mountPath: "/var/opt/jfrog/artifactory"
+            name: volume
+      - name: "wait-for-primary"
+        image: "alpine:3.10"
+        imagePullPolicy: IfNotPresent
+        command:
+        - 'sh'
+        - '-c'
+        - >
+          echo "Waiting for primary node to be ready...";
+          while [ "$(wget --spider -S -T 3 http://artifactory-ha-artifactory-ha-primary:8082/ 2>&1 | grep '^  HTTP/' | awk '{print $2}')" != "200" ];
+            do echo "Primary not ready. Waiting..."; sleep 3;
+          done;
+          echo "Primary node ready!";
+        resources:
+          {}
+      - name: 'copy-system-yaml'
+        image: 'alpine:3.10'
+        command:
+        - '/bin/sh'
+        - '-c'
+        - >
+          echo "Copy system.yaml to /var/opt/jfrog/artifactory/etc";
+          mkdir -p /var/opt/jfrog/artifactory/etc;
+          mkdir -p /var/opt/jfrog/artifactory/etc/access/keys/trusted;
+          cp -fv /tmp/etc/system.yaml /var/opt/jfrog/artifactory/etc/system.yaml;
+          echo "Remove /var/opt/jfrog/artifactory/lost+found folder if exists";
+          rm -rfv /var/opt/jfrog/artifactory/lost+found;
+          echo "Removing join.key file";
+          rm -fv /var/opt/jfrog/artifactory/etc/security/join.key;
+        resources:
+          {}
+        volumeMounts:
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: systemyaml
+          mountPath: "/tmp/etc/system.yaml"
+          subPath: system.yaml
+      - name: "wait-for-db"
+        image: "alpine:3.10"
+        command:
+        - 'sh'
+        - '-c'
+        - >
+          until nc -z -w 2 artifactory-ha-postgresql 5432 && echo database ok; do
+            sleep 2;
+          done;
+        resources:
+          {}
+      - name: 'migration-artifactory-ha'
+        image: 'docker.bintray.io/jfrog/artifactory-pro:7.4.3'
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          allowPrivilegeEscalation: false
+        command:
+        - '/bin/bash'
+        - '-c'
+        - >
+          scriptsPath="/opt/jfrog/artifactory/app/bin";
+          mkdir -p $scriptsPath;
+          echo "Copy migration scripts and Run migration";
+          cp -fv /tmp/migrate.sh $scriptsPath/migrate.sh;
+          cp -fv /tmp/migrationHelmInfo.yaml $scriptsPath/migrationHelmInfo.yaml;
+          cp -fv /tmp/migrationStatus.sh $scriptsPath/migrationStatus.sh;
+          mkdir -p /var/opt/jfrog/artifactory/log;
+          bash $scriptsPath/migrationStatus.sh 7.4.3 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
+        resources:
+          {}
+        env:
+      
+        - name: JF_SHARED_DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: artifactory-ha-postgresql
+              key: postgresql-password
+        - name: JF_SHARED_NODE_PRIMARY
+          value: "false"
+        - name: JF_SHARED_NODE_HAENABLED
+          value: "true"
+        volumeMounts:
+        - name: migration-scripts
+          mountPath: "/tmp/migrate.sh"
+          subPath: migrate.sh
+        - name: migration-scripts
+          mountPath: "/tmp/migrationHelmInfo.yaml"
+          subPath: migrationHelmInfo.yaml
+        - name: migration-scripts
+          mountPath: "/tmp/migrationStatus.sh"
+          subPath: migrationStatus.sh
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: binarystore-xml
+          mountPath: "/artifactory_bootstrap/binarystore.xml"
+          subPath: binarystore.xml
+      containers:
+      - name: artifactory-ha
+        image: 'docker.bintray.io/jfrog/artifactory-pro:7.4.3'
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          allowPrivilegeEscalation: false
+        command:
+        - '/bin/bash'
+        - '-c'
+        - >
+          set -e;
+          exec /entrypoint-artifactory.sh
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - '/bin/bash'
+              - '-c'
+              - >
+                echo;
+        env:
+      
+        - name: JF_SHARED_DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: artifactory-ha-postgresql
+              key: postgresql-password
+        - name: JF_SHARED_NODE_PRIMARY
+          value: "false"
+        - name: JF_SHARED_NODE_HAENABLED
+          value: "true"
+        ports:
+        - containerPort: 8082
+        - containerPort: 8081
+        volumeMounts:
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: binarystore-xml
+          mountPath: "/artifactory_bootstrap/binarystore.xml"
+          subPath: binarystore.xml
+        - name: installer-info
+          mountPath: "/artifactory_bootstrap/info/installer-info.json"
+          subPath: installer-info.json
+        resources:
+          {}
+        readinessProbe:
+          httpGet:
+            path: /router/api/v1/system/health
+            port: 8082
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 10
+          failureThreshold: 10
+          successThreshold: 1
+        livenessProbe:
+          httpGet:
+            path: /router/api/v1/system/health
+            port: 8082
+          initialDelaySeconds: 180
+          periodSeconds: 10
+          timeoutSeconds: 10
+          failureThreshold: 10
+          successThreshold: 1
+      
+      volumes:
+      - name: binarystore-xml
+        secret:
+          secretName: artifactory-ha-binarystore
+      - name: migration-scripts
+        configMap:
+          name: artifactory-ha-migration-scripts
+      - name: installer-info
+        configMap:
+          name: artifactory-ha-installer-info
+      - name: systemyaml
+        secret:
+          secretName: artifactory-ha-artifactory-ha-primary-system-yaml
+  volumeClaimTemplates:
+  - metadata:
+      name: volume
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 20Gi
+---
+# Source: artifactory-ha/templates/artifactory-primary-statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: artifactory-ha-artifactory-ha-primary
+  labels:
+    app: artifactory-ha
+    chart: artifactory-ha-2.4.6
+    component: artifactory-ha
+    version: 7.4.3
+    heritage: Helm
+    release: artifactory-ha
+spec:
+  serviceName: artifactory-ha-artifactory-ha-primary
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: artifactory-ha
+      role: artifactory-ha-artifactory-ha-primary
+      release: artifactory-ha
+  template:
+    metadata:
+      labels:
+        app: artifactory-ha
+        chart: artifactory-ha-2.4.6
+        role: artifactory-ha-artifactory-ha-primary
+        component: artifactory-ha
+        heritage: Helm
+        release: artifactory-ha
+      annotations:
+        checksum/binarystore: e9cd76c12b40e8b28672db176a4e9cffda1cec14741343e31f4fb7c2164db3c2
+        checksum/systemyaml: 5c1836765fd85c38ff453d689f2ebe82125ae125003d75ae5ecfb3561c2f4abb
+        checksum/admin-creds: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
+    spec:
+      serviceAccountName: artifactory-ha
+      terminationGracePeriodSeconds: 30
+      securityContext:
+        runAsUser: 1000680000
+        fsGroup: 1000680000
+
+      initContainers:
+      - name: "delete-db-properties"
+        image: "alpine:3.10"
+        imagePullPolicy: IfNotPresent
+        resources:
+          {}
+        command:
+        - 'sh'
+        - '-c'
+        - 'rm -fv /var/opt/jfrog/artifactory/etc/db.properties'
+        volumeMounts:
+        - mountPath: "/var/opt/jfrog/artifactory"
+          name: volume
+      - name: "remove-lost-found"
+        image: "alpine:3.10"
+        imagePullPolicy: IfNotPresent
+        resources:
+          {}
+        command:
+        - 'sh'
+        - '-c'
+        - >
+          rm -rfv /var/opt/jfrog/artifactory/lost+found;
+          rm -rfv /var/opt/jfrog/artifactory/artifactory-data/lost+found;
+          rm -rfv /var/opt/jfrog/artifactory-backup/lost+found;
+        volumeMounts:
+          - name: volume
+            mountPath: "/var/opt/jfrog/artifactory"
+      - name: 'copy-system-yaml'
+        image: 'alpine:3.10'
+        resources:
+          {}
+        command:
+        - '/bin/sh'
+        - '-c'
+        - >
+          echo "Copy system.yaml to /var/opt/jfrog/artifactory/etc";
+          mkdir -p /var/opt/jfrog/artifactory/etc;
+          mkdir -p /var/opt/jfrog/artifactory/etc/access/keys/trusted;
+          cp -fv /tmp/etc/system.yaml /var/opt/jfrog/artifactory/etc/system.yaml;
+          echo "Remove /var/opt/jfrog/artifactory/lost+found folder if exists";
+          rm -rfv /var/opt/jfrog/artifactory/lost+found;
+        env:
+        volumeMounts:
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: systemyaml
+          mountPath: "/tmp/etc/system.yaml"
+          subPath: system.yaml
+      - name: "wait-for-db"
+        image: "alpine:3.10"
+        command:
+        - 'sh'
+        - '-c'
+        - >
+          until nc -z -w 2 artifactory-ha-postgresql 5432 && echo database ok; do
+            sleep 2;
+          done;
+        resources:
+          {}
+      - name: 'migration-artifactory-ha'
+        image: 'docker.bintray.io/jfrog/artifactory-pro:7.4.3'
+        imagePullPolicy: IfNotPresent
+        resources:
+          {}
+        securityContext:
+          allowPrivilegeEscalation: false
+        command:
+        - '/bin/bash'
+        - '-c'
+        - >
+          scriptsPath="/opt/jfrog/artifactory/app/bin";
+          mkdir -p $scriptsPath;
+          echo "Copy migration scripts and Run migration";
+          cp -fv /tmp/migrate.sh $scriptsPath/migrate.sh;
+          cp -fv /tmp/migrationHelmInfo.yaml $scriptsPath/migrationHelmInfo.yaml;
+          cp -fv /tmp/migrationStatus.sh $scriptsPath/migrationStatus.sh;
+          mkdir -p /var/opt/jfrog/artifactory/log;
+          bash $scriptsPath/migrationStatus.sh 7.4.3 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
+        env:
+      
+        - name: JF_SHARED_DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: artifactory-ha-postgresql
+              key: postgresql-password
+        - name: JF_SHARED_NODE_PRIMARY
+          value: "true"
+        - name: JF_SHARED_NODE_HAENABLED
+          value: "true"
+        volumeMounts:
+        - name: migration-scripts
+          mountPath: "/tmp/migrate.sh"
+          subPath: migrate.sh
+        - name: migration-scripts
+          mountPath: "/tmp/migrationHelmInfo.yaml"
+          subPath: migrationHelmInfo.yaml
+        - name: migration-scripts
+          mountPath: "/tmp/migrationStatus.sh"
+          subPath: migrationStatus.sh
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: binarystore-xml
+          mountPath: "/artifactory_bootstrap/binarystore.xml"
+          subPath: binarystore.xml
+      containers:
+      - name: artifactory-ha
+        image: 'docker.bintray.io/jfrog/artifactory-pro:7.4.3'
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          allowPrivilegeEscalation: false
+        command:
+        - '/bin/bash'
+        - '-c'
+        - >
+          set -e;
+          if [ -d /artifactory_extra_conf ] && [ -d /artifactory_bootstrap ]; then
+            echo "Copying bootstrap config from /artifactory_extra_conf to /artifactory_bootstrap";
+            cp -Lrfv /artifactory_extra_conf/ /artifactory_bootstrap/;
+          fi;
+          exec /entrypoint-artifactory.sh
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - '/bin/bash'
+              - '-c'
+              - >
+                echo;
+        env:
+      
+        - name: JF_SHARED_DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: artifactory-ha-postgresql
+              key: postgresql-password
+        - name: JF_SHARED_NODE_PRIMARY
+          value: "true"
+        - name: JF_SHARED_NODE_HAENABLED
+          value: "true"
+        ports:
+        - containerPort: 8082
+        - containerPort: 8081
+        volumeMounts:
+        - name: volume
+          mountPath: "/var/opt/jfrog/artifactory"
+        - name: binarystore-xml
+          mountPath: "/artifactory_bootstrap/binarystore.xml"
+          subPath: binarystore.xml
+        - name: installer-info
+          mountPath: "/artifactory_bootstrap/info/installer-info.json"
+          subPath: installer-info.json
+        resources:
+          {}
+        readinessProbe:
+          httpGet:
+            path: /router/api/v1/system/health
+            port: 8082
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 10
+          failureThreshold: 10
+          successThreshold: 1
+        livenessProbe:
+          httpGet:
+            path: /router/api/v1/system/health
+            port: 8082
+          initialDelaySeconds: 180
+          periodSeconds: 10
+          timeoutSeconds: 10
+          failureThreshold: 10
+          successThreshold: 1
+      
+      volumes:
+      - name: binarystore-xml
+        secret:
+          secretName: artifactory-ha-binarystore
+      - name: migration-scripts
+        configMap:
+          name: artifactory-ha-migration-scripts
+      - name: installer-info
+        configMap:
+          name: artifactory-ha-installer-info
+      - name: systemyaml
+        secret:
+          secretName: artifactory-ha-artifactory-ha-primary-system-yaml
+  volumeClaimTemplates:
+  - metadata:
+      name: volume
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 20Gi
