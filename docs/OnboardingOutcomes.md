@@ -26,7 +26,19 @@ You’re here to explore a new, more digital government. You’re building the p
 
 Try. Experiment. Iterate. Fail. Try again. Change the world, together.
 
+
+We live by these 3 principles and all guidelines below are linked to them:
+
+```
+To build a constantly improving application platform for delivery of modern government services
+
+To inspire a DevOps culture shift, which values collaboration, communication and speed
+
+To create a community that takes care of each other and works together to solve the unsolvable 
+```
+
 We’re better together. The Platform Services team and Delivery teams share a mutually symbiotic relationship with interwoven dependencies.  While the Platform team takes the lead on infrastructure stability and continual improvement of services, Delivery teams are responsible for developing and operationalizing resilient applications for the OpenShift Platform.
+
 
 ## What this means for you
 
@@ -119,7 +131,7 @@ You can find them at `#team-coco` on RocketChat
 
 ### Where to go from here
 
-We're working on a whole Onboarding Journey to guide you through this process and to point you at some particularly useful documentation to get started.
+We're working on a whole [Onboarding Journey](https://developer.gov.bc.ca/Onboarding-Journey) to guide you through this process and to point you at some particularly useful documentation to get started.
 
 But, in the meantime, here are some quick links to take you to some useful docs:
 
