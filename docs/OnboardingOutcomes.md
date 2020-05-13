@@ -94,7 +94,7 @@ Here's a good example of the difference:
 
 ### We Provide Community-Wide Tools
 
-If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the Platform Services team is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
+If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the [Platform Services team](https://docs.pathfinder.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g) is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
 
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the Platform. At the moment, these include:
 
