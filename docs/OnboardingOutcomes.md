@@ -26,6 +26,7 @@ You’re here to explore a new, more digital government. You’re building the p
 
 Try. Experiment. Iterate. Fail. Try again. Change the world, together.
 
+
 We live by these 3 principles and all guidelines below are linked to them:
 
 ```
@@ -35,6 +36,9 @@ To inspire a DevOps culture shift, which values collaboration, communication and
 
 To create a community that takes care of each other and works together to solve the unsolvable 
 ```
+
+We’re better together. The Platform Services team and Delivery teams share a mutually symbiotic relationship with interwoven dependencies.  While the Platform team takes the lead on infrastructure stability and continual improvement of services, Delivery teams are responsible for developing and operationalizing resilient applications for the OpenShift Platform.
+
 
 ## What this means for you
 
@@ -104,7 +108,7 @@ Here's a good example of the difference:
 
 ### We Provide Community-Wide Tools
 
-If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the Platform Services team is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
+If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the [Platform Services team](https://docs.pathfinder.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g) is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
 
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the Platform. At the moment, these include:
 
