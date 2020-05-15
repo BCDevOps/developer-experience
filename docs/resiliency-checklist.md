@@ -44,7 +44,7 @@ Still others let you know the moment an outage starts and can provide extremely 
 ### A Highly Available App
 
 Our platform may have _very_ high availability in general, but our individual _nodes_ do not. This doesn't mean the nodes are unstable or difficult to use - it just means that the way we approach maintenance and infrastructure problems are a little different from the way things work in the legacy application world.
-Did you know that we don't guarantee a single node will be up for more than 24 hours at a time? That's right - our nodes *can* be restarted or changed very often!
+Did you know that we don't guarantee a single node will be up for more than 24 hours at a time? That's right - our nodes *will* be restarted or changed very often!
 This might sound like a big problem with the platform, but it's actually a feature; it means that the platform team can be _extremely_ proactive about keeping the platform's physical infrastructure in great shape. 
 
 Legacy infrastructure is designed to ensure that a specific server will have the highest possible uptime. Clearly, the Openshift Platform works a little differently - instead, we ensure that you will always have _some_ infrastructure to use for your application, but not that the infrastructure will be the same, or that it will remain up forever.
