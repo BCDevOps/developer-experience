@@ -79,7 +79,7 @@ This is where the community comes in - if you have a highly available applicatio
 The more you reach out to help your fellow developer, the stronger a community we will be!
 
 And it's very important to remember that we in the BC Government are part of a larger, international community of developers working to create better and more resilient applications.
-There are a lot of great resources available on the broader internet that we could never hope to match on our own. A great place to start when looking into these resources would be https://12factor.net/.
+There are a lot of great resources available on the broader internet that we could never hope to match on our own.
 
 ### Tools
 
