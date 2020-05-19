@@ -56,6 +56,8 @@ After all, your application's ability to jump in an agile manner from one node t
 If one node goes down for maintenance, your application can simply spin up on another.
 Or, even better, if your application is _already_ running on multiple nodes, taking down one node has no impact at all!
 
+![High Availability](images/availability.png)
+
 ### An Easily Deployable App
 
 Because all applications on OpenShift should be architected with the expectation that any node can go down at any time, it's imperative that applications be easy and quick to redeploy, requiring - most importantly - **no human interaction in the process**.
