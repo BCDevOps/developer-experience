@@ -32,6 +32,7 @@ A app that runs without failing most of the time is great, but things happen. Ma
 Our platform is extremely highly available, (99.99% available as of mid-2020!) but that doesn't mean you should assume that your application is guaranteed the same - application outages can happen for reasons other than full platform outages.
 
 The best way to keep on top of these issues in a proactive manner is to monitor your application and ensure that there are appropriate notifications of issues. There are tons of ways that such a monitoring can be implemented:
+
 * pod health checks
 * uptime dashboards
 * API health checks
@@ -45,14 +46,14 @@ Still others let you know the moment an outage starts and can provide extremely 
 
 Our platform may have _very_ high availability in general, but our individual _nodes_ do not. This doesn't mean the nodes are unstable or difficult to use - it just means that the way we approach maintenance and infrastructure problems are a little different from the way things work in the legacy application world.
 Did you know that we don't guarantee a single node will be up for more than 24 hours at a time? That's right - our nodes *will* be restarted or changed very often!
-This might sound like a big problem with the platform, but it's actually a feature; it means that the platform team can be _extremely_ proactive about keeping the platform's physical infrastructure in great shape. 
+This might sound like a big problem with the platform, but it's actually a feature; it means that the platform team can be _extremely_ proactive about keeping the platform's physical infrastructure in great shape.
 
 Legacy infrastructure is designed to ensure that a specific server will have the highest possible uptime. Clearly, the Openshift Platform works a little differently - instead, we ensure that you will always have _some_ infrastructure to use for your application, but not that the infrastructure will be the same, or that it will remain up forever.
-Now that your team is aware of that, it's simply a matter of architecting your application accordingly. 
+Now that your team is aware of that, it's simply a matter of architecting your application accordingly.
 
-There are plenty of options for ensuring that this change in approach helps your application stay up even longer than it might on legacy infrastructure. 
-After all, your application's ability to jump in an agile manner from one node to the next means that you don't have to endure maintenance outages. 
-If one node goes down for maintenance, your application can simply spin up on another. 
+There are plenty of options for ensuring that this change in approach helps your application stay up even longer than it might on legacy infrastructure.
+After all, your application's ability to jump in an agile manner from one node to the next means that you don't have to endure maintenance outages.
+If one node goes down for maintenance, your application can simply spin up on another.
 Or, even better, if your application is _already_ running on multiple nodes, taking down one node has no impact at all!
 
 ### An Easily Deployable App
@@ -86,10 +87,12 @@ There are a lot of great resources available on the broader internet that we cou
 The Developer Exchange community is full of great developers seeking ways to help the rest of the community - here are some examples of tools that you can use to help build a more resilient application!
 
 **[BCDevOps/backup-container](https://github.com/BCDevOps/backup-container)**
+
 - Features a separate container that can spin up on a schedule in your namespace which connects to your database to perform a backup and/or to perform a test recovery of the most recent backup.
 - Currently works for both Postgres and MongoDB
 
 **[BCDevOps/Platform-Services/Patroni](https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni)**
+
 - An open-source option for creating a highly available Postgres cluster
 
 ### Examples
@@ -101,12 +104,14 @@ If you're aiming to build something similar to an app here, please always feel f
 And if you have an idea for how any of these projects might improve, offer your idea (and maybe even a helping hand)!**
 
 **[Rocketchat](https://github.com/BCDevOps/platform-services/tree/master/apps/rocketchat)** - Platform Team
+
 - A highly available implementation of Rocketchat with an autoscaler that can change the total number of pods from a minimum of 3 to a maximum of 5, based on CPU usage.
 - A highly available implementation of a MongoDB stateful set.
 - Pod anti-affinity ensures that no two pods are ever spun up on the same node.
 - MongoDB backups are currently performed using a straightforward cronjob that spins up a pod to connect to the database and perform the backup.
 
 **[Keycloak](https://github.com/bcgov/ocp-sso)** - Platform Team
+
 - A highly available implementation of Keycloak
 - An example of how to implement Patroni (in the future, this will become an example of highly-available EDB instead)
 
