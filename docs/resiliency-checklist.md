@@ -69,6 +69,22 @@ And that includes any side processes like your monitoring tasks from point 1!
 This part isn't so different from legacy applications after all - if you need to recover your app due to data corruption or some other significant failure, it's important that your application be architected to do so quickly and easily.
 Most of this is covered by having an application that is easily deployable, but it's also important that you have the ability to recover anything stateful data and configuration that cannot be held in a repository. In other words, you need to be able to recover your database and application passwords.
 
+### A Correctly Resourced App
+
+Ensuring your application has the resources it needs, while not hogging too much is a balancing act. Different apps and environments will also need different levels of service.
+
+Pods can define [compute resources](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#dev-compute-resources) via Requests and Limits for CPU and Memory. A Request is a guaranteed amount dedicated exclusively to your pod. A Limit is a maximum you cannot exceed. As Requests are dedicated and the amount of CPU cores and RAM in the cluster is limited please be sparing with your use. If the cluster becomes full additional pods will simply fail to start.
+
+It is preferable to scale horizontally than vertically. Use smaller Request and Limit values for CPU and Memory and use a [Horizontal Pod Autoscaler](https://docs.openshift.com/container-platform/3.11/dev_guide/pod_autoscaling.html) to scale up the number of pods to meet demand.
+
+Make use of the [Quality of Service](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#quality-of-service-tiers) options available to ensure your pods are correctly resourced and treated appropriately by the scheduler.
+
+If your pod has its Requests and Limits set to `0` it will run BestEffort and simply use whatever spare capacity is available on its node. This can be good for things like batch jobs that want to go as fast as they can, but don't care about being slowed down from time to time. It will also be the first to be evicted from an overloaded node.
+
+If your pod has Limits higher than its Requests it will run Burstable and get at minimum the Requested amount and by burst up to its Limit depending on how busy the node is with other pods.
+
+If your pod has the Requests and Limits set to the same value then it will run Guaranteed QoS class. It will have preferential access to compute resources and will be the last to be evicted if a node should become overloaded. This is best for apps in the `prod` namespace as they need the best uptime.
+
 ## Community Support
 
 You may note that this document is pretty vague about the "hows" of these principles. This is because it can vary from application to application, and technology stack to technology stack.
