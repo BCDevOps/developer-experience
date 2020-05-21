@@ -133,4 +133,8 @@ And if you have an idea for how any of these projects might improve, offer your 
 - A highly available implementation of Keycloak
 - An example of how to implement Patroni (in the future, this will become an example of highly-available EDB instead)
 
+**[Devhub](https://github.com/bcgov/devhub-app-web)** - Developer Experience
+- 3 replica Deployment
+- a chain-build gastby (react app) that builds nodejs into a caddy server
+
 **If your team has a resilient design of any kind - even if you haven't perfected it - please fork this document and add your repo as an example! Nobody is perfect, and in-progress examples are a great help for teams trying to learn where to start!**
