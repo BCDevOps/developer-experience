@@ -42,6 +42,8 @@ The best way to keep on top of these issues in a proactive manner is to monitor 
 Many of these notification options provide your team an opportunity to act to prevent an outage before one even starts - finding out, for example, that your storage is almost full _before_ it fills up means that your team can act to deal with the storage issue _before_ it causes an outage or service issue.
 Still others let you know the moment an outage starts and can provide extremely valuable information about the cause of the outage, so your team can begin troubleshooting right away without having to wait for users to inform you of the problem.
 
+Your team should also ensure you are in the [#devops-alerts](https://chat.pathfinder.gov.bc.ca/channel/devops-alerts) channel in RocketChat where notices of upcoming maintenance are posted. The channel is quite low volume, so it may be worth turning up your RocketChat notification settings for the channel to **All messages**.
+
 ### A Highly Available App
 
 Our platform may have _very_ high availability in general, but our individual _nodes_ do not. This doesn't mean the nodes are unstable or difficult to use - it just means that the way we approach maintenance and infrastructure problems are a little different from the way things work in the legacy application world.
