@@ -45,6 +45,11 @@ A: Your pods will be deployed with the following defaults:
 - Memory Request: 256Mi
 - Memory Limit: 1Gi
 
+This is the same as specifying a resource request or limit of 0. 
+
+**Q: What happens if I set the request and limits to 0?**
+A: Your pods will get the defaults set out above. 
+
 **Q: What happens if I create a deployment and only specify a limit?**  
 A: Your Pods will be deployed with a Request that is identical to the Limit. 
 

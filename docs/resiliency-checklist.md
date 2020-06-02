@@ -83,7 +83,7 @@ It is preferable to scale horizontally than vertically. Use smaller Request and 
 
 Make use of the [Quality of Service](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#quality-of-service-tiers) options available to ensure your pods are correctly resourced and treated appropriately by the scheduler.
 
-If your pod has its Requests and Limits set to `0` it will run BestEffort and simply use whatever spare capacity is available on its node. This can be good for things like batch jobs that want to go as fast as they can, but don't care about being slowed down from time to time. It will also be the first to be evicted from an overloaded node.
+If your pod has its Requests and Limits set to `0` it will be deployed with the defaults. The quality of service "BestEffort" will not apply here since the platform will apply default settings.  
 
 If your pod has Limits higher than its Requests it will run Burstable and get at minimum the Requested amount and by burst up to its Limit depending on how busy the node is with other pods.
 
