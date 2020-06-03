@@ -3,8 +3,8 @@ description: KeyCloak (RH-SSO) Migration from Pathfinder to BCGov service
 resourceType: Documentation
 title: BC Government KeyCloak (RH-SSO) Service Migration Plan
 tags:
-- sso service migration
-- keycloak host name change
+ - sso service migration
+ - keycloak host name change
 ---
 
 ## KeyCloak Service Migration
@@ -29,18 +29,26 @@ Phase 1. ***Platform Services team*** will test out the impact on KeyCloak in a 
 
 Phase 2. ***Platform Services team*** to provision new DNS and ssl certs
 - expected to migrate SSO service to `oidc.gov.bc.ca`
-- status: requests in progress
+- status: DNS created, waiting for wildcard SSL certs for *.oidc.gov.bc.ca
 
-Phase 3. Work with ***sso community*** to collect project team contact information
+Phase 3. ***Platform Services team and WAM team*** setup new SiteMinder Federation services 
+- request a new set of IDIR and BCeID services for *.oidc.gov.bc.ca
+- status: testing out in sandbox environment
+
+Phase 4. ***Platform Services team and BCSC team*** figure out how to migrate BCSC integrations
+- status: list of teams provided to BCSC team, pending response
+
+Phase 5. Work with ***sso community*** to collect project team contact information
 - so that sso ops team could reach out to all teams on KC for up coming actions
-- status: in progress
+- import metadata into Project Registry
+- status: in progress, also building Project Registry
 
-Phase 4. migrate DEV and TEST services to the new DNS
+Phase 6. migrate DEV and TEST services to the new DNS
 - work with ***pilot teams*** on the migration and identify required actions from application teams
 - involve community to provide relative PR as example for teams to follow, online support for debugging and supports
 - status: expected to start once previous steps are complete
 
-Phase 5. production migration
+Phase 7. production migration
 - as this might cause temporary downtime on the application, Platform Services will schedule with teams on the date and time to best reduce the business impact
 - status: depends on Phase 4, expected to be finished before teams start the migration on OCP
 
