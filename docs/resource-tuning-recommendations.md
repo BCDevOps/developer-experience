@@ -45,10 +45,12 @@ A: Your pods will be deployed with the following defaults:
 - Memory Request: 256Mi
 - Memory Limit: 1Gi
 
-This is the same as specifying a resource request or limit of 0. 
+This is the NOT same as specifying a resource request or limit of 0. 
 
-**Q: What happens if I set the request and limits to 0?**
-A: Your pods will get the defaults set out above. 
+**Q: What happens if I set the request and limits to 0?**  
+A: Your pods will run under the BestEffort QoS class, using whatever spare capacity is available on node. 
+
+:small_red_triangle: Assigning `0` as a request or limit must be done through the CLI or directly in the manifest. The Web Console will not accept `0` as a request or limit while editing the resources on a deployment; it will apply the platform defaults outlined in the previous answer. 
 
 **Q: What happens if I create a deployment and only specify a limit?**  
 A: Your Pods will be deployed with a Request that is identical to the Limit. 
