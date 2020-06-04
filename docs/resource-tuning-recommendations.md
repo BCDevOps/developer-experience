@@ -89,7 +89,7 @@ On a typical Jenkins deployment, the following snippet could be used if you are 
 The following command can also be used to update a Jenkins DeploymentConfig: 
 
 ```
-oc patch dc/jenkins -p '{"spec": {"template": {"containers":{"resources":{"requests": {"cpu":"100m", "memory":"128Mi"}, "limits": {"cpu":"1", "memory":"512Mi"}}}}}}'
+oc patch dc/jenkins -p '{"spec": {"template": {"spec": {"containers":[{"name":"jenkins", "resources":{"requests": {"cpu":"100m", "memory":"128Mi"}, "limits": {"cpu":"1", "memory":"512Mi"}}}]}}}}'
 ```
 
 ###  Performance Testing Details
