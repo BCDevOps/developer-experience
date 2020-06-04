@@ -34,12 +34,18 @@ securityContext:
   fsGroup: 1000680000
   runAsUser: 1000680000
 postgresql:
-  enabled: true
-  persistence:
-    enabled: true
-    size: 10Gi
+  enabled: false
+#  persistence:
+#    enabled: true
+#    size: 10Gi
 nginx:
   enabled: false
 #  uid: 1000680000
 #  gid: 1000680000
+database:
+  type: postgresql
+  driver: org.postgresql.Driver
+  url: jdbc:postgresql://postgresql-master:5432/artifactory
+  user: artifactory
+  password: xxxxxxxxxxxx
 
