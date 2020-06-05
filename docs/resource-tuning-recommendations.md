@@ -35,6 +35,20 @@ Resource limits set an upper limit of what a pod can burst to if the resources a
 :ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.   
 :ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large cpu and memory limits.   
 
+**Being A Good Resource Citizen**
+
+:star: :star: :star: 
+
+Having a **3:1 ratio** of CPU Limit:CPU Request is a good starting place for new applications that haven't yet been tuned. Using a 3:1 ratio makes you a **good community member**!
+
+:star: :star: :star: :star: 
+
+Having a **2:1 ratio** of CPU Limit:CPU Request is a great next step for teams whose projects are working and stable, and who are in a position to start tuning their application more effectively - especially those who are seeking to make better use of horizontal scaling.
+Using a 2:1 ratio makes you a **great community member**!
+
+:star: :star: :star: :star: :star: 
+
+Having a **1.5:1 ratio** of CPU Limit:CPU Request is an amazing goal for teams who have already started tuning their applications and are looking to make the best possible use of the platform's capabilities. Using a 1.5:1 ratio makes you an **amazing community member**!
 
 ### Resource FAQ's
 
