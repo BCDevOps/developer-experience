@@ -2,3 +2,4 @@
 setenv-prod.sh
 apps/artifactory/artifactory-ha/upgrade/backup/*
 apps/artifactory/artifactory-ha/processed/*
+apps/artifactory/artifactory-ha-new/processed/*
