@@ -54,10 +54,10 @@ Having a **1.5:1 ratio** of CPU Limit:CPU Request is an amazing goal for teams w
 
 **Q: What happens if I don't specify a limit or a request?**  
 A: Your pods will be deployed with the following defaults: 
-- CPU Request: 100m
-- CPU Limit: 250m
+- CPU Request: 50m
+- CPU Limit: 1000m
 - Memory Request: 256Mi
-- Memory Limit: 1Gi
+- Memory Limit: 512Mi
 
 This is the NOT same as specifying a resource request or limit of 0. 
 
