@@ -11,8 +11,8 @@ Documize is an open source content authoring & automation system that allows tea
 ## Technical Details
 
 ### Application
-- Documize Community Edition v3.3.1
-- Conversion Service version 2.7.0
+- Documize Community Edition v3.7.0
+- Conversion Service version v3.1.0
 - Postgres & Patroni version 10
 - Authentication with RedHat Keycloak 4.8
 

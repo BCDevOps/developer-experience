@@ -5,15 +5,15 @@ const axios = require('axios')
 
 const instance = axios.create({
   baseURL: 'https://api.github.com/',
-  timeout: 1000,
+  timeout: 10000,
   headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
 });
 
-export async function setMilestone(context: any) {
+module.exports = async function setMilestone(context) {
     try {
 
         //get the list of milestones in the devops-requests repo.
-        const get_response = await instance.get('repos/bcdevops/devops-requests/milestones')
+        const get_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/milestones')
         const milestones = get_response["data"]
         let most_recent_milestone = milestones[0]
 
@@ -33,7 +33,7 @@ export async function setMilestone(context: any) {
 
     } catch (err) {
 
-        throw Error('Unable to handle issue: ' + err)
+        throw Error('Unable to handle issue in milestone: ' + err)
 
     }
 };

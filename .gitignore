@@ -1,3 +1,6 @@
 *output/
 setenv-prod.sh
-
+apps/artifactory/artifactory-ha/upgrade/backup/*
+# ignore node package artifacts:
+*node_modules/
+*.nvm/

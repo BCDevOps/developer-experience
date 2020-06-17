@@ -5,11 +5,11 @@ const axios = require('axios')
 
 const instance = axios.create({
   baseURL: 'https://api.zenhub.io/',
-  timeout: 1000,
+  timeout: 10000,
   headers: {'X-Authentication-Token': process.env.ZENHUB_TOKEN}
 });
 
-export async function setSwimlane(issueID: number) {
+module.exports = async function setSwimlane(issueID) {
     try {
 
         //set a default pipeline ID, equal to "Unreviewed"
@@ -30,7 +30,7 @@ export async function setSwimlane(issueID: number) {
 
     } catch (err) {
 
-        throw Error('Unable to handle issue: ' + err)
+        throw Error('Unable to handle issue in swimlane: ' + err)
 
     }
 };

@@ -1,3 +1,6 @@
+---
+description: Artifactory is a artifact repository service that will enable teams to store and reference artifacts within the Openshift Cluster.
+---
 # Using Artifactory
 
 ## Artifactory: What It Does and What It Doesn't.
