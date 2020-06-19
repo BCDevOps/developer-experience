@@ -17,8 +17,8 @@ artifactory:
     replicaCount: 0
     resources:
       requests:
-        memory: "1Gi"
-        cpu: "1"
+        memory: "2Gi"
+        cpu: "2"
       limits:
         memory: "2Gi"
         cpu: "2"
@@ -47,5 +47,5 @@ database:
   driver: org.postgresql.Driver
   url: jdbc:postgresql://postgresql-master:5432/artifactory
   user: artifactory
-  password: xxxxxxxxxxxx
+#  password: xxxxxxxxxxxxxxx
 
