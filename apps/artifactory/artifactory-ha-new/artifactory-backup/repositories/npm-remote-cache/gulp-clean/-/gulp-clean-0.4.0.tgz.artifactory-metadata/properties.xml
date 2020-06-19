@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e492bd523c15e1b9af422970f6b0cca5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a gulp plugin for removing files and folders.</npm.description>
-  <npm.keywords>["gulpplugin","clean","remove","delete"]</npm.keywords>
-  <npm.name>gulp-clean</npm.name>
-  <npm.version>0.4.0</npm.version>
-</properties>

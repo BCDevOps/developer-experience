@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"666b93c1a1afc309276e196d888536ef"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>utilities to help expose prettier output in linting tools</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>prettier-linter-helpers</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

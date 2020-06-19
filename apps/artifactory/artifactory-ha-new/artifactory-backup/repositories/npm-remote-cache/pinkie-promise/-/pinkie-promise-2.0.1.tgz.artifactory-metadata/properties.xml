@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d6cf74027e88ca54043e91d59629a656"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es2015 promise ponyfill</npm.description>
-  <npm.keywords>["promise","promises","es2015","es6","polyfill","ponyfill"]</npm.keywords>
-  <npm.name>pinkie-promise</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

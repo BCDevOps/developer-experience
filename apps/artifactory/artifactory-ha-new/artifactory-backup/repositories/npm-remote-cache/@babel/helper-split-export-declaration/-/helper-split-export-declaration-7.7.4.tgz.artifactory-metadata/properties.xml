@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4d1c737195d4172aca03f9c6e97e13a7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/helper-split-export-declaration</npm.name>
-  <npm.version>7.7.4</npm.version>
-</properties>

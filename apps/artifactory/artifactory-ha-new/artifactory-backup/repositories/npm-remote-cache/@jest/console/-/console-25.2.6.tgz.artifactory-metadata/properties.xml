@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"90ff985678c2ce03754c4e6e5199b90a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@jest/console</npm.name>
-  <npm.version>25.2.6</npm.version>
-</properties>

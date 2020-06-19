@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2a7b391ac465bc3635a18b51e7666413"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>turns rest api endpoints into generic request options</npm.description>
-  <npm.keywords>["octokit","github","api","rest"]</npm.keywords>
-  <npm.name>@octokit/endpoint</npm.name>
-  <npm.version>5.5.1</npm.version>
-</properties>

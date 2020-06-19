@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2546ee5517c4e9c68cd7f8f6fc18cf3e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>call a callback when a readable/writable/duplex stream has completed or failed.</npm.description>
-  <npm.keywords>["stream","streams","callback","finish","close","end","wait"]</npm.keywords>
-  <npm.name>end-of-stream</npm.name>
-  <npm.version>1.4.4</npm.version>
-</properties>

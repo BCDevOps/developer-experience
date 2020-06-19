@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8010bc40a76b1a9c1fba5f5237775c85"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>cooperative scheduler for the browser environment.</npm.description>
-  <npm.keywords>["react"]</npm.keywords>
-  <npm.name>scheduler</npm.name>
-  <npm.version>0.13.6</npm.version>
-</properties>

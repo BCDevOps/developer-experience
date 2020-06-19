@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8a6359bf8c570483aad2a767191e87bb"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>generate a regex from a string or array of strings.</npm.description>
-  <npm.keywords>["match","regex","regular expression","test","to"]</npm.keywords>
-  <npm.name>to-regex</npm.name>
-  <npm.version>3.0.2</npm.version>
-</properties>

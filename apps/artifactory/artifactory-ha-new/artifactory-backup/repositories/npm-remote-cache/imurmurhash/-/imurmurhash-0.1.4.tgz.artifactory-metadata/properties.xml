@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"54bf7101d59d33d9b13d6a91a72bc9b7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an incremental implementation of murmurhash3</npm.description>
-  <npm.keywords>["murmur","murmurhash","murmurhash3","hash","incremental"]</npm.keywords>
-  <npm.name>imurmurhash</npm.name>
-  <npm.version>0.1.4</npm.version>
-</properties>

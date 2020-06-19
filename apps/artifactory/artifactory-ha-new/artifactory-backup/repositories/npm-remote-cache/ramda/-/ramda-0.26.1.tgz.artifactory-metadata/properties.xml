@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e6374e0dbe7129b29f655af2d6a4f87a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a practical functional library for javascript programmers.</npm.description>
-  <npm.keywords>["ramda","functional","utils","utilities","toolkit","fp","tacit","point-free","curried","pure","fantasy-land"]</npm.keywords>
-  <npm.name>ramda</npm.name>
-  <npm.version>0.26.1</npm.version>
-</properties>

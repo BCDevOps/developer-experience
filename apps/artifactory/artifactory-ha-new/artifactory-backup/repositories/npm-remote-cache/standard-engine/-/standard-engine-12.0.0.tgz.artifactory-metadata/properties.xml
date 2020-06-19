@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"344e6ec2a566d754a108429b6448bcea"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>wrap your standards in a tortilla and cover it in special sauce.</npm.description>
-  <npm.keywords>["JavaScript Standard Style","check","checker","code","code checker","code linter","code standards","code style","enforce","eslint","hint","jscs","jshint","lint","policy","quality","simple","standard","standard style","style","style checker","style linter","verify"]</npm.keywords>
-  <npm.name>standard-engine</npm.name>
-  <npm.version>12.0.0</npm.version>
-</properties>

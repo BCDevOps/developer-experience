@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c75038b8cfb456c19d0bb215fb5a631a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>determine if an object is a stream</npm.description>
-  <npm.keywords>["stream","type","streams","readable-stream","hippo"]</npm.keywords>
-  <npm.name>isstream</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

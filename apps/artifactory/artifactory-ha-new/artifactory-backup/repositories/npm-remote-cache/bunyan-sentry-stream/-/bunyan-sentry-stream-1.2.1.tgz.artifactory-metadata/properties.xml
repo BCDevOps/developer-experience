@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"710a0de9f9f6f7509c520cfe7055db1b"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>write log to sentry/raven by using bunyan</npm.description>
-  <npm.keywords>["bunyan","sentry","raven","log"]</npm.keywords>
-  <npm.name>bunyan-sentry-stream</npm.name>
-  <npm.version>1.2.1</npm.version>
-</properties>

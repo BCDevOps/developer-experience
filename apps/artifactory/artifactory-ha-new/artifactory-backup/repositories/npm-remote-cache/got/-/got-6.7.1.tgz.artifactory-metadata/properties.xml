@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"752377dccb9bda4487cb98869613af15"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>simplified http requests</npm.description>
-  <npm.keywords>["http","https","get","got","url","uri","request","util","utility","simple","curl","wget","fetch"]</npm.keywords>
-  <npm.name>got</npm.name>
-  <npm.version>6.7.1</npm.version>
-</properties>

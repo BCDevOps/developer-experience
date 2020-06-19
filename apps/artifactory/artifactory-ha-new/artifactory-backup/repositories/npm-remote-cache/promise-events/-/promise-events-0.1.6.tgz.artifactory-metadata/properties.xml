@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a452a0bd34abe60690aa4a68ab073679"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a promise-based events emitter</npm.description>
-  <npm.keywords>["promise","events","async","emitter"]</npm.keywords>
-  <npm.name>promise-events</npm.name>
-  <npm.version>0.1.6</npm.version>
-</properties>

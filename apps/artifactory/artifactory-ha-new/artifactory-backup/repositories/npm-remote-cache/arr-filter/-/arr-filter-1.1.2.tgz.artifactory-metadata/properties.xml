@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"007fdbc06fca87ae9852ad550c4a98f4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>faster alternative to javascript's native filter method.</npm.description>
-  <npm.keywords>["arr","array","collection","filter","util"]</npm.keywords>
-  <npm.name>arr-filter</npm.name>
-  <npm.version>1.1.2</npm.version>
-</properties>

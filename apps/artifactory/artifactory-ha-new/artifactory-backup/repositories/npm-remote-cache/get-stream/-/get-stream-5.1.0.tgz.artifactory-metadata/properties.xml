@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"daf96f4a75dbd40c4782fc6454633372"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get a stream as a string, buffer, or array</npm.description>
-  <npm.keywords>["get","stream","promise","concat","string","text","buffer","read","data","consume","readable","readablestream","array","object"]</npm.keywords>
-  <npm.name>get-stream</npm.name>
-  <npm.version>5.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"82ebb0cdcee39bc8953381ac71cad549"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>browser-stdout</npm.name>
-  <npm.version>1.3.1</npm.version>
-</properties>

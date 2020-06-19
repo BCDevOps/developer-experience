@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b3af5a15576023c4f2d8523c142f1738"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes</npm.description>
-  <npm.keywords>["unicode","string","length","size","count","astral","symbol","surrogates","codepoints","ansi","escape","codes"]</npm.keywords>
-  <npm.name>string-length</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d56bb66874a8629172f5312bb8e331eb"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>babel-preset-jest</npm.name>
-  <npm.version>25.2.6</npm.version>
-</properties>

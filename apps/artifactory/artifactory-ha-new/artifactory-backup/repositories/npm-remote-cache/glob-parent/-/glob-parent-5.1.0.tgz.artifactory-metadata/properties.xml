@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a0b5a7ba5b404b100d6fa20237741429"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>extract the non-magic parent path from a glob string.</npm.description>
-  <npm.keywords>["glob","parent","strip","path","dirname","directory","base","wildcard"]</npm.keywords>
-  <npm.name>glob-parent</npm.name>
-  <npm.version>5.1.0</npm.version>
-</properties>

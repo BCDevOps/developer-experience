@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"08833fa830e83c7c4962e446a0b1a759"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a library to create readable "multipart/form-data" streams. can be used to submit forms and file uploads to other web applications.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>form-data</npm.name>
-  <npm.version>2.3.3</npm.version>
-</properties>

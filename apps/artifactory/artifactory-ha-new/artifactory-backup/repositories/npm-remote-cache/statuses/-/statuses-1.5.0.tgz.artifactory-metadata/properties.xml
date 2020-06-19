@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9d462cf8c2a4d47ec51e193c5b7492d6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>http status utility</npm.description>
-  <npm.keywords>["http","status","code"]</npm.keywords>
-  <npm.name>statuses</npm.name>
-  <npm.version>1.5.0</npm.version>
-</properties>

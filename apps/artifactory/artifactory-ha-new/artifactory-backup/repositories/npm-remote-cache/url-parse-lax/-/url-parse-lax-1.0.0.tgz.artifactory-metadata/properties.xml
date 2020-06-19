@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"39ddf8dc940dbd987c3db8248ee5fe04"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>url.parse() with support for protocol-less urls &amp; ips</npm.description>
-  <npm.keywords>["url","uri","parse","parser","loose","lax","protocol","less","protocol-less","ip","ipv4","ipv6"]</npm.keywords>
-  <npm.name>url-parse-lax</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

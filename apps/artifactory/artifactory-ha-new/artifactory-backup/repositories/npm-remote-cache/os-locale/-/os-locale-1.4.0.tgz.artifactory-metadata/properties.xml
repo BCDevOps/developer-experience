@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fdb77de7d9374b72e7f466c27908a730"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the system locale</npm.description>
-  <npm.keywords>["locale","lang","language","system","os","string","str","user","country","id","identifier","region"]</npm.keywords>
-  <npm.name>os-locale</npm.name>
-  <npm.version>1.4.0</npm.version>
-</properties>

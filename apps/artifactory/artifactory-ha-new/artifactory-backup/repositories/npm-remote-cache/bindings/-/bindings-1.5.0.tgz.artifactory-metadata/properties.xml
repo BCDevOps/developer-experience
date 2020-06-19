@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6ba854c931a768be46796845be6e113a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>helper module for loading your native module's .node file</npm.description>
-  <npm.keywords>["native","addon","bindings","gyp","waf","c","c++"]</npm.keywords>
-  <npm.name>bindings</npm.name>
-  <npm.version>1.5.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"cc32b7a4fe5fed669e3003243dd94963"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if a path is a file, directory, or symlink</npm.description>
-  <npm.keywords>["path","fs","type","is","check","directory","dir","file","filepath","symlink","symbolic","link","stat","stats","filesystem"]</npm.keywords>
-  <npm.name>path-type</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

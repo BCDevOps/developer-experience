@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"90f0a142e7b18ba2af8b9f0e2a7fd7c8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fast, unopinionated, minimalist web framework</npm.description>
-  <npm.keywords>["express","framework","sinatra","web","rest","restful","router","app","api"]</npm.keywords>
-  <npm.name>express</npm.name>
-  <npm.version>4.17.1</npm.version>
-</properties>

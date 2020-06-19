@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e54f51e5d23c17edae9f9d199b337531"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create a javascript regular expression for matching everything except for the given string.</npm.description>
-  <npm.keywords>["exec","match","negate","negation","not","regex","regular expression","test"]</npm.keywords>
-  <npm.name>regex-not</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4652f1dcafa4d53e974be55ec3975d6d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allow parsing of bigint literals</npm.description>
-  <npm.keywords>["babel-plugin"]</npm.keywords>
-  <npm.name>@babel/plugin-syntax-bigint</npm.name>
-  <npm.version>7.8.3</npm.version>
-</properties>

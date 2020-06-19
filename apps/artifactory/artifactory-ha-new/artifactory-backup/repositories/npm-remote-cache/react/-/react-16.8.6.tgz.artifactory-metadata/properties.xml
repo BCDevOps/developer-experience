@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c4029a64f8cb76a76b55a58844cf395d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>react is a javascript library for building user interfaces.</npm.description>
-  <npm.keywords>["react"]</npm.keywords>
-  <npm.name>react</npm.name>
-  <npm.version>16.8.6</npm.version>
-</properties>

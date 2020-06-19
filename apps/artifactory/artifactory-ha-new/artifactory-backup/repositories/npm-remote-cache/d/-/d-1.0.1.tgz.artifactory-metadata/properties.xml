@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"34f0b6b6c919df899c7c240deb36deed"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>property descriptor factory</npm.description>
-  <npm.keywords>["descriptor","es","ecmascript","ecma","property","descriptors","meta","properties"]</npm.keywords>
-  <npm.name>d</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

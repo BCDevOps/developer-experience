@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"84f66702922a1ede9729ba9d96d0510d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>simple key-value storage with support for multiple backends</npm.description>
-  <npm.keywords>["key","value","store","cache","ttl"]</npm.keywords>
-  <npm.name>keyv</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

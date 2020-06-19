@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"92037a0566716744eb38391e3698596e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>string representations of objects in node and the browser</npm.description>
-  <npm.keywords>["inspect","util.inspect","object","stringify","pretty"]</npm.keywords>
-  <npm.name>object-inspect</npm.name>
-  <npm.version>1.7.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0b213c5532d37565a30dbb63eff0b1f5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parse http x-forwarded-for header</npm.description>
-  <npm.keywords>["x-forwarded-for","http","req"]</npm.keywords>
-  <npm.name>forwarded</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

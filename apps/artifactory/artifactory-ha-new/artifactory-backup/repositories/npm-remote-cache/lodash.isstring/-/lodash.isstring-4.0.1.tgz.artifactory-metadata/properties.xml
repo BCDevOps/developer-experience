@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"57b609a3e5920fe5583c2d38ed6fd122"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the lodash method `_.isstring` exported as a module.</npm.description>
-  <npm.keywords>"lodash-modularized, isstring"</npm.keywords>
-  <npm.name>lodash.isstring</npm.name>
-  <npm.version>4.0.1</npm.version>
-</properties>

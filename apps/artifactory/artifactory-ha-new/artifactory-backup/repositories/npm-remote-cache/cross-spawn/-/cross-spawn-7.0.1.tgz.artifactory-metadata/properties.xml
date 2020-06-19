@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a50a9681b1ff603d40c961aa61d644cc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>cross platform child_process#spawn and child_process#spawnsync</npm.description>
-  <npm.keywords>["spawn","spawnSync","windows","cross-platform","path-ext","shebang","cmd","execute"]</npm.keywords>
-  <npm.name>cross-spawn</npm.name>
-  <npm.version>7.0.1</npm.version>
-</properties>

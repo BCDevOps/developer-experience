@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2f101d5cc581e26a5a02b422a7f9f03a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>lightweight, beautiful and user-friendly prompts</npm.description>
-  <npm.keywords>["ui","prompts","cli","prompt","interface","command-line","input","command","stdin","menu","ask","interact"]</npm.keywords>
-  <npm.name>prompts</npm.name>
-  <npm.version>2.3.0</npm.version>
-</properties>

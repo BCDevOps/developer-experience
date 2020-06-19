@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"70a5fe17d58d210d68620385bde181f2"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a gorgeous html/css reporter for mocha.js</npm.description>
-  <npm.keywords>["mocha","reporter","json","html"]</npm.keywords>
-  <npm.name>mochawesome</npm.name>
-  <npm.version>3.1.2</npm.version>
-</properties>

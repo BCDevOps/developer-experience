@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"94959a3174fc4191b6e4660cb27d1cae"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>generate hex colors for a given namespace.</npm.description>
-  <npm.keywords>["namespace","color","hex","colorize","name","space","colorspace"]</npm.keywords>
-  <npm.name>colorspace</npm.name>
-  <npm.version>1.1.2</npm.version>
-</properties>

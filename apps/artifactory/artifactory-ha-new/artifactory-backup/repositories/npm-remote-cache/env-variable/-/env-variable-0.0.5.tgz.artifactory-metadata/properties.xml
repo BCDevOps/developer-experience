@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d78cdb3f61e382a87fca979018cca0c1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>cross platform environment variables with process.env, window.name, location.hash and localstorage fallbacks</npm.description>
-  <npm.keywords>["browser","env","environment variable","environment","fallback","location.hash","process.env","variable","window.name"]</npm.keywords>
-  <npm.name>env-variable</npm.name>
-  <npm.version>0.0.5</npm.version>
-</properties>

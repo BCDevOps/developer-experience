@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"41a9ea3ea524cb88db57c72ebad75ec6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>small debugging utility</npm.description>
-  <npm.keywords>["debug","log","debugger"]</npm.keywords>
-  <npm.name>debug</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

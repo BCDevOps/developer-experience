@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"daad38868276bd1bda8379962f9abd5d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>querystringify - small, simple but powerful query string parser.</npm.description>
-  <npm.keywords>["query","string","query-string","querystring","qs","stringify","parse","decode","encode"]</npm.keywords>
-  <npm.name>querystringify</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

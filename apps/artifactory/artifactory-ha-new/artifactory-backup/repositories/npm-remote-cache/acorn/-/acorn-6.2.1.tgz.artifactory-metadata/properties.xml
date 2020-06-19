@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"faea9ca77bd8c98fe7b5f4a9c582fedd"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ecmascript parser</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>acorn</npm.name>
-  <npm.version>6.2.1</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"79c3ddee196e8b414e8b5c3b9caa8581"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>generates and consumes source maps</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>source-map</npm.name>
-  <npm.version>0.6.1</npm.version>
-</properties>

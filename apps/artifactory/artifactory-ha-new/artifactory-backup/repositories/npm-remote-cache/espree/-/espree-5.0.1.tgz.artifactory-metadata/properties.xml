@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"23d9a5dda3fb12d9e98c630b00e3a750"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>an esprima-compatible javascript parser built on acorn</npm.description>
-  <npm.keywords>["ast","ecmascript","javascript","parser","syntax","acorn"]</npm.keywords>
-  <npm.name>espree</npm.name>
-  <npm.version>5.0.1</npm.version>
-</properties>

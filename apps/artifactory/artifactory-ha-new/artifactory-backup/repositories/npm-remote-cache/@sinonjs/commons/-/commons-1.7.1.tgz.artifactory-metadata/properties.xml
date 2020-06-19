@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b66e293fb9472638f6da770a897f0d14"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>simple functions shared among the sinon end user libraries</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@sinonjs/commons</npm.name>
-  <npm.version>1.7.1</npm.version>
-</properties>

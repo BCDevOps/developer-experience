@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ee2351a9ba9940461bc2662e4e38826b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>import a module while bypassing the cache</npm.description>
-  <npm.keywords>["require","cache","uncache","uncached","module","fresh","bypass"]</npm.keywords>
-  <npm.name>import-fresh</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

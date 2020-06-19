@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a1c19eb81723330c6759daafb06e83a8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>runtime type checking for react props and similar objects.</npm.description>
-  <npm.keywords>["react"]</npm.keywords>
-  <npm.name>prop-types</npm.name>
-  <npm.version>15.7.2</npm.version>
-</properties>

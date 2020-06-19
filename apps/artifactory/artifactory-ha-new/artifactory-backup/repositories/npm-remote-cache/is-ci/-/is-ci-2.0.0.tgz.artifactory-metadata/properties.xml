@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"24ff5fd68de825a624dafa333b9722c5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>detect if the current environment is a ci server</npm.description>
-  <npm.keywords>["ci","continuous","integration","test","detect"]</npm.keywords>
-  <npm.name>is-ci</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

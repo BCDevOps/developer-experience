@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5df14e8fe82452688cca5c100a3dc719"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>combines a list of arrays, returning a single array with unique values, using strict equality for comparisons.</npm.description>
-  <npm.keywords>["add","append","array","arrays","combine","concat","extend","union","uniq","unique","util","utility","utils"]</npm.keywords>
-  <npm.name>arr-union</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

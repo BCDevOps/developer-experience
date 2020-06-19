@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3ae786c9fd4fec648fb4a71b1d1bbf35"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>simple, unobtrusive authentication for node.js.</npm.description>
-  <npm.keywords>["express","connect","auth","authn","authentication"]</npm.keywords>
-  <npm.name>passport</npm.name>
-  <npm.version>0.4.1</npm.version>
-</properties>

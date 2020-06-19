@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5620f9adea93fc913f6cbf3d40a00b38"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>html parsing/serialization toolset for node.js. whatwg html living standard (aka html5)-compliant.</npm.description>
-  <npm.keywords>["html","parser","html5","WHATWG","specification","fast","html parser","html5 parser","htmlparser","parse5","serializer","html serializer","htmlserializer","sax","simple api","parse","tokenize","serialize","tokenizer"]</npm.keywords>
-  <npm.name>parse5</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

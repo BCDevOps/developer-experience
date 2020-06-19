@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"672987b7d3d8367437c600c8eb2f8b75"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>javascript implementation of the bser binary serialization</npm.description>
-  <npm.keywords>["bser","binary","protocol"]</npm.keywords>
-  <npm.name>bser</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

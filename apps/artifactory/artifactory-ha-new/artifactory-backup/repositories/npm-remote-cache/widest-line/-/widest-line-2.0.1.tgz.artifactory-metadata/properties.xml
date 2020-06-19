@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0c2e6f65a35e1125653f2f6e0e10ce93"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the visual width of the widest line in a string - the number of columns required to display it</npm.description>
-  <npm.keywords>["string","str","character","char","unicode","width","visual","column","columns","fullwidth","full-width","full","ansi","escape","codes","cli","command-line","terminal","console","cjk","chinese","japanese","korean","fixed-width"]</npm.keywords>
-  <npm.name>widest-line</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

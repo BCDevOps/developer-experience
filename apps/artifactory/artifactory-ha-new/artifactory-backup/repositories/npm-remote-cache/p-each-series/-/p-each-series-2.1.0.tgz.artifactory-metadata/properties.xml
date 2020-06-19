@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8f8bee242643bc41a69c919b5df6163c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>iterate over promises serially</npm.description>
-  <npm.keywords>["promise","foreach","for-each","for","each","collection","iterable","iterator","fulfilled","async","await","promises","serial","serially","series","bluebird"]</npm.keywords>
-  <npm.name>p-each-series</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

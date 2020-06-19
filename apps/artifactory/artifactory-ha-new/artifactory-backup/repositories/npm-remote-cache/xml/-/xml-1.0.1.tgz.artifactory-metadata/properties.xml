@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"cd0657e89d77ec585fe29c9b568d16c9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fast and simple xml generator. supports attributes, cdata, etc. includes tests and examples.</npm.description>
-  <npm.keywords>["xml","create","builder","json","simple"]</npm.keywords>
-  <npm.name>xml</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

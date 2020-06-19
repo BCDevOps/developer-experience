@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"31e45d747577630f57118c9360e1e8ea"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>list of the node.js builtin modules</npm.description>
-  <npm.keywords>["builtin","built-in","builtins","node","modules","core","bundled","list","array","names"]</npm.keywords>
-  <npm.name>builtin-modules</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

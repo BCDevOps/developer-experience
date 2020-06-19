@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4b6c3c21b96b1d54997036aa5662ffce"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>try to guess if your terminal supports unicode</npm.description>
-  <npm.keywords>["unicode","terminal"]</npm.keywords>
-  <npm.name>has-unicode</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

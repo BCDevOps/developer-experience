@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2eef0c517717ba0267cd3e98a71e85c4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>cssstyledeclaration object model implementation</npm.description>
-  <npm.keywords>["CSS","CSSStyleDeclaration","StyleSheet"]</npm.keywords>
-  <npm.name>cssstyle</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1a0f8832504dfbef8d3f579f98c448d3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>resolve the path of a module like `require.resolve()` but from the current working directory</npm.description>
-  <npm.keywords>["require","resolve","path","module","from","like","cwd","current","working","directory","import"]</npm.keywords>
-  <npm.name>resolve-cwd</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

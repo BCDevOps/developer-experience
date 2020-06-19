@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8cc38c0a89ea972b056cf265ac9176e2"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the ultimate javascript content-type utility.</npm.description>
-  <npm.keywords>["mime","types"]</npm.keywords>
-  <npm.name>mime-types</npm.name>
-  <npm.version>2.1.25</npm.version>
-</properties>

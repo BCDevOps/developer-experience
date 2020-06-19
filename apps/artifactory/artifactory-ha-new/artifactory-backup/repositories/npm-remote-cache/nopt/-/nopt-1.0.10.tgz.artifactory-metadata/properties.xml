@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0550802fa3c30003a03e16d03f724b8a"</artifactory.internal.etag>
-  <artifactory.licenses></artifactory.licenses>
-  <npm.description>option parsing for node, supporting types, shorthands, etc. used by npm.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>nopt</npm.name>
-  <npm.version>1.0.10</npm.version>
-</properties>

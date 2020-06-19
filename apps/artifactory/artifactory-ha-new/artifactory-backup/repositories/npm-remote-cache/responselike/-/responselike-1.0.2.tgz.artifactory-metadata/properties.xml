@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c2d481fb92af68b51731eadf2e338a63"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a response-like object for mocking a node.js http response stream</npm.description>
-  <npm.keywords>["http","https","response","mock","request","responselike"]</npm.keywords>
-  <npm.name>responselike</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

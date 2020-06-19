@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b7c3693a57bed2a99e97d456f3bfdf82"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>express style path to regexp utility</npm.description>
-  <npm.keywords>["express","regexp"]</npm.keywords>
-  <npm.name>path-to-regexp</npm.name>
-  <npm.version>0.1.7</npm.version>
-</properties>

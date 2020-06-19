@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7e70a3ab90dd5f52c1d1dd81524866e8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>stringify any javascript value.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>pretty-format</npm.name>
-  <npm.version>25.3.0</npm.version>
-</properties>

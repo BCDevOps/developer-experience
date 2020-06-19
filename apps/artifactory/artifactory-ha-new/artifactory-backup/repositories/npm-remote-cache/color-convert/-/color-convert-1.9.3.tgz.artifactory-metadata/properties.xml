@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b4f847ea1c00c2fdf3e4ff91864b1b1f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>plain color conversion functions</npm.description>
-  <npm.keywords>["color","colour","convert","converter","conversion","rgb","hsl","hsv","hwb","cmyk","ansi","ansi16"]</npm.keywords>
-  <npm.name>color-convert</npm.name>
-  <npm.version>1.9.3</npm.version>
-</properties>

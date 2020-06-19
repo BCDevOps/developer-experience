@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9bd229a4c314a551af94b5f2d379b22e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>captures and cleans stack traces</npm.description>
-  <npm.keywords>[""]</npm.keywords>
-  <npm.name>stack-utils</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

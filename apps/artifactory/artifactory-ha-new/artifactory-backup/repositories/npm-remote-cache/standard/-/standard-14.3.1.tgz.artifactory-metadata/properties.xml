@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"964c258430422f4df9d62d2968de40e8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>javascript standard style</npm.description>
-  <npm.keywords>["JavaScript Standard Style","check","checker","code","code checker","code linter","code standards","code style","enforce","eslint","hint","jscs","jshint","lint","policy","quality","simple","standard","standard style","style","style checker","style linter","verify"]</npm.keywords>
-  <npm.name>standard</npm.name>
-  <npm.version>14.3.1</npm.version>
-</properties>

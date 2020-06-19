@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d05f3d3e2319669a74acf8c0c47823e5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>finds the common standard cache directory</npm.description>
-  <npm.keywords>["cache","directory","dir","caching","find","search"]</npm.keywords>
-  <npm.name>find-cache-dir</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

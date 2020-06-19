@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ac2b2272c06e5e86f79eb6ddb2683eff"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the color red, in ansi.</npm.description>
-  <npm.keywords>["red","256","ansi","cli","color","colors","colour","command","command-line","console","format","formatting","iterm","log","logging","rgb","shell","string","style","styles","styling","terminal","text","tty","xterm"]</npm.keywords>
-  <npm.name>ansi-red</npm.name>
-  <npm.version>0.1.1</npm.version>
-</properties>

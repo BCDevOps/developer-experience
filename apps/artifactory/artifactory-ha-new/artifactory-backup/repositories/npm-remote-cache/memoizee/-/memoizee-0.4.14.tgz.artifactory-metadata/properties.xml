@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"663a525eaab4cb69014d03e29fe1433e"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>memoize/cache function results</npm.description>
-  <npm.keywords>["memoize","memoizer","cache","memoization","memo","memcached","hashing.","storage","caching","memory","gc","weak","garbage","collector","async"]</npm.keywords>
-  <npm.name>memoizee</npm.name>
-  <npm.version>0.4.14</npm.version>
-</properties>

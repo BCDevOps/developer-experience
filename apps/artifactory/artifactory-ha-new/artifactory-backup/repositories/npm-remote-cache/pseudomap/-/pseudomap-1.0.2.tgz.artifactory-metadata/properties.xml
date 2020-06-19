@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fd7eccafda1971d63ef558797d9b9916"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>a thing that is a lot like es6 `map`, but without iterators, for use in environments where `for..of` syntax and `map` are not available.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>pseudomap</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

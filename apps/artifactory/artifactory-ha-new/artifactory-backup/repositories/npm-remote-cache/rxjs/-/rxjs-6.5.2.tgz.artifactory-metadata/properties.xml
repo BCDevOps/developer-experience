@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ed74f50bfdec67417522bd2a95422975"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>reactive extensions for modern javascript</npm.description>
-  <npm.keywords>["Rx","RxJS","ReactiveX","ReactiveExtensions","Streams","Observables","Observable","Stream","ES6","ES2015"]</npm.keywords>
-  <npm.name>rxjs</npm.name>
-  <npm.version>6.5.2</npm.version>
-</properties>

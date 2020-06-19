@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c3e7abc1f93764e8144ff4982c365ac7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es6 spec-compliant object.assign shim. from https://github.com/es-shims/es6-shim</npm.description>
-  <npm.keywords>["Object.assign","assign","ES6","extend","$.extend","jQuery","_.extend","Underscore","es-shim API","polyfill","shim"]</npm.keywords>
-  <npm.name>object.assign</npm.name>
-  <npm.version>4.1.0</npm.version>
-</properties>

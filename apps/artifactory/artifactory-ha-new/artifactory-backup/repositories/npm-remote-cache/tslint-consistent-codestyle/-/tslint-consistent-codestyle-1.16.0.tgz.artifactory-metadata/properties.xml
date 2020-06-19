@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"64fc01ad41bbe070972a6821566585f4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>additional rules to enforce constistent code style with tslint</npm.description>
-  <npm.keywords>["tslint","custom-rules","rules","stylish","lint","linting","linter","tslint-plugin"]</npm.keywords>
-  <npm.name>tslint-consistent-codestyle</npm.name>
-  <npm.version>1.16.0</npm.version>
-</properties>

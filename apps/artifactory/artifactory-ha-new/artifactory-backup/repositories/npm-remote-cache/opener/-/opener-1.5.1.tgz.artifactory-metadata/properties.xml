@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1ef0fb0ac1a95239ed5a60f3ecbe7237"</artifactory.internal.etag>
-  <artifactory.licenses>(WTFPL OR MIT)</artifactory.licenses>
-  <npm.description>opens stuff, like webpages and files and executables, cross-platform</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>opener</npm.name>
-  <npm.version>1.5.1</npm.version>
-</properties>

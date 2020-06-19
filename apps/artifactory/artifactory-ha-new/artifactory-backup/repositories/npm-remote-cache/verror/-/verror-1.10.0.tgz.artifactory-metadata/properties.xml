@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"75487bf6e91e3a17798930de0b6041af"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>richer javascript errors</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>verror</npm.name>
-  <npm.version>1.10.0</npm.version>
-</properties>

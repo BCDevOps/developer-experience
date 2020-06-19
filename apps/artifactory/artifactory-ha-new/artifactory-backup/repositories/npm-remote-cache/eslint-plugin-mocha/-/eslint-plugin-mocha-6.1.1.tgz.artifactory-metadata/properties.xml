@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"03a70a436af17276061cce9d89922343"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>eslint rules for mocha.</npm.description>
-  <npm.keywords>["eslint","eslintplugin","eslint-plugin","mocha"]</npm.keywords>
-  <npm.name>eslint-plugin-mocha</npm.name>
-  <npm.version>6.1.1</npm.version>
-</properties>

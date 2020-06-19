@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8e72a479816d975d844113968d2377b1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>use next generation javascript, today</npm.description>
-  <npm.keywords>["gulpplugin","babel","transpiler","es2015","es2016","es2017","rewriting","transformation","syntax","codegen","desugaring","javascript","compiler"]</npm.keywords>
-  <npm.name>gulp-babel</npm.name>
-  <npm.version>8.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"54e27449ef7679e93c75930c340dc4a0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>minimal async jobs utility library, with streams support</npm.description>
-  <npm.keywords>["async","jobs","parallel","serial","iterator","array","object","stream","destroy","terminate","abort"]</npm.keywords>
-  <npm.name>asynckit</npm.name>
-  <npm.version>0.4.0</npm.version>
-</properties>

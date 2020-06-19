@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"78535743a7b29f192889e7c2a066f8b6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>collection of ansi colors and styles.</npm.description>
-  <npm.keywords>["ansi-bgblack","ansi-bgblue","ansi-bgcyan","ansi-bggreen","ansi-bgmagenta","ansi-bgred","ansi-bgwhite","ansi-bgyellow","ansi-black","ansi-blue","ansi-bold","ansi-cyan","ansi-dim","ansi-gray","ansi-green","ansi-grey","ansi-hidden","ansi-inverse","ansi-italic","ansi-magenta","ansi-red","ansi-reset","ansi-strikethrough","ansi-underline","ansi-white","ansi-yellow","bgblack","bgblue","bgcyan","bggreen","bgmagenta","bgred","bgwhite","bgyellow","black","blue","bold","cyan","dim","gray","green","grey","hidden","inverse","italic","magenta","red","reset","strikethrough","underline","white","yellow"]</npm.keywords>
-  <npm.name>ansi-colors</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c4f9368a6bc3c196a83f5f7809b5bb13"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a better `child_process`</npm.description>
-  <npm.keywords>["exec","child","process","execute","fork","execfile","spawn","file","shell","bin","binary","binaries","npm","path","local"]</npm.keywords>
-  <npm.name>execa</npm.name>
-  <npm.version>0.7.0</npm.version>
-</properties>

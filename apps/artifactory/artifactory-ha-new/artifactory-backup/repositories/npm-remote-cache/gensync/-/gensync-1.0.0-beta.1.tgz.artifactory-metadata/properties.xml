@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d49975ab550b10e3f12ed18fa63ad3c0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allows users to use generators in order to write common functions that can be both sync or async.</npm.description>
-  <npm.keywords>["async","sync","generators","async-await","callbacks"]</npm.keywords>
-  <npm.name>gensync</npm.name>
-  <npm.version>1.0.0-beta.1</npm.version>
-</properties>

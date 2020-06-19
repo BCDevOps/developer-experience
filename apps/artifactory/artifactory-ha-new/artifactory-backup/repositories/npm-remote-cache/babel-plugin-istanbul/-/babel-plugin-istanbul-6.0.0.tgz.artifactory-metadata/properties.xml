@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c18bb91bd3af6da0e21eefd868f0e33f"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>a babel plugin that adds istanbul instrumentation to es6 code</npm.description>
-  <npm.keywords>["istanbul","babel","plugin","instrumentation"]</npm.keywords>
-  <npm.name>babel-plugin-istanbul</npm.name>
-  <npm.version>6.0.0</npm.version>
-</properties>

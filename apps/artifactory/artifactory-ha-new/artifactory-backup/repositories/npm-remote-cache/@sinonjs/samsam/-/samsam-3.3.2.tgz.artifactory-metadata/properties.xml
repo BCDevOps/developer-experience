@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b5c181e5af7caf207cf31ffc806d92c9"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>value identification and comparison functions</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@sinonjs/samsam</npm.name>
-  <npm.version>3.3.2</npm.version>
-</properties>

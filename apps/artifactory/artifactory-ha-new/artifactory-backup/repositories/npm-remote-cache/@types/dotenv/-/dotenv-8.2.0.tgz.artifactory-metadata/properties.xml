@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5154a047727f7e06e894fa35365d7c57"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>stub typescript definitions entry for dotenv, which provides its own types definitions</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@types/dotenv</npm.name>
-  <npm.version>8.2.0</npm.version>
-</properties>

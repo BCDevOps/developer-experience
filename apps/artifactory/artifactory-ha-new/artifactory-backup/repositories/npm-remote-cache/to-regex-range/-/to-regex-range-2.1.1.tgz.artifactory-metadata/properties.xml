@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5ad83eab061e092ad457387b4317ed45"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>pass two numbers, get a regex-compatible source string for matching ranges. validated against more than 2.78 million test assertions.</npm.description>
-  <npm.keywords>["alpha","alphabetical","bash","brace","date","expand","expansion","glob","match","matches","matching","number","numerical","range","ranges","regex","sequence","sh","to","year"]</npm.keywords>
-  <npm.name>to-regex-range</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

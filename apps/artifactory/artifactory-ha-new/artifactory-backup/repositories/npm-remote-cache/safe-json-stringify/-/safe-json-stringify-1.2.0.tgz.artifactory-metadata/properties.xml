@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f9a753880b8fbd7580db991daf43d8fa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>prevent defined property getters from throwing errors</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>safe-json-stringify</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

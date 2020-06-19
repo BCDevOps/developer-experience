@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0d4851bc1a905b64b383bb577e466c4e"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>enforce best practices for javascript promises</npm.description>
-  <npm.keywords>["eslint","eslintplugin","eslint-plugin","promise","promises"]</npm.keywords>
-  <npm.name>eslint-plugin-promise</npm.name>
-  <npm.version>4.2.1</npm.version>
-</properties>

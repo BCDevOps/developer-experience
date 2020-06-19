@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b341551822aea00b23eb48a37fcf1e18"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if a protocol requires a certain port number to be added to an url.</npm.description>
-  <npm.keywords>["port","require","http","https","ws","wss","gopher","file","ftp","requires","requried","portnumber","url","parsing","validation","cows"]</npm.keywords>
-  <npm.name>requires-port</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

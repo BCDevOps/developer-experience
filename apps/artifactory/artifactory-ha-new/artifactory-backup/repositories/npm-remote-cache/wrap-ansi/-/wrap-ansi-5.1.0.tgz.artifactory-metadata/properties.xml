@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1ad7e6cf71c94dd743f32c714c0db938"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>wordwrap a string with ansi escape codes</npm.description>
-  <npm.keywords>["wrap","break","wordwrap","wordbreak","linewrap","ansi","styles","color","colour","colors","terminal","console","cli","string","tty","escape","formatting","rgb","256","shell","xterm","log","logging","command-line","text"]</npm.keywords>
-  <npm.name>wrap-ansi</npm.name>
-  <npm.version>5.1.0</npm.version>
-</properties>

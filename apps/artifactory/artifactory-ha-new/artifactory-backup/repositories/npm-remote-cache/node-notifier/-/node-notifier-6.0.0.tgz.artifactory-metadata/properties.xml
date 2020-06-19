@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"690cf88cbcf4e3fb3b57a9b90b5ddcfa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a node.js module for sending notifications on native mac, windows (post and pre 8) and linux (or growl as fallback)</npm.description>
-  <npm.keywords>["notification center","mac os x 10.8","notify","terminal-notifier","notify-send","growl","windows 8 notification","toaster","notification"]</npm.keywords>
-  <npm.name>node-notifier</npm.name>
-  <npm.version>6.0.0</npm.version>
-</properties>

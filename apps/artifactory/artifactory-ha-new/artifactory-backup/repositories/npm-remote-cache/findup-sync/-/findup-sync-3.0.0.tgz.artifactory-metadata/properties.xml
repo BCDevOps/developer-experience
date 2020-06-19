@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"af1dd76421ec76660d048bfa393f4794"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>find the first file matching a given pattern in the current directory or the nearest ancestor directory.</npm.description>
-  <npm.keywords>["file","find","find-up","findup","glob","match","pattern","resolve","search"]</npm.keywords>
-  <npm.name>findup-sync</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

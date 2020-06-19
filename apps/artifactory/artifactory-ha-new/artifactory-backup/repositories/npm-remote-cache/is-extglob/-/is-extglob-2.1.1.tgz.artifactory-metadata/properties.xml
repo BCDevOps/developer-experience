@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f84c2f17059e807664dd8e3acc0c34c5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if a string has an extglob.</npm.description>
-  <npm.keywords>["bash","braces","check","exec","expression","extglob","glob","globbing","globstar","is","match","matches","pattern","regex","regular","string","test"]</npm.keywords>
-  <npm.name>is-extglob</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

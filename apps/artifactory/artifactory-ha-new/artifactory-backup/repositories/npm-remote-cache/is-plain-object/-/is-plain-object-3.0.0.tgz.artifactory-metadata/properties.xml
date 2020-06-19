@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d81f3a67e29987e1ce82205180d93e84"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if an object was created by the `object` constructor.</npm.description>
-  <npm.keywords>["check","is","is-object","isobject","javascript","kind","kind-of","object","plain","type","typeof","value"]</npm.keywords>
-  <npm.name>is-plain-object</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

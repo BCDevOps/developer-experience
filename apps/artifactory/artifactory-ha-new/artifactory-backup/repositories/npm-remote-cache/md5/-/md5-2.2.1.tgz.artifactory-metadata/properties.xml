@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"44b10df64d57612f378e100c387860ba"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>js function for hashing messages with md5</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>md5</npm.name>
-  <npm.version>2.2.1</npm.version>
-</properties>

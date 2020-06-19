@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e16378bbb4a49e4dba367ed841732fa7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>csv and object generation implementing the node.js `stream.readable` api</npm.description>
-  <npm.keywords>["stream","generate","csv","object"]</npm.keywords>
-  <npm.name>csv-generate</npm.name>
-  <npm.version>3.2.4</npm.version>
-</properties>

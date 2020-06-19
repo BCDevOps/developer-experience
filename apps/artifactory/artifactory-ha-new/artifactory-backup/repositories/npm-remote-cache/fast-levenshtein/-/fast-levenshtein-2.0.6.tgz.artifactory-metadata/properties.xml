@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"443a739d106c51a33470c9f018d82e85"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>efficient implementation of levenshtein algorithm  with locale-specific collator support.</npm.description>
-  <npm.keywords>["levenshtein","distance","string"]</npm.keywords>
-  <npm.name>fast-levenshtein</npm.name>
-  <npm.version>2.0.6</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7e3fa8701bbf9b7232e0dfc13b5bd9d7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>regular expression for matching astral symbols</npm.description>
-  <npm.keywords>["astral","emoji","regex","surrogate"]</npm.keywords>
-  <npm.name>astral-regex</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

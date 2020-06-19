@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"eecd5e5e49a84d7edd0ae827886d5ee6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>automatic retry plugin for octokit</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@octokit/plugin-retry</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

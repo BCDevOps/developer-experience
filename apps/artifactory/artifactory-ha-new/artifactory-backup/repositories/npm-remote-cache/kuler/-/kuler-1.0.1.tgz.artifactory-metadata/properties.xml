@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d8cf346bc578b4083201dde447395ad9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>color your terminal using css/hex color codes</npm.description>
-  <npm.keywords>["kuler","ansi","color","colour","chalk","css","hex","rgb","rgv"]</npm.keywords>
-  <npm.name>kuler</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

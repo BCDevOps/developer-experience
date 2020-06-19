@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"325b11b965688c69ae45a3cf771fbc5c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a regex that tokenizes javascript.</npm.description>
-  <npm.keywords>["JavaScript","js","token","tokenize","regex"]</npm.keywords>
-  <npm.name>js-tokens</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

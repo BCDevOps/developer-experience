@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"57b7a7d3a78acfc092e8a1704b45cecc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>iterator abstraction based on es6 specification</npm.description>
-  <npm.keywords>["iterator","array","list","set","map","generator"]</npm.keywords>
-  <npm.name>es6-iterator</npm.name>
-  <npm.version>2.0.3</npm.version>
-</properties>

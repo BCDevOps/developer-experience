@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d97301b0e3a597e8103b75007d6ebf1d"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>utilities for encryption and hashing</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>crypt</npm.name>
-  <npm.version>0.0.2</npm.version>
-</properties>

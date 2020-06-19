@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dc36f44bdf1652abe5b74ec6ad66a79b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>elegant &amp; feature rich browser / node http with a fluent api</npm.description>
-  <npm.keywords>["http","ajax","request","agent"]</npm.keywords>
-  <npm.name>superagent</npm.name>
-  <npm.version>3.8.3</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4f4b9beb2d53481341e16133a8570dc5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the path environment variable key cross-platform</npm.description>
-  <npm.keywords>["path","key","environment","env","variable","var","get","cross-platform","windows"]</npm.keywords>
-  <npm.name>path-key</npm.name>
-  <npm.version>3.1.1</npm.version>
-</properties>

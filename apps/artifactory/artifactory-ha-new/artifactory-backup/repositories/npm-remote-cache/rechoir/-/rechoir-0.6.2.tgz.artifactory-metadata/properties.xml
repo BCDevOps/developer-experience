@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9a0aa4db2a887a452ef08921160c7eb4"</artifactory.internal.etag>
-  <npm.description>require any supported file as a node module.</npm.description>
-  <npm.keywords>["require","cjsx","co","coco","coffee-script","coffee","coffee.md","csv","earlgrey","es","es6","iced","iced.md","iced-coffee-script","ini","js","json","json5","jsx","react","litcoffee","liticed","ls","livescript","toml","ts","typescript","xml","yaml","yml"]</npm.keywords>
-  <npm.name>rechoir</npm.name>
-  <npm.version>0.6.2</npm.version>
-</properties>

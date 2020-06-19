@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"70597fa4f20083bf7a8d035e2e5631f9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>virtual file format.</npm.description>
-  <npm.keywords>["virtual","filesystem","file","directory","stat","path"]</npm.keywords>
-  <npm.name>vinyl</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

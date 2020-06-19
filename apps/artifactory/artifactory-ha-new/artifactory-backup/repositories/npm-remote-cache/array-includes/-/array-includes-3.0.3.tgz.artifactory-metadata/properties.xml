@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"15869719d72f9f08a1c222b78d60a1a7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an es7/es2016 spec-compliant `array.prototype.includes` shim/polyfill/replacement that works as far down as es3.</npm.description>
-  <npm.keywords>["Array.prototype.includes","includes","array","ES7","shim","polyfill","contains","Array.prototype.contains","es-shim API"]</npm.keywords>
-  <npm.name>array-includes</npm.name>
-  <npm.version>3.0.3</npm.version>
-</properties>

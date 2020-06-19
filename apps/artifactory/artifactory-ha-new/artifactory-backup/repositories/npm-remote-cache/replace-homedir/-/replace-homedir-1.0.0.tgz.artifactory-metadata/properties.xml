@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bfefa3d3c8d0f020a3c5bc89589d285e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>replace user home in a string with another string. useful for tildifying a path.</npm.description>
-  <npm.keywords>["path","homedir","tilde","replace","subsitute","user home","tilde"]</npm.keywords>
-  <npm.name>replace-homedir</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bc22d2074eadea13e0556ca1045916a9"</artifactory.internal.etag>
-  <artifactory.licenses>CC0-1.0</artifactory.licenses>
-  <npm.description>a list of spdx license identifiers</npm.description>
-  <npm.keywords>["spdx","license","licenses","id","identifier","identifiers","json","array","oss"]</npm.keywords>
-  <npm.name>spdx-license-ids</npm.name>
-  <npm.version>3.0.5</npm.version>
-</properties>

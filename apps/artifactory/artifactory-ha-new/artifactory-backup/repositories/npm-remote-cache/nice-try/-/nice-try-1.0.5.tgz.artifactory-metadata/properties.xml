@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9bdc972734877096936d7bb79b8e21ed"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>tries to execute a function and discards any error that occurs</npm.description>
-  <npm.keywords>["try","catch","error"]</npm.keywords>
-  <npm.name>nice-try</npm.name>
-  <npm.version>1.0.5</npm.version>
-</properties>

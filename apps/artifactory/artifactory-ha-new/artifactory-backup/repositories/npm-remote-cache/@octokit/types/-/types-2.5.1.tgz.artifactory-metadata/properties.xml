@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f6005dc70a96e691de244f587488b7b9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>shared typescript definitions for octokit projects</npm.description>
-  <npm.keywords>["github","api","sdk","toolkit","typescript"]</npm.keywords>
-  <npm.name>@octokit/types</npm.name>
-  <npm.version>2.5.1</npm.version>
-</properties>

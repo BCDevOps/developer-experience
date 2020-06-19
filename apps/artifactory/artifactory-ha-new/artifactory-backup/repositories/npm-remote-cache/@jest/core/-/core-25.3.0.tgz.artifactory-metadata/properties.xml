@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6c6177903cb659099b39a79f5180e952"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>delightful javascript testing.</npm.description>
-  <npm.keywords>["ava","babel","coverage","easy","expect","facebook","immersive","instant","jasmine","jest","jsdom","mocha","mocking","painless","qunit","runner","sandboxed","snapshot","tap","tape","test","testing","typescript","watch"]</npm.keywords>
-  <npm.name>@jest/core</npm.name>
-  <npm.version>25.3.0</npm.version>
-</properties>

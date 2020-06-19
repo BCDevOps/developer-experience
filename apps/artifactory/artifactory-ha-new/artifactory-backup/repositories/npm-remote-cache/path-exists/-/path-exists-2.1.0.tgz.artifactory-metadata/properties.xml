@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4cc32b19e220e3ca0f4d14844996dc56"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if a path exists</npm.description>
-  <npm.keywords>["path","exists","exist","file","filepath","fs","filesystem","file-system","access","stat"]</npm.keywords>
-  <npm.name>path-exists</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

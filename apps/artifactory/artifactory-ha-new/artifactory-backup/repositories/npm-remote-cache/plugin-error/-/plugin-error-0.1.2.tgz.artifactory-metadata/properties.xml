@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9aabfbd57bb722f3429fd52e6b63e457"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>error handling for vinyl plugins. just an abstraction of what's in gulp-util with minor changes.</npm.description>
-  <npm.keywords>["error","plugin"]</npm.keywords>
-  <npm.name>plugin-error</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

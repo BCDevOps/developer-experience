@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a33c77d84209856ed58ff01b116acf0f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the lodash method `_.defaults` exported as a module.</npm.description>
-  <npm.keywords>"lodash-modularized, defaults"</npm.keywords>
-  <npm.name>lodash.defaults</npm.name>
-  <npm.version>4.2.0</npm.version>
-</properties>

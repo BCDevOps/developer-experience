@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"abf979119c91f795f39302fe013d6e53"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>whatwg spec-compliant implementations of window.atob and window.btoa.</npm.description>
-  <npm.keywords>["atob","btoa","browser"]</npm.keywords>
-  <npm.name>abab</npm.name>
-  <npm.version>2.0.3</npm.version>
-</properties>

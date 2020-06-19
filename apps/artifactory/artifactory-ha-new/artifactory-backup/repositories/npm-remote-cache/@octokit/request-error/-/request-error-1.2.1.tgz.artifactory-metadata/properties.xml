@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c97c3aac2329b4fe0fb62b8a8dcdebcf"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>error class for octokit request errors</npm.description>
-  <npm.keywords>["octokit","github","api","error"]</npm.keywords>
-  <npm.name>@octokit/request-error</npm.name>
-  <npm.version>1.2.1</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7fb812931aa90244ec1ab79b968a1753"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>standard library</npm.description>
-  <npm.keywords>["ES3","ES5","ES6","ES7","ES2015","ES2016","ES2017","ECMAScript 3","ECMAScript 5","ECMAScript 6","ECMAScript 7","ECMAScript 2015","ECMAScript 2016","ECMAScript 2017","Harmony","Strawman","Map","Set","WeakMap","WeakSet","Promise","Symbol","TypedArray","setImmediate","Dict","polyfill","shim"]</npm.keywords>
-  <npm.name>core-js</npm.name>
-  <npm.version>2.6.9</npm.version>
-</properties>

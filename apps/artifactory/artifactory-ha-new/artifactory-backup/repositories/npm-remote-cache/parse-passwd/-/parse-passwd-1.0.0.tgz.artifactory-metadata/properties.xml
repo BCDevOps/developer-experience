@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8c0aa996e36267b0d4ab308b85197f3f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parse a passwd file into a list of users.</npm.description>
-  <npm.keywords>["etc","etc-passwd","etc/passwd","parse","parse-passwd","passwd"]</npm.keywords>
-  <npm.name>parse-passwd</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

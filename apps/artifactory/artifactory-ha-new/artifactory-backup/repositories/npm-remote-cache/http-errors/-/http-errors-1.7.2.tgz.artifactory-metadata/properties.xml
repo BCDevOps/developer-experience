@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"994d09a23baca4ea2bd6d68c9c732d74"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create http error objects</npm.description>
-  <npm.keywords>["http","error"]</npm.keywords>
-  <npm.name>http-errors</npm.name>
-  <npm.version>1.7.2</npm.version>
-</properties>

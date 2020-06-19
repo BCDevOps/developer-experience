@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dc7142b470e0957c5c34098b6fced0ab"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>safer node.js buffer api</npm.description>
-  <npm.keywords>["buffer","buffer allocate","node security","safe","safe-buffer","security","uninitialized"]</npm.keywords>
-  <npm.name>safe-buffer</npm.name>
-  <npm.version>5.1.2</npm.version>
-</properties>

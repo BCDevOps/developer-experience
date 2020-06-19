@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"805e04a09d7aeaba95cddfb537535181"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>jwa implementation (supports all jws algorithms)</npm.description>
-  <npm.keywords>["jwa","jws","jwt","rsa","ecdsa","hmac"]</npm.keywords>
-  <npm.name>jwa</npm.name>
-  <npm.version>1.4.1</npm.version>
-</properties>

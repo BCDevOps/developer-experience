@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"66cc30f52092adfa3d1c98543f181737"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>pipe streams together and close all of them if one of them closes</npm.description>
-  <npm.keywords>["streams","pipe","destroy","callback"]</npm.keywords>
-  <npm.name>pump</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

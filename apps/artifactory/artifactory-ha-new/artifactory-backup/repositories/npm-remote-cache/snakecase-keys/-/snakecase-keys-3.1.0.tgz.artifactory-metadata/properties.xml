@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"937fc641ea8ca1b91f6fccdb7994e488"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>convert an object's keys to snake case</npm.description>
-  <npm.keywords>["snake","case","camel","keys","object"]</npm.keywords>
-  <npm.name>snakecase-keys</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

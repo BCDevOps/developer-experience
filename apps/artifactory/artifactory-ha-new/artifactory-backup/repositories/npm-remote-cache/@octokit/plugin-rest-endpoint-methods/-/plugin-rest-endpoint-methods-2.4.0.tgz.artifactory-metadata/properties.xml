@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"525442c4a92c7f62804d61949caa654a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>octokit plugin adding one method for all of api.github.com rest api endpoints</npm.description>
-  <npm.keywords>["github","api","sdk","toolkit"]</npm.keywords>
-  <npm.name>@octokit/plugin-rest-endpoint-methods</npm.name>
-  <npm.version>2.4.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"da40ef96cbd73401fc07f6c3ca3689a1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>delightful javascript testing.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>jest-watcher</npm.name>
-  <npm.version>25.3.0</npm.version>
-</properties>

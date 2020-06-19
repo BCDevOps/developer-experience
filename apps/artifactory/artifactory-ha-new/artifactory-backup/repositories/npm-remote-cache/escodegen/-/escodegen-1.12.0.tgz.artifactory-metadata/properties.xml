@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"442db1ac727b5c8c45338691625a0c82"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>ecmascript code generator</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>escodegen</npm.name>
-  <npm.version>1.12.0</npm.version>
-</properties>

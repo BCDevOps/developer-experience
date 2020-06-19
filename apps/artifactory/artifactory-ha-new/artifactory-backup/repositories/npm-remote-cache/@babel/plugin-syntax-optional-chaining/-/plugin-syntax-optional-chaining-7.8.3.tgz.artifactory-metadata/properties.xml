@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5dcf5f55ba553670f50aa31f5f774748"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allow parsing of optional properties</npm.description>
-  <npm.keywords>["babel-plugin"]</npm.keywords>
-  <npm.name>@babel/plugin-syntax-optional-chaining</npm.name>
-  <npm.version>7.8.3</npm.version>
-</properties>

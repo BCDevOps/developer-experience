@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"30cb7a48c29e7c9c33842bb9f93f0703"</artifactory.internal.etag>
-  <npm.description>node's querystring module for all engines.</npm.description>
-  <npm.keywords>["commonjs","query","querystring"]</npm.keywords>
-  <npm.name>querystring</npm.name>
-  <npm.version>0.2.0</npm.version>
-</properties>

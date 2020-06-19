@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"824f2cf7f7d64b22cfa58e2f4158f291"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>parses cache-control and other headers. helps building correct http caches and proxies</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>http-cache-semantics</npm.name>
-  <npm.version>4.1.0</npm.version>
-</properties>

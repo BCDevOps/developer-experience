@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a50ff73961005cc6715e7123aeda8850"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>map over an array or object of values in parallel or series, passing each through the async iterator, with optional lifecycle hooks.</npm.description>
-  <npm.keywords>["async","async.js","map","control","flow","extension","tracing","debug","aop","aspect","timing","tracing"]</npm.keywords>
-  <npm.name>now-and-later</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

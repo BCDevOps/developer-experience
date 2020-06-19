@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a8d4412852471526b8027af2532d0d2b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a list of color names and its values</npm.description>
-  <npm.keywords>["color-name","color","color-keyword","keyword"]</npm.keywords>
-  <npm.name>color-name</npm.name>
-  <npm.version>1.1.4</npm.version>
-</properties>

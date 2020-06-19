@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"05498cda2a22a925d8c19893a514d199"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>merge old source map and new source map in multi-transform flow</npm.description>
-  <npm.keywords>["sourcemap","source-map"]</npm.keywords>
-  <npm.name>merge-source-map</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

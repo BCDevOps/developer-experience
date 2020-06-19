@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1df151f53e8026458c6a6f4c437c9e17"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>react package for working with the dom.</npm.description>
-  <npm.keywords>["react"]</npm.keywords>
-  <npm.name>react-dom</npm.name>
-  <npm.version>16.8.6</npm.version>
-</properties>

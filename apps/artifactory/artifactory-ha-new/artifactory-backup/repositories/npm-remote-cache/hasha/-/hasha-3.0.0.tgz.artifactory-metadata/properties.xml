@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"91d0bf7337ed6467f9fc97e6ec708957"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>hashing made simple. get the hash of a buffer/string/stream/file.</npm.description>
-  <npm.keywords>["hash","hashing","crypto","hex","base64","md5","sha1","sha256","sha512","sum","stream","file","fs","buffer","string","text","rev","revving","simple","easy"]</npm.keywords>
-  <npm.name>hasha</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

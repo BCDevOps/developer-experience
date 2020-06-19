@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ac7cec0c56f19c14c0ba4a555a0722c5"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description> a framework for building github apps to automate and improve your workflow</npm.description>
-  <npm.keywords>["probot","github-apps","github","automation","robots","workflow"]</npm.keywords>
-  <npm.name>probot</npm.name>
-  <npm.version>9.6.6</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d69bb4d1f65e08acd32debce863b513e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>delete nested properties from an object using dot notation.</npm.description>
-  <npm.keywords>["del","delete","key","object","omit","prop","property","remove","unset","value"]</npm.keywords>
-  <npm.name>unset-value</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

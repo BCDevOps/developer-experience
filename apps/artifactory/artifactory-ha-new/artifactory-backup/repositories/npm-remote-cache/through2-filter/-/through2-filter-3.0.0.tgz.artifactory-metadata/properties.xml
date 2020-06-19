@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0463c5fbc7131c216b2e51e4e3705b22"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a through2 to create an array.prototype.filter analog for streams.</npm.description>
-  <npm.keywords>["streams","through","through2","filter"]</npm.keywords>
-  <npm.name>through2-filter</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

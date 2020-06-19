@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"76c361f171ab9041610087c85636f679"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>an eslint custom parser which leverages typescript estree</npm.description>
-  <npm.keywords>["ast","ecmascript","javascript","typescript","parser","syntax","eslint"]</npm.keywords>
-  <npm.name>typescript-eslint-parser</npm.name>
-  <npm.version>22.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e9bb66200b728da39a79c2f235780331"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>assign the enumerable es6 symbol properties from an object (or objects) to the first object passed on the arguments. can be used as a supplement to other extend, assign or merge methods as a polyfill for the symbols part of the es6 object.assign method.</npm.description>
-  <npm.keywords>["assign","symbols"]</npm.keywords>
-  <npm.name>assign-symbols</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

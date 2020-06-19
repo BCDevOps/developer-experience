@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9d7a693c9ba9ce6bfe1476603aa65d81"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>another simple argument parser</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>arg</npm.name>
-  <npm.version>4.1.1</npm.version>
-</properties>

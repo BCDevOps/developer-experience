@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"eea6096ef5e7ad10e7ce740f2096af11"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>json parse &amp; stringify that supports binary via bops &amp; base64</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>json-buffer</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

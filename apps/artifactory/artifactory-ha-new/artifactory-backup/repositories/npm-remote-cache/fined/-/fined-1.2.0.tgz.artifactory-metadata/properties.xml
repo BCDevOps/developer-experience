@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1385c5d8c7fa6677d6bbc86098ec82c9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>find a file given a declaration of locations.</npm.description>
-  <npm.keywords>["find","lookup","config"]</npm.keywords>
-  <npm.name>fined</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

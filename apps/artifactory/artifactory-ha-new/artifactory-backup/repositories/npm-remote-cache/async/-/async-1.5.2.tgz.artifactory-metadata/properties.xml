@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f8ccb67cf5f6e477dcfaecb631986630"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>higher-order functions and common patterns for asynchronous code</npm.description>
-  <npm.keywords>["async","callback","utility","module"]</npm.keywords>
-  <npm.name>async</npm.name>
-  <npm.version>1.5.2</npm.version>
-</properties>

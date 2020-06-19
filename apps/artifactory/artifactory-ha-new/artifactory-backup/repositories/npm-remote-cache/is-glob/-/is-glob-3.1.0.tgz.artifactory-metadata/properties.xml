@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a519b34dda756e71918ee05aff0be33b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns `true` if the given string looks like a glob pattern or an extglob pattern. this makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience.</npm.description>
-  <npm.keywords>["bash","braces","check","exec","expression","extglob","glob","globbing","globstar","is","match","matches","pattern","regex","regular","string","test"]</npm.keywords>
-  <npm.name>is-glob</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

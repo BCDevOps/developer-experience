@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f3f9fd43853d67e8811749bf2e73e1e0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fixes stack traces for files with source maps</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>source-map-support</npm.name>
-  <npm.version>0.5.16</npm.version>
-</properties>

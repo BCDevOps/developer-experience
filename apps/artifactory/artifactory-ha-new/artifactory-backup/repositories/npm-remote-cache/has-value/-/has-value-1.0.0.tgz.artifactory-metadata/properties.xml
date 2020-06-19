@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0f5d46e9619fa36d9930f590ef96844b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if a value exists, false if empty. works with deeply nested values using object paths.</npm.description>
-  <npm.keywords>["array","boolean","empty","find","function","has","hasOwn","javascript","js","key","keys","node.js","null","number","object","properties","property","string","type","util","utilities","utility","value"]</npm.keywords>
-  <npm.name>has-value</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

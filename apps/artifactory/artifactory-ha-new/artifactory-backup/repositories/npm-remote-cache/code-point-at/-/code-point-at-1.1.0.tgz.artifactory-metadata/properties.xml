@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c214d9956b6b675ad837e76eecfc2d4b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es2015 `string#codepointat()` ponyfill</npm.description>
-  <npm.keywords>["es2015","ponyfill","polyfill","shim","string","str","code","point","at","codepoint","unicode"]</npm.keywords>
-  <npm.name>code-point-at</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4371cf685a3e0bcb1f9a5499c03a4cb9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>object transformations implementing the node.js `stream.transform` api</npm.description>
-  <npm.keywords>["stream","transform","csv","object"]</npm.keywords>
-  <npm.name>stream-transform</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

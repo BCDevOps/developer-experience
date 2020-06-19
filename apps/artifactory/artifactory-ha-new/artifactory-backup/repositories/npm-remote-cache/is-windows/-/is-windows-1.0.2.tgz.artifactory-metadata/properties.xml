@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bcc9525ed3558792d281951c90ad366e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if the platform is windows. umd module, works with node.js, commonjs, browser, amd, electron, etc.</npm.description>
-  <npm.keywords>["check","cywin","is","is-windows","nix","operating system","os","platform","process","unix","win","win32","windows"]</npm.keywords>
-  <npm.name>is-windows</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

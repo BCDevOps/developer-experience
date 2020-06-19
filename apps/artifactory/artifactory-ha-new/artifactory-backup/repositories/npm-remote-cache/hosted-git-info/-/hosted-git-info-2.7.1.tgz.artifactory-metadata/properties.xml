@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9cdb1257b29c6d0ab393e69ecb390b0e"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>provides metadata and conversions from repository urls for github, bitbucket and gitlab</npm.description>
-  <npm.keywords>["git","github","bitbucket","gitlab"]</npm.keywords>
-  <npm.name>hosted-git-info</npm.name>
-  <npm.version>2.7.1</npm.version>
-</properties>

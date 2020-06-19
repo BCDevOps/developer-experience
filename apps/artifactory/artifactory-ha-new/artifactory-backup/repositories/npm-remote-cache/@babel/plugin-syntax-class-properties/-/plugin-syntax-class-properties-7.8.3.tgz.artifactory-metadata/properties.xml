@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"672373ba71f92d25e5f1797d84b14619"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allow parsing of class properties</npm.description>
-  <npm.keywords>["babel-plugin"]</npm.keywords>
-  <npm.name>@babel/plugin-syntax-class-properties</npm.name>
-  <npm.version>7.8.3</npm.version>
-</properties>

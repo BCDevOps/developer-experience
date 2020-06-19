@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"19316b96acffad93c4ff6774b4af6465"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>like json.stringify, but doesn't blow up on circular refs.</npm.description>
-  <npm.keywords>["json","stringify","circular","safe"]</npm.keywords>
-  <npm.name>json-stringify-safe</npm.name>
-  <npm.version>5.0.1</npm.version>
-</properties>

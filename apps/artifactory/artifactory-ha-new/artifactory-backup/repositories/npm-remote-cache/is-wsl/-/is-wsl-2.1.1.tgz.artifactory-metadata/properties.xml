@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6b3e3329aaad8a9de07982f8be3064b5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if the process is running inside windows subsystem for linux (bash on windows)</npm.description>
-  <npm.keywords>["check","wsl","windows","subsystem","linux","detect","bash","process","console","terminal","is"]</npm.keywords>
-  <npm.name>is-wsl</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

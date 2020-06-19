@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f1350d1d74e671d2efea725411c18592"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>launch your command line tool with ease.</npm.description>
-  <npm.keywords>["command line"]</npm.keywords>
-  <npm.name>liftoff</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

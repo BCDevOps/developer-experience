@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"02cb036a281da6ba37e74e338ab52ba6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>babel-plugin-jest-hoist</npm.name>
-  <npm.version>24.9.0</npm.version>
-</properties>

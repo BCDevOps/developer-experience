@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f791f7898733e02f7216de5d6d6a1602"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>babel selfcontained runtime</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>babel-runtime</npm.name>
-  <npm.version>6.26.0</npm.version>
-</properties>

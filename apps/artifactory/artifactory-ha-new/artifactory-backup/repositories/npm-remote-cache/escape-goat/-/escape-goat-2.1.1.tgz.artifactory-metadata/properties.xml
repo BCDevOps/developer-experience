@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f08124d4847f65b57fcd661aff0a2fa0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>escape a string for use in html or the inverse</npm.description>
-  <npm.keywords>["escape","unescape","html","entity","entities","escaping","sanitize","sanitization","utility","template","attribute","value","interpolate","xss","goat","🐐"]</npm.keywords>
-  <npm.name>escape-goat</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

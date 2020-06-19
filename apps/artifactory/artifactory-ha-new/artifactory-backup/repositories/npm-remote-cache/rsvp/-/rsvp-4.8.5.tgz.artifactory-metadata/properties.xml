@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"372e96ebd0ae88441894ed6bff700f0d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a lightweight library that provides tools for organizing asynchronous code</npm.description>
-  <npm.keywords>["futures","promises"]</npm.keywords>
-  <npm.name>rsvp</npm.name>
-  <npm.version>4.8.5</npm.version>
-</properties>

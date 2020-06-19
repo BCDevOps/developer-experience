@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4c18ca67ff257f2182e0d2521b8c9cd9"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>runtime library for typescript helper functions</npm.description>
-  <npm.keywords>["TypeScript","Microsoft","compiler","language","javascript","tslib","runtime"]</npm.keywords>
-  <npm.name>tslib</npm.name>
-  <npm.version>1.9.0</npm.version>
-</properties>

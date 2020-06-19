@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3fff5284a51168ac6247198a29a2356b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the complete solution for node.js command-line programs</npm.description>
-  <npm.keywords>["commander","command","option","parser"]</npm.keywords>
-  <npm.name>commander</npm.name>
-  <npm.version>2.20.3</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c1130142d7ed405602b1fc38d811e360"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no-bullshit, ultra-simple, 35-lines-of-code async parallel foreach / map function for javascript.</npm.description>
-  <npm.keywords>["async","forEach","each","map","asynchronous","iteration","iterate","loop","parallel","concurrent","array","flow","control flow"]</npm.keywords>
-  <npm.name>async-each</npm.name>
-  <npm.version>1.0.3</npm.version>
-</properties>

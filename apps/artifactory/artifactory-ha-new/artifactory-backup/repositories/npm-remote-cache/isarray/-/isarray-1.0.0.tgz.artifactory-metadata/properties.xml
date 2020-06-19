@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c24471c617803171eed93b3516624c97"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>array#isarray for older browsers</npm.description>
-  <npm.keywords>["browser","isarray","array"]</npm.keywords>
-  <npm.name>isarray</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"22d775a82bda32f0eb39d73fa0545103"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>gulp plugin for mapping sources of a sourcemap.</npm.description>
-  <npm.keywords>["sourcemap","sources","stream"]</npm.keywords>
-  <npm.name>@gulp-sourcemaps/map-sources</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

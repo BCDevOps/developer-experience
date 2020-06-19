@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"37f66e902a5f485dea08ba7573e60016"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>eslint plugin about ecmascript syntactic features.</npm.description>
-  <npm.keywords>["eslint","plugin","eslintplugin"]</npm.keywords>
-  <npm.name>eslint-plugin-es</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

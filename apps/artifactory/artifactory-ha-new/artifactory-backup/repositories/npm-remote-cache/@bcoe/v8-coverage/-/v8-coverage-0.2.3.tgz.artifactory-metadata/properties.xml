@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"55878e8fb4be11161e0f9e010467df39"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>helper functions for v8 coverage files.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@bcoe/v8-coverage</npm.name>
-  <npm.version>0.2.3</npm.version>
-</properties>

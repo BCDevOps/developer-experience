@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"924d9c0b75cca130ab61f00a2ecc6599"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>similar to map for arrays, this creates a new object by calling the callback on each property of the original object.</npm.description>
-  <npm.keywords>["map","object"]</npm.keywords>
-  <npm.name>object.map</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

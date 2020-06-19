@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c31e794104e2b003cd75bfac11872ba9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>saslprep: stringprep profile for user names and passwords, rfc4013.</npm.description>
-  <npm.keywords>["sasl","saslprep","stringprep","rfc4013","4013"]</npm.keywords>
-  <npm.name>saslprep</npm.name>
-  <npm.version>1.0.3</npm.version>
-</properties>

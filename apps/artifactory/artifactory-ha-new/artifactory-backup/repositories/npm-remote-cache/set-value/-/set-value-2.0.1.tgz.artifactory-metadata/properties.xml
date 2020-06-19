@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b1e945fff7d8430e86066db678ca6390"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create nested values and any intermediaries using dot notation (`'a.b.c'`) paths.</npm.description>
-  <npm.keywords>["get","has","hasown","key","keys","nested","notation","object","prop","properties","property","props","set","value","values"]</npm.keywords>
-  <npm.name>set-value</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

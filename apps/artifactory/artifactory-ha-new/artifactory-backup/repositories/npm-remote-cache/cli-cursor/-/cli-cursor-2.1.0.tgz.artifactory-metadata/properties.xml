@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b5de449dc298098e4ceca368d8419585"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>toggle the cli cursor</npm.description>
-  <npm.keywords>["cli","cursor","ansi","toggle","display","show","hide","term","terminal","console","tty","shell","command-line"]</npm.keywords>
-  <npm.name>cli-cursor</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

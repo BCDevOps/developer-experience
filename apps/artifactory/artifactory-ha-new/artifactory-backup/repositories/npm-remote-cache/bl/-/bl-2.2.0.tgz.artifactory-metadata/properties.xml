@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b65e4952a515d47d947ee6684f223ae3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>buffer list: collect buffers and access with a standard readable buffer interface, streamable too!</npm.description>
-  <npm.keywords>["buffer","buffers","stream","awesomesauce"]</npm.keywords>
-  <npm.name>bl</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

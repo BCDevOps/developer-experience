@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3f5d03db9123aa9c68bb5a643903f11c"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>polyfill for metadata reflection api</npm.description>
-  <npm.keywords>["decorator","metadata","javascript","reflect"]</npm.keywords>
-  <npm.name>reflect-metadata</npm.name>
-  <npm.version>0.1.13</npm.version>
-</properties>

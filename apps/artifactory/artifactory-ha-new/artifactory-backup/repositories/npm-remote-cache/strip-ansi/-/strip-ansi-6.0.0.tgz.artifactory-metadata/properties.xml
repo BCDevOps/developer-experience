@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"767c76e38fb2bb82a3da65412b4610ad"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>strip ansi escape codes from a string</npm.description>
-  <npm.keywords>["strip","trim","remove","ansi","styles","color","colour","colors","terminal","console","string","tty","escape","formatting","rgb","256","shell","xterm","log","logging","command-line","text"]</npm.keywords>
-  <npm.name>strip-ansi</npm.name>
-  <npm.version>6.0.0</npm.version>
-</properties>

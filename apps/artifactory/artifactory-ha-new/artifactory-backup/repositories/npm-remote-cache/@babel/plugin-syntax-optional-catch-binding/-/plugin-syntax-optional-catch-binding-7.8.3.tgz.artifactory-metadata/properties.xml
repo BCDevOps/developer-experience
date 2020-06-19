@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9326d0b8db6f4d1dbed21b6461d21485"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allow parsing of optional catch bindings</npm.description>
-  <npm.keywords>["babel-plugin"]</npm.keywords>
-  <npm.name>@babel/plugin-syntax-optional-catch-binding</npm.name>
-  <npm.version>7.8.3</npm.version>
-</properties>

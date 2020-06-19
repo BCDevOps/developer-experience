@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8739ecad471c4e32cdabb7e49a2a7810"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>destroy a stream if possible</npm.description>
-  <npm.keywords>["stream","streams","destroy","cleanup","leak","fd"]</npm.keywords>
-  <npm.name>destroy</npm.name>
-  <npm.version>1.0.4</npm.version>
-</properties>

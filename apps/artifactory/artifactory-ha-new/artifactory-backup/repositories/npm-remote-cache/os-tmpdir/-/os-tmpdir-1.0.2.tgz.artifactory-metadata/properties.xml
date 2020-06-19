@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0d1f764536aad6dd6f07e48db889051c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>node.js os.tmpdir() ponyfill</npm.description>
-  <npm.keywords>["built-in","core","ponyfill","polyfill","shim","os","tmpdir","tempdir","tmp","temp","dir","directory","env","environment"]</npm.keywords>
-  <npm.name>os-tmpdir</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

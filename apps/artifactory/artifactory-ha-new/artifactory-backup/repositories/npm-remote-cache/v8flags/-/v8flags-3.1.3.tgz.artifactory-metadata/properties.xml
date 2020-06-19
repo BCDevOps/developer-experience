@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3b652fe99fb26388c6244b8ff2206dc8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get available v8 flags.</npm.description>
-  <npm.keywords>["v8 flags","harmony flags"]</npm.keywords>
-  <npm.name>v8flags</npm.name>
-  <npm.version>3.1.3</npm.version>
-</properties>

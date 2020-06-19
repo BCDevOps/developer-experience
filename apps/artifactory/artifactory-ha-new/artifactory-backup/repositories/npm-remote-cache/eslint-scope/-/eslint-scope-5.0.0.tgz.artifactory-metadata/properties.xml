@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"229ef2035391fe0a6d175472d6478b2e"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>ecmascript scope analyzer for eslint</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>eslint-scope</npm.name>
-  <npm.version>5.0.0</npm.version>
-</properties>

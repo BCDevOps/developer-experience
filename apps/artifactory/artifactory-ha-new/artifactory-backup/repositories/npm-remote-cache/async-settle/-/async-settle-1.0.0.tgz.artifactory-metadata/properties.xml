@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"91281cbd1f0a36c3e5638cab8202c345"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>settle an async function.</npm.description>
-  <npm.keywords>["settle","async","async-done","complete","error","parallel"]</npm.keywords>
-  <npm.name>async-settle</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

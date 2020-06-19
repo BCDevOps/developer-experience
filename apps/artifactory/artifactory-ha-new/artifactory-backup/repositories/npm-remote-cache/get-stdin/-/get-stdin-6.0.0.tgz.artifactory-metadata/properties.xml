@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"733b9fb655c457d8575b814f07273eb7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get stdin as a string or buffer</npm.description>
-  <npm.keywords>["std","stdin","stdio","concat","buffer","stream","process","read"]</npm.keywords>
-  <npm.name>get-stdin</npm.name>
-  <npm.version>6.0.0</npm.version>
-</properties>

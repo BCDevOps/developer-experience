@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dd31215ede2e0da80f8e31c9f93d8ace"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>add callbacks to requests in flight to avoid async duplication</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>inflight</npm.name>
-  <npm.version>1.0.6</npm.version>
-</properties>

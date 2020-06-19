@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0c309d8c43bc9546676100500c1db1c4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>call a specified method on each value in the given object.</npm.description>
-  <npm.keywords>["context","function","helper","key","method","object","value","visit","visitor"]</npm.keywords>
-  <npm.name>object-visit</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

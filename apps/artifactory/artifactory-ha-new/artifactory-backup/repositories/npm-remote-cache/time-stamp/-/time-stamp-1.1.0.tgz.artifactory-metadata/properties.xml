@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e6edcb7893d6d9f640f87901b9bca61f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get a formatted timestamp.</npm.description>
-  <npm.keywords>["console","date","format","formatting","log","pretty","stamp","terminal","time","time-stamp"]</npm.keywords>
-  <npm.name>time-stamp</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

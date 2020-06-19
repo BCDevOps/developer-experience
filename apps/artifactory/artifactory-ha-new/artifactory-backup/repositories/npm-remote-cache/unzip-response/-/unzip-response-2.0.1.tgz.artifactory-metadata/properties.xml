@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e51373c401f12074723c895404c947b9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>unzip a http response if needed</npm.description>
-  <npm.keywords>["http","unzip","zlib","gzip","deflate","incoming","message","response","stream"]</npm.keywords>
-  <npm.name>unzip-response</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

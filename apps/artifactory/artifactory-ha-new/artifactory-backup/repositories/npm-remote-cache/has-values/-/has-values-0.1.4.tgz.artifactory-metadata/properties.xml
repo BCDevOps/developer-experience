@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"59bfd41b8b69c52c77823af62b7bada7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if any values exist, false if empty. works for booleans, functions, numbers, strings, nulls, objects and arrays. </npm.description>
-  <npm.keywords>["array","boolean","empty","find","function","has","hasOwn","javascript","js","key","keys","node.js","null","number","object","properties","property","string","type","util","utilities","utility","value"]</npm.keywords>
-  <npm.name>has-values</npm.name>
-  <npm.version>0.1.4</npm.version>
-</properties>

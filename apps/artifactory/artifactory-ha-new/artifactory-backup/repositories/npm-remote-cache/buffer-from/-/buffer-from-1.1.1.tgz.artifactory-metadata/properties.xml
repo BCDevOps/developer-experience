@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"31362580a0ba40b9f49cb366ab813720"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>no_content</npm.description>
-  <npm.keywords>["buffer","buffer from"]</npm.keywords>
-  <npm.name>buffer-from</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

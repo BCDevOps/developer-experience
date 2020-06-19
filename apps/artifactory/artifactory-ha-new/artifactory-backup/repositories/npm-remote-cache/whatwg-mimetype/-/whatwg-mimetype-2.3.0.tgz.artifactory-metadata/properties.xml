@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"73db0317d00a5627ebb7ea5ee6a816c5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parses, serializes, and manipulates mime types, according to the whatwg mime sniffing standard</npm.description>
-  <npm.keywords>["content-type","mime type","mimesniff","http","whatwg"]</npm.keywords>
-  <npm.name>whatwg-mimetype</npm.name>
-  <npm.version>2.3.0</npm.version>
-</properties>

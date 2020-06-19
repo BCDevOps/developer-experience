@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0f6861cee0643e0383ac8512406ecb64"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>read a package.json file</npm.description>
-  <npm.keywords>["json","read","parse","file","fs","graceful","load","pkg","package","normalize"]</npm.keywords>
-  <npm.name>read-pkg</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

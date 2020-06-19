@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"cbdbf28310ed8378e172ee587d83fa25"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>csv stringifier implementing the node.js `stream.transform` api</npm.description>
-  <npm.keywords>["csv","stringify","stringifier"]</npm.keywords>
-  <npm.name>csv-stringify</npm.name>
-  <npm.version>5.3.6</npm.version>
-</properties>

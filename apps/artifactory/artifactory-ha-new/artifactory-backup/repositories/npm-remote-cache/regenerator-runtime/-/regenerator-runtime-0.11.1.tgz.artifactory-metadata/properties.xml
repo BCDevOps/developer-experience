@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"728ac808fb5276bf420fab33620d0c39"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>runtime for regenerator-compiled generator and async functions.</npm.description>
-  <npm.keywords>["regenerator","runtime","generator","async"]</npm.keywords>
-  <npm.name>regenerator-runtime</npm.name>
-  <npm.version>0.11.1</npm.version>
-</properties>

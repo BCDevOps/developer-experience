@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b118bcbbd6c80f61c8dcc525bb784791"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a library for deep (recursive) merging of javascript objects</npm.description>
-  <npm.keywords>["merge","deep","extend","copy","clone","recursive"]</npm.keywords>
-  <npm.name>deepmerge</npm.name>
-  <npm.version>4.2.2</npm.version>
-</properties>

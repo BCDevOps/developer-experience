@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b46c083aa373a30b8d2421e9f269d543"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>normalizes data that can be found in package.json files.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>normalize-package-data</npm.name>
-  <npm.version>2.5.0</npm.version>
-</properties>

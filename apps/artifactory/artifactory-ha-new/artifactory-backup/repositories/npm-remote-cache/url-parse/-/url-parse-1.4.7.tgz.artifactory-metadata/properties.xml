@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3021c135b81cd915cd7421f479e263aa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>small footprint url parser that works seamlessly across node.js and browser environments</npm.description>
-  <npm.keywords>["URL","parser","uri","url","parse","query","string","querystring","stringify"]</npm.keywords>
-  <npm.name>url-parse</npm.name>
-  <npm.version>1.4.7</npm.version>
-</properties>

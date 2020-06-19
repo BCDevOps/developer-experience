@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"46ad12664c45b350af80e49413024adc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>determine if a value is an es6 symbol or not.</npm.description>
-  <npm.keywords>["symbol","es6","is","Symbol"]</npm.keywords>
-  <npm.name>is-symbol</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

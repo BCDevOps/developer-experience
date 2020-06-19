@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9a2e2280586c3be174ba74173c3d81e8"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>correct invalid spdx expressions</npm.description>
-  <npm.keywords>["SPDX","law","legal","license","metadata"]</npm.keywords>
-  <npm.name>spdx-correct</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

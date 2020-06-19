@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"64a4a0a3e879734061efa9e0bb547490"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>fast javascript text diff</npm.description>
-  <npm.keywords>["diff"]</npm.keywords>
-  <npm.name>fast-diff</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6eaaede2cb9507395cbc020c96a2a3a0"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>utilities for watching file trees.</npm.description>
-  <npm.keywords>["util","utility","fs","files"]</npm.keywords>
-  <npm.name>@cnakazawa/watch</npm.name>
-  <npm.version>1.0.4</npm.version>
-</properties>

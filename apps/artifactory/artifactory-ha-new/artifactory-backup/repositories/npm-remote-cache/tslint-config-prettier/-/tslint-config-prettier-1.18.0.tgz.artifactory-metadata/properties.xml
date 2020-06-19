@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bc6cec88079cce81087dde2e93617b10"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>do you wanna use tslint and prettier without conflicts? tslint-config-prettier disables all conflicting rules that may cause such problems. prettier takes care of formatting and tslint the rest.</npm.description>
-  <npm.keywords>["lint","tslint","ts-lint","prettier","config","typescript"]</npm.keywords>
-  <npm.name>tslint-config-prettier</npm.name>
-  <npm.version>1.18.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"346f2aa3d9851dc2cf209b955a38e54e"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>a list of directories you should ignore by default</npm.description>
-  <npm.keywords>["ignore","chokidar","watcher","exclude","glob","pattern"]</npm.keywords>
-  <npm.name>ignore-by-default</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

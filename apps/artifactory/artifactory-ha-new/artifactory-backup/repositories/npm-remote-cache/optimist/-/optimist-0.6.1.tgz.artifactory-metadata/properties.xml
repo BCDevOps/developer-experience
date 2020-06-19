@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5a3c2018c395731ecb5e91168a2242d4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT/X11</artifactory.licenses>
-  <npm.description>light-weight option parsing with an argv hash. no optstrings attached.</npm.description>
-  <npm.keywords>["argument","args","option","parser","parsing","cli","command"]</npm.keywords>
-  <npm.name>optimist</npm.name>
-  <npm.version>0.6.1</npm.version>
-</properties>

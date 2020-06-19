@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"52360ee636e7a58f0ce8337cbdaaef27"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>polyfill/shim for util.promisify in node versions &lt; v8</npm.description>
-  <npm.keywords>["promisify","promise","util","polyfill","shim","util.promisify"]</npm.keywords>
-  <npm.name>util.promisify</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

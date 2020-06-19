@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"83b6e494115ab1e1838ad2341c1d078b"</artifactory.internal.etag>
-  <npm.description>utility box for ecmascript language tools</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>esutils</npm.name>
-  <npm.version>2.0.2</npm.version>
-</properties>

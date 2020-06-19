@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6569325df9dd06af1db67c9a54d9b76a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es7 spec-compliant string.prototype.trimleft shim.</npm.description>
-  <npm.keywords>["String.prototype.trimLeft","string","ES7","shim","trim","trimLeft","trimRight","polyfill","es-shim API"]</npm.keywords>
-  <npm.name>string.prototype.trimleft</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

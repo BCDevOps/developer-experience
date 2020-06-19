@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d4d1b67f836e78c4f30abe6d5ceac3eb"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>align-text with ansi support for clis</npm.description>
-  <npm.keywords>["ansi","align","cli","center","pad"]</npm.keywords>
-  <npm.name>ansi-align</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

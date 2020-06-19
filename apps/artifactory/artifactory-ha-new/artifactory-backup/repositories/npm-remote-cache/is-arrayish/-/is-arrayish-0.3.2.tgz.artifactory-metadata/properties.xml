@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a9411b733475f463a53cdf8656ad0811"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>determines if an object can be used as an array</npm.description>
-  <npm.keywords>["is","array","duck","type","arrayish","similar","proto","prototype","type"]</npm.keywords>
-  <npm.name>is-arrayish</npm.name>
-  <npm.version>0.3.2</npm.version>
-</properties>

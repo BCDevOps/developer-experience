@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"edb82ccad9f34520dc736bfbc67dc4be"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>ecmascript6 weakmap polyfill</npm.description>
-  <npm.keywords>["map","weakmap","collection","es6","harmony","list","hash","gc","ponyfill"]</npm.keywords>
-  <npm.name>es6-weak-map</npm.name>
-  <npm.version>2.0.3</npm.version>
-</properties>

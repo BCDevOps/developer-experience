@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b26ec544e5fdf80b70aae1c796dd4219"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>http request logger middleware for node.js</npm.description>
-  <npm.keywords>["express","http","logger","middleware"]</npm.keywords>
-  <npm.name>morgan</npm.name>
-  <npm.version>1.9.1</npm.version>
-</properties>

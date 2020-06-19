@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bf6f42d3bdd1e726e5bb76ad5506ea9e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an object.keys replacement, in case object.keys is not available. from https://github.com/kriskowal/es5-shim</npm.description>
-  <npm.keywords>["Object.keys","keys","ES5","shim"]</npm.keywords>
-  <npm.name>object-keys</npm.name>
-  <npm.version>0.4.0</npm.version>
-</properties>

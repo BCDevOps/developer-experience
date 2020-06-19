@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e52df5062c44aa0c650c9128e3b5e1ee"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>contains parsers and serializers for asn.1 (currently ber only)</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>asn1</npm.name>
-  <npm.version>0.2.4</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"45eb23f9eb24b3ff24e18466deeaa887"</artifactory.internal.etag>
-  <artifactory.licenses>(MIT OR Apache-2.0)</artifactory.licenses>
-  <npm.description>atob for node.js and linux / mac / windows cli (it's a one-liner)</npm.description>
-  <npm.keywords>["atob","browser"]</npm.keywords>
-  <npm.name>atob</npm.name>
-  <npm.version>2.1.2</npm.version>
-</properties>

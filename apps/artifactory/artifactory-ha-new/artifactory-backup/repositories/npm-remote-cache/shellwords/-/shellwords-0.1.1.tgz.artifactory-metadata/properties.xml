@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"406c4d51a834f3ddddfaf96b9303af36"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>manipulate strings according to the word parsing rules of the unix bourne shell.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>shellwords</npm.name>
-  <npm.version>0.1.1</npm.version>
-</properties>

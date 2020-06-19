@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"efcf73180d9b7001c92f574d4ae7f908"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>convert a dash/dot/underscore/space separated string to camelcase or pascalcase: `foo-bar`  `foobar`</npm.description>
-  <npm.keywords>["camelcase","camel-case","camel","case","dash","hyphen","dot","underscore","separator","string","text","convert","pascalcase","pascal-case"]</npm.keywords>
-  <npm.name>camelcase</npm.name>
-  <npm.version>5.3.1</npm.version>
-</properties>

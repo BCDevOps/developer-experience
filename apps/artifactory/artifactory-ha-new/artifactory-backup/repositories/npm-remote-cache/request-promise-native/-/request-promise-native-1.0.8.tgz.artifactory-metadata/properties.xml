@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"787bc253d38f35c2575b545408e80374"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>the simplified http request client 'request' with promise support. powered by native es6 promises.</npm.description>
-  <npm.keywords>["xhr","http","https","promise","request","then","thenable","native"]</npm.keywords>
-  <npm.name>request-promise-native</npm.name>
-  <npm.version>1.0.8</npm.version>
-</properties>

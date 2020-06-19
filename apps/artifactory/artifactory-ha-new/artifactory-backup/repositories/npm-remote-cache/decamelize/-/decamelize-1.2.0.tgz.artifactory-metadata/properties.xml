@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"330932e4de0e60c36114facb6d3dfafa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>convert a camelized string into a lowercased one with a custom separator: unicornrainbow  unicorn_rainbow</npm.description>
-  <npm.keywords>["decamelize","decamelcase","camelcase","lowercase","case","dash","hyphen","string","str","text","convert"]</npm.keywords>
-  <npm.name>decamelize</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

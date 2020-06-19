@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e7f904428f0f4c4da0600149ee712bcf"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>github webhook events toolset for node.js</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>@octokit/webhooks</npm.name>
-  <npm.version>6.3.2</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3572310a0ecb290970cd52df7baeea53"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>tslint rules for microsoft</npm.description>
-  <npm.keywords>["tslint","microsoft","typescript"]</npm.keywords>
-  <npm.name>tslint-microsoft-contrib</npm.name>
-  <npm.version>5.2.1</npm.version>
-</properties>

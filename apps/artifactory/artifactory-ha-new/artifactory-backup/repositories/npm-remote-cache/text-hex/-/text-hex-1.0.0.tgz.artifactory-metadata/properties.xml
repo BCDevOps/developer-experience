@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"4d20cdd73f8575087983d3ae36f95eeb"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>generate a hex color from the given text</npm.description>
-  <npm.keywords>["css","color","hex","text"]</npm.keywords>
-  <npm.name>text-hex</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

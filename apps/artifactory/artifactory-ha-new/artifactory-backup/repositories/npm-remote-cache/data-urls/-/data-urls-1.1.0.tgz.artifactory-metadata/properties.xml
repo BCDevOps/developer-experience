@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a84ff7f4e303826cb7e39979804693a2"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parses data: urls</npm.description>
-  <npm.keywords>["data url","data uri","data:","http","fetch","whatwg"]</npm.keywords>
-  <npm.name>data-urls</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

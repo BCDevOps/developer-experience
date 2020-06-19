@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b457a16eb8603bc0d84d252716f5b0d5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>base is the foundation for creating modular, unit testable and highly pluggable node.js applications, starting with a handful of common methods, like `set`, `get`, `del` and `use`.</npm.description>
-  <npm.keywords>["base","boilerplate","cache","del","get","inherit","methods","set","starter","unset","visit"]</npm.keywords>
-  <npm.name>base</npm.name>
-  <npm.version>0.11.2</npm.version>
-</properties>

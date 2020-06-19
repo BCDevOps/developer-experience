@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bd5ba2b641cec8476c3014e6b770b455"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>core promise support implementation for the simplified http request client 'request'.</npm.description>
-  <npm.keywords>["xhr","http","https","promise","request","then","thenable","core"]</npm.keywords>
-  <npm.name>request-promise-core</npm.name>
-  <npm.version>1.1.3</npm.version>
-</properties>

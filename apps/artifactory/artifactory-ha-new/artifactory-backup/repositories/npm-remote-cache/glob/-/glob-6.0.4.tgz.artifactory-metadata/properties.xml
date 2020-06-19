@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ad0da613c9c2e608e0843297f02b7ef7"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>a little globber</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>glob</npm.name>
-  <npm.version>6.0.4</npm.version>
-</properties>

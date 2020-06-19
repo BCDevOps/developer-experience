@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"876eafdc63203283021ce5cf48ba089a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>extend an object with the properties of additional objects. node.js/javascript util.</npm.description>
-  <npm.keywords>["extend","javascript","js","keys","merge","obj","object","prop","properties","property","props","shallow","util","utility","utils","value"]</npm.keywords>
-  <npm.name>extend-shallow</npm.name>
-  <npm.version>1.1.4</npm.version>
-</properties>

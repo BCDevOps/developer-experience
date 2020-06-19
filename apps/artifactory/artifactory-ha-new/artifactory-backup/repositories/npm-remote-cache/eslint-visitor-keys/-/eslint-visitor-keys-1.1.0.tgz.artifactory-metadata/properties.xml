@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fbcaf00e3998617d87ee25b0bac8912e"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>constants and utilities about visitor keys to traverse ast.</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>eslint-visitor-keys</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

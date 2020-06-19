@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"21b8b646fc8f9548ac43df030ce6a60f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>return the first argument that is `!== undefined`</npm.description>
-  <npm.keywords>["undefined","short-circuit","||","or","//","defined-or"]</npm.keywords>
-  <npm.name>defined</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

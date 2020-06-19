@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"baf58a0f54b3a3bab5962774ade946ed"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the diff type of two semver versions: 0.0.1 0.0.2  patch</npm.description>
-  <npm.keywords>["semver","version","semantic","diff","difference"]</npm.keywords>
-  <npm.name>semver-diff</npm.name>
-  <npm.version>3.1.1</npm.version>
-</properties>

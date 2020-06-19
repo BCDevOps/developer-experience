@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6a40604ebe5425c877a66e16e6427bf7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>convert a string to snake case.</npm.description>
-  <npm.keywords>["snake","case","snakecase","string"]</npm.keywords>
-  <npm.name>to-snake-case</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

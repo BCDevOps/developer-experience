@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dd3921f317a15657fad465fd215fe38d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>makes windows-style paths more unix and uri friendly.</npm.description>
-  <npm.keywords>["path","url","uri","unix","windows","backslash","slash"]</npm.keywords>
-  <npm.name>urix</npm.name>
-  <npm.version>0.1.0</npm.version>
-</properties>

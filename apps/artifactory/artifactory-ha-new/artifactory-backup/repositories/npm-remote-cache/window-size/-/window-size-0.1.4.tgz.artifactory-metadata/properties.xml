@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6f05dac36d93071705b33766d872605d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>reliable way to to get the height and width of the terminal/console in a node.js environment.</npm.description>
-  <npm.keywords>["console","height","resize","size","terminal","tty","width","window"]</npm.keywords>
-  <npm.name>window-size</npm.name>
-  <npm.version>0.1.4</npm.version>
-</properties>

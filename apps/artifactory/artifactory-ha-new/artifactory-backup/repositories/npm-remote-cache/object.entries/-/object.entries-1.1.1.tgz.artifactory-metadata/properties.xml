@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"31c6f4c1bbc993c67c992e94cc3d8c36"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es2017 spec-compliant object.entries shim.</npm.description>
-  <npm.keywords>["Object.entries","Object.values","Object.keys","entries","values","ES7","ES8","ES2017","shim","object","keys","polyfill","es-shim API"]</npm.keywords>
-  <npm.name>object.entries</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

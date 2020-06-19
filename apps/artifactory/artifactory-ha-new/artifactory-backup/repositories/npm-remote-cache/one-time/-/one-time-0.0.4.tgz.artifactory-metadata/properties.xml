@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"82a9b302303da334c402eba12aa8f763"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>run the supplied function exactly one time (once)</npm.description>
-  <npm.keywords>["once","function","single","one","one-time","execution","nope"]</npm.keywords>
-  <npm.name>one-time</npm.name>
-  <npm.version>0.0.4</npm.version>
-</properties>

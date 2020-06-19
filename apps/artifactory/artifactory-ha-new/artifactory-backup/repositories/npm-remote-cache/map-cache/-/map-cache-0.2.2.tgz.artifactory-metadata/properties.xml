@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7ed5e46ed67d87ec937cedc485559cb6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>basic cache object for storing key-value pairs.</npm.description>
-  <npm.keywords>["cache","get","has","object","set","storage","store"]</npm.keywords>
-  <npm.name>map-cache</npm.name>
-  <npm.version>0.2.2</npm.version>
-</properties>

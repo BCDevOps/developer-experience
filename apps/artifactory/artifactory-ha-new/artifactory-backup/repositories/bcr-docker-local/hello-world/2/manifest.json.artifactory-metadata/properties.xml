@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <docker.manifest>2</docker.manifest>
-  <docker.manifest.digest>sha256:92c7f9c92844bbbb5d0a101b22f7c2a7949e40f8ea90c8b3bc396879d95e899a</docker.manifest.digest>
-  <docker.manifest.type>application/vnd.docker.distribution.manifest.v2+json</docker.manifest.type>
-  <docker.repoName>hello-world</docker.repoName>
-  <sha256>92c7f9c92844bbbb5d0a101b22f7c2a7949e40f8ea90c8b3bc396879d95e899a</sha256>
-</properties>

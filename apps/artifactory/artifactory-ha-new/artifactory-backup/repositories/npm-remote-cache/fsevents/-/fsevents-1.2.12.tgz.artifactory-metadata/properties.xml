@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a240dbd340eb08fbb66633dc65c66ea8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>native access to mac os-x fsevents</npm.description>
-  <npm.keywords>["fsevents","mac"]</npm.keywords>
-  <npm.name>fsevents</npm.name>
-  <npm.version>1.2.12</npm.version>
-</properties>

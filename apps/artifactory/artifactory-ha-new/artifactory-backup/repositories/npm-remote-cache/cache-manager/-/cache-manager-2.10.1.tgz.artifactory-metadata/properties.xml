@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"225921779aa28db1c49c9f33d5dca6d2"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>cache module for node.js</npm.description>
-  <npm.keywords>["cache","redis","lru-cache","memory cache","multiple cache"]</npm.keywords>
-  <npm.name>cache-manager</npm.name>
-  <npm.version>2.10.1</npm.version>
-</properties>

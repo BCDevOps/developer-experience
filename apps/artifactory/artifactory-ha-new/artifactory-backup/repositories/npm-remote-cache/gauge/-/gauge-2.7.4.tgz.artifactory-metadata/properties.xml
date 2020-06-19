@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"110902fbdeab4d0bd72b259040a04119"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>a terminal based horizontal guage</npm.description>
-  <npm.keywords>["progressbar","progress","gauge"]</npm.keywords>
-  <npm.name>gauge</npm.name>
-  <npm.version>2.7.4</npm.version>
-</properties>

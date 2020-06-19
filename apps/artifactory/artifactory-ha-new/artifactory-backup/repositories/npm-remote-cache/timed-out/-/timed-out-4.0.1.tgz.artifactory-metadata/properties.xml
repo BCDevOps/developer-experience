@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7af2bbbcd9d2d23b98f5af46a18828ab"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>emit `etimedout` or `esockettimedout` when clientrequest is hanged</npm.description>
-  <npm.keywords>["http","https","get","got","url","uri","request","util","utility","simple"]</npm.keywords>
-  <npm.name>timed-out</npm.name>
-  <npm.version>4.0.1</npm.version>
-</properties>

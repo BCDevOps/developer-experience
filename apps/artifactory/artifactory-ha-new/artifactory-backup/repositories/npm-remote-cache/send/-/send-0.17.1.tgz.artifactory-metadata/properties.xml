@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"38b802cd3d2d6aa969eba0eedb12f8e7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>better streaming static file server with range and conditional-get support</npm.description>
-  <npm.keywords>["static","file","server"]</npm.keywords>
-  <npm.name>send</npm.name>
-  <npm.version>0.17.1</npm.version>
-</properties>

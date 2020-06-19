@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8ad1dd386b946c98e837c14ffb0ed91b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>smallest/simplest possible means of using btoa with both node and browserify</npm.description>
-  <npm.keywords>["btoa","base64","isomorphic","browser","node","shared"]</npm.keywords>
-  <npm.name>btoa-lite</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

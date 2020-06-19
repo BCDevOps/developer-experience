@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7c829405fdc7c859b6d5e26a61b07eb0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>allow parsing of decimal, binary, hex and octal literals that contain a numeric literal separator</npm.description>
-  <npm.keywords>["babel-plugin"]</npm.keywords>
-  <npm.name>@babel/plugin-syntax-numeric-separator</npm.name>
-  <npm.version>7.8.3</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7dda86b6c7283db7c600aa133ae1a838"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>brand checking of react elements.</npm.description>
-  <npm.keywords>["react"]</npm.keywords>
-  <npm.name>react-is</npm.name>
-  <npm.version>16.12.0</npm.version>
-</properties>

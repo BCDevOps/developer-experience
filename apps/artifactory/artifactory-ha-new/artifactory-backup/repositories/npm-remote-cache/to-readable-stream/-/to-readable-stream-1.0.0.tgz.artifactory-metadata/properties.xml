@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b9cb0fe9731dc701d1a44a7a173cb434"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>convert a string/buffer/uint8array to a readable stream</npm.description>
-  <npm.keywords>["stream","readablestream","string","buffer","uint8array","from","into","to","transform","convert","readable","pull"]</npm.keywords>
-  <npm.name>to-readable-stream</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

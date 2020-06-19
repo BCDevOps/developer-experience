@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"804997acbc41d0a52993def49aaeeeb9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>command line interface for gulp</npm.description>
-  <npm.keywords>["build","stream","system","make","tool","asset","pipeline"]</npm.keywords>
-  <npm.name>gulp-cli</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

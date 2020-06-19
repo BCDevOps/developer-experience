@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d941fa5830e91ed6b72fa214ff0bc719"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the lodash method `_.isinteger` exported as a module.</npm.description>
-  <npm.keywords>"lodash-modularized, isinteger"</npm.keywords>
-  <npm.name>lodash.isinteger</npm.name>
-  <npm.version>4.0.4</npm.version>
-</properties>

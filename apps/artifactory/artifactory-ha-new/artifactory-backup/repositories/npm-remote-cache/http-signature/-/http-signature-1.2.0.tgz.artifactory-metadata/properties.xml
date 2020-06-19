@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"263b67bf9ae18003ee513825bfedcce7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>reference implementation of joyent's http signature scheme.</npm.description>
-  <npm.keywords>["https","request"]</npm.keywords>
-  <npm.name>http-signature</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

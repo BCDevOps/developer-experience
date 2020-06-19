@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6e78d7c54181feafd1904367e1b14ddc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>normalize a url</npm.description>
-  <npm.keywords>["normalize","url","uri","address","string","normalization","normalisation","query","querystring","simplify","strip","trim","canonical"]</npm.keywords>
-  <npm.name>normalize-url</npm.name>
-  <npm.version>4.5.0</npm.version>
-</properties>

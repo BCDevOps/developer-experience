@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"00b6f9a1bc0ae6cf61e412122a7f8616"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>node.js 4 `os.homedir()` ponyfill</npm.description>
-  <npm.keywords>["builtin","core","ponyfill","polyfill","shim","os","homedir","home","dir","directory","folder","user","path"]</npm.keywords>
-  <npm.name>os-homedir</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

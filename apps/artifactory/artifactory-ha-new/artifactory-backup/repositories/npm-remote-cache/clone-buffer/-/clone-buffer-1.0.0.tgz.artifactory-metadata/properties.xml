@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d7b5a3afc8fba9dfd174f117fa6c02d3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>easier buffer cloning in node.</npm.description>
-  <npm.keywords>["buffer","clone","from","copy"]</npm.keywords>
-  <npm.name>clone-buffer</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

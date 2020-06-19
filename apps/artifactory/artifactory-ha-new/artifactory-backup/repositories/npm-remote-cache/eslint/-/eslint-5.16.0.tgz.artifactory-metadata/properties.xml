@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2266fab82a0755e0f0e2c6b0b0a9e139"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an ast-based pattern checker for javascript.</npm.description>
-  <npm.keywords>["ast","lint","javascript","ecmascript","espree"]</npm.keywords>
-  <npm.name>eslint</npm.name>
-  <npm.version>5.16.0</npm.version>
-</properties>

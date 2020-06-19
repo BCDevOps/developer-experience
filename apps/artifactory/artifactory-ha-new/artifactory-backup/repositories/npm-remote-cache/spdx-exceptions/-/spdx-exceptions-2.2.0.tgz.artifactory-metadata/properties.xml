@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b3ff5fb03c5d839740b0b809896543a9"</artifactory.internal.etag>
-  <artifactory.licenses>CC-BY-3.0</artifactory.licenses>
-  <npm.description>list of spdx standard license exceptions</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>spdx-exceptions</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

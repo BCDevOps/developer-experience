@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f417ed0d98a6cd83340c3b35e0f195c9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fast css selectors api engine</npm.description>
-  <npm.keywords>["css","css3","css4","matcher","selector"]</npm.keywords>
-  <npm.name>nwsapi</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

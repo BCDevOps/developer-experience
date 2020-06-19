@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"43f6e9360bcb4f02fcbe60520c163029"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>jest plugin to use babel for transformation.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>babel-jest</npm.name>
-  <npm.version>24.9.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f231bde4f00fd99917237cf9c2a5a091"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>smallest/simplest possible means of using atob with both node and browserify</npm.description>
-  <npm.keywords>["atob","base64","isomorphic","browser","node","shared"]</npm.keywords>
-  <npm.name>atob-lite</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

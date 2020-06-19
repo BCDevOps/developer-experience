@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1911d8539476d5e5b03c42e63a87b49a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>map `visit` over an array of objects.</npm.description>
-  <npm.keywords>["array","arrays","function","helper","invoke","key","map","method","object","objects","value","visit","visitor"]</npm.keywords>
-  <npm.name>map-visit</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

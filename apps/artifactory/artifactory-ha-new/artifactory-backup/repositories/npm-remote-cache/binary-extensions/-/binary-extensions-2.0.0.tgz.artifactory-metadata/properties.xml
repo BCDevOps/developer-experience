@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1419e955c09390c66ac95f9d91401b91"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>list of binary file extensions</npm.description>
-  <npm.keywords>["binary","extensions","extension","file","json","list","array"]</npm.keywords>
-  <npm.name>binary-extensions</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

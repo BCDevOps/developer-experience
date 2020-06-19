@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6997269cc2a8e70688e1971c7c879df9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>promisify a callback-style function</npm.description>
-  <npm.keywords>["promise","promises","promisify","all","denodify","denodeify","callback","cb","node","then","thenify","convert","transform","wrap","wrapper","bind","to","async","await","es2015","bluebird"]</npm.keywords>
-  <npm.name>pify</npm.name>
-  <npm.version>4.0.1</npm.version>
-</properties>

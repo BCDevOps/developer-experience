@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d5e2f0cee56d86c80140380eb52fc69a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>turn any collection of objects into its own efficient tree or linked list using symbol</npm.description>
-  <npm.keywords>["list","queue","stack","linked-list","tree","es6","dom","symbol"]</npm.keywords>
-  <npm.name>symbol-tree</npm.name>
-  <npm.version>3.2.4</npm.version>
-</properties>

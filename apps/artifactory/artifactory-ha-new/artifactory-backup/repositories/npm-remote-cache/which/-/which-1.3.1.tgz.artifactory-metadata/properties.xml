@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3077f0c321098e78b78ddd6b4b2789e5"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>like which(1) unix command. find the first instance of an executable in the path.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>which</npm.name>
-  <npm.version>1.3.1</npm.version>
-</properties>

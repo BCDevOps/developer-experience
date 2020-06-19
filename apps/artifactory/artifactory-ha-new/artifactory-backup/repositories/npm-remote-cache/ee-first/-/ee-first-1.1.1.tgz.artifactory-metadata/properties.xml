@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"28731200888ff19ce1053590822317b8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>return the first event in a set of ee/event pairs</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>ee-first</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

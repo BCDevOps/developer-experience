@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"12283d03be1187f4ec714825151a4b56"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>utilities for eslint plugins.</npm.description>
-  <npm.keywords>["eslint"]</npm.keywords>
-  <npm.name>eslint-utils</npm.name>
-  <npm.version>1.4.2</npm.version>
-</properties>

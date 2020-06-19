@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"959fe953c9522f2620ae36353f5447ee"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>s3 compatible cloud storage client</npm.description>
-  <npm.keywords>["api","amazon","minio","cloud","s3","storage"]</npm.keywords>
-  <npm.name>minio</npm.name>
-  <npm.version>6.0.0</npm.version>
-</properties>

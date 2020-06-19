@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fbea0e3ececd72f8135013e599bb44b3"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>utility box for ecmascript language tools</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>esutils</npm.name>
-  <npm.version>2.0.3</npm.version>
-</properties>

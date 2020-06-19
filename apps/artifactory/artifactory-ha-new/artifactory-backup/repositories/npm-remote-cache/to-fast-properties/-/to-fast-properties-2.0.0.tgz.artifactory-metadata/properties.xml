@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ac0b1f7eef6a645d444e9ad835d1950a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>force v8 to use fast properties for an object</npm.description>
-  <npm.keywords>["object","obj","properties","props","v8","optimize","fast","convert","mode"]</npm.keywords>
-  <npm.name>to-fast-properties</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

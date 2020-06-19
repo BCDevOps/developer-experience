@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f3eb38e2290cd1c39bf3ba0a79ea097b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>import with sanity.</npm.description>
-  <npm.keywords>["eslint","eslintplugin","es6","jsnext","modules","import","export"]</npm.keywords>
-  <npm.name>eslint-plugin-import</npm.name>
-  <npm.version>2.18.2</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5d011f0d46641e263915879febada330"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the jsbn library is a fast, portable implementation of large-number math in pure javascript, enabling public-key crypto and other applications on desktop and mobile browsers.</npm.description>
-  <npm.keywords>["biginteger","bignumber","big","integer"]</npm.keywords>
-  <npm.name>jsbn</npm.name>
-  <npm.version>0.1.1</npm.version>
-</properties>

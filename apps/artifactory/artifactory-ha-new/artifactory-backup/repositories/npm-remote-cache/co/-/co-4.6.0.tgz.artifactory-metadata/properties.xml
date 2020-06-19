@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b6f068b290c84d37007997c45148ad18"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>generator async control flow goodness</npm.description>
-  <npm.keywords>["async","flow","generator","coro","coroutine"]</npm.keywords>
-  <npm.name>co</npm.name>
-  <npm.version>4.6.0</npm.version>
-</properties>

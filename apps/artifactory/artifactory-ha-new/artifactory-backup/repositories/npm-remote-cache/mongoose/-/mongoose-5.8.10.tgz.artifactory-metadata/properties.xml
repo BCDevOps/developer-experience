@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f8cdd7117b2781de4d9c3b947a46f128"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>mongoose mongodb odm</npm.description>
-  <npm.keywords>["mongodb","document","model","schema","database","odm","data","datastore","query","nosql","orm","db"]</npm.keywords>
-  <npm.name>mongoose</npm.name>
-  <npm.version>5.8.10</npm.version>
-</properties>

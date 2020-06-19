@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ff057cf430b35ecb25780f94cd051ab3"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>set blocking stdio and stderr ensuring that terminal output does not truncate</npm.description>
-  <npm.keywords>["flush","terminal","blocking","shim","stdio","stderr"]</npm.keywords>
-  <npm.name>set-blocking</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1ee4d2f8af3ca1a49e2616963cb1ef50"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>the closest you can get to require something with bypassing the require cache</npm.description>
-  <npm.keywords>["require","bypass","no","cache","fresh"]</npm.keywords>
-  <npm.name>stealthy-require</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

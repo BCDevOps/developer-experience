@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c4b3a8069bc4b5df4fa19170f998639d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ensure that a stream is flowing data without mutating it</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>stream-exhaust</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

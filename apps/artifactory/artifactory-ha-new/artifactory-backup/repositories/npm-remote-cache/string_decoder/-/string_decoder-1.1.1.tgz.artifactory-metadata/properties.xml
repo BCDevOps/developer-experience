@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7b93eea8153258fea64c3192922effaa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the string_decoder module from node core</npm.description>
-  <npm.keywords>["string","decoder","browser","browserify"]</npm.keywords>
-  <npm.name>string_decoder</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

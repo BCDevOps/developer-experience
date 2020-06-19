@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"77c002e15f00f28039872c4a7bb1169b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>strip the end-of-file (eof) character from a string/buffer</npm.description>
-  <npm.keywords>["strip","trim","remove","delete","eof","end","file","newline","linebreak","character","string","buffer"]</npm.keywords>
-  <npm.name>strip-eof</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

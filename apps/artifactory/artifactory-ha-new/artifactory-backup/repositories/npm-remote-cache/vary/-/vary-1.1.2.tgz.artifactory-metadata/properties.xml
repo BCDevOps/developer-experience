@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b571ab240474977c792dd29d4f812ca3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>manipulate the http vary header</npm.description>
-  <npm.keywords>["http","res","vary"]</npm.keywords>
-  <npm.name>vary</npm.name>
-  <npm.version>1.1.2</npm.version>
-</properties>

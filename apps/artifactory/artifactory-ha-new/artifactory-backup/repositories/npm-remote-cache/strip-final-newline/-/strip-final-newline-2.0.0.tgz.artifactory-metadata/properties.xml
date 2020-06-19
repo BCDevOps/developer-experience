@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"100d1b69056c923fd5565a282f09ce44"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>strip the final newline character from a string/buffer</npm.description>
-  <npm.keywords>["strip","trim","remove","delete","final","last","end","file","newline","linebreak","character","string","buffer"]</npm.keywords>
-  <npm.name>strip-final-newline</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

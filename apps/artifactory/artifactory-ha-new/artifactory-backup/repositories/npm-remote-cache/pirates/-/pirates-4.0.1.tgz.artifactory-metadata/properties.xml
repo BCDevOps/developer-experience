@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"66709e38aeee2a35c2c3d72f494ff69f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>properly hijack require</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>pirates</npm.name>
-  <npm.version>4.0.1</npm.version>
-</properties>

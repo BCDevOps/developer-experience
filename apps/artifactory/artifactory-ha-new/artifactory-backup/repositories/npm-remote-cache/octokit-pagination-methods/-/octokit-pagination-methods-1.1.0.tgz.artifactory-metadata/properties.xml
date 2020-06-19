@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5a4c03a36827ecb4972e2f363e912f3f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>legacy octokit pagination methods from v15</npm.description>
-  <npm.keywords>["octokit","github","api","rest","plugin"]</npm.keywords>
-  <npm.name>octokit-pagination-methods</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

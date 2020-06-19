@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"823c1d39c565f093da9f4bede262fff6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>super simple cache for file metadata, useful for process that work o a given series of files and that only need to repeat the job on the changed ones since the previous run of the process</npm.description>
-  <npm.keywords>["file cache","task cache files","file cache","key par","key value","cache"]</npm.keywords>
-  <npm.name>file-entry-cache</npm.name>
-  <npm.version>5.0.1</npm.version>
-</properties>

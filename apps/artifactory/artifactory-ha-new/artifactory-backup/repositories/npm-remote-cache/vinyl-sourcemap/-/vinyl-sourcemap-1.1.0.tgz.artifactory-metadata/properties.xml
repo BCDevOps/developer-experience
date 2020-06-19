@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1d7360f638db0a457b8d62d722054f03"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>add/write sourcemaps to/from vinyl files.</npm.description>
-  <npm.keywords>["vinyl","sourcemap","gulp"]</npm.keywords>
-  <npm.name>vinyl-sourcemap</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

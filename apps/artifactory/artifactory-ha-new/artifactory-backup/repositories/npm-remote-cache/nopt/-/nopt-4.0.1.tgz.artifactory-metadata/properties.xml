@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f49d4655a47eded6fca9433492935afe"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>option parsing for node, supporting types, shorthands, etc. used by npm.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>nopt</npm.name>
-  <npm.version>4.0.1</npm.version>
-</properties>

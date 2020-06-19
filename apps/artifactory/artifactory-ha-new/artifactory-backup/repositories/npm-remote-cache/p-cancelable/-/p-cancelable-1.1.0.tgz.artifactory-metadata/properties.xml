@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0b5696727cd875f488c8f86d0e5b3ce5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create a promise that can be canceled</npm.description>
-  <npm.keywords>["promise","cancelable","cancel","canceled","canceling","cancellable","cancellation","abort","abortable","aborting","cleanup","task","token","async","function","await","promises","bluebird"]</npm.keywords>
-  <npm.name>p-cancelable</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

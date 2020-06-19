@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5e969bf0d73326a36ab0eede156d48e3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>environment agnostic event emitter</npm.description>
-  <npm.keywords>["event","events","trigger","observer","listener","emitter","pubsub"]</npm.keywords>
-  <npm.name>event-emitter</npm.name>
-  <npm.version>0.3.5</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b1da6ca980d44a31d3b64a6b951c9712"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a comprehensive library for mime-type mapping</npm.description>
-  <npm.keywords>["util","mime"]</npm.keywords>
-  <npm.name>mime</npm.name>
-  <npm.version>1.6.0</npm.version>
-</properties>

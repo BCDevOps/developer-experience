@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <pypi.name>registry-schemas</pypi.name>
-  <pypi.normalized.name>registry-schemas</pypi.normalized.name>
-  <pypi.requires.python></pypi.requires.python>
-  <pypi.summary>A short description of the project</pypi.summary>
-  <pypi.version>2.3.0</pypi.version>
-</properties>

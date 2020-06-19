@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7aff073e1c11aa9cead5e029bb3b291c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>make a callback- or promise-based function support both promises and callbacks.</npm.description>
-  <npm.keywords>["callback","native","promise"]</npm.keywords>
-  <npm.name>universalify</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

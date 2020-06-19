@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c9f53fe7f4deec7da0819bdcb616024d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>tomorrow's ecmascript modules today!</npm.description>
-  <npm.keywords>"commonjs, ecmascript, export, import, modules, node, require"</npm.keywords>
-  <npm.name>esm</npm.name>
-  <npm.version>3.2.25</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"28a2b30b3b5d7a8022e2ddee6bdc0e4f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>split a string on a character except when the character is escaped.</npm.description>
-  <npm.keywords>["character","escape","split","string"]</npm.keywords>
-  <npm.name>split-string</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

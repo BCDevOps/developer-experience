@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2d40aa29849c39aecc97c83c84a14502"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ast utility module for statically analyzing jsx</npm.description>
-  <npm.keywords>["jsx","ast","lint","eslint"]</npm.keywords>
-  <npm.name>jsx-ast-utils</npm.name>
-  <npm.version>2.2.3</npm.version>
-</properties>

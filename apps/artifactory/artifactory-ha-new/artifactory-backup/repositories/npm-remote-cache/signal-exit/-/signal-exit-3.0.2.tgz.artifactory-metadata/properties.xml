@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2d22e0df3cbe7d0f55058ff48556034c"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>when you want to fire an event no matter how a process exits.</npm.description>
-  <npm.keywords>["signal","exit"]</npm.keywords>
-  <npm.name>signal-exit</npm.name>
-  <npm.version>3.0.2</npm.version>
-</properties>

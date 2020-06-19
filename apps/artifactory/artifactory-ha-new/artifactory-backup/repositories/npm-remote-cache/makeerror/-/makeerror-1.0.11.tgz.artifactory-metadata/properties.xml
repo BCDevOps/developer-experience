@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"78d7956fcc4d5ca2a92134d159edf85e"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>a library to make errors.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>makeerror</npm.name>
-  <npm.version>1.0.11</npm.version>
-</properties>

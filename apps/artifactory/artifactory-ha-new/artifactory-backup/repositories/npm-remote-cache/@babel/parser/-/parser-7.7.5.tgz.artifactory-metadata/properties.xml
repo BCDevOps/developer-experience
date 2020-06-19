@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"83818164c752ec7ec6aa518820435f3d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a javascript parser</npm.description>
-  <npm.keywords>["babel","javascript","parser","tc39","ecmascript","@babel/parser"]</npm.keywords>
-  <npm.name>@babel/parser</npm.name>
-  <npm.version>7.7.5</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"57e41d13a7c42ee7f61d8eb0e61d969a"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>the bare-bones internationalization library used by yargs</npm.description>
-  <npm.keywords>["i18n","internationalization","yargs"]</npm.keywords>
-  <npm.name>y18n</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

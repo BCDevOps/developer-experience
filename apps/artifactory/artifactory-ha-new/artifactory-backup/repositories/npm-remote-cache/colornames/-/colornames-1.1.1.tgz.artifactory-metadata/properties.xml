@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f6eae553f73e1d5198de7390befa8fbf"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>map color names to hex color values.</npm.description>
-  <npm.keywords>["color","colour","names","css","hex","rgb","convert"]</npm.keywords>
-  <npm.name>colornames</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8e38b24daa80efa58e45ca48a589d826"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>recursively mkdir, like `mkdir -p`</npm.description>
-  <npm.keywords>["mkdir","directory"]</npm.keywords>
-  <npm.name>mkdirp</npm.name>
-  <npm.version>0.5.4</npm.version>
-</properties>

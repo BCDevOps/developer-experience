@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"aacc70930453be1d153400a915424a64"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ecmascript (estree) ast walker</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>acorn-walk</npm.name>
-  <npm.version>6.2.0</npm.version>
-</properties>

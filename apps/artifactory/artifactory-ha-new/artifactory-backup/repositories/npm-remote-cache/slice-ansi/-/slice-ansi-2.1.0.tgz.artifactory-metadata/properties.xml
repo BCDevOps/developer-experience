@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7b4920c7268ad2dedd019908729719b5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>slice a string with ansi escape codes</npm.description>
-  <npm.keywords>["slice","string","ansi","styles","color","colour","colors","terminal","console","cli","tty","escape","formatting","rgb","256","shell","xterm","log","logging","command-line","text"]</npm.keywords>
-  <npm.name>slice-ansi</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

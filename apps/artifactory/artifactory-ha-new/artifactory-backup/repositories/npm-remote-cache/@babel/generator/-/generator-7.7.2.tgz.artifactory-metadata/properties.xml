@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"50881ec53a6b71838af48f63f45cdc12"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>turns an ast into code.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/generator</npm.name>
-  <npm.version>7.7.2</npm.version>
-</properties>

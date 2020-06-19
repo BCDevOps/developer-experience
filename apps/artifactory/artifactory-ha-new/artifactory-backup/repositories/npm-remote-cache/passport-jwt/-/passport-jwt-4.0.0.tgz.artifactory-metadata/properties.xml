@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"24ce2c8d0a706b9203e46176a0f25f40"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>passport authentication strategy using json web tokens</npm.description>
-  <npm.keywords>["Passport","Strategy","JSON","Web","Token","JWT"]</npm.keywords>
-  <npm.name>passport-jwt</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

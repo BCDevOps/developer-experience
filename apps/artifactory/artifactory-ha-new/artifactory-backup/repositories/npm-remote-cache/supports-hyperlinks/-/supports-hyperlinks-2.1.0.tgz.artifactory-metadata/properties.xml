@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"50d29970318ac1312e36f24098b4e02e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>detect if your terminal emulator supports hyperlinks</npm.description>
-  <npm.keywords>["link","terminal","hyperlink","cli"]</npm.keywords>
-  <npm.name>supports-hyperlinks</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

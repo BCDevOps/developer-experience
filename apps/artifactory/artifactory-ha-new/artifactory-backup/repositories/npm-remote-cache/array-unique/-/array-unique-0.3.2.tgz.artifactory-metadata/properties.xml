@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c7fa44b0117a3ed0d161f876c68633f7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>remove duplicate values from an array. fastest es5 implementation.</npm.description>
-  <npm.keywords>["array","unique"]</npm.keywords>
-  <npm.name>array-unique</npm.name>
-  <npm.version>0.3.2</npm.version>
-</properties>

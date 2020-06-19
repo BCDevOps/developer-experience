@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"510633406ace8f64b7254251b7029908"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>keep track of the overall completion of many disparate processes</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>are-we-there-yet</npm.name>
-  <npm.version>1.1.5</npm.version>
-</properties>

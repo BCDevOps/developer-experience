@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"10671b28a512f99790b8f6b959dc97e2"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>detect global variables in javascript using acorn</npm.description>
-  <npm.keywords>["ast","variable","name","lexical","scope","local","global","implicit"]</npm.keywords>
-  <npm.name>acorn-globals</npm.name>
-  <npm.version>4.3.4</npm.version>
-</properties>

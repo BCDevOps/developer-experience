@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f8742ca4eca4576693f55e36288af86c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>node default behavior import resolution plugin for eslint-plugin-import.</npm.description>
-  <npm.keywords>["eslint","eslintplugin","esnext","modules","eslint-plugin-import"]</npm.keywords>
-  <npm.name>eslint-import-resolver-node</npm.name>
-  <npm.version>0.3.2</npm.version>
-</properties>

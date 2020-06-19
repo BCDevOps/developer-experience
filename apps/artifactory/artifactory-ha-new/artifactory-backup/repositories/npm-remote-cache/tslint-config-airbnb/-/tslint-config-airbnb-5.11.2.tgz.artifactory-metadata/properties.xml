@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a9693c3e3d37bbe598bf9715ed6f5173"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>a tslint config for airbnb javascript style</npm.description>
-  <npm.keywords>["airbnb","tslint","typescript"]</npm.keywords>
-  <npm.name>tslint-config-airbnb</npm.name>
-  <npm.version>5.11.2</npm.version>
-</properties>

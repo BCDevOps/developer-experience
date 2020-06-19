@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"004d9d372cf8b0e3d5fe549116136279"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a per-spec xml serializer implementation</npm.description>
-  <npm.keywords>["dom","w3c","xml","xmlserializer"]</npm.keywords>
-  <npm.name>w3c-xmlserializer</npm.name>
-  <npm.version>1.1.2</npm.version>
-</properties>

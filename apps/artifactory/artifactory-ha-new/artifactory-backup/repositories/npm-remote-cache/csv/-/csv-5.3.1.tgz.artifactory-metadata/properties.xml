@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6e57f47945153152613d2642091ec8a0"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>csv parser with simple api, full of options and tested against large datasets.</npm.description>
-  <npm.keywords>["node","csv","tsv","parser","parse","stringifier","stringify"]</npm.keywords>
-  <npm.name>csv</npm.name>
-  <npm.version>5.3.1</npm.version>
-</properties>

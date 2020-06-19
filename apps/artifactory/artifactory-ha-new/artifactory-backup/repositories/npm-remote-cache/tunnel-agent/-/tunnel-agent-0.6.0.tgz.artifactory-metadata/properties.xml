@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0fa5d2c7d1fc791c54124d9558ed39aa"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>http proxy tunneling agent. formerly part of mikeal/request, now a standalone module.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>tunnel-agent</npm.name>
-  <npm.version>0.6.0</npm.version>
-</properties>

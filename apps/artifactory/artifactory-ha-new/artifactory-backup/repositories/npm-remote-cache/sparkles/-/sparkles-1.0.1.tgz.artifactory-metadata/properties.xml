@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5a7d3013df870940a2c6a65e3fe15b2a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>namespaced global event emitter</npm.description>
-  <npm.keywords>["ee","emitter","events","global","namespaced"]</npm.keywords>
-  <npm.name>sparkles</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

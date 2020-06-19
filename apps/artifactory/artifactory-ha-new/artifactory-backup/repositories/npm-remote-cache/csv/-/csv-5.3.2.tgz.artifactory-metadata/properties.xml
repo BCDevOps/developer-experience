@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b7ce80571819766a21926d06bd4ef538"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a mature csv toolset with simple api, full of options and tested against large datasets.</npm.description>
-  <npm.keywords>["node","csv","tsv","parser","parse","stringifier","stringify","transform","stream","generate","generation"]</npm.keywords>
-  <npm.name>csv</npm.name>
-  <npm.version>5.3.2</npm.version>
-</properties>

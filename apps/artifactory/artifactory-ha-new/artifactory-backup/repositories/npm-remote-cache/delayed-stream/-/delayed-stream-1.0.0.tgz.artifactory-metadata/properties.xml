@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d952bd4539d68c2c779a23dd75c1c6b1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>buffers events from a stream until you are ready to handle them.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>delayed-stream</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

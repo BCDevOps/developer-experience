@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f457bf0b63ddb49806a409b983f16c26"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>merge objects using descriptors</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>merge-descriptors</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

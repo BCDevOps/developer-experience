@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"eb375fda930312883beb3ebe00209472"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>pollyfill for node.js `path.parse`, parses a filepath into an object.</npm.description>
-  <npm.keywords>["absolute","basename","dir","directory","dirname","ext","extension","extname","file","filename","filepath","is-absolute","name","object","parse","parser","parts","path","segment"]</npm.keywords>
-  <npm.name>parse-filepath</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

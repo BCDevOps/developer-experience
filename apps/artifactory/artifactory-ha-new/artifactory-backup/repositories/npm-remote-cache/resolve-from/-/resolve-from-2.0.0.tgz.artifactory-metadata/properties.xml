@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7a40864de19e457be17759fd3400dc7e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>resolve the path of a module like require.resolve() but from a given path</npm.description>
-  <npm.keywords>["require","resolve","path","module","from","like","path"]</npm.keywords>
-  <npm.name>resolve-from</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

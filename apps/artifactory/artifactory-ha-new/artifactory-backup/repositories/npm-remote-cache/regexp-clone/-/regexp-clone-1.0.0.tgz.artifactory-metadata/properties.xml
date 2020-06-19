@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bd47ac7e2c92534960344a93e6ee0f77"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>clone regexps with options</npm.description>
-  <npm.keywords>["RegExp","clone"]</npm.keywords>
-  <npm.name>regexp-clone</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

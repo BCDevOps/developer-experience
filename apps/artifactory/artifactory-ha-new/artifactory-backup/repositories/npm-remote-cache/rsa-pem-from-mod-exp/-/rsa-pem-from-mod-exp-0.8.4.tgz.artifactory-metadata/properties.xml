@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bb345950d7f4709e3252db5b66114261"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create rsa public key pem from modulus and exponent value in node.js</npm.description>
-  <npm.keywords>["rsa","public-key","pem","modulus","exponent"]</npm.keywords>
-  <npm.name>rsa-pem-from-mod-exp</npm.name>
-  <npm.version>0.8.4</npm.version>
-</properties>

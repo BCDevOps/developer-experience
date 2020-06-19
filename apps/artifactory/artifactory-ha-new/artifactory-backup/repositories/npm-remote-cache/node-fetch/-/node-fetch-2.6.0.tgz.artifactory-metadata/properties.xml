@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"83d0c8c9bf23ff19a5dd4a528b942676"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a light-weight module that brings window.fetch to node.js</npm.description>
-  <npm.keywords>["fetch","http","promise"]</npm.keywords>
-  <npm.name>node-fetch</npm.name>
-  <npm.version>2.6.0</npm.version>
-</properties>

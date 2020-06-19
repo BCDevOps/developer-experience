@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ddecda383b64896ad5f38ff50a57e47f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>javascript standard style jsx support - eslint shareable config</npm.description>
-  <npm.keywords>["JavaScript Standard Style","check","checker","code","code checker","code linter","code standards","code style","enforce","eslint","eslintconfig","hint","jscs","jshint","jsx","lint","policy","quality","simple","standard","standard style","style","style checker","style linter","verify"]</npm.keywords>
-  <npm.name>eslint-config-standard-jsx</npm.name>
-  <npm.version>8.1.0</npm.version>
-</properties>

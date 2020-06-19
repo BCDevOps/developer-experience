@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b515d6d96cd554cb0cda158563e82e00"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>like node.js `path.resolve`/`url.resolve` for the browser.</npm.description>
-  <npm.keywords>["resolve","url"]</npm.keywords>
-  <npm.name>resolve-url</npm.name>
-  <npm.version>0.2.1</npm.version>
-</properties>

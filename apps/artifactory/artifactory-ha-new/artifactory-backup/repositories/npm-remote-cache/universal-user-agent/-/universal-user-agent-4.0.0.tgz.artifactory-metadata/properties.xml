@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bb9d95f54b97516303269935f315c757"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>get a user agent string in both browser and node</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>universal-user-agent</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

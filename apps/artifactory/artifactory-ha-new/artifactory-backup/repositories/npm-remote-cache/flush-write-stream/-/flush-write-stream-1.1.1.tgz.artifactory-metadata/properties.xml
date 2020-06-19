@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"377a0d2965e3e62aeb4979a5067695c6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a write stream constructor that supports a flush function that is called before finish is emitted</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>flush-write-stream</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

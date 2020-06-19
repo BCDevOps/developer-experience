@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a52671116e28a40276d1ea5d4c9e7247"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>implements performance.now (based on process.hrtime).</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>performance-now</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

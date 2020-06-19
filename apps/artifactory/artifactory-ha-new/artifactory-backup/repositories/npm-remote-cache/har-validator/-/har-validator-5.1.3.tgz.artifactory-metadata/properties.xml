@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"026332de4216b7f9111ecd6804a54b31"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>extremely fast http archive (har) validator using json schema</npm.description>
-  <npm.keywords>["har","cli","ajv","http","archive","validate","validator"]</npm.keywords>
-  <npm.name>har-validator</npm.name>
-  <npm.version>5.1.3</npm.version>
-</properties>

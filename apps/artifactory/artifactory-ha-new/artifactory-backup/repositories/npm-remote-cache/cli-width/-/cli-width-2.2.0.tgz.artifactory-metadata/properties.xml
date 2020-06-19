@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6d1aa3246b2e07cf3e8ac4f75b67036a"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>get stdout window width, with two fallbacks, tty and then a default.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>cli-width</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

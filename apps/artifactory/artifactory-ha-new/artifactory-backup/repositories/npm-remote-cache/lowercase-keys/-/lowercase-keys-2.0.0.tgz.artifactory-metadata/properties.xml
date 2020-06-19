@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f97b6bfcea219dbc8c1e68ce04f5552e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>lowercase the keys of an object</npm.description>
-  <npm.keywords>["object","assign","extend","properties","lowercase","lower-case","case","keys","key"]</npm.keywords>
-  <npm.name>lowercase-keys</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

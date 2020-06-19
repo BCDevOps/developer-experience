@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fe41288c61d6cf9d89b1eef4d6b02d9a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>find the root directory of a node.js project or npm package</npm.description>
-  <npm.keywords>["package","json","root","npm","entry","find","up","find-up","findup","look-up","look","file","search","match","resolve","parent","parents","folder","directory","dir","walk","walking","path"]</npm.keywords>
-  <npm.name>pkg-dir</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

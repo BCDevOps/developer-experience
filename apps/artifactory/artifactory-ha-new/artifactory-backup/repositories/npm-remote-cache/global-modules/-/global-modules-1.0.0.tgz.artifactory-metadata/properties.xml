@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"05e69b32340d2c76bbf2859752eded84"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the directory used by npm for globally installed npm modules.</npm.description>
-  <npm.keywords>["directory","dirname","global","module","modules","package","path","prefix","resolve"]</npm.keywords>
-  <npm.name>global-modules</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

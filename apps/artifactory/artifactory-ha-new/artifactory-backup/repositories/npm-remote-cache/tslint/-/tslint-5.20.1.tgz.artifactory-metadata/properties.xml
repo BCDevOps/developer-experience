@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ce7c46ab63822dcf701ea990fd749028"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>an extensible static analysis linter for the typescript language</npm.description>
-  <npm.keywords>["cli","typescript","linter"]</npm.keywords>
-  <npm.name>tslint</npm.name>
-  <npm.version>5.20.1</npm.version>
-</properties>

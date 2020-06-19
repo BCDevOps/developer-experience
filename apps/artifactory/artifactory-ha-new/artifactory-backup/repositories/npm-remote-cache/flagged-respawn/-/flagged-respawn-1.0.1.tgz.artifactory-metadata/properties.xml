@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2b8acc8372bceaa2851476ed0419bffa"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a tool for respawning node binaries when special flags are present.</npm.description>
-  <npm.keywords>["respawn","flags"]</npm.keywords>
-  <npm.name>flagged-respawn</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

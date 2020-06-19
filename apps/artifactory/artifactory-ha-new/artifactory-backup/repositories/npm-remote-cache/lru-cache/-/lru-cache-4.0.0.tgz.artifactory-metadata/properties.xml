@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5640bdf87f5d5c888a0004706fd1f964"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>a cache object that deletes the least-recently-used items.</npm.description>
-  <npm.keywords>["mru","lru","cache"]</npm.keywords>
-  <npm.name>lru-cache</npm.name>
-  <npm.version>4.0.0</npm.version>
-</properties>

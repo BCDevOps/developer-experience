@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0e5204f1f071e85179a46cb16f500ac1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>converts a source-map from/to  different formats and allows adding/changing properties.</npm.description>
-  <npm.keywords>["convert","sourcemap","source","map","browser","debug"]</npm.keywords>
-  <npm.name>convert-source-map</npm.name>
-  <npm.version>1.7.0</npm.version>
-</properties>

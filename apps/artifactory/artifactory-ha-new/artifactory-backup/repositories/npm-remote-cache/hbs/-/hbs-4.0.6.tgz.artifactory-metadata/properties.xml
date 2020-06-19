@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"895d6eb028ed64580c34851c9c9fefce"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>express.js template engine plugin for handlebars</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>hbs</npm.name>
-  <npm.version>4.0.6</npm.version>
-</properties>

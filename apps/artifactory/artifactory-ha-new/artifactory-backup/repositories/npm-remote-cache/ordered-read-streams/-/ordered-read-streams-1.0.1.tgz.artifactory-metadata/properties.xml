@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ac234167c155e153e2687ca766ee3677"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>combines array of streams into one read stream in strict order</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>ordered-read-streams</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

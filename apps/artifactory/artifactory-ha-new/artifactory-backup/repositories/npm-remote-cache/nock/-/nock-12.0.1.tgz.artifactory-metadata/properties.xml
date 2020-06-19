@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d34eaa3245b9f2ebcda56d077af796d6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>http server mocking and expectations library for node.js</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>nock</npm.name>
-  <npm.version>12.0.1</npm.version>
-</properties>

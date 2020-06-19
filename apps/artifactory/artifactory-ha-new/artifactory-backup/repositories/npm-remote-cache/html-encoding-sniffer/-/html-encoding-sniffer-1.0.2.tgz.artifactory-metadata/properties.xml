@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"cf0ec65d23e814b0b8fc2e55e7ef7067"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>sniff the encoding from a html byte stream</npm.description>
-  <npm.keywords>["encoding","html"]</npm.keywords>
-  <npm.name>html-encoding-sniffer</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

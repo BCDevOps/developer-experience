@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fd242afc50404f2d3d650e73b84bde65"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the name and version of a macos release from the darwin version</npm.description>
-  <npm.keywords>["macos","os","darwin","operating","system","platform","name","title","release","version"]</npm.keywords>
-  <npm.name>macos-release</npm.name>
-  <npm.version>2.3.0</npm.version>
-</properties>

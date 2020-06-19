@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"71cbf1247b589f7344b8ee10adc483c6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a babel preset that enables parsing of proposals supported by the current node.js version.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>babel-preset-current-node-syntax</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

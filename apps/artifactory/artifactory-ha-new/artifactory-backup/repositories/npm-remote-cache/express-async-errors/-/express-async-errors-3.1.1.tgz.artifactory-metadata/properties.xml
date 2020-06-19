@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"51f241b05e2eac773590d6e99c5cbfc1"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>async/await error handling support for expressjs</npm.description>
-  <npm.keywords>["expressjs","async/await","async","await","es6"]</npm.keywords>
-  <npm.name>express-async-errors</npm.name>
-  <npm.version>3.1.1</npm.version>
-</properties>

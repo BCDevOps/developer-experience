@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"83c2fdaf0f10cc5836dbd4cb639fc830"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>type check values: `is.string('') //=> true`</npm.description>
-  <npm.keywords>["type","types","is","check","checking","validate","validation","utility","util","typeof","instanceof","object","assert","assertion","test","kind","primitive","verify","compare"]</npm.keywords>
-  <npm.name>@sindresorhus/is</npm.name>
-  <npm.version>0.14.0</npm.version>
-</properties>

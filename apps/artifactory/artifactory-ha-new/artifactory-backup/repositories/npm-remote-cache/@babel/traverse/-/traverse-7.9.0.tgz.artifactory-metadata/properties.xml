@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c29311d4de09aa7d5b499f99b600aed4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the babel traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/traverse</npm.name>
-  <npm.version>7.9.0</npm.version>
-</properties>

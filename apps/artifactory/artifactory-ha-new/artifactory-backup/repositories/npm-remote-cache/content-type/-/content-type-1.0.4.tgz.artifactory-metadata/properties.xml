@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ea54bc66a013ac743374d64b10a1b07f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create and parse http content-type header</npm.description>
-  <npm.keywords>["content-type","http","req","res","rfc7231"]</npm.keywords>
-  <npm.name>content-type</npm.name>
-  <npm.version>1.0.4</npm.version>
-</properties>

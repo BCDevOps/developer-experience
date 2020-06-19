@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9b98b48019fa25c226348737831cf130"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parse json with more helpful errors</npm.description>
-  <npm.keywords>["parse","json","graceful","error","message","humanize","friendly","helpful","string","str"]</npm.keywords>
-  <npm.name>parse-json</npm.name>
-  <npm.version>2.2.0</npm.version>
-</properties>

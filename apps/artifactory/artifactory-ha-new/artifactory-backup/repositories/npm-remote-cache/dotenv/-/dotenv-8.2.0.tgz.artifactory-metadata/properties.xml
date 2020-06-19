@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b3c8b11fca3b4b8d7ca697e753d16748"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
-  <npm.description>loads environment variables from .env file</npm.description>
-  <npm.keywords>["dotenv","env",".env","environment","variables","config","settings"]</npm.keywords>
-  <npm.name>dotenv</npm.name>
-  <npm.version>8.2.0</npm.version>
-</properties>

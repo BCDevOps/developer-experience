@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8755cf9bdc4b48c7bb2dd510e225174d"</artifactory.internal.etag>
-  <artifactory.licenses>APACHE-2.0</artifactory.licenses>
-  <npm.description>generates crc hashes for strings - for use by node redis clients to determine key slots.</npm.description>
-  <npm.keywords>["redis","hash","crc","slot","calc","javascript","node","node_redis","ioredis"]</npm.keywords>
-  <npm.name>cluster-key-slot</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

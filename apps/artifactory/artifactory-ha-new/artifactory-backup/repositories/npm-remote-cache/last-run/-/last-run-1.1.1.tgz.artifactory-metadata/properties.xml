@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"323cb9363c87cc7a2a7bcde94b5b6efd"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>capture and retrieve the last time a function was run</npm.description>
-  <npm.keywords>["execution","function","last run","timing"]</npm.keywords>
-  <npm.name>last-run</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

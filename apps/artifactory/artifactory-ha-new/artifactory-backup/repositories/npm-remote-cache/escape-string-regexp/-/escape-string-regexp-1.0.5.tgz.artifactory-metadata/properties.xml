@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"02440084832abe665260d5db1da1dd9e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>escape regexp special characters</npm.description>
-  <npm.keywords>["escape","regex","regexp","re","regular","expression","string","str","special","characters"]</npm.keywords>
-  <npm.name>escape-string-regexp</npm.name>
-  <npm.version>1.0.5</npm.version>
-</properties>

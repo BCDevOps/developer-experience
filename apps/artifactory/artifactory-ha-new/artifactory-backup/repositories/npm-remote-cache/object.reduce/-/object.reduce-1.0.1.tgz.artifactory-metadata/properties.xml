@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dbe6a4810bba7d0b81d67a1e65b057ce"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>reduces an object to a value that is the accumulated result of running each property in the object through a callback.</npm.description>
-  <npm.keywords>["object","reduce"]</npm.keywords>
-  <npm.name>object.reduce</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

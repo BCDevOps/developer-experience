@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a944369d506c1da4e70d3238da024183"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>type checking and ddd for javascript</npm.description>
-  <npm.keywords>["type","combinators","checking","safety","model","domain","debugging","immutable","DDD","JSON","store"]</npm.keywords>
-  <npm.name>tcomb</npm.name>
-  <npm.version>3.2.29</npm.version>
-</properties>

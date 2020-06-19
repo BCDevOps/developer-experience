@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e79a55fe6b69bb01a8c2f8868bca50c6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>octokit plugin for improving ghe compatibility</npm.description>
-  <npm.keywords>["octokit","github","api","rest","plugin","enterprise"]</npm.keywords>
-  <npm.name>@octokit/plugin-enterprise-compatibility</npm.name>
-  <npm.version>1.2.2</npm.version>
-</properties>

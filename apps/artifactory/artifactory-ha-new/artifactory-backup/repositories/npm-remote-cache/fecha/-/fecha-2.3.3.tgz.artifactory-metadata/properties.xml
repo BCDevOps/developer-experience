@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f5776ce12f4db8a4ddbbab2c880e517c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>date formatting and parsing</npm.description>
-  <npm.keywords>["date","parse","moment","format","fecha","formatting"]</npm.keywords>
-  <npm.name>fecha</npm.name>
-  <npm.version>2.3.3</npm.version>
-</properties>

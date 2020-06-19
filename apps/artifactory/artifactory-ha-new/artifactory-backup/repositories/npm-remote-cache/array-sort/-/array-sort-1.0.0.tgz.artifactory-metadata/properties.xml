@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1788fb192b71f782137e87bc10245525"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fast and powerful array sorting. sort an array of objects by one or more properties. any number of nested properties or custom comparison functions may be used.</npm.description>
-  <npm.keywords>["arr","array","asc","ascend","ascending","desc","descend","descending","dot","element","elements","get","multiple","nested","obj","object","order","ordered","path","prop","properties","property","sort","sorted","sorting"]</npm.keywords>
-  <npm.name>array-sort</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

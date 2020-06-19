@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"aaa483db9aadc5e4284429dd29d1621a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>octokit plugin to paginate rest api endpoint responses</npm.description>
-  <npm.keywords>["github","api","sdk","toolkit"]</npm.keywords>
-  <npm.name>@octokit/plugin-paginate-rest</npm.name>
-  <npm.version>1.1.2</npm.version>
-</properties>

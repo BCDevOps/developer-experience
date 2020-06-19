@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"589fc8d6698af3d43a32ad8c6d5f56ec"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the auth token set for an npm registry (if any)</npm.description>
-  <npm.keywords>["npm","conf","config","npmconf","registry","auth","token","authtoken"]</npm.keywords>
-  <npm.name>registry-auth-token</npm.name>
-  <npm.version>3.4.0</npm.version>
-</properties>

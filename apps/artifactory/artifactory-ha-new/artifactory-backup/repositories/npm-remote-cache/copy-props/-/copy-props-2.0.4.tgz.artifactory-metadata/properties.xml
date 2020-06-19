@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b6f7e4e5dcafacd6ba6667a4fbdcd7d1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>copy properties deeply between two objects.</npm.description>
-  <npm.keywords>["object","property","copy","deep","map","convert"]</npm.keywords>
-  <npm.name>copy-props</npm.name>
-  <npm.version>2.0.4</npm.version>
-</properties>

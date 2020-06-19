@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5c2b7035eec827dcc5f0700d10c5f8c9"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>make a function mimic another one</npm.description>
-  <npm.keywords>["function","mimic","imitate","rename","copy","inherit","properties","name","func","fn","set","infer","change"]</npm.keywords>
-  <npm.name>mimic-fn</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3fbabe772942b47112bc04a73f775092"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>generate an ast from a string template.</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/template</npm.name>
-  <npm.version>7.6.0</npm.version>
-</properties>

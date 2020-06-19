@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7a1e4940eee5f7effd5aee7a0d3b874a"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>generates a hash for an installed npm package, useful for salting caches</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>package-hash</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

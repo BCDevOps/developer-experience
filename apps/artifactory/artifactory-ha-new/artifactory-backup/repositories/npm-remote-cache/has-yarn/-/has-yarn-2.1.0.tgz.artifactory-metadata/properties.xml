@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7d238a884da9148f4d45278858f51bea"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if a project is using yarn</npm.description>
-  <npm.keywords>["yarn","has","detect","is","project","app","module","package","manager","npm"]</npm.keywords>
-  <npm.name>has-yarn</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

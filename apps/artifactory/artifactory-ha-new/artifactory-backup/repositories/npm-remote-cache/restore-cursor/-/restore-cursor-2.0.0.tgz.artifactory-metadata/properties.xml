@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"df417b0b34ea46b932bcabe86127cc57"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>gracefully restore the cli cursor on exit</npm.description>
-  <npm.keywords>["exit","quit","process","graceful","shutdown","sigterm","sigint","terminate","kill","stop","cli","cursor","ansi","show","term","terminal","console","tty","shell","command-line"]</npm.keywords>
-  <npm.name>restore-cursor</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

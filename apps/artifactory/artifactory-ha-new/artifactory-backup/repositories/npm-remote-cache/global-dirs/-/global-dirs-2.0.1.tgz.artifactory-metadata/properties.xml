@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"21121a74c6b2a9eaf649bf273c7535c3"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the directory of globally installed packages and binaries</npm.description>
-  <npm.keywords>["global","prefix","path","paths","npm","yarn","node","modules","node-modules","package","packages","binary","binaries","bin","directory","directories","npmrc","rc","config","root","resolve"]</npm.keywords>
-  <npm.name>global-dirs</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

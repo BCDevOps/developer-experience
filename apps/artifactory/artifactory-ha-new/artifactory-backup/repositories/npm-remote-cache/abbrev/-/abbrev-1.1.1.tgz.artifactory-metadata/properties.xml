@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a2177e7d2ad8d263e6c38e6fe8dd6f79"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>like ruby's abbrev module, but in js</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>abbrev</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

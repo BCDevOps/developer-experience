@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"94f2f2ef1396604064d495f4fc96de05"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>general utilities for plugins to use</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/helper-plugin-utils</npm.name>
-  <npm.version>7.0.0</npm.version>
-</properties>

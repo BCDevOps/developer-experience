@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bec86a05094dd254e0d5bb1ffcc87f46"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>the fastest javascript implementation of a double-ended queue. maintains compatability with deque.</npm.description>
-  <npm.keywords>["data-structure","data-structures","queue","double","end","ended","deque","denque","double-ended-queue"]</npm.keywords>
-  <npm.name>denque</npm.name>
-  <npm.version>1.4.1</npm.version>
-</properties>

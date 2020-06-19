@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ec8d836a186f96238dd819db74bf5c1e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if a file path is absolute. does not rely on the path module and can be used as a polyfill for node.js native `path.isabolute`.</npm.description>
-  <npm.keywords>["absolute","built","built-in","check","core","detect","dir","file","filepath","is","is-absolute","isabsolute","normalize","path","path-absolute","path-is-absolute","paths","polyfill","relative","resolve","shim","slash","slashes","uri","url","util","utils"]</npm.keywords>
-  <npm.name>is-absolute</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

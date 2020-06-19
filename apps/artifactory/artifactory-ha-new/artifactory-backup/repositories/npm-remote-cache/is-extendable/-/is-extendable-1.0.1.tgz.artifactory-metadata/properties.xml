@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"61392549d95a063512f916897d7069b7"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if a value is a plain object, array or function.</npm.description>
-  <npm.keywords>["array","assign","check","date","extend","extendable","extensible","function","is","object","regex","test"]</npm.keywords>
-  <npm.name>is-extendable</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

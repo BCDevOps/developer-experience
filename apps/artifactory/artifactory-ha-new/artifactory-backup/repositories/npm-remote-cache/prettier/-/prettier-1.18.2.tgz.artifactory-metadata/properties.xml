@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e7320855a0546510cebac9089470ff15"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>prettier is an opinionated code formatter</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>prettier</npm.name>
-  <npm.version>1.18.2</npm.version>
-</properties>

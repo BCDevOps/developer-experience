@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"150ce2aa94da464367605c653ffbda43"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>github api token authentication for browsers and node.js</npm.description>
-  <npm.keywords>["github","octokit","authentication","api"]</npm.keywords>
-  <npm.name>@octokit/auth-token</npm.name>
-  <npm.version>2.4.0</npm.version>
-</properties>

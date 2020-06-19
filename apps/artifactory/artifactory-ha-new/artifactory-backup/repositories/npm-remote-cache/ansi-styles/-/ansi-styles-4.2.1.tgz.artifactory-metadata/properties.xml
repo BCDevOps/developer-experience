@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"060df7e9d20ecf7760bbcbcc21f108ed"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ansi escape codes for styling strings in the terminal</npm.description>
-  <npm.keywords>["ansi","styles","color","colour","colors","terminal","console","cli","string","tty","escape","formatting","rgb","256","shell","xterm","log","logging","command-line","text"]</npm.keywords>
-  <npm.name>ansi-styles</npm.name>
-  <npm.version>4.2.1</npm.version>
-</properties>

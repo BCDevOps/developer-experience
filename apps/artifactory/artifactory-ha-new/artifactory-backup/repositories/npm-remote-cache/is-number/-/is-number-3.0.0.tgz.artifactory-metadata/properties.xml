@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fb4c6b1ce591089d5da379104d9455b8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if the value is a number. comprehensive tests.</npm.description>
-  <npm.keywords>["check","coerce","coercion","integer","is","is-nan","is-num","is-number","istype","kind","math","nan","num","number","numeric","test","type","typeof","value"]</npm.keywords>
-  <npm.name>is-number</npm.name>
-  <npm.version>3.0.0</npm.version>
-</properties>

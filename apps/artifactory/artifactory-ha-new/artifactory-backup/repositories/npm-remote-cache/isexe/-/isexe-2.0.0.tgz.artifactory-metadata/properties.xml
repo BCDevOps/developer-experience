@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"02bf57881fa200bcd6501e4ded2b1b3a"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>minimal module to check if a file is executable.</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>isexe</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

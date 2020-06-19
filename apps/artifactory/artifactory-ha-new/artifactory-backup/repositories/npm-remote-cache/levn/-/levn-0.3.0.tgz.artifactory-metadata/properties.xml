@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"824680de0ed2dabe2745e88737723963"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>light ecmascript (javascript) value notation - human written, concise, typed, flexible</npm.description>
-  <npm.keywords>["levn","light","ecmascript","value","notation","json","typed","human","concise","typed","flexible"]</npm.keywords>
-  <npm.name>levn</npm.name>
-  <npm.version>0.3.0</npm.version>
-</properties>

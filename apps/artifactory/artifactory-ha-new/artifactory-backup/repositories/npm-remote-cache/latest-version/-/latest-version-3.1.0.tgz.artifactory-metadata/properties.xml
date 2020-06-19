@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c18ce8803782d5f5f327c2d25e98f691"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the latest version of an npm package</npm.description>
-  <npm.keywords>["latest","version","npm","pkg","package","package.json","current","module"]</npm.keywords>
-  <npm.name>latest-version</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

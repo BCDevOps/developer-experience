@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8207466019fb5bdf5c64535f1186b1ae"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>typescript definitions for yargs-parser</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@types/yargs-parser</npm.name>
-  <npm.version>13.1.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b8d2f5045d1cd8bddfba88e4c0fa785b"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>clone a node.js http response stream</npm.description>
-  <npm.keywords>["clone","duplicate","copy","response","HTTP","stream"]</npm.keywords>
-  <npm.name>clone-response</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

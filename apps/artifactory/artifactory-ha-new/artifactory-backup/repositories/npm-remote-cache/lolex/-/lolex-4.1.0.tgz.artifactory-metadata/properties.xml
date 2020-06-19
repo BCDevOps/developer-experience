@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c86478a66295d2c1c7fc99f19b4c5a1e"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>fake javascript timers</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>lolex</npm.name>
-  <npm.version>4.1.0</npm.version>
-</properties>

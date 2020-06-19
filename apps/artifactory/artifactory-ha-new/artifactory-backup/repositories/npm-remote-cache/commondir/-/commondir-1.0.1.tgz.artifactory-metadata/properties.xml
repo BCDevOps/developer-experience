@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"329b8682e83ec34dfe1c58ae90b84988"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>compute the closest common parent for file paths</npm.description>
-  <npm.keywords>["common","path","directory","file","parent","root"]</npm.keywords>
-  <npm.name>commondir</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

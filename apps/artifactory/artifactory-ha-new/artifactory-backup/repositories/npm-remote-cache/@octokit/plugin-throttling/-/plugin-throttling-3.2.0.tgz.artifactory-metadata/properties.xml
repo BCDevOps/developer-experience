@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"cfc6793f5466745295d8a3bbea000790"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>octokit plugin for githubs recommended request throttling</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@octokit/plugin-throttling</npm.name>
-  <npm.version>3.2.0</npm.version>
-</properties>

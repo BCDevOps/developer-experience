@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"65247b99b25f71b8fda7e789971a69c4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>resolve an options object based on configuration.</npm.description>
-  <npm.keywords>["options","functions","resolver","type","configuration","config","opts","opt","default"]</npm.keywords>
-  <npm.name>resolve-options</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

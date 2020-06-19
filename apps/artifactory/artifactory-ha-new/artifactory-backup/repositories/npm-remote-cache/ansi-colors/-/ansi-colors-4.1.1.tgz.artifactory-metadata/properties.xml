@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ce72bb5360d8326616cae64d8ae9bdfe"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>easily add ansi colors to your text and symbols in the terminal. a faster drop-in replacement for chalk, kleur and turbocolor (without the dependencies and rendering bugs).</npm.description>
-  <npm.keywords>["ansi","bgblack","bgBlack","bgblue","bgBlue","bgcyan","bgCyan","bggreen","bgGreen","bgmagenta","bgMagenta","bgred","bgRed","bgwhite","bgWhite","bgyellow","bgYellow","black","blue","bold","clorox","colors","cyan","dim","gray","green","grey","hidden","inverse","italic","kleur","magenta","red","reset","strikethrough","underline","white","yellow"]</npm.keywords>
-  <npm.name>ansi-colors</npm.name>
-  <npm.version>4.1.1</npm.version>
-</properties>

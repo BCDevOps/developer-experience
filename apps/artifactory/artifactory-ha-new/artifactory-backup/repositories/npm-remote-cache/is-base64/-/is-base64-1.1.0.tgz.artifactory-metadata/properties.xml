@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f5e5987402d01f4abc142180fab96410"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>predicate that returns true if base64 string.</npm.description>
-  <npm.keywords>["predicate","base64","mime"]</npm.keywords>
-  <npm.name>is-base64</npm.name>
-  <npm.version>1.1.0</npm.version>
-</properties>

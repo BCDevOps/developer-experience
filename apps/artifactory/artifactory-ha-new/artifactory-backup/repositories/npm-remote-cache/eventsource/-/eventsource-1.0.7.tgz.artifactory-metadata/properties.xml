@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"dcf3a3ddaf1a80843e4439decd4b3c1c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>w3c compliant eventsource client for node.js and browser (polyfill)</npm.description>
-  <npm.keywords>["eventsource","http","streaming","sse","polyfill"]</npm.keywords>
-  <npm.name>eventsource</npm.name>
-  <npm.version>1.0.7</npm.version>
-</properties>

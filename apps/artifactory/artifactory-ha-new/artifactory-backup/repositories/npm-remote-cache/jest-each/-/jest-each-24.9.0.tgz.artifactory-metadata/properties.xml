@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"9aa569fbd6c5a21e13e12e8dd93d4543"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>parameterised tests for jest</npm.description>
-  <npm.keywords>["jest","parameterised","test","each"]</npm.keywords>
-  <npm.name>jest-each</npm.name>
-  <npm.version>24.9.0</npm.version>
-</properties>

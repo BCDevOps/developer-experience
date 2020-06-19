@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c84f22a6bf1922d9d2a65c9779b3eea8"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>give me a string and i'll tell you if it's a valid npm package license string</npm.description>
-  <npm.keywords>["license","npm","package","validation"]</npm.keywords>
-  <npm.name>validate-npm-package-license</npm.name>
-  <npm.version>3.0.4</npm.version>
-</properties>

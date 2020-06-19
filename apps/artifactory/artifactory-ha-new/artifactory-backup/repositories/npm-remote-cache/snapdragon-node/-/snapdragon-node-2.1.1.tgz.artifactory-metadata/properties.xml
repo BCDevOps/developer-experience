@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ce4ebdb9d8dc261df7793fd9cb38db07"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>snapdragon utility for creating a new ast node in custom code, such as plugins.</npm.description>
-  <npm.keywords>["ast","compile","compiler","convert","node","parse","parser","plugin","render","snapdragon","snapdragonplugin","token","transform"]</npm.keywords>
-  <npm.name>snapdragon-node</npm.name>
-  <npm.version>2.1.1</npm.version>
-</properties>

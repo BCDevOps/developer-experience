@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"c69bb84bb72cca3d2ec8af6accbe9d0f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>import modules lazily</npm.description>
-  <npm.keywords>["import","require","load","module","modules","lazy","lazily","defer","deferred","proxy","proxies"]</npm.keywords>
-  <npm.name>import-lazy</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

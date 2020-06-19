@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"67803f8c3aad0f9174e439d990d05e98"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a readable stream interface over node-glob.</npm.description>
-  <npm.keywords>["glob","stream","gulp","readable","fs","files"]</npm.keywords>
-  <npm.name>glob-stream</npm.name>
-  <npm.version>6.1.0</npm.version>
-</properties>

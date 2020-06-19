@@ -1,4 +1,0 @@
-<!-- File system replication -->
-<config version="2">
-    <chain template="file-system"/>
-</config>

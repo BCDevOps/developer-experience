@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1ccf0041293792c96d81db7f15c3561d"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>create simple http etags</npm.description>
-  <npm.keywords>["etag","http","res"]</npm.keywords>
-  <npm.name>etag</npm.name>
-  <npm.version>1.8.1</npm.version>
-</properties>

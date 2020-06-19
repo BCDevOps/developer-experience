@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"683b12f9340d41411b4e2635ab975af8"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es2017 spec-compliant shim for `object.getownpropertydescriptors` that works in es5.</npm.description>
-  <npm.keywords>["Object.getOwnPropertyDescriptors","descriptor","property descriptor","ES8","ES2017","shim","polyfill","getOwnPropertyDescriptor","es-shim API"]</npm.keywords>
-  <npm.name>object.getownpropertydescriptors</npm.name>
-  <npm.version>2.0.3</npm.version>
-</properties>

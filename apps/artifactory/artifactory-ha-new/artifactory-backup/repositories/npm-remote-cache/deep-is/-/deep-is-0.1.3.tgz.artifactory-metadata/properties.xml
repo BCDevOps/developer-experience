@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"854cb2d92c24b6c9d6e8122161077666"</artifactory.internal.etag>
-  <artifactory.licenses></artifactory.licenses>
-  <npm.description>node's assert.deepequal algorithm except for nan being equal to nan</npm.description>
-  <npm.keywords>["equality","equal","compare"]</npm.keywords>
-  <npm.name>deep-is</npm.name>
-  <npm.version>0.1.3</npm.version>
-</properties>

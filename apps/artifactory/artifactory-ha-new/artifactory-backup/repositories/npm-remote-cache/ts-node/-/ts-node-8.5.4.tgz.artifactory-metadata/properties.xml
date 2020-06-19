@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"05bf96e345f8598199cbba8151dc5ea6"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>typescript execution environment and repl for node.js, with source map support</npm.description>
-  <npm.keywords>["typescript","node","runtime","environment","ts","compiler"]</npm.keywords>
-  <npm.name>ts-node</npm.name>
-  <npm.version>8.5.4</npm.version>
-</properties>

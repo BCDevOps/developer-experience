@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"049596c490a6b967557228ca94c4e77f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>copy a file</npm.description>
-  <npm.keywords>["copy","cp","file","clone","fs","stream","file-system","ncp","fast","quick","data","content","contents"]</npm.keywords>
-  <npm.name>cp-file</npm.name>
-  <npm.version>6.2.0</npm.version>
-</properties>

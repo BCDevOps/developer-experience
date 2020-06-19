@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bafe8779c30c724981179f4b83a9e4e3"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>write updates to a .env file</npm.description>
-  <npm.keywords>["dotenv"]</npm.keywords>
-  <npm.name>update-dotenv</npm.name>
-  <npm.version>1.1.1</npm.version>
-</properties>

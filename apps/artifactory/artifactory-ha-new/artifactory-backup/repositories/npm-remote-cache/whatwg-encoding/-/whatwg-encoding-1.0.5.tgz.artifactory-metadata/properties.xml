@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7378bf30015ddca19e2ad628cd694714"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>decode strings according to the whatwg encoding standard</npm.description>
-  <npm.keywords>["encoding","whatwg"]</npm.keywords>
-  <npm.name>whatwg-encoding</npm.name>
-  <npm.version>1.0.5</npm.version>
-</properties>

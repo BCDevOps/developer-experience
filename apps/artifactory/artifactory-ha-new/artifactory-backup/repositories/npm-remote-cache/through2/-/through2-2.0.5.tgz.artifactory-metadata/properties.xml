@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1851ab1a4a590a094057537cb8b26060"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>a tiny wrapper around node streams2 transform to avoid explicit subclassing noise</npm.description>
-  <npm.keywords>["stream","streams2","through","transform"]</npm.keywords>
-  <npm.name>through2</npm.name>
-  <npm.version>2.0.5</npm.version>
-</properties>

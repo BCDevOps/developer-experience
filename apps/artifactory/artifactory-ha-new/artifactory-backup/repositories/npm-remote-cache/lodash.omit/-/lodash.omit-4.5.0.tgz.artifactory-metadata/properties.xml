@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"be3ee9d9035681882ec64371ad423b56"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>the lodash method `_.omit` exported as a module.</npm.description>
-  <npm.keywords>"lodash-modularized, omit"</npm.keywords>
-  <npm.name>lodash.omit</npm.name>
-  <npm.version>4.5.0</npm.version>
-</properties>

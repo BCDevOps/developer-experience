@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"667270344d82d2f6f953847e5d3913cd"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>babel types is a lodash-esque utility library for ast nodes</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/types</npm.name>
-  <npm.version>7.9.0</npm.version>
-</properties>

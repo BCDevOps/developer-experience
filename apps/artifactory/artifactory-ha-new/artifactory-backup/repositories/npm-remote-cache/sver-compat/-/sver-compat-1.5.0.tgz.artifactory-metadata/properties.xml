@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"e5dc47869ad4503f79839c8e85262c14"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>simple semver and semverrange classes</npm.description>
-  <npm.keywords>["semver"]</npm.keywords>
-  <npm.name>sver-compat</npm.name>
-  <npm.version>1.5.0</npm.version>
-</properties>

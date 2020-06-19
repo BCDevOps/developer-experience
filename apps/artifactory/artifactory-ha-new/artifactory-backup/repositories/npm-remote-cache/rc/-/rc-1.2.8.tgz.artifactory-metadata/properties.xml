@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"75ce1d318eeaa7eea64afbe5e71cf7ca"</artifactory.internal.etag>
-  <artifactory.licenses>(BSD-2-Clause OR MIT OR Apache-2.0)</artifactory.licenses>
-  <npm.description>hardwired configuration loader</npm.description>
-  <npm.keywords>["config","rc","unix","defaults"]</npm.keywords>
-  <npm.name>rc</npm.name>
-  <npm.version>1.2.8</npm.version>
-</properties>

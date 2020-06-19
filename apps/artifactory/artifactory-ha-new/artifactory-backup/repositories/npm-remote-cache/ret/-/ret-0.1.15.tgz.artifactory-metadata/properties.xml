@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f4e653f5e9d5d653db6c881b71e7ec0a"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>tokenizes a string that represents a regular expression.</npm.description>
-  <npm.keywords>["regex","regexp","regular expression","parser","tokenizer"]</npm.keywords>
-  <npm.name>ret</npm.name>
-  <npm.version>0.1.15</npm.version>
-</properties>

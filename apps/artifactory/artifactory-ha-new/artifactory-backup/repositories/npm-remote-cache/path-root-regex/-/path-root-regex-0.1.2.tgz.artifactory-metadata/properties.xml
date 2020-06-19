@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ec6f137e58f1f765b7118807f1bd9c08"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>regular expression for getting the root of a posix or windows filepath.</npm.description>
-  <npm.keywords>["detect","expression","file","filepath","match","parse","path","regex","regexp","regular","root","test"]</npm.keywords>
-  <npm.name>path-root-regex</npm.name>
-  <npm.version>0.1.2</npm.version>
-</properties>

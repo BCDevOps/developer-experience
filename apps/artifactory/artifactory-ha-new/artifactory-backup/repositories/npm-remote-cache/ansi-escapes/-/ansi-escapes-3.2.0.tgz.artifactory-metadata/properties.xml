@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7431226bb3f179e8cd7eddf297b904ec"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>ansi escape codes for manipulating the terminal</npm.description>
-  <npm.keywords>["ansi","terminal","console","cli","string","tty","escape","escapes","formatting","shell","xterm","log","logging","command-line","text","vt100","sequence","control","code","codes","cursor","iterm","iterm2"]</npm.keywords>
-  <npm.name>ansi-escapes</npm.name>
-  <npm.version>3.2.0</npm.version>
-</properties>

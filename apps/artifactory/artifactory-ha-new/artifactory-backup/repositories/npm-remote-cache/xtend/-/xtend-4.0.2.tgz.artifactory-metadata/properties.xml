@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"183e6eef1df0529fd39bd932447ba547"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>extend like a boss</npm.description>
-  <npm.keywords>["extend","merge","options","opts","object","array"]</npm.keywords>
-  <npm.name>xtend</npm.name>
-  <npm.version>4.0.2</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"150b36de9deff219af051490b05dc211"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>encode a url to a percent-encoded form, excluding already-encoded sequences</npm.description>
-  <npm.keywords>["encode","encodeurl","url"]</npm.keywords>
-  <npm.name>encodeurl</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

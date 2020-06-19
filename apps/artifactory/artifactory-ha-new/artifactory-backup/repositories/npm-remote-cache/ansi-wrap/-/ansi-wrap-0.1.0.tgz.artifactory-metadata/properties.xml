@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ebbca252c4baf67e8bc6b7098e4046a3"</artifactory.internal.etag>
-  <artifactory.licenses></artifactory.licenses>
-  <npm.description>create ansi colors by passing the open and close codes.</npm.description>
-  <npm.keywords>[]</npm.keywords>
-  <npm.name>ansi-wrap</npm.name>
-  <npm.version>0.1.0</npm.version>
-</properties>

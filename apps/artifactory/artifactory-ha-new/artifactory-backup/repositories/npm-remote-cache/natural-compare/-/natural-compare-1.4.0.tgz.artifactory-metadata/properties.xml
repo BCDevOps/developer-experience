@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"210787ea3f1a715dd963317ebfc5193f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>compare strings containing a mix of letters and numbers in the way a human being would in sort order.</npm.description>
-  <npm.keywords>["string","natural","order","sort","natsort","natcmp","compare","alphanum","litejs"]</npm.keywords>
-  <npm.name>natural-compare</npm.name>
-  <npm.version>1.4.0</npm.version>
-</properties>

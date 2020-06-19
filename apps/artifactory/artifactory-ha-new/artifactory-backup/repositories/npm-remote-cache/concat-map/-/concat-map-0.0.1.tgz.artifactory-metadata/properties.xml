@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"d11d2d19ce6c3d9326cb3e987e8bcd23"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>concatenative mapdashery</npm.description>
-  <npm.keywords>["concat","concatMap","map","functional","higher-order"]</npm.keywords>
-  <npm.name>concat-map</npm.name>
-  <npm.version>0.0.1</npm.version>
-</properties>

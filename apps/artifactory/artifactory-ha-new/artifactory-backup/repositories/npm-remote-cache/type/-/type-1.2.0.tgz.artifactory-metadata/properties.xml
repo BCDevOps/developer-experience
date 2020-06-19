@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f48dfa6ff6c81629ec0dfc40f804baae"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>runtime validation and processing of javascript types</npm.description>
-  <npm.keywords>["type","coercion"]</npm.keywords>
-  <npm.name>type</npm.name>
-  <npm.version>1.2.0</npm.version>
-</properties>

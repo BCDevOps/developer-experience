@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f32f58062d9098135a9e6b6443c98f0f"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>matches strings against configurable strings, globs, regular expressions, and/or functions</npm.description>
-  <npm.keywords>["match","any","string","file","fs","list","glob","regex","regexp","regular","expression","function"]</npm.keywords>
-  <npm.name>anymatch</npm.name>
-  <npm.version>3.1.1</npm.version>
-</properties>

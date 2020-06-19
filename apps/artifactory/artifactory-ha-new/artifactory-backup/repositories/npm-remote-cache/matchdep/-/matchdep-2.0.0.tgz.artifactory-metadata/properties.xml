@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ac8a823cadc9c8dc442f45f9cfdb9107"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>use micromatch to filter npm module dependencies by name.</npm.description>
-  <npm.keywords>["package.json","dependencies","devDependencies","peerDependencies"]</npm.keywords>
-  <npm.name>matchdep</npm.name>
-  <npm.version>2.0.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b4bc56ab45591d9bf44034c6d036dd1c"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>get the name of the current operating system. example: macos sierra</npm.description>
-  <npm.keywords>["os","operating","system","platform","name","title","release","version","macos","windows","linux"]</npm.keywords>
-  <npm.name>os-name</npm.name>
-  <npm.version>3.1.0</npm.version>
-</properties>

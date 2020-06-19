@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"759b535ab8c38aad930040ddc70368af"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>node.js os.homedir polyfill for older versions of node.js.</npm.description>
-  <npm.keywords>["home","homedir","homedirectory","os","os-homedir","polyfill","userhome"]</npm.keywords>
-  <npm.name>homedir-polyfill</npm.name>
-  <npm.version>1.0.3</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"0187402c2c534f0860be5b2170aadbde"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if your package was installed globally</npm.description>
-  <npm.keywords>["global","package","globally","module","install","installed","npm","yarn","is","check","detect","local","locally","cli","bin","binary"]</npm.keywords>
-  <npm.name>is-installed-globally</npm.name>
-  <npm.version>0.1.0</npm.version>
-</properties>

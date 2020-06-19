@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"7e3a9cee9c32973cc3dfef6398f6e3d5"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an implementation of the domexception class from browsers</npm.description>
-  <npm.keywords>["dom","webidl","web idl","domexception","error","exception"]</npm.keywords>
-  <npm.name>domexception</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

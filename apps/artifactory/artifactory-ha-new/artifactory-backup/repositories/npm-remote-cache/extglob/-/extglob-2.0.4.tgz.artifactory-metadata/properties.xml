@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5e368678ebf35fe8dbaa173517e7adc1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>extended glob support for javascript. adds (almost) the expressive power of regular expressions to glob patterns.</npm.description>
-  <npm.keywords>["bash","extended","extglob","glob","globbing","ksh","match","pattern","patterns","regex","test","wildcard"]</npm.keywords>
-  <npm.name>extglob</npm.name>
-  <npm.version>2.0.4</npm.version>
-</properties>

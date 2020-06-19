@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b875e45e92ab8e1a36f1b3b7ae3204fc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>reduce a list of values using promises into a promise for a value</npm.description>
-  <npm.keywords>["promise","reduce","collection","iterable","iterator","async","await","promises","accumulate","bluebird"]</npm.keywords>
-  <npm.name>p-reduce</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

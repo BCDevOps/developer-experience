@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"891e46bdb54ac736514d95d8840c8a37"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>run an array of functions in parallel</npm.description>
-  <npm.keywords>["parallel","async","function","callback","asynchronous","run","array","run parallel"]</npm.keywords>
-  <npm.name>run-parallel</npm.name>
-  <npm.version>1.1.9</npm.version>
-</properties>

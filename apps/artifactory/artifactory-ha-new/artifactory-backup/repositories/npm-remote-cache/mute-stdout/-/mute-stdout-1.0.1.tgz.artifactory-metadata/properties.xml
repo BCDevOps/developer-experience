@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"833deec65d9c0cd7c4506bf4e5329a75"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>mute and unmute stdout.</npm.description>
-  <npm.keywords>["mute","silence is golden","stdout"]</npm.keywords>
-  <npm.name>mute-stdout</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

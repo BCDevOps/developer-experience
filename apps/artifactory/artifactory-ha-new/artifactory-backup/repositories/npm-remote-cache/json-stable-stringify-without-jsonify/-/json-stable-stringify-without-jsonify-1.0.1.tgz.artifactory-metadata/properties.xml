@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"08e9086d2d987b656ea651e5e38d9ebc"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>deterministic json.stringify() with custom sorting to get deterministic hashes from stringified results, with no public domain dependencies</npm.description>
-  <npm.keywords>["json","stringify","deterministic","hash","sort","stable"]</npm.keywords>
-  <npm.name>json-stable-stringify-without-jsonify</npm.name>
-  <npm.version>1.0.1</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"445e70b75ab7215bc0da1fbaa36113cd"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>invariant</npm.description>
-  <npm.keywords>["test","invariant"]</npm.keywords>
-  <npm.name>invariant</npm.name>
-  <npm.version>2.2.4</npm.version>
-</properties>

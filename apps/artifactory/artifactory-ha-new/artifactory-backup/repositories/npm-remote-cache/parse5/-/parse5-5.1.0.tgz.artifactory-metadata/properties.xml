@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1e3fc7b9c3f367907e0119d2b2bbf5fd"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>html parser and serializer.</npm.description>
-  <npm.keywords>["html","parser","html5","WHATWG","specification","fast","html parser","html5 parser","htmlparser","parse5","serializer","html serializer","htmlserializer","parse","serialize"]</npm.keywords>
-  <npm.name>parse5</npm.name>
-  <npm.version>5.1.0</npm.version>
-</properties>

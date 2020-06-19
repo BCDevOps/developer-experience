@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"60e792491a5df3829e82b3fe506f2038"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>extend an object</npm.description>
-  <npm.keywords>["object","assign","clone","copy","merge","deep-copy","extend","no-dependencies","just"]</npm.keywords>
-  <npm.name>just-extend</npm.name>
-  <npm.version>4.0.2</npm.version>
-</properties>

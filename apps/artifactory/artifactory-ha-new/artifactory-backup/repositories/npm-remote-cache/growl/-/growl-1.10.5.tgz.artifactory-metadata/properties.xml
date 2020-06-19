@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"47fb3a576f5916564687b683b1bcea68"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>growl unobtrusive notifications</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>growl</npm.name>
-  <npm.version>1.10.5</npm.version>
-</properties>

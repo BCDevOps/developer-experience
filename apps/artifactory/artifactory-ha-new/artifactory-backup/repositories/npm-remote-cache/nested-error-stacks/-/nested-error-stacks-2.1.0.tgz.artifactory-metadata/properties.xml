@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"fcc1d65c45a747139afa90991e8abd93"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>an error subclass that will chain nested errors and dump nested stacktraces</npm.description>
-  <npm.keywords>["error","nested","stack"]</npm.keywords>
-  <npm.name>nested-error-stacks</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

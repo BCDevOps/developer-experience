@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"5e78d5f6b1ad3ecce9605936059d087e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>fast (and loose) selective `process.env` replacer using js-tokens instead of an ast</npm.description>
-  <npm.keywords>["environment","variables","browserify","browserify-transform","transform","source","configuration"]</npm.keywords>
-  <npm.name>loose-envify</npm.name>
-  <npm.version>1.4.0</npm.version>
-</properties>

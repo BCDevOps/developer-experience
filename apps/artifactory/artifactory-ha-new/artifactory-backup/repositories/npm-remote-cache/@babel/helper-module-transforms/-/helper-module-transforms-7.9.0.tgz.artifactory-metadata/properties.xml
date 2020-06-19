@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"b1ec0528ce53359dd6a58a03a9e7fd27"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>babel helper functions for implementing es6 module transformations</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>@babel/helper-module-transforms</npm.name>
-  <npm.version>7.9.0</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"ca8604ff27ad3b1d6d92f79af798cfa4"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>wrap native http requests with rfc compliant cache support</npm.description>
-  <npm.keywords>["HTTP","HTTPS","cache","caching","layer","cacheable","RFC 7234","RFC","7234","compliant"]</npm.keywords>
-  <npm.name>cacheable-request</npm.name>
-  <npm.version>6.1.0</npm.version>
-</properties>

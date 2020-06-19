@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"1766aea5484fdbe75014d4c2dc96b116"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>es proposal-spec-compliant object.fromentries shim.</npm.description>
-  <npm.keywords>["Object.fromEntries","Object.entries","Object.values","Object.keys","entries","values","ES7","ES8","ES2017","shim","object","keys","polyfill","es-shim API"]</npm.keywords>
-  <npm.name>object.fromentries</npm.name>
-  <npm.version>2.0.1</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"6c6e00114e00c2815fc0aeae3da1af23"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>returns true if a number or string value is a finite number. useful for regex matches, parsing, user input, etc.</npm.description>
-  <npm.keywords>["cast","check","coerce","coercion","finite","integer","is","isnan","is-nan","is-num","is-number","isnumber","isfinite","istype","kind","math","nan","num","number","numeric","parseFloat","parseInt","test","type","typeof","value"]</npm.keywords>
-  <npm.name>is-number</npm.name>
-  <npm.version>7.0.0</npm.version>
-</properties>

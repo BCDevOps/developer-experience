@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"2ad6cf165e630a933ae2313dff722293"</artifactory.internal.etag>
-  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
-  <npm.description>istanbul reports</npm.description>
-  <npm.keywords>["istanbul","reports"]</npm.keywords>
-  <npm.name>istanbul-reports</npm.name>
-  <npm.version>2.2.6</npm.version>
-</properties>

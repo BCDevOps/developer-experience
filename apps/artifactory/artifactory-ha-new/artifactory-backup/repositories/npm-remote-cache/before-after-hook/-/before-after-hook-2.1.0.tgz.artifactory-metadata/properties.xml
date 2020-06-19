@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"f1ae135c6bd8f8c560b0021bffc8fe5d"</artifactory.internal.etag>
-  <artifactory.licenses>Apache-2.0</artifactory.licenses>
-  <npm.description>asynchronous before/error/after hooks for internal functionality</npm.description>
-  <npm.keywords>["hook","hooks","api"]</npm.keywords>
-  <npm.name>before-after-hook</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

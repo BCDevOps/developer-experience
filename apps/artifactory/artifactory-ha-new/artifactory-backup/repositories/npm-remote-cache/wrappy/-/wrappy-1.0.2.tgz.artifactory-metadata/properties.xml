@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"567b1699cfae49cb20f598571a6c90c7"</artifactory.internal.etag>
-  <artifactory.licenses>ISC</artifactory.licenses>
-  <npm.description>callback wrapping utility</npm.description>
-  <npm.keywords>no_content</npm.keywords>
-  <npm.name>wrappy</npm.name>
-  <npm.version>1.0.2</npm.version>
-</properties>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"bd33f08c47fb70bb6d1b11ae6c760437"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>check if a file path is a binary file</npm.description>
-  <npm.keywords>["binary","extensions","extension","file","path","check","detect","is"]</npm.keywords>
-  <npm.name>is-binary-path</npm.name>
-  <npm.version>2.1.0</npm.version>
-</properties>

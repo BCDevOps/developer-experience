@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"13bb744fc2a4140cef350b5f3c13062e"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>write data to a file, replacing the file if it already exists and creating any intermediate directories if they don't already exist. thin wrapper around node's native fs methods.</npm.description>
-  <npm.keywords>["file","filepath","files","filesystem","folder","fs","fs.writeFile","fs.writeFileSync","path","write"]</npm.keywords>
-  <npm.name>write</npm.name>
-  <npm.version>1.0.3</npm.version>
-</properties>

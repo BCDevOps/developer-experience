@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"8aec3632e6ab5dce2a128abd7adc0ee1"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>return true if a value is a valid glob pattern or patterns.</npm.description>
-  <npm.keywords>["array","check","glob","is","match","pattern","patterns","read","test","valid","validate"]</npm.keywords>
-  <npm.name>is-valid-glob</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

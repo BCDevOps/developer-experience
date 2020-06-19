@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"3b5b6ab1edd551b46646a0ae32ce4b6f"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>basic sort algorithm that has similar behavior to array.prototype.sort for null and undefined, but also allows sorting by an object property.</npm.description>
-  <npm.keywords>["compare","default"]</npm.keywords>
-  <npm.name>default-compare</npm.name>
-  <npm.version>1.0.0</npm.version>
-</properties>

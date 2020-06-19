@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"a456797891e5a1fa68386af76cd1b265"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>resolve like require.resolve() on behalf of files asynchronously and synchronously</npm.description>
-  <npm.keywords>["resolve","require","node","module"]</npm.keywords>
-  <npm.name>resolve</npm.name>
-  <npm.version>1.1.7</npm.version>
-</properties>

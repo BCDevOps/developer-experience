@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<properties>
-  <artifactory.internal.etag>"aa0b377135f4af38d106db8b84606924"</artifactory.internal.etag>
-  <artifactory.licenses>MIT</artifactory.licenses>
-  <npm.description>find a file or directory by walking up parent directories</npm.description>
-  <npm.keywords>["find","up","find-up","findup","look-up","look","file","search","match","package","resolve","parent","parents","folder","directory","walk","walking","path"]</npm.keywords>
-  <npm.name>find-up</npm.name>
-  <npm.version>4.1.0</npm.version>
-</properties>
