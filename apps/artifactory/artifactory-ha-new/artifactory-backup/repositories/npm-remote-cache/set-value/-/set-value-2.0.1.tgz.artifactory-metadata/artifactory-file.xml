@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>set-value/-/set-value-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>set-value-2.0.1.tgz</name>
+  <created>1576008063390</created>
+  <lastModified>1561410382000</lastModified>
+  <size>3649</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008063390</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a18d40530e6f07de4228c7defe4227af8cad005b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b1e945fff7d8430e86066db678ca6390</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>80e6254de6a2f04793c034edfbccd82c1da9249a54247fa2b1b562d19b157761</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

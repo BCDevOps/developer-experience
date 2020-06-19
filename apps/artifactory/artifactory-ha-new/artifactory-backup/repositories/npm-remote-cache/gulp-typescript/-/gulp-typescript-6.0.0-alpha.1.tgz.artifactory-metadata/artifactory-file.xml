@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>gulp-typescript/-/gulp-typescript-6.0.0-alpha.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>gulp-typescript-6.0.0-alpha.1.tgz</name>
+  <created>1576003147564</created>
+  <lastModified>1574027622000</lastModified>
+  <size>20389</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003147564</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>fcb0dbbc79c34201f0945c6323c194a8f5455a04</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2a17e5be29203cce90f6730a7ea22936</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>49cf1d3ed02d2641a400a043a7cd7068fa8c67fafddc78c152b28f68c4e43e48</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

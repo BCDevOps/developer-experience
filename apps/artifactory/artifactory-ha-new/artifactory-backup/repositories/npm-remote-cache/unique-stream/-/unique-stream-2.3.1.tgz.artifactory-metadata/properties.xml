@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"85767c37f7fb79d3a5b61595515a50ea"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node.js through stream that emits a unique stream of objects based on criteria</npm.description>
+  <npm.keywords>["unique","stream","unique-stream","streaming","streams"]</npm.keywords>
+  <npm.name>unique-stream</npm.name>
+  <npm.version>2.3.1</npm.version>
+</properties>

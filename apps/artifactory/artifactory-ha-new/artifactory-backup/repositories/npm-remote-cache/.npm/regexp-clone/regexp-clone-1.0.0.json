@@ -1,0 +1,23 @@
+{
+  "name" : "regexp-clone",
+  "description" : "Clone RegExps with options",
+  "version" : "1.0.0",
+  "author" : "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/aheckmann/regexp-clone.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/regexp-clone/-/regexp-clone-1.0.0.tgz",
+    "shasum" : "222db967623277056260b992626354a04ce9bf63"
+  },
+  "devDependencies" : {
+    "mocha" : "^6.1.4"
+  },
+  "keywords" : [ "RegExp", "clone" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "make test"
+  }
+}

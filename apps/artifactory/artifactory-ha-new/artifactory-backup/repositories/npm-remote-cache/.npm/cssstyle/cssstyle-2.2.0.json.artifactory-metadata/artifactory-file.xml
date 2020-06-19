@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cssstyle/cssstyle-2.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cssstyle-2.2.0.json</name>
+  <created>1585871271868</created>
+  <lastModified>1585871271824</lastModified>
+  <size>2200</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871271869</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>15404c6ae1ed75d05c83b903906bfabad4045527</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a04915bdd45ede077f35ae7e9099e607</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4b231fde8222fe0a3c0b8921283f8967a253141b29a26f790020a3b4dd4c5617</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d23ec0c429d65f1a7bc27007d1609b1b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>determine if the js environment has symbol support. supports spec, or shams.</npm.description>
+  <npm.keywords>["Symbol","symbols","typeof","sham","polyfill","native","core-js","ES6"]</npm.keywords>
+  <npm.name>has-symbols</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

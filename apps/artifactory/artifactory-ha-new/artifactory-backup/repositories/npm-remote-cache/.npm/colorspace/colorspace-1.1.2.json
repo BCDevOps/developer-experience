@@ -1,0 +1,33 @@
+{
+  "name" : "colorspace",
+  "description" : "Generate HEX colors for a given namespace.",
+  "version" : "1.1.2",
+  "author" : "Arnout Kazemier",
+  "homepage" : "https://github.com/3rd-Eden/colorspace",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/3rd-Eden/colorspace"
+  },
+  "bugs" : {
+    "url" : "https://github.com/3rd-Eden/colorspace/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/colorspace/-/colorspace-1.1.2.tgz",
+    "shasum" : "e0128950d082b86a2168580796a0aa5d6c68d8c5"
+  },
+  "dependencies" : {
+    "color" : "3.0.x",
+    "text-hex" : "1.0.x"
+  },
+  "devDependencies" : {
+    "assume" : "2.1.x",
+    "mocha" : "5.2.x",
+    "pre-commit" : "1.2.x"
+  },
+  "keywords" : [ "namespace", "color", "hex", "colorize", "name", "space", "colorspace" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha test.js"
+  }
+}

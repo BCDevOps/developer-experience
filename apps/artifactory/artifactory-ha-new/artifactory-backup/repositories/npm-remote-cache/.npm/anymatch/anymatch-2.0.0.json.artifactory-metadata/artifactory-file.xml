@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/anymatch/anymatch-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>anymatch-2.0.0.json</name>
+  <created>1576003398328</created>
+  <lastModified>1576003398292</lastModified>
+  <size>1152</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003398328</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c22c69e129a855efaa43e2673eb1739e46ec9ef4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4813bb10228d1650baa62a3cb19e8fa8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ced226175ac303f9fa8b3f9a5c4c85fab39173beebd9402925c322d68a8e6ef6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

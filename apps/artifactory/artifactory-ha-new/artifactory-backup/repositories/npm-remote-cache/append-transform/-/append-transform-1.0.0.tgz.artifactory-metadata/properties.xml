@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5c5796002bbb649367e5d853edb28f50"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>install a transform to `require.extensions` that always runs last, even if additional extensions are added later.</npm.description>
+  <npm.keywords>["transform","require","append","last","coverage","source-map","extension","module"]</npm.keywords>
+  <npm.name>append-transform</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

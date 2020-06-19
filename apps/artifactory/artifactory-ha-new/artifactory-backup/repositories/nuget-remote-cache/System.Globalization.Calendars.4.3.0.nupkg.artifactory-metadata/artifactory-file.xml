@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Globalization.Calendars.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Globalization.Calendars.4.3.0.nupkg</name>
+  <created>1578510926080</created>
+  <lastModified>1544738737000</lastModified>
+  <size>177689</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578510926081</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>791424878c510777fcabd622e1bb4ad0618393b7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a434a47f236cc5e2fb79f7717a94f791</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b8d383d043951609d2d9f30abcc884b48f5a3b0d34f8f7f2fc7faab9c01094f7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

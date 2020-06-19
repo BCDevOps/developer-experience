@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-leak-detector/jest-leak-detector-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-leak-detector-24.9.0.json</name>
+  <created>1576008067275</created>
+  <lastModified>1576008066980</lastModified>
+  <size>850</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008067276</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>db50414801eb87f180d14a9ba4fc8bfa9c933295</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>fe03814a4ab16f086bfcc46350dc9311</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5dc03162fd6d1578cd0ef060be4a8e57a680a9605c4008b9000be5e2ef32de69</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

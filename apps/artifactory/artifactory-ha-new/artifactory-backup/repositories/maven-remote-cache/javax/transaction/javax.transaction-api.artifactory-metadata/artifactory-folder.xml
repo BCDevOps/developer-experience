@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>javax/transaction/javax.transaction-api</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>javax.transaction-api</name>
+  <created>1576861382862</created>
+  <lastModified>1576861382862</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861382862</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

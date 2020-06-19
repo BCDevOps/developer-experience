@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>aaron-santos</groupId>
+  <artifactId>lwjgl</artifactId>
+  <version>3.0.0rc1</version>
+  <name>lwjgl</name>
+  <description>packaging of LWJGL for Clojure</description>
+  <url>http://github.com/roger_allen/hello_lwjgl</url>
+</project>
+

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/run-parallel</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>run-parallel</name>
+  <created>1576003593170</created>
+  <lastModified>1576003593170</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003593170</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

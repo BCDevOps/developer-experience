@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1c192095065e6b72a7e20a747b110469"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>es2015 number.isnan() ponyfill</npm.description>
+  <npm.keywords>["es2015","ecmascript","ponyfill","polyfill","shim","number","is","nan","not"]</npm.keywords>
+  <npm.name>number-is-nan</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

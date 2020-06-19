@@ -1,0 +1,34 @@
+{
+  "name" : "shebang-command",
+  "description" : "Get the command from a shebang",
+  "version" : "1.2.0",
+  "author" : {
+    "name" : "Kevin Martensson",
+    "email" : "kevinmartensson@gmail.com",
+    "url" : "github.com/kevva"
+  },
+  "repository" : "kevva/shebang-command",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/shebang-command/-/shebang-command-1.2.0.tgz",
+    "shasum" : "44aac65b695b03398968c39f363fee5deafdf1ea"
+  },
+  "dependencies" : {
+    "shebang-regex" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "cmd", "command", "parse", "shebang" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "ignores" : [ "test.js" ]
+  }
+}

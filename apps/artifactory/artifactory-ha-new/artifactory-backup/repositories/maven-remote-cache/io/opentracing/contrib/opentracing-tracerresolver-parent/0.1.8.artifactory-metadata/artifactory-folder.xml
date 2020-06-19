@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-tracerresolver-parent/0.1.8</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>0.1.8</name>
+  <created>1576861391060</created>
+  <lastModified>1576861391060</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861391060</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

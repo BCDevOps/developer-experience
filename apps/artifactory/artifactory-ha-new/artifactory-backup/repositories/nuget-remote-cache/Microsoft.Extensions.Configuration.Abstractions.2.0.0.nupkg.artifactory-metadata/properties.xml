@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66147174AC3D7</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Primitives:2.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Abstractions of key-value pair based configuration.
+Commonly used types:
+Microsoft.Extensions.Configuration.IConfiguration
+Microsoft.Extensions.Configuration.IConfigurationBuilder
+Microsoft.Extensions.Configuration.IConfigurationProvider
+Microsoft.Extensions.Configuration.IConfigurationRoot
+Microsoft.Extensions.Configuration.IConfigurationSection</nuget.description>
+  <nuget.digest>NYGEV4dwU9OPiZcV7pC3pnLVtrlf2qaw+ijl2hDgs0mjI5s9/peCpY/mD6pbpOhpV2Xpbv/SO53wKtxexsUWxw==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.Configuration.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/Home/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>configuration</nuget.tags>
+  <nuget.version>2.0.0</nuget.version>
+</properties>

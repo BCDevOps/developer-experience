@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5194b42391aac189f22b972e069b7485"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fs-extra contains methods that aren't included in the vanilla node.js fs package. such as mkdir -p, cp -r, and rm -rf.</npm.description>
+  <npm.keywords>["fs","file","file system","copy","directory","extra","mkdirp","mkdir","mkdirs","recursive","json","read","write","extra","delete","remove","touch","create","text","output","move"]</npm.keywords>
+  <npm.name>fs-extra</npm.name>
+  <npm.version>4.0.3</npm.version>
+</properties>

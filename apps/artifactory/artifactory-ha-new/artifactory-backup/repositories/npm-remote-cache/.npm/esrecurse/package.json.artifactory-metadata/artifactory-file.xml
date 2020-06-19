@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/esrecurse/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003426994</created>
+  <lastModified>1527378958000</lastModified>
+  <size>22755</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464340886</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9070d5bc1c12778eb0b439e326f7af9756132123</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>57fc14ebcaf093359dd05075832a9e43</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1b3d9bb027ab7758041cf09ac2188e34a28617be405fb4f452b3b321dffa5ab7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

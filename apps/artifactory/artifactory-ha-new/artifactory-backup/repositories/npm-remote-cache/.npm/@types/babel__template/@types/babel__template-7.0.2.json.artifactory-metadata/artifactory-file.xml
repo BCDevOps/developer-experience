@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/babel__template/@types/babel__template-7.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel__template-7.0.2.json</name>
+  <created>1576008061375</created>
+  <lastModified>1576008060481</lastModified>
+  <size>1148</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008061376</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b83e179772d9bff59ea5c6c283b235b36d9426d6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>714f62a5b9c978b085477ced884f9b5b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f3135e49469b7fb1ef49adc9e8b9240d9c5884930af3b87e8f11e1bbd52d27c6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

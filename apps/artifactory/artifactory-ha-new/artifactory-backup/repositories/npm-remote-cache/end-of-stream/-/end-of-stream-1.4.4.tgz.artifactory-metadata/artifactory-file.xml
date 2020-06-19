@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>end-of-stream/-/end-of-stream-1.4.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>end-of-stream-1.4.4.tgz</name>
+  <created>1576003113522</created>
+  <lastModified>1569416257000</lastModified>
+  <size>2387</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003113522</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5ae64a5f45057baf3626ec14da0ca5e4b2431eb0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2546ee5517c4e9c68cd7f8f6fc18cf3e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0b8becf0cba76fdddfe4ad2289917edf74047913eb6891a7922ccf822bdf0db5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

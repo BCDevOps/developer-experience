@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fe475b154e52864c56c3fc8f4b4af81b"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>ecmascript js ast traversal functions</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>estraverse</npm.name>
+  <npm.version>4.3.0</npm.version>
+</properties>

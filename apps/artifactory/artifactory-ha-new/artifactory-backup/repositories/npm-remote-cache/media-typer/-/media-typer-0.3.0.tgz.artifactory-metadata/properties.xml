@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b2eb0e36628ebccfdca4810d0381a1be"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple rfc 6838 media type parser and formatter</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>media-typer</npm.name>
+  <npm.version>0.3.0</npm.version>
+</properties>

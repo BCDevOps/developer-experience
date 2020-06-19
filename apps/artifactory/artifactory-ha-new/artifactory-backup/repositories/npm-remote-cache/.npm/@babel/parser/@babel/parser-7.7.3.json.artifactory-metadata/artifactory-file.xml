@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/parser/@babel/parser-7.7.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>parser-7.7.3.json</name>
+  <created>1576003076284</created>
+  <lastModified>1576003076203</lastModified>
+  <size>1092</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003076285</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b25d0bd44ebb7858be6ed037261694dd5d5094a5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b6e6eb593f6bba440b049af5f76286da</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c39b8e63226a36b9d74fd728303c6abea8bede9b5e2bdc8f5b105444ad323731</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

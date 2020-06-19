@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom</name>
+  <created>1576861381765</created>
+  <lastModified>1443556162000</lastModified>
+  <size>5242</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861381766</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>406a55c268791650b8b1c031c35d1948bb3167b6</original>
+          <actual>406a55c268791650b8b1c031c35d1948bb3167b6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1c2ec2eb9929b48d44cfcda4449d8a07</original>
+          <actual>1c2ec2eb9929b48d44cfcda4449d8a07</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f0d28c0d4f4d542e17d6a05f2326de707fa31c55066b6e35889863467323c112</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

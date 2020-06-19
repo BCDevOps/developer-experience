@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e1de026e86f7e42f25fc5301fce2dc1c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>find the greatest satisfied semver range from an array of ranges.</npm.description>
+  <npm.keywords>["semver","range","max","satisfied","range","array","greatest"]</npm.keywords>
+  <npm.name>semver-greatest-satisfied-range</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/arr-flatten</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>arr-flatten</name>
+  <created>1576003135012</created>
+  <lastModified>1576003135012</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003135012</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

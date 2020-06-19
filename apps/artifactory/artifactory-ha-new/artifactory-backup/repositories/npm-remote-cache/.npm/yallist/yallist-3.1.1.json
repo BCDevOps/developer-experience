@@ -1,0 +1,31 @@
+{
+  "name" : "yallist",
+  "description" : "Yet Another Linked List",
+  "version" : "3.1.1",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/isaacs/yallist.git"
+  },
+  "main" : "yallist.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/yallist/-/yallist-3.1.1.tgz",
+    "shasum" : "dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "tap" : "^12.1.0"
+  },
+  "license" : "ISC",
+  "files" : [ "yallist.js", "iterator.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js --100",
+    "preversion" : "npm test",
+    "postversion" : "npm publish",
+    "postpublish" : "git push origin --all; git push origin --tags"
+  }
+}

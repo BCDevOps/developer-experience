@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5df28bb3a6c2ae9faa874715ab712fca"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the name of a windows version from the release number: `5.1.2600`  `xp`</npm.description>
+  <npm.keywords>["os","win","win32","windows","operating","system","platform","name","title","release","version"]</npm.keywords>
+  <npm.name>windows-release</npm.name>
+  <npm.version>3.2.0</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bunyan-format/bunyan-format-0.2.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bunyan-format-0.2.1.json</name>
+  <created>1576003400520</created>
+  <lastModified>1576003400485</lastModified>
+  <size>1143</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003400520</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>740d9725c1e0a6fb0dd684dca82846b0db83b1dc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e25b01f74a628365abba4cd26696d8a8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>401321bf37cfffaa98c08950cb2f061e919af26831adb4343843e27865619a0f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

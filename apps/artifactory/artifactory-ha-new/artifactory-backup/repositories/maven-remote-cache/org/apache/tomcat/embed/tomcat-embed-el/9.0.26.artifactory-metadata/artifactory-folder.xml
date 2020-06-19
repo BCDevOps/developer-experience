@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/tomcat/embed/tomcat-embed-el/9.0.26</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>9.0.26</name>
+  <created>1576861386394</created>
+  <lastModified>1576861386394</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861386394</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

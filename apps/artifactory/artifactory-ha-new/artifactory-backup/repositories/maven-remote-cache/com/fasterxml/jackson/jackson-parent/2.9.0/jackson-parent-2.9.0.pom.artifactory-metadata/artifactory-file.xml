@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jackson-parent-2.9.0.pom</name>
+  <created>1576861392672</created>
+  <lastModified>1500954339000</lastModified>
+  <size>7825</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861392673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>fb7650f17c3641ee06a386d1a48195b2caebd542</original>
+          <actual>fb7650f17c3641ee06a386d1a48195b2caebd542</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>f91a84ae04f2053787bf4119455a8afc</original>
+          <actual>f91a84ae04f2053787bf4119455a8afc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>000508b61dd124387e58199fb9e2113c1b5d8b386c5bf7a891b2de6041eb1d52</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

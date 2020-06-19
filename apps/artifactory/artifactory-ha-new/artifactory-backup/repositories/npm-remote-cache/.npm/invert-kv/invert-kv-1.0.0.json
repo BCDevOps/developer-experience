@@ -1,0 +1,27 @@
+{
+  "name" : "invert-kv",
+  "description" : "Invert the key/value of an object. Example: {foo: 'bar'}  {bar: 'foo'}",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "http://sindresorhus.com"
+  },
+  "repository" : "sindresorhus/invert-kv",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/invert-kv/-/invert-kv-1.0.0.tgz",
+    "shasum" : "104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
+  },
+  "devDependencies" : {
+    "mocha" : "*"
+  },
+  "keywords" : [ "object", "obj", "key", "value", "val", "kv", "invert" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  }
+}

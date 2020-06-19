@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>lowercase-keys</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>lowercase-keys</name>
+  <created>1576008072674</created>
+  <lastModified>1576008072674</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008072674</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

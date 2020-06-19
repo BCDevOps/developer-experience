@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b7d225be3265028ac89847553e212537"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a drop-in replacement for fs, making various improvements.</npm.description>
+  <npm.keywords>["fs","module","reading","retry","retries","queue","error","errors","handling","EMFILE","EAGAIN","EINVAL","EPERM","EACCESS"]</npm.keywords>
+  <npm.name>graceful-fs</npm.name>
+  <npm.version>4.2.0</npm.version>
+</properties>

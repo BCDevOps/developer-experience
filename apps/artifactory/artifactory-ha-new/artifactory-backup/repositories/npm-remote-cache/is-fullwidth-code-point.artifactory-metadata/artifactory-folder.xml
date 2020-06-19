@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-fullwidth-code-point</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>is-fullwidth-code-point</name>
+  <created>1576008044666</created>
+  <lastModified>1576008044666</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008044666</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

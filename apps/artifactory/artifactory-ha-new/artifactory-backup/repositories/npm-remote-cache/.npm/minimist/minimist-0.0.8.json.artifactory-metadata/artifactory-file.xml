@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/minimist/minimist-0.0.8.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>minimist-0.0.8.json</name>
+  <created>1576008042574</created>
+  <lastModified>1576008042477</lastModified>
+  <size>975</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008042575</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>866122a8c27da84cdf1bc5b0a2cf9b1cb8877921</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>caed80a64082808af257106874bccbd8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ceaef3be2a3872939d4dda7704f59a46956e3e50fd1f2f564665641069418f25</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

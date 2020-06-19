@@ -1,0 +1,15 @@
+{
+  "name" : "transform-runtime",
+  "description" : "",
+  "version" : "0.0.0",
+  "author" : "",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/transform-runtime/-/transform-runtime-0.0.0.tgz",
+    "shasum" : "e714d9b69211dd9537939d50e3aa5788c442b85c"
+  },
+  "license" : "ISC",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  }
+}

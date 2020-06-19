@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/nested-error-stacks/nested-error-stacks-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nested-error-stacks-2.1.0.json</name>
+  <created>1579828383215</created>
+  <lastModified>1579828383069</lastModified>
+  <size>1126</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828383216</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>db913d14baedf385f2bbb22d36bc02af83bcf640</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>55a57497f0b228f4e3212246a2973285</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d9b377727f6a610fc85a9863ea8a5e689c85e886fea076b7595e8580f57120c4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

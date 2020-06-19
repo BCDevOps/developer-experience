@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/requests-mock.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>requests-mock.html</name>
+  <created>1574023476464</created>
+  <lastModified>1579676765788</lastModified>
+  <size>9352</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579676765896</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>74916cb3aecec4c6bb3534746d2c6868824f611f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>38fd81ad0cd7ff169f92207df8298016</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1b22d6f7fe13c86f4d0d4d45518da9c8f12ab6e0c4331cc051a3cfd340ea989a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

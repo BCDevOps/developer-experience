@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>define-property/-/define-property-0.2.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>define-property-0.2.5.tgz</name>
+  <created>1576003622948</created>
+  <lastModified>1527371792000</lastModified>
+  <size>2299</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003622948</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c35b1ef918ec3c990f9a5bc57be04aacec5c8116</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8c5af6494e7554ddba2dbcb7f3ca3cdc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d317d5d4dc0ba4cc92daa979be09f9f7e98bf84a870e9a43049bdf7a90e64fe4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

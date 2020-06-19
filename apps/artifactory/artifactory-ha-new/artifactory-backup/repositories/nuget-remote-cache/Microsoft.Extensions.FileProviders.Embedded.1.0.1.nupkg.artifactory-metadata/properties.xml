@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62AC649811C14</artifactory.internal.etag>
+  <nuget.authors>Microsoft.Extensions.FileProviders.Embedded</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Abstractions:[1.0.1, ):.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:[4.1.0, ):.NETStandard1.0</nuget.dependency>
+  <nuget.description>File provider for files in embedded resources for Microsoft.Extensions.FileProviders.</nuget.description>
+  <nuget.digest>HzV1iOfiQ0G0FOlH+u+q//OSvSb9xBgaYFHKheTnSTXBZMuaQ96uSZcPrTzUAjy+0ffa7rDc5F2mWsKD+MCF1A==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.FileProviders.Embedded</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.Extensions.FileProviders.Embedded</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>files,filesystem</nuget.tags>
+  <nuget.version>1.0.1</nuget.version>
+</properties>

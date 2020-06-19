@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/babel__generator/@types/babel__generator-7.6.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel__generator-7.6.0.json</name>
+  <created>1576008061774</created>
+  <lastModified>1576008061179</lastModified>
+  <size>1261</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008061774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>254f3972dadec56f935121d1c7161bf9ed5eef86</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1436bf6483986a754d6c33d70da43405</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>01f1543a99b1c1ea8278990d042d7d5ff6df9c2e657cc449e23bcf381c0138f7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

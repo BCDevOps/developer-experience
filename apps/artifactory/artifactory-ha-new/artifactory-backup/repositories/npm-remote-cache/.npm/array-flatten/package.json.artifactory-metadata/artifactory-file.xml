@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/array-flatten/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576008042927</created>
+  <lastModified>1574313283000</lastModified>
+  <size>20690</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464346574</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>01c8c941f0394812486a98aca881e5bfa15cca5d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d4d36e4d7b826cf79b2a917f54701cc6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8ce2199b9c6042702cc5f1366917057d09795f1af2f3a4234e82301b92722d46</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

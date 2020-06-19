@@ -1,0 +1,29 @@
+{
+  "name" : "builtin-modules",
+  "description" : "List of the Node.js builtin modules",
+  "version" : "1.1.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/builtin-modules",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/builtin-modules/-/builtin-modules-1.1.1.tgz",
+    "shasum" : "270f076c5a72c02f5b65a47df94c5fe3a278892f"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "builtin", "built-in", "builtins", "node", "modules", "core", "bundled", "list", "array", "names" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "static.js", "builtin-modules.json" ],
+  "scripts" : {
+    "test" : "xo && ava",
+    "make" : "node make.js"
+  }
+}

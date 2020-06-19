@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mime/mime-1.6.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mime-1.6.0.json</name>
+  <created>1576003408685</created>
+  <lastModified>1576003408601</lastModified>
+  <size>1134</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003408686</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>35035c8095dd61d90571701cd3daa168ae656102</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c14bc96cbb535f785828abb5a3397d1d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>73c716e73a09dc4c3c57c2cff4d25f2a693ad7593b982cdf2d5511c92ace0034</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

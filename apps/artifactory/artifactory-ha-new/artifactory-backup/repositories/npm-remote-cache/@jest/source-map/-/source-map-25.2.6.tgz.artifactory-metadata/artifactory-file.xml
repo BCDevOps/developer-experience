@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@jest/source-map/-/source-map-25.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>source-map-25.2.6.tgz</name>
+  <created>1585871268785</created>
+  <lastModified>1585823354000</lastModified>
+  <size>2779</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871268786</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0ef2209514c6d445ebccea1438c55647f22abb4c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>37a737ee770383420d34436917f6342a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a772131d95933424a3759a827d0706cbb0c897ce02f0acde52b387d99480f547</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

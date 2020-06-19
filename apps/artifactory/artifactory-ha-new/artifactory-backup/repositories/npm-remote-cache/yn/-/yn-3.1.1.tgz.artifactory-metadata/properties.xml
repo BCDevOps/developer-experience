@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"35f607b3a0defabff7d13fd12ae05ab7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>parse yes/no like values</npm.description>
+  <npm.keywords>["yn","yes","no","cli","prompt","validate","input","answer","true","false","parse","lenient"]</npm.keywords>
+  <npm.name>yn</npm.name>
+  <npm.version>3.1.1</npm.version>
+</properties>

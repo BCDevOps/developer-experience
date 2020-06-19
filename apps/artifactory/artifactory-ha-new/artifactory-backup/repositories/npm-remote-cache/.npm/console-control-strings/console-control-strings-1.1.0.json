@@ -1,0 +1,28 @@
+{
+  "name" : "console-control-strings",
+  "description" : "A library of cross-platform tested terminal/console command strings for doing things like color and cursor positioning.  This is a subset of both ansi and vt100.  All control codes included work on both Windows & Unix-like OSes, except where noted.",
+  "version" : "1.1.0",
+  "author" : "Rebecca Turner <me@re-becca.org> (http://re-becca.org/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/iarna/console-control-strings"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/console-control-strings/-/console-control-strings-1.1.0.tgz",
+    "shasum" : "3d7cf4464db6446ea644bf4b39507f9851008e8e"
+  },
+  "devDependencies" : {
+    "standard" : "^7.1.2",
+    "tap" : "^5.7.2"
+  },
+  "keywords" : [ ],
+  "license" : "ISC",
+  "files" : [ "LICENSE", "index.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "standard && tap test/*.js"
+  }
+}

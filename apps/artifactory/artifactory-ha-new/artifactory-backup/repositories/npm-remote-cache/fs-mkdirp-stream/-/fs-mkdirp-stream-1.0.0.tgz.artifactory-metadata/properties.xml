@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ef3b7610208af83d361a6cf7c24d3c1a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ensure directories exist before writing to them.</npm.description>
+  <npm.keywords>["fs","mkdirp","stream","mkdir","directory","directories","ensure"]</npm.keywords>
+  <npm.name>fs-mkdirp-stream</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

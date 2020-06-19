@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/hdrhistogram</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>hdrhistogram</name>
+  <created>1576861389430</created>
+  <lastModified>1576861389430</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861389430</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

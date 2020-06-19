@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>cache-manager/-/cache-manager-3.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cache-manager-3.2.1.tgz</name>
+  <created>1585853520699</created>
+  <lastModified>1584741773000</lastModified>
+  <size>35326</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853520699</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a00db7fed1319daf942ca5e710524c6f1958e1e6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1b454853f20399e4e4ed04c362ad6ce6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e7b254357318b381ef55cac259230ef7f3aaf13aed7b91884928c7c2c2e4e9d8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

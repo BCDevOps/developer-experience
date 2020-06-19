@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c287d69c55dd44e67ea2ebe42f218f44"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>github graphql api client for browsers and node</npm.description>
+  <npm.keywords>["octokit","github","api","graphql"]</npm.keywords>
+  <npm.name>@octokit/graphql</npm.name>
+  <npm.version>4.3.1</npm.version>
+</properties>

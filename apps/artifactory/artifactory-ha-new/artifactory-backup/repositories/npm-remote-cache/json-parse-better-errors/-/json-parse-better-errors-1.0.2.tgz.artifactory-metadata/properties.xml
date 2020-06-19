@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e1f1acd10f76a4311583814b8b797f32"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>json.parse with context information on error</npm.description>
+  <npm.keywords>["JSON","parser"]</npm.keywords>
+  <npm.name>json-parse-better-errors</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

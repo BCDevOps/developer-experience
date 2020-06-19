@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/concat-map/concat-map-0.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>concat-map-0.0.1.json</name>
+  <created>1576003491509</created>
+  <lastModified>1576003491480</lastModified>
+  <size>1035</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003491509</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9b4f7268e5657d5e529a4c0114c3f9de0b79257c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cdb404e936d6f7e5d2059fef2d05a1b1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4dcdb220d0d5cb2cd43d5ed279479c93c54db6bc10464af00a8d21e4a604f782</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

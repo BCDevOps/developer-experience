@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-matcher-utils</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jest-matcher-utils</name>
+  <created>1576003615628</created>
+  <lastModified>1576003615628</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003615628</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

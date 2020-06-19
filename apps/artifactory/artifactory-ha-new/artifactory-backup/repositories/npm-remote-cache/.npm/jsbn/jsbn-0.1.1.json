@@ -1,0 +1,20 @@
+{
+  "name" : "jsbn",
+  "description" : "The jsbn library is a fast, portable implementation of large-number math in pure JavaScript, enabling public-key crypto and other applications on desktop and mobile browsers.",
+  "version" : "0.1.1",
+  "author" : "Tom Wu",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/andyperlitch/jsbn.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jsbn/-/jsbn-0.1.1.tgz",
+    "shasum" : "a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
+  },
+  "keywords" : [ "biginteger", "bignumber", "big", "integer" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha test.js"
+  }
+}

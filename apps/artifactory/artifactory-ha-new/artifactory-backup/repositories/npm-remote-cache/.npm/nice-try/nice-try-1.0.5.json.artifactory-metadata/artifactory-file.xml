@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/nice-try/nice-try-1.0.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nice-try-1.0.5.json</name>
+  <created>1576008546123</created>
+  <lastModified>1576008546086</lastModified>
+  <size>928</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008546124</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4f52a0bcc89836f91e2ac25f4977505df806f5f8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>68b9fe6175e37d35b5d36262b61e19a0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>27b187aa3a457b952abfe46c5cc7698f22eba077d637237d456c76372cd85a8d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

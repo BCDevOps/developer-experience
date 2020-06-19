@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>forever-agent/-/forever-agent-0.6.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>forever-agent-0.6.1.tgz</name>
+  <created>1576003421474</created>
+  <lastModified>1527383173000</lastModified>
+  <size>5035</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003421474</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>fbc71f0c41adeb37f96c577ad1ed42d8fdacca91</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0c2c460c7ac767b7c00cb1e3b9984397</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>eca862e1fd07bf54ff68ccf70450a64dc3d6b807ee9e3ddeb5d96773a3c806c5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

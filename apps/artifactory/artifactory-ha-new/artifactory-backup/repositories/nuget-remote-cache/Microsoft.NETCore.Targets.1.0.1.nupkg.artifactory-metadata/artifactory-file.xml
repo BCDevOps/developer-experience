@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.NETCore.Targets.1.0.1.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.NETCore.Targets.1.0.1.nupkg</name>
+  <created>1578432232521</created>
+  <lastModified>1544741935000</lastModified>
+  <size>18189</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432232522</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5df44a959133c6a18eee1949db9d24a08d909f6c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>22fa518f0fb4a54fb6e40b253069ebb2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>971c70fc6cb7db11e2d1f2e0156363e184c50520648f1e65eae7266d3c9fed5e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

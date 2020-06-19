@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-starter-web/2.1.9.RELEASE/spring-boot-starter-web-2.1.9.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-starter-web-2.1.9.RELEASE.jar</name>
+  <created>1576861394906</created>
+  <lastModified>1570033367000</lastModified>
+  <size>403</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861394907</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>2063870234eebbda3c09dddf9853477fe9e4a719</original>
+          <actual>2063870234eebbda3c09dddf9853477fe9e4a719</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>683d4208ac2f16d92bdbf1f7cbe524de</original>
+          <actual>683d4208ac2f16d92bdbf1f7cbe524de</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>14b2e6e5d7ef6868888a4d2fe2f0f88b4e4c9983876a43f033ebd9320c610e70</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

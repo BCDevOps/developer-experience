@@ -1,0 +1,35 @@
+{
+  "name" : "mem",
+  "description" : "Memoize functions - An optimization used to speed up consecutive function calls by caching the result of calls with identical input",
+  "version" : "1.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/mem",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/mem/-/mem-1.1.0.tgz",
+    "shasum" : "5edd52b485ca1d900fe64895505399a0dfa45f76"
+  },
+  "dependencies" : {
+    "mimic-fn" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "delay" : "^1.1.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "memoize", "function", "mem", "memoization", "cache", "caching", "optimize", "performance", "ttl", "expire", "promise" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

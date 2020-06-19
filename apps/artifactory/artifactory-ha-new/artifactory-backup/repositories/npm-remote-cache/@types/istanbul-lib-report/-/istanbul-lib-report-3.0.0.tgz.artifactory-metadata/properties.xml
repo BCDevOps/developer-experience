@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b0327098476cc827d79d4fbfc111d434"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for istanbul-lib-report</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/istanbul-lib-report</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

@@ -1,0 +1,46 @@
+{
+  "name" : "regex-not",
+  "description" : "Create a javascript regular expression for matching everything except for the given string.",
+  "version" : "1.0.2",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/regex-not",
+  "repository" : "jonschlinkert/regex-not",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/regex-not/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/regex-not/-/regex-not-1.0.2.tgz",
+    "shasum" : "1f4ece27e00b0b65e0247a6810e6a85d83a5752c"
+  },
+  "dependencies" : {
+    "extend-shallow" : "^3.0.2",
+    "safe-regex" : "^1.1.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.3"
+  },
+  "keywords" : [ "exec", "match", "negate", "negation", "not", "regex", "regular expression", "test" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "regex-cache", "to-regex" ]
+    },
+    "reflinks" : [ "verb", "verb-generate-readme" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

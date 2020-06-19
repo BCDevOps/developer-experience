@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/gauge/gauge-2.7.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>gauge-2.7.4.json</name>
+  <created>1576003658377</created>
+  <lastModified>1576003658355</lastModified>
+  <size>1517</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003658377</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9d27492eb734167b112ff455943e03012d00eaac</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f0ce34d625a2ceb62032d5a4cc314938</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>63078ac93d4442135d8eaf9a82dfbf3f9466f2a2719ec185d2fe33789088a8bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

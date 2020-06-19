@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es-to-primitive</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>es-to-primitive</name>
+  <created>1576003630765</created>
+  <lastModified>1576003630765</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003630765</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

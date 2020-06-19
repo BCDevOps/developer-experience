@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2a40d6543d99d22ed619187b3669a099"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>http response freshness testing</npm.description>
+  <npm.keywords>["fresh","http","conditional","cache"]</npm.keywords>
+  <npm.name>fresh</npm.name>
+  <npm.version>0.5.2</npm.version>
+</properties>

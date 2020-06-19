@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74D4ACD4C858E</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.copyright>Copyright © Rico Suter, 2019</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.ApiExplorer:1.0.6:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.ApiExplorer:1.1.8:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.ApiExplorer:2.0.4:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.ApiExplorer:2.1.3:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.ApiExplorer:2.2.0:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:1.0.5:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:1.1.3:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:2.0.3:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:2.1.1:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:2.2.0:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.TestHost:3.0.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyModel:3.0.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.App:1.0.5:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.App:1.1.2:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>NConsole:3.9.6519.30868:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:12.0.2:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>NSwag.Commands:13.1.3:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp1.1</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp2.2</nuget.dependency>
+  <nuget.dependency>System.Net.Http:4.3.2:.NETCoreApp3.0</nuget.dependency>
+  <nuget.description>NSwag: The OpenAPI/Swagger API toolchain for .NET and TypeScript</nuget.description>
+  <nuget.digest>pFlprnw+DJRofNMif61Hl6W9AeDHejZskA1Yw32FddlWYXhyCgt87zRY7tc2pBOzntSCfUKgKJOy8zC7a+2XmA==</nuget.digest>
+  <nuget.iconUrl>https://raw.githubusercontent.com/RicoSuter/NSwag/master/assets/NuGetIcon.png</nuget.iconUrl>
+  <nuget.id>NSwag.ConsoleCore</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>http://nswag.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>OpenAPI Swagger AspNetCore Documentation CodeGen  TypeScript WebApi AspNet</nuget.tags>
+  <nuget.version>13.1.3</nuget.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f2bf2d7f89ad870b3244c3675ed11f60"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>run multiple promise-returning &amp; async functions with limited concurrency</npm.description>
+  <npm.keywords>["promise","limit","limited","concurrency","throttle","throat","rate","batch","ratelimit","task","queue","async","await","promises","bluebird"]</npm.keywords>
+  <npm.name>p-limit</npm.name>
+  <npm.version>2.2.1</npm.version>
+</properties>

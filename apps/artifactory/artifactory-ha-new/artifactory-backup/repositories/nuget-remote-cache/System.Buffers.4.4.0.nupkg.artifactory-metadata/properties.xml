@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66147191B9254</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Tracing:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.description>Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.
+
+Commonly Used Types:
+System.Buffers.ArrayPool&lt;T>
+ 
+8321c729934c0f8be754953439b88e6e1c120c24 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Buffers</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Buffers</nuget.title>
+  <nuget.version>4.4.0</nuget.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/acorn-jsx/acorn-jsx-5.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>acorn-jsx-5.1.0.json</name>
+  <created>1576003414589</created>
+  <lastModified>1576003414281</lastModified>
+  <size>777</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003414673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>32a90a4fbf0a71f21b98604e0e55434363ac0c52</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>dcf4e2c35a1a71e6b8197ec45e5fffb4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bee1d466871dff0be39a38e10893972d6610fa1a359be6a78d8ea20591bd19ae</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

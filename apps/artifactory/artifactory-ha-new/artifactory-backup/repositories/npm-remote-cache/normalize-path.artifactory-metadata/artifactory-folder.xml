@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>normalize-path</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>normalize-path</name>
+  <created>1576003402793</created>
+  <lastModified>1576003402793</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003402793</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

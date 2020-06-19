@@ -1,0 +1,31 @@
+{
+  "name" : "globals",
+  "description" : "Global identifiers from different JavaScript environments",
+  "version" : "11.11.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/globals",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/globals/-/globals-11.11.0.tgz",
+    "shasum" : "dcf93757fa2de5486fbeed7118538adf789e9c2e"
+  },
+  "devDependencies" : {
+    "ava" : "0.21.0",
+    "xo" : "0.18.0"
+  },
+  "keywords" : [ "globals", "global", "identifiers", "variables", "vars", "jshint", "eslint", "environments" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "globals.json" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "ignores" : [ "get-browser-globals.js" ]
+  }
+}

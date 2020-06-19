@@ -1,0 +1,32 @@
+{
+  "name" : "safer-buffer",
+  "description" : "Modern Buffer API polyfill without footguns",
+  "version" : "2.1.2",
+  "author" : {
+    "name" : "Nikita Skovoroda",
+    "email" : "chalkerx@gmail.com",
+    "url" : "https://github.com/ChALkeR"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/ChALkeR/safer-buffer.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/ChALkeR/safer-buffer/issues"
+  },
+  "main" : "safer.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/safer-buffer/-/safer-buffer-2.1.2.tgz",
+    "shasum" : "44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+  },
+  "devDependencies" : {
+    "standard" : "^11.0.1",
+    "tape" : "^4.9.0"
+  },
+  "license" : "MIT",
+  "files" : [ "Porting-Buffer.md", "Readme.md", "tests.js", "dangerous.js", "safer.js" ],
+  "scripts" : {
+    "browserify-test" : "browserify --external tape tests.js > browserify-tests.js && tape browserify-tests.js",
+    "test" : "standard && tape tests.js"
+  }
+}

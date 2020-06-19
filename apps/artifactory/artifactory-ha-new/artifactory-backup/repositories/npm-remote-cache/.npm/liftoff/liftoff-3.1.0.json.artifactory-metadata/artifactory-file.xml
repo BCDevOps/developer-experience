@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/liftoff/liftoff-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>liftoff-3.1.0.json</name>
+  <created>1576003346368</created>
+  <lastModified>1576003346321</lastModified>
+  <size>1317</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003346369</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a50d046725759c5d5860e51045b6bf9a05befebe</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a88be6b667ac905bdbad5cee4fcaad0d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c18890c08ea9ea35ed0fbca0154274cfb14820f9fdcdd37fdce16a68f1a2a80c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/csv-parse/csv-parse-4.8.8.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>csv-parse-4.8.8.json</name>
+  <created>1585871272172</created>
+  <lastModified>1585871272144</lastModified>
+  <size>3051</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871272173</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a2fba0fde7d6ca21f97dbf4a7afb8977f12d1220</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f9ac2a4f1933f5f768999e548e05178e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>66e2243a58343b4b01c7309f22b3fad09077981da545dcb6cd0a0f584c4197e3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>38/f1/0c9b852c5136364c0dd59ee1d89e0d7599bef6c9f1869e0f2e07882253ea/semver-2.9.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>semver-2.9.0-py2.py3-none-any.whl</name>
+  <created>1574023064688</created>
+  <lastModified>1572448711000</lastModified>
+  <size>9142</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023064689</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>23c041e3f2635672b989a5c6077d095e76178f35</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ff733c5c0bee993c8d3baa619d7520b8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aa1c6be3bf23e346e00c509a7ee87735a7e0fd6b404cf066037cfeab2c770320</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

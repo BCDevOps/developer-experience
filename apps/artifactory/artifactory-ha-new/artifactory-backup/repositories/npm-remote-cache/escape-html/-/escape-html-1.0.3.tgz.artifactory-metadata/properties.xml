@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0e644d0c31d5f4c2eeeaef9566add5e9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>escape string for use in html</npm.description>
+  <npm.keywords>["escape","html","utility"]</npm.keywords>
+  <npm.name>escape-html</npm.name>
+  <npm.version>1.0.3</npm.version>
+</properties>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D664851F78609F</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.description>Logging abstractions for Microsoft.Extensions.Logging.
+Commonly used types:
+Microsoft.Extensions.Logging.ILogger
+Microsoft.Extensions.Logging.ILoggerFactory
+Microsoft.Extensions.Logging.ILogger&lt;TCategoryName>
+Microsoft.Extensions.Logging.LogLevel
+Microsoft.Extensions.Logging.Logger&lt;T>
+Microsoft.Extensions.Logging.LoggerMessage
+Microsoft.Extensions.Logging.Abstractions.NullLogger</nuget.description>
+  <nuget.digest>cu1lJnvs0SgkUcdsehSv6KVSy7hYp9soicmWKJL4jfGlpP4LmZxipSCTMumlMDZ44/XQnxFSUsPPRExmc+rXqg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.Logging.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/Home/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>logging</nuget.tags>
+  <nuget.version>2.0.2</nuget.version>
+</properties>

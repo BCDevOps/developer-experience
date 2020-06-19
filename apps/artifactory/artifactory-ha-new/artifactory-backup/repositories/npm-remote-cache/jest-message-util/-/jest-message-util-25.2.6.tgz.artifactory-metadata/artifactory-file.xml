@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-message-util/-/jest-message-util-25.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-message-util-25.2.6.tgz</name>
+  <created>1585853551524</created>
+  <lastModified>1585823360000</lastModified>
+  <size>6421</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853551525</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9d5523bebec8cd9cdef75f0f3069d6ec9a2252df</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4691b07b79c5fbd68336218cfad97c4d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>003f07aacb21618cf604ba8200e743632969e4c7e23f35c11fbde0385c4afde9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

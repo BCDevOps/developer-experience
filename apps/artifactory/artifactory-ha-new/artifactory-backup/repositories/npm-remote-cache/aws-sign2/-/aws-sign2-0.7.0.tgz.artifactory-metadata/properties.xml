@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"afa4784ebc8d35ccd94822bdf80ce823"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>aws signing. originally pulled from learnboost/knox, maintained as vendor in request, now a standalone module.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>aws-sign2</npm.name>
+  <npm.version>0.7.0</npm.version>
+</properties>

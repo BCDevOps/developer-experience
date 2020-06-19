@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ea5eb3dfef463a01eec703878faa5fa4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>github apps toolset for node.js</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@octokit/app</npm.name>
+  <npm.version>4.2.0</npm.version>
+</properties>

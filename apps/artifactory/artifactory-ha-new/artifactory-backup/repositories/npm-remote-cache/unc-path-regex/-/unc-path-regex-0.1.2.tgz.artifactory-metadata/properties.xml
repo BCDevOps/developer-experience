@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9d3c9bf76116484d419d6b80c103c93e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>regular expression for testing if a file path is a windows unc file path. can also be used as a component of another regexp via the `.source` property.</npm.description>
+  <npm.keywords>["absolute","expression","file","filepath","match","matching","path","regex","regexp","regular","unc","win","windows"]</npm.keywords>
+  <npm.name>unc-path-regex</npm.name>
+  <npm.version>0.1.2</npm.version>
+</properties>

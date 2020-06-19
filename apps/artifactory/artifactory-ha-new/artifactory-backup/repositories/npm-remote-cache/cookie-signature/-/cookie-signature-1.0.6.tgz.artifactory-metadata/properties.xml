@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9238627b651312549efb1b224e5f0f16"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>sign and unsign cookies</npm.description>
+  <npm.keywords>["cookie","sign","unsign"]</npm.keywords>
+  <npm.name>cookie-signature</npm.name>
+  <npm.version>1.0.6</npm.version>
+</properties>

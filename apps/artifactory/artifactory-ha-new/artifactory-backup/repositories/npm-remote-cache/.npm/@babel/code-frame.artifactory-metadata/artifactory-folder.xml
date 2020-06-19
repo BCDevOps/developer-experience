@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/code-frame</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>code-frame</name>
+  <created>1576003396018</created>
+  <lastModified>1576003396018</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003396018</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

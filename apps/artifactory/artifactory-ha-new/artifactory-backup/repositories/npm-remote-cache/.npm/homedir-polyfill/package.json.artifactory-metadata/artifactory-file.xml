@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/homedir-polyfill/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003438708</created>
+  <lastModified>1550774532000</lastModified>
+  <size>12977</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464329388</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>193da26ed34c828ceb3da7897bfc137e1c949a5a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7621baf6e5cbecae80f6b4159be17158</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13ef7fdc47465244e65c8cbee63e276badcc2117a35fa95f6f7155d25d3da4ca</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

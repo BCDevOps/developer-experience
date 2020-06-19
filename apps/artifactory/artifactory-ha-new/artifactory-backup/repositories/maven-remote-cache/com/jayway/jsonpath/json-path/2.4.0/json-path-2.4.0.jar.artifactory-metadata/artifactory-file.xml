@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-path-2.4.0.jar</name>
+  <created>1576861452367</created>
+  <lastModified>1499243765000</lastModified>
+  <size>223186</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861452368</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>765a4401ceb2dc8d40553c2075eb80a8fa35c2ae</original>
+          <actual>765a4401ceb2dc8d40553c2075eb80a8fa35c2ae</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>29169b4b1115bc851e5734ef35ecd42a</original>
+          <actual>29169b4b1115bc851e5734ef35ecd42a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>60441c74fb64e5a480070f86a604941927aaf684e2b513d780fb7a38fb4c5639</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

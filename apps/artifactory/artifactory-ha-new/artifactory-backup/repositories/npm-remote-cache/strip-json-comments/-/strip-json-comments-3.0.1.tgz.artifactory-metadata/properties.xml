@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"782926412e1598a4d017943734ed365c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>strip comments from json. lets you use comments in your json files!</npm.description>
+  <npm.keywords>["json","strip","comments","remove","delete","trim","multiline","parse","config","configuration","settings","util","env","environment"]</npm.keywords>
+  <npm.name>strip-json-comments</npm.name>
+  <npm.version>3.0.1</npm.version>
+</properties>

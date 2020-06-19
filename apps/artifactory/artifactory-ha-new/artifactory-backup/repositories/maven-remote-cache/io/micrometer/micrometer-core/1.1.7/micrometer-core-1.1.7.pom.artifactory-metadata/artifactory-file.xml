@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/micrometer/micrometer-core/1.1.7/micrometer-core-1.1.7.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>micrometer-core-1.1.7.pom</name>
+  <created>1576861382128</created>
+  <lastModified>1569884143000</lastModified>
+  <size>6740</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861382129</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7a0e1c64e9bb29c8e1759ad45ebe0dc86258d067</original>
+          <actual>7a0e1c64e9bb29c8e1759ad45ebe0dc86258d067</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>32c5471e71cc6873cee5dd52e2c24806</original>
+          <actual>32c5471e71cc6873cee5dd52e2c24806</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4b77846d925a0d6d063672a847bf59cd9da5b69ef2811e3a5f7eda5814a8e15f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

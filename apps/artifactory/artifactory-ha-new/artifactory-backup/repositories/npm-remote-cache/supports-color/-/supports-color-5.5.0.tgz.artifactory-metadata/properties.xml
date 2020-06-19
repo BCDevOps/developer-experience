@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"17b1003344e0e0d2719205be85946698"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detect whether a terminal supports color</npm.description>
+  <npm.keywords>["color","colour","colors","terminal","console","cli","ansi","styles","tty","rgb","256","shell","xterm","command-line","support","supports","capability","detect","truecolor","16m"]</npm.keywords>
+  <npm.name>supports-color</npm.name>
+  <npm.version>5.5.0</npm.version>
+</properties>

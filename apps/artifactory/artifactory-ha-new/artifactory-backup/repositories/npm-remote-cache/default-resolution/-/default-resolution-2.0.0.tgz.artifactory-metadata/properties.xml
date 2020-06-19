@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7eae61d406d1fe157a0e45aeb4e93644"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the default resolution time based on the current node version, optionally overridable</npm.description>
+  <npm.keywords>["resolution","timing"]</npm.keywords>
+  <npm.name>default-resolution</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

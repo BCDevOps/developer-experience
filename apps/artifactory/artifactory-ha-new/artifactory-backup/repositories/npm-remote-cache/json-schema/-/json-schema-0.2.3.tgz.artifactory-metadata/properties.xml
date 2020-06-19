@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"40a6db88dc58bf0778335c058b9754bf"</artifactory.internal.etag>
+  <npm.description>json schema validation and specifications</npm.description>
+  <npm.keywords>["json","schema"]</npm.keywords>
+  <npm.name>json-schema</npm.name>
+  <npm.version>0.2.3</npm.version>
+</properties>

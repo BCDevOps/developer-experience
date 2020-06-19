@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"50f191e3e0626106ce57a9a5a2be0e63"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if installed by yarn globally without any `fs` calls</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>is-yarn-global</npm.name>
+  <npm.version>0.3.0</npm.version>
+</properties>

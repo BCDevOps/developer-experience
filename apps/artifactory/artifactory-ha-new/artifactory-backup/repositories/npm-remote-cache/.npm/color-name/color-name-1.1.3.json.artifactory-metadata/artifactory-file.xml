@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/color-name/color-name-1.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>color-name-1.1.3.json</name>
+  <created>1576003623856</created>
+  <lastModified>1576003623823</lastModified>
+  <size>756</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003623856</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4d2db16eeb2e27501fc445f0c6afb333525a82b5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f6e56e5c6119cf384c6c7c3442b0a3ca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>20a1da86bc38d1dfa534e9932ed9c0e94345b8d1a07b9c78d382513b2cee0b06</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

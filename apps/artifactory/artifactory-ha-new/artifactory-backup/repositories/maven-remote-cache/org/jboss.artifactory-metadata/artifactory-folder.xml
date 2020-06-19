@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/jboss</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jboss</name>
+  <created>1576861380915</created>
+  <lastModified>1576861380915</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861380915</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,30 @@
+{
+  "name" : "mimic-response",
+  "description" : "Mimic a Node.js HTTP response stream",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/mimic-response",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/mimic-response/-/mimic-response-1.0.1.tgz",
+    "shasum" : "4923538878eef42063cb8a3e3b0798781487ab1b"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "create-test-server" : "^0.1.0",
+    "pify" : "^3.0.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "mimic", "response", "stream", "http", "https", "request", "get", "core" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

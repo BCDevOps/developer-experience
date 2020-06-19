@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-callable/-/is-callable-1.1.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-callable-1.1.4.tgz</name>
+  <created>1576008073273</created>
+  <lastModified>1530594301000</lastModified>
+  <size>9209</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008073273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1e1adf219e1eeb684d691f9d6a05ff0d30a24d75</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9fd103298da29b90782ee983ef3ed2e9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>175263dde0cf7f6f2a92506300e2f75f17331887d0389d0dc95ad4e888833bab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

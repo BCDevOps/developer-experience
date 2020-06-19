@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b22754e30e8983a5be8c5469d4ee5f8d"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>removes separators from the end of the string.</npm.description>
+  <npm.keywords>["remove","strip","trailing","separator"]</npm.keywords>
+  <npm.name>remove-trailing-separator</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

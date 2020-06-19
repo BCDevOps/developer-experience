@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.2.0</name>
+  <created>1576861381505</created>
+  <lastModified>1576861381505</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861381505</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

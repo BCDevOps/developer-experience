@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>statuses/-/statuses-1.5.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>statuses-1.5.0.tgz</name>
+  <created>1576008725012</created>
+  <lastModified>1527444853000</lastModified>
+  <size>5482</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008725013</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>161c7dac177659fd9811f43771fa99381478628c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9d462cf8c2a4d47ec51e193c5b7492d6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>283c1020a1c2b0bf0b9b0f123a6f248524b5623ec6fc4029cc65a139ca6ade3c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

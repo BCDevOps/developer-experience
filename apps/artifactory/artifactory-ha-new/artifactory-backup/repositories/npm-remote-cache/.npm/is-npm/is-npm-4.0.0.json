@@ -1,0 +1,29 @@
+{
+  "name" : "is-npm",
+  "description" : "Check if your code is running as an npm script",
+  "version" : "4.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/is-npm",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-npm/-/is-npm-4.0.0.tgz",
+    "shasum" : "c90dd8380696df87a7a6d823c20d0b12bbe3c84d"
+  },
+  "devDependencies" : {
+    "ava" : "^2.4.0",
+    "tsd-check" : "^0.6.0",
+    "xo" : "^0.25.3"
+  },
+  "keywords" : [ "npm", "is", "check", "detect", "env", "environment", "run", "script" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd-check"
+  }
+}

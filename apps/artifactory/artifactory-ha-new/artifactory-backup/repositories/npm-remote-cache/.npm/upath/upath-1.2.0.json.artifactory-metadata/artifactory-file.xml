@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/upath/upath-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>upath-1.2.0.json</name>
+  <created>1576003425885</created>
+  <lastModified>1576003425386</lastModified>
+  <size>1667</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003425887</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>dc6ee68144ea5b1e68ad8f2a834aff4fdd707f2d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1a8fa56aba4184e8ac6b30d93700d1c1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ddf14021e0e1b692aa88cd2599083077f6d81c19e3ca8acdb7092e14ebee5777</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

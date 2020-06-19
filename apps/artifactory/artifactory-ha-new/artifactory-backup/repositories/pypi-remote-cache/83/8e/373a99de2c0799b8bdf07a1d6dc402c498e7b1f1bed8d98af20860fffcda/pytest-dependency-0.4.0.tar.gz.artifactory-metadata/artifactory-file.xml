@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>83/8e/373a99de2c0799b8bdf07a1d6dc402c498e7b1f1bed8d98af20860fffcda/pytest-dependency-0.4.0.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pytest-dependency-0.4.0.tar.gz</name>
+  <created>1574234370753</created>
+  <lastModified>1543779730000</lastModified>
+  <size>12405</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234370754</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1af35dffd44b26eaa790440230cb144c39c82bf9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fef6703076e06e60a3259c0aef371a25</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bda0ef48e6a44c091399b12ab4a7e580d2dd8294c222b301f88d7d57f47ba142</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

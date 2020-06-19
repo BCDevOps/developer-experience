@@ -1,0 +1,38 @@
+{
+  "name" : "data-urls",
+  "description" : "Parses data: URLs",
+  "version" : "1.1.0",
+  "author" : "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
+  "repository" : "jsdom/data-urls",
+  "main" : "lib/parser.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/data-urls/-/data-urls-1.1.0.tgz",
+    "shasum" : "15ee0582baa5e22bb59c77140da8f9c76963bbfe"
+  },
+  "dependencies" : {
+    "abab" : "^2.0.0",
+    "whatwg-mimetype" : "^2.2.0",
+    "whatwg-url" : "^7.0.0"
+  },
+  "devDependencies" : {
+    "eslint" : "^5.7.0",
+    "jest" : "^23.6.0",
+    "request" : "^2.88.0"
+  },
+  "keywords" : [ "data url", "data uri", "data:", "http", "fetch", "whatwg" ],
+  "license" : "MIT",
+  "files" : [ "lib/" ],
+  "scripts" : {
+    "test" : "jest",
+    "coverage" : "jest --coverage",
+    "lint" : "eslint .",
+    "pretest" : "node scripts/get-latest-platform-tests.js"
+  },
+  "jest" : {
+    "coverageDirectory" : "coverage",
+    "coverageReporters" : [ "lcov", "text-summary" ],
+    "testEnvironment" : "node",
+    "testMatch" : [ "<rootDir>/test/**/*.js" ],
+    "coveragePathIgnorePatterns" : [ "<rootDir>/node_modules/(?!(abab/lib/atob.js))" ]
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"53062023252686e850af7c17a28961e6"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>core istanbul api for js code coverage</npm.description>
+  <npm.keywords>["coverage","istanbul","js","instrumentation"]</npm.keywords>
+  <npm.name>istanbul-lib-instrument</npm.name>
+  <npm.version>3.3.0</npm.version>
+</properties>

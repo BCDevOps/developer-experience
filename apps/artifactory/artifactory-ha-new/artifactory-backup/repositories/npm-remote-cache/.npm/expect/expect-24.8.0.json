@@ -1,0 +1,38 @@
+{
+  "name" : "expect",
+  "version" : "24.8.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/expect"
+  },
+  "engines" : {
+    "node" : ">= 6"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/expect/-/expect-24.8.0.tgz",
+    "shasum" : "471f8ec256b7b6129ca2524b2a62f030df38718d"
+  },
+  "dependencies" : {
+    "@jest/types" : "^24.8.0",
+    "ansi-styles" : "^3.2.0",
+    "jest-get-type" : "^24.8.0",
+    "jest-matcher-utils" : "^24.8.0",
+    "jest-message-util" : "^24.8.0",
+    "jest-regex-util" : "^24.3.0"
+  },
+  "devDependencies" : {
+    "@types/ansi-styles" : "^3.2.1",
+    "immutable" : "^4.0.0-rc.12"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "845728f24b3ef41e450595c384e9b5c9fdf248a4",
+  "types" : "build/index.d.ts",
+  "browser" : "build-es5/index.js"
+}

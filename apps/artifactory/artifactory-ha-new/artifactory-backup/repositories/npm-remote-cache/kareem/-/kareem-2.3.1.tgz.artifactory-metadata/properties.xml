@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"75751cada84f4ff7649962f3f3e75396"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>next-generation take on pre/post function hooks</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>kareem</npm.name>
+  <npm.version>2.3.1</npm.version>
+</properties>

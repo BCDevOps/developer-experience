@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>4a/28/97c3b661e7bebe8508a58343c4242603d75773c18199d719c2cfd8b8428b/fastapi-0.42.0-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fastapi-0.42.0-py3-none-any.whl</name>
+  <created>1574124594001</created>
+  <lastModified>1570646050000</lastModified>
+  <size>166036</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574124594002</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3368e6cf573e3cf2eafdf3f25d845aa3311863a4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2b622dd0b5b715e1b7e4b85d75760213</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>38356cf424392142a561f32ab49113dec6e2ab7318862ae14d5e1d7ede16d14f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

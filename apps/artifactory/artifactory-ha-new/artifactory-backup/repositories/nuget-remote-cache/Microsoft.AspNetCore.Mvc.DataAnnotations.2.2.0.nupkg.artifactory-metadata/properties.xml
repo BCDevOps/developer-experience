@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6597575CC6CCB</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Localization:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.ComponentModel.Annotations:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core MVC metadata and validation system using System.ComponentModel.DataAnnotations.
+
+This package was built from the source code at https://github.com/aspnet/Mvc/tree/a6199bbfbab05583f987bae322fb04566841aaea</nuget.description>
+  <nuget.digest>eLHD8DEim9pey0wrl5K8ICcHoax+Zc5bRpHPJWaqFOVxZns6OtRR/+E0dRNGhJlnOHUo3pHkeD/nMvIocaKnTA==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Mvc.DataAnnotations</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore aspnetcoremvc</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"53defc798aa7cdd9cdfe7f1b034df270"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>tools for working with sourcemappingurl comments.</npm.description>
+  <npm.keywords>["source map","sourceMappingURL","comment","annotation"]</npm.keywords>
+  <npm.name>source-map-url</npm.name>
+  <npm.version>0.4.0</npm.version>
+</properties>

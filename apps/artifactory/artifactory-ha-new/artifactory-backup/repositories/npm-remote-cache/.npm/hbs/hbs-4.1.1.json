@@ -1,0 +1,36 @@
+{
+  "name" : "hbs",
+  "description" : "Express.js template engine plugin for Handlebars",
+  "version" : "4.1.1",
+  "author" : "Don Park <donpark@docuverse.com> (http://blog.docuverse.com)",
+  "repository" : "pillarjs/hbs",
+  "contributors" : [ "Roman Shtylman <shtylman@gmail.com>" ],
+  "engines" : {
+    "node" : ">= 0.8",
+    "npm" : "1.2.8000 || >= 1.4.16"
+  },
+  "main" : "lib/hbs.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/hbs/-/hbs-4.1.1.tgz",
+    "shasum" : "8aab17ca6ae70f9aaa225278bed7af31011254b7"
+  },
+  "dependencies" : {
+    "handlebars" : "4.7.6",
+    "walk" : "2.3.14"
+  },
+  "devDependencies" : {
+    "eslint" : "6.8.0",
+    "eslint-plugin-markdown" : "1.0.2",
+    "mocha" : "7.1.1",
+    "nyc" : "15.0.0",
+    "rimraf" : "2.7.1",
+    "supertest" : "4.0.2"
+  },
+  "license" : "MIT",
+  "files" : [ "lib/", "HISTORY.md", "LICENSE", "README.md" ],
+  "scripts" : {
+    "lint" : "eslint --plugin markdown --ext js,md .",
+    "test" : "mocha --reporter spec --ui qunit --bail test/*/index.js",
+    "test-cov" : "nyc --reporter=html --reporter=text npm test"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"21d16701c63b8b7bdb542a5a4e558303"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get and validate the raw body of a readable stream.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>raw-body</npm.name>
+  <npm.version>2.4.0</npm.version>
+</properties>

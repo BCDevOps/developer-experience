@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1d3f1a31259ccdd15c5b9edfe879c290"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>read the closest package.json file</npm.description>
+  <npm.keywords>["json","read","parse","file","fs","graceful","load","pkg","package","find","up","find-up","findup","look-up","look","file","search","match","package","resolve","parent","parents","folder","directory","dir","walk","walking","path"]</npm.keywords>
+  <npm.name>read-pkg-up</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

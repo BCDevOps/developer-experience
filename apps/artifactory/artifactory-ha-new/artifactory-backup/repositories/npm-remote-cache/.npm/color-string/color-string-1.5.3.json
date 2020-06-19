@@ -1,0 +1,32 @@
+{
+  "name" : "color-string",
+  "description" : "Parser and generator for CSS color strings",
+  "version" : "1.5.3",
+  "author" : "Heather Arthur <fayearthur@gmail.com>",
+  "repository" : "Qix-/color-string",
+  "contributors" : [ "Maxime Thirouin", "Dyma Ywanov <dfcreative@gmail.com>", "Josh Junon" ],
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/color-string/-/color-string-1.5.3.tgz",
+    "shasum" : "c9bbc5f01b58b5492f3d6857459cb6590ce204cc"
+  },
+  "dependencies" : {
+    "color-name" : "^1.0.0",
+    "simple-swizzle" : "^0.2.2"
+  },
+  "devDependencies" : {
+    "xo" : "^0.12.1"
+  },
+  "keywords" : [ "color", "colour", "rgb", "css" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "node test/basic.js"
+  },
+  "xo" : {
+    "rules" : {
+      "no-cond-assign" : 0,
+      "operator-linebreak" : 0
+    }
+  }
+}

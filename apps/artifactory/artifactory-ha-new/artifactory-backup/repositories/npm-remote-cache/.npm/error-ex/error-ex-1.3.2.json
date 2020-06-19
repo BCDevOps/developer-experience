@@ -1,0 +1,34 @@
+{
+  "name" : "error-ex",
+  "description" : "Easy error subclassing and stack customization",
+  "version" : "1.3.2",
+  "repository" : "qix-/node-error-ex",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/error-ex/-/error-ex-1.3.2.tgz",
+    "shasum" : "b4ac40648107fdcdcfae242f428bea8a14d4f1bf"
+  },
+  "dependencies" : {
+    "is-arrayish" : "^0.2.1"
+  },
+  "devDependencies" : {
+    "coffee-script" : "^1.9.3",
+    "coveralls" : "^2.11.2",
+    "istanbul" : "^0.3.17",
+    "mocha" : "^2.2.5",
+    "should" : "^7.0.1",
+    "xo" : "^0.7.1"
+  },
+  "keywords" : [ "error", "errors", "extend", "extending", "extension", "subclass", "stack", "custom" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "maintainers" : [ "Josh Junon <i.am.qix@gmail.com> (github.com/qix-)", "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)" ],
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "mocha --compilers coffee:coffee-script/register"
+  },
+  "xo" : {
+    "rules" : {
+      "operator-linebreak" : [ 0 ]
+    }
+  }
+}

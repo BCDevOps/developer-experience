@@ -1,0 +1,31 @@
+{
+  "name" : "normalize-url",
+  "description" : "Normalize a URL",
+  "version" : "4.5.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/normalize-url",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/normalize-url/-/normalize-url-4.5.0.tgz",
+    "shasum" : "453354087e6ca96957bd8f5baf753f5982142129"
+  },
+  "devDependencies" : {
+    "ava" : "^2.4.0",
+    "coveralls" : "^3.0.6",
+    "nyc" : "^14.1.1",
+    "tsd" : "^0.8.0",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "normalize", "url", "uri", "address", "string", "normalization", "normalisation", "query", "querystring", "simplify", "strip", "trim", "canonical" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && nyc ava && tsd"
+  }
+}

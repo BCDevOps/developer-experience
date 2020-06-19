@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-actuator/2.1.9.RELEASE/spring-boot-actuator-2.1.9.RELEASE.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-actuator-2.1.9.RELEASE.pom</name>
+  <created>1576861389186</created>
+  <lastModified>1570033389000</lastModified>
+  <size>13659</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861389187</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>fee0b87cce46b453b74ea5f123413bd19e6dd367</original>
+          <actual>fee0b87cce46b453b74ea5f123413bd19e6dd367</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>b3f4e8e29d30224bd8bd92095caa5e61</original>
+          <actual>b3f4e8e29d30224bd8bd92095caa5e61</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e991c817e17aeacec8096f085a83c47df9ca83a1c21e6b6f7293296b3e620537</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

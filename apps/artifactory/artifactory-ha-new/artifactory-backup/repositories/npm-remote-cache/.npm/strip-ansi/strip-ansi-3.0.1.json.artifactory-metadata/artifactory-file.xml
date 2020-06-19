@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/strip-ansi/strip-ansi-3.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>strip-ansi-3.0.1.json</name>
+  <created>1576003605689</created>
+  <lastModified>1576003605649</lastModified>
+  <size>1138</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003605689</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9de50dcd1baa49c8db60f6911ec6408340e82cca</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e4cd0cb6ee304b8e69d31bd1b2d772fb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fb7c510cb5ae3410cf66c228cb803abeaaf4062fd5f2465768e95ba2df5c8efd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

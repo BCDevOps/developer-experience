@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ecdsa-sig-formatter-1.0.11.tgz</name>
+  <created>1576008065375</created>
+  <lastModified>1548451937000</lastModified>
+  <size>7104</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065376</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>31b231eddd00e22788d41d12d0599a70</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>487cb94dff2414772c3bb648a5e4e41c03cbbcc64263d08a56e36d735fc848fe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

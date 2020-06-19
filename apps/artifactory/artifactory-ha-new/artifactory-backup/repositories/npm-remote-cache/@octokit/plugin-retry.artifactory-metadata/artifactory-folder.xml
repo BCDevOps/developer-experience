@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@octokit/plugin-retry</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plugin-retry</name>
+  <created>1576008551075</created>
+  <lastModified>1576008551075</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008551075</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

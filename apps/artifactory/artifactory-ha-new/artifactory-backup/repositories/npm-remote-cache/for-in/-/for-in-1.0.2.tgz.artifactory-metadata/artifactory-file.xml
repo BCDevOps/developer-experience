@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>for-in/-/for-in-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>for-in-1.0.2.tgz</name>
+  <created>1576003607035</created>
+  <lastModified>1527383065000</lastModified>
+  <size>2637</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003607036</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>81068d295a8142ec0ac726c6e2200c30fb6d5e80</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ee6ee930a801ef95ab155a07b5c05e0c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4e7da30d44cd6cf66e4883328d6ced16fa83a5da11bbe46b4837ddfd526fa85e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

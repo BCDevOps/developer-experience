@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-diff/-/jest-diff-25.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-diff-25.1.0.tgz</name>
+  <created>1585853568830</created>
+  <lastModified>1579654807000</lastModified>
+  <size>22248</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853568831</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>58b827e63edea1bc80c1de952b80cec9ac50e1ad</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>741f9022a660e955e3c680e5b40ce941</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e13d1ed03704e392ab9df69a20f55ba427488f6bf306c4697bdd5a56f2263893</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

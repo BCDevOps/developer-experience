@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>a8/0a/4c2157ab42e4ec9da1e3cef3b20039a96f8e8abe03cba9f5d3a3ed64ffb6/lovely_pytest_docker-0.1.0-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lovely_pytest_docker-0.1.0-py3-none-any.whl</name>
+  <created>1574023485989</created>
+  <lastModified>1566906556000</lastModified>
+  <size>10924</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023485990</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b621d6f62635dd543814885abd4da8fc2dd53455</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>69cecded5e1c54686a7bf498bd4d665b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7694a0194b082665edd5729c62513ea38f4320d6268d6f5f9485e878966f93be</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

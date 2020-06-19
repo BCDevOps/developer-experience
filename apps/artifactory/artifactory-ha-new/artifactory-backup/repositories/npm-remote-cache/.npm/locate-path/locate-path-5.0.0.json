@@ -1,0 +1,32 @@
+{
+  "name" : "locate-path",
+  "description" : "Get the first path that exists on disk of multiple paths",
+  "version" : "5.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/locate-path",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/locate-path/-/locate-path-5.0.0.tgz",
+    "shasum" : "1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
+  },
+  "dependencies" : {
+    "p-locate" : "^4.1.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "locate", "path", "paths", "file", "files", "exists", "find", "finder", "search", "searcher", "array", "iterable", "iterator" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

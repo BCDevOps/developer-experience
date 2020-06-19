@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D732EB9F5C9CD8</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Data.SqlClient.sni:1.0.19235.1:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>Microsoft.Identity.Client:3.0.8:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Identity.Client:3.0.8:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>Microsoft.Identity.Client:3.0.8:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Win32.Registry:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Win32.Registry:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.4.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.4.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Configuration.ConfigurationManager:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Configuration.ConfigurationManager:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Caching:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Provides the data provider for SQL Server. These classes provide access to versions of SQL Server and encapsulate database-specific protocols, including tabular data stream (TDS)
+
+Commonly Used Types:
+Microsoft.Data.SqlClient.SqlConnection
+Microsoft.Data.SqlClient.SqlException
+Microsoft.Data.SqlClient.SqlParameter
+Microsoft.Data.SqlClient.SqlDataReader
+Microsoft.Data.SqlClient.SqlCommand
+Microsoft.Data.SqlClient.SqlTransaction
+Microsoft.Data.SqlClient.SqlParameterCollection
+Microsoft.Data.SqlClient.SqlClientFactory
+
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>7F0AL55VbbvK2Cw3xVlPhtUNkxysvkT9vP0qYScrrqwhYFmXY9U9M9DUpW/rFi4N29w5PrbwVe8OcvmdKi4o0A==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>System.Data:.NETFramework4.6</nuget.frameworks>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?linkid=2090301</nuget.iconUrl>
+  <nuget.id>Microsoft.Data.SqlClient</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://aka.ms/sqlclientproject</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?linkid=2090501</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>sqlclient microsoft.data.sqlclient</nuget.tags>
+  <nuget.title>Microsoft.Data.SqlClient</nuget.title>
+  <nuget.version>1.0.19249.1</nuget.version>
+</properties>

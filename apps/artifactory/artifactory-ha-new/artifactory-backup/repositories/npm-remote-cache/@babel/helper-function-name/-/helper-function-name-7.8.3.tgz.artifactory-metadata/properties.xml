@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5e1778a894f7bd959716690ce3b89ba7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>helper function to change the property 'name' of every function</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-function-name</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

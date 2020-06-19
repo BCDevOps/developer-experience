@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f814d0d058b1f44525e933472ebf107b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>combine an array of streams into a single duplex stream using pump and duplexify</npm.description>
+  <npm.keywords>["pump","duplexify","duplex","streams","stream","pipeline","combine"]</npm.keywords>
+  <npm.name>pumpify</npm.name>
+  <npm.version>1.5.1</npm.version>
+</properties>

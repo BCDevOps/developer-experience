@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"91a11e1fda13eb4741da83ea97ab60fb"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for prettier</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/prettier</npm.name>
+  <npm.version>1.19.1</npm.version>
+</properties>

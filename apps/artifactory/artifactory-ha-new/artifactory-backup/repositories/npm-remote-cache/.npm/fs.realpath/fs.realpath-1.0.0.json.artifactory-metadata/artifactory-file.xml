@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fs.realpath/fs.realpath-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fs.realpath-1.0.0.json</name>
+  <created>1576003409560</created>
+  <lastModified>1576003409534</lastModified>
+  <size>780</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003409560</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>57f824eee12040ba4304f8707b4fae02b62d1035</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6898a1c10d7a97ddda852507830005dd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>eb4b7798cc2ae532c4c6d4b4d983d41c8e3eb8391d2442c038a8a80a940c2e7a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

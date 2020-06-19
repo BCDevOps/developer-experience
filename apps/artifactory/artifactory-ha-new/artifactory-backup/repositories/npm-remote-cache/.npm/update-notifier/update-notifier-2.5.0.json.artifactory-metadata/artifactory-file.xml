@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/update-notifier/update-notifier-2.5.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>update-notifier-2.5.0.json</name>
+  <created>1576003094961</created>
+  <lastModified>1576003094934</lastModified>
+  <size>1306</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003094994</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9c87ef1f8da990ff09568efa5289d16b08c91675</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ccff43672c350086155dc3a5e438f8bd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>33c20f8ed5837d83c1e2305c4bc5b25c6011e464f9e9003ad6247f9889e80e10</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

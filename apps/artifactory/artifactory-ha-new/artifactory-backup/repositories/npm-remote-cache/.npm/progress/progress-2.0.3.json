@@ -1,0 +1,25 @@
+{
+  "name" : "progress",
+  "description" : "Flexible ascii progress bar",
+  "version" : "2.0.3",
+  "author" : "TJ Holowaychuk <tj@vision-media.ca>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/visionmedia/node-progress"
+  },
+  "contributors" : [ "Christoffer Hallas <christoffer.hallas@gmail.com>", "Jordan Scales <scalesjordan@gmail.com>", "Andrew Rhyne <rhyneandrew@gmail.com>", "Marco Brack <PapstDonB@Googlemail.com>" ],
+  "engines" : {
+    "node" : ">=0.4.0"
+  },
+  "main" : "./index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/progress/-/progress-2.0.3.tgz",
+    "shasum" : "7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
+  },
+  "dependencies" : {
+  },
+  "keywords" : [ "cli", "progress" ],
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

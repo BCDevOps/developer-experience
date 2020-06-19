@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D76F6F5613DE18</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.copyright>Copyright © Rico Suter, 2019</nuget.copyright>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NJsonSchema.CodeGeneration:10.0.28:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NJsonSchema.CodeGeneration:10.0.28:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>NJsonSchema.CodeGeneration:10.0.28:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.6:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.6:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.6:.NETStandard2.0</nuget.dependency>
+  <nuget.description>NSwag: The OpenAPI/Swagger API toolchain for .NET and TypeScript</nuget.description>
+  <nuget.digest>5tfgPB3DkARF/SnVoFR13tj+dfbAbjzp/x63oI3DvK5lUA2dWp86msc7KM5FPUJ0LtwDVy+7XC4rnUncN+w4uQ==</nuget.digest>
+  <nuget.frameworks>Microsoft.CSharp:.NETFramework4.5.1</nuget.frameworks>
+  <nuget.iconUrl>https://raw.githubusercontent.com/RicoSuter/NSwag/master/assets/NuGetIcon.png</nuget.iconUrl>
+  <nuget.id>NSwag.CodeGeneration</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>http://nswag.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>OpenAPI Swagger AspNetCore Documentation CodeGen  TypeScript WebApi AspNet</nuget.tags>
+  <nuget.version>13.1.6</nuget.version>
+</properties>

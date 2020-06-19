@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mime-types/mime-types-2.1.25.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mime-types-2.1.25.json</name>
+  <created>1576002597949</created>
+  <lastModified>1576002597898</lastModified>
+  <size>1290</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576002597950</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6385ee9da982ca91e2d325d74347447d63b6349c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b4dabbb08cd1375eba53ddd17ce90733</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a6929c9953dc849d5a9eff55155fd330cf8002641416b87240df9066acd6e5aa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/delayed-stream/delayed-stream-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>delayed-stream-1.0.0.json</name>
+  <created>1576003496556</created>
+  <lastModified>1576003496537</lastModified>
+  <size>912</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003496557</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2ea781f8f5f4d038f65765443950684a0d95f956</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8afd2cc55b1baeecb08c04e4e866042b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>921659db4ac1ee660a680e33128b22a9294514a0af336b726146b11d2a29fa5c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

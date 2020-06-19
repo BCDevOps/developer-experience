@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sax/-/sax-1.2.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sax-1.2.4.tgz</name>
+  <created>1576003492632</created>
+  <lastModified>1527439109000</lastModified>
+  <size>15162</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003492633</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2816234e2378bddc4e5354fab5caa895df7100d9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7ecffd3e929014af7d5913f54d262738</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>adc442e017041cffca4d4418d06006ae5f17a9984557fa80c3a6cd8859021cf2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

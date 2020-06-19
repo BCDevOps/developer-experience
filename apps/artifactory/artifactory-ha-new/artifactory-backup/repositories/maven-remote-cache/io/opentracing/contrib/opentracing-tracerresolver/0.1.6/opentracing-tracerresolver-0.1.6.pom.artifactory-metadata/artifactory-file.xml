@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-tracerresolver/0.1.6/opentracing-tracerresolver-0.1.6.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-tracerresolver-0.1.6.pom</name>
+  <created>1576861437413</created>
+  <lastModified>1553630020000</lastModified>
+  <size>2856</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861437414</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>cd54c23ae6f0482e7ced0bba738c8c5e79e22204</original>
+          <actual>cd54c23ae6f0482e7ced0bba738c8c5e79e22204</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>8d8c7b73e69ce225e2cc3962849a1b0f</original>
+          <actual>8d8c7b73e69ce225e2cc3962849a1b0f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f811c9088f3bed9f1f2aeee0cd1364365ced3670b6d1d7b5f7a5bdda80952ad8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

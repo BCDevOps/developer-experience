@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>lodash.set/-/lodash.set-4.3.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.set-4.3.2.tgz</name>
+  <created>1576003440977</created>
+  <lastModified>1527404339000</lastModified>
+  <size>8049</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003440977</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d8757b1da807dde24816b0d6a84bea1a76230b23</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>37b8b8abe2755087e6e6cb77c5584bb7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3a9d0dc7fd48ef99f2e792426e5bac00ec83f95e748b496484f9ff61ee473e49</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

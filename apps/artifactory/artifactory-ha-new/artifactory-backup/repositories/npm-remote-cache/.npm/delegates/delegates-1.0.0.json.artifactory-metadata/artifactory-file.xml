@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/delegates/delegates-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>delegates-1.0.0.json</name>
+  <created>1576003667343</created>
+  <lastModified>1576003667324</lastModified>
+  <size>551</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003667343</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7117428613bc21c6bb22c044b50d65e4638a2054</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>30cdda2e949d5d3628ff53b5a23e05c5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2baa844fe01d796b759b2d641df3a575fd6635e3ed01f9101e5a2464e2912fa3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/negotiator/negotiator-0.6.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>negotiator-0.6.2.json</name>
+  <created>1576008071674</created>
+  <lastModified>1576008071379</lastModified>
+  <size>1173</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008071674</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>574431a80916d3f72c98faf3c97ed14e93737f6d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d87478b7edaff99a0aaf062f4f49c56f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b2eb84989d48e3ba580a1c676cffef9d250578b6063e52aecb8fcef004e7ef5d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

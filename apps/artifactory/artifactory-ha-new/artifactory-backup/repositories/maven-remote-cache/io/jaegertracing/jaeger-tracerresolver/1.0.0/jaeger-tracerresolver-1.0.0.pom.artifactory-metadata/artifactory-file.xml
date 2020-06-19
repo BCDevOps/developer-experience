@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/jaegertracing/jaeger-tracerresolver/1.0.0/jaeger-tracerresolver-1.0.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jaeger-tracerresolver-1.0.0.pom</name>
+  <created>1576861382411</created>
+  <lastModified>1564736365000</lastModified>
+  <size>1715</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861382412</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>85f0c722f46c2918adf381e5cd846556e14b68bb</original>
+          <actual>85f0c722f46c2918adf381e5cd846556e14b68bb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>fc1405284b735a4d7e5cd31382dc1c99</original>
+          <actual>fc1405284b735a4d7e5cd31382dc1c99</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bd8e5c788825f8992989c881cce632eeafcdff43a690f6a8254f6752dfef3fc2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

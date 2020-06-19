@@ -1,0 +1,39 @@
+{
+  "name" : "@jest/types",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-types"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@jest/types/-/types-25.2.6.tgz",
+    "shasum" : "c12f44af9bed444438091e4b59e7ed05f8659cb6"
+  },
+  "dependencies" : {
+    "@types/istanbul-lib-coverage" : "^2.0.0",
+    "@types/istanbul-reports" : "^1.1.1",
+    "@types/yargs" : "^15.0.0",
+    "chalk" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/index.d.ts"
+}

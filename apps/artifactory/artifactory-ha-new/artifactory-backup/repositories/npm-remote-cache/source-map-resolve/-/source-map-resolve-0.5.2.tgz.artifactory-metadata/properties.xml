@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"673a55ae2e444c023fd4b0a95d3e9a18"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>resolve the source map and/or sources for a generated file.</npm.description>
+  <npm.keywords>["source map","sourcemap","source","map","sourceMappingURL","resolve","resolver","locate","locator","find","finder"]</npm.keywords>
+  <npm.name>source-map-resolve</npm.name>
+  <npm.version>0.5.2</npm.version>
+</properties>

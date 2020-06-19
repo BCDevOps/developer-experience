@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"965eec262dbbbc6a0e1371ea4072adbb"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>promisify the node standard library.</npm.description>
+  <npm.keywords>["promise","node"]</npm.keywords>
+  <npm.name>pn</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

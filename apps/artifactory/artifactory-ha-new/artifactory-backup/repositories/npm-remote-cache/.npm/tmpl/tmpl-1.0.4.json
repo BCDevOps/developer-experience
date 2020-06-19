@@ -1,0 +1,23 @@
+{
+  "name" : "tmpl",
+  "description" : "JavaScript micro templates.",
+  "version" : "1.0.4",
+  "author" : "Naitik Shah <n@daaku.org>",
+  "homepage" : "https://github.com/nshah/nodejs-tmpl",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/daaku/nodejs-tmpl"
+  },
+  "main" : "lib/tmpl",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/tmpl/-/tmpl-1.0.4.tgz",
+    "shasum" : "23640dd7b42d00433911140820e5cf440e521dd1"
+  },
+  "devDependencies" : {
+    "mocha" : "0.12.x"
+  },
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+    "test" : "NODE_PATH=./lib mocha --ui exports"
+  }
+}

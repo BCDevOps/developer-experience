@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"859e9212fb31d3a372946597d17bfc6b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>an mutable object-based log format designed for chaining &amp; objectmode streams.</npm.description>
+  <npm.keywords>["winston","logging","format","winstonjs"]</npm.keywords>
+  <npm.name>logform</npm.name>
+  <npm.version>2.1.2</npm.version>
+</properties>

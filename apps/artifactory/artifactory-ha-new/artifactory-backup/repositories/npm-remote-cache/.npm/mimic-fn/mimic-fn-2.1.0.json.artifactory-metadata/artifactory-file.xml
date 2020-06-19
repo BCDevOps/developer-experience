@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mimic-fn/mimic-fn-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mimic-fn-2.1.0.json</name>
+  <created>1585853573779</created>
+  <lastModified>1585853573710</lastModified>
+  <size>859</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853573779</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>87220cda62cb55fd3846afa556a5df5372dd367a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b489071f06935832bcd0b0b9cea3f7ba</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>968fd13c44f0cc4e5e181b9c7daaf32fc4021eefd62593b09638117c0f139807</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

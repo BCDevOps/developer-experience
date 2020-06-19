@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"87a16f7a36e489fdd042510550872167"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>base reporting library for istanbul</npm.description>
+  <npm.keywords>["istanbul","report","api","lib"]</npm.keywords>
+  <npm.name>istanbul-lib-report</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

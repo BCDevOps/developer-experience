@@ -1,0 +1,49 @@
+{
+  "name" : "map-visit",
+  "description" : "Map `visit` over an array of objects.",
+  "version" : "1.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/map-visit",
+  "repository" : "jonschlinkert/map-visit",
+  "contributors" : [ "Brian Woodward <brian.woodward@gmail.com> (https://twitter.com/doowb)", "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/map-visit/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/map-visit/-/map-visit-1.0.0.tgz",
+    "shasum" : "ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
+  },
+  "dependencies" : {
+    "object-visit" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "clone-deep" : "^0.2.4",
+    "extend-shallow" : "^2.0.1",
+    "gulp-format-md" : "^0.1.12",
+    "lodash" : "^4.17.4",
+    "mocha" : "^3.2.0"
+  },
+  "keywords" : [ "array", "arrays", "function", "helper", "invoke", "key", "map", "method", "object", "objects", "value", "visit", "visitor" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "related" : {
+      "list" : [ "collection-visit", "object-visit" ]
+    },
+    "reflinks" : [ "verb", "verb-generate-readme" ]
+  }
+}

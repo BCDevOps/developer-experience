@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>cross-spawn/-/cross-spawn-6.0.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cross-spawn-6.0.5.tgz</name>
+  <created>1576003129889</created>
+  <lastModified>1527369754000</lastModified>
+  <size>7494</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003129890</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4a5ec7c64dfae22c3a14124dbacdee846d80cbc4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>aaef71c25523c77c4cce8717055cd8b6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>50f63ea202ae2362752809f339b3b30cc1e0e68d91ec8b352992d0a31b579c3c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

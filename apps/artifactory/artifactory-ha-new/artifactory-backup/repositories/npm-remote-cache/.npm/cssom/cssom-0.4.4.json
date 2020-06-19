@@ -1,0 +1,17 @@
+{
+  "name" : "cssom",
+  "description" : "CSS Object Model implementation and CSS parser",
+  "version" : "0.4.4",
+  "author" : "Nikita Vasilyev <me@elv1s.ru>",
+  "repository" : "NV/CSSOM",
+  "main" : "./lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cssom/-/cssom-0.4.4.tgz",
+    "shasum" : "5a66cf93d2d0b661d80bf6a44fb65f5c2e4e0a10"
+  },
+  "keywords" : [ "CSS", "CSSOM", "parser", "styleSheet" ],
+  "license" : "MIT",
+  "files" : [ "lib/" ],
+  "scripts" : {
+  }
+}

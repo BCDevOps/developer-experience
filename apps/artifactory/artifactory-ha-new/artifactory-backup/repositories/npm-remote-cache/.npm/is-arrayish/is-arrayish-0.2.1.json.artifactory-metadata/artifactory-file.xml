@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-arrayish/is-arrayish-0.2.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-arrayish-0.2.1.json</name>
+  <created>1576003661573</created>
+  <lastModified>1576003661477</lastModified>
+  <size>892</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003661578</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2ac6dd772ac1a1feccc536ba369167da8c59c74d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0d91f5e14c0bdcc30d09eabf76e213c2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>663e5c2cad95ccc6cce7e81ed774c7c291d514732f18190ba271583b9a2cf23d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

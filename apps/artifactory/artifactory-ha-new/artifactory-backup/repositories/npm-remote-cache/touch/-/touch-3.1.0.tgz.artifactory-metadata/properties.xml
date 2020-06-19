@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2fd9041c9a8a97fa2b0cd9aeabc40400"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>like touch(1) in node</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>touch</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

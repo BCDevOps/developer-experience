@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/validator/validator-10.11.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>validator-10.11.0.json</name>
+  <created>1576003424593</created>
+  <lastModified>1576003424193</lastModified>
+  <size>2122</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003424594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>68bd9fe332c3d60acf69714bdf514a75a43f0946</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a0e68bf1b20dd44f0ac94b30f662ee5b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>27c8b6e6d9873d28fc90003baa41f0f871b9c8b2855b776b5028d70d3339ae8c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

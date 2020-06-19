@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"56cf9d223d47c2f43e03ab4a017f1451"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>an rfc 3986/3987 compliant, scheme extendable uri/iri parsing/validating/resolving library for javascript.</npm.description>
+  <npm.keywords>["URI","IRI","IDN","URN","UUID","HTTP","HTTPS","MAILTO","RFC3986","RFC3987","RFC5891","RFC2616","RFC2818","RFC2141","RFC4122","RFC4291","RFC5952","RFC6068","RFC6874"]</npm.keywords>
+  <npm.name>uri-js</npm.name>
+  <npm.version>4.2.2</npm.version>
+</properties>

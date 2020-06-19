@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/app</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>app</name>
+  <created>1576003081428</created>
+  <lastModified>1576003081428</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003081428</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

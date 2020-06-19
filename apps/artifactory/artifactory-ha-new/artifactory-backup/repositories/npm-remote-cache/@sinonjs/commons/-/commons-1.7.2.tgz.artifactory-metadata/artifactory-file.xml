@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@sinonjs/commons/-/commons-1.7.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-1.7.2.tgz</name>
+  <created>1586464329610</created>
+  <lastModified>1586344338000</lastModified>
+  <size>13299</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464329610</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>505f55c74e0272b43f6c52d81946bed7058fc0e2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8201dbbff0e48581903af24425cd85f0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ea94aa5519a8a106f045324b801b5284481129678334fbcbc105552ef5f630fa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

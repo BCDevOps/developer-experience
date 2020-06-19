@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>rimraf/-/rimraf-2.6.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>rimraf-2.6.3.tgz</name>
+  <created>1576003110220</created>
+  <lastModified>1546457176000</lastModified>
+  <size>5537</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003110220</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bd58522df35ee7b727430b41720e912d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8cb56fcabdd214cf19ce24cf82a11950093f388670d01f6b112cc2d86cf67f7e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

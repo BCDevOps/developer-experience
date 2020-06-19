@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d5d625d7f441ec1bded024246a47e515"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>like `extend` but only copies missing properties/values to the target object.</npm.description>
+  <npm.keywords>["copy","default","defaults","extend","javascript","js","merge","object","properties","property","util","utils","value","values"]</npm.keywords>
+  <npm.name>object.defaults</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

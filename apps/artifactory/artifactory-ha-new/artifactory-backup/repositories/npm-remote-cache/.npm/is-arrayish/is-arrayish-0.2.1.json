@@ -1,0 +1,28 @@
+{
+  "name" : "is-arrayish",
+  "description" : "Determines if an object can be used as an array",
+  "version" : "0.2.1",
+  "author" : "Qix (http://github.com/qix-)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/qix-/node-is-arrayish.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-arrayish/-/is-arrayish-0.2.1.tgz",
+    "shasum" : "77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+  },
+  "devDependencies" : {
+    "coffee-script" : "^1.9.3",
+    "coveralls" : "^2.11.2",
+    "istanbul" : "^0.3.17",
+    "mocha" : "^2.2.5",
+    "should" : "^7.0.1",
+    "xo" : "^0.6.1"
+  },
+  "keywords" : [ "is", "array", "duck", "type", "arrayish", "similar", "proto", "prototype", "type" ],
+  "license" : "MIT",
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "mocha --compilers coffee:coffee-script/register"
+  }
+}

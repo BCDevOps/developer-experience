@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/buffer-equal</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>buffer-equal</name>
+  <created>1576003613859</created>
+  <lastModified>1576003613859</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003613859</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

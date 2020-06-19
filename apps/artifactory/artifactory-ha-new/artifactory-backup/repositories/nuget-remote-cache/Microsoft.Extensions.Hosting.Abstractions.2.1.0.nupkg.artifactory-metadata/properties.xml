@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62A9266F34227</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>.NET Core hosting and startup abstractions for applications.</nuget.description>
+  <nuget.digest>wPMcd6qvNH86gvNYzhgekd+vpzwk68g+FZLad/yzmxZw6nRWUwnlwLbuNPhUTz1SMz3OX7wEdQ4cmP48goMHGw==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.Hosting.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/Home/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>hosting</nuget.tags>
+  <nuget.version>2.1.0</nuget.version>
+</properties>

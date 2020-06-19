@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jsonwebtoken/jsonwebtoken-8.5.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jsonwebtoken-8.5.1.json</name>
+  <created>1576008066473</created>
+  <lastModified>1576008066080</lastModified>
+  <size>1712</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008066473</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7790b6efa6ca0baf68840bb04786d59b6c7771b3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e59257365a0a5dd1da8159ec3833c541</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>12ce17e6c2d26e2ab81b41c4fb2e5059ea68d4ba22d273c129139c02071e5659</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

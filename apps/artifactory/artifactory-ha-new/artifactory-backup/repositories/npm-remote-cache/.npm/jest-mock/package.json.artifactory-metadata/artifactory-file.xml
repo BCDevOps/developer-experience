@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-mock/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003616039</created>
+  <lastModified>1586352075000</lastModified>
+  <size>371485</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464347791</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4e9d0970746bbf4625e6260fb81a2312a7be3081</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>11a330da93ef5a87592b795a75070ff8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>66db17e7624b5ca11b53b4570b83118ddb2d55883bfefd886a27fd79d3518c25</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

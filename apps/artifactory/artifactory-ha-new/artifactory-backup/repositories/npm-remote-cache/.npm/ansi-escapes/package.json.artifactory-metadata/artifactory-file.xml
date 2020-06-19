@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ansi-escapes/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003412702</created>
+  <lastModified>1583070885000</lastModified>
+  <size>39191</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464338663</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>22090b86b21511769faccd24cd59236f83c09b83</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a742b51bbfc07f47f2fed18f8cdd9c02</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2cf1a326be1fdc828b02e3ea1511345b89de11bbb7d289e54ee5b566266d5a96</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

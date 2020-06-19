@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>logback-core-1.2.3.pom</name>
+  <created>1576861393703</created>
+  <lastModified>1490988435000</lastModified>
+  <size>4196</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861393704</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a8d536fbd395b033310f686c4085eec5d6099b0f</original>
+          <actual>a8d536fbd395b033310f686c4085eec5d6099b0f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>b3162fcaaf3a26bc46fd79258bd6d151</original>
+          <actual>b3162fcaaf3a26bc46fd79258bd6d151</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df4d7181ec51655baaaab067971180d7681643ddd274139f0c3078dba14e97e0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

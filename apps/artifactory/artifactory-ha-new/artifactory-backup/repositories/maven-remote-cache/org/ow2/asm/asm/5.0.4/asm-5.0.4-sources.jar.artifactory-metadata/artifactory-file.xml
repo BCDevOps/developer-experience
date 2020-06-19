@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>asm-5.0.4-sources.jar</name>
+  <created>1576861459660</created>
+  <lastModified>1431702296000</lastModified>
+  <size>1039794</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861459673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>112ff54474f1f04ccf1384c92e39fdc566f0bb5e</original>
+          <actual>112ff54474f1f04ccf1384c92e39fdc566f0bb5e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>739ae6acf9d4ff279ddd60667fab98b2</original>
+          <actual>739ae6acf9d4ff279ddd60667fab98b2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7ba89bc14669d86c1c0dc6abaeb74a87715089f3b904cc2016969e8737d70707</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

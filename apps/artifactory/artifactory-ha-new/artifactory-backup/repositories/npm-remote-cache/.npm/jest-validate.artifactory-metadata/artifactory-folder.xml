@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-validate</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jest-validate</name>
+  <created>1576003406364</created>
+  <lastModified>1576003406364</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003406364</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

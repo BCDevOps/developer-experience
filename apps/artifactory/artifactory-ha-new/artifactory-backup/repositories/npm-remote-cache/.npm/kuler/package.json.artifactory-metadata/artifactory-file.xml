@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/kuler/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003495140</created>
+  <lastModified>1559853488000</lastModified>
+  <size>9237</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464335900</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d7a3fa68d0eae58e4ca4ca9194487a9c96178f9a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fa4360bc92a871d35c0d61a131f4a5aa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ec6cdb899cbe623db9a90ca021350436fff6a90fdcf2fc23c95be54c09d84cbb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

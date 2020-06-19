@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Reflection.4.1.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Reflection.4.1.0.nupkg</name>
+  <created>1578432217593</created>
+  <lastModified>1544741995000</lastModified>
+  <size>700819</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432217594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7d68d96d27bd624938bdf2b0454258f75917f1f9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>50475f0abfec3f899bab24486518f7f0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89d647187d9897f8616b508ce15ccb86c691f0b8e8feb57b4d87bb9b044948cb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

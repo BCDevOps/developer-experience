@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>nock/-/nock-12.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nock-12.0.3.tgz</name>
+  <created>1585853522858</created>
+  <lastModified>1584445935000</lastModified>
+  <size>48779</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853522860</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>83f25076dbc4c9aa82b5cdf54c9604c7a778d1c9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2b2b762a5f5bce1e39e5f7af719bab6a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8acb3487034903018472593177db641f1dce035bb7b7a54b93b31c09d6de7825</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/tmpl/tmpl-1.0.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tmpl-1.0.4.json</name>
+  <created>1576003647785</created>
+  <lastModified>1576003647766</lastModified>
+  <size>654</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003647786</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>213a21d9d021c55f3f971c9d2d3690de10da6f6c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e875359a1c244009e503612b0b8c0517</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b4282093d9fbb4b994cd0855120e2c05e04d603f97d094209fab555493d262a7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

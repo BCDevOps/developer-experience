@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/dateformat/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1579828071801</created>
+  <lastModified>1527371271000</lastModified>
+  <size>33410</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828071807</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>61cf04bcd68a2fcadd3e4a3568ab5b3f0da82e80</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5a9ebec15922bfd196071870698c9eee</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4199ddec791d9704f3e560d9ffb2420e9beac1be9a33e3c75ad8951ba2219379</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

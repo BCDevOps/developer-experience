@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/flask-moment.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flask-moment.html</name>
+  <created>1574023018304</created>
+  <lastModified>1582154301523</lastModified>
+  <size>5390</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154301588</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c23b41487348d1c783719e6af9d40502a203c50e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b2ec21f41bf204ee9fb56bcfff6c280c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89d26f2c903d6651680398ed61b88d9b0d4e9761a352558356d5bdb2505ce00f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

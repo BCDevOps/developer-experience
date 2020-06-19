@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>p-reduce</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>p-reduce</name>
+  <created>1576003616438</created>
+  <lastModified>1576003616438</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003616438</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

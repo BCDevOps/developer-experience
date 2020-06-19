@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bser/bser-2.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bser-2.1.1.json</name>
+  <created>1576008071074</created>
+  <lastModified>1576008070678</lastModified>
+  <size>903</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008071075</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7bc68f99c2bc18c17fbff349188ca5a40c6862e9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>60165c7c26158ff68d64a6e82d40b025</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>79d341615426a193ed591de33b8925b4a9e95d66877b0129af82c435f150471d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

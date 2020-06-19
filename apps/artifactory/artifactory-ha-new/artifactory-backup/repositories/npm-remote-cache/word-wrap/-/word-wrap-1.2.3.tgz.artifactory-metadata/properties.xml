@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"48773dbe44ca6aae3bc6b49e7cecddfe"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>wrap words to a specified length.</npm.description>
+  <npm.keywords>["break","carriage","line","new-line","newline","return","soft","text","word","word-wrap","words","wrap"]</npm.keywords>
+  <npm.name>word-wrap</npm.name>
+  <npm.version>1.2.3</npm.version>
+</properties>

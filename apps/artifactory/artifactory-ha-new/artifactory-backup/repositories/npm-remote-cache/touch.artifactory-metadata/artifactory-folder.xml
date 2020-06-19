@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>touch</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>touch</name>
+  <created>1576003396717</created>
+  <lastModified>1576003396717</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003396717</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

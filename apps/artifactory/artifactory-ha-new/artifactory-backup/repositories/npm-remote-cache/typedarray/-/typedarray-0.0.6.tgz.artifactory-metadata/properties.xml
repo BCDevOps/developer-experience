@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"54a18bcd7fd55c812993e9ce90a0709d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typedarray polyfill for old browsers</npm.description>
+  <npm.keywords>["ArrayBuffer","DataView","Float32Array","Float64Array","Int8Array","Int16Array","Int32Array","Uint8Array","Uint8ClampedArray","Uint16Array","Uint32Array","typed","array","polyfill"]</npm.keywords>
+  <npm.name>typedarray</npm.name>
+  <npm.version>0.0.6</npm.version>
+</properties>

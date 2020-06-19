@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/execa/execa-0.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>execa-0.7.0.json</name>
+  <created>1576003119892</created>
+  <lastModified>1576003119799</lastModified>
+  <size>1449</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003119893</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>ad92d5067d7e7179cf58b0ec2cfc7eebaa391b60</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b005ffa83b57053b4c86b5853f578303</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>05c0151c8e8ed16c5068b59db1549b31b19f8cffa11109f7df78ad4bc3f2f667</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+{
+  "name" : "p-each-series",
+  "description" : "Iterate over promises serially",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/p-each-series",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/p-each-series/-/p-each-series-1.0.0.tgz",
+    "shasum" : "930f3d12dd1f50e7434457a22cd6f04ac6ad7f71"
+  },
+  "dependencies" : {
+    "p-reduce" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "delay" : "^1.3.1",
+    "time-span" : "^1.0.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "promise", "foreach", "for-each", "for", "each", "collection", "iterable", "iterator", "fulfilled", "async", "await", "promises", "serial", "serially", "series", "bluebird" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es6-weak-map/es6-weak-map-2.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es6-weak-map-2.0.3.json</name>
+  <created>1576008059272</created>
+  <lastModified>1576008058678</lastModified>
+  <size>1095</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3607e20efe0fbef61bdd41e30b32064958ec0ae9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>20e6f1b9956c065fdf063eb70c67ba4a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d47c64466dd5aae61ae71d2576c046ed4a7e5b32fdd7f498f84371e7a5e61013</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

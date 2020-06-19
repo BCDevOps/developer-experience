@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mixin-deep/mixin-deep-1.3.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mixin-deep-1.3.2.json</name>
+  <created>1576008072399</created>
+  <lastModified>1576008071878</lastModified>
+  <size>1382</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008072473</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>613b3bda481ef8dcccd5773e7745d779b6446203</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a077969c6d03bfa67890293b415bce25</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>93d0272fae2a76ff54da4ef94f614f7e85b01ebde9bd1de54c857d77129e0d00</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

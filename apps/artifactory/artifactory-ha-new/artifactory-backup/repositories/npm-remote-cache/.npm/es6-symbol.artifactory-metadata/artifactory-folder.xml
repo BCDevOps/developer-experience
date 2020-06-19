@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es6-symbol</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>es6-symbol</name>
+  <created>1576003439146</created>
+  <lastModified>1576003439146</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003439146</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

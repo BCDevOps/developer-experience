@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/json-stream/json-stream-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-stream-1.0.0.json</name>
+  <created>1576003415292</created>
+  <lastModified>1576003415194</lastModified>
+  <size>670</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003415293</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>48cdd461b68774ccdcd7dc48e7e89485a1dc39ed</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d6aa2ad1334434528881f02c933dd277</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89961cc9aa64e7fe743b7a11b257afc346b46f9740259162d9161386d2e276aa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

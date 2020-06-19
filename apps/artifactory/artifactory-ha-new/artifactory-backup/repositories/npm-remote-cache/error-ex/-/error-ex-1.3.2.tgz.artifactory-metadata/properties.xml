@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5d2c673565060037f9e04d7975d04feb"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>easy error subclassing and stack customization</npm.description>
+  <npm.keywords>["error","errors","extend","extending","extension","subclass","stack","custom"]</npm.keywords>
+  <npm.name>error-ex</npm.name>
+  <npm.version>1.3.2</npm.version>
+</properties>

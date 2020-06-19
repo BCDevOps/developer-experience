@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.7.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>helper-split-export-declaration-7.7.4.tgz</name>
+  <created>1576008060580</created>
+  <lastModified>1574465606000</lastModified>
+  <size>2217</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008060581</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>57292af60443c4a3622cf74040ddc28e68336fd8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4d1c737195d4172aca03f9c6e97e13a7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6ae20d1c5aec43d36c6a608b49d88be8e78fb3087e69ebc7132febafa2ed9d0b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

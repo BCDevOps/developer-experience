@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/touch/touch-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>touch-3.1.0.json</name>
+  <created>1576003396840</created>
+  <lastModified>1576003396819</lastModified>
+  <size>857</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003396840</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>00768a23b4e1d52e66dcfb922d0d89a118289b53</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0234d68aaf5587f4e0321ba2785402c2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2e7d66ab1722b7e4785265ff4b492a55d99efed71e48bdc53a6c8cdcb9360f8a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

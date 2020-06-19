@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"63c12a1a449f426e2f4505b42658fce3"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@bcgov/common-nodejs-utils</npm.name>
+  <npm.version>0.1.18</npm.version>
+</properties>

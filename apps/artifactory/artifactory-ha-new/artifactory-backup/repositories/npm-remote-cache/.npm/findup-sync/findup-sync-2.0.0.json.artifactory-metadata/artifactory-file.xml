@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/findup-sync/findup-sync-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>findup-sync-2.0.0.json</name>
+  <created>1576003123121</created>
+  <lastModified>1576003123101</lastModified>
+  <size>1174</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003123122</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>697fd257f4c4cf342d1458a02d8a3b2a14ebb45a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ea89b0b970129200c621bcbac77ae103</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>990f98fd2bf0cf9cc3ff853072f36d87687913bf1212e370382583a451fea12b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

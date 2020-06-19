@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"aaf31ab9743a2e12d8a5d749444745e7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.sortby` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, sortby"</npm.keywords>
+  <npm.name>lodash.sortby</npm.name>
+  <npm.version>4.7.0</npm.version>
+</properties>

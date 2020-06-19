@@ -1,0 +1,35 @@
+{
+  "name" : "@babel/parser",
+  "description" : "A JavaScript parser",
+  "version" : "7.5.5",
+  "author" : "Sebastian McKenzie <sebmck@gmail.com>",
+  "homepage" : "https://babeljs.io/",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-parser",
+  "engines" : {
+    "node" : ">=6.0.0"
+  },
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/parser/-/parser-7.5.5.tgz",
+    "shasum" : "02f077ac8817d3df4a832ef59de67565e71cca4b"
+  },
+  "devDependencies" : {
+    "@babel/code-frame" : "^7.5.5",
+    "@babel/helper-fixtures" : "^7.5.5",
+    "charcodes" : "^0.2.0",
+    "unicode-12.0.0" : "^0.7.9"
+  },
+  "keywords" : [ "babel", "javascript", "parser", "tc39", "ecmascript", "@babel/parser" ],
+  "license" : "MIT",
+  "files" : [ "bin", "lib", "typings" ],
+  "bin" : {
+    "parser" : "./bin/babel-parser.js"
+  },
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "tag" : "next"
+  },
+  "gitHead" : "0407f034f09381b95e9cabefbf6b176c76485a43",
+  "types" : "typings/babel-parser.d.ts"
+}

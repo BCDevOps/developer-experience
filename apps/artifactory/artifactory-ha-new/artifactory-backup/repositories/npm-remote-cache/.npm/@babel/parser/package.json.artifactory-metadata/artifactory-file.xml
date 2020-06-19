@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/parser/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003075591</created>
+  <lastModified>1585038687000</lastModified>
+  <size>240992</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464304727</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>76036095f4366dcf173b8b14180d1d43c3e7b177</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b140f99b201e0f992bb80e2446e968b5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>243c645cf9b73dc2a1cf8036792819d5854607e83d890a80e2379e6e3a5c5df1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

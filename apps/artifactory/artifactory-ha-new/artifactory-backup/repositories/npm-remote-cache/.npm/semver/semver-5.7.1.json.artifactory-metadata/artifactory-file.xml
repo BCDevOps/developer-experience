@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/semver/semver-5.7.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>semver-5.7.1.json</name>
+  <created>1576008065581</created>
+  <lastModified>1576008065280</lastModified>
+  <size>778</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008065581</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fd9b1344a830f58f830e1980f780f81a39320b5d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>65f6503ef70af625d6cac266dc373db3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>db072aa5454af5c216366c1fbcdeac1be2bba756d62fe0d1fb996c88a743303f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

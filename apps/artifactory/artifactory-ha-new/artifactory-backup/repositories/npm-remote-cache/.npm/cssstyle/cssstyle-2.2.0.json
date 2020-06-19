@@ -1,0 +1,65 @@
+{
+  "name" : "cssstyle",
+  "description" : "CSSStyleDeclaration Object Model implementation",
+  "version" : "2.2.0",
+  "homepage" : "https://github.com/jsdom/cssstyle",
+  "repository" : "jsdom/cssstyle",
+  "contributors" : [ {
+    "name" : "Chad Walker",
+    "email" : "chad@chad-cat-lore-eddie.com",
+    "url" : "https://github.com/chad3814"
+  } ],
+  "bugs" : "https://github.com/jsdom/cssstyle/issues",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "./lib/CSSStyleDeclaration.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cssstyle/-/cssstyle-2.2.0.tgz",
+    "shasum" : "e4c44debccd6b7911ed617a4395e5754bba59992"
+  },
+  "dependencies" : {
+    "cssom" : "~0.3.6"
+  },
+  "devDependencies" : {
+    "babel-generator" : "~6.26.1",
+    "babel-traverse" : "~6.26.0",
+    "babel-types" : "~6.26.0",
+    "babylon" : "~6.18.0",
+    "eslint" : "~6.0.0",
+    "eslint-config-prettier" : "~6.0.0",
+    "eslint-plugin-prettier" : "~3.1.0",
+    "jest" : "^24.8.0",
+    "npm-run-all" : "^4.1.5",
+    "prettier" : "~1.18.0",
+    "request" : "^2.88.0",
+    "resolve" : "~1.11.1"
+  },
+  "keywords" : [ "CSS", "CSSStyleDeclaration", "StyleSheet" ],
+  "license" : "MIT",
+  "files" : [ "lib/" ],
+  "maintainers" : [ {
+    "name" : "Jon Sakas",
+    "email" : "jon.sakas@gmail.com",
+    "url" : "https://jon.sakas.co/"
+  }, {
+    "name" : "Rafał Ruciński",
+    "email" : "fatfisz@gmail.com",
+    "url" : "https://fatfisz.com"
+  } ],
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "scripts" : {
+    "download" : "node ./scripts/download_latest_properties.js && eslint lib/allProperties.js --fix",
+    "generate" : "run-p generate:*",
+    "generate:implemented_properties" : "node ./scripts/generate_implemented_properties.js",
+    "generate:properties" : "node ./scripts/generate_properties.js",
+    "lint" : "npm run generate && eslint . --max-warnings 0",
+    "lint:fix" : "eslint . --fix --max-warnings 0",
+    "prepublishOnly" : "npm run lint && npm run test",
+    "test" : "npm run generate && jest",
+    "test-ci" : "npm run lint && npm run test && codecov",
+    "update-authors" : "git log --format=\"%aN <%aE>\" | sort -f | uniq > AUTHORS"
+  }
+}

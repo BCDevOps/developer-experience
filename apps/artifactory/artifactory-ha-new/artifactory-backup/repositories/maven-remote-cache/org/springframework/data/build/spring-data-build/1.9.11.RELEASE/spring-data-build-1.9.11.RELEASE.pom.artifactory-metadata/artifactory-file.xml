@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/data/build/spring-data-build/1.9.11.RELEASE/spring-data-build-1.9.11.RELEASE.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-data-build-1.9.11.RELEASE.pom</name>
+  <created>1576861440114</created>
+  <lastModified>1522844582000</lastModified>
+  <size>6554</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861440114</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>709b8c818dc73105a70d0bc9d3e798dd032cf359</original>
+          <actual>709b8c818dc73105a70d0bc9d3e798dd032cf359</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>9a330d6da5ca9541d1d666123f9ff042</original>
+          <actual>9a330d6da5ca9541d1d666123f9ff042</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e0968dec3372b41e35b4d68e3f1c9e0dd06de2b967d3746e18aa73aeba1007c5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

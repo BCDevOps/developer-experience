@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>babel/-/babel-6.23.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel-6.23.0.tgz</name>
+  <created>1576003078812</created>
+  <lastModified>1527357718000</lastModified>
+  <size>932</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003078812</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d0d1e7d803e974765beea3232d4e153c0efb90f4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d6da680830b64bbe15f2dc055987fd0c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>691b5c8fd092bd4dde670c01292a5a6e6fb1938f73dd9bae4e3433ac4410a51b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

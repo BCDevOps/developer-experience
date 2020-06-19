@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/spring-beans/5.1.10.RELEASE</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>5.1.10.RELEASE</name>
+  <created>1576861388634</created>
+  <lastModified>1576861388634</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861388634</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D659744379EA95</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:2.0.0:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>Microsoft.Win32.Registry:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Win32.Registry:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Win32.Registry:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.2</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.4.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Data.SqlClient.sni:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETPortable4.6-Profile151</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETStandard1.2</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:Windows8.1</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.4.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>System.IO.Pipes:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.1:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.1:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>System.Net.NameResolution:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Net.Security:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.4.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Principal:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.4.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.4.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.5.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.CodePages:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Thread:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Threading.ThreadPool:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides the data provider for SQL Server. These classes provide access to versions of SQL Server and encapsulate database-specific protocols, including tabular data stream (TDS)
+
+Commonly Used Types:
+System.Data.SqlClient.SqlConnection
+System.Data.SqlClient.SqlException
+System.Data.SqlClient.SqlParameter
+System.Data.SqlDbType
+System.Data.SqlClient.SqlDataReader
+System.Data.SqlClient.SqlCommand
+System.Data.SqlClient.SqlTransaction
+System.Data.SqlClient.SqlParameterCollection
+System.Data.SqlClient.SqlClientFactory
+ 
+215f374988eba0829f6880026909851ed04a8638 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>DLhg881ETdy/OmlbBCjfXGVU2Xlm9x5yHwhcl33SAfCIG05hAbgMcvHUZruIG1sBJolGzDhes7R7hAKPS1SOqw==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.5.1</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Data:.NETFramework4.5.1</nuget.frameworks>
+  <nuget.frameworks>System.Data:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>System.Data:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Xml:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Data.SqlClient</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Data.SqlClient</nuget.title>
+  <nuget.version>4.6.0</nuget.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jws/jws-3.2.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jws-3.2.2.json</name>
+  <created>1576008066886</created>
+  <lastModified>1576008066585</lastModified>
+  <size>865</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008066887</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>13edb7e48c7290d6c43e36ee473c77bf485bc5f8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b2fd9d1adfd17ff66cd9046425894828</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>98270c91f4853ec87d90a527b03d9478f416cdfc4bb0fedc19b4fd66485853e6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

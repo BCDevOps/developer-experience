@@ -1,0 +1,44 @@
+{
+  "name" : "static-extend",
+  "description" : "Adds a static `extend` method to a class, to simplify inheritance. Extends the static properties, prototype properties, and descriptors from a `Parent` constructor onto `Child` constructors.",
+  "version" : "0.1.2",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/static-extend",
+  "repository" : "jonschlinkert/static-extend",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/static-extend/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/static-extend/-/static-extend-0.1.2.tgz",
+    "shasum" : "60809c39cbff55337226fd5e0b520f341f1fb5c6"
+  },
+  "dependencies" : {
+    "define-property" : "^0.2.5",
+    "object-copy" : "^0.1.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.9",
+    "mocha" : "^2.5.3"
+  },
+  "keywords" : [ "class", "ctor", "descriptor", "extend", "extends", "inherit", "inheritance", "merge", "method", "prop", "properties", "property", "prototype" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "run" : true,
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "reflinks" : [ "verb", "verb-readme-generator" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>undertaker-registry</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>undertaker-registry</name>
+  <created>1576003399883</created>
+  <lastModified>1576003399883</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003399883</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

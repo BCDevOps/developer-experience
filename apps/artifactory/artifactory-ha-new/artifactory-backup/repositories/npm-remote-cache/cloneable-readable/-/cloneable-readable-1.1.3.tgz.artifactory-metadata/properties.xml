@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7176d93bde473382764dd38d8d47cbad"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>clone a readable stream, safely</npm.description>
+  <npm.keywords>["readable","stream","clone"]</npm.keywords>
+  <npm.name>cloneable-readable</npm.name>
+  <npm.version>1.1.3</npm.version>
+</properties>

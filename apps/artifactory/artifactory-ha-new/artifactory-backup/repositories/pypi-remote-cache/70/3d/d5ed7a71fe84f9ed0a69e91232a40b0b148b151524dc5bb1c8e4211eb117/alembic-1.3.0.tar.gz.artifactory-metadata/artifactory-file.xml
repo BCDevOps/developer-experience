@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>70/3d/d5ed7a71fe84f9ed0a69e91232a40b0b148b151524dc5bb1c8e4211eb117/alembic-1.3.0.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>alembic-1.3.0.tar.gz</name>
+  <created>1574023029641</created>
+  <lastModified>1572537586000</lastModified>
+  <size>1055486</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023029642</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7df808560eccb312b04364b921ce47914bd6e6c7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>81ec3de9e2d9c389657f51bdc0d24984</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e6c6a4243e89c8d3e2342a1562b2388f3b524c9cac2fccc4d2c461a1320cc1c1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

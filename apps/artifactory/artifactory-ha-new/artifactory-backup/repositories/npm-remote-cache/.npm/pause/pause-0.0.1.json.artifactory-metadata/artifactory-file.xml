@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pause/pause-0.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pause-0.0.1.json</name>
+  <created>1576003398047</created>
+  <lastModified>1576003398027</lastModified>
+  <size>484</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003398047</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>57e365e18a6107fbb42f9e2f6ea04c77f75d10bd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6652ac14af479e02bcfb8a763b3a6035</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4ac04c07e794b4579a1bb32ce66cbc7b54d73586d0ed5c68884f5ab95ae2a5a1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

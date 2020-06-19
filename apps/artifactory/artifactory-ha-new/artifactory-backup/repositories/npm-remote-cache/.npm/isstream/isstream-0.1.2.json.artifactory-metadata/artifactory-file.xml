@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/isstream/isstream-0.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>isstream-0.1.2.json</name>
+  <created>1576003424794</created>
+  <lastModified>1576003424503</lastModified>
+  <size>1096</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003424794</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>bec14978f48d3e052b7efa95c28bf222d6acbae2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9eaebafde2280351d4f62c5a8967fc27</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4fc63dfeaf3d473770e7c45ab65df908ada8d3baf152ac548f223cce7ae593b4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c5335daa84ae2394c3f63d41bb6010c1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@jest/test-sequencer</npm.name>
+  <npm.version>25.2.6</npm.version>
+</properties>

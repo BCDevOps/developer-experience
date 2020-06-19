@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f56c24ddb7e0a0add003709711f25e37"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>javascript micro templates.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>tmpl</npm.name>
+  <npm.version>1.0.4</npm.version>
+</properties>

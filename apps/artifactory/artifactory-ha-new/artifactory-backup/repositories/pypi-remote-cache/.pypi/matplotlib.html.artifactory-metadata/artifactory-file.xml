@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/matplotlib.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>matplotlib.html</name>
+  <created>1581102468822</created>
+  <lastModified>1581103117864</lastModified>
+  <size>209996</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581103118106</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bd872df251acdfa6577e10de81efeb0eefe3f2a5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2f98c88da4067f9069e8c3a20c88f9fc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4db67e2babf76fbb6602d365c41d69bcbf2d6c163a8062450e102637b6fde1f1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

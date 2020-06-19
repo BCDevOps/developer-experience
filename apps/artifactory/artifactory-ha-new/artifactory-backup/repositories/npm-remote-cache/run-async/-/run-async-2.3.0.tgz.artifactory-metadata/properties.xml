@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"de25e6edfe737bfaf4b94652c6449e8a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utility method to run function either synchronously or asynchronously using the common `this.async()` style.</npm.description>
+  <npm.keywords>["flow","flow-control","async"]</npm.keywords>
+  <npm.name>run-async</npm.name>
+  <npm.version>2.3.0</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d6e57e9597c6af638adc414e74c3d516"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>copy a descriptor from object a to object b</npm.description>
+  <npm.keywords>["copy","descriptor"]</npm.keywords>
+  <npm.name>copy-descriptor</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

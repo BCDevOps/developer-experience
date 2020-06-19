@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>fams3-nuget-local</repoKey>
+    <path>BcGov.Fams3.SearchApi.Core.1.0.4.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>BcGov.Fams3.SearchApi.Core.1.0.4.nupkg</name>
+  <created>1576631493145</created>
+  <lastModified>1576631493075</lastModified>
+  <size>14445</size>
+  <additionalInfo>
+    <createdBy>alexjoybc@github</createdBy>
+    <modifiedBy>alexjoybc@github</modifiedBy>
+    <lastUpdated>1576631493146</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>69511b49bd2fd5e1a6e5de939711c343fd0dcaa0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4a1b2b880be92a5a9ce23f3b0c8bd5f3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bafa7f246f96d13c7081972b12f4f9ec457f51523716fb49554b1048844171f0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

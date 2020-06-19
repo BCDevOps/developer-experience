@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D7556617A8462A</artifactory.internal.etag>
+  <nuget.authors>Chris Patterson</nuget.authors>
+  <nuget.copyright>Copyright 2007-2019 Chris Patterson</nuget.copyright>
+  <nuget.dependency>GreenPipes:2.1.4:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>GreenPipes:2.1.4:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NewId:3.0.2:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>NewId:3.0.2:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:11.0.2:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:11.0.2:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json.Bson:1.0.1:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json.Bson:1.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.TraceSource:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit:4.6.0:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit:4.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.Lightweight:4.6.0:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.Lightweight:4.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Extensions:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Loader:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Threading.ThreadPool:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.ValueTuple:4.5.0:.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>System.ValueTuple:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Xml.ReaderWriter:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>MassTransit is a message-based distributed application framework for .NET http://masstransit-project.com</nuget.description>
+  <nuget.digest>G+yo7OQ+0GlFs2tnbqRpu/O72Dy1Tnlw/oJ2kUjxc6mi25iyUEIiLZL/Go3qiwPSAWPxpnMFC2gfC7QiyiBebA==</nuget.digest>
+  <nuget.frameworks>System.Transactions:.NETFramework4.5.2</nuget.frameworks>
+  <nuget.iconUrl>http://masstransit-project.com/public/open-graph-logo.png</nuget.iconUrl>
+  <nuget.id>MassTransit</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Chris Patterson</nuget.owners>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>MassTransit</nuget.tags>
+  <nuget.version>5.5.6+build.2221.sha.1f6a8f0</nuget.version>
+</properties>

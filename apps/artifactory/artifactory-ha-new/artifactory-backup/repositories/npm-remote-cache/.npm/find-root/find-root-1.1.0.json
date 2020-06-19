@@ -1,0 +1,25 @@
+{
+  "name" : "find-root",
+  "description" : "find the closest package.json",
+  "version" : "1.1.0",
+  "author" : "jsdnxx",
+  "repository" : "git@github.com:js-n/find-root.git",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/find-root/-/find-root-1.1.0.tgz",
+    "shasum" : "abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
+  },
+  "devDependencies" : {
+    "chai" : "^4.0.2",
+    "mocha" : "^3.4.2",
+    "moquire" : "^1.5.5",
+    "standard" : "^10.0.2"
+  },
+  "keywords" : [ "fs", "get", "find", "closest", "package", "module", "base", "root" ],
+  "license" : "MIT",
+  "scripts" : {
+    "pretest" : "standard",
+    "test" : "mocha"
+  },
+  "readmeFilename" : "README.md"
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>debug/-/debug-4.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>debug-4.1.1.tgz</name>
+  <created>1576008070273</created>
+  <lastModified>1545496826000</lastModified>
+  <size>21773</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008070273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3b72260255109c6b589cee050f1d516139664791</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>01ddc35a76b0e581407d4c53beb7d9f8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>352b55e989119b5453643711c22dea04baa031f48e2f8aa7c5159cab6bf2f7c6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

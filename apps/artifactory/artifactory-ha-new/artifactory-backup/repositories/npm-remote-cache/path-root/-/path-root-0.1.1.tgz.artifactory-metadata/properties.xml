@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f8203d1690e3ef3ec90d8274a4c530d2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the root of a posix or windows filepath.</npm.description>
+  <npm.keywords>["path","root"]</npm.keywords>
+  <npm.name>path-root</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

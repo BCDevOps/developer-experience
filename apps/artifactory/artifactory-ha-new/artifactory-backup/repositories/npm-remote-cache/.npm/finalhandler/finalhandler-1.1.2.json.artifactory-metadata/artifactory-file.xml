@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/finalhandler/finalhandler-1.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>finalhandler-1.1.2.json</name>
+  <created>1576003426681</created>
+  <lastModified>1576003426399</lastModified>
+  <size>1543</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003426681</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>529642cfa81a92ed9a3004e119fc52319785055c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9870fa545421ed181d589b246486ba15</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4c161f51981f1a3b9e72cbfd62d04b2caafe2ff7e00fd126779804143ab7da3f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

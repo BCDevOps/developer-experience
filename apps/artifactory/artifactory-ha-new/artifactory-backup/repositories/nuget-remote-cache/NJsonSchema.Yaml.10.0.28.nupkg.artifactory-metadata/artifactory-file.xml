@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NJsonSchema.Yaml.10.0.28.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NJsonSchema.Yaml.10.0.28.nupkg</name>
+  <created>1580167528968</created>
+  <lastModified>1574434625000</lastModified>
+  <size>29180</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580167528969</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4a5819aeb2ab33205f0e2127ce7e7ae614897b90</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6af73ccbc32b039a02097cb2b7fbf9d2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aeea4bd2ed4b0fedf9d6523fbdf67df3e1d6f1371a1ecb8dad1af118b94f8a2e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

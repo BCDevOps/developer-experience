@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/opentracing-noop/0.33.0/opentracing-noop-0.33.0-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-noop-0.33.0-sources.jar</name>
+  <created>1576861431509</created>
+  <lastModified>1557140327000</lastModified>
+  <size>7315</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861431510</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>56dab52388c323fe7f8b8c1dd097336cdb95eca4</original>
+          <actual>56dab52388c323fe7f8b8c1dd097336cdb95eca4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1d6f9d94a01e07481a8616418791d136</original>
+          <actual>1d6f9d94a01e07481a8616418791d136</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f92d87a877b4466a7e7913d3d8bb74902af0630924d6963609fca813e36dc505</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

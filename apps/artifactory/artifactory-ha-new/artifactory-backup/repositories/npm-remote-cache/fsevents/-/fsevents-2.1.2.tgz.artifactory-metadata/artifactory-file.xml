@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>fsevents/-/fsevents-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fsevents-2.1.2.tgz</name>
+  <created>1576008068974</created>
+  <lastModified>1573319314000</lastModified>
+  <size>12777</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008068975</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4c0a1fb34bc68e543b4b82a9ec392bfbda840805</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>61e64e987e6d3a970dbed7eebe605721</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fff5b2ca73c0ed717bd8c81245b87f798bd26a1d82b0ca6e90c3055c9345c0d2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

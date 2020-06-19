@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>javax/transaction/javax.transaction-api/1.3/javax.transaction-api-1.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>javax.transaction-api-1.3.pom</name>
+  <created>1576861382906</created>
+  <lastModified>1520992519000</lastModified>
+  <size>14374</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861382907</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>28043e931d9a45e11c335c039aef0255f306b51c</original>
+          <actual>28043e931d9a45e11c335c039aef0255f306b51c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>30efe1ccc8b4780e90aa61a4de01cf20</original>
+          <actual>30efe1ccc8b4780e90aa61a4de01cf20</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>83f9f1c9f5af25e2cc8b0fb436682362b1356756c59b64f51778638f60c81b0b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

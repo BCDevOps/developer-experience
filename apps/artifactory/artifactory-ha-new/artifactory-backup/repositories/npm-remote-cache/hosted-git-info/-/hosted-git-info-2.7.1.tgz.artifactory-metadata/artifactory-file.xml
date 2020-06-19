@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>hosted-git-info/-/hosted-git-info-2.7.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hosted-git-info-2.7.1.tgz</name>
+  <created>1579828388187</created>
+  <lastModified>1530925372000</lastModified>
+  <size>6427</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828388188</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>97f236977bd6e125408930ff6de3eec6281ec047</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9cdb1257b29c6d0ab393e69ecb390b0e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ccea57ddb54be48043b3570ec2c6a4bfe4af11748494a7156700c953fd5749a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

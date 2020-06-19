@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6bd47ea990fe2679144e4de853920eaf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.memoize` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, memoize"</npm.keywords>
+  <npm.name>lodash.memoize</npm.name>
+  <npm.version>4.1.2</npm.version>
+</properties>

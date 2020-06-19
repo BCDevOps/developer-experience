@@ -1,0 +1,30 @@
+{
+  "name" : "growl",
+  "description" : "Growl unobtrusive notifications",
+  "version" : "1.10.5",
+  "author" : "TJ Holowaychuk <tj@vision-media.ca>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/tj/node-growl.git"
+  },
+  "engines" : {
+    "node" : ">=4.x"
+  },
+  "main" : "./lib/growl.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/growl/-/growl-1.10.5.tgz",
+    "shasum" : "f2735dc2283674fa67478b10181059355c369e5e"
+  },
+  "devDependencies" : {
+    "eslint" : "^4.8.0",
+    "eslint-config-airbnb-base" : "^12.0.1",
+    "eslint-plugin-import" : "^2.7.0",
+    "eslint-plugin-node" : "^5.2.0"
+  },
+  "license" : "MIT",
+  "maintainers" : [ "Joshua Boy Nicolai Appelman <joshua@jbnicolai.nl>", "Timo Sand <timo.sand@iki.fi>" ],
+  "scripts" : {
+    "test" : "node test.js",
+    "lint" : "eslint --ext js lib "
+  }
+}

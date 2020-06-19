@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/object.reduce/object.reduce-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>object.reduce-1.0.1.json</name>
+  <created>1576003399693</created>
+  <lastModified>1576003399623</lastModified>
+  <size>1210</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003399694</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2c1799a0218eeca67b8cdf171d8f4947ecebd059</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3426bf8af2a39ac577fc3d89e837ff0f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ddf3eda2de975f0c16c190c560d886981cd2ebb05c20a832d77cf0188a0ecafd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

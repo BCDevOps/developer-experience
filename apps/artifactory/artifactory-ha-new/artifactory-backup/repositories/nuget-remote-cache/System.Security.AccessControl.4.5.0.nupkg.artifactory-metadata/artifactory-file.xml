@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Security.AccessControl.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Security.AccessControl.4.5.0.nupkg</name>
+  <created>1578432206096</created>
+  <lastModified>1538769124000</lastModified>
+  <size>551848</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432206097</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>141cd4c66918874ad57b53a7c24bda28c1b855a2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2876ecc641e507a6b98686365e9c61d4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>005b0a3dbfe74e4dbf9aa1ff3d8a5aa08f0f2ec88a2a299a5dffbb31be557cf3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

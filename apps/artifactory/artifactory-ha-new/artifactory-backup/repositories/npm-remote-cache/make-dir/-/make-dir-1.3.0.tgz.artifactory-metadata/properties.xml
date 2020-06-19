@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d98eb7bfb3aa548cb690a1ecffe61dde"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>make a directory and its parents if needed - think `mkdir -p`</npm.description>
+  <npm.keywords>["mkdir","mkdirp","make","directories","dir","dirs","folders","directory","folder","path","parent","parents","intermediate","recursively","recursive","create","fs","filesystem","file-system"]</npm.keywords>
+  <npm.name>make-dir</npm.name>
+  <npm.version>1.3.0</npm.version>
+</properties>

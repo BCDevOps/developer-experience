@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/json-schema-traverse/json-schema-traverse-0.4.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-schema-traverse-0.4.1.json</name>
+  <created>1576003501095</created>
+  <lastModified>1576003501077</lastModified>
+  <size>1212</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003501095</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>19dcbc0de3cf8cd3252d86e19104c198182d286e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7b8249102875ad61578b6db1afdbab1e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4f8ac7f353ad67090af2150c99506669f3bc8428aaf70e14605f9d9527b83df8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

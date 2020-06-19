@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>express/-/express-4.17.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>express-4.17.1.tgz</name>
+  <created>1576003417274</created>
+  <lastModified>1558844739000</lastModified>
+  <size>54717</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003417275</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4491fc38605cf51f8629d39c2b5d026f98a4c134</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>90f0a142e7b18ba2af8b9f0e2a7fd7c8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2600b551c4e3f56d1bd5e28505d4ecfe3e73e58cc3a0ad5be08c0bf395aa02a9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

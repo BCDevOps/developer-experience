@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/sqlalchemy.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sqlalchemy.html</name>
+  <created>1574023024225</created>
+  <lastModified>1582154262873</lastModified>
+  <size>51110</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154262966</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4b920a4ce68b0e73a39eadd884fb89679699bd9b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a86c3bab4e865ed5bc5906524c222ada</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7d10b6594646f37824e52d245e795477f305f187316e5ebdc658eace06d6cda8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

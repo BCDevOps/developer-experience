@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bytes/bytes-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bytes-3.1.0.json</name>
+  <created>1576008551722</created>
+  <lastModified>1576008551482</lastModified>
+  <size>1060</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008551773</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>835ec53599d0c71355cbcb72f636cf49da48598c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>31b7f3caf6b1e2245fdd9fb36d6eca8c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>22f9c0ec42db52ae254ded5092bded58a54f2d1206924ecf6af9dc989e16cdd3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

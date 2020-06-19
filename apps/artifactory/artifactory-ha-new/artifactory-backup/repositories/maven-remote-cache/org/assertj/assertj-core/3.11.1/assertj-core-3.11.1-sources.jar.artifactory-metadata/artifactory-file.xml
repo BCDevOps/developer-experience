@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/assertj/assertj-core/3.11.1/assertj-core-3.11.1-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>assertj-core-3.11.1-sources.jar</name>
+  <created>1576861457923</created>
+  <lastModified>1535451585000</lastModified>
+  <size>986158</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861457924</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>55362d8f04018b1140c5a370057bf8cd4a63c3de</original>
+          <actual>55362d8f04018b1140c5a370057bf8cd4a63c3de</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>4f670765808eec1d87b640fc362f45fb</original>
+          <actual>4f670765808eec1d87b640fc362f45fb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a9e9c9ad5c8971a634d6681402174602888b09af3c1dd05bf41f3cc7441d2ae9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

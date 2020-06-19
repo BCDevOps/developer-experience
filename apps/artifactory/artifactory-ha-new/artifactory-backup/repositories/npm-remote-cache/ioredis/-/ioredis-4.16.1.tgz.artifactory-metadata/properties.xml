@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e16608d905db710a4a9de9cbdc646400"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a robust, performance-focused and full-featured redis client for node.js.</npm.description>
+  <npm.keywords>["redis","cluster","sentinel","pipelining"]</npm.keywords>
+  <npm.name>ioredis</npm.name>
+  <npm.version>4.16.1</npm.version>
+</properties>

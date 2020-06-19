@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D64C469377064E</artifactory.internal.etag>
+  <nuget.authors>The OpenTracing Authors</nuget.authors>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.description>This library is a .NET implementation of the OpenTracing API. To fully understand this platform API, it's helpful to be familiar with the OpenTracing project and terminology more generally.
+
+For the time being, mild backwards-incompatible changes may be made without changing the major version number. As OpenTracing and opentracing-csharp mature, backwards compatibility will become more of a priority.</nuget.description>
+  <nuget.digest>PqB3QtnNXuJ7s+SfQkcfjMWYgsvRZdT3olHoYGraa37a2AFva6dqBWxFvlaI921wUfn65kFMQWTyUm3YeUD+Wg==</nuget.digest>
+  <nuget.frameworks>System.Runtime.Remoting:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>https://avatars0.githubusercontent.com/u/15482765</nuget.iconUrl>
+  <nuget.id>OpenTracing</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/opentracing/opentracing-csharp/master/LICENSE</nuget.licenseUrl>
+  <nuget.owners>The OpenTracing Authors</nuget.owners>
+  <nuget.projectUrl>https://github.com/opentracing/opentracing-csharp</nuget.projectUrl>
+  <nuget.releaseNotes>https://github.com/opentracing/opentracing-csharp/releases/tag/0.12.0</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>opentracing distributed-tracing tracing logging</nuget.tags>
+  <nuget.version>0.12.0</nuget.version>
+</properties>

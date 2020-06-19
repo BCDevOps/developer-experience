@@ -1,0 +1,31 @@
+{
+  "name" : "pify",
+  "description" : "Promisify a callback-style function",
+  "version" : "2.3.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/pify",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/pify/-/pify-2.3.0.tgz",
+    "shasum" : "ed141a6ac043a849ea588498e7dca8b15330e90c"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "pinkie-promise" : "^1.0.0",
+    "v8-natives" : "0.0.2",
+    "xo" : "*"
+  },
+  "keywords" : [ "promise", "promises", "promisify", "denodify", "denodeify", "callback", "cb", "node", "then", "thenify", "convert", "transform", "wrap", "wrapper", "bind", "to", "async", "es2015" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava && npm run optimization-test",
+    "optimization-test" : "node --allow-natives-syntax optimization-test.js"
+  }
+}

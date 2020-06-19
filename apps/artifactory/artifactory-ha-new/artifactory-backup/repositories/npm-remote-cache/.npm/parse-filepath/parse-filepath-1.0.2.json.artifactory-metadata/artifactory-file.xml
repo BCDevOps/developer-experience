@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/parse-filepath/parse-filepath-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>parse-filepath-1.0.2.json</name>
+  <created>1576003606849</created>
+  <lastModified>1576003606829</lastModified>
+  <size>1580</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003606849</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>65742c00ccdbf1d7eb1fb44d36a81aded3d43865</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7bf8e00606a3d28727e1ca84f4e70678</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>abcee20ac853b4269292d842fa00007967e58f29b6f93003dd4117c1e6e337bb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

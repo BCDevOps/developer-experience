@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9d09b930b430bf31f7fc61666346fc35"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>strip a byte order mark (bom) from a string.</npm.description>
+  <npm.keywords>["bom","byte","byte-order-mark","file","fs","mark","nl","normalize","order","string","strip"]</npm.keywords>
+  <npm.name>strip-bom-string</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

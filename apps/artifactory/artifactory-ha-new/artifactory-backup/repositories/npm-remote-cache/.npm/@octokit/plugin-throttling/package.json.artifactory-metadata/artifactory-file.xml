@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-throttling/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003399786</created>
+  <lastModified>1579975057000</lastModified>
+  <size>46191</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464344628</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>60e8cdc94b1dabfd34c432744a7d3415c338c3cf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>720d22292425f75d8ca6e78831e511e7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>60df293ede5fbb544e49d31451823a7a51bd16768b4cff5bd9d6056d7b9d9c9b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

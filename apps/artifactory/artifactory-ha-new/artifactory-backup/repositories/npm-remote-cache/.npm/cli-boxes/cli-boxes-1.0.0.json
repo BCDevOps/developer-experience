@@ -1,0 +1,28 @@
+{
+  "name" : "cli-boxes",
+  "description" : "Boxes for use in the terminal",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/cli-boxes",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cli-boxes/-/cli-boxes-1.0.0.tgz",
+    "shasum" : "4fa917c3e59c94a004cd61f8ee509da651687143"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "cli", "box", "boxes", "terminal", "term", "console", "ascii", "unicode", "border", "text", "json" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "boxes.json" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

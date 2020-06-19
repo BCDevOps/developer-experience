@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sliced/-/sliced-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sliced-1.0.1.tgz</name>
+  <created>1582140563382</created>
+  <lastModified>1527442492000</lastModified>
+  <size>2446</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140563383</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0b3a662b5d04c3177b1926bea82b03f837a2ef41</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>18eec84d5ce829f2a7975c4adfebf5be</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bd9c844b457b68b14d92ed6b1369faf8633b8fc56743523034e5ff250fa15545</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

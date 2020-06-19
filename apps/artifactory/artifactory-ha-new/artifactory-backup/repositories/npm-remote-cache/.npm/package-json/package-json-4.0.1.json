@@ -1,0 +1,35 @@
+{
+  "name" : "package-json",
+  "description" : "Get metadata of a package from the npm registry",
+  "version" : "4.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/package-json",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/package-json/-/package-json-4.0.1.tgz",
+    "shasum" : "8869a0401253661c4c4ca3da6c2121ed555f5eed"
+  },
+  "dependencies" : {
+    "got" : "^6.7.1",
+    "registry-auth-token" : "^3.0.1",
+    "registry-url" : "^3.0.3",
+    "semver" : "^5.1.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "mock-private-registry" : "^1.1.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "npm", "registry", "package", "pkg", "package.json", "json", "module", "scope", "scoped" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

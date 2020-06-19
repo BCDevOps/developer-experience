@@ -1,0 +1,29 @@
+{
+  "name" : "text-hex",
+  "description" : "Generate a hex color from the given text",
+  "version" : "1.0.0",
+  "author" : "Arnout Kazemier",
+  "homepage" : "https://github.com/3rd-Eden/text-hex",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/3rd-Eden/text-hex"
+  },
+  "bugs" : {
+    "url" : "https://github.com/3rd-Eden/text-hex/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/text-hex/-/text-hex-1.0.0.tgz",
+    "shasum" : "69dc9c1b17446ee79a92bf5b884bb4b9127506f5"
+  },
+  "devDependencies" : {
+    "assume" : "2.1.x",
+    "mocha" : "5.2.x",
+    "pre-commit" : "1.2.x"
+  },
+  "keywords" : [ "css", "color", "hex", "text" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha --reporter spec --ui bdd test.js"
+  }
+}

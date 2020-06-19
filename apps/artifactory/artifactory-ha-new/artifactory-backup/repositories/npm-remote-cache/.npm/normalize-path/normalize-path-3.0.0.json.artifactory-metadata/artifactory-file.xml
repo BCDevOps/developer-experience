@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/normalize-path/normalize-path-3.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>normalize-path-3.0.0.json</name>
+  <created>1576003409973</created>
+  <lastModified>1576003409877</lastModified>
+  <size>1733</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003409974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>48861640e9b6232d393bd7cab20e60847b5bd411</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a2fe7c61baf8b386b44785f8b23a90ad</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>51565ab7497cf92a9998c5d073cc1a6f9f7501de415cc01c48f6028ab561fc1c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

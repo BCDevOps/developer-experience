@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4b679a53a4d238029e6d1b7aee15fd48"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>strips glob magic from a string to provide the parent directory path</npm.description>
+  <npm.keywords>["glob","parent","strip","path","dirname","directory","base","wildcard"]</npm.keywords>
+  <npm.name>glob-parent</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

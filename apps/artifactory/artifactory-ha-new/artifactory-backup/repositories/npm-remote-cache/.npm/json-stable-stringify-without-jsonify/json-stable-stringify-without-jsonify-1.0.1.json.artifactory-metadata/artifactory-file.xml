@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/json-stable-stringify-without-jsonify/json-stable-stringify-without-jsonify-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-stable-stringify-without-jsonify-1.0.1.json</name>
+  <created>1576003430873</created>
+  <lastModified>1576003430779</lastModified>
+  <size>1211</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003430874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e3d6fd66317fc726ce3b84aa9932c47557ece36d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>09421727372ed161dba042aa82c87b23</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>317a3fe2ade0c433c770c122c65ba23e4c590f8a64fdd836924b72ff2312db46</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

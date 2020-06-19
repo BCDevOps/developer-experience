@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614EC3670C54</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.2</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.2</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.2</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile111</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.2</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides class that enable you to create high performance tracing events to be captured by event tracing for Windows (ETW).
+
+Commonly Used Types:
+System.Diagnostics.Tracing.EventSource
+System.Diagnostics.Tracing.EventListener
+System.Diagnostics.Tracing.EventLevel
+System.Diagnostics.Tracing.EventKeywords
+System.Diagnostics.Tracing.EventWrittenEventArgs
+System.Diagnostics.Tracing.EventAttribute
+System.Diagnostics.Tracing.EventSourceAttribute
+System.Diagnostics.Tracing.NonEventAttribute
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>DGTyVYNstilYexF72N5ecL/n5MbX0Ti/8QuehfSIP7olCuBxGMIdXpEwujzxIKmiv1gaF1d9On7AkmCTPHtNRw==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.2</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Diagnostics.Tracing</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799417</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Diagnostics.Tracing</nuget.title>
+  <nuget.version>4.1.0</nuget.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9ed941fd1dd23edf1dadf078071b8c9c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>asynchronous function queue with adjustable concurrency</npm.description>
+  <npm.keywords>["throttle","async","limiter","asynchronous","job","task","concurrency","concurrent"]</npm.keywords>
+  <npm.name>async-limiter</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

@@ -1,0 +1,27 @@
+{
+  "name" : "lowercase-keys",
+  "description" : "Lowercase the keys of an object",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/lowercase-keys",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/lowercase-keys/-/lowercase-keys-1.0.1.tgz",
+    "shasum" : "6f9e30b47084d971a7c820ff15a6c5167b74c26f"
+  },
+  "devDependencies" : {
+    "ava" : "*"
+  },
+  "keywords" : [ "object", "assign", "extend", "properties", "lowercase", "lower-case", "case", "keys", "key" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "ava"
+  }
+}

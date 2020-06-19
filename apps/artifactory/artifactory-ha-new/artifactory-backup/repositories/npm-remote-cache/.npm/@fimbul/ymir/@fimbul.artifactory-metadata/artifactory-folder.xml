@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@fimbul/ymir/@fimbul</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@fimbul</name>
+  <created>1576008062283</created>
+  <lastModified>1576008062283</lastModified>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008062283</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

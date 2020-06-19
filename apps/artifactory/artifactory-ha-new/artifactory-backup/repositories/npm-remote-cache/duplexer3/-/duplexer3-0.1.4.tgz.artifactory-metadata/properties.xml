@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b8b5a32b75dd099a33a9f980ee63ae1f"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>like duplexer but using streams3</npm.description>
+  <npm.keywords>["duplex","duplexer","stream","stream3","join","combine"]</npm.keywords>
+  <npm.name>duplexer3</npm.name>
+  <npm.version>0.1.4</npm.version>
+</properties>

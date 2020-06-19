@@ -1,0 +1,36 @@
+{
+  "name" : "anymatch",
+  "description" : "Matches strings against configurable strings, globs, regular expressions, and/or functions",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "Elan Shanker",
+    "url" : "http://github.com/es128"
+  },
+  "homepage" : "https://github.com/micromatch/anymatch",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/micromatch/anymatch"
+  },
+  "bugs" : {
+    "url" : "https://github.com/micromatch/anymatch/issues"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/anymatch/-/anymatch-2.0.0.tgz",
+    "shasum" : "bcb24b4f37934d9aa7ac17b4adaf89e7c76ef2eb"
+  },
+  "dependencies" : {
+    "micromatch" : "^3.1.4",
+    "normalize-path" : "^2.1.1"
+  },
+  "devDependencies" : {
+    "coveralls" : "^2.7.0",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^3.0.0"
+  },
+  "keywords" : [ "match", "any", "string", "file", "fs", "list", "glob", "regex", "regexp", "regular", "expression", "function" ],
+  "license" : "ISC",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "istanbul cover _mocha && cat ./coverage/lcov.info | coveralls"
+  }
+}

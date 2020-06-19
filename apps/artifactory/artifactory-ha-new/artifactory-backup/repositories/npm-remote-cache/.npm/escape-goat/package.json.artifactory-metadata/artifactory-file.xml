@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/escape-goat/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1585871270615</created>
+  <lastModified>1579059193000</lastModified>
+  <size>19433</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464341462</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d9c484ea4168a19c80ae89182aa4018e3cf4a08c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c8d868589f2006bd67b13c30a52bfaba</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>510b4b2f1856f726c8b1ffcac034aaf02989e665f7090d2b7363725f55c0a4d5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

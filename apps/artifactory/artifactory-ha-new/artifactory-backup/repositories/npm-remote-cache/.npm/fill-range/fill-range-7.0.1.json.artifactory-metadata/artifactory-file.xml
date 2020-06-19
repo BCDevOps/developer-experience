@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fill-range/fill-range-7.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fill-range-7.0.1.json</name>
+  <created>1576008069778</created>
+  <lastModified>1576008069383</lastModified>
+  <size>1570</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069873</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b933365a88fb5b507b2714631519f6747626bf34</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6125f63e9e50c1f2f7ec1e25bafcf6b8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>169b0029465bd288af62d479f2c7438808ce9c1a0564729f08a83a2695cd853f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

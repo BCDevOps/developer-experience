@@ -1,0 +1,29 @@
+{
+  "name" : "destroy",
+  "description" : "destroy a stream if possible",
+  "version" : "1.0.4",
+  "author" : {
+    "name" : "Jonathan Ong",
+    "email" : "me@jongleberry.com",
+    "url" : "http://jongleberry.com",
+    "twitter" : "https://twitter.com/jongleberry"
+  },
+  "repository" : "stream-utils/destroy",
+  "contributors" : [ "Douglas Christopher Wilson <doug@somethingdoug.com>" ],
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/destroy/-/destroy-1.0.4.tgz",
+    "shasum" : "978857442c44749e4206613e37946205826abd80"
+  },
+  "devDependencies" : {
+    "istanbul" : "0.4.2",
+    "mocha" : "2.3.4"
+  },
+  "keywords" : [ "stream", "streams", "destroy", "cleanup", "leak", "fd" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "LICENSE" ],
+  "scripts" : {
+    "test" : "mocha --reporter spec",
+    "test-cov" : "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis" : "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  }
+}

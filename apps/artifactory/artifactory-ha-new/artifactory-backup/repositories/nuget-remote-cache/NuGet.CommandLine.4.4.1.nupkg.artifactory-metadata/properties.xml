@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62A671B67CB82</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© .NET Foundation. All rights reserved.</nuget.copyright>
+  <nuget.description>NuGet Command Line Tool</nuget.description>
+  <nuget.digest>IhE0wqCkEiaw01M1qsJaqDoF+fBbTjptoBwVlSELAU6LTkasu2qPPfEl+tZpaKaiucU1dEtjX3suxPvUkgwKww==</nuget.digest>
+  <nuget.id>NuGet.CommandLine</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://github.com/NuGet/NuGet.Client</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>4.4.1</nuget.version>
+</properties>

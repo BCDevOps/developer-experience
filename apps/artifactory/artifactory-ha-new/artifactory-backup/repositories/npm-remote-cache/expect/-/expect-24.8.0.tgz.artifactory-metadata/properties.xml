@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d3ae552b5df3b64865eac7cd7db3c2ee"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>expect</npm.name>
+  <npm.version>24.8.0</npm.version>
+</properties>

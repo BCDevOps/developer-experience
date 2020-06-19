@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"06aabd4eb49852cfcdb1a3cc1cdf9bd0"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns true if a filepath is a windows unc file path.</npm.description>
+  <npm.keywords>["absolute","expression","file","filepath","is","match","matching","path","regex","regexp","regular","unc","win","windows"]</npm.keywords>
+  <npm.name>is-unc-path</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-runner/jest-runner-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-runner-25.2.6.json</name>
+  <created>1585853522155</created>
+  <lastModified>1585853522061</lastModified>
+  <size>1566</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853522156</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>502f4853285193f0235047d5a740242fcf072ad9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d1e94afd3902d95578528e50245980bf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>69f25da2cb1a32ca87372d853c84b1cd69c8738aff6fb4bda344a25e2e38a87f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

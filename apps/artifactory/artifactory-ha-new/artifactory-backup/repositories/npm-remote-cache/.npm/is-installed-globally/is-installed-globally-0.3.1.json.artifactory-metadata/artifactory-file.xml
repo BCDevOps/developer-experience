@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-installed-globally/is-installed-globally-0.3.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-installed-globally-0.3.1.json</name>
+  <created>1585853563764</created>
+  <lastModified>1585853563686</lastModified>
+  <size>1192</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853563765</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3659e7ce2f4831674f4e679772fd30de261be5be</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d06c5d6431beac928efbd7fb74c0de0b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d561ae647f5839dae7b56b7750efdfe6c0bca1eee8778df18d08a7fade74f1a5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

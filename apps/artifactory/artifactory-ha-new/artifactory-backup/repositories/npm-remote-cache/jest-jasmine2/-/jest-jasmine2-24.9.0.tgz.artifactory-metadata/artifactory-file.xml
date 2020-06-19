@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-jasmine2/-/jest-jasmine2-24.9.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-jasmine2-24.9.0.tgz</name>
+  <created>1576003090620</created>
+  <lastModified>1565936072000</lastModified>
+  <size>31878</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003090673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1f7b1bd3242c1774e62acabb3646d96afc3be6a0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8fdc6b7b2f78963cac0a71faa872a0df</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e4c5cfbb1248025ee441ba42f2ff279867ef9ec6cb6a0d3429a0b83077fa22cb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"098f8691991b451109fd36559ae46744"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>javascript parser, mangler/compressor and beautifier toolkit</npm.description>
+  <npm.keywords>["cli","compress","compressor","ecma","ecmascript","es","es5","javascript","js","jsmin","min","minification","minifier","minify","optimize","optimizer","pack","packer","parse","parser","uglifier","uglify"]</npm.keywords>
+  <npm.name>uglify-js</npm.name>
+  <npm.version>3.6.9</npm.version>
+</properties>

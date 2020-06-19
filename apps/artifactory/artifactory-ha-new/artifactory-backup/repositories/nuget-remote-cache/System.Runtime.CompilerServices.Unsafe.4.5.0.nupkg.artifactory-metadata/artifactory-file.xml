@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Runtime.CompilerServices.Unsafe.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Runtime.CompilerServices.Unsafe.4.5.0.nupkg</name>
+  <created>1578432232708</created>
+  <lastModified>1545092955000</lastModified>
+  <size>103605</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432232708</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a5c8cff8e3a434ec35ef7461555036884bfd523a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a627416632f942c4639e7a3006cbb9f4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>83d8c8750b57480858f9ecd0b583601c4528411dc7cf39c7b3724ccc3f5b8a9e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

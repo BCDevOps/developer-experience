@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NSwag.CodeGeneration.CSharp.13.1.6.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NSwag.CodeGeneration.CSharp.13.1.6.nupkg</name>
+  <created>1580167472233</created>
+  <lastModified>1574442829000</lastModified>
+  <size>108917</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580167472233</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e333f06f6ae5ebecaea31febe77168dd0aa41d01</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e999ad781719bc6375c006f55480c72a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f512e3f3d77186133b023bd40f96f637db8cb7414d0a2d297554f5e0efda129f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

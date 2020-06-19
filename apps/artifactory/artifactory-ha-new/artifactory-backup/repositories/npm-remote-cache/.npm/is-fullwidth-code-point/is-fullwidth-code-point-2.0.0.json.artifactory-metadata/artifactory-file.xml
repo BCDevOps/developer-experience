@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-fullwidth-code-point/is-fullwidth-code-point-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-fullwidth-code-point-2.0.0.json</name>
+  <created>1576008045295</created>
+  <lastModified>1576008045277</lastModified>
+  <size>970</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008045296</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>796e7966692d37a51ba535b7973cd0b6183a329b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8219f419ea100ff239000bd5119b93a3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9198aa5f20d0b587effa16e93adc9507658a05a1b8476d70a4cced1d9162232b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

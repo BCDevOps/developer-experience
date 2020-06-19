@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/werkzeug.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>werkzeug.html</name>
+  <created>1573593688281</created>
+  <lastModified>1582154264637</lastModified>
+  <size>29110</size>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154264752</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ac414d4fbbbb9589aca7dbffe87bcfc658c59f02</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>205fe7681f185765be0d5ec498facb11</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>dd0531bcd65de3978356d1698fa5ee984c8aa345ec0af056109f87ca588f9ec5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

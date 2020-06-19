@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D7781018AB8EE1</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Configuration:3.1.0:.NETCoreApp3.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration:3.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Functionality to bind an object to data in configuration providers for Microsoft.Extensions.Configuration.</nuget.description>
+  <nuget.digest>llzE7nOPkskFlJLeYstphNtp1CDYJf+xO/A3k99IGuoZim80PZIoB2WfWrB8TpRArQedvXj1iYzsJaWakCRaDA==</nuget.digest>
+  <nuget.id>Microsoft.Extensions.Configuration.Binder</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>configuration</nuget.tags>
+  <nuget.version>3.1.0</nuget.version>
+</properties>

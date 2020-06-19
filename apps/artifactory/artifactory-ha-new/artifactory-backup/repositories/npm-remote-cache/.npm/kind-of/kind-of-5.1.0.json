@@ -1,0 +1,50 @@
+{
+  "name" : "kind-of",
+  "description" : "Get the native type of a value.",
+  "version" : "5.1.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/kind-of",
+  "repository" : "jonschlinkert/kind-of",
+  "contributors" : [ "David Fox-Powell (https://dtothefp.github.io/me)", "James (https://twitter.com/aretecode)", "Jon Schlinkert (http://twitter.com/jonschlinkert)", "Ken Sheedlo (kensheedlo.com)", "laggingreflex (https://github.com/laggingreflex)", "Miguel Mota (https://miguelmota.com)", "Peter deHaan (http://about.me/peterdehaan)", "tunnckoCore (https://i.am.charlike.online)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/kind-of/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/kind-of/-/kind-of-5.1.0.tgz",
+    "shasum" : "729c91e2d857b7a419a1f9aa65685c4c33f5845d"
+  },
+  "devDependencies" : {
+    "ansi-bold" : "^0.1.1",
+    "benchmarked" : "^1.1.1",
+    "browserify" : "^14.4.0",
+    "gulp-format-md" : "^0.1.12",
+    "matched" : "^0.4.4",
+    "mocha" : "^3.4.2",
+    "type-of" : "^2.0.1",
+    "typeof" : "^1.0.0"
+  },
+  "keywords" : [ "arguments", "array", "boolean", "check", "date", "function", "is", "is-type", "is-type-of", "kind", "kind-of", "number", "object", "of", "regexp", "string", "test", "type", "type-of", "typeof", "types" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha",
+    "prepublish" : "browserify -o browser.js -e index.js -s index --bare"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "is-glob", "is-number", "is-primitive" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "reflinks" : [ "type-of", "typeof", "verb" ]
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3f1eeb11345677aa7625534220d1fed8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>append a buffer to another buffer ensuring to preserve line ending characters.</npm.description>
+  <npm.keywords>["append","append-buffer","concat","concat-buffer","eol","join","join-buffer","normalize","buffer"]</npm.keywords>
+  <npm.name>append-buffer</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

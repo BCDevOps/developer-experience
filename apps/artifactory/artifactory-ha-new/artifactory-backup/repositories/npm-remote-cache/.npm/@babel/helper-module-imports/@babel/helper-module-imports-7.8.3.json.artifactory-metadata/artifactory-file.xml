@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-module-imports/@babel/helper-module-imports-7.8.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>helper-module-imports-7.8.3.json</name>
+  <created>1585871253370</created>
+  <lastModified>1585871253142</lastModified>
+  <size>855</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871253372</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>edcd35a16abfe1d66a9b2d2480ac633cb3c3519f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>158e5c818e89ba04d5a5e0669316a08d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fce28449b6ab8bfd3024c7a62978d7bde825ade21fb0635ad7fdffc59bfaef47</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

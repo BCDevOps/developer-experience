@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/default-require-extensions/default-require-extensions-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>default-require-extensions-2.0.0.json</name>
+  <created>1579828363525</created>
+  <lastModified>1579828363474</lastModified>
+  <size>979</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828363526</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>84192b8bf34d18b77d64ea6cb53918ee43d2cef9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cb4b322d72627754e37382ed40903243</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>19237f457488e49900308fe72183642773c38bd8a47df22f9ac370999fbe39ab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

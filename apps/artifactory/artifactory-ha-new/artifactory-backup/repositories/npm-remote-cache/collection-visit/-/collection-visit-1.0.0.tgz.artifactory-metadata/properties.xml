@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"735947ef7cec034327b0f2b0144b8256"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>visit a method over the items in an object, or map visit over the objects in an array.</npm.description>
+  <npm.keywords>["array","arrays","collection","context","function","helper","invoke","key","map","method","object","objects","value","visit","visitor"]</npm.keywords>
+  <npm.name>collection-visit</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

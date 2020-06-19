@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>undertaker-registry/-/undertaker-registry-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>undertaker-registry-1.0.1.tgz</name>
+  <created>1576003399906</created>
+  <lastModified>1527452771000</lastModified>
+  <size>3590</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003399906</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5e4bda308e4a8a2ae584f9b9a4359a499825cc50</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e8782d36757c9bc1bd3d8756a845087d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>88b30e5abe8a899bfe2c6aa6f1214fcc1c8613fb97440119342316629bc1d09b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

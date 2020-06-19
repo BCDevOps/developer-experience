@@ -1,0 +1,30 @@
+{
+  "name" : "bl",
+  "description" : "Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!",
+  "version" : "2.2.0",
+  "homepage" : "https://github.com/rvagg/bl",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rvagg/bl.git"
+  },
+  "main" : "bl.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/bl/-/bl-2.2.0.tgz",
+    "shasum" : "e1a574cdf528e4053019bb800b041c0ac88da493"
+  },
+  "dependencies" : {
+    "readable-stream" : "^2.3.5",
+    "safe-buffer" : "^5.1.1"
+  },
+  "devDependencies" : {
+    "faucet" : "0.0.1",
+    "hash_file" : "~0.1.1",
+    "tape" : "~4.9.0"
+  },
+  "keywords" : [ "buffer", "buffers", "stream", "awesomesauce" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "node test/test.js | faucet"
+  },
+  "authors" : [ "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)", "Matteo Collina <matteo.collina@gmail.com> (https://github.com/mcollina)", "Jarett Cruger <jcrugzz@gmail.com> (https://github.com/jcrugzz)" ]
+}

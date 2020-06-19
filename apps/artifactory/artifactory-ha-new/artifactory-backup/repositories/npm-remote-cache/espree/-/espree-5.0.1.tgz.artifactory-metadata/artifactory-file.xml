@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>espree/-/espree-5.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>espree-5.0.1.tgz</name>
+  <created>1579828389981</created>
+  <lastModified>1550259581000</lastModified>
+  <size>18262</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828389982</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5d6526fa4fc7f0788a5cf75b15f30323e2f81f7a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>23d9a5dda3fb12d9e98c630b00e3a750</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>84f0bc12d4e6f1770c1fd1927a28d5893a328195cfa7dcbf707a6b5750ce678c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

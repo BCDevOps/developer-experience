@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NJsonSchema.CodeGeneration.CSharp.10.0.28.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NJsonSchema.CodeGeneration.CSharp.10.0.28.nupkg</name>
+  <created>1580862020230</created>
+  <lastModified>1574434652000</lastModified>
+  <size>71514</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580862020231</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7cb2ebb742078e60441437ea52b5543d28d3e355</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f25565518b9db2d8b9a7f2696e6a8570</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>977deaaed69eb38828c9754b88383b98cf5f06e2884bcec5a503030ff8094b97</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>pify/-/pify-4.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pify-4.0.1.tgz</name>
+  <created>1576008067673</created>
+  <lastModified>1540213143000</lastModified>
+  <size>3318</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008067674</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4b2cd25c50d598735c50292224fd8c6df41e3231</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6997269cc2a8e70688e1971c7c879df9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8a7f5d035664b819be5102bb93c8d5f63e067dfc5a8638f6f853d87678906b4b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

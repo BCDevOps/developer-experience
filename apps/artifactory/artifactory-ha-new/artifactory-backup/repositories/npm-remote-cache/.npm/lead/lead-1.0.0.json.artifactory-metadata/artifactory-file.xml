@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lead/lead-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lead-1.0.0.json</name>
+  <created>1576003402774</created>
+  <lastModified>1576003402677</lastModified>
+  <size>1248</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003402775</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>41402c1d287a480e4136b970a7b99d84cc2faae2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6ad802839e33a3acc5703b17338fb2a9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b7f63d7c71d5268850c659a30fca27be727f05a71046c49e70e93e41032fada</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

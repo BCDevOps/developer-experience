@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"73267fc7ff79ed59ec4c02cfb29d8a8b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>given some data, jsesc returns the shortest possible stringified &amp; ascii-safe representation of that data.</npm.description>
+  <npm.keywords>["buffer","escape","javascript","json","map","set","string","stringify","tool"]</npm.keywords>
+  <npm.name>jsesc</npm.name>
+  <npm.version>2.5.2</npm.version>
+</properties>

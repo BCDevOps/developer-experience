@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/util-deprecate/util-deprecate-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>util-deprecate-1.0.2.json</name>
+  <created>1576003419873</created>
+  <lastModified>1576003419694</lastModified>
+  <size>900</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003419874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>56a2b9954e3af9be67c50bda2ef22b8a0dea48aa</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>80c017076f688c27a7662073ec854311</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1ff8508fec1b5773d6721a5ceab3264dce85461925d411fdccf03511d66bc48d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

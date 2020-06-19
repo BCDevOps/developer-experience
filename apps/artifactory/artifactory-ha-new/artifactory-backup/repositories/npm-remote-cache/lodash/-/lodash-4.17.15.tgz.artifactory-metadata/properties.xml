@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ca95cc62b793243de7b1446a9ee64620"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>lodash modular utilities.</npm.description>
+  <npm.keywords>"modules, stdlib, util"</npm.keywords>
+  <npm.name>lodash</npm.name>
+  <npm.version>4.17.15</npm.version>
+</properties>

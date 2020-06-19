@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"96e65fc30ce38f51677d8ca3f5f7c287"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>parse argument options</npm.description>
+  <npm.keywords>["argv","getopt","parser","optimist"]</npm.keywords>
+  <npm.name>minimist</npm.name>
+  <npm.version>0.0.10</npm.version>
+</properties>

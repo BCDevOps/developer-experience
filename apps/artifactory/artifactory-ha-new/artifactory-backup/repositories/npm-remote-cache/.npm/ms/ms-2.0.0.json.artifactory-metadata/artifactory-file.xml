@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ms/ms-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ms-2.0.0.json</name>
+  <created>1576003465906</created>
+  <lastModified>1576003465863</lastModified>
+  <size>888</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003465911</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>14bf96be136bb4bf07a3e9cc0c84f0d34448ce57</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>2cbd5eea1e686baeb9922e872f83dac0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>12ee9f70ff1efb43949be1936d59af738e4025cfaf2a9abc6c9eb50fd650904b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

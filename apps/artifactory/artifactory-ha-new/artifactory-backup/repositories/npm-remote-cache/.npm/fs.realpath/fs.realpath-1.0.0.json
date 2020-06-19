@@ -1,0 +1,25 @@
+{
+  "name" : "fs.realpath",
+  "description" : "Use node's fs.realpath, but fall back to the JS implementation if the native one fails",
+  "version" : "1.0.0",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/isaacs/fs.realpath.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/fs.realpath/-/fs.realpath-1.0.0.tgz",
+    "shasum" : "1504ad2523158caa40db4a2787cb01411994ea4f"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+  },
+  "keywords" : [ "realpath", "fs", "polyfill" ],
+  "license" : "ISC",
+  "files" : [ "old.js", "index.js" ],
+  "scripts" : {
+    "test" : "tap test/*.js --cov"
+  }
+}

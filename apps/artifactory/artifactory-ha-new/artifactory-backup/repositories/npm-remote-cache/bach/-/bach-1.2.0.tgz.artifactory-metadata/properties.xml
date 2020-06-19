@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c54375cfd5354f01b3661a313ae09ac6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>compose your async functions with elegance.</npm.description>
+  <npm.keywords>["compose","fluent","composing","continuation","function composition","functional","async","map","series","parallel","extension","tracing","debug","timing","aop","settle","promises","callbacks","observables","streams","end","completion","complete","finish","done","error handling"]</npm.keywords>
+  <npm.name>bach</npm.name>
+  <npm.version>1.2.0</npm.version>
+</properties>

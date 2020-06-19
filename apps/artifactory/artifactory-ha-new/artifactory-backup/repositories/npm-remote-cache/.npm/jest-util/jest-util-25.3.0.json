@@ -1,0 +1,41 @@
+{
+  "name" : "jest-util",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-util"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-util/-/jest-util-25.3.0.tgz",
+    "shasum" : "e3b0064165818f10d78514696fd25efba82cf049"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.3.0",
+    "chalk" : "^3.0.0",
+    "is-ci" : "^2.0.0",
+    "make-dir" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@types/graceful-fs" : "^4.1.2",
+    "@types/is-ci" : "^2.0.0",
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

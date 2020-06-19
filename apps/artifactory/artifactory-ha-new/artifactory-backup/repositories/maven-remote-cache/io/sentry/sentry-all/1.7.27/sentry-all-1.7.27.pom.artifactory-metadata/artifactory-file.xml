@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/sentry/sentry-all/1.7.27/sentry-all-1.7.27.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sentry-all-1.7.27.pom</name>
+  <created>1576861373793</created>
+  <lastModified>1566299168000</lastModified>
+  <size>20202</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861373794</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>3a928b76cade6295a8063c52587840f4743555e0</original>
+          <actual>3a928b76cade6295a8063c52587840f4743555e0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>df3c57472562cae60e071a435f2663c5</original>
+          <actual>df3c57472562cae60e071a435f2663c5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d8806767bf94cd40889830674da706d248ee24b5a79cf4395b887afcacc92e5e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

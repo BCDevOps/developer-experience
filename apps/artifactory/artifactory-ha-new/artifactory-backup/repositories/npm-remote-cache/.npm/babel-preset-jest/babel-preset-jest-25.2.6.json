@@ -1,0 +1,32 @@
+{
+  "name" : "babel-preset-jest",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/babel-preset-jest"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/babel-preset-jest/-/babel-preset-jest-25.2.6.tgz",
+    "shasum" : "5d3f7c99e2a8508d61775c9d68506d143b7f71b5"
+  },
+  "dependencies" : {
+    "@babel/plugin-syntax-bigint" : "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread" : "^7.0.0",
+    "babel-plugin-jest-hoist" : "^25.2.6"
+  },
+  "peerDependencies" : {
+    "@babel/core" : "^7.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b"
+}

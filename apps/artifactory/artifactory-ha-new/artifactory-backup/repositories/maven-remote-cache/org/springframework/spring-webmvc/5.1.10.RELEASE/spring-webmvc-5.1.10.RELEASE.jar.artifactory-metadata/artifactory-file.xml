@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/spring-webmvc/5.1.10.RELEASE/spring-webmvc-5.1.10.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-webmvc-5.1.10.RELEASE.jar</name>
+  <created>1576861402027</created>
+  <lastModified>1569673062000</lastModified>
+  <size>801687</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861402028</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>67b6da7852e89bc0df6ce36a263ac4377fe48e27</original>
+          <actual>67b6da7852e89bc0df6ce36a263ac4377fe48e27</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>eef81c1fa7145b33c41fe85671ef741f</original>
+          <actual>eef81c1fa7145b33c41fe85671ef741f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>622955e52bb3affbdd66c175730c918c1ad43fd53da98dd4987154b4295ed0f8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

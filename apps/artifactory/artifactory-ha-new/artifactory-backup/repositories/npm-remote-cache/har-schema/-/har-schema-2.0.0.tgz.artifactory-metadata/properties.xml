@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6277eec9cab1d80a59ddf153574651c0"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>json schema for http archive (har)</npm.description>
+  <npm.keywords>["har","http","archive","JSON","schema","JSON-schema"]</npm.keywords>
+  <npm.name>har-schema</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

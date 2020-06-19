@@ -1,0 +1,62 @@
+{
+  "name" : "eslint-plugin-mocha",
+  "description" : "Eslint rules for mocha.",
+  "version" : "6.1.1",
+  "author" : "Mathias Schreck <schreck.mathias@gmail.com>",
+  "homepage" : "https://github.com/lo1tuma/eslint-plugin-mocha",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/lo1tuma/eslint-plugin-mocha.git"
+  },
+  "contributors" : [ "Alexander Schmidt <alexanderschmidt1@gmail.com>" ],
+  "bugs" : {
+    "url" : "https://github.com/lo1tuma/eslint-plugin-mocha/issues"
+  },
+  "engines" : {
+    "node" : ">=8.0.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/eslint-plugin-mocha/-/eslint-plugin-mocha-6.1.1.tgz",
+    "shasum" : "5a036f2f806e1a5fb7d19f7538ebeff3afb15377"
+  },
+  "dependencies" : {
+    "ramda" : "^0.26.1"
+  },
+  "devDependencies" : {
+    "chai" : "^4.2.0",
+    "coveralls" : "^3.0.4",
+    "eslint" : "^6.0.1",
+    "eslint-config-holidaycheck" : "^0.13.1",
+    "eslint-plugin-node" : "^9.1.0",
+    "mocha" : "^6.1.4",
+    "nyc" : "^14.1.1",
+    "pr-log" : "^3.1.0"
+  },
+  "peerDependencies" : {
+    "eslint" : ">= 4.0.0"
+  },
+  "keywords" : [ "eslint", "eslintplugin", "eslint-plugin", "mocha" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "lib/", "LICENSE", "README.md" ],
+  "scripts" : {
+    "pretest" : "eslint .",
+    "test" : "npm run test:unit:with-coverage",
+    "test:unit" : "mocha test --recursive --reporter dot",
+    "test:unit:with-coverage" : "nyc npm run test:unit",
+    "coveralls" : "cat ./build/coverage/lcov.info | coveralls",
+    "changelog" : "pr-log"
+  },
+  "nyc" : {
+    "all" : true,
+    "cache" : false,
+    "lines" : 100,
+    "statements" : 100,
+    "functions" : 100,
+    "branches" : 100,
+    "exclude" : [ "build", "test" ],
+    "reporter" : [ "lcov", "text-summary" ],
+    "check-coverage" : true,
+    "report-dir" : "build"
+  }
+}

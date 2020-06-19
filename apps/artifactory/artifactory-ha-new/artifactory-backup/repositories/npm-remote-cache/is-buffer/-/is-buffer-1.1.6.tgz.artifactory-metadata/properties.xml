@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"374af5d9a1a7e4d3e686419412fa6b72"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>determine if an object is a buffer</npm.description>
+  <npm.keywords>["buffer","buffers","type","core buffer","browser buffer","browserify","typed array","uint32array","int16array","int32array","float32array","float64array","browser","arraybuffer","dataview"]</npm.keywords>
+  <npm.name>is-buffer</npm.name>
+  <npm.version>1.1.6</npm.version>
+</properties>

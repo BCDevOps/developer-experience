@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/browser-resolve/browser-resolve-1.11.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>browser-resolve-1.11.3.json</name>
+  <created>1576003615660</created>
+  <lastModified>1576003615630</lastModified>
+  <size>809</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003615661</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9d2455b8d4a8d59536e9a610bf81914d36d1bd1f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c50d2e18f49dd720295de22cce29cbb1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>21dafb433ac96a1f56762847045e851a28ce4d76b2bcb78cd8b153cd2bd848f5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

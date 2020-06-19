@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/statuses/statuses-1.5.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>statuses-1.5.0.json</name>
+  <created>1576008725119</created>
+  <lastModified>1576008725090</lastModified>
+  <size>1661</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008725119</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b0ac8c2bbc3c5f6aa354effb8aa5288b27c6ba30</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ac85802fef3be4c56ffebaccfaaf5871</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>703e9ee0e314d67e79e481f5ce249b7982d4ff05ab3c4ff415a37def02029e39</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

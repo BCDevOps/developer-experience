@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>fams3-nuget-local</repoKey>
+    <path>BcGov.Fams3.SearchApi.Contracts.1.0.6.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>BcGov.Fams3.SearchApi.Contracts.1.0.6.nupkg</name>
+  <created>1579111017673</created>
+  <lastModified>1579124939030</lastModified>
+  <size>5389</size>
+  <additionalInfo>
+    <createdBy>peggy-gov-bc-ca@github</createdBy>
+    <modifiedBy>peggy-gov-bc-ca@github</modifiedBy>
+    <lastUpdated>1579124939100</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9ca6c0d74c7629e389cd99356298b6799b158b66</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>22e244e7d27ee77544b34413caa08d86</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>16d8b505f819e0922d42f8eb4988fced0b777641acd496d6c18cc6e8587f310b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

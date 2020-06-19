@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>semver/-/semver-6.3.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>semver-6.3.0.tgz</name>
+  <created>1576008067291</created>
+  <lastModified>1563909930000</lastModified>
+  <size>18921</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008067291</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ee0a64c8af5e8ceea67687b133761e1becbd1d3d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e0836faadf4b192c3987c5117d62fff6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6bf14af3333843b62526ced99519918c7f6bf2cfe1c111556d36cf239a4c6745</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

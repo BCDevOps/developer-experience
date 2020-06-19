@@ -1,0 +1,24 @@
+{
+  "name" : "debug-log",
+  "description" : "Node.js 0.12 util.debuglog() ponyfill",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/debug-log",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/debug-log/-/debug-log-1.0.1.tgz",
+    "shasum" : "2307632d4c04382b8df8a32f70b895046d52745f"
+  },
+  "keywords" : [ "debug", "log", "logging", "debuglog", "built-in", "util", "utils", "core", "console", "env", "environment", "ponyfill", "polyfill", "shim" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "node test.js"
+  }
+}

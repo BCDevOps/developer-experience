@@ -1,0 +1,41 @@
+{
+  "name" : "jest-validate",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-validate"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-validate/-/jest-validate-25.3.0.tgz",
+    "shasum" : "eb95fdee0039647bcd5d4be641b21e4a142a880c"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.3.0",
+    "camelcase" : "^5.3.1",
+    "chalk" : "^3.0.0",
+    "jest-get-type" : "^25.2.6",
+    "leven" : "^3.1.0",
+    "pretty-format" : "^25.3.0"
+  },
+  "devDependencies" : {
+    "@types/yargs" : "^15.0.3"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

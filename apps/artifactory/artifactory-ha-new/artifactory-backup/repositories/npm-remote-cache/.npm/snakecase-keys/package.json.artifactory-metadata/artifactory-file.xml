@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/snakecase-keys/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1579828350605</created>
+  <lastModified>1578420426000</lastModified>
+  <size>20220</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828350606</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>993043751bb3a62f13ead2ea881bd01e47a67c02</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8ecd7f5f65ebedd90b764bffac2231d9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>339f1bce245cb87dce70644234e717df4f22f7e937b9089c12e3fb6dc68ca169</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

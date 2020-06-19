@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>prettier-linter-helpers</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>prettier-linter-helpers</name>
+  <created>1579828379768</created>
+  <lastModified>1579828379768</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828379768</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

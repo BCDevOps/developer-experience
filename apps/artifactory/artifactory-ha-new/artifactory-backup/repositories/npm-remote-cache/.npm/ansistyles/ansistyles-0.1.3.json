@@ -1,0 +1,22 @@
+{
+  "name" : "ansistyles",
+  "description" : "Functions that surround a string with ansistyle codes so it prints in style.",
+  "version" : "0.1.3",
+  "author" : "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/thlorenz/ansistyles.git"
+  },
+  "main" : "ansistyles.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ansistyles/-/ansistyles-0.1.3.tgz",
+    "shasum" : "5de60415bda071bb37127854c864f41b23254539"
+  },
+  "keywords" : [ "ansi", "style", "terminal", "console" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "node test/ansistyles.js"
+  },
+  "gitHead" : "27bf1bc65231bcc7fd109bf13b13601b51f8cd04",
+  "readmeFilename" : "README.md"
+}

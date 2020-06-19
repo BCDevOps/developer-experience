@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D71F250F4C7D8B</artifactory.internal.etag>
+  <nuget.authors>Jimmy Bogard</nuget.authors>
+  <nuget.dependency>Microsoft.CSharp:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>A convention-based object-object mapper.</nuget.description>
+  <nuget.digest>xT8V1cEHum51ZKXWeSlS2rT8fCHmLWpBPC+ZTJjQ9CO9j1pB7ZUz+MjNx9PIPQwXLFrkANXvWyg2eKR3x8qvSg==</nuget.digest>
+  <nuget.frameworks>Microsoft.CSharp:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>https://s3.amazonaws.com/automapper/icon.png</nuget.iconUrl>
+  <nuget.id>AutoMapper</nuget.id>
+  <nuget.licenseUrl>https://github.com/AutoMapper/AutoMapper/blob/master/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Jimmy Bogard</nuget.owners>
+  <nuget.projectUrl>https://automapper.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>9.0.0</nuget.version>
+</properties>

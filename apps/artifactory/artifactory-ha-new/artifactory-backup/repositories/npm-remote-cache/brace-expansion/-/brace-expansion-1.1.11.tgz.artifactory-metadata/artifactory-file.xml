@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>brace-expansion/-/brace-expansion-1.1.11.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>brace-expansion-1.1.11.tgz</name>
+  <created>1576003414589</created>
+  <lastModified>1544201524000</lastModified>
+  <size>4239</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003414673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3c7fcbf529d87226f3d2f52b966ff5271eb441dd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>02822e3db48e8c5b844fa309fa2cc56b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>84bd645925eb665a04c19c66eb9da8499d9c17d0d62b4b979d085dcae99695da</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

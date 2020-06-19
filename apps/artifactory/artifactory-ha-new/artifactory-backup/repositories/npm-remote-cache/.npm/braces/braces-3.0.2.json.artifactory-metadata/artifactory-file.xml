@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/braces/braces-3.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>braces-3.0.2.json</name>
+  <created>1576008069780</created>
+  <lastModified>1576008069379</lastModified>
+  <size>1733</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069873</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>652ddc3ba140c6c9c62fbd4ff3fba65f30cdcb70</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cde0a14dd94eda7207ccb30e357d6c9d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b312919aed374bfcb6954a204b75424e1486c85d43ead300cf583b4db955dd38</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

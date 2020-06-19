@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e21f197a1b0f54bc365d2338c2f969be"</artifactory.internal.etag>
+  <npm.description>an abstract class implementing passport's strategy api.</npm.description>
+  <npm.keywords>["passport","strategy"]</npm.keywords>
+  <npm.name>passport-strategy</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

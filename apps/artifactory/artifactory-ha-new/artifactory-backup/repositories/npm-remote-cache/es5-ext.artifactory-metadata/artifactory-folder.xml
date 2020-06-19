@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>es5-ext</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>es5-ext</name>
+  <created>1576008056172</created>
+  <lastModified>1576008056172</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008056172</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

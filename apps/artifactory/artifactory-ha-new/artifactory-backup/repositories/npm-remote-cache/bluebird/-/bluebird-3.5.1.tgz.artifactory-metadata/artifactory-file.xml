@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>bluebird/-/bluebird-3.5.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bluebird-3.5.1.tgz</name>
+  <created>1582140585389</created>
+  <lastModified>1527359991000</lastModified>
+  <size>135183</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140585390</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d9551f9de98f1fcda1e683d17ee91a0602ee2eb9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cbf45cde6f517ca3980abcaadebe0350</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b72913a58374c9b1b0610b86bbd3b304adee5b73f592b0707ef60e9926716890</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

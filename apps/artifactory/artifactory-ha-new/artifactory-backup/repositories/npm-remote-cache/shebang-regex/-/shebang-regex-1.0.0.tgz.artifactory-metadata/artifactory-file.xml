@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>shebang-regex/-/shebang-regex-1.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>shebang-regex-1.0.0.tgz</name>
+  <created>1576003629339</created>
+  <lastModified>1527441005000</lastModified>
+  <size>1425</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003629340</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>da42f49740c0b42db2ca9728571cb190c98efea3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>02950d960445910024312f2cc04a8d88</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>676f124e8e6621c51b563d61136f9bf2becb86b0b6c4e6bfb055ace21e85c671</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

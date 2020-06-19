@@ -1,0 +1,20 @@
+{
+  "name" : "just-extend",
+  "description" : "extend an object",
+  "version" : "4.0.2",
+  "author" : "Angus Croll",
+  "repository" : "https://github.com/angus-c/just",
+  "bugs" : {
+    "url" : "https://github.com/angus-c/just/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/just-extend/-/just-extend-4.0.2.tgz",
+    "shasum" : "f3f47f7dfca0f989c55410a7ebc8854b07108afc"
+  },
+  "keywords" : [ "object", "assign", "clone", "copy", "merge", "deep-copy", "extend", "no-dependencies", "just" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/crypto-random-string/crypto-random-string-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>crypto-random-string-1.0.0.json</name>
+  <created>1576003625304</created>
+  <lastModified>1576003625279</lastModified>
+  <size>898</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003625304</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2b18af409b9f5846c7ca34dc949c4d5fb180ca82</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>642d6012b231f8392de190a953eddfc4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bc351a6a85a9db58c97583114b0f3321efa0aa25fe1a3b57bf5554c2e9a6a908</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

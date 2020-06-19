@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>0e/e9/f399f7ad1d5a6b00f74ed0f17e867d2c084852e78602668a92a54256c1e5/Flask_Moment-0.9.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Flask_Moment-0.9.0-py2.py3-none-any.whl</name>
+  <created>1574023018462</created>
+  <lastModified>1564929315000</lastModified>
+  <size>4026</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023018462</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2dacd2ae89bb492ca45c8e10fd021ca3c5f12b7b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>06a23f505fd93a0af693031cc8e12428</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3c509afa25fd77459c9d799f292dcea384b1cd588ed1fd68f97f6fda6131299e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

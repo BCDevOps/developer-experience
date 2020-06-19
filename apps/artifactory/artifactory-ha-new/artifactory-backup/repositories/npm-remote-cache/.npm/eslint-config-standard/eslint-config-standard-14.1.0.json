@@ -1,0 +1,44 @@
+{
+  "name" : "eslint-config-standard",
+  "description" : "JavaScript Standard Style - ESLint Shareable Config",
+  "version" : "14.1.0",
+  "author" : {
+    "name" : "Feross Aboukhadijeh",
+    "email" : "feross@feross.org",
+    "url" : "https://feross.org"
+  },
+  "homepage" : "https://github.com/standard/eslint-config-standard",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/standard/eslint-config-standard.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/standard/eslint-config-standard/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/eslint-config-standard/-/eslint-config-standard-14.1.0.tgz",
+    "shasum" : "b23da2b76fe5a2eba668374f246454e7058f15d4"
+  },
+  "devDependencies" : {
+    "eslint" : "^6.2.2",
+    "eslint-plugin-import" : "^2.18.0",
+    "eslint-plugin-node" : "^9.1.0",
+    "eslint-plugin-promise" : "^4.2.1",
+    "eslint-plugin-standard" : "^4.0.0",
+    "tape" : "^4.8.0"
+  },
+  "peerDependencies" : {
+    "eslint" : ">=6.2.2",
+    "eslint-plugin-import" : ">=2.18.0",
+    "eslint-plugin-node" : ">=9.1.0",
+    "eslint-plugin-promise" : ">=4.2.1",
+    "eslint-plugin-standard" : ">=4.0.0"
+  },
+  "keywords" : [ "JavaScript Standard Style", "check", "checker", "code", "code checker", "code linter", "code standards", "code style", "enforce", "eslint", "eslintconfig", "hint", "jscs", "jshint", "lint", "policy", "quality", "simple", "standard", "standard style", "style", "style checker", "style linter", "verify" ],
+  "license" : "MIT",
+  "scripts" : {
+    "lint" : "eslint . --config=eslintrc.json",
+    "test" : "npm run lint && tape test/*.js"
+  }
+}

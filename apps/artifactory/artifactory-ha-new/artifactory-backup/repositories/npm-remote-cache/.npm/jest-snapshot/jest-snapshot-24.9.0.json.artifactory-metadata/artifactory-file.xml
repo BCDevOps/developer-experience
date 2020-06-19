@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-snapshot/jest-snapshot-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-snapshot-24.9.0.json</name>
+  <created>1576003416383</created>
+  <lastModified>1576003416191</lastModified>
+  <size>1345</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003416383</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>59c2a825ff38a693692f4a25a2681d76db0d2d7d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ef43e5c08428ec563616728d1ff39a90</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ab8a1353d7b8a1bf878f0e7116325e4c91eb54447d9bbf614489c8f2b27e0621</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

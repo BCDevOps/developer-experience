@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/chardet.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>chardet.html</name>
+  <created>1573614799271</created>
+  <lastModified>1582154272106</lastModified>
+  <size>5240</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154272170</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e51d8c48defb1a9f49e230890ac287dc904a3e4a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>98677814258b8d712ef7eefe072fa550</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1adc9419dc3a6a233de59dae2da2c247b09761f8317830d114cef3675e6ab2fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

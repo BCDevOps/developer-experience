@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"523cfd66b7144c42beddc00c1b257294"</artifactory.internal.etag>
+  <artifactory.licenses>(Unlicense OR Apache-2.0)</artifactory.licenses>
+  <npm.description>polyfill for the encoding living standard's api.</npm.description>
+  <npm.keywords>["encoding","decoding","living standard"]</npm.keywords>
+  <npm.name>@sinonjs/text-encoding</npm.name>
+  <npm.version>0.7.1</npm.version>
+</properties>

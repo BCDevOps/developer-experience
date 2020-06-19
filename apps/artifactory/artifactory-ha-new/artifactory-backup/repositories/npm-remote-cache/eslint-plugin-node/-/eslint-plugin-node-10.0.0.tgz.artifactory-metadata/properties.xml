@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"92af3f093682623ba45ba336259b86e3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>additional eslint's rules for node.js</npm.description>
+  <npm.keywords>["eslint","eslintplugin","eslint-plugin","node","nodejs","ecmascript","shebang","file","path","import","require"]</npm.keywords>
+  <npm.name>eslint-plugin-node</npm.name>
+  <npm.version>10.0.0</npm.version>
+</properties>

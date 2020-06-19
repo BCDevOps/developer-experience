@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"35483acae8b070dad60c41a99afe6b4d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toregex`</npm.description>
+  <npm.keywords>["alpha","alphabetical","array","bash","brace","expand","expansion","fill","glob","match","matches","matching","number","numerical","range","ranges","regex","sh"]</npm.keywords>
+  <npm.name>fill-range</npm.name>
+  <npm.version>4.0.0</npm.version>
+</properties>

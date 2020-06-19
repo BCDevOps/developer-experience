@@ -1,0 +1,38 @@
+{
+  "name" : "undefsafe",
+  "description" : "Undefined safe way of extracting object properties",
+  "version" : "2.0.3",
+  "author" : "Remy Sharp",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/remy/undefsafe.git"
+  },
+  "main" : "lib/undefsafe.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/undefsafe/-/undefsafe-2.0.3.tgz",
+    "shasum" : "6b166e7094ad46313b2202da7ecc2cd7cc6e7aae"
+  },
+  "dependencies" : {
+    "debug" : "^2.2.0"
+  },
+  "devDependencies" : {
+    "semantic-release" : "^4.3.5",
+    "tap" : "^5.7.1",
+    "tap-only" : "0.0.5"
+  },
+  "keywords" : [ "undefined" ],
+  "license" : "MIT",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/**/*.test.js -R spec",
+    "cover" : "tap test/*.test.js --cov --coverage-report=lcov",
+    "semantic-release" : "semantic-release pre && npm publish && semantic-release post"
+  },
+  "tonicExampleFilename" : "example.js",
+  "prettier" : {
+    "trailingComma" : "none",
+    "singleQuote" : true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name" : "human-signals",
+  "description" : "Human-friendly process signals",
+  "version" : "1.1.1",
+  "author" : "ehmicky <ehmicky@gmail.com> (https://github.com/ehmicky)",
+  "homepage" : "https://git.io/JeluP",
+  "repository" : "ehmicky/human-signals",
+  "bugs" : {
+    "url" : "https://github.com/ehmicky/human-signals/issues"
+  },
+  "engines" : {
+    "node" : ">=8.12.0"
+  },
+  "main" : "build/src/main.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/human-signals/-/human-signals-1.1.1.tgz",
+    "shasum" : "c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "@ehmicky/dev-tasks" : "^0.30.48",
+    "ajv" : "^6.10.2",
+    "ava" : "^2.4.0",
+    "fast-deep-equal" : "^2.0.1",
+    "gulp" : "^4.0.2",
+    "husky" : "^3.0.9",
+    "test-each" : "^1.7.2"
+  },
+  "keywords" : [ "signal", "signals", "handlers", "error-handling", "errors", "interrupts", "sigterm", "sigint", "irq", "process", "exit", "exit-code", "status", "operating-system", "es6", "javascript", "linux", "macos", "windows", "nodejs" ],
+  "license" : "Apache-2.0",
+  "files" : [ "build/src", "!~" ],
+  "directories" : {
+    "lib" : "src",
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "gulp test"
+  },
+  "husky" : {
+    "hooks" : {
+      "pre-push" : "gulp check --full"
+    }
+  }
+}

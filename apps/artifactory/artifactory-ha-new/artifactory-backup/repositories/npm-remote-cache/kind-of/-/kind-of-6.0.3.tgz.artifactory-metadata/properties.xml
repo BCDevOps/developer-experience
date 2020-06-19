@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b2b65b012fbbdda2f5f9c9ab2a9b874c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the native type of a value.</npm.description>
+  <npm.keywords>["arguments","array","boolean","check","date","function","is","is-type","is-type-of","kind","kind-of","number","object","of","regexp","string","test","type","type-of","typeof","types"]</npm.keywords>
+  <npm.name>kind-of</npm.name>
+  <npm.version>6.0.3</npm.version>
+</properties>

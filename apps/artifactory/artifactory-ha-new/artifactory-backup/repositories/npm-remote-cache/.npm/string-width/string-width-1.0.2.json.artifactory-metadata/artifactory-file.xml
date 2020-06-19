@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/string-width/string-width-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>string-width-1.0.2.json</name>
+  <created>1576003436089</created>
+  <lastModified>1576003436062</lastModified>
+  <size>1129</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003436090</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>91b742f2569731e0a892be041cd7f5c1b9ad17f2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6d4be49eaeacd9b13200318b86b99b4a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4618275c8b529d7da53fc79ba22acb2aa0713cf7dccc2989fbdbc7c3a201390c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

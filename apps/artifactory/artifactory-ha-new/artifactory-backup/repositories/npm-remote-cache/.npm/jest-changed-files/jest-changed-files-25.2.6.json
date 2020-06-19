@@ -1,0 +1,35 @@
+{
+  "name" : "jest-changed-files",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-changed-files"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-changed-files/-/jest-changed-files-25.2.6.tgz",
+    "shasum" : "7d569cd6b265b1a84db3914db345d9c452f26b71"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.2.6",
+    "execa" : "^3.2.0",
+    "throat" : "^5.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/index.d.ts"
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2816656e809c73986dd2dc4e24b3351a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>mimic a node.js http response stream</npm.description>
+  <npm.keywords>["mimic","response","stream","http","https","request","get","core"]</npm.keywords>
+  <npm.name>mimic-response</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

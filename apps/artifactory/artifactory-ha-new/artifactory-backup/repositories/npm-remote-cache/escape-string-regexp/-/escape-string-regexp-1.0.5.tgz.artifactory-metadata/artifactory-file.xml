@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>escape-string-regexp/-/escape-string-regexp-1.0.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>escape-string-regexp-1.0.5.tgz</name>
+  <created>1576003408983</created>
+  <lastModified>1527378179000</lastModified>
+  <size>1578</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003408984</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1b61c0562190a8dff6ae3bb2cf0200ca130b86d4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>02440084832abe665260d5db1da1dd9e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e50c792e76763d0c74506297add779755967ca9bbd288e2677966a6b7394c347</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/get-stdin/get-stdin-7.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>get-stdin-7.0.0.json</name>
+  <created>1576008546884</created>
+  <lastModified>1576008546705</lastModified>
+  <size>928</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008546975</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4b2265bba1c2cd792e037385c2e25cf3975b9bb6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>88c5cd827534aa32e26b75eb2364379b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9ab5f87ea72667bc842f8abaaedb1bdbe82fec8e31c963ad42bd33fc9f06c280</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0c6e0012f1d98450a08a7b76b55a3296"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert a string to pascal-case.</npm.description>
+  <npm.keywords>["camelcase","case","casing","pascal","pascal-case","pascalcase","string"]</npm.keywords>
+  <npm.name>pascalcase</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

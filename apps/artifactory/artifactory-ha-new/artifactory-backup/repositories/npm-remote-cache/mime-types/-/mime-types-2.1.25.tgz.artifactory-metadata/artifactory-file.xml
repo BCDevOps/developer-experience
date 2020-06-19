@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mime-types/-/mime-types-2.1.25.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mime-types-2.1.25.tgz</name>
+  <created>1576002597784</created>
+  <lastModified>1573568300000</lastModified>
+  <size>5235</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576002597785</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>39772d46621f93e2a80a856c53b86a62156a6437</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8cc38c0a89ea972b056cf265ac9176e2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>92b25349b1ac1b85d616bd2453be6e150d4552df46000ead54eaa2a504f59598</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

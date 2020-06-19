@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2b6a51ceb82956f35051b8a37d77eb7a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>invert the key/value of an object. example: {foo: 'bar'}  {bar: 'foo'}</npm.description>
+  <npm.keywords>["object","obj","key","value","val","kv","invert"]</npm.keywords>
+  <npm.name>invert-kv</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

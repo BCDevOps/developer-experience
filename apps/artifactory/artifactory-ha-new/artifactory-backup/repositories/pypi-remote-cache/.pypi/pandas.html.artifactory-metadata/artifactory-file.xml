@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pandas.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pandas.html</name>
+  <created>1581102453708</created>
+  <lastModified>1581103114678</lastModified>
+  <size>302880</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581103114891</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>aa9303598ff44b0b385e3f803a9a5053c48ff5f0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0482df58b22a92aa68ebb49d1d6653e8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5d569e6fe08cedfa2f0f6b001398938939481683c986200f1d80a73485a7f6f9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

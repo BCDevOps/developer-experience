@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>spdx-license-ids</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>spdx-license-ids</name>
+  <created>1576008063579</created>
+  <lastModified>1576008063579</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008063579</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

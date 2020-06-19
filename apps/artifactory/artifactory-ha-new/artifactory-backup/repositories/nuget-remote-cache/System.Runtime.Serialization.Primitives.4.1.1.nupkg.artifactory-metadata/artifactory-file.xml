@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Runtime.Serialization.Primitives.4.1.1.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Runtime.Serialization.Primitives.4.1.1.nupkg</name>
+  <created>1578432221498</created>
+  <lastModified>1544742028000</lastModified>
+  <size>222353</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432221502</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9ceb5c78dfd5301d6ffa04dad4c74006bbdd3d37</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f90c3dd973e30760e96fe160fc3490c1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f34074e68c496cf2c6ab6a4639297a36566f8a7b57f40d423699dad9a3745910</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

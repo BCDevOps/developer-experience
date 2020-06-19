@@ -1,0 +1,16 @@
+{
+  "name" : "@babel/helper-plugin-utils",
+  "description" : "General utilities for plugins to use",
+  "version" : "7.0.0",
+  "author" : "Logan Smyth <loganfsmyth@gmail.com>",
+  "homepage" : "https://babeljs.io/",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-helper-plugin-utils",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0.tgz",
+    "shasum" : "bbb3fbee98661c569034237cc03967ba99b4f250"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

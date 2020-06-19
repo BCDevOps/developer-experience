@@ -1,0 +1,28 @@
+{
+  "name" : "@babel/plugin-syntax-class-properties",
+  "description" : "Allow parsing of class properties",
+  "version" : "7.8.3",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-class-properties",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/plugin-syntax-class-properties/-/plugin-syntax-class-properties-7.8.3.tgz",
+    "shasum" : "6cb933a8872c8d359bfde69bbeaae5162fd1e8f7"
+  },
+  "dependencies" : {
+    "@babel/helper-plugin-utils" : "^7.8.3"
+  },
+  "devDependencies" : {
+    "@babel/core" : "^7.8.3"
+  },
+  "peerDependencies" : {
+    "@babel/core" : "^7.0.0-0"
+  },
+  "keywords" : [ "babel-plugin" ],
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "a7620bd266ae1345975767bbc7abf09034437017"
+}

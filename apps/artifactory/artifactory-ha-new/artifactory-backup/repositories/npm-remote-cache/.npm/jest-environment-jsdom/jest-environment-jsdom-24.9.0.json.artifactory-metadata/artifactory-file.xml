@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-environment-jsdom/jest-environment-jsdom-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-environment-jsdom-24.9.0.json</name>
+  <created>1576003093655</created>
+  <lastModified>1576003093635</lastModified>
+  <size>968</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003093655</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>70334eadc7b3c5a14d873104809aeb75c387c219</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b416d8be4242404b9107ea953e1a8605</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0b6aa7f2d31e4fd0624fc48dd4d6e99a9ff790cfbaa6bb35d5ba84e8ce419e72</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

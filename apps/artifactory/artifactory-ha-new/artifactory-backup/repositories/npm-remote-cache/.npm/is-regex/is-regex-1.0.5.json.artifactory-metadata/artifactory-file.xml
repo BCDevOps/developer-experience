@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-regex/is-regex-1.0.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-regex-1.0.5.json</name>
+  <created>1585853569397</created>
+  <lastModified>1585853569360</lastModified>
+  <size>2179</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853569397</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>8f3cc3fc9bb0c579113dc11362d0b155b7573892</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6f35e32c483991fc3e4b6c4bf809538c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4f885250ff16d13a802c397f02bb7101dc869ddd434f5d26793d363ead9658bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

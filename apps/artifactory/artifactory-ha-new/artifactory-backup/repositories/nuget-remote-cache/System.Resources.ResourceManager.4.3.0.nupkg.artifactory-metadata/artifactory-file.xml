@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Resources.ResourceManager.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Resources.ResourceManager.4.3.0.nupkg</name>
+  <created>1578432239187</created>
+  <lastModified>1544738748000</lastModified>
+  <size>85908</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432239187</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>117f15b13fe85a25af2d8cdf854bd249b138b166</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>76c34e21ab907c1931dbb9108514112f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89d88e0fddf16dbadbc304a70f898e440f51622fc3fd4e3c79152c9ff5a7586a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

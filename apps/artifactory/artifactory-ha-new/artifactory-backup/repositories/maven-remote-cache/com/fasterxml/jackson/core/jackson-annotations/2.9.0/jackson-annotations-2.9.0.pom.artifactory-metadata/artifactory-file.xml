@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jackson-annotations-2.9.0.pom</name>
+  <created>1576861392489</created>
+  <lastModified>1501386820000</lastModified>
+  <size>1941</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861392490</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>1ef050f2a8b27be34031b10c2e3e068767851e8d</original>
+          <actual>1ef050f2a8b27be34031b10c2e3e068767851e8d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>2c84710178bf2aa3302b526e6d01286e</original>
+          <actual>2c84710178bf2aa3302b526e6d01286e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>edeb9d9bfca726b441bfae09b69d94b5db99cd5a9da5f4a061b90e72b640905c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

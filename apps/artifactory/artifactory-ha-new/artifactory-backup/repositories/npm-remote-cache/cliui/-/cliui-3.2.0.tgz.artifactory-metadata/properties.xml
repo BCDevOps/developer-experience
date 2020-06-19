@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3a83794ba283c15042e429b11802766d"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>easily create complex multi-column command-line-interfaces</npm.description>
+  <npm.keywords>["cli","command-line","layout","design","console","wrap","table"]</npm.keywords>
+  <npm.name>cliui</npm.name>
+  <npm.version>3.2.0</npm.version>
+</properties>

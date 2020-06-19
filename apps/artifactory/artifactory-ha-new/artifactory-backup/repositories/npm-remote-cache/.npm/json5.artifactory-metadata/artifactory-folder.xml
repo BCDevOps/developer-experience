@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/json5</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>json5</name>
+  <created>1576003395671</created>
+  <lastModified>1576003395671</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003395671</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

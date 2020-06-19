@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f619aa49022ab8775bc27453b90b6849"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.includes` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, includes"</npm.keywords>
+  <npm.name>lodash.includes</npm.name>
+  <npm.version>4.3.0</npm.version>
+</properties>

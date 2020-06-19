@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D64D91426F0DE1</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.description>NConsole is a .NET library to parse command line arguments and execute commands.</nuget.description>
+  <nuget.digest>1R2v0jsXI7JzshWv9XX8FVEWplrDKkWF875OsYVuXAIggO19LgmMBjawxuMs7nfZvc+moeKujSnKPUJ+lv7iZg==</nuget.digest>
+  <nuget.id>NConsole</nuget.id>
+  <nuget.licenseUrl>https://github.com/rsuter/NConsole/blob/master/LICENSE.md</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>https://github.com/rsuter/NConsole</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>3.9.6519.30868</nuget.version>
+</properties>

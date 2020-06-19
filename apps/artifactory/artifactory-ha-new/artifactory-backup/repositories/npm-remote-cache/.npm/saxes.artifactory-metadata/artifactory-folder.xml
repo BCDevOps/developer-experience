@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/saxes</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>saxes</name>
+  <created>1585853532822</created>
+  <lastModified>1585853532822</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853532822</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

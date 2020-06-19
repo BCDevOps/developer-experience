@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot/2.1.9.RELEASE/spring-boot-2.1.9.RELEASE.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-2.1.9.RELEASE.pom</name>
+  <created>1576861383193</created>
+  <lastModified>1570033449000</lastModified>
+  <size>14158</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861383194</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>d3dd1b63b87db7bc2a2314a3853a9dee0b1f69dd</original>
+          <actual>d3dd1b63b87db7bc2a2314a3853a9dee0b1f69dd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>b9c9163d14105e4eed6df20ceb761f28</original>
+          <actual>b9c9163d14105e4eed6df20ceb761f28</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89fc032b1e6c04ae064ba62b35d47f395f3be181bcde73da6e11099c5f0b6805</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

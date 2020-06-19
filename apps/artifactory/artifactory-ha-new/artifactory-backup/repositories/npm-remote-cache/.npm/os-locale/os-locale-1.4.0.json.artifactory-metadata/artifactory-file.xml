@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/os-locale/os-locale-1.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>os-locale-1.4.0.json</name>
+  <created>1576003436267</created>
+  <lastModified>1576003436247</lastModified>
+  <size>874</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003436268</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>32ab1452c87daaf50b39e95ae48584007b4c9524</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>03f0e1fca65e87d6591efbdc49b5c4a7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>375202d8a1283f20711136a03d1157e068e333584730854b76eb4f3b0dedf5fa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

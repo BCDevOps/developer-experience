@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8f27701be0f4d4da9534227663ae61ed"</artifactory.internal.etag>
+  <artifactory.licenses>(WTFPL OR MIT)</artifactory.licenses>
+  <npm.description>tests whether one path is inside another path</npm.description>
+  <npm.keywords>["path","directory","folder","inside","relative"]</npm.keywords>
+  <npm.name>path-is-inside</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D7403113350CE3</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Primitives:3.0.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Primitives:3.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Abstractions of files and directories.
+Commonly used types:
+Microsoft.Extensions.FileProviders.IDirectoryContents
+Microsoft.Extensions.FileProviders.IFileInfo
+Microsoft.Extensions.FileProviders.IFileProvider</nuget.description>
+  <nuget.digest>IbKLzW/9IdPMv8Um9vGlx/vXQoTxgjaTZdrEHmrZemAbsAtE1t7/uJ7jOSD6TBDndLylbOGCbCd22rv5WhV3KA==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.FileProviders.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>files filesystem</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

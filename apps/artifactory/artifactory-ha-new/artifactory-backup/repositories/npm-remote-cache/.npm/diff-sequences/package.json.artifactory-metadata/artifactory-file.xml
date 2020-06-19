@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/diff-sequences/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003403373</created>
+  <lastModified>1585823357000</lastModified>
+  <size>382094</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464341795</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>966a2b53d563c2b8af8029566ab31c0a604ba31c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8c2d4c3b859ce168ec2fcbc8a99c89b6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8a86458d1d8a05f2a6eb4ee796b56ef88a0c9a305ac94b14ee337f0ab9b34e60</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

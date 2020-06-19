@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6371dfd1789ea34e501399790364f1fc"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get xdg base directory paths</npm.description>
+  <npm.keywords>["xdg","base","directory","basedir","path","data","config","cache","linux","unix","spec"]</npm.keywords>
+  <npm.name>xdg-basedir</npm.name>
+  <npm.version>4.0.0</npm.version>
+</properties>

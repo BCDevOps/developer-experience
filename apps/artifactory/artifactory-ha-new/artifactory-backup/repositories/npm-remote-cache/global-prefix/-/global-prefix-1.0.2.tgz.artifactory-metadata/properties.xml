@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"64243ace2f40f50898bfd239836a1873"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the npm global path prefix.</npm.description>
+  <npm.keywords>["global","module","modules","npm","path","prefix","resolve"]</npm.keywords>
+  <npm.name>global-prefix</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

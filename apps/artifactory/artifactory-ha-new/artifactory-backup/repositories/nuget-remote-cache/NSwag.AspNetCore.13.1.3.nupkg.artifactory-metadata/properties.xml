@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74D4ADB7367B0</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:1.0.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:1.0.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:1.0.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Formatters.Json:1.0.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Formatters.Json:1.0.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Formatters.Json:1.0.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.StaticFiles:1.0.2:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.StaticFiles:1.0.2:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.StaticFiles:1.0.2:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.ApiDescription.Server:0.3.0-preview7.19365.7:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.ApiDescription.Server:0.3.0-preview7.19365.7:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.ApiDescription.Server:0.3.0-preview7.19365.7:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Embedded:1.0.1:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Embedded:1.0.1:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Embedded:1.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>NSwag.Annotations:13.1.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NSwag.Annotations:13.1.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>NSwag.Annotations:13.1.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>NSwag.Core:13.1.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Generation.AspNetCore:13.1.3:.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>NSwag.Generation.AspNetCore:13.1.3:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>NSwag.Generation.AspNetCore:13.1.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Xml.XPath.XDocument:4.0.1:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Xml.XPath.XDocument:4.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.description>NSwag: The OpenAPI/Swagger API toolchain for .NET and TypeScript</nuget.description>
+  <nuget.digest>QRLTrfnaUElJjb4Mw+L4uCEJm+gHRzpA3dpdQZC9/LM5nBtdaa9SPXOYR9muIxZ0eAZXAB63gofP+2UvvrXxeA==</nuget.digest>
+  <nuget.iconUrl>https://raw.githubusercontent.com/RicoSuter/NSwag/master/assets/NuGetIcon.png</nuget.iconUrl>
+  <nuget.id>NSwag.AspNetCore</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>https://github.com/RicoSuter/NSwag</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>OpenAPI Swagger AspNetCore Documentation CodeGen TypeScript WebApi AspNet</nuget.tags>
+  <nuget.version>13.1.3</nuget.version>
+</properties>

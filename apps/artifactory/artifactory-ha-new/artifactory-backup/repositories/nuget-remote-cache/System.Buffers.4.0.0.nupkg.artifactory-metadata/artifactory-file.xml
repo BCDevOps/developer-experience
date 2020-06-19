@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Buffers.4.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Buffers.4.0.0.nupkg</name>
+  <created>1578496750465</created>
+  <lastModified>1544742010000</lastModified>
+  <size>35190</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496750466</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f678cf48ff25adcd4549603b24b8a2888df0f478</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d4e296ca45b8c78b0746ffe661b957b7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f985329a8c92d0efb1572176f8b88075994cc30f27a1f3cde236bdca562a468f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

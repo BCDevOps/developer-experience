@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pytest-docker.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pytest-docker.html</name>
+  <created>1574023486272</created>
+  <lastModified>1582154361024</lastModified>
+  <size>6424</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154361075</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cac8873d082fde008cb6c9b1cbd734ed2d13a3ec</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e8554e5e7078acc774d16569e0688397</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6c057c453740698410c058fd905abf28b487825397c9dbea7a1c141aaf112c4d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

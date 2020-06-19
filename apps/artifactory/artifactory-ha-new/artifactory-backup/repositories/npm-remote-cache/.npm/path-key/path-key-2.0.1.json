@@ -1,0 +1,31 @@
+{
+  "name" : "path-key",
+  "description" : "Get the PATH environment variable key cross-platform",
+  "version" : "2.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/path-key",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/path-key/-/path-key-2.0.1.tgz",
+    "shasum" : "411cadb574c5a140d3a4b1910d40d80cc9f40b40"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "path", "key", "environment", "env", "variable", "var", "get", "cross-platform", "windows" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

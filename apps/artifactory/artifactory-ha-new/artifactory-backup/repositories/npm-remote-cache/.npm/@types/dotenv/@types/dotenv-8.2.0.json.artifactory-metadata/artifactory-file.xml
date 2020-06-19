@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/dotenv/@types/dotenv-8.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>dotenv-8.2.0.json</name>
+  <created>1576003079456</created>
+  <lastModified>1576003079415</lastModified>
+  <size>559</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003079456</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d020c02256a64bf2cae6a68e8b0067487b56bb21</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3518471c75a1d196dcb94284b21061b3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13962f97766f3542b54c9afb858eed9385399b323555e3af8f8e7255f166c715</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>exec-sh/-/exec-sh-0.3.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>exec-sh-0.3.4.tgz</name>
+  <created>1576008547293</created>
+  <lastModified>1573135441000</lastModified>
+  <size>7959</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008547294</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3a018ceb526cc6f6df2bb504b2bfe8e3a4934ec5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c31e5a1c29b7a6b2fd078356cd3a9847</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>92e32468dd83bea7daf3e30d0f7d1a88ef7b41d7c98600590f1aa80fd8bad96a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

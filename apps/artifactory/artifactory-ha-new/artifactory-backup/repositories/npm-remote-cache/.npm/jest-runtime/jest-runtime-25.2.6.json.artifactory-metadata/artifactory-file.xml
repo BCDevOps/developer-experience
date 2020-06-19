@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-runtime/jest-runtime-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-runtime-25.2.6.json</name>
+  <created>1585871243981</created>
+  <lastModified>1585871243894</lastModified>
+  <size>1859</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871243982</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>64feb76e5a373a9d4b5000448e06f690be1fa012</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b15b14e7c0a8ae359ebc6e5a307634d6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d20417e33ff10f760e07fe53d32e7b41b1dd883836e8e01088f8cd6bdb9c7f74</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

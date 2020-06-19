@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d755ccafac3df1438f71227bd363b260"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>turn node's process.version into something useful.</npm.description>
+  <npm.keywords>["process.version","node version","version parse"]</npm.keywords>
+  <npm.name>parse-node-version</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

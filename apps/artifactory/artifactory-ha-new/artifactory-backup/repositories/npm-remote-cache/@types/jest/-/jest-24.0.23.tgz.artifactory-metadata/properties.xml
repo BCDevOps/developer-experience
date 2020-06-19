@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e9d5b54ce6a576d552cd5641fa76ef8d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for jest</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/jest</npm.name>
+  <npm.version>24.0.23</npm.version>
+</properties>

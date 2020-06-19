@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ws/ws-7.2.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ws-7.2.3.json</name>
+  <created>1585853533774</created>
+  <lastModified>1585853533719</lastModified>
+  <size>1924</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853533775</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d873727d2f74aeb48ae663b2d8aa52758380ca27</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4750167e516c35331b0bcc468f757f53</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7dd70eb1eef3d3b6a14385f0968f81ef1b17b62104aaef99866c4b66863c83f6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

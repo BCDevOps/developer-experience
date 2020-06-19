@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>bs-logger/-/bs-logger-0.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bs-logger-0.2.6.tgz</name>
+  <created>1576008547674</created>
+  <lastModified>1541831410000</lastModified>
+  <size>13280</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008547675</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>eb7d365307a72cf974cc6cda76b68354ad336bd8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9467be06f3370e138bb79a232e5e1684</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e30c273494f18ca79fe933119288d9e01aadb915293559431a06b732be171ad3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

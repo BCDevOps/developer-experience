@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/ipython-sql.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ipython-sql.html</name>
+  <created>1581102476317</created>
+  <lastModified>1581103118794</lastModified>
+  <size>9176</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581103119012</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>52bba2884bcb01c62dc946a61cb58a9309d3315f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>69da7d4128a63e5e084011debd109d20</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5c38263bd37d87e537e5bb2ad6beb0c1e3d636bfa3c5731550fa31f5ac58e0fe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

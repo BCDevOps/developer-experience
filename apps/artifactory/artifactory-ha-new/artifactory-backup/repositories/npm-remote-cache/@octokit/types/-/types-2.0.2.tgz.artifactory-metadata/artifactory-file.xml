@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@octokit/types/-/types-2.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>types-2.0.2.tgz</name>
+  <created>1576003352810</created>
+  <lastModified>1574202513000</lastModified>
+  <size>99700</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003352810</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0888497f5a664e28b0449731d5e88e19b2a74f90</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fa7186a5a0749fe7110ee71366da311b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1a382c295e72364ab6ce064b1d4f8ca719a6a0faaa5b08265e65f691d2eb4c9c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

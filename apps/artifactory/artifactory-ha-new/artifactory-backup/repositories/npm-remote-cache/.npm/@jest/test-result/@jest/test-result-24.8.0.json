@@ -1,0 +1,30 @@
+{
+  "name" : "@jest/test-result",
+  "version" : "24.8.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-test-result"
+  },
+  "engines" : {
+    "node" : ">= 6"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@jest/test-result/-/test-result-24.8.0.tgz",
+    "shasum" : "7675d0aaf9d2484caa65e048d9b467d160f8e9d3"
+  },
+  "dependencies" : {
+    "@jest/console" : "^24.7.1",
+    "@jest/types" : "^24.8.0",
+    "@types/istanbul-lib-coverage" : "^2.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "845728f24b3ef41e450595c384e9b5c9fdf248a4",
+  "types" : "build/index.d.ts"
+}

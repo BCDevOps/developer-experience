@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>append-transform/-</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>-</name>
+  <created>1579828433677</created>
+  <lastModified>1579828433677</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828433677</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

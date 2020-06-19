@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3d907f35a6935339fc9ead4933e9f768"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>jest-resolve-dependencies</npm.name>
+  <npm.version>25.3.0</npm.version>
+</properties>

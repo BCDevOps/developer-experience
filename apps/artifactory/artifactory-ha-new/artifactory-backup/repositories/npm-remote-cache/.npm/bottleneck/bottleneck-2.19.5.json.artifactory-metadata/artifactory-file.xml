@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bottleneck/bottleneck-2.19.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bottleneck-2.19.5.json</name>
+  <created>1576008552422</created>
+  <lastModified>1576008552203</lastModified>
+  <size>1509</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008552473</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>ec83a065fcbe1e74452ad8da573f4ef9ee3a0c89</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b01cc58e513b4838ef6b986fc5873e5f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ca2dc8443739bfd1f8d389b8c0f644e1f5f61b4deadb25741e20d08e14924e8c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

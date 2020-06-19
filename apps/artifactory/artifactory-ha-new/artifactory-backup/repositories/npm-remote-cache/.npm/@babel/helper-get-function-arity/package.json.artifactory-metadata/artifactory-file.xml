@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-get-function-arity/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003647401</created>
+  <lastModified>1578951714000</lastModified>
+  <size>68139</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464322014</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5a04018e1405865b3859fb712989cf49932e2d0c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>26ff79e2b4cbcb841901463977fbd210</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df2d95eed586801e67bdfaf391d85143b36ee8c1cc445d0bbce7d81022e92045</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

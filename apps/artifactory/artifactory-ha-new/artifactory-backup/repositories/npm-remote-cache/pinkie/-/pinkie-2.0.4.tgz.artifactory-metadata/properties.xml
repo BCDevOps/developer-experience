@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"41b57c993d8571d9211d5b6c1c75ba7b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>itty bitty little widdle twinkie pinkie es2015 promise implementation</npm.description>
+  <npm.keywords>["promise","promises","es2015","es6"]</npm.keywords>
+  <npm.name>pinkie</npm.name>
+  <npm.version>2.0.4</npm.version>
+</properties>

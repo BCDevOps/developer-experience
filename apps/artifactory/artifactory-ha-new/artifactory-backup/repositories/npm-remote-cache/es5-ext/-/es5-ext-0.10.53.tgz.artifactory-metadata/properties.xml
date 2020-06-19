@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fae9645d4e605a9cda5974baa7dc1733"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>ecmascript extensions and shims</npm.description>
+  <npm.keywords>["ecmascript","ecmascript5","ecmascript6","es5","es6","extensions","ext","addons","extras","harmony","javascript","polyfill","shim","util","utils","utilities"]</npm.keywords>
+  <npm.name>es5-ext</npm.name>
+  <npm.version>0.10.53</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>log4j-api-2.11.2.pom</name>
+  <created>1576861393879</created>
+  <lastModified>1549415504000</lastModified>
+  <size>13141</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861393879</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>95211497acc124aa30fa62d252fbb519a0a23a5a</original>
+          <actual>95211497acc124aa30fa62d252fbb519a0a23a5a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>2b2ca82b4b2c2336c71cc70efdf31936</original>
+          <actual>2b2ca82b4b2c2336c71cc70efdf31936</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a8d00d185bf1b236c18f98331de8c33f12fd477c4f1552f575616576e199024c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

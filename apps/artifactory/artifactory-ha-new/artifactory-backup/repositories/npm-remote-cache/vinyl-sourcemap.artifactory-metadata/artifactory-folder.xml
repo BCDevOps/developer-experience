@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>vinyl-sourcemap</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>vinyl-sourcemap</name>
+  <created>1576003107119</created>
+  <lastModified>1576003107119</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003107119</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

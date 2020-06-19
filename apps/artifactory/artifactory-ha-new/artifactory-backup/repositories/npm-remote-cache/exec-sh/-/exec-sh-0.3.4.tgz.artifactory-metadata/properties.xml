@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c31e5a1c29b7a6b2fd078356cd3a9847"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>execute shell command forwarding all stdio.</npm.description>
+  <npm.keywords>["exec","spawn","terminal","console","shell","command","child_process"]</npm.keywords>
+  <npm.name>exec-sh</npm.name>
+  <npm.version>0.3.4</npm.version>
+</properties>

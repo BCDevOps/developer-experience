@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9d136901e48237b9e6677bf3e415fc0b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node.js path.parse() ponyfill</npm.description>
+  <npm.keywords>["path","paths","file","dir","parse","built-in","util","utils","core","ponyfill","polyfill","shim"]</npm.keywords>
+  <npm.name>path-parse</npm.name>
+  <npm.version>1.0.6</npm.version>
+</properties>

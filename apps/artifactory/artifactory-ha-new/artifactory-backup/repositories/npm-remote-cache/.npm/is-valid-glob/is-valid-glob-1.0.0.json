@@ -1,0 +1,42 @@
+{
+  "name" : "is-valid-glob",
+  "description" : "Return true if a value is a valid glob pattern or patterns.",
+  "version" : "1.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/is-valid-glob",
+  "repository" : "jonschlinkert/is-valid-glob",
+  "contributors" : [ "contra (http://contra.io)", "Jon Schlinkert (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/is-valid-glob/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-valid-glob/-/is-valid-glob-1.0.0.tgz",
+    "shasum" : "29bf3eff701be2d4d315dbacc39bc39fe8f601aa"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.12",
+    "mocha" : "^3.4.2"
+  },
+  "keywords" : [ "array", "check", "glob", "is", "match", "pattern", "patterns", "read", "test", "valid", "validate" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "is-glob", "micromatch", "vinyl-fs", "vinyl" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

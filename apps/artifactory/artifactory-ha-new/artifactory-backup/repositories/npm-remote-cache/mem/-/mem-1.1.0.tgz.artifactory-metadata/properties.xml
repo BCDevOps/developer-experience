@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5ba8e32c895604a70a04fbab761989e8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>memoize functions - an optimization used to speed up consecutive function calls by caching the result of calls with identical input</npm.description>
+  <npm.keywords>["memoize","function","mem","memoization","cache","caching","optimize","performance","ttl","expire","promise"]</npm.keywords>
+  <npm.name>mem</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

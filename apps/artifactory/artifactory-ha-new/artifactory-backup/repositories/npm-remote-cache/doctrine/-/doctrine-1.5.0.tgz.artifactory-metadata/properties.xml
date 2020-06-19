@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8628b3ac690236d809939b9c3ec2531c"</artifactory.internal.etag>
+  <npm.description>jsdoc parser</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>doctrine</npm.name>
+  <npm.version>1.5.0</npm.version>
+</properties>

@@ -1,0 +1,29 @@
+{
+  "name" : "shebang-regex",
+  "description" : "Regular expression for matching a shebang line",
+  "version" : "3.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/shebang-regex",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/shebang-regex/-/shebang-regex-3.0.0.tgz",
+    "shasum" : "ae16f1644d873ecad843b0307b143362d4c42172"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "regex", "regexp", "shebang", "match", "test", "line" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ff8bea8370dc18a5eb7a6d5ac1c4bd15"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>throttle the parallelism of an asynchronous (promise returning) function / functions</npm.description>
+  <npm.keywords>["promise","aplus","then","throttle","concurrency","parallelism","limit"]</npm.keywords>
+  <npm.name>throat</npm.name>
+  <npm.version>4.1.0</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/propagate/propagate-2.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>propagate-2.0.1.json</name>
+  <created>1583874219575</created>
+  <lastModified>1583874219403</lastModified>
+  <size>1615</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1583874219576</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>40b2c5726ee13a2d5ba88079256be660a76a9396</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>af37f268580bebf13bd6006fafe6b0c0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>efd53f073b6c3348980d4587167a627f8180a6a72dcc141ecb44a30870de5724</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

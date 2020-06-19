@@ -1,0 +1,33 @@
+{
+  "name" : "read-pkg",
+  "description" : "Read a package.json file",
+  "version" : "3.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/read-pkg",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/read-pkg/-/read-pkg-3.0.0.tgz",
+    "shasum" : "9cbc686978fee65d16c00e2b19c237fcf6e38389"
+  },
+  "dependencies" : {
+    "load-json-file" : "^4.0.0",
+    "normalize-package-data" : "^2.3.2",
+    "path-type" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "json", "read", "parse", "file", "fs", "graceful", "load", "pkg", "package", "normalize" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

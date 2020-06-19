@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/nconf/@types</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@types</name>
+  <created>1576003078931</created>
+  <lastModified>1576003078931</lastModified>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003078931</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

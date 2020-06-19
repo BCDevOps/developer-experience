@@ -1,0 +1,22 @@
+{
+  "name" : "bcrypt-pbkdf",
+  "description" : "Port of the OpenBSD bcrypt_pbkdf function to pure JS",
+  "version" : "1.0.2",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/joyent/node-bcrypt-pbkdf.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz",
+    "shasum" : "a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
+  },
+  "dependencies" : {
+    "tweetnacl" : "^0.14.3"
+  },
+  "devDependencies" : {
+  },
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+  }
+}

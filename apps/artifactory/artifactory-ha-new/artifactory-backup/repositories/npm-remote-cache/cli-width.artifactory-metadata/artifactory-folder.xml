@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>cli-width</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>cli-width</name>
+  <created>1576003503866</created>
+  <lastModified>1576003503866</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003503866</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

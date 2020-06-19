@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d96ffb030eff598e8f3eb48b6257bdaf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>very powerful cli arguments parser. native port of argparse - python's options parsing library</npm.description>
+  <npm.keywords>["cli","parser","argparse","option","args"]</npm.keywords>
+  <npm.name>argparse</npm.name>
+  <npm.version>1.0.10</npm.version>
+</properties>

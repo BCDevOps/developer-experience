@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/har-validator/har-validator-5.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>har-validator-5.1.3.json</name>
+  <created>1576003423273</created>
+  <lastModified>1576003422776</lastModified>
+  <size>1361</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003423275</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>eb9cb8d5ad1ac9ff1b3b0e47884a176fb88cba3b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>113d4704e7e8500528b8c163d4775708</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0bf89032a2592b0ea4b5ce6831056312d1ca17c920d96dc95aace2ce3efe6535</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Newtonsoft.Json.Bson.1.0.1.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Newtonsoft.Json.Bson.1.0.1.nupkg</name>
+  <created>1578497251338</created>
+  <lastModified>1539573727000</lastModified>
+  <size>94320</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578497251339</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d4040a5816c2f519c049d9ad58be4b35fe7ea7d0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8b4bb36a1f90072d356ca124d1e7a4dd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aa87c816a5620ec741384fd7d08bf37c6524952ad42da1fc328650f98adc30e4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

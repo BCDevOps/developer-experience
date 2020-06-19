@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/js-tokens</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>js-tokens</name>
+  <created>1576003480181</created>
+  <lastModified>1576003480181</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003480181</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

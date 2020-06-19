@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b3e007f638ad17548031f6b22f4da75d"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>transform-runtime</npm.name>
+  <npm.version>0.0.0</npm.version>
+</properties>

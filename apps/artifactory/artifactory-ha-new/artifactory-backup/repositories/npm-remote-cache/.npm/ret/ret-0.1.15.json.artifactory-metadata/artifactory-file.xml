@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ret/ret-0.1.15.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ret-0.1.15.json</name>
+  <created>1576003651119</created>
+  <lastModified>1576003651081</lastModified>
+  <size>854</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003651119</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>df6a72d1dcf65091b8581df5255d480f336c0360</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0a1d49fdd7a3daa2e773d59f0648fc25</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b4ab0e2c10b856b8b5a4aea9b63bec907687a5711745557e1a994db758e27c74</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

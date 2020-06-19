@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>typescript-eslint-parser</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>typescript-eslint-parser</name>
+  <created>1576003067435</created>
+  <lastModified>1576003067435</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003067435</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

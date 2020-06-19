@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>c2/a6/b17c848771f96ad039ad9e3ea275e842a16c39c4f3eb9f60ee330b20b6c2/flask_restplus-0.13.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flask_restplus-0.13.0-py2.py3-none-any.whl</name>
+  <created>1574023039472</created>
+  <lastModified>1565646703000</lastModified>
+  <size>2455767</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023039473</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4eeff7a096c42a8796b82c012762ce13d27204cd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7e5be9b9267f8c578709f41cc21b790f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a15d251923a8feb09a5d805c2f4d188555910a42c64d58f7dd281b8cac095f1b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

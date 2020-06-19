@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-try/p-try-2.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-try-2.2.0.json</name>
+  <created>1576008069774</created>
+  <lastModified>1576008069280</lastModified>
+  <size>848</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069775</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>cb9b82ad8293286253cabc21ee867561cd9ddd95</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>84d2241dd427379376cb7189676c0303</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>31addae99d1a34603c9fae6483a1eed712a52c88db43102fed884e66aa426117</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

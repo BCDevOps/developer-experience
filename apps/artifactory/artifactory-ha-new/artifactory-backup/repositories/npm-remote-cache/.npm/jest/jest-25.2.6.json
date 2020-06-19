@@ -1,0 +1,38 @@
+{
+  "name" : "jest",
+  "description" : "Delightful JavaScript Testing.",
+  "version" : "25.2.6",
+  "homepage" : "https://jestjs.io/",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/jest.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest/-/jest-25.2.6.tgz",
+    "shasum" : "da597f3563dceba12913965ea398fe7f8804fb12"
+  },
+  "dependencies" : {
+    "@jest/core" : "^25.2.6",
+    "import-local" : "^3.0.2",
+    "jest-cli" : "^25.2.6"
+  },
+  "keywords" : [ "ava", "babel", "coverage", "easy", "expect", "facebook", "immersive", "instant", "jasmine", "jest", "jsdom", "mocha", "mocking", "painless", "qunit", "runner", "sandboxed", "snapshot", "tap", "tape", "test", "testing", "typescript", "watch" ],
+  "license" : "MIT",
+  "bin" : "./bin/jest.js",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/jest.d.ts"
+}

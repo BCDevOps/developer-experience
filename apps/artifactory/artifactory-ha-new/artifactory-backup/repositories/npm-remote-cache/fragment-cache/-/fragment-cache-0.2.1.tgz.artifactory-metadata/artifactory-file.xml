@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>fragment-cache/-/fragment-cache-0.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fragment-cache-0.2.1.tgz</name>
+  <created>1576003474663</created>
+  <lastModified>1527383518000</lastModified>
+  <size>3345</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003474663</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4290fad27f13e89be7f33799c6bc5a0abfff0d19</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>14306688d4947a100f6cce5b00d07afd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e63cac91ed9159f180a4856278525147e3f037f19638784410e5ef8b4b759284</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

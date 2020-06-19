@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/typescript/typescript-3.7.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>typescript-3.7.3.json</name>
+  <created>1576008059272</created>
+  <lastModified>1576008058721</lastModified>
+  <size>4188</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a5642c9a2d0dbc4018355cb6e38cacaa46c20602</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e21c97d7361a7ee79ea4843ae0b160a1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df61ad3c32c69ce7b64a094e57229147665e7de28d8968fb6201b49b1d92c892</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

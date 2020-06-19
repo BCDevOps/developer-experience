@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jsonassert-1.5.0.jar</name>
+  <created>1576861453222</created>
+  <lastModified>1489962622000</lastModified>
+  <size>30299</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861453223</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3</original>
+          <actual>6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>9139a7742b3a752179d233f551b145ae</original>
+          <actual>9139a7742b3a752179d233f551b145ae</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a310bc79c3f4744e2b2e993702fcebaf3696fec0063643ffdc6b49a8fb03ef39</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

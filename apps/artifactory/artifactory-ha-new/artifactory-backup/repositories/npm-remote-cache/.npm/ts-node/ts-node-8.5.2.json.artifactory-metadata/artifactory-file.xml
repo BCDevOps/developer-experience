@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ts-node/ts-node-8.5.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ts-node-8.5.2.json</name>
+  <created>1576003071320</created>
+  <lastModified>1576003071003</lastModified>
+  <size>2249</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003071320</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fdee938db2cddae2dd89187f2841bc12fb720df5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e95f80a62be56b899279b8359bbc0fe7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a6e142899c0330a98bbf6c3e50ee5d87afdaef1eda10ca9d384d78cf2ae90668</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

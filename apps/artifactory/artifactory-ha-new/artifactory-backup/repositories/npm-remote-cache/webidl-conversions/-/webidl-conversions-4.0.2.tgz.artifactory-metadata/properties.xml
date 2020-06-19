@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0d672e5806f204c49d25cefa60d9c748"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>implements the webidl algorithms for converting to and from javascript values</npm.description>
+  <npm.keywords>["webidl","web","types"]</npm.keywords>
+  <npm.name>webidl-conversions</npm.name>
+  <npm.version>4.0.2</npm.version>
+</properties>

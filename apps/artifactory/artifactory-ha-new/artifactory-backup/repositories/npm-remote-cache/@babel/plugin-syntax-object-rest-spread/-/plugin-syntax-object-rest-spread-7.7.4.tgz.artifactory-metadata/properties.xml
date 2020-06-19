@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"edc0bd5769e38aebb74de994beeb772a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>allow parsing of object rest/spread</npm.description>
+  <npm.keywords>["babel-plugin"]</npm.keywords>
+  <npm.name>@babel/plugin-syntax-object-rest-spread</npm.name>
+  <npm.version>7.7.4</npm.version>
+</properties>

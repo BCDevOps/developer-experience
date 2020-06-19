@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>classmate-1.4.0.jar</name>
+  <created>1576861411221</created>
+  <lastModified>1522200952000</lastModified>
+  <size>66540</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861411221</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>291658ac2ce2476256c7115943652c0accb5c857</original>
+          <actual>291658ac2ce2476256c7115943652c0accb5c857</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>85716d3adddffaaacb5e316be6681bf0</original>
+          <actual>85716d3adddffaaacb5e316be6681bf0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2829acc59abf4aa6b72579697a0391c0fc69df7772ae59c58e0237f909cd6803</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

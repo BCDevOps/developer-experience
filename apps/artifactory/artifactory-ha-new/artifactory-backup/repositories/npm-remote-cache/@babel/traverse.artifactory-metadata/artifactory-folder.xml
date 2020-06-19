@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/traverse</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>traverse</name>
+  <created>1576008070678</created>
+  <lastModified>1576008070678</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008070678</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fac2afc3cbe5e133d7a5c34ec3f862ac"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>run a function exactly one time</npm.description>
+  <npm.keywords>["once","function","one","single"]</npm.keywords>
+  <npm.name>once</npm.name>
+  <npm.version>1.4.0</npm.version>
+</properties>

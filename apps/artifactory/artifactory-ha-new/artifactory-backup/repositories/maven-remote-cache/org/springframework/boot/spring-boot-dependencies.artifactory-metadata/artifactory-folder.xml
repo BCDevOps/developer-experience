@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-dependencies</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>spring-boot-dependencies</name>
+  <created>1575495231680</created>
+  <lastModified>1575495231680</lastModified>
+  <additionalInfo>
+    <createdBy>jguertin@idir</createdBy>
+    <modifiedBy>jguertin@idir</modifiedBy>
+    <lastUpdated>1575495231680</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

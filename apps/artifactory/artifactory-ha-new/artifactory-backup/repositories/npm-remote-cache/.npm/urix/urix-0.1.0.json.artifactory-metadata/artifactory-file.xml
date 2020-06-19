@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/urix/urix-0.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>urix-0.1.0.json</name>
+  <created>1576003405278</created>
+  <lastModified>1576003405178</lastModified>
+  <size>644</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003405279</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0ddba311b626a3e6b650e07923b9633c548da545</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c9982230abc2a424ee922303cc1b01a0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>461db6e9e305843ca63501743290cb534b4a3be981af473ef0815c4bac666e6d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

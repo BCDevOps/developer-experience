@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D748D59D27CB9F</artifactory.internal.etag>
+  <nuget.authors>Christian Weiss</nuget.authors>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection.Abstractions:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Hosting.Abstractions:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>OpenTracing:0.12.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Data.SqlClient:4.6.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.description>Adds OpenTracing instrumentation for .NET Core apps that use the `Microsoft.Extensions.*` stack.
+Instrumented components: HttpClient calls, ASP.NET Core, Entity Framework Core and any other library that uses DiagnosticSource events.</nuget.description>
+  <nuget.digest>Hi/1E+iCexBPLhR06NLSaRknHm/GPu7hXC0hCPShszFexxh6K6cG0KyWKDueUa/aSqkAHxxlrfsarC+QvG+fSw==</nuget.digest>
+  <nuget.iconUrl>https://avatars0.githubusercontent.com/u/15482765</nuget.iconUrl>
+  <nuget.id>OpenTracing.Contrib.NetCore</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/opentracing-contrib/csharp-netcore/master/LICENSE</nuget.licenseUrl>
+  <nuget.owners>Christian Weiss</nuget.owners>
+  <nuget.projectUrl>https://github.com/opentracing-contrib/csharp-netcore</nuget.projectUrl>
+  <nuget.releaseNotes>https://github.com/opentracing-contrib/csharp-netcore/releases/tag/0.6.2</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>opentracing distributed-tracing tracing netcore</nuget.tags>
+  <nuget.version>0.6.2</nuget.version>
+</properties>

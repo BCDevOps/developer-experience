@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6d336385e3e57e5583a6ddf9ce72edad"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if a value is an object</npm.description>
+  <npm.keywords>["obj","object","is","check","test","type"]</npm.keywords>
+  <npm.name>is-obj</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

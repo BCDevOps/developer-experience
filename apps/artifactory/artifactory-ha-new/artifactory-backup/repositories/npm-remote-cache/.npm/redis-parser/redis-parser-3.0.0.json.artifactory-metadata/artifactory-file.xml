@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/redis-parser/redis-parser-3.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>redis-parser-3.0.0.json</name>
+  <created>1576003452021</created>
+  <lastModified>1576003451988</lastModified>
+  <size>1569</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003452021</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>95d14f96c237cd3a4922715b8cd0c6d5f506da5d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3a7af1620248e6d0d2c7d36474bd9290</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>466253790dd7110a281392018ccb1602d618eadbd4559b3e5d1908177b493672</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

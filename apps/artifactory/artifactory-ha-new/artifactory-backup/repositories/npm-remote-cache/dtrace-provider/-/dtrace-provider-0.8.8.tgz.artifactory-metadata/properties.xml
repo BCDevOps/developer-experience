@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fd6f74a211ccc05fc23fe0a76b8ef215"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>native dtrace providers for node.js applications</npm.description>
+  <npm.keywords>["dtrace","usdt"]</npm.keywords>
+  <npm.name>dtrace-provider</npm.name>
+  <npm.version>0.8.8</npm.version>
+</properties>

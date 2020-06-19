@@ -1,0 +1,34 @@
+{
+  "name" : "clone",
+  "description" : "deep cloning of objects and arrays",
+  "tags" : [ "clone", "object", "array", "function", "date" ],
+  "version" : "2.1.2",
+  "author" : "Paul Vorbach <paul@vorba.ch> (http://paul.vorba.ch/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/pvorb/node-clone.git"
+  },
+  "contributors" : [ "Blake Miner <miner.blake@gmail.com> (http://www.blakeminer.com/)", "Tian You <axqd001@gmail.com> (http://blog.axqd.net/)", "George Stagas <gstagas@gmail.com> (http://stagas.com/)", "Tobiasz Cudnik <tobiasz.cudnik@gmail.com> (https://github.com/TobiaszCudnik)", "Pavel Lang <langpavel@phpskelet.org> (https://github.com/langpavel)", "Dan MacTough (http://yabfog.com/)", "w1nk (https://github.com/w1nk)", "Hugh Kennedy (http://twitter.com/hughskennedy)", "Dustin Diaz (http://dustindiaz.com)", "Ilya Shaisultanov (https://github.com/diversario)", "Nathan MacInnes <nathan@macinn.es> (http://macinn.es/)", "Benjamin E. Coe <ben@npmjs.com> (https://twitter.com/benjamincoe)", "Nathan Zadoks (https://github.com/nathan7)", "Róbert Oroszi <robert+gh@oroszi.net> (https://github.com/oroce)", "Aurélio A. Heckert (http://softwarelivre.org/aurium)", "Guy Ellis (http://www.guyellisrocks.com/)", "fscherwi (https://fscherwi.github.io)", "rictic (https://github.com/rictic)", "Martin Jurča (https://github.com/jurca)", "Misery Lee <miserylee@foxmail.com> (https://github.com/miserylee)", "Clemens Wolff (https://github.com/c-w)" ],
+  "bugs" : {
+    "url" : "https://github.com/pvorb/node-clone/issues"
+  },
+  "engines" : {
+    "node" : ">=0.8"
+  },
+  "main" : "clone.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/clone/-/clone-2.1.2.tgz",
+    "shasum" : "1b7f4b9f591f1e8f83670401600345a02887435f"
+  },
+  "dependencies" : {
+  },
+  "optionalDependencies" : {
+  },
+  "devDependencies" : {
+    "nodeunit" : "~0.9.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "nodeunit test.js"
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6597596263956</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Primitives:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core response caching middleware abstractions and feature interface definitions.
+
+This package was built from the source code at https://github.com/aspnet/ResponseCaching/tree/9f49398f28d7c1e0dc0305f8080351c413b0f297</nuget.description>
+  <nuget.digest>yWA3CAxpCUkXqiHgcg3zTGOrWxpZysaFPu8AlLVpvNp7LmHskvu9y2W8dGOFHNh+D+K1esAir0GSjG0OKJ8VyA==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.ResponseCaching.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore cache caching</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

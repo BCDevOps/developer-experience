@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/just-debounce/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003398096</created>
+  <lastModified>1527400198000</lastModified>
+  <size>5612</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464346207</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>815afbf13e7b26b546b08fa1619c67e6639173a0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>927c7677f3b4c05fbce227d2c861e341</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1b009022c320d6c3d2cf893705bd4c69d1bd22719a8172b70cfe85457a353b29</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+{
+  "name" : "diagnostics",
+  "description" : "Tools for debugging your node.js modules and event loop",
+  "version" : "1.1.1",
+  "author" : "Arnout Kazemier",
+  "homepage" : "https://github.com/bigpipe/diagnostics",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/bigpipe/diagnostics.git"
+  },
+  "contributors" : [ "Martijn Swaagman (https://github.com/swaagie)", "Jarrett Cruger (https://github.com/jcrugzz)", "Sevastos (https://github.com/sevastos)" ],
+  "bugs" : {
+    "url" : "https://github.com/bigpipe/diagnostics/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/diagnostics/-/diagnostics-1.1.1.tgz",
+    "shasum" : "cab6ac33df70c9d9a727490ae43ac995a769b22a"
+  },
+  "dependencies" : {
+    "colorspace" : "1.1.x",
+    "enabled" : "1.0.x",
+    "kuler" : "1.0.x"
+  },
+  "devDependencies" : {
+    "assume" : "2.1.x",
+    "mocha" : "5.2.x",
+    "pre-commit" : "1.2.x"
+  },
+  "keywords" : [ "debug", "debugger", "debugging", "diagnostic", "diagnostics", "event", "loop", "metrics", "stats" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha --reporter spec --ui bdd test.js"
+  },
+  "browser" : "./browser.js"
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>atob/-/atob-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>atob-2.1.2.tgz</name>
+  <created>1576003456120</created>
+  <lastModified>1534587543000</lastModified>
+  <size>12721</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003456121</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6d9517eb9e030d2436666651e86bd9f6f13533c9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>45eb23f9eb24b3ff24e18466deeaa887</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e52d2ad4b7dc244be956d0c3512b66bb3470c8e0762274494c49a5f7afb3b9da</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

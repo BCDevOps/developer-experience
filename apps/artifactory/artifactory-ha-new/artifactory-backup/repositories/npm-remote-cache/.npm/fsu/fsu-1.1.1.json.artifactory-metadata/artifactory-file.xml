@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fsu/fsu-1.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fsu-1.1.1.json</name>
+  <created>1579828390976</created>
+  <lastModified>1579828390693</lastModified>
+  <size>871</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828390976</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>90ea586d0df73af8f235af8505dd91aeaa0f8eb2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d27288883795fe4cf614a4dd28b556b8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>78d67693e92820960871128396e1b5a374c4ef6a14c5a5057966692121ca9bd6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

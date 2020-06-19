@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-nullish-coalescing-operator/@babel/plugin-syntax-nullish-coalescing-operator-7.8.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-syntax-nullish-coalescing-operator-7.8.3.json</name>
+  <created>1586464320427</created>
+  <lastModified>1586464320376</lastModified>
+  <size>896</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464320428</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>def395692ca0c5053b05c02ecb7c039db62326ce</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>623ce6a840d3b284e64d9134b976d89c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>be12bf92140cd381f4ad7f801b38217ddd9e1391fb8949182bff9e669a0c13a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

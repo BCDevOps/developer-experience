@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"214c8887f4f3082d8eabf58851071703"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fast deep equal</npm.description>
+  <npm.keywords>["fast","equal","deep-equal"]</npm.keywords>
+  <npm.name>fast-deep-equal</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

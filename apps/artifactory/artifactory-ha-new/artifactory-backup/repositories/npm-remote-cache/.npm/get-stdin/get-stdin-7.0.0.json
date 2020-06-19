@@ -1,0 +1,31 @@
+{
+  "name" : "get-stdin",
+  "description" : "Get stdin as a string or buffer",
+  "version" : "7.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/get-stdin",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/get-stdin/-/get-stdin-7.0.0.tgz",
+    "shasum" : "8d5de98f15171a125c5e516643c7a6d0ea8a96f6"
+  },
+  "devDependencies" : {
+    "@types/node" : "^11.13.4",
+    "ava" : "^1.4.1",
+    "delay" : "^4.2.0",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "std", "stdin", "stdio", "concat", "buffer", "stream", "process", "read" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava test.js test-buffer.js && echo unicorns | node test-real.js && tsd"
+  }
+}

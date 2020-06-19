@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f131d1e7d205ed1643f93354a96e6eb1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>create clickable links in the terminal</npm.description>
+  <npm.keywords>["link","hyperlink","url","ansi","escape","terminal","term","console","command-line"]</npm.keywords>
+  <npm.name>terminal-link</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

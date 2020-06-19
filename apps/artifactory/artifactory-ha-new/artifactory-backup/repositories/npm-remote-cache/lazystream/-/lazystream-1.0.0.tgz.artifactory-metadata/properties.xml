@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b1534c08e5496cacdee930b847a9bed5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>open node streams on demand.</npm.description>
+  <npm.keywords>["emfile","lazy","streams","stream"]</npm.keywords>
+  <npm.name>lazystream</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

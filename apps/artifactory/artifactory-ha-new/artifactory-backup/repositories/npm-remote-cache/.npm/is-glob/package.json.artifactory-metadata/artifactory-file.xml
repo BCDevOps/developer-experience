@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-glob/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003409762</created>
+  <lastModified>1553725601000</lastModified>
+  <size>30953</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464333143</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d520fd9c4721e26bd4598eac0b5349101426e607</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d4c60158c6c0244bf96dd8e6749675aa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>51fa069be7cb4f1f6a3a8c74e58d9d267afc467c9ff61001b5630dabc1e9adf4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

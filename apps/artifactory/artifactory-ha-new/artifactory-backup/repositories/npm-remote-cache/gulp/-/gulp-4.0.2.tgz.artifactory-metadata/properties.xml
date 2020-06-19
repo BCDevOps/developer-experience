@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0e27ceafb57dd81c5b2bbbd917642c8f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the streaming build system.</npm.description>
+  <npm.keywords>["build","stream","system","make","tool","asset","pipeline","series","parallel","streaming"]</npm.keywords>
+  <npm.name>gulp</npm.name>
+  <npm.version>4.0.2</npm.version>
+</properties>

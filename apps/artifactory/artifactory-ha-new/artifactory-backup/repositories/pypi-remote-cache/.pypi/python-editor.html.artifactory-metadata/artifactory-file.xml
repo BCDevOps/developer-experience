@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/python-editor.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>python-editor.html</name>
+  <created>1574023061595</created>
+  <lastModified>1582154310430</lastModified>
+  <size>4050</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154310538</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>491af94d51e3054faf5185e26357d3582c1d1a48</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f2f5f2759bd7a6137b02d5377901c928</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b9e5d3044d6babe70ffb4ef6113a792b4ce792c6a243e9539588644bafcd2074</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

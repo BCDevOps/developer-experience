@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ansi-regex/-/ansi-regex-2.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ansi-regex-2.1.1.tgz</name>
+  <created>1576008045694</created>
+  <lastModified>1527353658000</lastModified>
+  <size>2340</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008045694</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c3b33ab5ee360d86e0e628f0468ae7ef27d654df</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1dbdbf937d51c399e3feaf40bd339ea2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>52b8ab148865eeaf538e630a937fa153d5af21232f014a5d4e38491937be8037</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

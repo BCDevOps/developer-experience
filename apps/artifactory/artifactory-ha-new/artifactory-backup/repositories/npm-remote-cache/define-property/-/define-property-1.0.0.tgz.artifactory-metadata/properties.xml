@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8a6929a07bffc6c4c16bb506e31834c1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>define a non-enumerable property on an object.</npm.description>
+  <npm.keywords>["define","define-property","enumerable","key","non","non-enumerable","object","prop","property","value"]</npm.keywords>
+  <npm.name>define-property</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

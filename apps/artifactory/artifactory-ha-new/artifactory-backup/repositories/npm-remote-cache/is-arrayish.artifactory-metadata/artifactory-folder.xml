@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-arrayish</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>is-arrayish</name>
+  <created>1576003661019</created>
+  <lastModified>1576003661019</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003661019</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

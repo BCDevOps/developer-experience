@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/doctrine/doctrine-0.7.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>doctrine-0.7.2.json</name>
+  <created>1576003409315</created>
+  <lastModified>1576003409289</lastModified>
+  <size>1765</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003409316</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9620dc42bfb6d91d0ba4605ad6f2d3263bd537f9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>11ed62e892186eb1d103edf017a91b67</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>950e50904230cd9eff4555bde78aaca5bcd202614ed3ba10233691e0776cf2ae</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

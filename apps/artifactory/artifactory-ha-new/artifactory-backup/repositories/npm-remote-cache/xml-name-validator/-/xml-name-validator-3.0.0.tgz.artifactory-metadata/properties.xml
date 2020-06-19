@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"89ced40d770c2567b33dcbaa8e3bf68a"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>validates whether a string matches the production for an xml name or qualified name</npm.description>
+  <npm.keywords>["xml","name","qname"]</npm.keywords>
+  <npm.name>xml-name-validator</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

@@ -1,0 +1,60 @@
+{
+  "name" : "esquery",
+  "description" : "A query library for ECMAScript AST using a CSS selector like query language.",
+  "version" : "1.2.0",
+  "author" : "Joel Feenstra <jrfeenst+esquery@gmail.com>",
+  "homepage" : "https://github.com/estools/esquery/",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/estools/esquery.git"
+  },
+  "contributors" : [ ],
+  "bugs" : "https://github.com/estools/esquery/issues",
+  "engines" : {
+    "node" : ">=8.0"
+  },
+  "main" : "dist/esquery.min.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/esquery/-/esquery-1.2.0.tgz",
+    "shasum" : "a010a519c0288f2530b3404124bfb5f02e9797fe"
+  },
+  "dependencies" : {
+    "estraverse" : "^5.0.0"
+  },
+  "devDependencies" : {
+    "@rollup/plugin-commonjs" : "^11.0.2",
+    "@rollup/plugin-json" : "^4.0.2",
+    "@rollup/plugin-node-resolve" : "^7.1.1",
+    "chai" : "^4.2.0",
+    "eslint" : "^6.8.0",
+    "esm" : "^3.2.25",
+    "esprima" : "~4.0.1",
+    "mocha" : "^7.1.1",
+    "nyc" : "^15.0.0",
+    "pegjs" : "~0.10.0",
+    "rollup" : "^1.32.0",
+    "rollup-plugin-terser" : "^5.2.0"
+  },
+  "keywords" : [ "ast", "ecmascript", "javascript", "query" ],
+  "license" : "BSD-3-Clause",
+  "files" : [ "dist/*.js", "dist/*.map", "parser.js", "license.txt", "README.md" ],
+  "scripts" : {
+    "prepublishOnly" : "npm run build && npm test",
+    "build:parser" : "rm parser.js && pegjs --cache --format umd -o \"parser.js\" \"grammar.pegjs\"",
+    "build:browser" : "rollup -c",
+    "build" : "npm run build:parser && npm run build:browser",
+    "mocha" : "mocha --require chai/register-assert --require esm tests",
+    "test" : "nyc npm run mocha && npm run lint",
+    "test:ci" : "npm run mocha",
+    "lint" : "eslint ."
+  },
+  "module" : "dist/esquery.esm.min.js",
+  "nyc" : {
+    "branches" : 100,
+    "lines" : 100,
+    "functions" : 100,
+    "statements" : 100,
+    "reporter" : [ "html", "text" ],
+    "exclude" : [ "parser.js", "dist", "tests" ]
+  }
+}

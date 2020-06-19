@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-plugin-react/eslint-plugin-react-7.14.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>eslint-plugin-react-7.14.3.json</name>
+  <created>1576008064274</created>
+  <lastModified>1576008063716</lastModified>
+  <size>2108</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008064274</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>9d6983ec2c566eb0b9db369fe9b5c895c29b1802</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7fcfe5f9f66d3b1fc7839ad4a6726793</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>be78bb967b21845ccc878dd98bbc4337beaac6dcd965301adc120d17e8c29d57</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

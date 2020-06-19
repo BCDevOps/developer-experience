@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4892a5f8146b9239131d9286a9d781e3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a utility function to get the type of a value</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>jest-get-type</npm.name>
+  <npm.version>24.9.0</npm.version>
+</properties>

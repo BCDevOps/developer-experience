@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4d360c376773de75325b51dd703beaa6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns the next buffer/object in a stream's readable queue</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>stream-shift</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

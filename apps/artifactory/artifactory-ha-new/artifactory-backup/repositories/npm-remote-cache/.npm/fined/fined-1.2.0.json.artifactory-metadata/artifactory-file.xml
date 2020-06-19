@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fined/fined-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fined-1.2.0.json</name>
+  <created>1576008058774</created>
+  <lastModified>1576008057680</lastModified>
+  <size>1305</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008058774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e422b77ca305da0f35519cbd51250d37b2eea17a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>68280d59922fabb2ea2e83816fdef59d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>20079ee5bc8840cd8c08759a87816c5ca8a17d6349ab580fe9efe9d213bebd8a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

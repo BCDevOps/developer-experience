@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/chokidar/chokidar-2.1.8.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>chokidar-2.1.8.json</name>
+  <created>1576003416299</created>
+  <lastModified>1576003416181</lastModified>
+  <size>1678</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003416299</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>420159848c40ec83a7cef449446724fd5d7215c9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>58f27f0b9e87be430894acf5a6ff83be</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>91fa5c8991e0d301d6b03ec4efd151fa7f45fa42ce98b2462119e02cfd1b1ef1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

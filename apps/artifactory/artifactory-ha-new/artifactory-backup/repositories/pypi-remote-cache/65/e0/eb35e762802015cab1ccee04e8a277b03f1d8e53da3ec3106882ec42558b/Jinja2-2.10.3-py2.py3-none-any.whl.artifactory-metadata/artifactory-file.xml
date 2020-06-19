@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>65/e0/eb35e762802015cab1ccee04e8a277b03f1d8e53da3ec3106882ec42558b/Jinja2-2.10.3-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Jinja2-2.10.3-py2.py3-none-any.whl</name>
+  <created>1573593688016</created>
+  <lastModified>1570215160000</lastModified>
+  <size>125326</size>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1573593688017</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4111b038c0fc0870dcb1fae59157cab3eff63c5c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8ea90ab711841aad4d846613305ca59e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

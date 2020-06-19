@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d2a8aec29099c13947483f12414912b3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>vinyl adapter for the file system.</npm.description>
+  <npm.keywords>["gulp","vinyl-adapter","vinyl","file","file system","fs","streams"]</npm.keywords>
+  <npm.name>vinyl-fs</npm.name>
+  <npm.version>3.0.3</npm.version>
+</properties>

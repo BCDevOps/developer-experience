@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@sinonjs/formatio/-/formatio-3.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>formatio-3.2.1.tgz</name>
+  <created>1579828104584</created>
+  <lastModified>1551693706000</lastModified>
+  <size>4621</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828104585</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>52310f2f9bcbc67bdac18c94ad4901b95fde267e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>27b73f6e8beeb9c69fe3d17106b698a7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>857e65a9d930443e4267af78f8f9c9c2485ec3486b8073975547abf9e4b2dfa5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

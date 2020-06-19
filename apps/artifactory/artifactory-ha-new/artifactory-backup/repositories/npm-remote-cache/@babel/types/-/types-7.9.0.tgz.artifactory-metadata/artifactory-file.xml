@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/types/-/types-7.9.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>types-7.9.0.tgz</name>
+  <created>1585853549889</created>
+  <lastModified>1584718780000</lastModified>
+  <size>89667</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853549890</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>00b064c3df83ad32b2dbf5ff07312b15c7f1efb5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>667270344d82d2f6f953847e5d3913cd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>001510abc503ff7ee71c83b1dfa2730451ec94cea1fb21db7c48df4024afed11</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9e6f8e97af7df956db2928ce468a034f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>media type database</npm.description>
+  <npm.keywords>["mime","db","type","types","database","charset","charsets"]</npm.keywords>
+  <npm.name>mime-db</npm.name>
+  <npm.version>1.42.0</npm.version>
+</properties>

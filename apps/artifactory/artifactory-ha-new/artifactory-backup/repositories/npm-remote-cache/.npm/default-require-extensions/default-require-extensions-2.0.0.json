@@ -1,0 +1,36 @@
+{
+  "name" : "default-require-extensions",
+  "description" : "Node's default require extensions as a separate module",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "James Talmage",
+    "email" : "james@talmage.io",
+    "url" : "github.com/jamestalmage"
+  },
+  "repository" : "avajs/default-require-extensions",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "main" : "js.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/default-require-extensions/-/default-require-extensions-2.0.0.tgz",
+    "shasum" : "f5f8fbb18a7d6d50b21f641f649ebb522cfe24f7"
+  },
+  "dependencies" : {
+    "strip-bom" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^0.18.2",
+    "nyc" : "^10.1.2",
+    "xo" : "^0.18.1"
+  },
+  "keywords" : [ "require", "extension", "default", "node" ],
+  "license" : "MIT",
+  "files" : [ "js.js", "json.js" ],
+  "scripts" : {
+    "test" : "xo && nyc ava"
+  },
+  "nyc" : {
+    "exclude" : [ "fixture" ]
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/memoizee/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003403293</created>
+  <lastModified>1534158884000</lastModified>
+  <size>71868</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464319369</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f4f56492a0203e73fa779cc29f3b0092af39f12e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c7350c03a5bcef3084354e70bd391b79</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aaa4bdbf090503ff4f951da68febe9458087928d989ffc8a868ea031daf3ec49</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

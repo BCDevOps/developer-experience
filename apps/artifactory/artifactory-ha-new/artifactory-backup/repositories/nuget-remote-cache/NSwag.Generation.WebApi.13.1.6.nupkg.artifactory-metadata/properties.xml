@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D76F6F482C6496</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.copyright>Copyright © Rico Suter, 2019</nuget.copyright>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.6:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.6:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>NSwag.Generation:13.1.6:.NETStandard2.0</nuget.dependency>
+  <nuget.description>NSwag: The OpenAPI/Swagger API toolchain for .NET and TypeScript</nuget.description>
+  <nuget.digest>xVT+SQ33MdT+XvbkAtbUIoyYlrjNSJCf4FE4LLaabhignHyBwJO5TQyHnMNXbGr/l5SFFYHkxavBSHWTfCMftA==</nuget.digest>
+  <nuget.frameworks>Microsoft.CSharp:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>https://raw.githubusercontent.com/RicoSuter/NSwag/master/assets/NuGetIcon.png</nuget.iconUrl>
+  <nuget.id>NSwag.Generation.WebApi</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>http://nswag.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>OpenAPI Swagger AspNetCore Documentation CodeGen  TypeScript WebApi AspNet</nuget.tags>
+  <nuget.version>13.1.6</nuget.version>
+</properties>

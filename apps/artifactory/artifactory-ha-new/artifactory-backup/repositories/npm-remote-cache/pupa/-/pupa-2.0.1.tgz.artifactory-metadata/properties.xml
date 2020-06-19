@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d41824f281f4e705f3114abb9291fab6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple micro templating</npm.description>
+  <npm.keywords>["string","formatting","template","object","format","interpolate","interpolation","templating","expand","simple","replace","placeholders","values","transform","micro"]</npm.keywords>
+  <npm.name>pupa</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

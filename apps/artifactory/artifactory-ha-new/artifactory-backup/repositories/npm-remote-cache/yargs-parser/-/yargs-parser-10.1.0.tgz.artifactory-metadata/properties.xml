@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"448b2e3d6cc2dd2f32c5b87f5708b898"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>the mighty option parser used by yargs</npm.description>
+  <npm.keywords>["argument","parser","yargs","command","cli","parsing","option","args","argument"]</npm.keywords>
+  <npm.name>yargs-parser</npm.name>
+  <npm.version>10.1.0</npm.version>
+</properties>

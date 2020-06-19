@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D661472247BA8D</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides base classes, including System.Runtime.InteropServices.CriticalHandle and System.Runtime.InteropServices.SafeHandle, for types that represent operating system handles.
+
+Commonly Used Types:
+System.Runtime.InteropServices.SafeHandle
+Microsoft.Win32.SafeHandles.SafeWaitHandle
+System.Runtime.InteropServices.CriticalHandle
+System.Threading.WaitHandleExtensions
+System.IO.HandleInheritability
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>CluvHdVUv54BvLTOCCyybugreDNk/rR8unMPruzXDtxSjvrQOU3M4R831/lQf4YI8VYp668FGQa/01E+Rq8PEQ==</nuget.digest>
+  <nuget.frameworks>System.Core:.NETFramework4.6</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Runtime.Handles</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Runtime.Handles</nuget.title>
+  <nuget.version>4.3.0</nuget.version>
+</properties>

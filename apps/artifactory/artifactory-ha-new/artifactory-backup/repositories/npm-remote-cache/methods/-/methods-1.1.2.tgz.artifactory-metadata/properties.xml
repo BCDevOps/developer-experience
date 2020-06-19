@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"779c31acaa11648007e02c22eae3cdea"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>http methods that node supports</npm.description>
+  <npm.keywords>["http","methods"]</npm.keywords>
+  <npm.name>methods</npm.name>
+  <npm.version>1.1.2</npm.version>
+</properties>

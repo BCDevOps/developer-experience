@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"367efc3ea18a07f625d937c0d58b06c3"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>bytes go in, but they don't come out (when muted).</npm.description>
+  <npm.keywords>["mute","stream","pipe"]</npm.keywords>
+  <npm.name>mute-stream</npm.name>
+  <npm.version>0.0.7</npm.version>
+</properties>

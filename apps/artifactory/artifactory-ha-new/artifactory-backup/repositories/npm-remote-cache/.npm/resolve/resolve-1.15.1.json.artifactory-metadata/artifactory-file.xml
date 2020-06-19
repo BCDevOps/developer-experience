@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/resolve/resolve-1.15.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>resolve-1.15.1.json</name>
+  <created>1585853566533</created>
+  <lastModified>1585853566504</lastModified>
+  <size>1473</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853566534</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5a10c7a3ddccef4c9974aad63b010a3356a49510</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0bc463ff3b053c90df343772620437e7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9a79957e434765846d87a7d9f2c62b0f4035acf6cba705e1298788d75d85d093</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

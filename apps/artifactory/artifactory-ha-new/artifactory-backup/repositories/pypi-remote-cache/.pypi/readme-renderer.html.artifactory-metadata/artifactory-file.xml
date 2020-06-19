@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/readme-renderer.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>readme-renderer.html</name>
+  <created>1573764186925</created>
+  <lastModified>1573764928425</lastModified>
+  <size>8340</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1573764928462</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>853f9bb46be8e9f111dc8cfff399788228234cd2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6247004031b4def1fcf324336dd18bee</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>28e27ce5ff3a78ab824825c5eee37bb1f3e6a294a139639abe188659b9166a2a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

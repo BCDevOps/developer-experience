@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d2ffde60653ae3824acf00ccae277260"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>json for humans.</npm.description>
+  <npm.keywords>["json","json5","es5","es2015","ecmascript"]</npm.keywords>
+  <npm.name>json5</npm.name>
+  <npm.version>2.1.3</npm.version>
+</properties>

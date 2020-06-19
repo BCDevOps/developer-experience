@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c63cb1c001b08835bd5624cf9344a4af"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>light-weight option parsing with an argv hash. no optstrings attached.</npm.description>
+  <npm.keywords>["argument","args","option","parser","parsing","cli","command"]</npm.keywords>
+  <npm.name>yargs</npm.name>
+  <npm.version>3.32.0</npm.version>
+</properties>

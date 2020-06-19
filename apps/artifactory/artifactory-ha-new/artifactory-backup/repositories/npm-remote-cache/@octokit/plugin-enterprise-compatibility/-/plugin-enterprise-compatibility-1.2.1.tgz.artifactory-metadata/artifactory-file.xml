@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@octokit/plugin-enterprise-compatibility/-/plugin-enterprise-compatibility-1.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-enterprise-compatibility-1.2.1.tgz</name>
+  <created>1576003114041</created>
+  <lastModified>1572932523000</lastModified>
+  <size>6115</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003114042</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ea8fa7fd4b04fac2289bac1d63791c77a23a74fb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>dae17f34489628cae354d2991f6be6ae</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f8a4862307c22b43166ce14eab6c0d970e0fbf877bed63157e7ddf804fb2b459</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

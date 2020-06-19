@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.2.2.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.2.2.0.nupkg</name>
+  <created>1578432200101</created>
+  <lastModified>1543879298000</lastModified>
+  <size>34858</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432200103</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>22c3eb89765ac210c1512a9184fe89885cf3e304</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1974422fe8df09821ae82aecd803fc67</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ba057ac72312a774176a7496340dd3bc7bff2d913aecdf0727b8e5c84b604546</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

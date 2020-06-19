@@ -1,0 +1,26 @@
+{
+  "name" : "sprintf-js",
+  "description" : "JavaScript sprintf implementation",
+  "version" : "1.0.3",
+  "author" : "Alexandru Marasteanu <hello@alexei.ro> (http://alexei.ro/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/alexei/sprintf.js.git"
+  },
+  "main" : "src/sprintf.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/sprintf-js/-/sprintf-js-1.0.3.tgz",
+    "shasum" : "04e6926f662895354f3dd015203633b857297e2c"
+  },
+  "devDependencies" : {
+    "mocha" : "*",
+    "grunt" : "*",
+    "grunt-contrib-watch" : "*",
+    "grunt-contrib-uglify" : "*"
+  },
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+    "test" : "mocha test/test.js"
+  },
+  "readmeFilename" : "README.md"
+}

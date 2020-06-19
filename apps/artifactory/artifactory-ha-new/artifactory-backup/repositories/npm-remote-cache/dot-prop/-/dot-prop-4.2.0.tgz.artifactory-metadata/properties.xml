@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"54971a2d5761fd909004ddeedcfa72c9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get, set, or delete a property from a nested object using a dot path</npm.description>
+  <npm.keywords>["obj","object","prop","property","dot","path","get","set","delete","del","access","notation","dotty"]</npm.keywords>
+  <npm.name>dot-prop</npm.name>
+  <npm.version>4.2.0</npm.version>
+</properties>

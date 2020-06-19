@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-limit/p-limit-2.2.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-limit-2.2.1.json</name>
+  <created>1576008070174</created>
+  <lastModified>1576008069683</lastModified>
+  <size>1098</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008070175</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>dad497c4d75ab2ccd878c81e796b4871f80ad22e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f748b90bfcf67c606661e189102d6112</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d04a4e6e185588d7c075bf5a00dd1622f4547ef2de430cc32773badbd54e18f9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

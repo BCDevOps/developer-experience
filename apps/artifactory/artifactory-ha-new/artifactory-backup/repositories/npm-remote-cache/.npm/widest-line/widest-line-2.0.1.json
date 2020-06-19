@@ -1,0 +1,31 @@
+{
+  "name" : "widest-line",
+  "description" : "Get the visual width of the widest line in a string - the number of columns required to display it",
+  "version" : "2.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/widest-line",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/widest-line/-/widest-line-2.0.1.tgz",
+    "shasum" : "7438764730ec7ef4381ce4df82fb98a53142a3fc"
+  },
+  "dependencies" : {
+    "string-width" : "^2.1.1"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "string", "str", "character", "char", "unicode", "width", "visual", "column", "columns", "fullwidth", "full-width", "full", "ansi", "escape", "codes", "cli", "command-line", "terminal", "console", "cjk", "chinese", "japanese", "korean", "fixed-width" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

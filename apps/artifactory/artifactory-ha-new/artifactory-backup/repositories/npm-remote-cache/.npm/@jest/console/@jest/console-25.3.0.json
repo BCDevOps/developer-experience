@@ -1,0 +1,39 @@
+{
+  "name" : "@jest/console",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-console"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@jest/console/-/console-25.3.0.tgz",
+    "shasum" : "33b56b81238427bf3ebe3f7b3378d2f79cdbd409"
+  },
+  "dependencies" : {
+    "@jest/source-map" : "^25.2.6",
+    "chalk" : "^3.0.0",
+    "jest-util" : "^25.3.0",
+    "slash" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

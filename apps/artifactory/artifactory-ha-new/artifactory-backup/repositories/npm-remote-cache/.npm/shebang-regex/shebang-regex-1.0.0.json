@@ -1,0 +1,27 @@
+{
+  "name" : "shebang-regex",
+  "description" : "Regular expression for matching a shebang",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/shebang-regex",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/shebang-regex/-/shebang-regex-1.0.0.tgz",
+    "shasum" : "da42f49740c0b42db2ca9728571cb190c98efea3"
+  },
+  "devDependencies" : {
+    "ava" : "0.0.4"
+  },
+  "keywords" : [ "re", "regex", "regexp", "shebang", "match", "test" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "node test.js"
+  }
+}

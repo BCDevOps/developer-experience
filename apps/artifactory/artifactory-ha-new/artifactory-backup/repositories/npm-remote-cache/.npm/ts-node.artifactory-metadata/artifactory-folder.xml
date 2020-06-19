@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ts-node</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>ts-node</name>
+  <created>1576003069888</created>
+  <lastModified>1576003069888</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003069888</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

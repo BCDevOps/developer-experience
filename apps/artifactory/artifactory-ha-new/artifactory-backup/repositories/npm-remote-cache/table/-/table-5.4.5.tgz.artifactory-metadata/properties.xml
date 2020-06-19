@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c998c0f90ce563816a7872cfd8242343"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>formats data into a string table.</npm.description>
+  <npm.keywords>["ascii","text","table","align","ansi"]</npm.keywords>
+  <npm.name>table</npm.name>
+  <npm.version>5.4.5</npm.version>
+</properties>

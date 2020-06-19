@@ -1,0 +1,29 @@
+{
+  "name" : "rsa-pem-from-mod-exp",
+  "description" : "Create RSA Public Key PEM from Modulus and Exponent value in node.js",
+  "version" : "0.8.4",
+  "author" : "Michael J. Ryan <tracker1+github@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/tracker1/node-rsa-pem-from-mod-exp.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/tracker1/node-rsa-pem-from-mod-exp/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/rsa-pem-from-mod-exp/-/rsa-pem-from-mod-exp-0.8.4.tgz",
+    "shasum" : "362a42c6d304056d493b3f12bceabb2c6576a6d4"
+  },
+  "devDependencies" : {
+    "mocha" : "~1.17.1",
+    "should" : "~3.1.2",
+    "istanbul" : "~0.2.4"
+  },
+  "keywords" : [ "rsa", "public-key", "pem", "modulus", "exponent" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha -R spec",
+    "cover" : "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec test/**/*.tests.js"
+  }
+}

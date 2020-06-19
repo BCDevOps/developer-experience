@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>6f/67/c9461f62a46b083602276afe20b3a26c19608f8f86e9b2683dd1de001e88/protobuf-3.9.1-cp37-cp37m-macosx_10_9_intel.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>protobuf-3.9.1-cp37-cp37m-macosx_10_9_intel.whl</name>
+  <created>1574025262993</created>
+  <lastModified>1565052891000</lastModified>
+  <size>1359519</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574025262993</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>07f7d21a023e301647a74e757ddc69f7924569ee</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9224ded7b8399a54aef18f3db7625aff</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bf8e05d638b585d1752c5a84247134a0350d3a8b73d3632489a014a9f6f1e758</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

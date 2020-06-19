@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>kareem/-/kareem-2.3.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>kareem-2.3.1.tgz</name>
+  <created>1582140571263</created>
+  <lastModified>1566531879000</lastModified>
+  <size>16965</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140571264</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>def12d9c941017fabfb00f873af95e9c99e1be87</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>75751cada84f4ff7649962f3f3e75396</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e2212ac79d80f52b73f81f6e7db513a20bc1a24c6e8dac6648c4565e35bb392b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

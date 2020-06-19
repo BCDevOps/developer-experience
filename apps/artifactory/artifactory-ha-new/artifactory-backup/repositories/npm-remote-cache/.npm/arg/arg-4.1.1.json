@@ -1,0 +1,31 @@
+{
+  "name" : "arg",
+  "description" : "Another simple argument parser",
+  "version" : "4.1.1",
+  "author" : "Josh Junon <junon@zeit.co>",
+  "repository" : "zeit/arg",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/arg/-/arg-4.1.1.tgz",
+    "shasum" : "485f8e7c390ce4c5f78257dbea80d4be11feda4c"
+  },
+  "devDependencies" : {
+    "chai" : "^4.1.1",
+    "jest" : "^20.0.4",
+    "xo" : "^0.18.2"
+  },
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "WARN_EXIT=1 jest --coverage -w 2"
+  },
+  "types" : "index.d.ts",
+  "xo" : {
+    "rules" : {
+      "complexity" : 0,
+      "max-depth" : 0,
+      "no-div-regex" : 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mongodb/-/mongodb-3.5.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mongodb-3.5.5.tgz</name>
+  <created>1585853536461</created>
+  <lastModified>1583958602000</lastModified>
+  <size>323400</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853536462</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1334c3e5a384469ac7ef0dea69d59acc829a496a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5ac3e6fa7ac312cc3dff6b7a3c7beab1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>db8d70361e153e4b388fe8d4d8b1381a8a83d4fc8f888a5a1d883fc82a1ed255</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

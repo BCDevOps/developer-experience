@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>basic-auth/-/basic-auth-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>basic-auth-2.0.1.tgz</name>
+  <created>1576008065774</created>
+  <lastModified>1537413966000</lastModified>
+  <size>3744</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b998279bf47ce38344b4f3cf916d4679bbf51e3a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ad614e3c4d92e1718f36d09432355da7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>16c44b1b2dd6d179f0b7a41aa8473025bc326d8a954fa411ed5a93b429513897</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

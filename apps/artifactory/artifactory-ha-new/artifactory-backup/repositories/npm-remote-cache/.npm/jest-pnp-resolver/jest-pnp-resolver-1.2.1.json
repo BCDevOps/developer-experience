@@ -1,0 +1,32 @@
+{
+  "name" : "jest-pnp-resolver",
+  "description" : "plug'n'play resolver for Webpack",
+  "version" : "1.2.1",
+  "homepage" : "https://github.com/arcanis/jest-pnp-resolver",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/arcanis/jest-pnp-resolver.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/arcanis/jest-pnp-resolver/issues"
+  },
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-pnp-resolver/-/jest-pnp-resolver-1.2.1.tgz",
+    "shasum" : "ecdae604c077a7fbc70defb6d517c3c1c898923a"
+  },
+  "peerDependencies" : {
+    "jest-resolve" : "*"
+  },
+  "keywords" : [ "jest", "yarn", "plugnplay", "pnp" ],
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "peerDependenciesMeta" : {
+    "jest-resolve" : {
+      "optional" : true
+    }
+  }
+}

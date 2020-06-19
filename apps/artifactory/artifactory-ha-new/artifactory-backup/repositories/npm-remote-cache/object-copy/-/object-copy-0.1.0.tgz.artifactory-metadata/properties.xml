@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d745f2b80f9cb7f9f644b28f41e53c3e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>copy static properties, prototype properties, and descriptors from one object to another.</npm.description>
+  <npm.keywords>["copy","object"]</npm.keywords>
+  <npm.name>object-copy</npm.name>
+  <npm.version>0.1.0</npm.version>
+</properties>

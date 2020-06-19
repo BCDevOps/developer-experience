@@ -1,0 +1,28 @@
+{
+  "name" : "@babel/plugin-syntax-numeric-separator",
+  "description" : "Allow parsing of Decimal, Binary, Hex and Octal literals that contain a Numeric Literal Separator",
+  "version" : "7.8.3",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-numeric-separator",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/plugin-syntax-numeric-separator/-/plugin-syntax-numeric-separator-7.8.3.tgz",
+    "shasum" : "0e3fb63e09bea1b11e96467271c8308007e7c41f"
+  },
+  "dependencies" : {
+    "@babel/helper-plugin-utils" : "^7.8.3"
+  },
+  "devDependencies" : {
+    "@babel/core" : "^7.8.3"
+  },
+  "peerDependencies" : {
+    "@babel/core" : "^7.0.0-0"
+  },
+  "keywords" : [ "babel-plugin" ],
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "a7620bd266ae1345975767bbc7abf09034437017"
+}

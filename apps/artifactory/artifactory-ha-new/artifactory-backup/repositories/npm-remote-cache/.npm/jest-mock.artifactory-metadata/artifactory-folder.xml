@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-mock</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jest-mock</name>
+  <created>1576003616030</created>
+  <lastModified>1576003616030</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003616030</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

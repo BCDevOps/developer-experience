@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/repeat-string/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003634111</created>
+  <lastModified>1527436194000</lastModified>
+  <size>30820</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464327276</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bdef436e370c51049b5adc6c7d91d729e3bde14a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a8812f01ed0e1c25c96b056bb15d521e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>36bfb1254eb8099004a4a28cfff8487d27af731cecdbedf5a2af630e98b76eca</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

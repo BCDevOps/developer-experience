@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/duplexify/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003110897</created>
+  <lastModified>1560370359000</lastModified>
+  <size>58862</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464314068</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dfa2040e9c2c34a7fc12be9508ceda5fd34a6eb7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8459df710aa4e1f83c736eb81778ee5a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3a93c99f317f9db9a53dd8d4b58593a3571fb34bfdc6a788819828732a3ffa69</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

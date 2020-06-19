@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>deep-is/-/deep-is-0.1.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>deep-is-0.1.3.tgz</name>
+  <created>1576004042508</created>
+  <lastModified>1527371688000</lastModified>
+  <size>3487</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576004042509</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b369d6fb5dbc13eecf524f91b070feedc357cf34</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>854cb2d92c24b6c9d6e8122161077666</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9865e2fa7e023c342a65d5b23d73b404043d50b6f2c1c24a459caa6d74aba786</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

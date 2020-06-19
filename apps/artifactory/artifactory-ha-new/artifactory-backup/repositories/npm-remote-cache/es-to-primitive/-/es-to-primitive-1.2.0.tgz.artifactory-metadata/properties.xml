@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"799e641aa6a93a7173ea43372c258323"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ecmascript toprimitive algorithm. provides es5 and es2015 versions.</npm.description>
+  <npm.keywords>["primitive","abstract","ecmascript","es5","es6","es2015","toPrimitive","coerce","type","object","string","number","boolean","symbol","null","undefined"]</npm.keywords>
+  <npm.name>es-to-primitive</npm.name>
+  <npm.version>1.2.0</npm.version>
+</properties>

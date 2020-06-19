@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>30/c5/cf0d56d9e0458f66cfef10bc74b375597c34e53e522e23e817673e83f1b9/pytest-5.3.0-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pytest-5.3.0-py3-none-any.whl</name>
+  <created>1574234369135</created>
+  <lastModified>1574200123000</lastModified>
+  <size>233718</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234369136</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>78d0871bd0d7f71345a6aae47b3600f725a9deca</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>168ac6410bdfe5ad157d04f77e84821f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f6a567e20c04259d41adce9a360bd8991e6aa29dd9695c5e6bd25a9779272673</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/gunicorn.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>gunicorn.html</name>
+  <created>1574023042971</created>
+  <lastModified>1582154305971</lastModified>
+  <size>26946</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154306033</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f55f9feb9ee0a17bf2f7fd3147d5af52362c9587</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9b79250c463ea232658d73251e246414</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a67af3ba485f90cfa277df18659e6270dda1dc78a7a54f9fe60ac5aa1ece01fc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

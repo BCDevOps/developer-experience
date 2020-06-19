@@ -1,0 +1,35 @@
+{
+  "name" : "terminal-link",
+  "description" : "Create clickable links in the terminal",
+  "version" : "2.1.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/terminal-link",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/terminal-link/-/terminal-link-2.1.1.tgz",
+    "shasum" : "14a64a27ab3c0df933ea546fba55f2d078edc994"
+  },
+  "dependencies" : {
+    "ansi-escapes" : "^4.2.1",
+    "supports-hyperlinks" : "^2.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^2.3.0",
+    "clear-module" : "^4.0.0",
+    "tsd" : "^0.11.0",
+    "xo" : "^0.25.3"
+  },
+  "keywords" : [ "link", "hyperlink", "url", "ansi", "escape", "terminal", "term", "console", "command-line" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  },
+  "funding" : "https://github.com/sponsors/sindresorhus"
+}

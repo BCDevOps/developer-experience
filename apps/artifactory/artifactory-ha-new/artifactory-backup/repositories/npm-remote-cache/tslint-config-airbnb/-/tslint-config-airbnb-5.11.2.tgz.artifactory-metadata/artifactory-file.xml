@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tslint-config-airbnb/-/tslint-config-airbnb-5.11.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tslint-config-airbnb-5.11.2.tgz</name>
+  <created>1576003068398</created>
+  <lastModified>1568893368000</lastModified>
+  <size>3800</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003068399</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2f3d239fa3923be8e7a4372217a7ed552671528f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a9693c3e3d37bbe598bf9715ed6f5173</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>24abfab27067d0e82e0308aa286a604ecde241e68ad2b30b2e8deaa1047c8cb9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"61d605663bc6e7336f9c12e7b761a13f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the color gray, in ansi.</npm.description>
+  <npm.keywords>["gray","256","ansi","cli","color","colors","colour","command","command-line","console","format","formatting","iterm","log","logging","rgb","shell","string","style","styles","styling","terminal","text","tty","xterm"]</npm.keywords>
+  <npm.name>ansi-gray</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

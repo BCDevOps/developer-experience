@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>he/-/he-1.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>he-1.1.1.tgz</name>
+  <created>1579828389894</created>
+  <lastModified>1527392269000</lastModified>
+  <size>34193</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828389976</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>93410fd21b009735151f8868c2f271f3427e23fd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9b3bb8ef65ff6ad252ddbbbbabb0aed1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a5caab6aef32441afbfa10aae3969b9737e7b45cd84450e90b8728c27278c480</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

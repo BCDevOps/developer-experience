@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>junit/junit/4.12/junit-4.12.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>junit-4.12.pom</name>
+  <created>1576861443965</created>
+  <lastModified>1417709863000</lastModified>
+  <size>23678</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861443966</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>35fb238baee3f3af739074d723279ebea2028398</original>
+          <actual>35fb238baee3f3af739074d723279ebea2028398</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>af7ca61fba26556cfe5b40cf15aadc14</original>
+          <actual>af7ca61fba26556cfe5b40cf15aadc14</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>90f163f78e3ffb6f1c7ad97de9e7eba4eea25807141b85d6d12be67ca25449c4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74040523DD318</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.VisualStudio.Web.CodeGenerators.Mvc:3.0.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>Microsoft.VisualStudio.Web.CodeGenerators.Mvc:3.0.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.description>Code Generation tool for ASP.NET Core. Contains the dotnet-aspnet-codegenerator command used for generating controllers and views.</nuget.description>
+  <nuget.digest>V+5GXXlUxxGvfpJS3s9lJ8tDWSbDWavFfCRD2DDJIDnbxCQtG1q/Fmrt9iXpG+rI6sKh7Wg4641XSt7rln/iAg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.VisualStudio.Web.CodeGeneration.Design</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore codegenerator scaffolding visualstudioweb</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

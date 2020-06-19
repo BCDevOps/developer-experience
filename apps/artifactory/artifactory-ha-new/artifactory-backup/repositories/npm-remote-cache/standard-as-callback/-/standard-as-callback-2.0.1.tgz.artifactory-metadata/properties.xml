@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2563c60cc685c556393f961103db23f4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a performant and standard (bluebird) library that registers a node-style callback on a promise</npm.description>
+  <npm.keywords>["ascallback","nodeify","promise","bluebird"]</npm.keywords>
+  <npm.name>standard-as-callback</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"417ec87ed4f32cc0762965b35d41dd46"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>yaml 1.2 parser and serializer</npm.description>
+  <npm.keywords>["yaml","parser","serializer","pyyaml"]</npm.keywords>
+  <npm.name>js-yaml</npm.name>
+  <npm.version>3.13.1</npm.version>
+</properties>

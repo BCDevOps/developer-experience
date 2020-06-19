@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>0c/f0/c351d6aeb7f5ba00da2e5aac43ef09b71be95aed45bfca943a5016854269/typed_ast-1.4.1-cp37-cp37m-macosx_10_9_x86_64.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>typed_ast-1.4.1-cp37-cp37m-macosx_10_9_x86_64.whl</name>
+  <created>1579647475606</created>
+  <lastModified>1578942238000</lastModified>
+  <size>223951</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579647475609</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ddcfcdc5de87a88f92181821fded09807e8dcf0c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7eec19c5e27191d13feef72f51e675c9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8ce678dbaf790dbdb3eba24056d5364fb45944f33553dd5869b7580cdbb83614</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

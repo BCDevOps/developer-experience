@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"10e52530e0086914a59d498cb1637c7e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a light, featureful and explicit option parsing library.</npm.description>
+  <npm.keywords>["option","parser","parsing","cli","command","args","bash","completion"]</npm.keywords>
+  <npm.name>dashdash</npm.name>
+  <npm.version>1.14.1</npm.version>
+</properties>

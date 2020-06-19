@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>acorn</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>acorn</name>
+  <created>1576003144345</created>
+  <lastModified>1576003144345</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003144345</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

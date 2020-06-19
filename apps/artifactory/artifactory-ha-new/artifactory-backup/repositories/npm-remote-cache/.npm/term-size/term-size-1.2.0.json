@@ -1,0 +1,31 @@
+{
+  "name" : "term-size",
+  "description" : "Reliably get the terminal window size (columns & rows)",
+  "version" : "1.2.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/term-size",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/term-size/-/term-size-1.2.0.tgz",
+    "shasum" : "458b83887f288fc56d6fffbfad262e26638efa69"
+  },
+  "dependencies" : {
+    "execa" : "^0.7.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "term", "terminal", "size", "console", "window", "width", "height", "columns", "rows", "lines", "tty", "redirected" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "vendor" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

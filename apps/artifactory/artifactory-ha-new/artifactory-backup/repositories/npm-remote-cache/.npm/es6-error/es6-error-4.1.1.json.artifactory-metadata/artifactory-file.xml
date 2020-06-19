@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es6-error/es6-error-4.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es6-error-4.1.1.json</name>
+  <created>1579828391175</created>
+  <lastModified>1579828390881</lastModified>
+  <size>1615</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828391176</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3a7d77f8f53b34c20b2acdda16cf25d956a580c5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>860a4beb0db07b0e9c8826aa0bba0adc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>479e395fc7a15cd2594bdd12cd7ac57fd472ef6f2ecc338ce969cc80e45dc757</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/readable-stream/readable-stream-3.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>readable-stream-3.4.0.json</name>
+  <created>1576003118149</created>
+  <lastModified>1576003118110</lastModified>
+  <size>2018</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003118149</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>417baf3fe1fbc8550ecd1d19321fc8349627eafa</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e7ccd53ff461bcbbb9a6efca5c0beb9f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4b2f5dd2460bc5016304cf06971108a25d68444fbba3e6ae56d52f5810c66851</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

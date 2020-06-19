@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>b9/54/3673ee8be482f81527678ac894276223b9814bb7262e4f730469bb7bf70e/pytest_cov-2.8.1-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pytest_cov-2.8.1-py2.py3-none-any.whl</name>
+  <created>1577997682155</created>
+  <lastModified>1570287750000</lastModified>
+  <size>18651</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1577997682156</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bfcda31be9a1449e10ac07477ef4883202173369</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a378268a558bed3202794accc7708fcb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cdbdef4f870408ebdbfeb44e63e07eb18bb4619fae852f6e760645fa36172626</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

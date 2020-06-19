@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8f2135144060825979c82bf9d76a6100"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if two arrays are equal</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>array-equal</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

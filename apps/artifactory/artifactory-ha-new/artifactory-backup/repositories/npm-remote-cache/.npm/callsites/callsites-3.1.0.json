@@ -1,0 +1,29 @@
+{
+  "name" : "callsites",
+  "description" : "Get callsites from the V8 stack trace API",
+  "version" : "3.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/callsites",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/callsites/-/callsites-3.1.0.tgz",
+    "shasum" : "b3630abd8943432f54b3f0519238e33cd7df2f73"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "stacktrace", "v8", "callsite", "callsites", "stack", "trace", "function", "file", "line", "debug" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

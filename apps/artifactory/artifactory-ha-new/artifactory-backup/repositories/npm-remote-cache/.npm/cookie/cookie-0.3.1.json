@@ -1,0 +1,27 @@
+{
+  "name" : "cookie",
+  "description" : "HTTP server cookie parsing and serialization",
+  "version" : "0.3.1",
+  "author" : "Roman Shtylman <shtylman@gmail.com>",
+  "repository" : "jshttp/cookie",
+  "contributors" : [ "Douglas Christopher Wilson <doug@somethingdoug.com>" ],
+  "engines" : {
+    "node" : ">= 0.6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cookie/-/cookie-0.3.1.tgz",
+    "shasum" : "e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
+  },
+  "devDependencies" : {
+    "istanbul" : "0.4.3",
+    "mocha" : "1.21.5"
+  },
+  "keywords" : [ "cookie", "cookies" ],
+  "license" : "MIT",
+  "files" : [ "HISTORY.md", "LICENSE", "README.md", "index.js" ],
+  "scripts" : {
+    "test" : "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci" : "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "test-cov" : "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name" : "saxes",
+  "description" : "An evented streaming XML parser in JavaScript",
+  "version" : "3.1.11",
+  "author" : "Louis-Dominique Dubeau <ldd@lddubeau.com>",
+  "repository" : "https://github.com/lddubeau/saxes.git",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "lib/saxes.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/saxes/-/saxes-3.1.11.tgz",
+    "shasum" : "d59d1fd332ec92ad98a2e0b2ee644702384b1c5b"
+  },
+  "dependencies" : {
+    "xmlchars" : "^2.1.1"
+  },
+  "devDependencies" : {
+    "@commitlint/cli" : "^8.0.0",
+    "@commitlint/config-angular" : "^8.0.0",
+    "chai" : "^4.2.0",
+    "conventional-changelog-cli" : "^2.0.21",
+    "eslint" : "^5.16.0",
+    "eslint-config-lddubeau-base" : "^3.0.5",
+    "husky" : "^2.5.0",
+    "mocha" : "^6.1.4",
+    "renovate-config-lddubeau" : "^1.0.0",
+    "xml-conformance-suite" : "^1.2.0"
+  },
+  "license" : "ISC",
+  "files" : [ "lib/saxes.js", "lib/saxes.d.ts", "LICENSE", "README.md", "CHANGELOG.md" ],
+  "scripts" : {
+    "test" : "mocha --delay",
+    "posttest" : "eslint test/*.js lib/*.js",
+    "preversion" : "npm test",
+    "version" : "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion" : "npm publish",
+    "postpublish" : "git push origin --follow-tags"
+  },
+  "types" : "lib/saxes.d.ts",
+  "husky" : {
+    "hooks" : {
+      "commit-msg" : "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

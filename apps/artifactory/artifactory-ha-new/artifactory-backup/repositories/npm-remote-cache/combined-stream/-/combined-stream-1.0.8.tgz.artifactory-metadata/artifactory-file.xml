@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>combined-stream/-/combined-stream-1.0.8.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>combined-stream-1.0.8.tgz</name>
+  <created>1576008548473</created>
+  <lastModified>1557683390000</lastModified>
+  <size>4068</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008548473</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c3d45a8b34fd730631a110a8a2520682b31d5a7f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>08f30e7b4b1e471621c039e96acad86d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b6be5aabe53e90635beb77cd0e0ba7ae6a25c8cf903b15fcc342353e732e1512</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

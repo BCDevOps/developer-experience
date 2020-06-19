@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>14/0e/487f7fc1e432cec50d2678f94e4133f2b9e9356e35bacc30d73e8cb831fc/SQLAlchemy-1.3.10.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>SQLAlchemy-1.3.10.tar.gz</name>
+  <created>1574023026032</created>
+  <lastModified>1570666637000</lastModified>
+  <size>5967223</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023026033</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b4e304fa157cd97856ba93c6df7ce9141e6e4baf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>af9722657ba51131703dbe75f24b054a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0f0768b5db594517e1f5e1572c73d14cf295140756431270d89496dc13d5e46c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

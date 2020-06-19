@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/enabled/enabled-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>enabled-1.0.2.json</name>
+  <created>1576003494873</created>
+  <lastModified>1576003494854</lastModified>
+  <size>1115</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003494874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>48c64fbf76b93cd3f88420733a5e856c49557e24</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d6e601e2d80f90cf0573d22a68243e31</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>78ca92f8191963530d485a4ff4f00be2fefef2b2f68adba5ca45b475b3462362</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

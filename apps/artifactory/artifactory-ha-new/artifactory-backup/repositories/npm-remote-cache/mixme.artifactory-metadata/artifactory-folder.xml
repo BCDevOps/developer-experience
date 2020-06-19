@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mixme</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>mixme</name>
+  <created>1583960453155</created>
+  <lastModified>1583960453155</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1583960453155</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

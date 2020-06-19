@@ -1,0 +1,27 @@
+{
+  "name" : "@babel/code-frame",
+  "description" : "Generate errors that contain a code frame that point to source locations.",
+  "version" : "7.8.3",
+  "author" : "Sebastian McKenzie <sebmck@gmail.com>",
+  "homepage" : "https://babeljs.io/",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-code-frame",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/code-frame/-/code-frame-7.8.3.tgz",
+    "shasum" : "33e25903d7481181534e12ec0a25f16b6fcf419e"
+  },
+  "dependencies" : {
+    "@babel/highlight" : "^7.8.3"
+  },
+  "devDependencies" : {
+    "chalk" : "^2.0.0",
+    "strip-ansi" : "^4.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "a7620bd266ae1345975767bbc7abf09034437017"
+}

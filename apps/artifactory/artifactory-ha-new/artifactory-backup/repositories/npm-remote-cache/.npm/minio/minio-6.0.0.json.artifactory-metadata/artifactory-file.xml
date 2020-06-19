@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/minio/minio-6.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>minio-6.0.0.json</name>
+  <created>1576003085599</created>
+  <lastModified>1576003085574</lastModified>
+  <size>1878</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003085600</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e185945d257f15646b4d0dfbfd5f3dc35b87035c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>068897a7b4d774d62c6fbdc1085d9175</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>35f504e59f2ddb2f17fbaecae3d444d04194f910f8e9d47f76a1af15ee5d4841</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

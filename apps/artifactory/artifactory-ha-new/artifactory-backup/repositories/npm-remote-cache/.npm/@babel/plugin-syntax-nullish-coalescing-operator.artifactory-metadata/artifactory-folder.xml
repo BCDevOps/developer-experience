@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-nullish-coalescing-operator</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plugin-syntax-nullish-coalescing-operator</name>
+  <created>1586464305510</created>
+  <lastModified>1586464305510</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464305510</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

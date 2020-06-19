@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>dateformat/-/dateformat-3.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>dateformat-3.0.3.tgz</name>
+  <created>1579828073676</created>
+  <lastModified>1527371271000</lastModified>
+  <size>5719</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828073693</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a6e37499a4d9a9cf85ef5872044d62901c9889ae</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>21823f63759b75cde66f4d0da301e4fa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>180e485c0aee9a8e85e326782d4be0f26068708de726df8f30bebb5040e7b35e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

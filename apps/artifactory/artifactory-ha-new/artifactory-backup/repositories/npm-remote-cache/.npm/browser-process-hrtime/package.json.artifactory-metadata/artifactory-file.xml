@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/browser-process-hrtime/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003662231</created>
+  <lastModified>1546339757000</lastModified>
+  <size>11090</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464344068</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>684c8f53692d4427c76435e048af80debc85ab67</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>07d734ecd88c2e7251f98eff1adc6b16</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d8c4ca273943aac27082f1b33710fb0e531ff0da0f82dcc2c86edf880b53c683</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

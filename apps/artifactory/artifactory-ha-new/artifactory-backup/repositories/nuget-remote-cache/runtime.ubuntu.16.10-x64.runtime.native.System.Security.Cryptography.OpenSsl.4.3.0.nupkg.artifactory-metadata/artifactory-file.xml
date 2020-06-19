@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</name>
+  <created>1580318525884</created>
+  <lastModified>1538750169000</lastModified>
+  <size>42939</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580318525885</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e245d709911d37eba2680a88778c391aa4480f73</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c85ab41c5dd712526e511b1a8655ba88</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a551542ae3cf231d1e7502a3cd1a27df32aaf338731c4ce4a3f95cd3557f8ddc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

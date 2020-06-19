@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/proxy-addr/proxy-addr-2.0.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>proxy-addr-2.0.5.json</name>
+  <created>1576008068682</created>
+  <lastModified>1576008068281</lastModified>
+  <size>1405</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008068682</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>ff33a486a8a546e154db27897df6a3b1bdba2733</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b19c064b56af7705d742a4b3581e3970</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d05b7725a8c34ac3ec2446b00d48e622b95893d21bcffebe9a0fefc1fbec6cfa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

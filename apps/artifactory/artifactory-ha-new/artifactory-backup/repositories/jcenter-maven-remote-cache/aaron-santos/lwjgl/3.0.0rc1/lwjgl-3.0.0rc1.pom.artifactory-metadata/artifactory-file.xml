@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-maven-remote-cache</repoKey>
+    <path>aaron-santos/lwjgl/3.0.0rc1/lwjgl-3.0.0rc1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lwjgl-3.0.0rc1.pom</name>
+  <created>1575478381806</created>
+  <lastModified>1462197501000</lastModified>
+  <size>331</size>
+  <additionalInfo>
+    <createdBy>pwei1018@github</createdBy>
+    <modifiedBy>pwei1018@github</modifiedBy>
+    <lastUpdated>1575478381808</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>ac39f5a01b8f3ff35ea85173263d43f443bafebc</original>
+          <actual>ac39f5a01b8f3ff35ea85173263d43f443bafebc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>85400441d19cf0694468938658ac52ac</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c4f079e1c76bfd453e0b6369d17fe93bc3ec504e9ce076f79e389931d54b9f42</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

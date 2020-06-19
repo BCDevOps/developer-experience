@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6648186ED14A6</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Tracing:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.description>Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.
+
+Commonly Used Types:
+System.Buffers.ArrayPool&lt;T>
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>09yL/QiPEDZI9JLg0R0OcGe/0ycFm69QN16DCvXkqkIorCC1Y2EKwk5KvSlfMmGse+LcKkD3H+Cra7fFkxHXEg==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Buffers</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Buffers</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/typedarray/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003436263</created>
+  <lastModified>1527451793000</lastModified>
+  <size>11311</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464318856</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2197a9e2db2cddf790c9e1a7ecccb668408ec6c6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>01778af70385f8f5c50a79d340b2044b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13f2ff9a9482f1b0da02d8266dcfabd55491780cbeb5bfcbace8e8b30ad364aa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

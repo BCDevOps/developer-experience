@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b7b607b293905dea978166889c8ac914"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns `true` if the path appears to be relative.</npm.description>
+  <npm.keywords>["absolute","check","file","filepath","is","normalize","path","path.relative","relative","resolve","slash","slashes","uri","url"]</npm.keywords>
+  <npm.name>is-relative</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

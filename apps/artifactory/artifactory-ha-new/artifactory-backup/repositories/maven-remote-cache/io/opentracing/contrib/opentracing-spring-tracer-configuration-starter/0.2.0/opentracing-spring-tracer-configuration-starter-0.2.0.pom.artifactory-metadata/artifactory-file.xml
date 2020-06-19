@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-spring-tracer-configuration-starter/0.2.0/opentracing-spring-tracer-configuration-starter-0.2.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-spring-tracer-configuration-starter-0.2.0.pom</name>
+  <created>1576861437719</created>
+  <lastModified>1556193349000</lastModified>
+  <size>2684</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861437719</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>161e13797db33fc49d4587c42980249d729fee30</original>
+          <actual>161e13797db33fc49d4587c42980249d729fee30</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>46ec82bc23ba5f42f0035d4a009f2d6c</original>
+          <actual>46ec82bc23ba5f42f0035d4a009f2d6c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bc1dbaaf9606fdbc46657798b6166f9a58e02107312a3cbe3e4db4c725ee60b8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

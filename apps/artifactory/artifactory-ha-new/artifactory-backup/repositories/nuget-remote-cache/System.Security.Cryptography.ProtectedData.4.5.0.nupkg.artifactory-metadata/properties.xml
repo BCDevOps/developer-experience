@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62BB71B27DFBC</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16300</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides access to Windows Data Protection Api.
+
+Commonly Used Types:
+System.Security.Cryptography.DataProtectionScope
+System.Security.Cryptography.ProtectedData
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>s/MFK8BvgtejZj5a8qAPDXEGBtWkpFX98qwQP/wqVa9CgIC7LrKHxDFdlN5x6afGAb0ZVBVGIZlCdBLnO2QjZw==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Security:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>System.Security:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Security.Cryptography.ProtectedData</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Security.Cryptography.ProtectedData</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

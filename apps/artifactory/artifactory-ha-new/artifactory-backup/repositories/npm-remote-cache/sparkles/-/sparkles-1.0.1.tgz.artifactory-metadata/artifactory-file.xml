@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sparkles/-/sparkles-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sparkles-1.0.1.tgz</name>
+  <created>1576003607103</created>
+  <lastModified>1527443807000</lastModified>
+  <size>2358</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003607104</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>008db65edce6c50eec0c5e228e1945061dd0437c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5a7d3013df870940a2c6a65e3fe15b2a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f34dad3f1a581ea88d770eb1a9cfc304dafe71ee6ba7887bd54d03d5b7d46a4e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

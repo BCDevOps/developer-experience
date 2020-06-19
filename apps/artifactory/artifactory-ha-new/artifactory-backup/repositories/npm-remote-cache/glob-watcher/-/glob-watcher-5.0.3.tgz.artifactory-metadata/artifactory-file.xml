@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>glob-watcher/-/glob-watcher-5.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>glob-watcher-5.0.3.tgz</name>
+  <created>1576003121773</created>
+  <lastModified>1542330470000</lastModified>
+  <size>4557</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003121774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>88a8abf1c4d131eb93928994bc4a593c2e5dd626</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>af375d81fc0e79f94b9cfdb9bc3d297b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>092080e74d6a9be60418bf01ac5bee1726a8f49b6266fd24bd9a6f77b1f15e90</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

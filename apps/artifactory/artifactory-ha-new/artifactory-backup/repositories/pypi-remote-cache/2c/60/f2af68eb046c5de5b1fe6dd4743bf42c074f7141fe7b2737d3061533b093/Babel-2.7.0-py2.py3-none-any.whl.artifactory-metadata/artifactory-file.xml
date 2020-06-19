@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>2c/60/f2af68eb046c5de5b1fe6dd4743bf42c074f7141fe7b2737d3061533b093/Babel-2.7.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Babel-2.7.0-py2.py3-none-any.whl</name>
+  <created>1574023012605</created>
+  <lastModified>1558961525000</lastModified>
+  <size>8421834</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023012606</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6145459f9d7a875b10695874588044157cff58be</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b96fe47047fd07bc5797779d903d4fe2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>af92e6106cb7c55286b25b38ad7695f8b4efb36a90ba483d7f7a6628c46158ab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

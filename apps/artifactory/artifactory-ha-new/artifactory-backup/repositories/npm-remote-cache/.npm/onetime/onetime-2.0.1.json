@@ -1,0 +1,31 @@
+{
+  "name" : "onetime",
+  "description" : "Ensure a function is only called once",
+  "version" : "2.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/onetime",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/onetime/-/onetime-2.0.1.tgz",
+    "shasum" : "067428230fd67443b2794b22bba528b6867962d4"
+  },
+  "dependencies" : {
+    "mimic-fn" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "once", "function", "one", "onetime", "func", "fn", "single", "call", "called", "prevent" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

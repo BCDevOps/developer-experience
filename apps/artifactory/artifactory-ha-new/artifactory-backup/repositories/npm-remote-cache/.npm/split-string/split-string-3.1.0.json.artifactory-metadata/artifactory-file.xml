@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/split-string/split-string-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>split-string-3.1.0.json</name>
+  <created>1576003605213</created>
+  <lastModified>1576003605189</lastModified>
+  <size>1423</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003605214</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6b0cda13829bbba1d683df96f2f665a9ecc92a5e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f550e3993b912e39a20d6c5113c82a9b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>942cd06ead156a5780dd3f145dcbe43c0001e0f7f9315b25f341f40f83e8f67a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,32 @@
+{
+  "name" : "tr46",
+  "description" : "An implementation of the Unicode TR46 spec",
+  "version" : "1.0.1",
+  "author" : "Sebastian Mayr <npm@smayr.name>",
+  "repository" : "Sebmaster/tr46.js",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/tr46/-/tr46-1.0.1.tgz",
+    "shasum" : "a8b13fd6bfd2489519674ccde55ba3693b706d09"
+  },
+  "dependencies" : {
+    "punycode" : "^2.1.0"
+  },
+  "devDependencies" : {
+    "eslint" : "^3.13.0",
+    "mocha" : "^3.2.0",
+    "regenerate" : "^1.3.2",
+    "request" : "^2.79.0",
+    "unicode-10.0.0" : "^0.7.4"
+  },
+  "keywords" : [ "unicode", "tr46", "url", "whatwg" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "lib/mappingTable.json", "lib/regexes.js" ],
+  "scripts" : {
+    "test" : "mocha",
+    "lint" : "eslint .",
+    "pretest" : "node scripts/getLatestTests.js",
+    "prepublish" : "node scripts/generateMappingTable.js && node scripts/generateRegexes.js"
+  },
+  "unicodeVersion" : "10.0.0"
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d6da680830b64bbe15f2dc055987fd0c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>turn es6 code into readable vanilla es5 with source maps</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>babel</npm.name>
+  <npm.version>6.23.0</npm.version>
+</properties>

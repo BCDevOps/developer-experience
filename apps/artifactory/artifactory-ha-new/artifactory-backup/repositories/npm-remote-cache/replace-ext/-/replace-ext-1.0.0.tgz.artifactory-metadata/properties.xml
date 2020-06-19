@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"669749616b4a61b9747299625272aa57"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>replaces a file extension with another one</npm.description>
+  <npm.keywords>["gulp","extensions","filepath","basename"]</npm.keywords>
+  <npm.name>replace-ext</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

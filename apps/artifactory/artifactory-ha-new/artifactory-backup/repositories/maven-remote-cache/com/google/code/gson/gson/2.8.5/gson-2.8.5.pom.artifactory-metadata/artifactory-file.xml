@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/google/code/gson/gson/2.8.5/gson-2.8.5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>gson-2.8.5.pom</name>
+  <created>1576861390352</created>
+  <lastModified>1526958539000</lastModified>
+  <size>2527</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861390353</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>2c18fa1082aa1c422aece88244c084be50c76500</original>
+          <actual>2c18fa1082aa1c422aece88244c084be50c76500</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>513c30c3b385f63f2c4575d9e29dc071</original>
+          <actual>513c30c3b385f63f2c4575d9e29dc071</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b8308557a7fccc92d9fe7c8cd0599258b361285d2ecde7689eda98843255a092</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

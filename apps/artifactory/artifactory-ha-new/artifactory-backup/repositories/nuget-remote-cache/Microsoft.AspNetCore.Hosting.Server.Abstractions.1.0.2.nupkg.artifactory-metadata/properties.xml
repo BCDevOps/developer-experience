@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647DF14023B7</artifactory.internal.etag>
+  <nuget.authors>Microsoft.AspNetCore.Hosting.Server.Abstractions</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Features:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Features:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Abstractions:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Abstractions:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.description>ASP.NET Core hosting server abstractions for web applications.</nuget.description>
+  <nuget.digest>5FR4jYZ7JFjOBSVDpb7TF+oMpxqDUB4GGL2MoQzrs0YJc7SuAZO8qqgavkRLculHoImF4wyPaU/TjqtDE4p9zQ==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Hosting.Server.Abstractions</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.AspNetCore.Hosting.Server.Abstractions</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore,hosting</nuget.tags>
+  <nuget.version>1.0.2</nuget.version>
+</properties>

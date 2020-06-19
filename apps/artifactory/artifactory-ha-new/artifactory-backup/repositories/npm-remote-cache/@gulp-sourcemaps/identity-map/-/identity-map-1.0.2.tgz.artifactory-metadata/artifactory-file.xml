@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@gulp-sourcemaps/identity-map/-/identity-map-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>identity-map-1.0.2.tgz</name>
+  <created>1576003167582</created>
+  <lastModified>1530210444000</lastModified>
+  <size>2658</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003167582</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1e6fe5d8027b1f285dc0d31762f566bccd73d5a9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>62b618a041ae8e7b59abd3422c6cc187</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c54ad8b34cb293008108e7997b7db0886e97f3de961dba2b3a51da658d78ceaa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>strip-bom/-/strip-bom-2.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>strip-bom-2.0.0.tgz</name>
+  <created>1576003658923</created>
+  <lastModified>1527445561000</lastModified>
+  <size>1789</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003658924</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6219a85616520491f35788bdbf1447a99c7e6b0e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3fa008815fc843fd20aa6f15330ebcfb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ad9ed163db6586739e6576b48ea76349b83ad460fee5c8e6a8fb481883fd0653</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

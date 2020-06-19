@@ -1,0 +1,82 @@
+{
+  "name" : "type",
+  "description" : "Runtime validation and processing of JavaScript types",
+  "version" : "1.2.0",
+  "author" : "Mariusz Nowak <medyk@medikoo.com> (https://www.medikoo.com/)",
+  "repository" : "medikoo/type",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/type/-/type-1.2.0.tgz",
+    "shasum" : "848dd7698dafa3e54a6c479e759c4bc3f18847a0"
+  },
+  "devDependencies" : {
+    "chai" : "^4.2.0",
+    "eslint" : "^6.4.0",
+    "eslint-config-medikoo" : "^2.5.1",
+    "git-list-updated" : "^1.2.1",
+    "husky" : "^3.0.5",
+    "lint-staged" : "^9.2.5",
+    "mocha" : "^6.2.0",
+    "nyc" : "^14.1.1",
+    "prettier-elastic" : "^1.18.2"
+  },
+  "keywords" : [ "type", "coercion" ],
+  "license" : "ISC",
+  "scripts" : {
+    "coverage" : "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test",
+    "check-coverage" : "npm run coverage && nyc check-coverage --statements 80 --function 80 --branches 80 --lines 80",
+    "lint" : "eslint --ignore-path=.gitignore .",
+    "lint-updated" : "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
+    "prettier-check-updated" : "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
+    "prettify" : "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'",
+    "test" : "mocha --recursive"
+  },
+  "lint-staged" : {
+    "*.js" : [ "eslint" ],
+    "*.{css,html,js,json,md,yaml,yml}" : [ "prettier -c" ]
+  },
+  "husky" : {
+    "hooks" : {
+      "pre-commit" : "lint-staged"
+    }
+  },
+  "eslintConfig" : {
+    "extends" : "medikoo/es3",
+    "root" : true,
+    "globals" : {
+      "Map" : true,
+      "Promise" : true,
+      "Set" : true,
+      "Symbol" : true
+    },
+    "overrides" : [ {
+      "files" : "test/**/*.js",
+      "env" : {
+        "mocha" : true
+      },
+      "rules" : {
+        "no-eval" : "off",
+        "no-new-wrappers" : "off"
+      }
+    }, {
+      "files" : [ "string/coerce.js", "number/coerce.js" ],
+      "rules" : {
+        "no-implicit-coercion" : "off"
+      }
+    }, {
+      "files" : "plain-object/is.js",
+      "rules" : {
+        "no-proto" : "off"
+      }
+    } ]
+  },
+  "prettier" : {
+    "printWidth" : 100,
+    "tabWidth" : 4,
+    "overrides" : [ {
+      "files" : [ "*.md" ],
+      "options" : {
+        "tabWidth" : 2
+      }
+    } ]
+  }
+}

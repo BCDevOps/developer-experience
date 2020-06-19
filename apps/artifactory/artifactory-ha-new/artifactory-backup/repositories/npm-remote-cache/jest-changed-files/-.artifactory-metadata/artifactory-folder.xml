@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-changed-files/-</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>-</name>
+  <created>1576003105907</created>
+  <lastModified>1576003105907</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003105907</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

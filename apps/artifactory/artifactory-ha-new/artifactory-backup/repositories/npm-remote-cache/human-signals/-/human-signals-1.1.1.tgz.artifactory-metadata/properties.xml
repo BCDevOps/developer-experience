@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ab2b5e94b4d0f208812cb8440b38c277"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>human-friendly process signals</npm.description>
+  <npm.keywords>["signal","signals","handlers","error-handling","errors","interrupts","sigterm","sigint","irq","process","exit","exit-code","status","operating-system","es6","javascript","linux","macos","windows","nodejs"]</npm.keywords>
+  <npm.name>human-signals</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

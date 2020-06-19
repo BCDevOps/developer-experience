@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/escape-html/escape-html-1.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>escape-html-1.0.3.json</name>
+  <created>1576003445938</created>
+  <lastModified>1576003445909</lastModified>
+  <size>624</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003445939</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>685a7b1af4169f947249698896d47ef3816e9115</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>dd50b150ae2854cb8bfa4e7c27b160cf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>273fc33261a62a18aee287a29576b6c37c32ef5fb220e0245140bd85801957d2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

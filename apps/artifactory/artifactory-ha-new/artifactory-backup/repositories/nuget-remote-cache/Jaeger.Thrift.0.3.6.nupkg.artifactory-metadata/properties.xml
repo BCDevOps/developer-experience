@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D75007E4382726</artifactory.internal.etag>
+  <nuget.authors>Chatham Financial Corp. and The Jaeger Authors</nuget.authors>
+  <nuget.copyright>Copyright 2018 (c) The Jaeger Authors. Copyright 2018 (c) Chatham Financial Corp.</nuget.copyright>
+  <nuget.dependency>Jaeger.Thrift.VendoredThrift:0.3.6:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Package Description</nuget.description>
+  <nuget.digest>HQwjFtdp6Ha7IuKBiJFiJ+zna/6FopmQ5hELHJzWOJhFGR+SLTnD9beI1dQ5cEFh0DGPPHd0G3CAnR8sO61Q0g==</nuget.digest>
+  <nuget.id>Jaeger.Thrift</nuget.id>
+  <nuget.licenseUrl>https://github.com/jaegertracing/jaeger-client-csharp/blob/master/LICENSE</nuget.licenseUrl>
+  <nuget.owners>Chatham Financial Corp. and The Jaeger Authors</nuget.owners>
+  <nuget.projectUrl>https://github.com/jaegertracing/jaeger-client-csharp</nuget.projectUrl>
+  <nuget.releaseNotes>https://github.com/jaegertracing/jaeger-client-csharp/releases/tag/v0.3.6</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>0.3.6</nuget.version>
+</properties>

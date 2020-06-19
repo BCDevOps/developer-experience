@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Security.Principal.Windows.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Security.Principal.Windows.4.5.0.nupkg</name>
+  <created>1578432207894</created>
+  <lastModified>1545092892000</lastModified>
+  <size>390138</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432207974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c2d89d7e5746b54f8cf64ae6d99b24686aa98b58</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>70ee7a3c306c2f199d30e2205f5850ba</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>064518360bb3d1ee0d269d64916eda2419f77721fd493c01e4df17aa7942b266</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

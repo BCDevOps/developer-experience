@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jsdom</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jsdom</name>
+  <created>1576003104403</created>
+  <lastModified>1576003104403</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003104403</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

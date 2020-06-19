@@ -1,0 +1,43 @@
+{
+  "name" : "jest-message-util",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-message-util"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-message-util/-/jest-message-util-25.2.6.tgz",
+    "shasum" : "9d5523bebec8cd9cdef75f0f3069d6ec9a2252df"
+  },
+  "dependencies" : {
+    "@babel/code-frame" : "^7.0.0",
+    "@jest/types" : "^25.2.6",
+    "@types/stack-utils" : "^1.0.1",
+    "chalk" : "^3.0.0",
+    "micromatch" : "^4.0.2",
+    "slash" : "^3.0.0",
+    "stack-utils" : "^1.0.1"
+  },
+  "devDependencies" : {
+    "@types/babel__code-frame" : "^7.0.0",
+    "@types/micromatch" : "^4.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/index.d.ts"
+}

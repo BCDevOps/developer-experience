@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-config-prettier/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1579828145197</created>
+  <lastModified>1577447840000</lastModified>
+  <size>158875</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828145202</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a3fe0bdd131f0ff42bd0c46233ce0e90fc1ec22e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0bf59fc7160c3eb41989daa15cf5f3d2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e18acfb6f20b1fbe05c64a5ca7042da43daf50188ae9c055c2075f708251471d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

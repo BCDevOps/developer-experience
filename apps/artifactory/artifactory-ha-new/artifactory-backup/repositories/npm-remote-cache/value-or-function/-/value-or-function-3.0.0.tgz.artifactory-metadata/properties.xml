@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"201db1a53f637c8f2de31680377030a6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>normalize a value or function, applying extra args to the function</npm.description>
+  <npm.keywords>["options","normalize","value","function"]</npm.keywords>
+  <npm.name>value-or-function</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

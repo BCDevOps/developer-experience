@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b765203b0d733534ee6a58d84767223a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>object.prototype.hasownproperty.call shortcut</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>has</npm.name>
+  <npm.version>1.0.3</npm.version>
+</properties>

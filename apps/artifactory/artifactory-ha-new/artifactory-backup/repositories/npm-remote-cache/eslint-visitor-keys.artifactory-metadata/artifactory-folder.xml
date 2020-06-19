@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>eslint-visitor-keys</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>eslint-visitor-keys</name>
+  <created>1576008547285</created>
+  <lastModified>1576008547285</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008547285</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

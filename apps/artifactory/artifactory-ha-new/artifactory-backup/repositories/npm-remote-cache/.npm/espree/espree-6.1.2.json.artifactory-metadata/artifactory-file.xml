@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/espree/espree-6.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>espree-6.1.2.json</name>
+  <created>1576008549580</created>
+  <lastModified>1576008549187</lastModified>
+  <size>1909</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008549580</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a61af69c985250671a9aee5f82d3facf0c4af7e3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>be01e313dc598e07d1369dd15fff31ed</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a6c65eccfe68261742dc50559b531f92666ec9316ca1fa232e693ce76b7d9d6d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

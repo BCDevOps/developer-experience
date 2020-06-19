@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Runtime.Serialization.Formatters.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Runtime.Serialization.Formatters.4.3.0.nupkg</name>
+  <created>1578436040304</created>
+  <lastModified>1538755370000</lastModified>
+  <size>76407</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578436040305</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>63c45374b70ae99f99d8eb0c72ec4ad0203e92e7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7c4c18151b7c61b1d01ba89e9dbd8500</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>15e89cecc18a546e229a1ee4a4b90f1e6029433623abb4b11e76b3876c199284</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

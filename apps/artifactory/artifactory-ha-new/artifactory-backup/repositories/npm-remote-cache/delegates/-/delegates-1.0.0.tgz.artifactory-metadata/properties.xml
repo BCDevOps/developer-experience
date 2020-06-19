@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"63c99aa9fba5cf7076433121d055fc43"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>delegate methods and accessors to another property</npm.description>
+  <npm.keywords>["delegate","delegation"]</npm.keywords>
+  <npm.name>delegates</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

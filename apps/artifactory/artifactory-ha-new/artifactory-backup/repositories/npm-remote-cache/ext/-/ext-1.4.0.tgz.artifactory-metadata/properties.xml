@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8e3bd27039e6b444c2f72ab45f15a26a"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>javascript utilities with respect to emerging standard</npm.description>
+  <npm.keywords>["ecmascript","es","es6","extensions","ext","addons","lodash","extras","harmony","javascript","polyfill","shim","util","utils","utilities"]</npm.keywords>
+  <npm.name>ext</npm.name>
+  <npm.version>1.4.0</npm.version>
+</properties>

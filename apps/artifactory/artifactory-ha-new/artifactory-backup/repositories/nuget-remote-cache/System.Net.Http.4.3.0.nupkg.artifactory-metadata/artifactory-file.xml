@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Net.Http.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Net.Http.4.3.0.nupkg</name>
+  <created>1578497294575</created>
+  <lastModified>1544738711000</lastModified>
+  <size>1371903</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578497294575</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>eb5338f3af3c13ce7682de72c70395610aee3e29</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>152ffd3eec86e2b87d4392123abdad40</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>528041ed63c3a760677bf7f0c4a1749c4f20ac9e85cd3317753fe37eca618fc4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

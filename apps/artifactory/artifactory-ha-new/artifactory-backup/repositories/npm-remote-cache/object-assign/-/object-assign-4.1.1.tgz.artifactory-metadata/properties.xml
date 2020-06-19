@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4f52c397ba44c57bcf6ed38d7f2c3f8e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>es2015 `object.assign()` ponyfill</npm.description>
+  <npm.keywords>["object","assign","extend","properties","es2015","ecmascript","harmony","ponyfill","prollyfill","polyfill","shim","browser"]</npm.keywords>
+  <npm.name>object-assign</npm.name>
+  <npm.version>4.1.1</npm.version>
+</properties>

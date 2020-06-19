@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>process-nextick-args</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>process-nextick-args</name>
+  <created>1576008067482</created>
+  <lastModified>1576008067482</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008067482</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

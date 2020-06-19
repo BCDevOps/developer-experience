@@ -1,0 +1,36 @@
+{
+  "name" : "universal-user-agent",
+  "description" : "Get a user agent string in both browser and node",
+  "version" : "4.0.0",
+  "repository" : "https://github.com/gr2m/universal-user-agent.git",
+  "main" : "dist-node/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/universal-user-agent/-/universal-user-agent-4.0.0.tgz",
+    "shasum" : "27da2ec87e32769619f68a14996465ea1cb9df16"
+  },
+  "dependencies" : {
+    "os-name" : "^3.1.0"
+  },
+  "devDependencies" : {
+    "@gr2m/pika-plugin-build-web" : "^0.6.0-issue-84.1",
+    "@pika/pack" : "^0.5.0",
+    "@pika/plugin-build-node" : "^0.6.0",
+    "@pika/plugin-ts-standard-pkg" : "^0.6.0",
+    "@types/jest" : "^24.0.18",
+    "jest" : "^24.9.0",
+    "prettier" : "^1.18.2",
+    "semantic-release" : "^15.9.15",
+    "ts-jest" : "^24.0.2",
+    "typescript" : "^3.6.2"
+  },
+  "keywords" : [ ],
+  "license" : "ISC",
+  "files" : [ "dist-*/", "bin/" ],
+  "scripts" : {
+  },
+  "types" : "dist-types/index.d.ts",
+  "module" : "dist-web/index.js",
+  "pika" : true,
+  "source" : "dist-src/index.js",
+  "sideEffects" : false
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"bc265dc1e02351ef035c2de77be70a70"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>global identifiers from different javascript environments</npm.description>
+  <npm.keywords>["globals","global","identifiers","variables","vars","jshint","eslint","environments"]</npm.keywords>
+  <npm.name>globals</npm.name>
+  <npm.version>11.11.0</npm.version>
+</properties>

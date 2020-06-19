@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647F362D01F7</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile259</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.description>Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).
+
+Commonly Used Types:
+System.Text.Encodings.Web.HtmlEncoder
+System.Text.Encodings.Web.UrlEncoder
+System.Text.Encodings.Web.JavaScriptEncoder
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>+AL7vP4ApfVSCSxphwM/fNeUp7ij7W/Gubc3jBK9wIG5SnzthpRHpKeTIutHRXlzukl9qgfGqUymQ4jPkoKieQ==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Text.Encodings.Web</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Text.Encodings.Web</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

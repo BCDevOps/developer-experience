@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/vinyl-sourcemaps-apply/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003393694</created>
+  <lastModified>1527454638000</lastModified>
+  <size>9779</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1583874188982</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d9dd554698f77cca5e285473de923cd476e0a397</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4003ff9bccadba846cd8bed4de4888a3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>657ba4d8eb9b38074f71f9cadd2b4cd66df1ab788d103d29a5223e1f714c89bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/saslprep/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1582140562333</created>
+  <lastModified>1556674888000</lastModified>
+  <size>10749</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464324834</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>688eb5f993af0595635bcd9e5e9209a4abca7029</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f7305763cb19a73d9d59f513bfb52d32</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>45cbe23e3352fe0c3b28196315c46c641d5e84a25aaaab7111b4a5ffbb04a26d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

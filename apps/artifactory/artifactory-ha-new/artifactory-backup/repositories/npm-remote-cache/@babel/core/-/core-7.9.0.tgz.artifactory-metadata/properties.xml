@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5644531b85d12216cebb2d9c4e44bd50"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>babel compiler core.</npm.description>
+  <npm.keywords>["6to5","babel","classes","const","es6","harmony","let","modules","transpile","transpiler","var","babel-core","compiler"]</npm.keywords>
+  <npm.name>@babel/core</npm.name>
+  <npm.version>7.9.0</npm.version>
+</properties>

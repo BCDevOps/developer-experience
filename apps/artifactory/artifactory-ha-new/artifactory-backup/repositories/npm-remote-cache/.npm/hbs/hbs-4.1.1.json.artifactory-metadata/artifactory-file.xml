@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/hbs/hbs-4.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hbs-4.1.1.json</name>
+  <created>1586464315856</created>
+  <lastModified>1586464315749</lastModified>
+  <size>1140</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464315856</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>37f52364fce1fabe82e644ef4f953ec0574e5e0d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ceafcc66d680b7165d0381d8abd6a4d4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>320a703fd041f95d1995d1c4e1cfc0589e34aff4e68c80a91c8cae29f8d67d1f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

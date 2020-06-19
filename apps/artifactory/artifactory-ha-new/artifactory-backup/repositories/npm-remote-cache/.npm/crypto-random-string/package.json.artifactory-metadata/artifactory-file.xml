@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/crypto-random-string/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003624966</created>
+  <lastModified>1583560308000</lastModified>
+  <size>17864</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464328514</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>01d65530d32c2dad4c7357e02b2f2933b1ef6a9f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b89f44c0d53af0817363db2a6c22ea05</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b85fdde5e99f06e954fa4fc9ac87e7045a8221c59f7bc525bcb78b2fd525216d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

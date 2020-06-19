@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/write/write-1.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>write-1.0.3.json</name>
+  <created>1576003098567</created>
+  <lastModified>1576003098545</lastModified>
+  <size>1629</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003098567</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>cc8d865f8259693097e9b8a998a56b9455314d57</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>049c3800cb2a10a37381e6bfaaf5abca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>23e8de4d619e9e14ee3c4ba1f902d63e89fa4e5171b9602f73320d567669b7ad</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

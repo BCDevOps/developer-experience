@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/type-check/type-check-0.3.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>type-check-0.3.2.json</name>
+  <created>1576003626458</created>
+  <lastModified>1576003626425</lastModified>
+  <size>1069</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003626459</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>347e07d792c0fb472799084033a35d072ea88f31</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>35b7ff2f17bb846357e3418b97745661</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2b2b073da81bd71088e0fcd9870d4f45d3eccd93e858ff7f38633109c8cbefa8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

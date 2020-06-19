@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cf54d367d67c7034d8a164e4e54bda2a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for @babel/traverse</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/babel__traverse</npm.name>
+  <npm.version>7.0.7</npm.version>
+</properties>

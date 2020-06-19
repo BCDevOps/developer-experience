@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e3e8f01929e280459e6fa2507a4a6f18"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a neat wrapper around node.js fs.watch / fs.watchfile / fsevents.</npm.description>
+  <npm.keywords>["fs","watch","watchFile","watcher","watching","file","fsevents"]</npm.keywords>
+  <npm.name>chokidar</npm.name>
+  <npm.version>3.3.1</npm.version>
+</properties>

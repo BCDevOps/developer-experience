@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/supertest/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003073011</created>
+  <lastModified>1570013461000</lastModified>
+  <size>81774</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464306039</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b0e0974d593bf94f25f07ef4a4f18d34a5e544ea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f66c3c60e75f3e725cf53a67cb3d2525</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c392a5e06b7e0a1d1a0c20754410a7e9207fecfa76af205f3ae4de458e4ae752</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>lodash.isinteger/-/lodash.isinteger-4.0.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.isinteger-4.0.4.tgz</name>
+  <created>1576003434585</created>
+  <lastModified>1527404318000</lastModified>
+  <size>3464</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003434586</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>619c0af3d03f8b04c31f5882840b77b11cd68343</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d941fa5830e91ed6b72fa214ff0bc719</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7885443a78d4400274bf42a5929f6aaab23ca5d7e303deee76fe702ffe873b7d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

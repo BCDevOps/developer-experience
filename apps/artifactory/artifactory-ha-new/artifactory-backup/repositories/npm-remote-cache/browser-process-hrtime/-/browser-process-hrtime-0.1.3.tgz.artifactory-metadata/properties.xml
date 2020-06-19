@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cb8edfb4fe920608894a1b7136ea53d7"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>shim for process.hrtime in the browser</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>browser-process-hrtime</npm.name>
+  <npm.version>0.1.3</npm.version>
+</properties>

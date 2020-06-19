@@ -1,0 +1,33 @@
+{
+  "name" : "original",
+  "description" : "Generate the origin from an URL or check if two URL/Origins are the same",
+  "version" : "1.0.2",
+  "author" : "Arnout Kazemier",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/unshiftio/original"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/original/-/original-1.0.2.tgz",
+    "shasum" : "e442a61cffe1c5fd20a65f3261c26663b303f25f"
+  },
+  "dependencies" : {
+    "url-parse" : "^1.4.3"
+  },
+  "devDependencies" : {
+    "assume" : "~2.1.0",
+    "istanbul" : "0.4.x",
+    "mocha" : "~3.5.0",
+    "pre-commit" : "~1.2.0"
+  },
+  "keywords" : [ "origin", "url", "parse" ],
+  "license" : "MIT",
+  "scripts" : {
+    "100%" : "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test-travis" : "istanbul cover _mocha --report lcovonly -- test.js",
+    "coverage" : "istanbul cover _mocha -- test.js",
+    "watch" : "mocha --watch test.js",
+    "test" : "mocha test.js"
+  }
+}

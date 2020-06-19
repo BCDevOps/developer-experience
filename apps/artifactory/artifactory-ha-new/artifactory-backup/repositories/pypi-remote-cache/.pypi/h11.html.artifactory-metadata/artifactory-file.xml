@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/h11.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>h11.html</name>
+  <created>1574124603179</created>
+  <lastModified>1580425499616</lastModified>
+  <size>3134</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580425512305</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>babd1ce7c736129e5f482a7455ed189fd9479a4c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>10ba89a0d5ad9886477f0f3b5bdcec7d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9510c4da6283d45780b33b8dae71322d9bfa140853002c231dabbf6f9e58662b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>exit/-/exit-0.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>exit-0.1.2.tgz</name>
+  <created>1576003406406</created>
+  <lastModified>1527379547000</lastModified>
+  <size>15295</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003406407</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0632638f8d877cc82107d30a0fff1a17cba1cd0c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a7ebd2d01676648c8ffdbb2608123cfe</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>485f06ca0939c28f18128926c4345162d0adcfd340c62e292bb827c2cfe82a41</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

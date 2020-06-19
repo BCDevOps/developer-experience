@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>trim-right/-/trim-right-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>trim-right-1.0.1.tgz</name>
+  <created>1579828430074</created>
+  <lastModified>1527450837000</lastModified>
+  <size>1575</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828430075</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cb2e1203067e0c8de1f614094b9fe45704ea6003</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fef3eb441292fa380bdb3c1fd259cc50</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>89f3b88291843bfa6dd3aae2f154fe2e1913c4de02d821b210b7270e3cbfd985</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ad614e3c4d92e1718f36d09432355da7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node.js basic auth parser</npm.description>
+  <npm.keywords>["basic","auth","authorization","basicauth"]</npm.keywords>
+  <npm.name>basic-auth</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

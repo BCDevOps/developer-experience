@@ -1,0 +1,46 @@
+{
+  "name" : "@octokit/plugin-enterprise-compatibility",
+  "description" : "Octokit plugin for improving GHE compatibility",
+  "version" : "1.2.2",
+  "repository" : "https://github.com/octokit/plugin-enterprise-compatibility.js.git",
+  "main" : "dist-node/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@octokit/plugin-enterprise-compatibility/-/plugin-enterprise-compatibility-1.2.2.tgz",
+    "shasum" : "a30b635b63760e1504e57af5cf54da058b32a1de"
+  },
+  "dependencies" : {
+    "@octokit/request-error" : "^2.0.0",
+    "@octokit/types" : "^2.0.1"
+  },
+  "devDependencies" : {
+    "@octokit/core" : "^2.1.0",
+    "@octokit/rest" : "^17.0.0",
+    "@pika/pack" : "^0.5.0",
+    "@pika/plugin-build-node" : "^0.9.0",
+    "@pika/plugin-build-web" : "^0.9.0",
+    "@pika/plugin-ts-standard-pkg" : "^0.9.0",
+    "@types/fetch-mock" : "^7.3.1",
+    "@types/jest" : "^25.1.0",
+    "@types/node" : "^13.1.0",
+    "fetch-mock" : "^9.0.0",
+    "jest" : "^25.1.0",
+    "prettier" : "^2.0.1",
+    "semantic-release" : "^17.0.0",
+    "semantic-release-plugin-update-version-in-files" : "^1.0.0",
+    "ts-jest" : "^25.1.0",
+    "typescript" : "^3.6.4"
+  },
+  "keywords" : [ "octokit", "github", "api", "rest", "plugin", "enterprise" ],
+  "license" : "MIT",
+  "files" : [ "dist-*/", "bin/" ],
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "types" : "dist-types/index.d.ts",
+  "module" : "dist-web/index.js",
+  "pika" : true,
+  "source" : "dist-src/index.js",
+  "sideEffects" : false
+}

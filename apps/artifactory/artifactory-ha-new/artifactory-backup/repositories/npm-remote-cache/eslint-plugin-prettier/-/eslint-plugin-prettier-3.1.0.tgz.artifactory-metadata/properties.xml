@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6d4c1a427491806c1b2c3d34e61b80fd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>runs prettier as an eslint rule</npm.description>
+  <npm.keywords>["eslint","eslintplugin","eslint-plugin","prettier"]</npm.keywords>
+  <npm.name>eslint-plugin-prettier</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

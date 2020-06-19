@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"88d19ffad4cd8e6737eeb831d4ff761a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>option parsing and help generation</npm.description>
+  <npm.keywords>["options","flags","option parsing","cli"]</npm.keywords>
+  <npm.name>optionator</npm.name>
+  <npm.version>0.8.3</npm.version>
+</properties>

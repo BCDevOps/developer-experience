@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a3da88ff5ffeaeeb0b181914117b2433"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the color cyan, in ansi.</npm.description>
+  <npm.keywords>["cyan","256","ansi","cli","color","colors","colour","command","command-line","console","format","formatting","iterm","log","logging","rgb","shell","string","style","styles","styling","terminal","text","tty","xterm"]</npm.keywords>
+  <npm.name>ansi-cyan</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

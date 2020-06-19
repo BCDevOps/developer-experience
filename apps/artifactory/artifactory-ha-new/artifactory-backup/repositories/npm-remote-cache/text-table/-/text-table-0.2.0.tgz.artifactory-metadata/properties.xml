@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4e595139988957453229d6ccd229f626"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>borderless text tables with alignment</npm.description>
+  <npm.keywords>["text","table","align","ascii","rows","tabular"]</npm.keywords>
+  <npm.name>text-table</npm.name>
+  <npm.version>0.2.0</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d05773de91c95c16f71790160e6dbd4b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a stupidly simple key/value storage using files to persist some data</npm.description>
+  <npm.keywords>["json cache","simple cache","file cache","key par","key value","cache"]</npm.keywords>
+  <npm.name>flat-cache</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>96/da/c0dcc5e7a98a53440b8db3cf9771345fa696754f79e8734ea59123f7d734/python_jose-3.0.1-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>python_jose-3.0.1-py2.py3-none-any.whl</name>
+  <created>1574023062201</created>
+  <lastModified>1535597552000</lastModified>
+  <size>25480</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023062201</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c282e4790bdec07a387a73e1cc36089ce357cdc8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>28066388afe29a9c485665ee749e9a2b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>29701d998fe560e52f17246c3213a882a4a39da7e42c7015bcc1f7823ceaff1c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

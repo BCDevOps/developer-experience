@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>0d/ec/e8c5742985bab80b2fcd0ab429cf6804779d8cfd15264fdad933057d1380/pylint-flask-0.6.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pylint-flask-0.6.tar.gz</name>
+  <created>1574023485285</created>
+  <lastModified>1548876364000</lastModified>
+  <size>9964</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023485286</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3a4405f6eaeb7f5098bf6d9d3e7d9da7f77e8bfe</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>95988ad4ee6fbfd2326c96b5e9ab71a6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f4d97de2216bf7bfce07c9c08b166e978fe9f2725de2a50a9845a97de7e31517</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

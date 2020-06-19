@@ -1,0 +1,34 @@
+{
+  "name" : "hosted-git-info",
+  "description" : "Provides metadata and conversions from repository urls for Github, Bitbucket and Gitlab",
+  "version" : "2.7.1",
+  "author" : "Rebecca Turner <me@re-becca.org> (http://re-becca.org)",
+  "homepage" : "https://github.com/npm/hosted-git-info",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/npm/hosted-git-info.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/npm/hosted-git-info/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/hosted-git-info/-/hosted-git-info-2.7.1.tgz",
+    "shasum" : "97f236977bd6e125408930ff6de3eec6281ec047"
+  },
+  "devDependencies" : {
+    "standard" : "^11.0.1",
+    "standard-version" : "^4.3.0",
+    "tap" : "^12.0.1"
+  },
+  "keywords" : [ "git", "github", "bitbucket", "gitlab" ],
+  "license" : "ISC",
+  "files" : [ "index.js", "git-host.js", "git-host-info.js" ],
+  "scripts" : {
+    "prerelease" : "npm t",
+    "postrelease" : "npm publish && git push --follow-tags",
+    "pretest" : "standard",
+    "release" : "standard-version -s",
+    "test" : "tap -J --nyc-arg=--all --coverage test"
+  }
+}

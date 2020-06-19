@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-config-prettier/eslint-config-prettier-4.3.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>eslint-config-prettier-4.3.0.json</name>
+  <created>1579828363133</created>
+  <lastModified>1579828363059</lastModified>
+  <size>2214</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828363139</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7a47b1fb84922e844a56a97c059e6f4f9d9fc39b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>27c883fb3b608d0edf547be8122a766f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5419ae7af21276a2105198175e86ad3ffec6c7895ea8aeee20913f4d1823e854</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,49 @@
+{
+  "name" : "global-modules",
+  "description" : "The directory used by npm for globally installed npm modules.",
+  "version" : "1.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/global-modules",
+  "repository" : "jonschlinkert/global-modules",
+  "contributors" : [ "JasonChang (https://packagist.org/packages/jason-chang)", "Jon Schlinkert (http://twitter.com/jonschlinkert)", "Kiko Beats (https://kikobeats.com)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/global-modules/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/global-modules/-/global-modules-1.0.0.tgz",
+    "shasum" : "6d770f0eb523ac78164d72b5e71a8877265cc3ea"
+  },
+  "dependencies" : {
+    "global-prefix" : "^1.0.1",
+    "is-windows" : "^1.0.1",
+    "resolve-dir" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.12",
+    "mocha" : "^3.4.2"
+  },
+  "keywords" : [ "directory", "dirname", "global", "module", "modules", "package", "path", "prefix", "resolve" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "run" : true,
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "homedir-polyfill", "git-config-path", "global-prefix", "npm-paths" ]
+    },
+    "reflinks" : [ "verb" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-locate/p-locate-4.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-locate-4.1.0.json</name>
+  <created>1585853565811</created>
+  <lastModified>1585853565761</lastModified>
+  <size>1099</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853565812</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7d47319965f58b4e3268f1312300d5f490a24289</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ed21902ec0310aaa8e836fc2ad461cd4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>62fd0434ee9134ccac567587480b1fc2462c61acc0cdaa1eb017f6b83797eeb2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

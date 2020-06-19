@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f0eb4f4cc5b1bb239cebcafcceb0d168"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>neo-async is thought to be used as a drop-in replacement for async, it almost fully covers its functionality and runs faster </npm.description>
+  <npm.keywords>"async, util"</npm.keywords>
+  <npm.name>neo-async</npm.name>
+  <npm.version>2.6.1</npm.version>
+</properties>

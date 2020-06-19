@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.AzureAppServices.HostingStartup.2.2.5.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.AzureAppServices.HostingStartup.2.2.5.nupkg</name>
+  <created>1580862035802</created>
+  <lastModified>1557845639000</lastModified>
+  <size>51224</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580862035802</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>40c5abf0261899e931f11e805dc14ce3cd62f3f4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>64b939f83e9f0dc238b8261a417eef74</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>640261d5c3092b7508413276c265262c94fefb645d4602c88c3651e852a6ef2a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

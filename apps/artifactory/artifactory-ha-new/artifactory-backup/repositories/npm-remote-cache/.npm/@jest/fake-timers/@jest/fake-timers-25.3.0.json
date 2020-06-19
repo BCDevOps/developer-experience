@@ -1,0 +1,41 @@
+{
+  "name" : "@jest/fake-timers",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-fake-timers"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@jest/fake-timers/-/fake-timers-25.3.0.tgz",
+    "shasum" : "995aad36d5c8984165ca5db12e740ab8dbf7042a"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.3.0",
+    "jest-message-util" : "^25.3.0",
+    "jest-mock" : "^25.3.0",
+    "jest-util" : "^25.3.0",
+    "lolex" : "^5.0.0"
+  },
+  "devDependencies" : {
+    "@types/lolex" : "^5.1.0",
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

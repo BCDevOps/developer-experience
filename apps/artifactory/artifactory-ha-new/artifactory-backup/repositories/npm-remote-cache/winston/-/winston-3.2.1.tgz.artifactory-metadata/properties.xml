@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e0ae6c4c7cb23b80c51e71e78f841fa0"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a logger for just about everything.</npm.description>
+  <npm.keywords>["winston","logger","logging","logs","sysadmin","bunyan","pino","loglevel","tools","json","stream"]</npm.keywords>
+  <npm.name>winston</npm.name>
+  <npm.version>3.2.1</npm.version>
+</properties>

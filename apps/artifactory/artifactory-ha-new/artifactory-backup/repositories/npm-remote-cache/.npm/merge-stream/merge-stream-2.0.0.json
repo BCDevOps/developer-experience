@@ -1,0 +1,22 @@
+{
+  "name" : "merge-stream",
+  "description" : "Create a stream that emits events from multiple other streams",
+  "version" : "2.0.0",
+  "author" : "Stephen Sugden <me@stephensugden.com>",
+  "repository" : "grncdr/merge-stream",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/merge-stream/-/merge-stream-2.0.0.tgz",
+    "shasum" : "52823629a14dd00c9770fb6ad47dc6310f2c1f60"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "from2" : "^2.0.3",
+    "istanbul" : "^0.4.5"
+  },
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "istanbul cover test.js && istanbul check-cover --statements 100 --branches 100"
+  }
+}

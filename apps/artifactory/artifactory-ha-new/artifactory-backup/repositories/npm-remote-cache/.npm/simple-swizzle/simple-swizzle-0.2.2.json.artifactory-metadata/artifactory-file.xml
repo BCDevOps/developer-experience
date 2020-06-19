@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/simple-swizzle/simple-swizzle-0.2.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>simple-swizzle-0.2.2.json</name>
+  <created>1576003665602</created>
+  <lastModified>1576003665584</lastModified>
+  <size>918</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003665602</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4aa30fb33269b1c09947c4237b705da8fa705c7a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a35d2d397744c6cc8610a4b772b45a2d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a688311ae461c0704313a8355e5e17c66e4810995b56a75b63e38a0058ea5c76</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

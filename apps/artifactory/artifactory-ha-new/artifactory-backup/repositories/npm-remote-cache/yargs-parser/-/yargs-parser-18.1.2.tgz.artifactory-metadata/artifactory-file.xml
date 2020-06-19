@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>yargs-parser/-/yargs-parser-18.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>yargs-parser-18.1.2.tgz</name>
+  <created>1585853545938</created>
+  <lastModified>1585242872000</lastModified>
+  <size>18885</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853545939</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2f482bea2136dbde0861683abea7756d30b504f1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1857e2d255c2dc6b4701794cf876482e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>914727f42a64ed5b3a7cfbbc28ec1e646aff19bc4b5197c28ddf8c0307dfcc4f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

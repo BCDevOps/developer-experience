@@ -1,0 +1,28 @@
+{
+  "name" : "path-to-regexp",
+  "description" : "Express style path to RegExp utility",
+  "version" : "0.1.7",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/component/path-to-regexp.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/path-to-regexp/-/path-to-regexp-0.1.7.tgz",
+    "shasum" : "df604178005f522f15eb4490e7247a1bfaa67f8c"
+  },
+  "devDependencies" : {
+    "mocha" : "^1.17.1",
+    "istanbul" : "^0.2.6"
+  },
+  "keywords" : [ "express", "regexp" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "LICENSE" ],
+  "scripts" : {
+    "test" : "istanbul cover _mocha -- -R spec"
+  },
+  "component" : {
+    "scripts" : {
+      "path-to-regexp" : "index.js"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/through2/through2-3.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>through2-3.0.1.json</name>
+  <created>1576003416693</created>
+  <lastModified>1576003416481</lastModified>
+  <size>928</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003416693</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>75f7100bf3b6cb26276b521204a8cf87cdbae39a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d530443b5f7932b271eebcc7094e9dce</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>868cfbfd0de779832a93fea51644db646fbe27a622d1e45b675f3c404e94997e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

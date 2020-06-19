@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"51c6ee9e418634815351fca16070a98f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple persistent cookiejar system</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>cookiejar</npm.name>
+  <npm.version>2.1.2</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>buffer-equal-constant-time-1.0.1.tgz</name>
+  <created>1576003633373</created>
+  <lastModified>1527361642000</lastModified>
+  <size>3125</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003633374</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>52693fb227d902c30e9932f985ff58b4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8f455159e342103e7854ed6a4cc73edbab144d857917c88edefea862f09fe75a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

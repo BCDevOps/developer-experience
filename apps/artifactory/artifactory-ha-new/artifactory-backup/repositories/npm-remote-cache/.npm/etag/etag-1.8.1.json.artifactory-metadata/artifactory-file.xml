@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/etag/etag-1.8.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>etag-1.8.1.json</name>
+  <created>1576003446198</created>
+  <lastModified>1576003446157</lastModified>
+  <size>1486</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003446198</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>155673aa1a1c3e3f3d7c9920068fed87feca7076</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e13777f82918afd9455622c76d316d3d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1eb51b37a3144179c2709355deba569ca3bb8c141546f244a700642174c5c097</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

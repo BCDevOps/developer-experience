@@ -1,0 +1,32 @@
+{
+  "name" : "is-binary-path",
+  "description" : "Check if a file path is a binary file",
+  "version" : "2.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/is-binary-path",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-binary-path/-/is-binary-path-2.1.0.tgz",
+    "shasum" : "ea1f7f3b80f064236e83470f86c09c254fb45b09"
+  },
+  "dependencies" : {
+    "binary-extensions" : "^2.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "binary", "extensions", "extension", "file", "path", "check", "detect", "is" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

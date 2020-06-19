@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1b0debfab5581f4629c633435b18729d"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>take a list of glob patterns and return an array of file locations, respecting `.gitignore` and allowing for ignore patterns via `package.json`.</npm.description>
+  <npm.keywords>["cli","command","deglob","files","glob","unglob","gitignore","ignore","file"]</npm.keywords>
+  <npm.name>deglob</npm.name>
+  <npm.version>4.0.1</npm.version>
+</properties>

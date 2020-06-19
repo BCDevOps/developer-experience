@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sisteransi</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>sisteransi</name>
+  <created>1576008064273</created>
+  <lastModified>1576008064273</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008064273</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

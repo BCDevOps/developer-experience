@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>word-wrap/-/word-wrap-1.2.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>word-wrap-1.2.3.tgz</name>
+  <created>1576003117807</created>
+  <lastModified>1527459283000</lastModified>
+  <size>4094</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003117807</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>610636f6b1f703891bd34771ccb17fb93b47079c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>48773dbe44ca6aae3bc6b49e7cecddfe</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>64fbda023432cc8dc32b15d6be6a30d024ee07f16a32b2405209ba4a9f1dfcd9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

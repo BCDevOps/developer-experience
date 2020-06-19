@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/morgan/morgan-1.9.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>morgan-1.9.1.json</name>
+  <created>1576008066888</created>
+  <lastModified>1576008066584</lastModified>
+  <size>1580</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008066973</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2ea64cd5d8dace5c4ae724b9f7791e9eecdd1f78</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c98323ea120e1ac2c340c55cefa56478</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>22ebabf76184efa69deaee2d9081d09c20323ab53f30051bb4d4e39a92f1abde</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

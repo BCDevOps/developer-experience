@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/process-nextick-args/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003435589</created>
+  <lastModified>1560976485000</lastModified>
+  <size>12718</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464328121</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>80fb04dde0888f57df9d0ad7546ed7b6cc5773a2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>58d0a4cf2900b1705718975f98323cbd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3c106c5e941ad11682710d7c735c9a2bcb7ea8427434622a7c8a7fe20681a344</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

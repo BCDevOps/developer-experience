@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"583fd63b37e2e7a2502a1d76aa194aef"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>transform input into equally-sized blocks of output</npm.description>
+  <npm.keywords>["stream","block","chunk","size","streams2"]</npm.keywords>
+  <npm.name>block-stream2</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

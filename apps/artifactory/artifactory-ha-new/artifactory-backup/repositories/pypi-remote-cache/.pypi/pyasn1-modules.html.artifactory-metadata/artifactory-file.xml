@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pyasn1-modules.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pyasn1-modules.html</name>
+  <created>1574234384197</created>
+  <lastModified>1574234384139</lastModified>
+  <size>64848</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234384197</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>978a5a27c4ba664d153a43e8163c56c57c315d45</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ef2021003058dc6b62d83d0005da9149</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a94e8c031f49270f72d7abb51ec3bc7eea6d8177e64a518d66e833aa83d280e9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

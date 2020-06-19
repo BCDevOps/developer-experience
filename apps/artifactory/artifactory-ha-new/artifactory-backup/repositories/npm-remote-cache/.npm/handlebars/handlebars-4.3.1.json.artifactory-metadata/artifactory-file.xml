@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/handlebars/handlebars-4.3.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>handlebars-4.3.1.json</name>
+  <created>1579828167876</created>
+  <lastModified>1579828167793</lastModified>
+  <size>2512</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828167876</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a5fa2eec1e1b46c68aaeae85a4b8958e55267366</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>13efad48d74e1ad0c10320b9a026d795</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>71d5a57efed45063bc11f14f947e47ff1ea7236c5633e8f3326de869a170df54</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

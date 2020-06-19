@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8e6b31a052754055683e4a35a317feab"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>javascript sprintf implementation</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>sprintf-js</npm.name>
+  <npm.version>1.0.3</npm.version>
+</properties>

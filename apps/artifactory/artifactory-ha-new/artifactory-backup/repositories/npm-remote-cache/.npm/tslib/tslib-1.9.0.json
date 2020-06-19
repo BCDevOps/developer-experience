@@ -1,0 +1,26 @@
+{
+  "name" : "tslib",
+  "description" : "Runtime library for TypeScript helper functions",
+  "version" : "1.9.0",
+  "author" : "Microsoft Corp.",
+  "homepage" : "http://typescriptlang.org/",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/Microsoft/tslib.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/Microsoft/TypeScript/issues"
+  },
+  "main" : "tslib.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/tslib/-/tslib-1.9.0.tgz",
+    "shasum" : "e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
+  },
+  "keywords" : [ "TypeScript", "Microsoft", "compiler", "language", "javascript", "tslib", "runtime" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+  },
+  "typings" : "tslib.d.ts",
+  "module" : "tslib.es6.js",
+  "jsnext:main" : "tslib.es6.js"
+}

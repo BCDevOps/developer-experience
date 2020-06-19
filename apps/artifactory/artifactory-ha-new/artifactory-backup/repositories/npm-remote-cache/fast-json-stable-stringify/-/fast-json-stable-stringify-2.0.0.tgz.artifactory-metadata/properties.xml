@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e5de31e653dc663055b960d3bea603f7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>deterministic `json.stringify()` - a faster version of substack's json-stable-strigify without jsonify</npm.description>
+  <npm.keywords>["json","stringify","deterministic","hash","stable"]</npm.keywords>
+  <npm.name>fast-json-stable-stringify</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

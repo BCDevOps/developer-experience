@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-worker/jest-worker-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-worker-25.2.6.json</name>
+  <created>1585853574931</created>
+  <lastModified>1585853574832</lastModified>
+  <size>1017</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853574932</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>90a3ed3ff2f4bf714415f4f71a73b8317f208ddf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>fb4908262866c10c8f920b199ffacad6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1e8daf6df0f0d9d7a035aa90eafc6369cbb63f6345cf7b306c57ae7be6790a4e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@jest/environment/-/environment-25.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>environment-25.2.6.tgz</name>
+  <created>1585853541715</created>
+  <lastModified>1585823375000</lastModified>
+  <size>6290</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853541716</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8f7931e79abd81893ce88b7306f0cc4744835000</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d22c024cba42bf096a90622968aaebef</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d86c689283723f5ccf1b889251b122a45dde36946a0689e360605c1dfb5b76a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

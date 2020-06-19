@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"81732926587cd6e4f6916e6521c76dd4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>recursive object extending</npm.description>
+  <npm.keywords>["deep-extend","extend","deep","recursive","xtend","clone","merge","json"]</npm.keywords>
+  <npm.name>deep-extend</npm.name>
+  <npm.version>0.6.0</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5fc3d9e08d24e01dcbc27705d1353d52"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a collection of common interactive command line user interfaces.</npm.description>
+  <npm.keywords>["command","prompt","stdin","cli","tty","menu"]</npm.keywords>
+  <npm.name>inquirer</npm.name>
+  <npm.version>6.5.0</npm.version>
+</properties>

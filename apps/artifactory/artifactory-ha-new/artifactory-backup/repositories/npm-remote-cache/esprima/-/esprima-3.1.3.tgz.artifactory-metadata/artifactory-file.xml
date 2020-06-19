@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>esprima/-/esprima-3.1.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esprima-3.1.3.tgz</name>
+  <created>1576003661586</created>
+  <lastModified>1527378951000</lastModified>
+  <size>50257</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003661587</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>fdca51cee6133895e3c88d535ce49dbff62a4633</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>292beaf8bc8cfde31c6e1f21b003d2bb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6ce53f45b7ccf15d62df7768a387a96ef1893014a2a7db68a3299029a6fd43cf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

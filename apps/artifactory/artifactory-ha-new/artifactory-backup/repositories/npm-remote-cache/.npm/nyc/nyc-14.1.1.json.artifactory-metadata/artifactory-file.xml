@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/nyc/nyc-14.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nyc-14.1.1.json</name>
+  <created>1579828074799</created>
+  <lastModified>1579828074627</lastModified>
+  <size>3245</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828074800</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>12baa3459fc483bb0f111fd1899b3578c4c8f9cc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>64e93722a37d720135c6bd5598c7ad0f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f20282dd941c3ad75133f5442032324ae078144c548e1623dba182f26e4fe23f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

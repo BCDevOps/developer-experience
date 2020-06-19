@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/object-inspect/object-inspect-1.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>object-inspect-1.7.0.json</name>
+  <created>1576008070276</created>
+  <lastModified>1576008069686</lastModified>
+  <size>1609</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008070276</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6c1ae85807a568b45780942fb4507991c6fb7342</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7456172ccce2be05a378e8367f2f6e15</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8e228c945d33ef2c88c157c71d351ae9da2903ccef15f1b4abed4bcabbdf85e9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

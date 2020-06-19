@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>javax.annotation-api-1.3.2.pom</name>
+  <created>1576861383138</created>
+  <lastModified>1519208664000</lastModified>
+  <size>14478</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861383139</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>302fe96ef206b17f82893083b51b479541fa25ab</original>
+          <actual>302fe96ef206b17f82893083b51b479541fa25ab</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>60ea66b9aebf0820e2eb4010ce9448e8</original>
+          <actual>60ea66b9aebf0820e2eb4010ce9448e8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>46a4a251ca406e78e4853d7a2bae83282844a4992851439ee9a1f23716f06b97</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

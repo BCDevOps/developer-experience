@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b07e5b86f6e6c31b67cde087098dd4c5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a ponyfill for the es 2015 (es6) `array.from()`.</npm.description>
+  <npm.keywords>["Array.from","ponyfill","polyfill","convert","to","array","es-2015","es2015","es6"]</npm.keywords>
+  <npm.name>array-from</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

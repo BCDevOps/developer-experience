@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/map-cache/map-cache-0.2.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>map-cache-0.2.2.json</name>
+  <created>1576003622425</created>
+  <lastModified>1576003622405</lastModified>
+  <size>1208</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003622425</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d53f122b0c18626c4b4a74862e4ad0c8f6e78b62</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b7dda2253a24064dfa2bb7781bac891f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1153712660e27b9a002ecb742dec58d239ca55339e9b50746793149e9f68d7ad</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

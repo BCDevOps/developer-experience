@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ordered-read-streams/ordered-read-streams-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ordered-read-streams-1.0.1.json</name>
+  <created>1576003417974</created>
+  <lastModified>1576003417788</lastModified>
+  <size>891</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003417974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d418a16bee2f900ec571c888516ef5376135ce64</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f1647d40aed6a9f5acd2d51d6ebfe4dc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7a032b089ab9ff1d3e80b93921e55bc7c8dec7ed6d38bf50781a9811152a04e4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

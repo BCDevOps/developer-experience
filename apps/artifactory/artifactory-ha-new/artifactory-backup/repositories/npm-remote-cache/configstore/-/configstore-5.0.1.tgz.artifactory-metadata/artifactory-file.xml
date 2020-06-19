@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>configstore/-/configstore-5.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>configstore-5.0.1.tgz</name>
+  <created>1585853540924</created>
+  <lastModified>1581615836000</lastModified>
+  <size>3402</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853540925</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d365021b5df4b98cdd187d6a3b0e3f6a7cc5ed96</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>674881a9a46bb4c544c69332407f3b7d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>05e5930400029c6d79f5d36c4eb4ce3dc88cd9f25f6aed3c2d2e53ff3694fce5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

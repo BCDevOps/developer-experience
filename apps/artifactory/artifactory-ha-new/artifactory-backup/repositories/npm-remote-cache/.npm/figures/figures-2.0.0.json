@@ -1,0 +1,37 @@
+{
+  "name" : "figures",
+  "description" : "Unicode symbols with Windows CMD fallbacks",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/figures",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/figures/-/figures-2.0.0.tgz",
+    "shasum" : "3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
+  },
+  "dependencies" : {
+    "escape-string-regexp" : "^1.0.5"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "markdown-table" : "^1.0.0",
+    "require-uncached" : "^1.0.2",
+    "xo" : "*"
+  },
+  "keywords" : [ "unicode", "cli", "cmd", "command-line", "characters", "char", "symbol", "symbols", "figure", "figures", "fallback" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava",
+    "make" : "./makefile.js"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

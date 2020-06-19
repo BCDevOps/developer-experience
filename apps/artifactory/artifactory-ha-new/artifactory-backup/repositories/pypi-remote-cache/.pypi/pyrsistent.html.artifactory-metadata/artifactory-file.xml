@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pyrsistent.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pyrsistent.html</name>
+  <created>1574023059865</created>
+  <lastModified>1582154280326</lastModified>
+  <size>15764</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154280419</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a04e192388e4b3606b71a0560b2bdcc09392744c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8d17d71b0ce3f586c5d14b507f899cfa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1344df374f4053f89c8708cb2eb4792d8eee790bb52d9862944258f2db750c0b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

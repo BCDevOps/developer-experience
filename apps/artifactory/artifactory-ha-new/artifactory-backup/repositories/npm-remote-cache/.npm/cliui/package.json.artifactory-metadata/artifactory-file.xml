@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cliui/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003115856</created>
+  <lastModified>1573942189000</lastModified>
+  <size>33359</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464314926</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>231ba8a9080923141bf08225b744b1b313a85e9d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e6207ddb62e558b2d2b70d6304cf3c30</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>69d7f685fb1f51f4ffdc03b310521d4b6e22170b8d77ec7a3daef8b2dac413ab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

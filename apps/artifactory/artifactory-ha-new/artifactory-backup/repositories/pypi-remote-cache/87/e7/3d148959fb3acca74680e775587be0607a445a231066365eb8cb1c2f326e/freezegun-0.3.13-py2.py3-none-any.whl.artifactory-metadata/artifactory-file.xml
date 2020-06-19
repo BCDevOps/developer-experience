@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>87/e7/3d148959fb3acca74680e775587be0607a445a231066365eb8cb1c2f326e/freezegun-0.3.13-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>freezegun-0.3.13-py2.py3-none-any.whl</name>
+  <created>1579647454055</created>
+  <lastModified>1578969228000</lastModified>
+  <size>14543</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579647454056</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3371be742942cd2783a51c757e44d2fa08739ea2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>dac936bc23f519729dd47a0afab2d5ce</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>92083290d95e796fc10bbe2d1278e812ab773395b5387083d88a6d9a604a797b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

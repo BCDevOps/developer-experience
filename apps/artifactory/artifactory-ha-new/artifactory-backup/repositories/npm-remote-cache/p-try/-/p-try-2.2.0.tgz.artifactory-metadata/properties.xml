@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"49994562e1f3cbe260710598cbb3edf7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>`start a promise chain</npm.description>
+  <npm.keywords>["promise","try","resolve","function","catch","async","await","promises","settled","ponyfill","polyfill","shim","bluebird"]</npm.keywords>
+  <npm.name>p-try</npm.name>
+  <npm.version>2.2.0</npm.version>
+</properties>

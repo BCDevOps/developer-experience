@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/octokit-pagination-methods</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>octokit-pagination-methods</name>
+  <created>1576003400420</created>
+  <lastModified>1576003400420</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003400420</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lodash.memoize/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003395675</created>
+  <lastModified>1527404326000</lastModified>
+  <size>35395</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464334472</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>70cf240942fd9b27583290fd79a5f3ba26fe1cd6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e7ac8a87826dae251199b12d60f8ca17</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f799225d5d2a4a205ec42296df7e55a84b24c035dc508f29227b7cb22bc2442b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

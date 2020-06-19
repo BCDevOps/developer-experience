@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"082699098da890d201b24b5f34f62b43"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple xml to javascript object converter.</npm.description>
+  <npm.keywords>["xml","json"]</npm.keywords>
+  <npm.name>xml2js</npm.name>
+  <npm.version>0.4.22</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/now-and-later</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>now-and-later</name>
+  <created>1576003107470</created>
+  <lastModified>1576003107470</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003107470</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

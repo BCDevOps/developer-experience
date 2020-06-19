@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/apache/18/apache-18.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>apache-18.pom</name>
+  <created>1576861358313</created>
+  <lastModified>1463345530000</lastModified>
+  <size>15667</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861358314</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>bd408bbea3840f2c7f914b29403e39a90f84fd5f</original>
+          <actual>bd408bbea3840f2c7f914b29403e39a90f84fd5f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>e481817f3ac9e2b5a08584054012093f</original>
+          <actual>e481817f3ac9e2b5a08584054012093f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7831307285fd475bbc36b20ae38e7882f11c3153b1d5930f852d44eda8f33c17</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

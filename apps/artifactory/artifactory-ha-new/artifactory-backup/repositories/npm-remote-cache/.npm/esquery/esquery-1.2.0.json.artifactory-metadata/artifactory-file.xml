@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/esquery/esquery-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esquery-1.2.0.json</name>
+  <created>1585871270330</created>
+  <lastModified>1585871270280</lastModified>
+  <size>2015</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871270330</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>21f7d7f5a02a5ddf24ec7480f5c6b97f8a33d5cb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>36e71bc7bae8da9638b0e273ce5013f5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>033ea3982bbd4618ee6b88c09d0f0951bbadbdc8f4bdefc820c9486968b242dc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62AFC06877D58</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.4.0:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.4.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Security.Principal.Windows:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Thread:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16299</nuget.dependency>
+  <nuget.description>Provides base classes that enable managing access and audit control lists on securable objects.
+
+Commonly Used Types:
+System.Security.AccessControl.AccessRule
+System.Security.AccessControl.AuditRule
+System.Security.AccessControl.ObjectAccessRule
+System.Security.AccessControl.ObjectAuditRule
+System.Security.AccessControl.ObjectSecurity
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>6RQtcT+TyDgLUFsAnmmdfRRGdLYKxSZGkSPOd052tvYFxOTMaQb6ANlwhGqZtNO52PosaCoXu7uatFneujAxmA==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Security.AccessControl</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Security.AccessControl</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

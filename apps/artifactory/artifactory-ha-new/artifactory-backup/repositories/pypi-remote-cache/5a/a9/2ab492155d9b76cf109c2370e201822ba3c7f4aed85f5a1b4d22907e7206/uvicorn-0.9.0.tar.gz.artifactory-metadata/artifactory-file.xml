@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>5a/a9/2ab492155d9b76cf109c2370e201822ba3c7f4aed85f5a1b4d22907e7206/uvicorn-0.9.0.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>uvicorn-0.9.0.tar.gz</name>
+  <created>1574124595156</created>
+  <lastModified>1567785869000</lastModified>
+  <size>24956</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574124595157</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f40cb09f362dbcf2ce8bb4859f04b37564c63606</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>63b77713ef86a93e860b0a2361fda6ef</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>639cdeb92cdb0205494ca36be03d08e05d57249491751feb5fc74b023a0d18f3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

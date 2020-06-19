@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d9f10129f1b6f6bfba6d4de6646d8906"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a proxy to `path`, replacing `\` with `/` for all results &amp; new methods to normalize &amp; join keeping leading `./` and add, change, default, trim file extensions.</npm.description>
+  <npm.keywords>["path","unix","windows","extension","file extension","replace extension","change extension","trim extension","add extension","default extension"]</npm.keywords>
+  <npm.name>upath</npm.name>
+  <npm.version>1.2.0</npm.version>
+</properties>

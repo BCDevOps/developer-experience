@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/helper-module-transforms</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>helper-module-transforms</name>
+  <created>1585853558983</created>
+  <lastModified>1585853558983</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853558983</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

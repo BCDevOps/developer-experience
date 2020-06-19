@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"532598b3fc21fa4149d485d760d2c5b1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>modern, fast react.js jsx parser</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>acorn-jsx</npm.name>
+  <npm.version>5.1.0</npm.version>
+</properties>

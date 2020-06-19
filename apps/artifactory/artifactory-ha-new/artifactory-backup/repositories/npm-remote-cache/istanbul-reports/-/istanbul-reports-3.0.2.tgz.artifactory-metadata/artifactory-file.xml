@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>istanbul-reports/-/istanbul-reports-3.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>istanbul-reports-3.0.2.tgz</name>
+  <created>1586464343904</created>
+  <lastModified>1585746326000</lastModified>
+  <size>81102</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464343905</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d593210e5000683750cb09fc0644e4b6e27fd53b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1a146a208081fca710ec9ac5686ff870</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ac20ddc4f84e2135f064d94014e190d9a2d4f4b73e2f6b4513b896409d1bc1db</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@jest/test-result/-/test-result-24.8.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>test-result-24.8.0.tgz</name>
+  <created>1579828432499</created>
+  <lastModified>1557021746000</lastModified>
+  <size>20927</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828432499</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7675d0aaf9d2484caa65e048d9b467d160f8e9d3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>474f21fefd4baf23e309aed28f00f830</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b713d33499fe6ab23a5fb6ef2a3cbef2d91dfb33523d3cdfd3c76f394421d5e4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

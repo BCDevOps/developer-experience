@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"00a89b8187fdc854e1a7ec47a637597c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a library for recursive merging of javascript objects</npm.description>
+  <npm.keywords>["merge","deep","extend","copy","clone","recursive"]</npm.keywords>
+  <npm.name>mixme</npm.name>
+  <npm.version>0.3.5</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-rest-endpoint-methods/@octokit/plugin-rest-endpoint-methods-2.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-rest-endpoint-methods-2.4.0.json</name>
+  <created>1585871272183</created>
+  <lastModified>1585871272131</lastModified>
+  <size>1813</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871272184</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5c708b1dc6b214e9d64a8f8252cf413412aed56b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>02113c9c0d48cebb7fb763525e3ca0a4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>29dfb051ded589e807266c874cc6abb5930aa4023b6f97956089c028eef4f48f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

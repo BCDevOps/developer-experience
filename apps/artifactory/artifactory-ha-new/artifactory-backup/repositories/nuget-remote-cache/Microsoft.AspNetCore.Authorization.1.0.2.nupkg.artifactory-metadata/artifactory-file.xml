@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.Authorization.1.0.2.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.Authorization.1.0.2.nupkg</name>
+  <created>1578496770591</created>
+  <lastModified>1544744119000</lastModified>
+  <size>56474</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496770592</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f90b6d91bd9d36892afb0f8190d8794435cef8b6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>71c3454d9f2f67782a4833389e5e701f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>af80dcb98a9bd4089cef7e06e8773451c1bf8e2d3450622d596cc0c0daf7c269</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d7068e1556150dbe0d709a4a1db80573"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>global logging utility</npm.description>
+  <npm.keywords>["global","log","logger","logging","shared"]</npm.keywords>
+  <npm.name>glogg</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

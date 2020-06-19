@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extsprintf</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>extsprintf</name>
+  <created>1576003627385</created>
+  <lastModified>1576003627385</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003627385</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

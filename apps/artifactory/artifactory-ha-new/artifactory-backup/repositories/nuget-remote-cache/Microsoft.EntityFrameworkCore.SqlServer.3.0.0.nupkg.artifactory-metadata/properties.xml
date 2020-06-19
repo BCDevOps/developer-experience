@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74030E94BDCE7</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Data.SqlClient:1.0.19249.1:.NETStandard2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.EntityFrameworkCore.Relational:3.0.0:.NETStandard2.1</nuget.dependency>
+  <nuget.description>Microsoft SQL Server database provider for Entity Framework Core.</nuget.description>
+  <nuget.digest>n7knuh81xAGDlIOCqUAW2dTgvr0eKAbbKf4KMfDdGTzImbQtiTQxvwThmMj1Bek3251+MwLSmmK4rhjWx7Xmyw==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.EntityFrameworkCore.SqlServer</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://docs.microsoft.com/ef/core/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>Entity Framework Core entity-framework-core EF Data O/RM EntityFramework EntityFrameworkCore EFCore SQL Server</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

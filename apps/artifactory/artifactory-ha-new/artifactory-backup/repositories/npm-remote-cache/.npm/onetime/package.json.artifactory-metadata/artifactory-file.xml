@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/onetime/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003655000</created>
+  <lastModified>1554172792000</lastModified>
+  <size>18675</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464329861</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>906dd27442d17c76a7405492c08dc0e62282de9e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>12a4ac4c01459baef0263fccb6b401da</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2a9b012c8fbdede0de53994c2ef30d44e2dda18b3b0e8cab07a1dcb8d71a21b2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

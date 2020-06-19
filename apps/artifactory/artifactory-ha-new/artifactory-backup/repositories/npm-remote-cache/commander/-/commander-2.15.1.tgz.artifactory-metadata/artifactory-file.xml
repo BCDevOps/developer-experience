@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>commander/-/commander-2.15.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commander-2.15.1.tgz</name>
+  <created>1579828422742</created>
+  <lastModified>1527366077000</lastModified>
+  <size>17884</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828422742</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>df46e867d0fc2aec66a34662b406a9ccafff5b0f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d60c5aca1fb0fbfa292a447d360aa843</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7dd7f9210626735d7f3195d900470d687e255e215946415ec3b518f13d2a3453</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

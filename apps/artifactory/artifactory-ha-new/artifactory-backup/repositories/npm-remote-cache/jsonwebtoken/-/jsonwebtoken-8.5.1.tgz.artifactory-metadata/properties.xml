@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"decb5dec26a71d60bcdaa026c2ad6ed7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>json web token implementation (symmetric and asymmetric)</npm.description>
+  <npm.keywords>["jwt"]</npm.keywords>
+  <npm.name>jsonwebtoken</npm.name>
+  <npm.version>8.5.1</npm.version>
+</properties>

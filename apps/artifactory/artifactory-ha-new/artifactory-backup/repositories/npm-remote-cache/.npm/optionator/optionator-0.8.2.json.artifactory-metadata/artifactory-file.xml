@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/optionator/optionator-0.8.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>optionator-0.8.2.json</name>
+  <created>1579828093695</created>
+  <lastModified>1579828093606</lastModified>
+  <size>1113</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828093696</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>357bbf720ae91a50ac386d557ecbccb17c305c71</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e3e771e5acae6adf09eb9b40dea31539</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ce041ac0dfa2857d5798192f5a1f889bf3c83bb5298a68a86dcf984dd2619041</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

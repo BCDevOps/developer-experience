@@ -11,7 +11,7 @@
 
   tasks:
   - name: Set Artifactory Admin pass
-    uri: 
+    uri:
       url: "{{ artifactory_url }}/{{ security_endpoint }}"
       user: "admin"
       password: "{{ installAdmin }}"
@@ -24,7 +24,7 @@
     ignore_errors: yes
 
   - name: Set Artifactory Custom URL Base
-    uri: 
+    uri:
       url: "{{ artifactory_url }}/artifactory/api/system/configuration/baseUrl"
       user: "admin"
       password: "{{ newPass }}"
@@ -42,7 +42,7 @@
         kind: Secret
         metadata:
           name: "artifactory-admin"
-          namespace: "devops-artifactory"
+          namespace: "test-artifactory"
         type: kubernetes.io/basic-auth
         stringData:
           password: "{{ newPass }}"

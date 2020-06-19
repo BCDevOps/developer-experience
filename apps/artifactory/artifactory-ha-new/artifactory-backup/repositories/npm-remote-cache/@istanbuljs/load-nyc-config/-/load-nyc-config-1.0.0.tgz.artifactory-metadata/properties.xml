@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8e0a3601743321c75102c5fc15922449"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>utility function to load nyc configuration</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@istanbuljs/load-nyc-config</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

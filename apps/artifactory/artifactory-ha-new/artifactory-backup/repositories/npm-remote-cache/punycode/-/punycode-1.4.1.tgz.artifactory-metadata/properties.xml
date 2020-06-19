@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"57a7a5194db5c758db227a3648fb7a4c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a robust punycode converter that fully complies to rfc 3492 and rfc 5891, and works on nearly all javascript platforms.</npm.description>
+  <npm.keywords>["punycode","unicode","idn","idna","dns","url","domain"]</npm.keywords>
+  <npm.name>punycode</npm.name>
+  <npm.version>1.4.1</npm.version>
+</properties>

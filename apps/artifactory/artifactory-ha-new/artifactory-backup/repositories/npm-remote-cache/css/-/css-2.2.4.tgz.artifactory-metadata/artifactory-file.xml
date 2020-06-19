@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>css/-/css-2.2.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>css-2.2.4.tgz</name>
+  <created>1576003420285</created>
+  <lastModified>1536076345000</lastModified>
+  <size>9366</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003420373</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c646755c73971f2bba6a601e2cf2fd71b1298929</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>48f8b1cf0f1a0620471128d495ff3562</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ae89d0e1381426c21e543bd98f8034de489f6e7feb817fadc5bebc9148931c60</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Collections.Immutable.1.6.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Collections.Immutable.1.6.0.nupkg</name>
+  <created>1578432232812</created>
+  <lastModified>1569248239000</lastModified>
+  <size>481014</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432232813</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>179fa71a41508dbeb28014e41ac1055f77a1a1de</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>836e22b5d5abf01bd8937883db743fef</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>827bbef27378f0601de06460781e5c010996ed59c2b9b2fff21ef33b7efb7ddd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

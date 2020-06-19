@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>node-fetch/-/node-fetch-2.6.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>node-fetch-2.6.0.tgz</name>
+  <created>1576008069772</created>
+  <lastModified>1557988786000</lastModified>
+  <size>42792</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008069773</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e633456386d4aa55863f676a7ab0daa8fdecb0fd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>83d0c8c9bf23ff19a5dd4a528b942676</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>76042fa91435241c7c5c8bb466e7958c286818efc447745a0d917135b9a6002e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

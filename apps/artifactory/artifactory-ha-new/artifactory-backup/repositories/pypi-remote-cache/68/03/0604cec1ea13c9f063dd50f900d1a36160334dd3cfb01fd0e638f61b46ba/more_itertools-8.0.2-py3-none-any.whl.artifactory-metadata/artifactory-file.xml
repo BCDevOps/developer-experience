@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>more_itertools-8.0.2-py3-none-any.whl</name>
+  <created>1578439445052</created>
+  <lastModified>1575634715000</lastModified>
+  <size>40314</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1578439445053</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>73cd17ea78fa31c219433eae7277432a152a9f69</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f6bdb8d106ac3845f82b57515c18ef66</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c833ef592a0324bcc6a60e48440da07645063c453880c9477ceb22490aec1564</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

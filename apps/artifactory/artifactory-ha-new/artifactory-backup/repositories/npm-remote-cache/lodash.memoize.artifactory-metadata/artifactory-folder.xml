@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>lodash.memoize</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>lodash.memoize</name>
+  <created>1576003395976</created>
+  <lastModified>1576003395976</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003395976</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

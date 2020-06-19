@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"598b731d8d33cfff04377ad55da187b0"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a regular expression to match all emoji-only symbols as per the unicode standard.</npm.description>
+  <npm.keywords>["unicode","regex","regexp","regular expressions","code points","symbols","characters","emoji"]</npm.keywords>
+  <npm.name>emoji-regex</npm.name>
+  <npm.version>8.0.0</npm.version>
+</properties>

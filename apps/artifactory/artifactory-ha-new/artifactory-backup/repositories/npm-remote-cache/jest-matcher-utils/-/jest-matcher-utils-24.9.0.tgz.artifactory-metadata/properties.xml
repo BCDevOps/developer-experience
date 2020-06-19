@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"273744a05444ed4195f331ba71e08fe5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a set of utility functions for expect and related packages</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>jest-matcher-utils</npm.name>
+  <npm.version>24.9.0</npm.version>
+</properties>

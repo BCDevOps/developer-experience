@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"999fb66172e24c0844cba118f03e6a34"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>return whether two buffers are equal</npm.description>
+  <npm.keywords>["buffer","equal"]</npm.keywords>
+  <npm.name>buffer-equal</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

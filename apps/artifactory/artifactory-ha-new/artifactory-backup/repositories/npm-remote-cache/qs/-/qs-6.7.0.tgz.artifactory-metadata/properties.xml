@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"547e294b4f841ec0cacf6f1f65628409"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>a querystring parser that supports nesting and arrays, with a depth limit</npm.description>
+  <npm.keywords>["querystring","qs","query","url","parse","stringify"]</npm.keywords>
+  <npm.name>qs</npm.name>
+  <npm.version>6.7.0</npm.version>
+</properties>

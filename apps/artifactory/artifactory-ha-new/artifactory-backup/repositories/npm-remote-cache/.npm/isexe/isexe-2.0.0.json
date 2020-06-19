@@ -1,0 +1,35 @@
+{
+  "name" : "isexe",
+  "description" : "Minimal module to check if a file is executable.",
+  "version" : "2.0.0",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "homepage" : "https://github.com/isaacs/isexe#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/isaacs/isexe.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/isaacs/isexe/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/isexe/-/isexe-2.0.0.tgz",
+    "shasum" : "e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+  },
+  "devDependencies" : {
+    "mkdirp" : "^0.5.1",
+    "rimraf" : "^2.5.0",
+    "tap" : "^10.3.0"
+  },
+  "keywords" : [ ],
+  "license" : "ISC",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js --100",
+    "preversion" : "npm test",
+    "postversion" : "npm publish",
+    "postpublish" : "git push origin --all; git push origin --tags"
+  }
+}

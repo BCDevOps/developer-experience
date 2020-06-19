@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"89b99a81f9add230be9378628e17ce69"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>a parser that converts typescript source code into an estree compatible form</npm.description>
+  <npm.keywords>["ast","estree","ecmascript","javascript","typescript","parser","syntax"]</npm.keywords>
+  <npm.name>typescript-estree</npm.name>
+  <npm.version>18.0.0</npm.version>
+</properties>

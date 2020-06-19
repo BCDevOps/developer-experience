@@ -1,0 +1,20 @@
+{
+  "name" : "to-space-case",
+  "description" : "Convert a string to space case.",
+  "version" : "1.0.0",
+  "repository" : "git://github.com/ianstormtaylor/to-space-case.git",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/to-space-case/-/to-space-case-1.0.0.tgz",
+    "shasum" : "b052daafb1b2b29dc770cea0163e5ec0ebc9fc17"
+  },
+  "dependencies" : {
+    "to-no-case" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "mocha" : "^2.3.4"
+  },
+  "keywords" : [ "camel", "case", "slug", "space", "spacecase", "string" ],
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"aece21e1add84205fc9ce52362e884bd"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>legacy pluralization logic for mongoose</npm.description>
+  <npm.keywords>["mongoose","mongodb"]</npm.keywords>
+  <npm.name>mongoose-legacy-pluralize</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

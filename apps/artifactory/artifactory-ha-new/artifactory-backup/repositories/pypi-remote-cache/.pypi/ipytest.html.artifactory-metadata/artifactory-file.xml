@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/ipytest.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ipytest.html</name>
+  <created>1581102477175</created>
+  <lastModified>1581103119678</lastModified>
+  <size>4900</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581103119810</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5cc868f99c147e84a5ef0e0f181470c0eb59b723</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c5b204136bc9e3ab5575679f186dc090</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>52400d64dfff7636fd430d036d1318b06b1bcb32aec980a47ab35f72de80ef61</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

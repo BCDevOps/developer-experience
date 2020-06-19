@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"387d6e4e081fb0bbb34eece2b22d5cba"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>type-check allows you to check the types of javascript values at runtime with a haskell like type syntax.</npm.description>
+  <npm.keywords>["type","check","checking","library"]</npm.keywords>
+  <npm.name>type-check</npm.name>
+  <npm.version>0.3.2</npm.version>
+</properties>

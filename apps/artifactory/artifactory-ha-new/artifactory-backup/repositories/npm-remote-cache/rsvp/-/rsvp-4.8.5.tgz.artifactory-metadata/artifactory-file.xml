@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>rsvp/-/rsvp-4.8.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>rsvp-4.8.5.tgz</name>
+  <created>1576008065980</created>
+  <lastModified>1559843753000</lastModified>
+  <size>140508</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065981</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c8f155311d167f68f21e168df71ec5b083113734</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>372e96ebd0ae88441894ed6bff700f0d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3bacfb06e538154de68252464e03a3b278280ac403bc3c27de41ac3c6f16b04f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

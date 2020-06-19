@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>flush-write-stream/-/flush-write-stream-1.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flush-write-stream-1.1.1.tgz</name>
+  <created>1576003418874</created>
+  <lastModified>1549625428000</lastModified>
+  <size>2534</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003418874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8dd7d873a1babc207d94ead0c2e0e44276ebf2e8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>377a0d2965e3e62aeb4979a5067695c6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>22cba9e73ae35c154d6474f2960eba1fb0650c475fce047308985da02d7db1f3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

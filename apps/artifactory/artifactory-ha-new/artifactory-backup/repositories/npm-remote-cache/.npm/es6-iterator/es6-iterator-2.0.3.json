@@ -1,0 +1,38 @@
+{
+  "name" : "es6-iterator",
+  "description" : "Iterator abstraction based on ES6 specification",
+  "version" : "2.0.3",
+  "author" : "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/medikoo/es6-iterator.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/es6-iterator/-/es6-iterator-2.0.3.tgz",
+    "shasum" : "a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
+  },
+  "dependencies" : {
+    "d" : "1",
+    "es5-ext" : "^0.10.35",
+    "es6-symbol" : "^3.1.1"
+  },
+  "devDependencies" : {
+    "eslint" : "^4.9",
+    "eslint-config-medikoo-es5" : "^1.4.4",
+    "event-emitter" : "^0.3.5",
+    "tad" : "^0.2.7"
+  },
+  "keywords" : [ "iterator", "array", "list", "set", "map", "generator" ],
+  "license" : "MIT",
+  "scripts" : {
+    "lint" : "eslint --ignore-path=.gitignore .",
+    "test" : "node ./node_modules/tad/bin/tad"
+  },
+  "eslintConfig" : {
+    "extends" : "medikoo-es5",
+    "root" : true,
+    "rules" : {
+      "no-extend-native" : "off"
+    }
+  }
+}

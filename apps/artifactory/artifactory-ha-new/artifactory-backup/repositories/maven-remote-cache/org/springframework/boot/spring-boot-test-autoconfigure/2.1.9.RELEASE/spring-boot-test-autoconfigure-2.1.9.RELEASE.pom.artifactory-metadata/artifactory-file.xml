@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-test-autoconfigure/2.1.9.RELEASE/spring-boot-test-autoconfigure-2.1.9.RELEASE.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-test-autoconfigure-2.1.9.RELEASE.pom</name>
+  <created>1576861445361</created>
+  <lastModified>1570033450000</lastModified>
+  <size>9826</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861445362</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>024e11407280eaaabfec76de858bbdab6b5899ba</original>
+          <actual>024e11407280eaaabfec76de858bbdab6b5899ba</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>34fcd86a966344e6518d67793864f532</original>
+          <actual>34fcd86a966344e6518d67793864f532</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2456f0af8fb20070c13120aec7d1c2f512140e62ba21c93d00e1be13e5e73032</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

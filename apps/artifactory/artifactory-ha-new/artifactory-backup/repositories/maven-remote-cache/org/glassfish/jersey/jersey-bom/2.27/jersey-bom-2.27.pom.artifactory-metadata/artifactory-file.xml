@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/glassfish/jersey/jersey-bom/2.27/jersey-bom-2.27.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jersey-bom-2.27.pom</name>
+  <created>1576861359237</created>
+  <lastModified>1523359741000</lastModified>
+  <size>21520</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861359238</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>24e20dce2e506533f1c7449bcb9a64ee615dc4f7</original>
+          <actual>24e20dce2e506533f1c7449bcb9a64ee615dc4f7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1a8df06f8e068f4c9135f27486b6ff56</original>
+          <actual>1a8df06f8e068f4c9135f27486b6ff56</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b4e2e2e2375a2551c5f58c9f0c34a610e6305eb6fe18e414053e5288927a9da</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

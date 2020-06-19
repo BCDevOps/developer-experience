@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>53/8c/00b6a91ad6b2f72efdc384afe76990ea751db4c2b092ae598f287c8f116c/datedelta-1.3-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>datedelta-1.3-py3-none-any.whl</name>
+  <created>1574023035465</created>
+  <lastModified>1562002766000</lastModified>
+  <size>6699</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023035466</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>069c37a493aa0c1205128c46336f2fd70c571ac6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>713ee5b86b9c59d9b4df4046b153c7d2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>eaf2b332582a083e0db7baab36ab37d5fe98b9de3cfd46a75c45247c59b2f117</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

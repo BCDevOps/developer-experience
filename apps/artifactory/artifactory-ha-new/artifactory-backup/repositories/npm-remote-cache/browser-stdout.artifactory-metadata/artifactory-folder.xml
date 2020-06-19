@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>browser-stdout</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>browser-stdout</name>
+  <created>1579828422052</created>
+  <lastModified>1579828422052</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828422052</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

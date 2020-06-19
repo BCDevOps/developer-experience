@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Serilog.AspNetCore.3.2.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Serilog.AspNetCore.3.2.0.nupkg</name>
+  <created>1578432169156</created>
+  <lastModified>1573526940000</lastModified>
+  <size>21169</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432169157</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>13cfecb939c321d9f733bae1a8ddbf105be5355e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e74dabe294f9e1fa4cd76d9d467d4e43</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>720d092bd915f4682a42c7acd62c146710b95b9db4d8d527855acb16b8a6a191</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

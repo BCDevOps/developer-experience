@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ef4841bc32d15f49592f42a89d3f8cfd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the first fulfilled promise that satisfies the provided testing function</npm.description>
+  <npm.keywords>["promise","locate","find","finder","search","searcher","test","array","collection","iterable","iterator","race","fulfilled","fastest","async","await","promises","bluebird"]</npm.keywords>
+  <npm.name>p-locate</npm.name>
+  <npm.version>4.1.0</npm.version>
+</properties>

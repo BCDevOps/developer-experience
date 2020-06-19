@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>qs/-/qs-6.5.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>qs-6.5.2.tgz</name>
+  <created>1576008066989</created>
+  <lastModified>1528206404000</lastModified>
+  <size>22345</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008066990</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cb3ae806e8740444584ef154ce8ee98d403f3e36</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>222120eb1146b4919d75bf117b2d380f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>539349384f28c64d970ee897379839967dcc2a9c5b03a4db49cb1c0e5e2e16f0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"37ca447c8240cb57a9a7cf01e54c2f43"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a library for finding and using ssh public keys</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>sshpk</npm.name>
+  <npm.version>1.16.1</npm.version>
+</properties>

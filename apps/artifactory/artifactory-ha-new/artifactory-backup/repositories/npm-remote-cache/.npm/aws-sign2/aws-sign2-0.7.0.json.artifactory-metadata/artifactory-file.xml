@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/aws-sign2/aws-sign2-0.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>aws-sign2-0.7.0.json</name>
+  <created>1576003421486</created>
+  <lastModified>1576003421181</lastModified>
+  <size>741</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003421486</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>badaac8c663e8c6e3faa266fb893c4aed8d96c6c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d605755063b57ad0f937e0b213499a23</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>23496aa6a07499b2fd2f962cdf494290ba08f8e9c11e7cd15887f1d8833cede1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

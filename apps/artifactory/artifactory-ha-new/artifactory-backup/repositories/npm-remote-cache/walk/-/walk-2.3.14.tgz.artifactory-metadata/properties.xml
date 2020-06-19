@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7c35372612e4f9bf0e09ce9292f5fb20"</artifactory.internal.etag>
+  <artifactory.licenses>(MIT OR Apache-2.0)</artifactory.licenses>
+  <npm.description>a node port of python's os.walk</npm.description>
+  <npm.keywords>["util","os","sys","fs","walk","walkSync"]</npm.keywords>
+  <npm.name>walk</npm.name>
+  <npm.version>2.3.14</npm.version>
+</properties>

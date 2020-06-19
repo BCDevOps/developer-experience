@@ -1,0 +1,34 @@
+{
+  "name" : "cli-cursor",
+  "description" : "Toggle the CLI cursor",
+  "version" : "2.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/cli-cursor",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cli-cursor/-/cli-cursor-2.1.0.tgz",
+    "shasum" : "b35dac376479facc3e94747d41d0d0f5238ffcb5"
+  },
+  "dependencies" : {
+    "restore-cursor" : "^2.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "cli", "cursor", "ansi", "toggle", "display", "show", "hide", "term", "terminal", "console", "tty", "shell", "command-line" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

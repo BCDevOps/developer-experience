@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c114b2b4eab7f0338e597c9fb885ae5c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>parse spdx license expressions</npm.description>
+  <npm.keywords>["SPDX","law","legal","license","metadata","package","package.json","standards"]</npm.keywords>
+  <npm.name>spdx-expression-parse</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

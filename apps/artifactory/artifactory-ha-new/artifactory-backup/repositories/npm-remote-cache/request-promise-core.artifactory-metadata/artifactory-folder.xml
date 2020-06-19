@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>request-promise-core</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>request-promise-core</name>
+  <created>1576008065774</created>
+  <lastModified>1576008065774</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065774</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,32 @@
+{
+  "name" : "ipaddr.js",
+  "description" : "A library for manipulating IPv4 and IPv6 addresses in JavaScript.",
+  "version" : "1.9.1",
+  "author" : "whitequark <whitequark@whitequark.org>",
+  "repository" : "git://github.com/whitequark/ipaddr.js",
+  "engines" : {
+    "node" : ">= 0.10"
+  },
+  "main" : "./lib/ipaddr.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ipaddr.js/-/ipaddr.js-1.9.1.tgz",
+    "shasum" : "bff38543eeb8984825079ff3a2a8e6cbd46781b3"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "coffee-script" : "~1.12.6",
+    "nodeunit" : "^0.11.3",
+    "uglify-js" : "~3.0.19"
+  },
+  "keywords" : [ "ip", "ipv4", "ipv6" ],
+  "license" : "MIT",
+  "files" : [ "lib/", "LICENSE", "ipaddr.min.js" ],
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "scripts" : {
+    "test" : "cake build test"
+  },
+  "types" : "./lib/ipaddr.js.d.ts"
+}

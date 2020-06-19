@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/gulplog</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>gulplog</name>
+  <created>1576003398532</created>
+  <lastModified>1576003398532</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003398532</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

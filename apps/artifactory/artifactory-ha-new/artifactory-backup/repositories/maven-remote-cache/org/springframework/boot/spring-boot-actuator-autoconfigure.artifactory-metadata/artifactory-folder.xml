@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-actuator-autoconfigure</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>spring-boot-actuator-autoconfigure</name>
+  <created>1576861382098</created>
+  <lastModified>1576861382098</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861382098</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

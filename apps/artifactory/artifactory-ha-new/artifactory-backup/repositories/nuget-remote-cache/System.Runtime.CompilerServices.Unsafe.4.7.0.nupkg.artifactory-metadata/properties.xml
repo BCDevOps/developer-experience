@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D7780FEBBA0323</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile259</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.description>Provides the System.Runtime.CompilerServices.Unsafe class, which provides generic, low-level functionality for manipulating pointers.
+
+Commonly Used Types:
+System.Runtime.CompilerServices.Unsafe
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>FMFUEihy05KfT2kaosuNt49iuLbhiyeLOaU9Eo2TtcxZvjMPqba0YTyB+az+AE8cl/L4Fd91OouXYowX3VQ2BQ==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Runtime.CompilerServices.Unsafe</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/MIT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://github.com/dotnet/corefx</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Runtime.CompilerServices.Unsafe</nuget.title>
+  <nuget.version>4.7.0</nuget.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/parser/-/parser-7.9.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>parser-7.9.4.tgz</name>
+  <created>1585871251314</created>
+  <lastModified>1585038687000</lastModified>
+  <size>334202</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871251315</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>68a35e6b0319bbc014465be43828300113f2f2e8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3f6a4e4e6ee1f18cbf3716542f8246f8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b028396369785e7e9963a3b0fe5e834b96c1e1e181f702096db728735a660efe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

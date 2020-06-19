@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/hibernate/validator/hibernate-validator-parent/6.0.17.Final</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>6.0.17.Final</name>
+  <created>1576861380626</created>
+  <lastModified>1576861380626</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861380626</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

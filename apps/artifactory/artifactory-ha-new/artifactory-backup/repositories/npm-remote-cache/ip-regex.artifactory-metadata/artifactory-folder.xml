@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ip-regex</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>ip-regex</name>
+  <created>1585853593878</created>
+  <lastModified>1585853593878</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853593878</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

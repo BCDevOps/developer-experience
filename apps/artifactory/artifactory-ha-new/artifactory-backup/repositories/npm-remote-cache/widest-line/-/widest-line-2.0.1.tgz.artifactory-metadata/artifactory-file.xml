@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>widest-line/-/widest-line-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>widest-line-2.0.1.tgz</name>
+  <created>1576003118761</created>
+  <lastModified>1539713579000</lastModified>
+  <size>1709</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003118762</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7438764730ec7ef4381ce4df82fb98a53142a3fc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0c2e6f65a35e1125653f2f6e0e10ce93</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>104b8ae3c42acbadd5759de06f2b7d4fdf6a36261d8d188d4aca65aca1a7dc63</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

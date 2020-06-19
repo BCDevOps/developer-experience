@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a346d40684bad1f182c6f67b473b9e72"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detect the dominant newline character of a string</npm.description>
+  <npm.keywords>["newline","linebreak","line-break","line","lf","crlf","eol","linefeed","character","char"]</npm.keywords>
+  <npm.name>detect-newline</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extend-shallow</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>extend-shallow</name>
+  <created>1576003404595</created>
+  <lastModified>1576003404595</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003404595</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

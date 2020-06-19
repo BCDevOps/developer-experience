@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>array-flatten/-/array-flatten-1.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>array-flatten-1.1.1.tgz</name>
+  <created>1576008043345</created>
+  <lastModified>1527355325000</lastModified>
+  <size>1992</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008043346</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9a5f699051b1e7073328f2a008968b64ea2955d2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>dc8f65c347b435464faa4e6e6bc01d3a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1aca1277ec265d578b3ff517a8a7a07dbab5e6edd349775830ef38c38d6426ed</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</name>
+  <created>1579294738113</created>
+  <lastModified>1538750074000</lastModified>
+  <size>42827</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1579294738114</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>913b3c8701b85464b6fa362a0ac16bec4eb56c9f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>295f6b7b929f7baf3860cfeecc70ae62</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a9e4aa69423cd3e96ac3930ae2f32998ed0265aaab99892dc29e8bfaf4006f42</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

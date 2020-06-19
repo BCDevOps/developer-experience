@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"32f862da192fdd88de453d8a45909ca1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>automatic rate limiting plugin for octokit</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@octokit/plugin-throttling</npm.name>
+  <npm.version>2.7.0</npm.version>
+</properties>

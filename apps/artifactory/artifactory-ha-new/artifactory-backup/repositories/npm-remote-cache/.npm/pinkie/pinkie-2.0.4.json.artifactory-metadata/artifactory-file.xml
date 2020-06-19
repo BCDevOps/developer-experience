@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pinkie/pinkie-2.0.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pinkie-2.0.4.json</name>
+  <created>1576003659808</created>
+  <lastModified>1576003659787</lastModified>
+  <size>954</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003659808</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f11ac76ffdbc2762b3ef34c72a1c963051949f2b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>2e96e61112d0bc4d9b3cbd8178fe299c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9280283fef54f5767c27f1f6f5d12e966f77549a12d9183f4fc5ae69ead408ad</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

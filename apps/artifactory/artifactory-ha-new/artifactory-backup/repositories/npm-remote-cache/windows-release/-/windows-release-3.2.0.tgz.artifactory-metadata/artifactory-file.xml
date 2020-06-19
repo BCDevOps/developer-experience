@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>windows-release/-/windows-release-3.2.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>windows-release-3.2.0.tgz</name>
+  <created>1576003104981</created>
+  <lastModified>1554448310000</lastModified>
+  <size>2461</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003104982</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8122dad5afc303d833422380680a79cdfa91785f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5df28bb3a6c2ae9faa874715ab712fca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>502842695115a6fdbbfc071b7dc3e8b75f7a966809df86e4a0b2c156911855ee</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

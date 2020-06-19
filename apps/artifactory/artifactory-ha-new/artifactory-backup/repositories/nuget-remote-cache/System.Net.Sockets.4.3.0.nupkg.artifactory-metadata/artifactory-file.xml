@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Net.Sockets.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Net.Sockets.4.3.0.nupkg</name>
+  <created>1578497294207</created>
+  <lastModified>1544738748000</lastModified>
+  <size>135695</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578497294278</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>31fe408e7a8c0dd6b489541f69bc74f63ff117c0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1eae1d571f8b18f2e0346925cabfc248</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8a5eddaf9553fd058383fd1cba1fb812cdaef0b63fffeaaa898f416666314aeb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

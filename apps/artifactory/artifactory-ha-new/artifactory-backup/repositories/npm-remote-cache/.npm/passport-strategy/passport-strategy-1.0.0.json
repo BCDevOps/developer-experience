@@ -1,0 +1,44 @@
+{
+  "name" : "passport-strategy",
+  "description" : "An abstract class implementing Passport's strategy API.",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Jared Hanson",
+    "email" : "jaredhanson@gmail.com",
+    "url" : "http://www.jaredhanson.net/"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/jaredhanson/passport-strategy.git"
+  },
+  "bugs" : {
+    "url" : "http://github.com/jaredhanson/passport-strategy/issues"
+  },
+  "engines" : {
+    "node" : ">= 0.4.0"
+  },
+  "main" : "./lib",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/passport-strategy/-/passport-strategy-1.0.0.tgz",
+    "shasum" : "b5539aa8fc225a3d1ad179476ddf236b440f52e4"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "mocha" : "1.x.x",
+    "chai" : "1.x.x"
+  },
+  "keywords" : [ "passport", "strategy" ],
+  "licenses" : [ {
+    "type" : "MIT",
+    "url" : "http://www.opensource.org/licenses/MIT"
+  } ],
+  "scripts" : {
+    "test" : "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  },
+  "testling" : {
+    "browsers" : [ "chrome/latest" ],
+    "harness" : "mocha",
+    "files" : [ "test/bootstrap/testling.js", "test/*.test.js" ]
+  }
+}

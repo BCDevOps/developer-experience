@@ -1,0 +1,32 @@
+{
+  "name" : "npm-run-path",
+  "description" : "Get your PATH prepended with locally installed binaries",
+  "version" : "4.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/npm-run-path",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/npm-run-path/-/npm-run-path-4.0.1.tgz",
+    "shasum" : "b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
+  },
+  "dependencies" : {
+    "path-key" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "npm", "run", "path", "package", "bin", "binary", "binaries", "script", "cli", "command-line", "execute", "executable" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

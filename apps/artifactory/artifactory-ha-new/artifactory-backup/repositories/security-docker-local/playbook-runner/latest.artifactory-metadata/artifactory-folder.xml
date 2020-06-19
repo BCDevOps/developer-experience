@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>security-docker-local</repoKey>
+    <path>playbook-runner/latest</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>latest</name>
+  <created>1580706721360</created>
+  <lastModified>1580706721360</lastModified>
+  <additionalInfo>
+    <createdBy>jbcxor</createdBy>
+    <modifiedBy>jbcxor</modifiedBy>
+    <lastUpdated>1580706721360</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

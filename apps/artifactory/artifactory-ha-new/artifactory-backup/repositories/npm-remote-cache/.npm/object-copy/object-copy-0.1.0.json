@@ -1,0 +1,42 @@
+{
+  "name" : "object-copy",
+  "description" : "Copy static properties, prototype properties, and descriptors from one object to another.",
+  "version" : "0.1.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/object-copy",
+  "repository" : "jonschlinkert/object-copy",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/object-copy/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/object-copy/-/object-copy-0.1.0.tgz",
+    "shasum" : "7e7d858b781bd7c991a41ba975ed3812754e998c"
+  },
+  "dependencies" : {
+    "copy-descriptor" : "^0.1.0",
+    "define-property" : "^0.2.5",
+    "kind-of" : "^3.0.3"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "*",
+    "mocha" : "*"
+  },
+  "keywords" : [ "copy", "object" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "layout" : "default",
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ ]
+    },
+    "reflinks" : [ "verb" ]
+  }
+}

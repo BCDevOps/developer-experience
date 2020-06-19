@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/graphql/@octokit/graphql-4.3.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>graphql-4.3.1.json</name>
+  <created>1576003100753</created>
+  <lastModified>1576003100641</lastModified>
+  <size>1595</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003100754</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c8760706e08414646c7ef8d585f8ad383ed8ac5e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>27f0e42aca18e5d385c2b495c03cc34b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3592fa4179816892ff188b0e6c03894f40b37b339275c61ac0867d2b60d46890</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

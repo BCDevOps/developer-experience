@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>net/bytebuddy/byte-buddy-agent/1.9.16/byte-buddy-agent-1.9.16-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>byte-buddy-agent-1.9.16-sources.jar</name>
+  <created>1576861456391</created>
+  <lastModified>1564227647000</lastModified>
+  <size>199912</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861456392</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a41d8759083bade9c12f0d640fafad20cfa69312</original>
+          <actual>a41d8759083bade9c12f0d640fafad20cfa69312</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>137f5e2073617e193201c10d81535f75</original>
+          <actual>137f5e2073617e193201c10d81535f75</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0a7b5643bd2de08a0579ff4368ec14ad42886620e3463dde4f7afc21fa3f03b2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

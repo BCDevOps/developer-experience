@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>58/b4/4850a0ccc6f567cc0ebe7060d20ffd4258b8210efadc259da62dc6ed9c65/wcwidth-0.1.8-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>wcwidth-0.1.8-py2.py3-none-any.whl</name>
+  <created>1578439444573</created>
+  <lastModified>1577928068000</lastModified>
+  <size>17980</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1578439444574</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>72f09ee546434b265862cd905311542b2e323a71</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ec7e2f8e42c85066edf6caae0f8a927b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8fd29383f539be45b20bd4df0dc29c20ba48654a41e661925e612311e9f3c603</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,54 @@
+{
+  "name" : "is-plain-object",
+  "description" : "Returns true if an object was created by the `Object` constructor.",
+  "version" : "2.0.4",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/is-plain-object",
+  "repository" : "jonschlinkert/is-plain-object",
+  "contributors" : [ "Jon Schlinkert (http://twitter.com/jonschlinkert)", "Osman Nuri Okumuş (http://onokumus.com)", "Steven Vachon (https://svachon.com)", "(https://github.com/wtgtybhertgeghgtwtg)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/is-plain-object/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-plain-object/-/is-plain-object-2.0.4.tgz",
+    "shasum" : "2c163b3fafb1b606d9d17928f05c2a1c38e07677"
+  },
+  "dependencies" : {
+    "isobject" : "^3.0.1"
+  },
+  "devDependencies" : {
+    "browserify" : "^14.4.0",
+    "chai" : "^4.0.2",
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.4.2",
+    "mocha-phantomjs" : "^4.1.0",
+    "phantomjs" : "^2.1.7",
+    "uglify-js" : "^3.0.24"
+  },
+  "keywords" : [ "check", "is", "is-object", "isobject", "javascript", "kind", "kind-of", "object", "plain", "type", "typeof", "value" ],
+  "license" : "MIT",
+  "files" : [ "index.d.ts", "index.js" ],
+  "scripts" : {
+    "browserify" : "browserify index.js --standalone isPlainObject | uglifyjs --compress --mangle -o browser/is-plain-object.js",
+    "test_browser" : "mocha-phantomjs test/browser.html",
+    "test_node" : "mocha",
+    "test" : "npm run test_node && npm run browserify && npm run test_browser"
+  },
+  "types" : "index.d.ts",
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "is-number", "isobject", "kind-of" ]
+    },
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/snapdragon-node/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003604462</created>
+  <lastModified>1543051100000</lastModified>
+  <size>41042</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464325369</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6c4ff1e2ee608b66bf9fb47f820be5b07d0300e6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b38b313f1838087dcec61635b08eece4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1768df0bcb47fc06b8f1f40e2b1e459421aa79245d7e544677e5395fa8b48743</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

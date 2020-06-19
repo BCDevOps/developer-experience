@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/universalify/universalify-0.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>universalify-0.1.2.json</name>
+  <created>1579828368815</created>
+  <lastModified>1579828368764</lastModified>
+  <size>1030</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828368815</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e7a60c6aaf07953da7b292bcecfb63f94dc2fff4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>964b167a1da13aab6a2ffcc3dc80b8e7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2d4ef414fc4d8c97770bfc40164d6cbd50240392ce6cbc13273769048587b71e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

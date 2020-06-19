@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lowercase-keys/lowercase-keys-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lowercase-keys-2.0.0.json</name>
+  <created>1585871272233</created>
+  <lastModified>1585871272194</lastModified>
+  <size>852</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871272233</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6ac7675379a5543913ab504af60234043eab0bf3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b2f0275195e1e3e93d6df3d73b2d6020</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>71f8c4a925bac5908e8956cdbe43e554fed154f951b0661f6333b67b6ee61071</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

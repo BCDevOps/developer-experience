@@ -1,0 +1,39 @@
+{
+  "name" : "registry-auth-token",
+  "description" : "Get the auth token set for an npm registry (if any)",
+  "version" : "3.4.0",
+  "author" : "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "homepage" : "https://github.com/rexxars/registry-auth-token#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+ssh://git@github.com/rexxars/registry-auth-token.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/rexxars/registry-auth-token/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/registry-auth-token/-/registry-auth-token-3.4.0.tgz",
+    "shasum" : "d7446815433f5d5ed6431cd5dca21048f66b397e"
+  },
+  "dependencies" : {
+    "rc" : "^1.1.6",
+    "safe-buffer" : "^5.0.1"
+  },
+  "devDependencies" : {
+    "istanbul" : "^0.4.2",
+    "mocha" : "^3.3.0",
+    "require-uncached" : "^1.0.2",
+    "standard" : "^10.0.2"
+  },
+  "keywords" : [ "npm", "conf", "config", "npmconf", "registry", "auth", "token", "authtoken" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha",
+    "posttest" : "standard",
+    "coverage" : "istanbul cover _mocha"
+  },
+  "standard" : {
+    "ignore" : [ "coverage/**" ]
+  }
+}

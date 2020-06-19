@@ -1,0 +1,37 @@
+{
+  "name" : "caching-transform",
+  "description" : "Wraps a transform and provides caching",
+  "version" : "3.0.2",
+  "repository" : "istanbuljs/caching-transform",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/caching-transform/-/caching-transform-3.0.2.tgz",
+    "shasum" : "601d46b91eca87687a281e71cef99791b0efca70"
+  },
+  "dependencies" : {
+    "hasha" : "^3.0.0",
+    "make-dir" : "^2.0.0",
+    "package-hash" : "^3.0.0",
+    "write-file-atomic" : "^2.4.2"
+  },
+  "devDependencies" : {
+    "ava" : "^1.2.1",
+    "coveralls" : "^3.0.2",
+    "nyc" : "^13.3.0",
+    "proxyquire" : "^2.1.0",
+    "rimraf" : "^2.6.3",
+    "sinon" : "^7.2.3",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "transform", "cache", "require", "transpile", "fast", "speed", "hash" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && nyc ava"
+  },
+  "nyc" : {
+    "reporter" : [ "lcov", "text" ]
+  }
+}

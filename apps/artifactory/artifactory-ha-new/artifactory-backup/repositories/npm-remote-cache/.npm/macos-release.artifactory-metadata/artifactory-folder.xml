@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/macos-release</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>macos-release</name>
+  <created>1576003638283</created>
+  <lastModified>1576003638283</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003638283</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

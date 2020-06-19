@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b747939ca75c615e83664c7a0640448e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if a number is a redirect http status code</npm.description>
+  <npm.keywords>["redirect","http","https","status","code","codes","is","check","detect"]</npm.keywords>
+  <npm.name>is-redirect</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

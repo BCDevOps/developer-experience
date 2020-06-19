@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f3a9010155b6a46066afbe2d07f624bd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>recursively iterates over specified directory, require()'ing each file, and returning a nested hash structure containing those modules.</npm.description>
+  <npm.keywords>["require","directory","library","recursive"]</npm.keywords>
+  <npm.name>require-directory</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

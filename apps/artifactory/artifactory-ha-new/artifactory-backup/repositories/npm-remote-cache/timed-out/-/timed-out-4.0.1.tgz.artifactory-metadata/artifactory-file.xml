@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>timed-out/-/timed-out-4.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>timed-out-4.0.1.tgz</name>
+  <created>1576003448319</created>
+  <lastModified>1527449481000</lastModified>
+  <size>2137</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003448320</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f32eacac5a175bea25d7fab565ab3ed8741ef56f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7af2bbbcd9d2d23b98f5af46a18828ab</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c916f36973f186d81b0a73bd49dad31ed8eaab0d81ad6be4a473ee6067dd9841</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

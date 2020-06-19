@@ -1,0 +1,29 @@
+{
+  "name" : "to-readable-stream",
+  "description" : "Convert a string/Buffer/Uint8Array to a readable stream",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/to-readable-stream",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/to-readable-stream/-/to-readable-stream-1.0.0.tgz",
+    "shasum" : "ce0aa0c2f3df6adf852efb404a783e77c0475771"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "get-stream" : "^3.0.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "stream", "readablestream", "string", "buffer", "uint8array", "from", "into", "to", "transform", "convert", "readable", "pull" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

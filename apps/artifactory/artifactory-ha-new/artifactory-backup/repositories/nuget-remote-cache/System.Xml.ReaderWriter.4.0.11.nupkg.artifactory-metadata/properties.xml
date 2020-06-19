@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614ECC6DCB44</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile259</nuget.dependency>
+  <nuget.dependency>System.Collections:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Collections:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Globalization:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Globalization:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem.Primitives:4.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem.Primitives:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding:4.0.11:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.Extensions:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding.Extensions:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Text.RegularExpressions:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Text.RegularExpressions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks:4.0.11:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks:4.0.11:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks.Extensions:4.0.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks.Extensions:4.0.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides provides a fast, non-cached, forward-only way to read and write Extensible Markup Language (XML) data.
+
+Commonly Used Types:
+System.Xml.XmlNodeType
+System.Xml.XmlException
+System.Xml.XmlReader
+System.Xml.XmlWriter
+System.Xml.IXmlLineInfo
+System.Xml.XmlNameTable
+System.Xml.IXmlNamespaceResolver
+System.Xml.XmlNamespaceManager
+System.Xml.XmlQualifiedName
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>1A1unVXles3wQTK8uK6Kvxq7NINiDN6WnHjGw5Opk2q/dCwdz2Yojm6d/8s5mogO48EVQKwUDLMuILQTZarzXg==</nuget.digest>
+  <nuget.frameworks>System.Xml:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Xml.ReaderWriter</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799417</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Xml.ReaderWriter</nuget.title>
+  <nuget.version>4.0.11</nuget.version>
+</properties>

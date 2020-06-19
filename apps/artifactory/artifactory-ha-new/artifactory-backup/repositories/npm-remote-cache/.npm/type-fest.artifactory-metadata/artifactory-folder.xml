@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/type-fest</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>type-fest</name>
+  <created>1576003609986</created>
+  <lastModified>1576003609986</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003609986</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

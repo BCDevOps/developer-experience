@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es6-iterator/es6-iterator-2.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es6-iterator-2.0.3.json</name>
+  <created>1576003439484</created>
+  <lastModified>1576003439461</lastModified>
+  <size>1097</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003439484</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1693bc122676540db9bff9dbc95d8bac0001761f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>114b1058ef47c7ffd20aedd1bc283504</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>558369d7f32e6f7a964342b518ea0acb43a63c564d9d61f4304f99560160e10e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

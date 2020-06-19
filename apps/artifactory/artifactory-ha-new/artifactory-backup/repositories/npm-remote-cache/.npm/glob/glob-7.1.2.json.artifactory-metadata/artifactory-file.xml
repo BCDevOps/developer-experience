@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/glob/glob-7.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>glob-7.1.2.json</name>
+  <created>1579828084507</created>
+  <lastModified>1579828084410</lastModified>
+  <size>1223</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828084508</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>93756690cab5c5a93265f7012a31c30adfa096d6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ec5ecacdf2a5882f9e7f4567e37bbb49</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bae17e0a6c89d2ec82d34d539527293df6fe6619c7e583e7badb6e1219a0a974</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"da3a994c4c7439857f4a8219e1926bf3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>create boxes in the terminal</npm.description>
+  <npm.keywords>["cli","box","boxes","terminal","term","console","ascii","unicode","border","text"]</npm.keywords>
+  <npm.name>boxen</npm.name>
+  <npm.version>1.3.0</npm.version>
+</properties>

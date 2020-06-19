@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/number-is-nan/number-is-nan-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>number-is-nan-1.0.1.json</name>
+  <created>1576008046136</created>
+  <lastModified>1576008046119</lastModified>
+  <size>768</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008046137</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1fb19c9162464eb5defbb90efa6dfcf1c171b7f7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cf9ce14d67761ef90fef803c21b92a9d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e9d34c17b9096a7913f15844f1ea7f9128986f3cba6b86ed34ac30b3f961f53</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

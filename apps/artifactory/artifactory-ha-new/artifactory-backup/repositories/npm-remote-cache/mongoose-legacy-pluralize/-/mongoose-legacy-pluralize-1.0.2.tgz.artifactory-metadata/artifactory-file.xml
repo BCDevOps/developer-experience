@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mongoose-legacy-pluralize-1.0.2.tgz</name>
+  <created>1582140568399</created>
+  <lastModified>1527409867000</lastModified>
+  <size>5182</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140568404</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3ba9f91fa507b5186d399fb40854bff18fb563e4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>aece21e1add84205fc9ce52362e884bd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>91d7dc48d7942842f72fd82e7f17d2e41a83deb297facc50afdec8b087992c8f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

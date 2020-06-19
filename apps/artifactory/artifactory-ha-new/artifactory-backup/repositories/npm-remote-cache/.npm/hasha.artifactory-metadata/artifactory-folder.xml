@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/hasha</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>hasha</name>
+  <created>1579828385988</created>
+  <lastModified>1579828385988</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828385988</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

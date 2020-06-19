@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"86ef5164bcc70f852080030cba6541e7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>rfc4122 (v1, v4, and v5) uuids</npm.description>
+  <npm.keywords>["uuid","guid","rfc4122"]</npm.keywords>
+  <npm.name>uuid</npm.name>
+  <npm.version>7.0.3</npm.version>
+</properties>

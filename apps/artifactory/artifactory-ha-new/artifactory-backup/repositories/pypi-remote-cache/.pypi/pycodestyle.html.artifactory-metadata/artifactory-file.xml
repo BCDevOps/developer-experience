@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pycodestyle.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pycodestyle.html</name>
+  <created>1574023487934</created>
+  <lastModified>1582154364035</lastModified>
+  <size>5378</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154364087</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d8d618e926eda1cb27678134cc1147886c03cef6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2669000917e48303dfbf25693eef812c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f498eb9a762208a205bd966932c50b3975cfa02af2a7bb9c3bd44056709bc68d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

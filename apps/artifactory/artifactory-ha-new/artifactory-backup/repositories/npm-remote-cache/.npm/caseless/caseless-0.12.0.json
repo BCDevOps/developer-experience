@@ -1,0 +1,27 @@
+{
+  "name" : "caseless",
+  "description" : "Caseless object set/get/has, very useful when working with HTTP headers.",
+  "version" : "0.12.0",
+  "author" : "Mikeal Rogers <mikeal.rogers@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mikeal/caseless"
+  },
+  "bugs" : {
+    "url" : "https://github.com/mikeal/caseless/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/caseless/-/caseless-0.12.0.tgz",
+    "shasum" : "1b681c21ff84033c826543090689420d187151dc"
+  },
+  "devDependencies" : {
+    "tape" : "^2.10.2"
+  },
+  "keywords" : [ "headers", "http", "caseless" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+    "test" : "node test.js"
+  },
+  "test" : "node test.js"
+}

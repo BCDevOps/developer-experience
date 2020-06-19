@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/launchdarkly-server-sdk.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>launchdarkly-server-sdk.html</name>
+  <created>1574023044936</created>
+  <lastModified>1582154306732</lastModified>
+  <size>3522</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154306784</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>78ff97076145418c5151c2f85a2f9f599a4a6891</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>48762c6535fd63fc7c822866e057e4dd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>452c581f28f1413d4c64cef2dea92bdfdc10dcf852799f7c2ba9651eb54b6b34</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

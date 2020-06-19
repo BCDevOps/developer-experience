@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>detect-libc/-/detect-libc-1.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>detect-libc-1.0.3.tgz</name>
+  <created>1576003635911</created>
+  <lastModified>1527372108000</lastModified>
+  <size>6279</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003635912</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bb43dfc07947ef0682b978b989477cc1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7a2af298b85cb36f877693318e157e4d20719ce8dca02b34d68c12142b71218b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

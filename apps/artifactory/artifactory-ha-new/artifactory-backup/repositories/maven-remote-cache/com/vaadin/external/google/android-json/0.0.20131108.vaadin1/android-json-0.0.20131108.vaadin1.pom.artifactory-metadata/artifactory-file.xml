@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>android-json-0.0.20131108.vaadin1.pom</name>
+  <created>1576861447920</created>
+  <lastModified>1393591499000</lastModified>
+  <size>2786</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861447920</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>90ebaebd21e7bcfad5416f999926d05f834bfeb5</original>
+          <actual>90ebaebd21e7bcfad5416f999926d05f834bfeb5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1de456aa1af0b2d69fb2984b9194b559</original>
+          <actual>1de456aa1af0b2d69fb2984b9194b559</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2ff6c17d9c060b89cd7ef18fa480ae2446eba86855a633f3892837fc3b848fef</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

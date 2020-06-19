@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"17c194e41dd12d561800985ef5b4ffdf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utilities for the snapdragon parser/compiler.</npm.description>
+  <npm.keywords>["capture","compile","compiler","convert","match","parse","parser","plugin","render","snapdragon","snapdragonplugin","transform","util"]</npm.keywords>
+  <npm.name>snapdragon-util</npm.name>
+  <npm.version>3.0.1</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/registry-auth-token/registry-auth-token-3.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>registry-auth-token-3.4.0.json</name>
+  <created>1576008063474</created>
+  <lastModified>1576008062986</lastModified>
+  <size>1213</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008063475</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e08da9c409076e2acdd48fe912b82080ac2b7fbf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>431ba9ef60162b7e932cd624bf9255f2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4cb3828232972542030cdaca03fbdad8fc7fec581c152a6a67087d337198843c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

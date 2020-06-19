@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/tslint-microsoft-contrib/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003395366</created>
+  <lastModified>1558739650000</lastModified>
+  <size>329662</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464320111</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>47ef4cbee444b7ae55b3592c0ec0029242643b48</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6cb396802cf8ddbb02260f3310b72676</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f96b6649ed13171d3530b4d5b0b93f525fa5adbf3e581ed56d94d098671de86a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

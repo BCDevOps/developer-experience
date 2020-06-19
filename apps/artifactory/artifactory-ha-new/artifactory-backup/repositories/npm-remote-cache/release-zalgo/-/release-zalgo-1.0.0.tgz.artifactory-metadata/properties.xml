@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2e431e2016bfc667a21974c2c818d769"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>helps you write code with promise-like chains that can run both synchronously and asynchronously</npm.description>
+  <npm.keywords>["babel"]</npm.keywords>
+  <npm.name>release-zalgo</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

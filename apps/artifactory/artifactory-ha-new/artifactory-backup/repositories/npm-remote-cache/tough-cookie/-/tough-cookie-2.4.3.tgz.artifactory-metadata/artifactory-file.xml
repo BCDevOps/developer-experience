@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tough-cookie/-/tough-cookie-2.4.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tough-cookie-2.4.3.tgz</name>
+  <created>1576008056174</created>
+  <lastModified>1549995737000</lastModified>
+  <size>23806</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008056175</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>53f36da3f47783b0925afa06ff9f3b165280f781</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a27bde51ede38b03d579923358c3c475</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>87bf546f0d24d57347e357126c732967e9930a9d0ca233f4ecf74f573022a253</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

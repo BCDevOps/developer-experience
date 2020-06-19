@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tcomb-validation/-/tcomb-validation-3.4.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tcomb-validation-3.4.1.tgz</name>
+  <created>1579828361760</created>
+  <lastModified>1527447663000</lastModified>
+  <size>7795</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828361760</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a7696ec176ce56a081d9e019f8b732a5a8894b65</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d8b7a0440c5172fb6ba73cd4dc7ddedd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>15cbcf4ea16f3606382cb9229dc075f588b0bf2f2bba2edd4fbc8620500bc08c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>bs-logger</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>bs-logger</name>
+  <created>1576008546884</created>
+  <lastModified>1576008546884</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008546884</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

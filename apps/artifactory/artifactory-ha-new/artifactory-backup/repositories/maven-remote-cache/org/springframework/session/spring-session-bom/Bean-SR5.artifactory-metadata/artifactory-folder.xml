@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/session/spring-session-bom/Bean-SR5</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>Bean-SR5</name>
+  <created>1576861436692</created>
+  <lastModified>1576861436692</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861436692</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

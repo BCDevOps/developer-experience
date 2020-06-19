@@ -1,0 +1,37 @@
+{
+  "name" : "@types/babel__template",
+  "description" : "TypeScript definitions for @babel/template",
+  "version" : "7.0.2",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "contributors" : [ {
+    "name" : "Troy Gerwien",
+    "url" : "https://github.com/yortus",
+    "githubUsername" : "yortus"
+  }, {
+    "name" : "Marvin Hagemeister",
+    "url" : "https://github.com/marvinhagemeister",
+    "githubUsername" : "marvinhagemeister"
+  }, {
+    "name" : "Melvin Groenhoff",
+    "url" : "https://github.com/mgroenhoff",
+    "githubUsername" : "mgroenhoff"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/babel__template/-/babel__template-7.0.2.tgz",
+    "shasum" : "4ff63d6b52eddac1de7b975a5223ed32ecea9307"
+  },
+  "dependencies" : {
+    "@babel/parser" : "^7.1.0",
+    "@babel/types" : "^7.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "2.9",
+  "typesPublisherContentHash" : "fd665ffdd94e184259796e85ff1a8e8626a23fb0eeefd6cfb9f77a316eda2624"
+}

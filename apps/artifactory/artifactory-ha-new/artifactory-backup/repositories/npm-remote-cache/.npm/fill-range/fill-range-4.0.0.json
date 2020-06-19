@@ -1,0 +1,51 @@
+{
+  "name" : "fill-range",
+  "description" : "Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`",
+  "version" : "4.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/fill-range",
+  "repository" : "jonschlinkert/fill-range",
+  "contributors" : [ "<wtgtybhertgeghgtwtg@gmail.com> (https://github.com/wtgtybhertgeghgtwtg)", "Edo Rivai <edo.rivai@gmail.com> (edo.rivai.nl)", "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)", "Paul Miller <paul+gh@paulmillr.com> (paulmillr.com)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/fill-range/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/fill-range/-/fill-range-4.0.0.tgz",
+    "shasum" : "d544811d428f98eb06a63dc402d2403c328c38f7"
+  },
+  "dependencies" : {
+    "extend-shallow" : "^2.0.1",
+    "is-number" : "^3.0.0",
+    "repeat-string" : "^1.6.1",
+    "to-regex-range" : "^2.1.0"
+  },
+  "devDependencies" : {
+    "ansi-cyan" : "^0.1.1",
+    "benchmarked" : "^1.0.0",
+    "gulp-format-md" : "^0.1.12",
+    "minimist" : "^1.2.0",
+    "mocha" : "^3.2.0"
+  },
+  "keywords" : [ "alpha", "alphabetical", "array", "bash", "brace", "expand", "expansion", "fill", "glob", "match", "matches", "matching", "number", "numerical", "range", "ranges", "regex", "sh" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "braces", "expand-range", "micromatch", "to-regex-range" ]
+    },
+    "toc" : true,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

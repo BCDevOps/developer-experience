@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"53e54080c22253705daa1c3115c02220"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>write files in an atomic fashion w/configurable ownership</npm.description>
+  <npm.keywords>["writeFile","atomic"]</npm.keywords>
+  <npm.name>write-file-atomic</npm.name>
+  <npm.version>3.0.3</npm.version>
+</properties>

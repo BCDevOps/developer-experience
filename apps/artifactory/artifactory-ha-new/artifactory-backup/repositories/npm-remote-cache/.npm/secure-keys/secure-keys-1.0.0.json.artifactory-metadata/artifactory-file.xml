@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/secure-keys/secure-keys-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>secure-keys-1.0.0.json</name>
+  <created>1576003398285</created>
+  <lastModified>1576003398263</lastModified>
+  <size>631</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003398286</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1c4748318ee8d9b01d4f267d4b49465f785ef91e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cfb9c73526fbd9bc151dbf8e5770ac32</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6b90c635454e5b3cca1aeabe43da6c4b585231f477f2db291f13a3effe124765</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

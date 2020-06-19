@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b45bf08107e22e624dade29284abd265"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>use property paths (`a.b.c`) to get a nested value from an object.</npm.description>
+  <npm.keywords>["get","key","nested","object","path","paths","prop","properties","property","props","segment","value","values"]</npm.keywords>
+  <npm.name>get-value</npm.name>
+  <npm.version>2.0.6</npm.version>
+</properties>

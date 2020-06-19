@@ -1,0 +1,33 @@
+{
+  "name" : "uglify-js",
+  "description" : "JavaScript parser, mangler/compressor and beautifier toolkit",
+  "version" : "3.6.0",
+  "author" : "Mihai Bazon <mihai.bazon@gmail.com> (http://lisperator.net/)",
+  "repository" : "mishoo/UglifyJS2",
+  "engines" : {
+    "node" : ">=0.8.0"
+  },
+  "main" : "tools/node.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/uglify-js/-/uglify-js-3.6.0.tgz",
+    "shasum" : "704681345c53a8b2079fb6cec294b05ead242ff5"
+  },
+  "dependencies" : {
+    "commander" : "~2.20.0",
+    "source-map" : "~0.6.1"
+  },
+  "devDependencies" : {
+    "acorn" : "~6.1.1",
+    "semver" : "~6.0.0"
+  },
+  "keywords" : [ "cli", "compress", "compressor", "ecma", "ecmascript", "es", "es5", "javascript", "js", "jsmin", "min", "minification", "minifier", "minify", "optimize", "optimizer", "pack", "packer", "parse", "parser", "uglifier", "uglify" ],
+  "license" : "BSD-2-Clause",
+  "files" : [ "bin", "lib", "tools", "LICENSE" ],
+  "bin" : {
+    "uglifyjs" : "bin/uglifyjs"
+  },
+  "maintainers" : [ "Alex Lam <alexlamsl@gmail.com>", "Mihai Bazon <mihai.bazon@gmail.com> (http://lisperator.net/)" ],
+  "scripts" : {
+    "test" : "node test/compress.js && node test/mocha.js"
+  }
+}

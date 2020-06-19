@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <chart.appVersion>1.10.4</chart.appVersion>
+  <chart.description>Airflow is a platform to programmatically author, schedule and monitor workflows</chart.description>
+  <chart.home>https://airflow.apache.org/</chart.home>
+  <chart.maintainers>Alec Wenzowski - alec@button.is</chart.maintainers>
+  <chart.name>airflow</chart.name>
+  <chart.sources>https://airflow.apache.org/</chart.sources>
+  <chart.version>5.2.5-p3</chart.version>
+</properties>

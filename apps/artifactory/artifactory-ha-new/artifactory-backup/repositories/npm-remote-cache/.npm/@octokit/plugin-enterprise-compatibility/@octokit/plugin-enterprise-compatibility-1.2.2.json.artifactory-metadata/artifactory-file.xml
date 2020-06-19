@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-enterprise-compatibility/@octokit/plugin-enterprise-compatibility-1.2.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-enterprise-compatibility-1.2.2.json</name>
+  <created>1585871246216</created>
+  <lastModified>1585871246187</lastModified>
+  <size>1564</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871246216</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4668ad07eb01f45932c526db43207c028020e808</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3ce16eb1f8c6aa3b576deaf1d46460c8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fd1d172427262c16f7f139eb77bbb9127c035578d31bdd5c99e32de1fe2a6299</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

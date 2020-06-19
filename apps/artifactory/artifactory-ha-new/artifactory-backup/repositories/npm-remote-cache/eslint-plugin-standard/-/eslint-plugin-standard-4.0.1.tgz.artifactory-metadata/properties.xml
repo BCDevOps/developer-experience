@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1f4b2624b2523bc0a5a905adfcd80888"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>eslint plugin for the standard linter</npm.description>
+  <npm.keywords>["eslint","eslintplugin"]</npm.keywords>
+  <npm.name>eslint-plugin-standard</npm.name>
+  <npm.version>4.0.1</npm.version>
+</properties>

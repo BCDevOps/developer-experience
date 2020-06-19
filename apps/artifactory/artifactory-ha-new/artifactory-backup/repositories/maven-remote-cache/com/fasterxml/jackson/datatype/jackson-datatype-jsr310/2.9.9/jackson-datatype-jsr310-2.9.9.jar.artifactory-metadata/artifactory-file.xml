@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9/jackson-datatype-jsr310-2.9.9.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jackson-datatype-jsr310-2.9.9.jar</name>
+  <created>1576861408831</created>
+  <lastModified>1557977238000</lastModified>
+  <size>100674</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861408832</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a33df137557793b0404a486888dbe049f7abeeeb</original>
+          <actual>a33df137557793b0404a486888dbe049f7abeeeb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>ffa24993e3821467a024860b7a228809</original>
+          <actual>ffa24993e3821467a024860b7a228809</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7eca12e26c8f61e902b88bec24124007bf670896663e8b592c88cc5653ebb457</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

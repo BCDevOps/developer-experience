@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>deprecation/-/deprecation-2.3.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>deprecation-2.3.1.tgz</name>
+  <created>1576008549175</created>
+  <lastModified>1560447964000</lastModified>
+  <size>1867</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008549180</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6368cbdb40abf3373b525ac87e4a260c3a700919</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cf59ec3696e391318860579aae54fe65</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d041260b263c21cacdfb0f109ae761f638f37a82292c3ad72026fdc21fd525be</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

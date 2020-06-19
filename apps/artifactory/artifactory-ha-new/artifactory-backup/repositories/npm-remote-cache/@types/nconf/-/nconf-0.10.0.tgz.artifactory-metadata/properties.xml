@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5dd3202046027a89394e05d255692d96"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for nconf</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/nconf</npm.name>
+  <npm.version>0.10.0</npm.version>
+</properties>

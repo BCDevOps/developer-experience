@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@types/babel__traverse/-/babel__traverse-7.0.10.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel__traverse-7.0.10.tgz</name>
+  <created>1586464331648</created>
+  <lastModified>1586200119000</lastModified>
+  <size>8975</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464331649</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d9a99f017317d9b3d1abc2ced45d3bca68df0daf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5afd2a9261879ebd3f9e045062d60e8f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>59cc9ca52d847049ee7375b9144454cd7496691b4aae192714c4166a40cd373e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6fcfa6f54a5dd7786e758a5885e58bef"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>http server cookie parsing and serialization</npm.description>
+  <npm.keywords>["cookie","cookies"]</npm.keywords>
+  <npm.name>cookie</npm.name>
+  <npm.version>0.4.0</npm.version>
+</properties>

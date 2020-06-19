@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/generator/-/generator-7.7.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>generator-7.7.2.tgz</name>
+  <created>1576008723610</created>
+  <lastModified>1573082861000</lastModified>
+  <size>21187</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008723611</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2f4852d04131a5e17ea4f6645488b5da66ebf3af</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>50881ec53a6b71838af48f63f45cdc12</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>10d16aaaa98c26023360aa65b47c360c8381e12ef9146668320fce5570b821f0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

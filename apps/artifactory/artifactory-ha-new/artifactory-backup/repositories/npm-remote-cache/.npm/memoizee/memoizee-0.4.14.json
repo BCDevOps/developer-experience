@@ -1,0 +1,49 @@
+{
+  "name" : "memoizee",
+  "description" : "Memoize/cache function results",
+  "version" : "0.4.14",
+  "author" : "Mariusz Nowak <medikoo@medikoo.com> (http://www.medikoo.com/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/medikoo/memoizee.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/memoizee/-/memoizee-0.4.14.tgz",
+    "shasum" : "07a00f204699f9a95c2d9e77218271c7cd610d57"
+  },
+  "dependencies" : {
+    "d" : "1",
+    "es5-ext" : "^0.10.45",
+    "es6-weak-map" : "^2.0.2",
+    "event-emitter" : "^0.3.5",
+    "is-promise" : "^2.1",
+    "lru-queue" : "0.1",
+    "next-tick" : "1",
+    "timers-ext" : "^0.1.5"
+  },
+  "devDependencies" : {
+    "bluebird" : "^3.5.1",
+    "eslint" : "^5.3",
+    "eslint-config-medikoo-es5" : "^1.6",
+    "plain-promise" : "^0.1.1",
+    "tad" : "^0.2.7"
+  },
+  "keywords" : [ "memoize", "memoizer", "cache", "memoization", "memo", "memcached", "hashing.", "storage", "caching", "memory", "gc", "weak", "garbage", "collector", "async" ],
+  "license" : "ISC",
+  "scripts" : {
+    "lint" : "eslint --ignore-path=.gitignore .",
+    "lint-medikoo" : "xlint --linter=node_modules/xlint-jslint-medikoo/index.js",
+    "test" : "tad"
+  },
+  "eslintConfig" : {
+    "extends" : "medikoo-es5",
+    "root" : true,
+    "globals" : {
+      "setTimeout" : true,
+      "clearTimeout" : true
+    },
+    "rules" : {
+      "max-lines-per-function" : "off"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name" : "utils-merge",
+  "description" : "merge() utility function",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Jared Hanson",
+    "email" : "jaredhanson@gmail.com",
+    "url" : "http://www.jaredhanson.net/"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/jaredhanson/utils-merge.git"
+  },
+  "bugs" : {
+    "url" : "http://github.com/jaredhanson/utils-merge/issues"
+  },
+  "engines" : {
+    "node" : ">= 0.4.0"
+  },
+  "main" : "./index",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/utils-merge/-/utils-merge-1.0.1.tgz",
+    "shasum" : "9f95710f50a267947b2ccc124741c1028427e713"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "make-node" : "0.3.x",
+    "mocha" : "1.x.x",
+    "chai" : "1.x.x"
+  },
+  "keywords" : [ "util" ],
+  "license" : "MIT",
+  "licenses" : [ {
+    "type" : "MIT",
+    "url" : "http://opensource.org/licenses/MIT"
+  } ],
+  "scripts" : {
+    "test" : "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}

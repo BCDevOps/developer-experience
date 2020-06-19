@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"59768afd457e5b756730af1af10a0174"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>css object model implementation and css parser</npm.description>
+  <npm.keywords>["CSS","CSSOM","parser","styleSheet"]</npm.keywords>
+  <npm.name>cssom</npm.name>
+  <npm.version>0.3.8</npm.version>
+</properties>

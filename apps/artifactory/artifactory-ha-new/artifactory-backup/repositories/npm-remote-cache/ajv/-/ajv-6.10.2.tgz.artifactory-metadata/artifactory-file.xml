@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ajv/-/ajv-6.10.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ajv-6.10.2.tgz</name>
+  <created>1576003423288</created>
+  <lastModified>1563113773000</lastModified>
+  <size>199012</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003423289</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d3cea04d6b017b2894ad69040fec8b623eb4bd52</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2ab00c102f6c56acddbf622b95959d79</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c1d201fed0f0a990de16ace724b71447451cd36d22ac7349cbc0ea5168089e03</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

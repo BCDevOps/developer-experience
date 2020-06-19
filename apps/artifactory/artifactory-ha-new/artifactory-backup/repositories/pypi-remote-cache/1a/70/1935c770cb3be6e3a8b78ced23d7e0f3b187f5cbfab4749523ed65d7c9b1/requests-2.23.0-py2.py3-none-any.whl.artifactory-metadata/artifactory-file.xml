@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>requests-2.23.0-py2.py3-none-any.whl</name>
+  <created>1582154298017</created>
+  <lastModified>1582138261000</lastModified>
+  <size>58406</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154298017</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6ce6cd759a2d13badb1f6b9e665e2aded7a012dd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>71e867ff3d34b2b6a75e0f74f833cafe</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

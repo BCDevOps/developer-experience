@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>minimatch/-/minimatch-3.0.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>minimatch-3.0.4.tgz</name>
+  <created>1576003396439</created>
+  <lastModified>1528206449000</lastModified>
+  <size>11423</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003396440</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5166e286457f03306064be5497e8dbb0c3d32083</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6a2c6f3ffed6ed50faaff89ef8eab0a0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>426a24d79bb6f0d3bb133e62cec69021836d254b39d931c104ddd7c464adea71</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

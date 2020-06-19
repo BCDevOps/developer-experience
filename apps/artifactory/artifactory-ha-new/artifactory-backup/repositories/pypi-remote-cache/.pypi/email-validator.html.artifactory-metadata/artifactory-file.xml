@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/email-validator.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>email-validator.html</name>
+  <created>1574124592184</created>
+  <lastModified>1580425382740</lastModified>
+  <size>3434</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580425382876</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bb4432d091d35b32fc250a28b9bc4eaf28a7e98a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e99040bf1940c54f99001014368adb75</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c49ce257fae927ff02aa39528f9f7d57443bdb3fa589d3dbfd473d3a5a78007a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

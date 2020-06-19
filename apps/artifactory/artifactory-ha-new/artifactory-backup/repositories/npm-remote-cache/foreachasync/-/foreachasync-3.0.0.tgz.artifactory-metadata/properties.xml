@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"23060b240113c0bc8904b40fe899ad26"</artifactory.internal.etag>
+  <artifactory.licenses>Apache2</artifactory.licenses>
+  <npm.description>a node- and browser-ready async counterpart of array.prototype.foreach</npm.description>
+  <npm.keywords>["futuresjs","forEach","for","forEachAsync","async","futures","each"]</npm.keywords>
+  <npm.name>foreachasync</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

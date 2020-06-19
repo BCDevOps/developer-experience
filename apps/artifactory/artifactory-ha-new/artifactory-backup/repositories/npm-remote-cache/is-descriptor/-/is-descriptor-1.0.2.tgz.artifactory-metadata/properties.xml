@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7cd33adcb4ca927942b08b261badd3ed"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns true if a value has the characteristics of a valid javascript descriptor. works for data descriptors and accessor descriptors.</npm.description>
+  <npm.keywords>["accessor","check","data","descriptor","get","getter","is","keys","object","properties","property","set","setter","type","valid","value"]</npm.keywords>
+  <npm.name>is-descriptor</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

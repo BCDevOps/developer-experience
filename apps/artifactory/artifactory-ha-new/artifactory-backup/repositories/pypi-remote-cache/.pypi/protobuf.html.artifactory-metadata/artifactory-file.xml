@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/protobuf.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>protobuf.html</name>
+  <created>1574023047149</created>
+  <lastModified>1582154276024</lastModified>
+  <size>148984</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154276139</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9e03f6d813cca526ef1a810c0c25656583e7926f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e18ec2d26f698bee7cb45efc29639efe</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13845bca2673126e64870bd4c0e2945e016290f9c19265f4a71e3de35bd03db8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

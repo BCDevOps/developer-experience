@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extend/extend-3.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>extend-3.0.2.json</name>
+  <created>1576003408480</created>
+  <lastModified>1576003408405</lastModified>
+  <size>1255</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003408480</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2a3826f9754b12c3ab909a9907d2bd84a2519505</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>57a1837da12fca2128499fc70524c13b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>92a1179c1c42e27f746e2f745396aaf07d54d13f85035e666a242e411fad7b02</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

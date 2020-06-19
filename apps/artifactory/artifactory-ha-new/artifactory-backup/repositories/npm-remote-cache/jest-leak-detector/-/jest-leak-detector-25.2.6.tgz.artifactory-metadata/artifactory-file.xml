@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-leak-detector/-/jest-leak-detector-25.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-leak-detector-25.2.6.tgz</name>
+  <created>1585853640195</created>
+  <lastModified>1585823372000</lastModified>
+  <size>2926</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853640195</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>68fbaf651142292b03e30641f33e15af9b8c62b1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bffa98fc16ec3fcacb260de6817ac3ab</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>17388c1e24189e93f241c39060b52f419a9d1dd537cbc26667d7aadf7ed5e2b4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

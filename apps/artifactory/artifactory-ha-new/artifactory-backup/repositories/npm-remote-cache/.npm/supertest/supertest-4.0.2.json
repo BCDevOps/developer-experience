@@ -1,0 +1,45 @@
+{
+  "name" : "supertest",
+  "description" : "SuperAgent driven library for testing HTTP servers",
+  "version" : "4.0.2",
+  "author" : "TJ Holowaychuk",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/visionmedia/supertest.git"
+  },
+  "contributors" : [ "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>" ],
+  "engines" : {
+    "node" : ">=6.0.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/supertest/-/supertest-4.0.2.tgz",
+    "shasum" : "c2234dbdd6dc79b6f15b99c8d6577b90e4ce3f36"
+  },
+  "dependencies" : {
+    "methods" : "^1.1.2",
+    "superagent" : "^3.8.3"
+  },
+  "devDependencies" : {
+    "body-parser" : "^1.18.3",
+    "cookie-parser" : "^1.4.4",
+    "coveralls" : "^3.0.3",
+    "eslint" : "^5.15.1",
+    "eslint-config-airbnb-base" : "^13.1.0",
+    "eslint-plugin-import" : "^2.16.0",
+    "express" : "^4.16.4",
+    "mocha" : "^6.0.2",
+    "nock" : "^10.0.6",
+    "nyc" : "^13.3.0",
+    "should" : "^13.2.3"
+  },
+  "keywords" : [ "superagent", "request", "tdd", "bdd", "http", "test", "testing" ],
+  "license" : "MIT",
+  "scripts" : {
+    "lint" : "eslint lib/**/*.js test/**/*.js index.js",
+    "lint:fix" : "eslint --fix lib/**/*.js test/**/*.js index.js",
+    "pretest" : "npm run lint",
+    "test" : "nyc --reporter=html --reporter=text mocha --exit --require should --reporter spec --check-leaks",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls"
+  }
+}

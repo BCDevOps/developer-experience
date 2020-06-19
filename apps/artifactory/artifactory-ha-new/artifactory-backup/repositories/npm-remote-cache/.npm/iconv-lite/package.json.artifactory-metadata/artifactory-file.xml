@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/iconv-lite/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003612175</created>
+  <lastModified>1579333916000</lastModified>
+  <size>91169</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1586464326594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0428f790bf5863aac27ec370e18f1b692bc00ca6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>86ab184dec927e3d74eded21c8a7c951</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>73b338021391529652484ab4fdfd875437a4f0f477ee682dc8a8fbcc6692831a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

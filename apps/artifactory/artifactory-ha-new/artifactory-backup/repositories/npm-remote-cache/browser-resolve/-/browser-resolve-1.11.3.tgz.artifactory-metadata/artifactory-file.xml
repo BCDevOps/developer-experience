@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>browser-resolve/-/browser-resolve-1.11.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>browser-resolve-1.11.3.tgz</name>
+  <created>1576003615555</created>
+  <lastModified>1529379177000</lastModified>
+  <size>4839</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003615556</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9b7cbb3d0f510e4cb86bdbd796124d28b5890af6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>24bbaefc0ea1e83d02871106bff00027</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3be3eae0f16532d4760dd3c03b0383a8686d05c5892647da55f63beb31d0238a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

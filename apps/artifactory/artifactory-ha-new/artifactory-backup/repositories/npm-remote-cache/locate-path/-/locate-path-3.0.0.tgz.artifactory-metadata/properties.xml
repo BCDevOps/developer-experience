@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4f249234e9bd1d7ab4caa69cacec1b22"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the first path that exists on disk of multiple paths</npm.description>
+  <npm.keywords>["locate","path","paths","file","files","exists","find","finder","search","searcher","array","iterable","iterator"]</npm.keywords>
+  <npm.name>locate-path</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/create-error-class/create-error-class-3.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>create-error-class-3.0.2.json</name>
+  <created>1576003653679</created>
+  <lastModified>1576003653662</lastModified>
+  <size>769</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003653679</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f7e13a76eb5828af5c69af056836de0bbc2b97f7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>21158d6ad556f1679a50d246a0198657</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c2f55fa4ac81ee0979cdb0005eb28a3bce314e2f7f11e1643967a9208b25ad20</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

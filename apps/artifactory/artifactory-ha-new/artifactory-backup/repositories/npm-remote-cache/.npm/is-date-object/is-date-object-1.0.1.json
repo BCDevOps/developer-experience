@@ -1,0 +1,47 @@
+{
+  "name" : "is-date-object",
+  "description" : "Is this value a JS Date object? This module works cross-realm/iframe, and despite ES6 @@toStringTag.",
+  "version" : "1.0.1",
+  "author" : "Jordan Harband",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/ljharb/is-date-object.git"
+  },
+  "engines" : {
+    "node" : ">= 0.4"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-date-object/-/is-date-object-1.0.1.tgz",
+    "shasum" : "9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "foreach" : "^2.0.5",
+    "is" : "^3.1.0",
+    "tape" : "^4.2.0",
+    "indexof" : "^0.0.1",
+    "covert" : "^1.1.0",
+    "jscs" : "^2.1.1",
+    "nsp" : "^1.1.0",
+    "eslint" : "^1.5.1",
+    "@ljharb/eslint-config" : "^1.2.0",
+    "semver" : "^5.0.3"
+  },
+  "keywords" : [ "Date", "ES6", "toStringTag", "@@toStringTag", "Date object" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "npm run lint && node --harmony --es-staging test.js && npm run security",
+    "coverage" : "covert test.js",
+    "coverage-quiet" : "covert test.js --quiet",
+    "lint" : "npm run jscs && npm run eslint",
+    "jscs" : "jscs test.js *.js",
+    "eslint" : "eslint test.js *.js",
+    "security" : "nsp package"
+  },
+  "testling" : {
+    "files" : "test.js",
+    "browsers" : [ "iexplore/6.0..latest", "firefox/3.0..6.0", "firefox/15.0..latest", "firefox/nightly", "chrome/4.0..10.0", "chrome/20.0..latest", "chrome/canary", "opera/10.0..latest", "opera/next", "safari/4.0..latest", "ipad/6.0..latest", "iphone/6.0..latest", "android-browser/4.2" ]
+  }
+}

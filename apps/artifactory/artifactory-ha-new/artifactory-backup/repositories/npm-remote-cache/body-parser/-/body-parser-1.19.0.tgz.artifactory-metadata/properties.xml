@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"26ab1c87771358171c25a9de5f28ed1c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node.js body parsing middleware</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>body-parser</npm.name>
+  <npm.version>1.19.0</npm.version>
+</properties>

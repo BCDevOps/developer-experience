@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/detect-newline/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003393896</created>
+  <lastModified>1573634596000</lastModified>
+  <size>18174</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464337712</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>89b1d5db8218fa37dd8f1131ac1e222afc10d5e2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c757ed4ed36e25cfe093d4cb950d1848</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3a1f3ecaa5a74d05a35a33551786122fc7d472e6b7c14bb8f623dc0c60e097a0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

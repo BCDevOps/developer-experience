@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"533ebde4c93644b57a15842c13186c40"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a javascript implementation of many web standards</npm.description>
+  <npm.keywords>["dom","html","whatwg","w3c"]</npm.keywords>
+  <npm.name>jsdom</npm.name>
+  <npm.version>15.2.1</npm.version>
+</properties>

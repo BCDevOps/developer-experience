@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/css/css-2.2.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>css-2.2.4.json</name>
+  <created>1576003421476</created>
+  <lastModified>1576003421178</lastModified>
+  <size>969</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003421478</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1d21811d41e299a33b59f0c7527e8743ac49fcb1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a09f4dfe342fc8b1964f5682b59fbea5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>00900e79c0ac87eecb08317fc561f25a911bccbc0ed4cd48c95a6cd5da69c870</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

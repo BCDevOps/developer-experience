@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"09e1b13837638717ed3f2aae7bc700db"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>process.nexttick but always with args</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>process-nextick-args</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

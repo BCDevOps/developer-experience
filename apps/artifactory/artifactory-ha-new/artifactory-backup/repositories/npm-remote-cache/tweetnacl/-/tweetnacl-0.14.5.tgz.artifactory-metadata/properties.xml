@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"147626dfa61ae7175b1fe170ea986b42"</artifactory.internal.etag>
+  <artifactory.licenses>Unlicense</artifactory.licenses>
+  <npm.description>port of tweetnacl cryptographic library to javascript</npm.description>
+  <npm.keywords>["crypto","cryptography","curve25519","ed25519","encrypt","hash","key","nacl","poly1305","public","salsa20","signatures"]</npm.keywords>
+  <npm.name>tweetnacl</npm.name>
+  <npm.version>0.14.5</npm.version>
+</properties>

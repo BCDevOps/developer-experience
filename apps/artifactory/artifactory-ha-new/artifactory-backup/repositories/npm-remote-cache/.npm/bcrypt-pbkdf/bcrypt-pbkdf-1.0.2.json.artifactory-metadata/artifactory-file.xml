@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bcrypt-pbkdf/bcrypt-pbkdf-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bcrypt-pbkdf-1.0.2.json</name>
+  <created>1576008722475</created>
+  <lastModified>1576008722295</lastModified>
+  <size>596</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008722476</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3048680018772fc182cdbcbf0c4f9a6c726a8e2c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>861276e5f4c02b30217f08b0891b20c5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ff9c5e462d5090ff874fc16e93f85fd33e3d93c4c4b7c7cff6fddc1697cd6fb4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

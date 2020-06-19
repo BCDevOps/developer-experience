@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"947719c24af636a663302c20395dce8f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>babel helper for ensuring that access to a given value is performed through simple accesses</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-simple-access</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

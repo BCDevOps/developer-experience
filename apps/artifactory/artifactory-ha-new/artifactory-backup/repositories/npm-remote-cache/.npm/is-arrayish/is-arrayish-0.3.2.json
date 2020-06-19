@@ -1,0 +1,37 @@
+{
+  "name" : "is-arrayish",
+  "description" : "Determines if an object can be used as an array",
+  "version" : "0.3.2",
+  "author" : "Qix (http://github.com/qix-)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/qix-/node-is-arrayish.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-arrayish/-/is-arrayish-0.3.2.tgz",
+    "shasum" : "4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  },
+  "devDependencies" : {
+    "@zeit/eslint-config-node" : "^0.3.0",
+    "@zeit/git-hooks" : "^0.1.4",
+    "coffeescript" : "^2.3.1",
+    "coveralls" : "^3.0.1",
+    "eslint" : "^4.19.1",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^5.2.0",
+    "should" : "^13.2.1"
+  },
+  "keywords" : [ "is", "array", "duck", "type", "arrayish", "similar", "proto", "prototype", "type" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha --require coffeescript/register ./test/**/*.coffee",
+    "lint" : "zeit-eslint --ext .jsx,.js .",
+    "lint-staged" : "git diff --diff-filter=ACMRT --cached --name-only '*.js' '*.jsx' | xargs zeit-eslint"
+  },
+  "git" : {
+    "pre-commit" : "lint-staged"
+  },
+  "eslintConfig" : {
+    "extends" : [ "@zeit/eslint-config-node" ]
+  }
+}

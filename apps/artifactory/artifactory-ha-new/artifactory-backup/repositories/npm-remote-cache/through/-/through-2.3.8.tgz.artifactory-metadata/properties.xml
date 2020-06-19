@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"615296782d4936bd53ebe4e5baa57db7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simplified stream construction</npm.description>
+  <npm.keywords>["stream","streams","user-streams","pipe"]</npm.keywords>
+  <npm.name>through</npm.name>
+  <npm.version>2.3.8</npm.version>
+</properties>

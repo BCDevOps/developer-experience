@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7771a672be6dbc073c9123a3e8b6152c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get all but the last element or last n elements of an array.</npm.description>
+  <npm.keywords>["array","fast","first","initial","javascript","js","last","rest","util","utility","utils"]</npm.keywords>
+  <npm.name>array-initial</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D755661B459C49</artifactory.internal.etag>
+  <nuget.authors>Chris Patterson</nuget.authors>
+  <nuget.copyright>Copyright 2007-2019 Chris Patterson</nuget.copyright>
+  <nuget.dependency>MassTransit:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>MassTransit.Extensions.DependencyInjection:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>MassTransit.Extensions.Logging:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Diagnostics:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Diagnostics.HealthChecks:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>MassTransit hosting for ASP.NET Core; MassTransit is a message-based distributed application framework for .NET http://masstransit-project.com</nuget.description>
+  <nuget.digest>ZgFZF3PcMLfi9npV03oe16jj3xOFfaSyt5XcBzzfDPdyjXiuyzDir1zvXxHzsDHlvRqYfSBBXPImRfKtPqHK1g==</nuget.digest>
+  <nuget.iconUrl>http://masstransit-project.com/public/open-graph-logo.png</nuget.iconUrl>
+  <nuget.id>MassTransit.AspNetCore</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Chris Patterson</nuget.owners>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>MassTransit AspNetCore</nuget.tags>
+  <nuget.title>MassTransit.AspNetCore</nuget.title>
+  <nuget.version>5.5.6+build.2221.sha.1f6a8f0</nuget.version>
+</properties>

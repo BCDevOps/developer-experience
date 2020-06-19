@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ansi-regex/ansi-regex-4.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ansi-regex-4.1.0.json</name>
+  <created>1576008053677</created>
+  <lastModified>1576008053383</lastModified>
+  <size>1000</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008053678</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>64e299fc6c0e7b184491861b9d90c18e92b9480e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9722862029c7432384d58ed56063b370</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>12071c9d9fe91039f6c5fc7b6566b1396cfed05d60f48df4f309478996332124</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

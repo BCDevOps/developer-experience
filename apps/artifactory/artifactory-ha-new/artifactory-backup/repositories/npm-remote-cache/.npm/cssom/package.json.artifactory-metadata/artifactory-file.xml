@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cssom/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003642921</created>
+  <lastModified>1573692009000</lastModified>
+  <size>35285</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464342579</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>80f1ae1cfdcdc861d564d0f8140cc7c8e0ab5648</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8841628656b8d7c29e167528a5276973</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7c97c5eab1d0fcabd3696d1a18c03a6dcf9f4f239a817e3f17ac42f8fd0260e2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

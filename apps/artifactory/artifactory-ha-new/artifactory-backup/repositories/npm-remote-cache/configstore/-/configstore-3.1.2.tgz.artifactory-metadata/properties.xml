@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"21e891e5f965a21c6bc72ebfde5e093a"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>easily load and save config without having to think about where and how</npm.description>
+  <npm.keywords>["config","store","storage","conf","configuration","settings","preferences","json","data","persist","persistent","save"]</npm.keywords>
+  <npm.name>configstore</npm.name>
+  <npm.version>3.1.2</npm.version>
+</properties>

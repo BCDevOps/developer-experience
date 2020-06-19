@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/gulp-clean</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>gulp-clean</name>
+  <created>1576003077469</created>
+  <lastModified>1576003077469</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003077469</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

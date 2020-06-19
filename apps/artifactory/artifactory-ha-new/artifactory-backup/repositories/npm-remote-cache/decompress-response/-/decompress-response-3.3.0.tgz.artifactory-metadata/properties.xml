@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"55bee69efa5b9d0f856c6f58090332d4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>decompress a http response if needed</npm.description>
+  <npm.keywords>["decompress","response","http","https","zlib","gzip","zip","deflate","unzip","ungzip","incoming","message","stream","compressed"]</npm.keywords>
+  <npm.name>decompress-response</npm.name>
+  <npm.version>3.3.0</npm.version>
+</properties>

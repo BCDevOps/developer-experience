@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9c33b37c4f8c5820c7d2d0dab23e1ed6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for supports-color</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/supports-color</npm.name>
+  <npm.version>5.3.0</npm.version>
+</properties>

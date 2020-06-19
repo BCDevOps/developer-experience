@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jwa/-/jwa-1.4.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jwa-1.4.1.tgz</name>
+  <created>1576008065273</created>
+  <lastModified>1552749598000</lastModified>
+  <size>4560</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065274</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>743c32985cb9e98655530d53641b66c8645b039a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>805e04a09d7aeaba95cddfb537535181</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fe231c938eb6ff17e49ba446aa459324408b6cd6767e60bf8dc4662cbecaf698</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

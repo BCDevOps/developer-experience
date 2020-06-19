@@ -1,0 +1,37 @@
+{
+  "name" : "load-json-file",
+  "description" : "Read and parse a JSON file",
+  "version" : "4.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/load-json-file",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/load-json-file/-/load-json-file-4.0.0.tgz",
+    "shasum" : "2f5f45ab91e33216234fd53adab668eb4ec0993b"
+  },
+  "dependencies" : {
+    "graceful-fs" : "^4.1.2",
+    "parse-json" : "^4.0.0",
+    "pify" : "^3.0.0",
+    "strip-bom" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "read", "json", "parse", "file", "fs", "graceful", "load" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

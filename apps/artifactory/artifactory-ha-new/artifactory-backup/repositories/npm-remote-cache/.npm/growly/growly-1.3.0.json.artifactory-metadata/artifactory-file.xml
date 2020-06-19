@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/growly/growly-1.3.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>growly-1.3.0.json</name>
+  <created>1576003640220</created>
+  <lastModified>1576003640139</lastModified>
+  <size>745</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003640220</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3360e0fbb1fc9a6858ae22ffaab549da4d6fa4b1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>52419532b4f6063508f05928ca4eed78</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b214cc0a85e9a8bf2be7f1c3fc1549e7ec26856047fedfc58ef2b4e61ef207af</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

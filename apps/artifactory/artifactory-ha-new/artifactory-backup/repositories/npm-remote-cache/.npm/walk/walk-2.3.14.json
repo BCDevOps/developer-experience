@@ -1,0 +1,36 @@
+{
+  "name" : "walk",
+  "description" : "A node port of python's os.walk",
+  "version" : "2.3.14",
+  "author" : "AJ ONeal <coolaj86@gmail.com>",
+  "homepage" : "https://git.coolaj86.com/coolaj86/fs-walk.js",
+  "repository" : {
+    "url" : "https://git.coolaj86.com/coolaj86/fs-walk.js.git"
+  },
+  "contributors" : [ ],
+  "bugs" : {
+    "url" : "https://git.coolaj86.com/coolaj86/fs-walk.js/issues"
+  },
+  "main" : "./lib/walk.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/walk/-/walk-2.3.14.tgz",
+    "shasum" : "60ec8631cfd23276ae1e7363ce11d626452e1ef3"
+  },
+  "dependencies" : {
+    "foreachasync" : "^3.0.0"
+  },
+  "devDependencies" : {
+  },
+  "keywords" : [ "util", "os", "sys", "fs", "walk", "walkSync" ],
+  "license" : "(MIT OR Apache-2.0)",
+  "files" : [ "lib" ],
+  "directories" : {
+    "example" : "examples",
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "./test/walk-test.sh"
+  },
+  "lib" : ".",
+  "url" : "http://git.coolaj86.com/coolaj86/fs-walk.js"
+}

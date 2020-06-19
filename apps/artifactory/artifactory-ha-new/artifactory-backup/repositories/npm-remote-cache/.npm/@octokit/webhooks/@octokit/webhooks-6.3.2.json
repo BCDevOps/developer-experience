@@ -1,0 +1,55 @@
+{
+  "name" : "@octokit/webhooks",
+  "description" : "GitHub webhook events toolset for Node.js",
+  "version" : "6.3.2",
+  "author" : "Gregor Martynus (https://twitter.com/gr2m)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/octokit/webhooks.js.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@octokit/webhooks/-/webhooks-6.3.2.tgz",
+    "shasum" : "72e940a0a1d19bd5afc2002d2a656dc1233c69df"
+  },
+  "dependencies" : {
+    "debug" : "^4.0.0"
+  },
+  "devDependencies" : {
+    "@gimenete/type-writer" : "^0.1.3",
+    "@octokit/webhooks-definitions" : "1.5.1",
+    "axios" : "^0.19.0",
+    "cheerio" : "^1.0.0-rc.2",
+    "coveralls" : "^3.0.3",
+    "get-port" : "^5.0.0",
+    "pascal-case" : "^2.0.1",
+    "pify" : "^4.0.0",
+    "prettier" : "^1.16.1",
+    "proxyquire" : "^2.0.0",
+    "semantic-release" : "^15.13.24",
+    "simple-mock" : "^0.8.0",
+    "standard" : "^14.0.2",
+    "table-builder" : "^2.1.1",
+    "tap" : "^14.0.0"
+  },
+  "keywords" : [ ],
+  "license" : "MIT",
+  "directories" : {
+    "lib" : "lib",
+    "test" : "test"
+  },
+  "scripts" : {
+    "coverage" : "tap --coverage-report=html && open coverage/lcov-report/index.html",
+    "coverage:upload" : "tap --coverage-report=text-lcov | coveralls",
+    "generate-known-webhooks" : "node scripts/update-known-events.js",
+    "pretest" : "standard",
+    "test" : "tap --100 --coverage 'test/**/*-test.js'",
+    "semantic-release" : "semantic-release",
+    "generate-types" : "node scripts/generate-types.js",
+    "validate:ts" : "tsc --no-emit --no-implicit-any test/typescript-validate.ts"
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "types" : "index.d.ts"
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d693220f5eabe1359169bb992abaa064"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert a typed array to a buffer without a copy</npm.description>
+  <npm.keywords>["buffer","typed array","convert","no copy","uint8array","uint16array","uint32array","int16array","int32array","float32array","float64array","browser","arraybuffer","dataview"]</npm.keywords>
+  <npm.name>typedarray-to-buffer</npm.name>
+  <npm.version>3.1.5</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/minipass/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003658596</created>
+  <lastModified>1571952951000</lastModified>
+  <size>175861</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003658597</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>06ac0888086b45cc0db12adcf473e33567186fbb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cda64260bd07a40cc80a6e9316372437</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4c2ea5ee6b8b4b035c4a80c66cb154d9ba9376ea073e24aa13b84abdc1025a31</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

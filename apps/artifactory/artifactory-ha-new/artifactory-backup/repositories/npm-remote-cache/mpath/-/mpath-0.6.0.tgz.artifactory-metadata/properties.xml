@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7220b79e6187684edfd38f5dcf0f1397"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>{g,s}et object values using mongodb-like path notation</npm.description>
+  <npm.keywords>["mongodb","path","get","set"]</npm.keywords>
+  <npm.name>mpath</npm.name>
+  <npm.version>0.6.0</npm.version>
+</properties>

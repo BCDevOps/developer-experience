@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2215c58ead5bbd5a52c572db0cf977d2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert a file: uri to a file path</npm.description>
+  <npm.keywords>["file","uri","convert","path"]</npm.keywords>
+  <npm.name>file-uri-to-path</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

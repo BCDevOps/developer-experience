@@ -1,0 +1,18 @@
+{
+  "name" : "buffer-from",
+  "version" : "1.1.1",
+  "repository" : "LinusU/buffer-from",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/buffer-from/-/buffer-from-1.1.1.tgz",
+    "shasum" : "32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
+  },
+  "devDependencies" : {
+    "standard" : "^7.1.2"
+  },
+  "keywords" : [ "buffer", "buffer from" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "standard && node test"
+  }
+}

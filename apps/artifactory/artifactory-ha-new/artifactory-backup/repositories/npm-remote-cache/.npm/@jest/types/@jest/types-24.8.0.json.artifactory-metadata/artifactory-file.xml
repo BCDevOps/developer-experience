@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@jest/types/@jest/types-24.8.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>types-24.8.0.json</name>
+  <created>1579828145682</created>
+  <lastModified>1579828145410</lastModified>
+  <size>789</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828145683</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1a2d752bfdf89cc00a363b17610e4b760b864707</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>073647a8fd1bd3027fa8192546b6ddd2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d988e0436e282a9cde43ba773d12b33c7985046be085297268847af31bfb1795</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

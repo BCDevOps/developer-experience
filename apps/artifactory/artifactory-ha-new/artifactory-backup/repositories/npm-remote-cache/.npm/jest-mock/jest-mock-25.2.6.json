@@ -1,0 +1,37 @@
+{
+  "name" : "jest-mock",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-mock"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-mock/-/jest-mock-25.2.6.tgz",
+    "shasum" : "8df66eaa55a713d0f2a7dfb4f14507289d24dfa3"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.2.6"
+  },
+  "devDependencies" : {
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/index.d.ts",
+  "browser" : "build-es5/index.js"
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"85405de29516fd0264fe8e42a6229498"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.uniq` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, uniq"</npm.keywords>
+  <npm.name>lodash.uniq</npm.name>
+  <npm.version>4.5.0</npm.version>
+</properties>

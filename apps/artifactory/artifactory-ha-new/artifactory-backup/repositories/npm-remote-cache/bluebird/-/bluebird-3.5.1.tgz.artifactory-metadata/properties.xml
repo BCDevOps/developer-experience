@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cbf45cde6f517ca3980abcaadebe0350"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>full featured promises/a+ implementation with exceptionally good performance</npm.description>
+  <npm.keywords>["promise","performance","promises","promises-a","promises-aplus","async","await","deferred","deferreds","future","flow control","dsl","fluent interface"]</npm.keywords>
+  <npm.name>bluebird</npm.name>
+  <npm.version>3.5.1</npm.version>
+</properties>

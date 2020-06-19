@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>snapdragon-util/-/snapdragon-util-3.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>snapdragon-util-3.0.1.tgz</name>
+  <created>1576003635485</created>
+  <lastModified>1527443007000</lastModified>
+  <size>9108</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003635485</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f956479486f2acd79700693f6f7b805e45ab56e2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>17c194e41dd12d561800985ef5b4ffdf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4ed40e99aaa722b95031051295eae4bd6d00d5914e560261d6b73e4563668e30</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

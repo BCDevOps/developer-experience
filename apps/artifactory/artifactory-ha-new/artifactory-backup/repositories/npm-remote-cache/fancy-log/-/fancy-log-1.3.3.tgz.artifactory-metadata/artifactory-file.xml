@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>fancy-log/-/fancy-log-1.3.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fancy-log-1.3.3.tgz</name>
+  <created>1576008061173</created>
+  <lastModified>1543535712000</lastModified>
+  <size>2709</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008061173</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dbc19154f558690150a23953a0adbd035be45fc7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>31d835cdfb6319a761a81073882050ca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>04c38cc88f45a6f947534d8b3d1d37d5396ca41f78b7392572f106a6dfd2a4b8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

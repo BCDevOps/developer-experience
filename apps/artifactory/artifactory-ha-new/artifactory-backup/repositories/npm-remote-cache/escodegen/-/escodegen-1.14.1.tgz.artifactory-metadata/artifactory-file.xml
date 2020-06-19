@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>escodegen/-/escodegen-1.14.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>escodegen-1.14.1.tgz</name>
+  <created>1585853530120</created>
+  <lastModified>1580954890000</lastModified>
+  <size>20045</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853530121</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ba01d0c8278b5e95a9a45350142026659027a457</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>47e835d42ef5ec5b5974edba71a241fb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>68ca7bf1807fb560ec455479bb23fb260ef56ae16900b87528a233ca19201213</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cross-spawn/cross-spawn-5.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cross-spawn-5.1.0.json</name>
+  <created>1576003121510</created>
+  <lastModified>1576003121479</lastModified>
+  <size>1342</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003121511</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f016930d4c9c58083257bdf379053c2df649f576</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f6bc6f769267ad31b5e340cbac7ba117</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>238580fa4c30ad58e730b959fa12756709b6766f8c7d48d4768a24c7ba151868</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

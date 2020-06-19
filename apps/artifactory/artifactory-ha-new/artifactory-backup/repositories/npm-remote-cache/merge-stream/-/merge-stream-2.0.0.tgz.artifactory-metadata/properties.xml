@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b365290749b5fcacf5066cbc3bfdeb35"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>create a stream that emits events from multiple other streams</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>merge-stream</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

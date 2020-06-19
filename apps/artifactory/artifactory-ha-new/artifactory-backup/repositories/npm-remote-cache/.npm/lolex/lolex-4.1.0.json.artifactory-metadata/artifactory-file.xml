@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lolex/lolex-4.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lolex-4.1.0.json</name>
+  <created>1579828386284</created>
+  <lastModified>1579828386086</lastModified>
+  <size>2038</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828386288</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e8c05f6feed4b37e12a6f530bb3c431bd6baa18d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>423e57c6795615a1e7581b3cd30922f0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a1d265963a52ff60a90fcdde7dca9dda6eb69b77d120838dc06113d27849dceb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

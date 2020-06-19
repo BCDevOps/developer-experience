@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>readable-stream/-/readable-stream-2.3.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>readable-stream-2.3.6.tgz</name>
+  <created>1576003416986</created>
+  <lastModified>1527434806000</lastModified>
+  <size>25545</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003416987</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>80a03c85d4478c0ee08e97d07da3cd7f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0f205b60dc0fb300f05bbbf1d1583b3f87cca8cecc0b6a8673910c9519c45c77</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,28 @@
+{
+  "name" : "strip-json-comments",
+  "description" : "Strip comments from JSON. Lets you use comments in your JSON files!",
+  "version" : "2.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/strip-json-comments",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/strip-json-comments/-/strip-json-comments-2.0.1.tgz",
+    "shasum" : "3c531942e908c2697c0ec344858c286c7ca0a60a"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "json", "strip", "remove", "delete", "trim", "comments", "multiline", "parse", "config", "configuration", "conf", "settings", "util", "env", "environment" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

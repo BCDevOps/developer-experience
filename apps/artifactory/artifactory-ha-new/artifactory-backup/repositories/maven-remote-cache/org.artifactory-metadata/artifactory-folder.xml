@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>org</name>
+  <created>1575495231656</created>
+  <lastModified>1575495231656</lastModified>
+  <additionalInfo>
+    <createdBy>jguertin@idir</createdBy>
+    <modifiedBy>jguertin@idir</modifiedBy>
+    <lastUpdated>1575495231656</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

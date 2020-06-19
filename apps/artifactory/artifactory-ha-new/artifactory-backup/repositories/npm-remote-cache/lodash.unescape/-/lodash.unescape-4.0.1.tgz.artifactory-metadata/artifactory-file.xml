@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>lodash.unescape/-/lodash.unescape-4.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.unescape-4.0.1.tgz</name>
+  <created>1576003432904</created>
+  <lastModified>1527404349000</lastModified>
+  <size>3560</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003432905</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bf2249886ce514cda112fae9218cdc065211fc9c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d1bfb7d77a0d8bb8905b8f0c769dbe8e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b91cbba5b2e36e4f9a390b11e0de64574de8420e5eefc737934c85d68bf852df</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

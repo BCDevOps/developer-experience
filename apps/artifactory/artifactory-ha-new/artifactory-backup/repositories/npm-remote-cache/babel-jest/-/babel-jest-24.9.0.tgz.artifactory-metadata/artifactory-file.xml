@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>babel-jest/-/babel-jest-24.9.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel-jest-24.9.0.tgz</name>
+  <created>1576003096193</created>
+  <lastModified>1565936642000</lastModified>
+  <size>3128</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003096194</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3fc327cb8467b89d14d7bc70e315104a783ccd54</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>43f6e9360bcb4f02fcbe60520c163029</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1c678689467f5fcc6e53d631b7af39455b65a3720606348bb6b12ce46d83a5b3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

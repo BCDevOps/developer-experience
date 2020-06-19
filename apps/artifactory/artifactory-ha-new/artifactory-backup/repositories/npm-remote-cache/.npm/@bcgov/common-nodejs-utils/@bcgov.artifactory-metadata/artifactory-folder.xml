@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@bcgov/common-nodejs-utils/@bcgov</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@bcgov</name>
+  <created>1576003079759</created>
+  <lastModified>1576003079759</lastModified>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003079759</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

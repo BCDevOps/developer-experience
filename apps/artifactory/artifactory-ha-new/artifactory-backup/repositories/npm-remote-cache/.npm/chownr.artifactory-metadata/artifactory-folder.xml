@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/chownr</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>chownr</name>
+  <created>1576003658255</created>
+  <lastModified>1576003658255</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003658255</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

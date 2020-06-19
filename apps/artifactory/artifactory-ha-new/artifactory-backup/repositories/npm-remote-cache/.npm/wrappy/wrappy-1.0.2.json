@@ -1,0 +1,32 @@
+{
+  "name" : "wrappy",
+  "description" : "Callback wrapping utility",
+  "version" : "1.0.2",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "homepage" : "https://github.com/npm/wrappy",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/npm/wrappy"
+  },
+  "bugs" : {
+    "url" : "https://github.com/npm/wrappy/issues"
+  },
+  "main" : "wrappy.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/wrappy/-/wrappy-1.0.2.tgz",
+    "shasum" : "b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "tap" : "^2.3.1"
+  },
+  "license" : "ISC",
+  "files" : [ "wrappy.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap --coverage test/*.js"
+  }
+}

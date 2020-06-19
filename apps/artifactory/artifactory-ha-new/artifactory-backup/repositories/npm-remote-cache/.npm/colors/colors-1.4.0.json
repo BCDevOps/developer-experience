@@ -1,0 +1,35 @@
+{
+  "name" : "colors",
+  "description" : "get colors in your node.js console",
+  "version" : "1.4.0",
+  "author" : "Marak Squires",
+  "homepage" : "https://github.com/Marak/colors.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/Marak/colors.js.git"
+  },
+  "contributors" : [ {
+    "name" : "DABH",
+    "url" : "https://github.com/DABH"
+  } ],
+  "bugs" : "https://github.com/Marak/colors.js/issues",
+  "engines" : {
+    "node" : ">=0.1.90"
+  },
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/colors/-/colors-1.4.0.tgz",
+    "shasum" : "c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  },
+  "devDependencies" : {
+    "eslint" : "^5.2.0",
+    "eslint-config-google" : "^0.11.0"
+  },
+  "keywords" : [ "ansi", "terminal", "colors" ],
+  "license" : "MIT",
+  "files" : [ "examples", "lib", "LICENSE", "safe.js", "themes", "index.d.ts", "safe.d.ts" ],
+  "scripts" : {
+    "lint" : "eslint . --fix",
+    "test" : "node tests/basic-test.js && node tests/safe-test.js"
+  }
+}

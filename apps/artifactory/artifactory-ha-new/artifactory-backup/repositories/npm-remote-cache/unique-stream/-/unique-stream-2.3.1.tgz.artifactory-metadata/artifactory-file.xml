@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>unique-stream/-/unique-stream-2.3.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>unique-stream-2.3.1.tgz</name>
+  <created>1576003095729</created>
+  <lastModified>1545105711000</lastModified>
+  <size>2796</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003095730</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c65d110e9a4adf9a6c5948b28053d9a8d04cbeac</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>85767c37f7fb79d3a5b61595515a50ea</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e9f5949357e294302b4e7cbdcdf06c965e442a6173e4f6f4598e0eded283d838</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>f2/72/ed6a263988ea68a4236591205340630d34621f60dbfc661543d3b4216b5e/pylint_plugin_utils-0.6-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pylint_plugin_utils-0.6-py3-none-any.whl</name>
+  <created>1574023492076</created>
+  <lastModified>1569576074000</lastModified>
+  <size>10642</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023492076</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b487e66424df1a62e864745d5834f8381cf001e8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7479fd3712fc43f8a275cc9a653d53ed</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2f30510e1c46edf268d3a195b2849bd98a1b9433229bb2ba63b8d776e1fc4d0a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

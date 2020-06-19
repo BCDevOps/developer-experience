@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>6d</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>6d</name>
+  <created>1573595023078</created>
+  <lastModified>1573595023078</lastModified>
+  <additionalInfo>
+    <createdBy>nkupqh</createdBy>
+    <modifiedBy>nkupqh</modifiedBy>
+    <lastUpdated>1573595023078</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

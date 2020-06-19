@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-config-airbnb-base</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>eslint-config-airbnb-base</name>
+  <created>1579828083193</created>
+  <lastModified>1579828083193</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828083193</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

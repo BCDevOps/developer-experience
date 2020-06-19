@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>fams3-nuget-local</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1573151222774</created>
+  <lastModified>1573151222774</lastModified>
+  <additionalInfo>
+    <lastUpdated>1573151222774</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

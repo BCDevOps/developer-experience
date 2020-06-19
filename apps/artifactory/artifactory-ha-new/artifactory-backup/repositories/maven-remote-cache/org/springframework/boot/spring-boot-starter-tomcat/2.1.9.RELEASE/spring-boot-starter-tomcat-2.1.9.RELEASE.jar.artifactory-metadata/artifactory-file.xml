@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-starter-tomcat/2.1.9.RELEASE/spring-boot-starter-tomcat-2.1.9.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-starter-tomcat-2.1.9.RELEASE.jar</name>
+  <created>1576861401391</created>
+  <lastModified>1570033329000</lastModified>
+  <size>404</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861401391</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>99bef08a0b7fd10ff9827f0f8e6f49b97cbabf7f</original>
+          <actual>99bef08a0b7fd10ff9827f0f8e6f49b97cbabf7f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>d73675dd4f66af521401aadfe66092dc</original>
+          <actual>d73675dd4f66af521401aadfe66092dc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8b7afe82dc2954994eb0fdda18dc4c0fd0a024210a0442c22d238d65184450cf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

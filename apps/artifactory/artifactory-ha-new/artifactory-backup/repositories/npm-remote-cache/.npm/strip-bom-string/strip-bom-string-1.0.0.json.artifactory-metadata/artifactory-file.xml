@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/strip-bom-string/strip-bom-string-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>strip-bom-string-1.0.0.json</name>
+  <created>1576003394472</created>
+  <lastModified>1576003394433</lastModified>
+  <size>1247</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003394472</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>636b2f88b67fc0995a326f1a38341bb98e3a0f54</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7b8b1c2da33ec0f5b295b68a23a7376c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>39ca69d1f1612ec0d1ea1780241acaebcbeb3aa9855c1a1d32bc2419ee7ff8e6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

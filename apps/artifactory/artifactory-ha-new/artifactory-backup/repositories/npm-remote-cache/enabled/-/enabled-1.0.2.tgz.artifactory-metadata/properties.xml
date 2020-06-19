@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"40d6ff889c73f5aef5647faedcdf8794"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if a certain debug flag is enabled.</npm.description>
+  <npm.keywords>["enabled","debug","diagnostics","flag","env","variable","localstorage"]</npm.keywords>
+  <npm.name>enabled</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

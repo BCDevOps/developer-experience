@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/npm-run-path/npm-run-path-4.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>npm-run-path-4.0.1.json</name>
+  <created>1585853581774</created>
+  <lastModified>1585853581742</lastModified>
+  <size>946</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853581774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>785cb7d987388c83272fcd188587fc1c84e6b501</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c459090d40c3e36beccb3a7220ecc125</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b198cd09c142cb3448cf9a5824ce4e3c14e7a6e70fecc186a64a94edbf8bb4af</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

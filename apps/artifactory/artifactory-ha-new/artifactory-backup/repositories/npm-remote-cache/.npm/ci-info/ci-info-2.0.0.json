@@ -1,0 +1,32 @@
+{
+  "name" : "ci-info",
+  "description" : "Get details about the current Continuous Integration environment",
+  "version" : "2.0.0",
+  "author" : "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "homepage" : "https://github.com/watson/ci-info",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/watson/ci-info.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/watson/ci-info/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ci-info/-/ci-info-2.0.0.tgz",
+    "shasum" : "67a9e964be31a51e15e5010d58e6f12834002f46"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "clear-require" : "^1.0.1",
+    "standard" : "^12.0.1",
+    "tape" : "^4.9.1"
+  },
+  "keywords" : [ "ci", "continuous", "integration", "test", "detect" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "standard && node test.js"
+  },
+  "coordinates" : [ 55.778231, 12.593179 ]
+}

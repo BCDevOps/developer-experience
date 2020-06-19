@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/thrift/libthrift/0.12.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>0.12.0</name>
+  <created>1576861389663</created>
+  <lastModified>1576861389663</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861389663</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a7ebd2d01676648c8ffdbb2608123cfe"</artifactory.internal.etag>
+  <npm.description>a replacement for process.exit that ensures stdio are fully drained before exiting.</npm.description>
+  <npm.keywords>["exit","process","stdio","stdout","stderr","drain","flush","3584"]</npm.keywords>
+  <npm.name>exit</npm.name>
+  <npm.version>0.1.2</npm.version>
+</properties>

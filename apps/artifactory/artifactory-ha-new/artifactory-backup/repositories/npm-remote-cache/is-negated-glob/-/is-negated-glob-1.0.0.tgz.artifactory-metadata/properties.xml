@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8e6a4912bcfb71405ca1a66388a59671"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns an object with a `negated` boolean and the `!` stripped from negation patterns. also respects extglobs.</npm.description>
+  <npm.keywords>["extglob","glob","inverse","inverted","is","is-glob","match","micromatch","negate","negated","negation","negative","pattern","test"]</npm.keywords>
+  <npm.name>is-negated-glob</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

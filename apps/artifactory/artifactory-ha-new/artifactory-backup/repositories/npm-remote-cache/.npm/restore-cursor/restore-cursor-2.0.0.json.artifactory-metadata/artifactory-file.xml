@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/restore-cursor/restore-cursor-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>restore-cursor-2.0.0.json</name>
+  <created>1576003629891</created>
+  <lastModified>1576003629869</lastModified>
+  <size>906</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003629892</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6afb5d08abb47bc5de9bd7ad6e1cf2f4d05749a1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cfcd375384d783cd7fca7462738e667a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aafb0d04420bf11323616c23bfe0ed6cda299bb24e4309e44a455c0822f0ffb5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

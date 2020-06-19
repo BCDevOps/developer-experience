@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6da2d54298f8a177219ffa39a9d0fe0f"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>source maps support for istanbul</npm.description>
+  <npm.keywords>["istanbul","sourcemaps","sourcemap","source","maps"]</npm.keywords>
+  <npm.name>istanbul-lib-source-maps</npm.name>
+  <npm.version>3.0.6</npm.version>
+</properties>

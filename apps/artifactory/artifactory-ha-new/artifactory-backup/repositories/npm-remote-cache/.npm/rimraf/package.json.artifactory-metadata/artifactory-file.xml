@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/rimraf/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003107942</created>
+  <lastModified>1581229121000</lastModified>
+  <size>74830</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464313576</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dad427c7ebdeeb1ac210f9b2baa6841ecdb29e15</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a965d56367ab538fdf9c006898ee078b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>690fa3807ff71e036d18d2de765d4930ce5e1cb7e628843d3110d832054e7c7e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

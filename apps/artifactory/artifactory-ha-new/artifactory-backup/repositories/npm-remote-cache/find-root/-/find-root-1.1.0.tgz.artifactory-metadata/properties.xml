@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4838524d2005af54494889c94def73cf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>find the closest package.json</npm.description>
+  <npm.keywords>["fs","get","find","closest","package","module","base","root"]</npm.keywords>
+  <npm.name>find-root</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

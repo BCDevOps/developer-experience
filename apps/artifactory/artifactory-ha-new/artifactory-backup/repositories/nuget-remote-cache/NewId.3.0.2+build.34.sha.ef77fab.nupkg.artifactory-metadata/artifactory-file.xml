@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NewId.3.0.2+build.34.sha.ef77fab.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NewId.3.0.2+build.34.sha.ef77fab.nupkg</name>
+  <created>1578496805885</created>
+  <lastModified>1563388066000</lastModified>
+  <size>33771</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496805885</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>eddbec34fb9bf601581d87f201093302daa02850</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e8b0b4988917b81213268aff01d95cb2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d4abde071e7e8971305826e3551c1f7fb0e87252c0f0b72ddebc2cddd754365b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

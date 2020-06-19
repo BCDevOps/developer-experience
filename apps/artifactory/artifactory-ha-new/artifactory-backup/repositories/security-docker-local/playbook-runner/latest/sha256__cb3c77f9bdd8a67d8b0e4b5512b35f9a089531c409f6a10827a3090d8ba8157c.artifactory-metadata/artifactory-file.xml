@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>security-docker-local</repoKey>
+    <path>playbook-runner/latest/sha256__cb3c77f9bdd8a67d8b0e4b5512b35f9a089531c409f6a10827a3090d8ba8157c</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sha256__cb3c77f9bdd8a67d8b0e4b5512b35f9a089531c409f6a10827a3090d8ba8157c</name>
+  <created>1580706718280</created>
+  <lastModified>1580706634847</lastModified>
+  <size>73216016</size>
+  <additionalInfo>
+    <createdBy>jbcxor</createdBy>
+    <modifiedBy>jbcxor</modifiedBy>
+    <lastUpdated>1580706718281</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8b294a1d36c9208461184494fdde03f3603ce5c8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>30152712272d940eb4d059a285a59509</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cb3c77f9bdd8a67d8b0e4b5512b35f9a089531c409f6a10827a3090d8ba8157c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

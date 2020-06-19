@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"292beaf8bc8cfde31c6e1f21b003d2bb"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>ecmascript parsing infrastructure for multipurpose analysis</npm.description>
+  <npm.keywords>["ast","ecmascript","esprima","javascript","parser","syntax"]</npm.keywords>
+  <npm.name>esprima</npm.name>
+  <npm.version>3.1.3</npm.version>
+</properties>

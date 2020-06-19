@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/estraverse/estraverse-4.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>estraverse-4.2.0.json</name>
+  <created>1579828390988</created>
+  <lastModified>1579828390785</lastModified>
+  <size>1237</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828390991</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>680c659e629aa239bc4e0e06a00e5cb5fc9bdfce</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>46bab43cfa64f5437832b1b1229d802f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0a3cc1dde970f7085a3a853263b53d13ce395cdd78eb49040b725642973a390c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

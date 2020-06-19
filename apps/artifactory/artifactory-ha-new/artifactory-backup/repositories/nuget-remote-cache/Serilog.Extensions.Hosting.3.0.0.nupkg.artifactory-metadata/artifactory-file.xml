@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Serilog.Extensions.Hosting.3.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Serilog.Extensions.Hosting.3.0.0.nupkg</name>
+  <created>1578432226698</created>
+  <lastModified>1566941690000</lastModified>
+  <size>19099</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432226699</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ad6bfad1e2d44a2ac9e06c1e70a8c48c7465dfcc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b2f6853d555bed15df048a05b703fa5b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>860be2c507b510255994de18703c6c37aaf1584b8ec9e5dc911cdc4cbca601e4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

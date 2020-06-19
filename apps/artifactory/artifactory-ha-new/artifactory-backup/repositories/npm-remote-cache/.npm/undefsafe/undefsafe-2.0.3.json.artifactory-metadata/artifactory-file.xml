@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/undefsafe/undefsafe-2.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>undefsafe-2.0.3.json</name>
+  <created>1585871249328</created>
+  <lastModified>1585871249295</lastModified>
+  <size>1074</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871249329</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>984efc74da610a75e231be7367ffc44c4c5321d7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7c11e9164c509261037da506602443ed</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>154a5b1de8c9d58e1a9394a8167da6d3c57d6e05b18fe9e634b6c132545e3fff</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

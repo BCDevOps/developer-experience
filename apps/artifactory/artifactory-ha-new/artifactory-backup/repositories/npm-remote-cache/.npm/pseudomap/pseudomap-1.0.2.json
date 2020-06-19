@@ -1,0 +1,29 @@
+{
+  "name" : "pseudomap",
+  "description" : "A thing that is a lot like ES6 `Map`, but without iterators, for use in environments where `for..of` syntax and `Map` are not available.",
+  "version" : "1.0.2",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "homepage" : "https://github.com/isaacs/pseudomap#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/isaacs/pseudomap.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/isaacs/pseudomap/issues"
+  },
+  "main" : "map.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/pseudomap/-/pseudomap-1.0.2.tgz",
+    "shasum" : "f052a28da70e618917ef0a8ac34c1ae5a68286b3"
+  },
+  "devDependencies" : {
+    "tap" : "^2.3.1"
+  },
+  "license" : "ISC",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js"
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/http-signature/http-signature-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>http-signature-1.2.0.json</name>
+  <created>1576003419985</created>
+  <lastModified>1576003419778</lastModified>
+  <size>1129</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003419988</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>50c8c49be3341d43030a4be0638977c8f8f658b0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>42601e53a8d34ed3ff9ab63769114185</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f38a7fe03e77dbc54d1d76f106c88cd19b29469bd50b422bea045dc84b04fbb4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

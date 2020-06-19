@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-matcher-utils/jest-matcher-utils-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-matcher-utils-24.9.0.json</name>
+  <created>1576008063276</created>
+  <lastModified>1576008062785</lastModified>
+  <size>870</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008063276</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>032ef3e3a1c39c1b0d03ae545067b34e1aa8d385</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c42f1ef95b5eb4f3632b80f65a4e6fbf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ec3559f9876058e4d7610bdf9e7fd54e0dd4e7f9a59136b951747d68a17d28fa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

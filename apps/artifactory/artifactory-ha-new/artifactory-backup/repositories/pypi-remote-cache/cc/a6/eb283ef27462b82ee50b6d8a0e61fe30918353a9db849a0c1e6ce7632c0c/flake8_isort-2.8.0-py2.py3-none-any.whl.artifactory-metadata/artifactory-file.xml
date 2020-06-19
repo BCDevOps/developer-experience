@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>cc/a6/eb283ef27462b82ee50b6d8a0e61fe30918353a9db849a0c1e6ce7632c0c/flake8_isort-2.8.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flake8_isort-2.8.0-py2.py3-none-any.whl</name>
+  <created>1579647464307</created>
+  <lastModified>1575502942000</lastModified>
+  <size>14493</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579647464308</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a6c0a21e27f1ee303db84206eefd70841ced7e32</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6fd8a3e50b78cd8e47a63042b5f486d3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aa0c4d004e6be47e74f122f5b7f36554d0d78ad8bf99b497a460dedccaa7cce9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

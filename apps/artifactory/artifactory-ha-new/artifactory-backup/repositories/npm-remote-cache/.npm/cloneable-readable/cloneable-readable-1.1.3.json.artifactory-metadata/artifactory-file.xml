@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cloneable-readable/cloneable-readable-1.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cloneable-readable-1.1.3.json</name>
+  <created>1576003418974</created>
+  <lastModified>1576003418478</lastModified>
+  <size>1194</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003418976</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f5d7ad4707bd93e19963cc6645366236ffe7207e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>77d47f7571dac640f93bd85f3426851b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0418c692722e479a7ad794be07da3aa414f216bf2db4979a4ae47a55dc600db9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

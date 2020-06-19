@@ -1,0 +1,27 @@
+{
+  "name" : "number-is-nan",
+  "description" : "ES2015 Number.isNaN() ponyfill",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/number-is-nan",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/number-is-nan/-/number-is-nan-1.0.1.tgz",
+    "shasum" : "097b602b53422a522c1afb8790318336941a011d"
+  },
+  "devDependencies" : {
+    "ava" : "*"
+  },
+  "keywords" : [ "es2015", "ecmascript", "ponyfill", "polyfill", "shim", "number", "is", "nan", "not" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "ava"
+  }
+}

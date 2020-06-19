@@ -1,0 +1,62 @@
+{
+  "name" : "yargs",
+  "description" : "yargs the modern, pirate-themed, successor to optimist.",
+  "version" : "15.3.1",
+  "homepage" : "https://yargs.js.org/",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/yargs/yargs.git"
+  },
+  "contributors" : [ {
+    "name" : "Yargs Contributors",
+    "url" : "https://github.com/yargs/yargs/graphs/contributors"
+  } ],
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "./index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/yargs/-/yargs-15.3.1.tgz",
+    "shasum" : "9505b472763963e54afe60148ad27a330818e98b"
+  },
+  "dependencies" : {
+    "cliui" : "^6.0.0",
+    "decamelize" : "^1.2.0",
+    "find-up" : "^4.1.0",
+    "get-caller-file" : "^2.0.1",
+    "require-directory" : "^2.1.1",
+    "require-main-filename" : "^2.0.0",
+    "set-blocking" : "^2.0.0",
+    "string-width" : "^4.2.0",
+    "which-module" : "^2.0.0",
+    "y18n" : "^4.0.0",
+    "yargs-parser" : "^18.1.1"
+  },
+  "devDependencies" : {
+    "c8" : "^7.0.0",
+    "chai" : "^4.2.0",
+    "chalk" : "^3.0.0",
+    "coveralls" : "^3.0.9",
+    "cpr" : "^3.0.1",
+    "cross-spawn" : "^7.0.0",
+    "es6-promise" : "^4.2.5",
+    "hashish" : "0.0.4",
+    "mocha" : "^7.0.0",
+    "rimraf" : "^3.0.0",
+    "standard" : "^14.0.0",
+    "which" : "^2.0.0",
+    "yargs-test-extends" : "^1.0.1"
+  },
+  "keywords" : [ "argument", "args", "option", "parser", "parsing", "cli", "command" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "yargs.js", "lib", "locales", "completion.sh.hbs", "completion.zsh.hbs", "LICENSE" ],
+  "scripts" : {
+    "fix" : "standard --fix",
+    "posttest" : "standard",
+    "test" : "c8 mocha --require ./test/before.js --timeout=12000 --check-leaks",
+    "coverage" : "c8 report --check-coverage"
+  },
+  "standard" : {
+    "ignore" : [ "**/example/**" ]
+  }
+}

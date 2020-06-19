@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c0f489d7084cb314da0f1bf811e950f0"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>map object keys and values into a new object</npm.description>
+  <npm.keywords>["map","object","key","keys","value","values","iterate","iterator","rename","modify","deep","recurse","recursive"]</npm.keywords>
+  <npm.name>map-obj</npm.name>
+  <npm.version>4.1.0</npm.version>
+</properties>

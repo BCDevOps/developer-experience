@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f933f2c7592a035c86bc1b4d026bb2d7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a better decodeuricomponent</npm.description>
+  <npm.keywords>["decode","uri","component","decodeuricomponent","components","decoder","url"]</npm.keywords>
+  <npm.name>decode-uri-component</npm.name>
+  <npm.version>0.2.0</npm.version>
+</properties>

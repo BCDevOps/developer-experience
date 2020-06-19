@@ -1,0 +1,38 @@
+{
+  "name" : "is-data-descriptor",
+  "description" : "Returns true if a value has the characteristics of a valid JavaScript data descriptor.",
+  "version" : "0.1.4",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/is-data-descriptor",
+  "repository" : "jonschlinkert/is-data-descriptor",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/is-data-descriptor/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz",
+    "shasum" : "0b5ee648388e2c860282e793f1856fec3f301b56"
+  },
+  "dependencies" : {
+    "kind-of" : "^3.0.2"
+  },
+  "devDependencies" : {
+    "mocha" : "*",
+    "should" : "*"
+  },
+  "keywords" : [ "accessor", "check", "data", "descriptor", "get", "getter", "is", "keys", "object", "properties", "property", "set", "setter", "type", "valid", "value" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "is-accessor-descriptor", "is-data-descriptor", "is-descriptor", "isobject" ]
+    },
+    "plugins" : [ "gulp-format-md" ]
+  }
+}

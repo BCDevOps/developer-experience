@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-symbol/-/is-symbol-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-symbol-1.0.2.tgz</name>
+  <created>1576008733535</created>
+  <lastModified>1537489758000</lastModified>
+  <size>7285</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008733536</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a055f6ae57192caee329e7a860118b497a950f38</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>46ad12664c45b350af80e49413024adc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8cd8cb4575965e3282c9a4282e1cb5192d7a88a1769c756e3c756f25004e9531</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

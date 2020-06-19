@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1949626739360eda2e0cf28a8e239823"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>create and parse content-disposition header</npm.description>
+  <npm.keywords>["content-disposition","http","rfc6266","res"]</npm.keywords>
+  <npm.name>content-disposition</npm.name>
+  <npm.version>0.5.3</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"da39e37916477e7d112849007165808a"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>update notifications for your cli app</npm.description>
+  <npm.keywords>["npm","update","updater","notify","notifier","check","checker","cli","module","package","version"]</npm.keywords>
+  <npm.name>update-notifier</npm.name>
+  <npm.version>4.1.0</npm.version>
+</properties>

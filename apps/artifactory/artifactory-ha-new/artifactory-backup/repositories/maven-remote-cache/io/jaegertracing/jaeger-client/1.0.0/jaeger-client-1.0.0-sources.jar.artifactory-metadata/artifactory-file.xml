@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/jaegertracing/jaeger-client/1.0.0/jaeger-client-1.0.0-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jaeger-client-1.0.0-sources.jar</name>
+  <created>1576861416694</created>
+  <lastModified>1564736342000</lastModified>
+  <size>1332</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861416694</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>cd2123397a8d48f4ff3819a6d73831615c923049</original>
+          <actual>cd2123397a8d48f4ff3819a6d73831615c923049</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>4ddee56aa7571f5dcd6054a38c9189cb</original>
+          <actual>4ddee56aa7571f5dcd6054a38c9189cb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6285078a71955ee6c8b87475c162450d6a3204397cca6c8965cd4234089bba53</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

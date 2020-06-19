@@ -1,0 +1,34 @@
+{
+  "name" : "yargs-parser",
+  "description" : "the mighty option parser used by yargs",
+  "version" : "10.1.0",
+  "author" : "Ben Coe <ben@npmjs.com>",
+  "repository" : {
+    "url" : "git@github.com:yargs/yargs-parser.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/yargs-parser/-/yargs-parser-10.1.0.tgz",
+    "shasum" : "7202265b89f7e9e9f2e5765e0fe735a905edbaa8"
+  },
+  "dependencies" : {
+    "camelcase" : "^4.1.0"
+  },
+  "devDependencies" : {
+    "chai" : "^3.5.0",
+    "coveralls" : "^2.11.12",
+    "mocha" : "^3.0.1",
+    "nyc" : "^11.4.1",
+    "standard" : "^10.0.2",
+    "standard-version" : "^4.3.0"
+  },
+  "keywords" : [ "argument", "parser", "yargs", "command", "cli", "parsing", "option", "args", "argument" ],
+  "license" : "ISC",
+  "files" : [ "lib", "index.js" ],
+  "scripts" : {
+    "test" : "nyc mocha test/*.js",
+    "posttest" : "standard",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls",
+    "release" : "standard-version"
+  }
+}

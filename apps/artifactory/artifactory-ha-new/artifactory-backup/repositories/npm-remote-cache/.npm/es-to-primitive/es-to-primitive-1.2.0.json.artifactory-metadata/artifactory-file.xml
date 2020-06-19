@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es-to-primitive/es-to-primitive-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es-to-primitive-1.2.0.json</name>
+  <created>1579828387786</created>
+  <lastModified>1579828386992</lastModified>
+  <size>2038</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828387875</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>96b3e3f594be2b2c098a476a7316981178782e9d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>47a24de029295a121efa5ffeac92ec7e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>888c7904b801ca491fb2d3255e3d4f5faad36440287976847990018e4d521fb0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

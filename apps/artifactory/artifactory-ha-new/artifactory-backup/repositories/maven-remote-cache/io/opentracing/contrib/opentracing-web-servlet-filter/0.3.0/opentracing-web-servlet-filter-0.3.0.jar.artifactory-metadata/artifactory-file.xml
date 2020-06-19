@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-web-servlet-filter/0.3.0/opentracing-web-servlet-filter-0.3.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-web-servlet-filter-0.3.0.jar</name>
+  <created>1576861442734</created>
+  <lastModified>1556193344000</lastModified>
+  <size>16392</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861442735</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7c2ee1f9998fdf99f32ed9e0f1e4302affbe83a8</original>
+          <actual>7c2ee1f9998fdf99f32ed9e0f1e4302affbe83a8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>b6f4c43067da6aa12bec15af003f525e</original>
+          <actual>b6f4c43067da6aa12bec15af003f525e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4439351abf631a8f3434a118189cf480befc6e058ccc26e79bb1ea87d8bed646</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"251d434b145649af9cfd9473ed49dd2d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert a string to space case.</npm.description>
+  <npm.keywords>["camel","case","slug","space","spacecase","string"]</npm.keywords>
+  <npm.name>to-space-case</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

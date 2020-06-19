@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/set-value/set-value-2.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>set-value-2.0.1.json</name>
+  <created>1576008064774</created>
+  <lastModified>1576008064282</lastModified>
+  <size>1662</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008064775</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1ecfd5852ce9ecb0a3d53e270a8c0c6aa777be32</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1fcbc356091bdf1e90652bb0a49795a2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>360376747ada375dd9d6c16fa897dd4e92cd087597ba9a22d98c1c2c8c1c95fa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

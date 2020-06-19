@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/set-blocking/set-blocking-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>set-blocking-2.0.0.json</name>
+  <created>1576003438390</created>
+  <lastModified>1576003438313</lastModified>
+  <size>1184</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003438390</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>497f6c5c59691a187a5209459ccd4caf0db2a450</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e5c8a2e8f37c544ea33fb023529e0853</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a9383c22de530cf7f9fccfc9ec961fcdf540048b16bdd38441f2f1f4909c40c3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

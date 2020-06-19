@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>prettier/-/prettier-1.18.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>prettier-1.18.2.tgz</name>
+  <created>1579828084293</created>
+  <lastModified>1559919347000</lastModified>
+  <size>2090281</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828084298</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e7320855a0546510cebac9089470ff15</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8d16af3cd65f9c2a275a46d69d22cc5cf7a6b0c00015f62507ba23757ffd11ba</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

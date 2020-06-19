@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2f8956f163ce4cc8ff78b646be3fb160"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a preprocessor with source maps support to help use typescript with jest</npm.description>
+  <npm.keywords>["jest","typescript","sourcemap","react","testing"]</npm.keywords>
+  <npm.name>ts-jest</npm.name>
+  <npm.version>25.3.1</npm.version>
+</properties>

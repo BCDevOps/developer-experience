@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e199ee5dd3885bfecd2d3c8856fcc85f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>environment agnostic nexttick polyfill</npm.description>
+  <npm.keywords>["nexttick","setImmediate","setTimeout","async"]</npm.keywords>
+  <npm.name>next-tick</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

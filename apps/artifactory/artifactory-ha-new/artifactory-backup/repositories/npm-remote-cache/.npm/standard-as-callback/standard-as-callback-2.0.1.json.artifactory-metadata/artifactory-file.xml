@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/standard-as-callback/standard-as-callback-2.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>standard-as-callback-2.0.1.json</name>
+  <created>1576008065884</created>
+  <lastModified>1576008065380</lastModified>
+  <size>1160</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008065885</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1693579a500b127073793308fc8de0234bccc136</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>414cb59a9d27732cf93d53bd2deedf36</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>dbbed63e8eb9f13d34bc60d81849448610941180e10ddbf8d6132fc6d2aac2bf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

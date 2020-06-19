@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f8c4bb78e18a7f081f8aeac28a6d3ff9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.clonedeep` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, clonedeep"</npm.keywords>
+  <npm.name>lodash.clonedeep</npm.name>
+  <npm.version>4.5.0</npm.version>
+</properties>

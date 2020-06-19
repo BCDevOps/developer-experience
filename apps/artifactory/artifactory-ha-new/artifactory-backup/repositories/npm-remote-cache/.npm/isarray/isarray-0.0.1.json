@@ -1,0 +1,30 @@
+{
+  "name" : "isarray",
+  "description" : "Array#isArray for older browsers",
+  "version" : "0.0.1",
+  "author" : {
+    "name" : "Julian Gruber",
+    "email" : "mail@juliangruber.com",
+    "url" : "http://juliangruber.com"
+  },
+  "homepage" : "https://github.com/juliangruber/isarray",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/juliangruber/isarray.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/isarray/-/isarray-0.0.1.tgz",
+    "shasum" : "8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "tap" : "*"
+  },
+  "keywords" : [ "browser", "isarray", "array" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "tap test/*.js"
+  }
+}

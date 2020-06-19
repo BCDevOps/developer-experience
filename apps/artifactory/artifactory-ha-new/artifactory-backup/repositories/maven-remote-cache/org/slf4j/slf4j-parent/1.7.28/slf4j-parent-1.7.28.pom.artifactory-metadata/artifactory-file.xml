@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/slf4j/slf4j-parent/1.7.28/slf4j-parent-1.7.28.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>slf4j-parent-1.7.28.pom</name>
+  <created>1576861389885</created>
+  <lastModified>1565425631000</lastModified>
+  <size>13806</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861389885</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>f727e63fc98c78a6f2334be269b39d8fa18bf6fb</original>
+          <actual>f727e63fc98c78a6f2334be269b39d8fa18bf6fb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>94e8af6d845ff0b9d7439bdce9869adc</original>
+          <actual>94e8af6d845ff0b9d7439bdce9869adc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>919b5f42dde33ace036865d1e2b292d98a0627417ff756e0287f4a56ad3e544e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

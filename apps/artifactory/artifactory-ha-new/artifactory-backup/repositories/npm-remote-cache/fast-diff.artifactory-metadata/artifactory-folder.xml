@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>fast-diff</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>fast-diff</name>
+  <created>1579828390192</created>
+  <lastModified>1579828390192</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828390192</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

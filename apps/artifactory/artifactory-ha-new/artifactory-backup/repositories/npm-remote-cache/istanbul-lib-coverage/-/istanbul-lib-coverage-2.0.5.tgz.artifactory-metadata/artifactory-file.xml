@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>istanbul-lib-coverage-2.0.5.tgz</name>
+  <created>1576008072583</created>
+  <lastModified>1556138691000</lastModified>
+  <size>6520</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008072583</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>675f0ab69503fad4b1d849f736baaca803344f49</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b7a512a49be6a8c2e1e014d45ccaa4dd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aac88b5b7fa67178f67abd18c80ec9b2d0142adea14fd66cf92968c5c3f2d628</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

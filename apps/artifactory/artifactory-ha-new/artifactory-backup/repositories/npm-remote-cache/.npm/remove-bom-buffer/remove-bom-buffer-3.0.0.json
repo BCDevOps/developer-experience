@@ -1,0 +1,46 @@
+{
+  "name" : "remove-bom-buffer",
+  "description" : "Remove a byte order mark (BOM) from a buffer.",
+  "version" : "3.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/remove-bom-buffer",
+  "repository" : "jonschlinkert/remove-bom-buffer",
+  "contributors" : [ "Blaine Bublitz (https://twitter.com/BlaineBublitz)", "Erik Kemperman (https://github.com/erikkemperman)", "Jon Schlinkert (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/remove-bom-buffer/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/remove-bom-buffer/-/remove-bom-buffer-3.0.0.tgz",
+    "shasum" : "c2bf1e377520d324f623892e33c10cac2c252b53"
+  },
+  "dependencies" : {
+    "is-buffer" : "^1.1.5",
+    "is-utf8" : "^0.2.1"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.11",
+    "mocha" : "^3.2.0"
+  },
+  "keywords" : [ "bom", "buffer", "byte-order-mark", "normalize", "remove", "strip", "strip-bom", "strip-bom-buffer", "strip-bom-string" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "cr", "has-bom", "read-file", "strip-bom-string" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

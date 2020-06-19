@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ansi-styles</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>ansi-styles</name>
+  <created>1576008548282</created>
+  <lastModified>1576008548282</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008548282</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

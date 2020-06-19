@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>merge-descriptors</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>merge-descriptors</name>
+  <created>1576003446397</created>
+  <lastModified>1576003446397</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003446397</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

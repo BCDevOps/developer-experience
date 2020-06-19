@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1e611aa62235fec1363b2c2924cacad4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>generate a unique random string</npm.description>
+  <npm.keywords>["unique","string","random","text","id","identifier","slug","hex"]</npm.keywords>
+  <npm.name>unique-string</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

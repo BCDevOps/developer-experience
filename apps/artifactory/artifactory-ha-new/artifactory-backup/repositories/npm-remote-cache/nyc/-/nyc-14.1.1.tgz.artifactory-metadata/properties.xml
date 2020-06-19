@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e01ddbc09e35f9862cd7d3731bb00498"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>the istanbul command line interface</npm.description>
+  <npm.keywords>["coverage","reporter","subprocess","testing"]</npm.keywords>
+  <npm.name>nyc</npm.name>
+  <npm.version>14.1.1</npm.version>
+</properties>

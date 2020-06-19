@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/decamelize/decamelize-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>decamelize-1.2.0.json</name>
+  <created>1576003436257</created>
+  <lastModified>1576003436233</lastModified>
+  <size>884</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003436258</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>def2feef20ccf3ae9b68100e3481ca5122a6a3a5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>38a0a88315b60bacb0105423284ddb6a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>46ffdab132dbecb019dc5070cf942080ff103e2eda37694e07289e53fb22a700</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

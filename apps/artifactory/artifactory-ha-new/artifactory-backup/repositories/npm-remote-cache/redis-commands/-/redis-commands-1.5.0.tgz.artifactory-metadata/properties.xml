@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c4486d6e91dfc18031bf2d5860f0740b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>redis commands</npm.description>
+  <npm.keywords>["redis","commands","prefix"]</npm.keywords>
+  <npm.name>redis-commands</npm.name>
+  <npm.version>1.5.0</npm.version>
+</properties>

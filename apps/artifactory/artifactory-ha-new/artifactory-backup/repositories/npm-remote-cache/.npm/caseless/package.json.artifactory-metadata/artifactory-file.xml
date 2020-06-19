@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/caseless/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003418580</created>
+  <lastModified>1527362845000</lastModified>
+  <size>14425</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464343385</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bb1d07c308052080329b6b0c6f63103dfd6d9ad1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>37dc2c2e48fd048da76bb52a97386418</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>286ea8d18a1c89dd89dc48818a6ef03a29dd82abd55365bb01a2a13ceba75375</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/detect-newline/detect-newline-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>detect-newline-3.1.0.json</name>
+  <created>1585853581533</created>
+  <lastModified>1585853581506</lastModified>
+  <size>876</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853581534</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b4f0263c1961da1c232881188dcd559a0b42281b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a6fc4e04bb6300cfc5490dba5355bc3d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7a04a7203b52943305a44874fe5c15d5c8723966a364c25e58e8164a8a3634a8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

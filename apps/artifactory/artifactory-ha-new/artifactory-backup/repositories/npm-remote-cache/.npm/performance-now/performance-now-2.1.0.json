@@ -1,0 +1,41 @@
+{
+  "name" : "performance-now",
+  "description" : "Implements performance.now (based on process.hrtime).",
+  "version" : "2.1.0",
+  "author" : "Braveg1rl <braveg1rl@outlook.com>",
+  "homepage" : "https://github.com/braveg1rl/performance-now",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/braveg1rl/performance-now.git"
+  },
+  "bugs" : "https://github.com/braveg1rl/performance-now/issues",
+  "main" : "lib/performance-now.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/performance-now/-/performance-now-2.1.0.tgz",
+    "shasum" : "6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
+  },
+  "dependencies" : {
+  },
+  "optionalDependencies" : {
+  },
+  "devDependencies" : {
+    "bluebird" : "^3.4.7",
+    "call-delayed" : "^1.0.0",
+    "chai" : "^3.5.0",
+    "chai-increasing" : "^1.2.0",
+    "coffee-script" : "~1.12.2",
+    "mocha" : "~3.2.0",
+    "pre-commit" : "^1.2.2"
+  },
+  "keywords" : [ ],
+  "license" : "MIT",
+  "scripts" : {
+    "build" : "mkdir -p lib && rm -rf lib/* && node_modules/.bin/coffee --compile -m --output lib/ src/",
+    "prepublish" : "npm test",
+    "pretest" : "npm run build",
+    "test" : "node_modules/.bin/mocha",
+    "watch" : "node_modules/.bin/coffee --watch --compile --output lib/ src/"
+  },
+  "private" : false,
+  "typings" : "src/index.d.ts"
+}

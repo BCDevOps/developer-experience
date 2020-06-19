@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1d2080ee256022ef84051ed7a0170e0d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>error.capturestacktrace ponyfill</npm.description>
+  <npm.keywords>["Error","captureStackTrace"]</npm.keywords>
+  <npm.name>capture-stack-trace</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

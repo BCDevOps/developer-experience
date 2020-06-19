@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>b6/d7/89536db7654f2636549a10d85a918feefd9aa2cac0929dd6796c8e945e78/sentry_sdk-0.13.2-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sentry_sdk-0.13.2-py2.py3-none-any.whl</name>
+  <created>1574025613504</created>
+  <lastModified>1573215429000</lastModified>
+  <size>91093</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574025613505</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e20e93aed996f95b723288572f224f91cce3620b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8d42bf3fee9ac1b28742b5df4162e9bb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>09e1e8f00f22ea580348f83bbbd880adf40b29f1dec494a8e4b33e22f77184fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

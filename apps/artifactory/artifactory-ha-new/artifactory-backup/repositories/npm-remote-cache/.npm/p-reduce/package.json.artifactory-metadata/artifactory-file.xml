@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-reduce/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003616258</created>
+  <lastModified>1554353871000</lastModified>
+  <size>8856</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1583960438610</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>58168b5946fad1b45c7da54961dfb24d2a9006e1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>19a420460e8e54fae9f3482d55fa9210</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>425628899cad938e788dc0cc8369ebf754688845a88528aaeef4bc847eeda76b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/passport-jwt/passport-jwt-4.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>passport-jwt-4.0.0.json</name>
+  <created>1576003097458</created>
+  <lastModified>1576003097395</lastModified>
+  <size>1247</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003097458</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f7a3ffcdf2fddb45900bcd0d53ff59097d442673</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>5863d24eedc20df983a3b346399b325f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ec0de38e3317efdc7f05f9b2465fd0a3874c7effa69e8f4b974a5322bf1321df</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

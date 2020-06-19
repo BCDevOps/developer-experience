@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fdf2a413c6cd5b9ef3e058e0e69d15cd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>no_content</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@jest/fake-timers</npm.name>
+  <npm.version>25.3.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/atomicwrites.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>atomicwrites.html</name>
+  <created>1574023486782</created>
+  <lastModified>1582154361439</lastModified>
+  <size>8746</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154361489</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>44a8c1296c0299b9847a008a50f67163d6ece385</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1cada0ade2f4d0deb1061d6ef29b8520</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bff6d3aa399859f0c33d1442e5189a6d2034826465ef61890040604bebaf3345</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

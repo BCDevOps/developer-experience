@@ -1,0 +1,31 @@
+{
+  "name" : "camelcase",
+  "description" : "Convert a dash/dot/underscore/space separated string to camelCase: foo-bar  fooBar",
+  "version" : "4.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/camelcase",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/camelcase/-/camelcase-4.1.0.tgz",
+    "shasum" : "d545635be1e33c542649c69173e5de6acfae34dd"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "camelcase", "camel-case", "camel", "case", "dash", "hyphen", "dot", "underscore", "separator", "string", "text", "convert" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

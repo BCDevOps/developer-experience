@@ -1,0 +1,19 @@
+{
+  "name" : "browser-process-hrtime",
+  "description" : "Shim for process.hrtime in the browser",
+  "version" : "1.0.0",
+  "author" : "kumavis",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/kumavis/browser-process-hrtime.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz",
+    "shasum" : "3c9b4b7d782c8121e56f10106d84c0d0ffc94626"
+  },
+  "license" : "BSD-2-Clause",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/shebang-command/shebang-command-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>shebang-command-2.0.0.json</name>
+  <created>1585853581740</created>
+  <lastModified>1585853581706</lastModified>
+  <size>813</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853581755</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3b7aeba0eb1441e55f85e7fec17cadde5ba60d20</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>5087cd9f0b0e1a91ba998672858a5e18</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1c6e1b58207d1370d8eeb3a72b69a9014aed18b4f5b30c86030c8b25ae5085d2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+{
+  "name" : "acorn-walk",
+  "description" : "ECMAScript (ESTree) AST walker",
+  "version" : "6.2.0",
+  "homepage" : "https://github.com/acornjs/acorn",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/acornjs/acorn.git"
+  },
+  "engines" : {
+    "node" : ">=0.4.0"
+  },
+  "main" : "dist/walk.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/acorn-walk/-/acorn-walk-6.2.0.tgz",
+    "shasum" : "123cb8f3b84c2171f1f7fb252615b1c78a6b1a8c"
+  },
+  "license" : "MIT",
+  "maintainers" : [ {
+    "name" : "Marijn Haverbeke",
+    "email" : "marijnh@gmail.com",
+    "web" : "https://marijnhaverbeke.nl"
+  }, {
+    "name" : "Ingvar Stepanyan",
+    "email" : "me@rreverser.com",
+    "web" : "https://rreverser.com/"
+  }, {
+    "name" : "Adrian Heine",
+    "web" : "http://adrianheine.de"
+  } ],
+  "scripts" : {
+    "prepare" : "cd ..; npm run build:walk"
+  },
+  "module" : "dist/walk.mjs"
+}

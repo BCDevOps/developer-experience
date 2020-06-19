@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/binary-extensions/binary-extensions-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>binary-extensions-2.0.0.json</name>
+  <created>1576008070878</created>
+  <lastModified>1576008070379</lastModified>
+  <size>896</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008070878</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>09460e8e1b035eeab17b21f86c0ccc60597dd871</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>fe215654760ccaecff2c5bf0104859fc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e59d68df0b510e0c92f51c831e2822d56eca44ada8be3ad310dcc3a50be788c2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

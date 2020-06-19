@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D72AF359B2724F</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETFramework4.6.1</nuget.dependency>
+  <nuget.description>Targets files to enable the Visual Studio Tools for Containers.</nuget.description>
+  <nuget.digest>4RBs0kXuNrRB91dsD7u5QhHNXm9wTd+IR9pEpkX08KRGsL3XCmT9peoyfw1rIxX/wV0oCNDLbKuvhQ1XNd9O/Q==</nuget.digest>
+  <nuget.iconUrl>https://aka.ms/vscontainertoolstargets-icon</nuget.iconUrl>
+  <nuget.id>Microsoft.VisualStudio.Azure.Containers.Tools.Targets</nuget.id>
+  <nuget.licenseUrl>https://aka.ms/deprecateLicenseUrl</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://aka.ms/vscontainertools</nuget.projectUrl>
+  <nuget.releaseNotes>See https://aka.ms/vs-containertools-releasenotes for release notes</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>container containers Docker microservices Azure</nuget.tags>
+  <nuget.title>Visual Studio Tools for Containers Targets</nuget.title>
+  <nuget.version>1.9.5</nuget.version>
+</properties>

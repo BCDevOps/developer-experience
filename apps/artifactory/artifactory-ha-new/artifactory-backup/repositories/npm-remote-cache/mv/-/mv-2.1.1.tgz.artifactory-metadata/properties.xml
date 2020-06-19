@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b4bffd22973ea6dd9303d4154358f5d4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fs.rename but works across devices. same as the unix utility 'mv'</npm.description>
+  <npm.keywords>["mv","move","rename","device","recursive","folder"]</npm.keywords>
+  <npm.name>mv</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

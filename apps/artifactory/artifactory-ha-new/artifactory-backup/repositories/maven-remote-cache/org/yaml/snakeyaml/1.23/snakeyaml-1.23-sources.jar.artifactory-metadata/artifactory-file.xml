@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/yaml/snakeyaml/1.23/snakeyaml-1.23-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>snakeyaml-1.23-sources.jar</name>
+  <created>1576861443546</created>
+  <lastModified>1535387058000</lastModified>
+  <size>191337</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861443551</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>1186bcf89d33080275bab74a0b0f495af5c812ef</original>
+          <actual>1186bcf89d33080275bab74a0b0f495af5c812ef</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>38d2229bc77eae519ca3e0c2ed744749</original>
+          <actual>38d2229bc77eae519ca3e0c2ed744749</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ec649cde6353321553eebc3ccf7c473663113d17d724df94541de88e06101d53</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

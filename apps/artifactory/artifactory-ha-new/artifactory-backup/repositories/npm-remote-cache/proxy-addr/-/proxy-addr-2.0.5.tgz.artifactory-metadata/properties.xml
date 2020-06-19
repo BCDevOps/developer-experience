@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"be3a2a900ee1c00dc852b63d773ed549"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>determine address of proxied request</npm.description>
+  <npm.keywords>["ip","proxy","x-forwarded-for"]</npm.keywords>
+  <npm.name>proxy-addr</npm.name>
+  <npm.version>2.0.5</npm.version>
+</properties>

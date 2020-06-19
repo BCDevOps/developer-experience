@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>espree/-</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>-</name>
+  <created>1576008547675</created>
+  <lastModified>1576008547675</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008547675</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

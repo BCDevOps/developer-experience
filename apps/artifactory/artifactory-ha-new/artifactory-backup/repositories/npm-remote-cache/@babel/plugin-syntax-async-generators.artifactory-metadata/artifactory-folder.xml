@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/plugin-syntax-async-generators</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plugin-syntax-async-generators</name>
+  <created>1586464377842</created>
+  <lastModified>1586464377842</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464377842</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/vinyl-fs/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003093606</created>
+  <lastModified>1527454634000</lastModified>
+  <size>93368</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464308323</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>41d5c75b394fc5a390c7cd2913bda731e8d3509e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>43ade321c7658bd36e92fa6cf8549b4f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9aa8692acf8317313e8b28365788154d04995bff4801f914a1522fbdfb7b62d9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

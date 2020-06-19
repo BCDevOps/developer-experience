@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/helper-validator-identifier/-/helper-validator-identifier-7.9.5.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>helper-validator-identifier-7.9.5.tgz</name>
+  <created>1586464326074</created>
+  <lastModified>1586287519000</lastModified>
+  <size>7048</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464326075</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>90977a8e6fbf6b431a7dc31752eee233bf052d80</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>de80634110e01148c00a9454e1e29b69</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ecf42a8f24aafc54def5936befb29c25b3db686d1b12d2b559a9c9bc57f91ba5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

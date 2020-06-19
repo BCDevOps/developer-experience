@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/tomcat/embed/tomcat-embed-websocket/9.0.26/tomcat-embed-websocket-9.0.26.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tomcat-embed-websocket-9.0.26.pom</name>
+  <created>1576861386390</created>
+  <lastModified>1568649832000</lastModified>
+  <size>1784</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861386391</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>c110ee006fe7b974282531e73c885c38853bcda7</original>
+          <actual>c110ee006fe7b974282531e73c885c38853bcda7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>9183f1132dbb38fe122d7dc98aa2fe4f</original>
+          <actual>9183f1132dbb38fe122d7dc98aa2fe4f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2039bb1a4b0665827d2ebfd86fdb3c629fc4aa54566530c636ecdadb18a4796e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

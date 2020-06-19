@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Xml.ReaderWriter.4.0.11.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Xml.ReaderWriter.4.0.11.nupkg</name>
+  <created>1578432232594</created>
+  <lastModified>1544742038000</lastModified>
+  <size>1363068</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432232594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cc2a9b81763830df98294f6242a53b4d3beba172</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e82ac4d72ef9ba5f9f44f5bd9419da18</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>85a64014543d4a5d8385fbc46ddc76611a8a128c4d314e524daaa93265f0d330</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

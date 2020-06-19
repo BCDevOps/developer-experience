@@ -1,0 +1,76 @@
+{
+  "name" : "table",
+  "description" : "Formats data into a string table.",
+  "version" : "5.4.5",
+  "author" : {
+    "email" : "gajus@gajus.com",
+    "name" : "Gajus Kuizinas",
+    "url" : "http://gajus.com"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/gajus/table"
+  },
+  "engines" : {
+    "node" : ">=6.0.0"
+  },
+  "main" : "./dist/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/table/-/table-5.4.5.tgz",
+    "shasum" : "c8f4ea2d8fee08c0027fac27b0ec0a4fe01dfa42"
+  },
+  "dependencies" : {
+    "ajv" : "^6.10.2",
+    "lodash" : "^4.17.14",
+    "slice-ansi" : "^2.1.0",
+    "string-width" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@babel/cli" : "^7.5.0",
+    "@babel/core" : "^7.5.4",
+    "@babel/node" : "^7.5.0",
+    "@babel/plugin-transform-flow-strip-types" : "^7.4.4",
+    "@babel/preset-env" : "^7.5.4",
+    "@babel/register" : "^7.4.4",
+    "ajv-cli" : "^3.0.0",
+    "ajv-keywords" : "^3.4.1",
+    "babel-plugin-istanbul" : "^5.1.4",
+    "babel-plugin-lodash" : "^3.3.4",
+    "babel-plugin-transform-export-default-name" : "^2.0.4",
+    "chai" : "^4.2.0",
+    "chalk" : "^2.4.2",
+    "coveralls" : "^3.0.5",
+    "eslint" : "^5.13.0",
+    "eslint-config-canonical" : "^16.1.0",
+    "flow-bin" : "^0.102.0",
+    "flow-copy-source" : "^2.0.7",
+    "gitdown" : "^3.1.1",
+    "husky" : "^3.0.0",
+    "mocha" : "^6.1.4",
+    "nyc" : "^14.1.1",
+    "semantic-release" : "^15.13.18",
+    "sinon" : "^7.3.2"
+  },
+  "keywords" : [ "ascii", "text", "table", "align", "ansi" ],
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+    "build" : "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --copy-files --source-maps && npm run create-validators && flow-copy-source src dist",
+    "create-readme" : "gitdown ./.README/README.md --output-file ./README.md",
+    "create-validators" : "ajv compile --all-errors --inline-refs=false -s src/schemas/config -c ajv-keywords/keywords/typeof -o dist/validateConfig.js && ajv compile --all-errors --inline-refs=false -s src/schemas/streamConfig -c ajv-keywords/keywords/typeof -o dist/validateStreamConfig.js",
+    "lint" : "npm run build && eslint ./src ./test && flow",
+    "test" : "mocha --require @babel/register"
+  },
+  "husky" : {
+    "hooks" : {
+      "post-commit" : "npm run create-readme && git add README.md && git commit -m 'docs: generate docs' --no-verify",
+      "pre-commit" : "npm run lint && npm run test && npm run build"
+    }
+  },
+  "nyc" : {
+    "include" : [ "src/**/*.js" ],
+    "instrument" : false,
+    "reporter" : [ "text-lcov" ],
+    "require" : [ "@babel/register" ],
+    "sourceMap" : false
+  }
+}

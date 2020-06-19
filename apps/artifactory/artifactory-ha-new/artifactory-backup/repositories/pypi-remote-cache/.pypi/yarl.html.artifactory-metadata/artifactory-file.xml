@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/yarl.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>yarl.html</name>
+  <created>1574025268635</created>
+  <lastModified>1582154284034</lastModified>
+  <size>182464</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154284117</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>082903dcd1529ff5c60ce5ed724553c135dfd872</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9f1e649fe42e3917841db1f653e2f9c0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d86bc4c0c4306624da84f74bc51951c008a2062b43da3cb7d5f6cfd70258cab5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

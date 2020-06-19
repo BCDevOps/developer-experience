@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/typedarray/typedarray-0.0.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>typedarray-0.0.6.json</name>
+  <created>1576003436613</created>
+  <lastModified>1576003436579</lastModified>
+  <size>1259</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003436613</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c7cc2ce969b1c625678c72f02c1307ca72a65597</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8eb1779fb85cf95d757c9a576d92ac12</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d0c573cddab163fe1fe2b07d4a050ba321f30dbea173fc33fbc2834609f35c8c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>uuid/-/uuid-3.3.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>uuid-3.3.2.tgz</name>
+  <created>1576008066279</created>
+  <lastModified>1530221345000</lastModified>
+  <size>12909</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008066281</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1b4af4955eb3077c501c23872fc6513811587131</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6e363931242a2d61b006841a485af0ac</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>505f8ff9b83df6853deaf3b04852a48e9845963be04d4605313c6cabf8b4ee68</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

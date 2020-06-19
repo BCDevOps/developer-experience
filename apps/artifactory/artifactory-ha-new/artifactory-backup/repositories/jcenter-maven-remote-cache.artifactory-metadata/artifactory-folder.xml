@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-maven-remote-cache</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1568751180343</created>
+  <lastModified>1568751180343</lastModified>
+  <additionalInfo>
+    <lastUpdated>1568751180343</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

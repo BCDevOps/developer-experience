@@ -1,0 +1,29 @@
+{
+  "name" : "path-exists",
+  "description" : "Check if a path exists",
+  "version" : "4.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/path-exists",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/path-exists/-/path-exists-4.0.0.tgz",
+    "shasum" : "513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "path", "exists", "exist", "file", "filepath", "fs", "filesystem", "file-system", "access", "stat" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

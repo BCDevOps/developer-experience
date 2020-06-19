@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>bunyan/-/bunyan-1.8.12.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bunyan-1.8.12.tgz</name>
+  <created>1576003108979</created>
+  <lastModified>1527361886000</lastModified>
+  <size>271412</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003108980</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f150f0f6748abdd72aeae84f04403be2ef113797</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>257b5cb1532ddbc12dbd1d27f74df1a4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>252b2f8bfb0b3b15d48ab8d8d600ea352f83f27ded239b94a037212975bb8dc1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/tsutils/tsutils-2.28.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tsutils-2.28.0.json</name>
+  <created>1576008059076</created>
+  <lastModified>1576008058589</lastModified>
+  <size>1916</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059077</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6a132ce0176bcd43bd5fb0bc6f9ca1ea98fb3ec5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f9f01f573b1e893b46ac72fa122dbeb8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>463bcca6ede88c1207bd8d5ef991aec706a8c2b9a46402b07b2fe4d06d7bbe11</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+{
+  "name" : "jest-docblock",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-docblock"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-docblock/-/jest-docblock-25.3.0.tgz",
+    "shasum" : "8b777a27e3477cd77a168c05290c471a575623ef"
+  },
+  "dependencies" : {
+    "detect-newline" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@types/node" : "*"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

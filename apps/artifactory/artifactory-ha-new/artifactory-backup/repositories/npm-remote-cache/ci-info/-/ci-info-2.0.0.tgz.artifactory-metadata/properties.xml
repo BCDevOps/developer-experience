@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5cf88eb88dd4041e2f66f27e7c4ca6ba"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get details about the current continuous integration environment</npm.description>
+  <npm.keywords>["ci","continuous","integration","test","detect"]</npm.keywords>
+  <npm.name>ci-info</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

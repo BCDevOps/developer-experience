@@ -1,0 +1,47 @@
+{
+  "name" : "denque",
+  "description" : "The fastest javascript implementation of a double-ended queue. Maintains compatability with deque.",
+  "version" : "1.4.1",
+  "author" : {
+    "name" : "Invertase",
+    "email" : "oss@invertase.io",
+    "url" : "http://github.com/invertase/"
+  },
+  "homepage" : "https://github.com/invertase/denque#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/invertase/denque.git"
+  },
+  "contributors" : [ "Mike Diarmid (Salakar) <mike@invertase.io>" ],
+  "bugs" : {
+    "url" : "https://github.com/invertase/denque/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/denque/-/denque-1.4.1.tgz",
+    "shasum" : "6744ff7641c148c3f8a69c307e51235c1f4a37cf"
+  },
+  "devDependencies" : {
+    "benchmark" : "^2.1.4",
+    "coveralls" : "^2.13.3",
+    "double-ended-queue" : "^2.1.0-0",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^3.5.3",
+    "typescript" : "^3.4.1"
+  },
+  "keywords" : [ "data-structure", "data-structures", "queue", "double", "end", "ended", "deque", "denque", "double-ended-queue" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+    "test" : "istanbul cover --report lcov _mocha && npm run typescript",
+    "coveralls" : "cat ./coverage/lcov.info | coveralls",
+    "typescript" : "tsc --project ./test/type/tsconfig.json",
+    "benchmark_thousand" : "node benchmark/thousand",
+    "benchmark_2mil" : "node benchmark/two_million",
+    "benchmark_splice" : "node benchmark/splice",
+    "benchmark_remove" : "node benchmark/remove",
+    "benchmark_removeOne" : "node benchmark/removeOne"
+  }
+}

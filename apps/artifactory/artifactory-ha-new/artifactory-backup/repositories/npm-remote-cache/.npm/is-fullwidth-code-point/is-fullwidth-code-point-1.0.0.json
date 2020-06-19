@@ -1,0 +1,31 @@
+{
+  "name" : "is-fullwidth-code-point",
+  "description" : "Check if the character represented by a given Unicode code point is fullwidth",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/is-fullwidth-code-point",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz",
+    "shasum" : "ef9e31386f031a7f0d643af82fde50c457ef00cb"
+  },
+  "dependencies" : {
+    "number-is-nan" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "0.0.4",
+    "code-point-at" : "^1.0.0"
+  },
+  "keywords" : [ "fullwidth", "full-width", "full", "width", "unicode", "character", "char", "string", "str", "codepoint", "code", "point", "is", "detect", "check" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "node test.js"
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>typedarray/-/typedarray-0.0.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>typedarray-0.0.6.tgz</name>
+  <created>1576003436517</created>
+  <lastModified>1527451793000</lastModified>
+  <size>7481</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003436518</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>867ac74e3864187b1d3d47d996a78ec5c8830777</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>54a18bcd7fd55c812993e9ce90a0709d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3f324b75a9581c4c85cec25e8cd30831ccaa3c87770cee2ff4b9167055004108</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

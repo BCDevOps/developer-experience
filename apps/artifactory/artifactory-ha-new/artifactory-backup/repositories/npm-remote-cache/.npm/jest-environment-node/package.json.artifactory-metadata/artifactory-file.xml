@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-environment-node/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003096119</created>
+  <lastModified>1586352109000</lastModified>
+  <size>274038</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464319030</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>662c31ee03b259c6d8e1fed4a544093465745d98</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5f3c3875978731e9973c781a6b56c16d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8ff636ad75e2d0d0158eaf88351b8fd73cb15ee7e5b9e1296a7661a98aac7f2b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

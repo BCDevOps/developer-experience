@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9e7647515c0885e809f9aeb22de293f3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns true if the value is an object and not an array or null.</npm.description>
+  <npm.keywords>["check","is","is-object","isobject","kind","kind-of","kindof","native","object","type","typeof","value"]</npm.keywords>
+  <npm.name>isobject</npm.name>
+  <npm.version>3.0.1</npm.version>
+</properties>

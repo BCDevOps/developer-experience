@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"69ba3b37a84659f23be17d503816cbab"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>generate errors that contain a code frame that point to source locations.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/code-frame</npm.name>
+  <npm.version>7.0.0</npm.version>
+</properties>

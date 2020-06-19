@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66147121E47E5</artifactory.internal.etag>
+  <nuget.authors>Microsoft.DotNet.PlatformAbstractions</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>System.AppContext:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Collections:4.0.11:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO.FileSystem:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices.RuntimeInformation:4.0.0:.NETStandard1.3</nuget.dependency>
+  <nuget.description>Abstractions for making code that uses file system and environment testable.</nuget.description>
+  <nuget.digest>xwIyaAKMgbw4pMQQ7vN3IaDKzlXbbpmELjsXpkHvI7iMCDUdmjyodyKm911vPjM7FKJfnDFlSFeFoV55erXB7Q==</nuget.digest>
+  <nuget.frameworks>System.Core:.NETFramework4.5</nuget.frameworks>
+  <nuget.frameworks>System:.NETFramework4.5</nuget.frameworks>
+  <nuget.id>Microsoft.DotNet.PlatformAbstractions</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/core-setup/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>Microsoft.DotNet.PlatformAbstractions</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>2.0.4</nuget.version>
+</properties>

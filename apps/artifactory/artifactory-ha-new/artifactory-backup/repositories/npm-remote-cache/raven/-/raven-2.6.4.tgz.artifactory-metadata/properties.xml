@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"de459aa7654fdc929f641584265e4f39"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>a standalone (node.js) client for sentry</npm.description>
+  <npm.keywords>["debugging","errors","exceptions","logging","raven","sentry"]</npm.keywords>
+  <npm.name>raven</npm.name>
+  <npm.version>2.6.4</npm.version>
+</properties>

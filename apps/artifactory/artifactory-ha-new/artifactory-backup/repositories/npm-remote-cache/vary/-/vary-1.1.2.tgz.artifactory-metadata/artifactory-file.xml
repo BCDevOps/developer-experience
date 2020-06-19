@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>vary/-/vary-1.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>vary-1.1.2.tgz</name>
+  <created>1576003417678</created>
+  <lastModified>1527453937000</lastModified>
+  <size>3772</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003417679</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2299f02c6ded30d4a5961b0b9f74524a18f634fc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b571ab240474977c792dd29d4f812ca3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7378860671377a35e7a443ecfdca0745cfd066f595c90d581b827defea246e71</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"86c3f240a736cf5202db0a7c88b25f37"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>reliably get the terminal window size (columns &amp; rows)</npm.description>
+  <npm.keywords>["terminal","size","console","window","width","height","columns","rows","lines","tty","redirected"]</npm.keywords>
+  <npm.name>term-size</npm.name>
+  <npm.version>2.2.0</npm.version>
+</properties>

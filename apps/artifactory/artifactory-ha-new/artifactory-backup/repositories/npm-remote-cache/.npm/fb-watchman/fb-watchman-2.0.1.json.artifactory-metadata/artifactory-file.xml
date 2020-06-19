@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fb-watchman/fb-watchman-2.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fb-watchman-2.0.1.json</name>
+  <created>1576008070875</created>
+  <lastModified>1576008070483</lastModified>
+  <size>898</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008070875</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>06e32d8e33efbb21b271f27a40d0ecc0a23b6bb5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e93b49597252ddf1976d37c67aaececa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a5f5df4eb90f9adc0e0e4dc6972fdaedb950e83c4d67bb9ceaf14f84610b3a4d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

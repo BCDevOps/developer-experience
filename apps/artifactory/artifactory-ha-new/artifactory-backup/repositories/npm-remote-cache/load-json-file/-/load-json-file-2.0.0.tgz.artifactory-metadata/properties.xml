@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b73eceaca55279b20e8bd4b89d133ef9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>read and parse a json file</npm.description>
+  <npm.keywords>["read","json","parse","file","fs","graceful","load"]</npm.keywords>
+  <npm.name>load-json-file</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>1e/65/226d95466c75e34e291a76890ed0e27af2e46ab913002847856f11d4d59d/Flask_SQLAlchemy-2.4.1-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Flask_SQLAlchemy-2.4.1-py2.py3-none-any.whl</name>
+  <created>1574023018807</created>
+  <lastModified>1569335585000</lastModified>
+  <size>17331</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023018807</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4aac2c341cef265665a3e953b848102cea93853e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>68792bc2693ac34782c52346528816a1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0078d8663330dc05a74bc72b3b6ddc441b9a744e2f56fe60af1a5bfc81334327</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

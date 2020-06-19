@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b1e8a7caeb2bb7596aea4c0c6a663240"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>helper function to replace certain member expressions with function calls</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-member-expression-to-functions</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

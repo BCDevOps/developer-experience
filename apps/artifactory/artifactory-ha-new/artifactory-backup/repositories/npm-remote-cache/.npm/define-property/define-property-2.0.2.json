@@ -1,0 +1,46 @@
+{
+  "name" : "define-property",
+  "description" : "Define a non-enumerable property on an object. Uses Reflect.defineProperty when available, otherwise Object.defineProperty.",
+  "version" : "2.0.2",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/define-property",
+  "repository" : "jonschlinkert/define-property",
+  "contributors" : [ "Brian Woodward (https://twitter.com/doowb)", "Jon Schlinkert (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/define-property/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/define-property/-/define-property-2.0.2.tgz",
+    "shasum" : "d459689e8d654ba77e02a817f8710d702cb16e9d"
+  },
+  "dependencies" : {
+    "is-descriptor" : "^1.0.2",
+    "isobject" : "^3.0.1"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.3"
+  },
+  "keywords" : [ "define", "define-property", "enumerable", "key", "non", "non-enumerable", "object", "prop", "property", "value" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "assign-deep", "extend-shallow", "merge-deep", "mixin-deep" ]
+    },
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

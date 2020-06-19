@@ -1,0 +1,32 @@
+{
+  "name" : "@types/istanbul-lib-coverage",
+  "description" : "TypeScript definitions for istanbul-lib-coverage",
+  "version" : "2.0.1",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory" : "types/istanbul-lib-coverage"
+  },
+  "contributors" : [ {
+    "name" : "Jason Cheatham",
+    "url" : "https://github.com/jason0x43",
+    "githubUsername" : "jason0x43"
+  }, {
+    "name" : "Lorenzo Rapetti",
+    "url" : "https://github.com/loryman",
+    "githubUsername" : "loryman"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz",
+    "shasum" : "42995b446db9a48a11a07ec083499a860e9138ff"
+  },
+  "dependencies" : {
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "2.4",
+  "typesPublisherContentHash" : "fb2cf9603945473dc60dede8472e884daa070938a01b09aa816ca0cc979213ba"
+}

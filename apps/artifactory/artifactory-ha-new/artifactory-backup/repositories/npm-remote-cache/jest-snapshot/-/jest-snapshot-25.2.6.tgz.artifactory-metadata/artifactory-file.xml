@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>jest-snapshot/-/jest-snapshot-25.2.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-snapshot-25.2.6.tgz</name>
+  <created>1585853557951</created>
+  <lastModified>1585823387000</lastModified>
+  <size>22750</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853557951</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a3b99fa6fea4955b6a5fcb38c657e4daaba363f9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f805f3934f09e6beef0a867c681c5b8f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>48011ab5ab77536b1a1e5d35425dd63e975899fbba21d195c26de4a0723de525</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

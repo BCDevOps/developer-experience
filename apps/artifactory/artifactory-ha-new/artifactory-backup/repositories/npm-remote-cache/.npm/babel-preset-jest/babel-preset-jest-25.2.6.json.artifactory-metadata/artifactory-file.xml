@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/babel-preset-jest/babel-preset-jest-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel-preset-jest-25.2.6.json</name>
+  <created>1585853557985</created>
+  <lastModified>1585853557960</lastModified>
+  <size>869</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853557985</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>65adb94bb430abf7fa71f2e3467b44e4ce3e1107</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>dea64063287fdeae2f509094f98a7efb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e277ca7fd6a9eef90e746dec804d1ecce68b4e2ce30b2259434b83571add435</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

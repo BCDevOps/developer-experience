@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/redis-parser/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003450720</created>
+  <lastModified>1581005598000</lastModified>
+  <size>38079</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464327368</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7e91ef4dcc90412bf2c85222937340793b845489</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>eeb44dfaa104d1be549eea3fcc31b966</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>089c5d519a72d7b5d7bda434a5b965dc5b0a9e379731dfb3bdb998cd5407eb50</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

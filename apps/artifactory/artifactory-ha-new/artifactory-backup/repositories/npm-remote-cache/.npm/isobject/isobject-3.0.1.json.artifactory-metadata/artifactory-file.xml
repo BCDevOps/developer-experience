@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/isobject/isobject-3.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>isobject-3.0.1.json</name>
+  <created>1576003399043</created>
+  <lastModified>1576003399022</lastModified>
+  <size>1583</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003399044</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0919b506f8d13fa4c85b7b20e826da062bb20e26</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b6339966d2b256bd4dffbe7355c9b7b4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ebb697297707d019032788a7ccf5c9ad4b8a6d8776d71ea336aad808333c5fb6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

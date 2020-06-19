@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a58a665607ea59a5c2c4519282f6a261"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>blazing fast and accurate glob matcher written in javascript, with no dependencies and full support for standard and extended bash glob features, including braces, extglobs, posix brackets, and regular expressions.</npm.description>
+  <npm.keywords>["glob","match","picomatch"]</npm.keywords>
+  <npm.name>picomatch</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

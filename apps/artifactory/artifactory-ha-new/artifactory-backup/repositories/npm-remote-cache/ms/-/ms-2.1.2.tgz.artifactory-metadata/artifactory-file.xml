@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ms/-/ms-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ms-2.1.2.tgz</name>
+  <created>1576008070680</created>
+  <lastModified>1559842319000</lastModified>
+  <size>3017</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008070681</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d09d1f357b443f493382a8eb3ccd183872ae6009</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5a8310f20fd4b97c7f8eeaf65f896a7a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1157a6e30d3ffe1b9fcaf3a39caf159f8dc981199a3380c78ddd89f73bcefb48</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

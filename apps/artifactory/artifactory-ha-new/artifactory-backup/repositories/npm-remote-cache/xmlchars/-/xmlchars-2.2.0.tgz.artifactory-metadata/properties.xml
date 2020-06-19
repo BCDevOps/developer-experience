@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"03227f44c770d6747ef4257d8b52a43c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utilities for determining if characters belong to character classes defined by the xml specs.</npm.description>
+  <npm.keywords>["XML","validation"]</npm.keywords>
+  <npm.name>xmlchars</npm.name>
+  <npm.version>2.2.0</npm.version>
+</properties>

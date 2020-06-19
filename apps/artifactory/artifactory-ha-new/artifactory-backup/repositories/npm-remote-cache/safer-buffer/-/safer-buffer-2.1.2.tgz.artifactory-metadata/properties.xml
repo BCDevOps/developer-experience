@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1ea31bbc681f283e6148edd28904b3b3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>modern buffer api polyfill without footguns</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>safer-buffer</npm.name>
+  <npm.version>2.1.2</npm.version>
+</properties>

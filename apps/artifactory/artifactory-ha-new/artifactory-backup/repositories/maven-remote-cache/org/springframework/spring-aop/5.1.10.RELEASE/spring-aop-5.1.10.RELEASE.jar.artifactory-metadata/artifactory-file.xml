@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/spring-aop/5.1.10.RELEASE/spring-aop-5.1.10.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-aop-5.1.10.RELEASE.jar</name>
+  <created>1576861406683</created>
+  <lastModified>1569673063000</lastModified>
+  <size>371654</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861406684</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>e602c71f7c6e4479fe94d12597563f00c1d94aed</original>
+          <actual>e602c71f7c6e4479fe94d12597563f00c1d94aed</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>610ff9713aea261c2d0a000ec5a2a12a</original>
+          <actual>610ff9713aea261c2d0a000ec5a2a12a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>55c211e93b1cd339e2beae6e9440307d1fcb60bfd0c96c105ecea7f58bacc3d3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

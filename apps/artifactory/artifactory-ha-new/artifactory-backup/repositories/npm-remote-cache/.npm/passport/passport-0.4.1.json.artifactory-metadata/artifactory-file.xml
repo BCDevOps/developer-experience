@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/passport/passport-0.4.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>passport-0.4.1.json</name>
+  <created>1576008056177</created>
+  <lastModified>1576008055780</lastModified>
+  <size>1355</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008056272</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fb77f006386360f4b06595c12f609fb3a98634d5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f4baf1519dd95738a577613556f93854</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>84119b1897ee6cdf6598ebc2dd28a2c9a23cfe4f9714e7cebf6e8257ece85ddc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/flake8-quotes.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flake8-quotes.html</name>
+  <created>1574023481501</created>
+  <lastModified>1582154354813</lastModified>
+  <size>12882</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154354888</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0dea4d92444a71070a0cbe4376dd75bf6066f1a4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6d10e51af0cd207e07e29b4e400da7b2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>66cd997e3080660fdb290e9f79753991b7fed9eb3f78b89ff78480fb6c045772</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

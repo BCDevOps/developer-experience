@@ -1,0 +1,36 @@
+{
+  "name" : "dot-prop",
+  "description" : "Get, set, or delete a property from a nested object using a dot path",
+  "version" : "4.2.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/dot-prop",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/dot-prop/-/dot-prop-4.2.0.tgz",
+    "shasum" : "1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
+  },
+  "dependencies" : {
+    "is-obj" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "matcha" : "^0.7.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "obj", "object", "prop", "property", "dot", "path", "get", "set", "delete", "del", "access", "notation", "dotty" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava",
+    "bench" : "matcha bench.js"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

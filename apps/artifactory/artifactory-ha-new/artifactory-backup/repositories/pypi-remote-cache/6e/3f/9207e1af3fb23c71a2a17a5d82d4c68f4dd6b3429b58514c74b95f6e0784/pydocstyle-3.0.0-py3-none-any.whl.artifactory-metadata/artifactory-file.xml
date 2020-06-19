@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>6e/3f/9207e1af3fb23c71a2a17a5d82d4c68f4dd6b3429b58514c74b95f6e0784/pydocstyle-3.0.0-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pydocstyle-3.0.0-py3-none-any.whl</name>
+  <created>1574023483064</created>
+  <lastModified>1539518529000</lastModified>
+  <size>33005</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023483066</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3fca412f0d3e78aac25106b97f042965480d18e5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4ae78f653b00af0e0408701ed2ac7e3d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ed79d4ec5e92655eccc21eb0c6cf512e69512b4a97d215ace46d17e4990f2039</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

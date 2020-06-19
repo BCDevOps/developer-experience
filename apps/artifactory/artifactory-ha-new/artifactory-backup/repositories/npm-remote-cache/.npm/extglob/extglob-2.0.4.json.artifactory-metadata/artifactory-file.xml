@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extglob/extglob-2.0.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>extglob-2.0.4.json</name>
+  <created>1576003420574</created>
+  <lastModified>1576003420353</lastModified>
+  <size>2444</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003420574</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b58b2f3ed8837d7824111acea8a27eb3a7de422c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>043cff763327b3cdb42de41368db4910</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8c3e5a2cc43e2027d2bb38e208a601a5fc710fc82faeb0cfebbe2816539cf12c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

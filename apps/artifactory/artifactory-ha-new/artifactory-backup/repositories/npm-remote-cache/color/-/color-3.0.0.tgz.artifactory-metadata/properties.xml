@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"75ec20f8dcff8cc0f1582dd9c29efa5a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>color conversion and manipulation with css string support</npm.description>
+  <npm.keywords>["color","colour","css"]</npm.keywords>
+  <npm.name>color</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pydantic.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pydantic.html</name>
+  <created>1574124599971</created>
+  <lastModified>1584748840211</lastModified>
+  <size>73610</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1584748840296</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3a237b54532b13ee3b3ece7f9cff4686ee12b86a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a5f9e6c293d008bf4f5db7f650b132f5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9187a98ceaaa4f428bd8a2cda676686234e8cf54608dd9578520866caf24b921</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

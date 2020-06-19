@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>logform/-/logform-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>logform-2.1.2.tgz</name>
+  <created>1576008056975</created>
+  <lastModified>1549042829000</lastModified>
+  <size>28025</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008056977</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>957155ebeb67a13164069825ce67ddb5bb2dd360</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>859e9212fb31d3a372946597d17bfc6b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>680bdccb35ba299b2b6ae01c70d2be2e47cb548c2ba965ca8d6d9c6e095983c5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

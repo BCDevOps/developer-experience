@@ -1,0 +1,32 @@
+{
+  "name" : "parent-module",
+  "description" : "Get the path of the parent module",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/parent-module",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/parent-module/-/parent-module-1.0.1.tgz",
+    "shasum" : "691d2709e78c79fae3a156622452d00762caaaa2"
+  },
+  "dependencies" : {
+    "callsites" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "execa" : "^1.0.0",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "parent", "module", "package", "pkg", "caller", "calling", "module", "path", "callsites", "callsite", "stacktrace", "stack", "trace", "function", "file" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

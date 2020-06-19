@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c8ec3146ed3fd62cfba96b970fd2c355"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>an ini encoder/decoder for node</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>ini</npm.name>
+  <npm.version>1.3.5</npm.version>
+</properties>

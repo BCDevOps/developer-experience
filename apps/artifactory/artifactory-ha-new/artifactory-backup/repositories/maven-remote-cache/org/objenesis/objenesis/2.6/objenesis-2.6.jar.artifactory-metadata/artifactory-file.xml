@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/objenesis/objenesis/2.6/objenesis-2.6.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>objenesis-2.6.jar</name>
+  <created>1576861451919</created>
+  <lastModified>1497972514000</lastModified>
+  <size>55684</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861451919</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>639033469776fd37c08358c6b92a4761feb2af4b</original>
+          <actual>639033469776fd37c08358c6b92a4761feb2af4b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>5ffac3f51405ca9b2915970a224b3e8f</original>
+          <actual>5ffac3f51405ca9b2915970a224b3e8f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5e168368fbc250af3c79aa5fef0c3467a2d64e5a7bd74005f25d8399aeb0708d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

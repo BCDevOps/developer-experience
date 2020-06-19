@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>repeat-string/-/repeat-string-1.6.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>repeat-string-1.6.1.tgz</name>
+  <created>1576003634784</created>
+  <lastModified>1527436195000</lastModified>
+  <size>3339</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003634784</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8dcae470e1c88abc2d600fff4a776286da75e637</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ed49a5a26c9110a28411da1cded28e3a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0be1cb94d6cb3c063946f502d39eb59ffe837a846951dc9d2ff1a49b8598b4fe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

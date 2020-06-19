@@ -1,0 +1,27 @@
+{
+  "name" : "@babel/plugin-syntax-optional-catch-binding",
+  "description" : "Allow parsing of optional catch bindings",
+  "version" : "7.8.3",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-optional-catch-binding",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/plugin-syntax-optional-catch-binding/-/plugin-syntax-optional-catch-binding-7.8.3.tgz",
+    "shasum" : "6111a265bcfb020eb9efd0fdfd7d26402b9ed6c1"
+  },
+  "dependencies" : {
+    "@babel/helper-plugin-utils" : "^7.8.0"
+  },
+  "devDependencies" : {
+    "@babel/core" : "^7.8.0"
+  },
+  "peerDependencies" : {
+    "@babel/core" : "^7.0.0-0"
+  },
+  "keywords" : [ "babel-plugin" ],
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  }
+}

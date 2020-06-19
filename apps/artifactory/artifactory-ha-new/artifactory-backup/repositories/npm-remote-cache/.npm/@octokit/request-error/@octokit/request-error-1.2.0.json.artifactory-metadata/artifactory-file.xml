@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/request-error/@octokit/request-error-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>request-error-1.2.0.json</name>
+  <created>1576003114704</created>
+  <lastModified>1576003114662</lastModified>
+  <size>1582</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003114704</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a14e3932165298e2cc05904c03daa6043279e735</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>df0bf33cefa35f93341fe15b56dafb1a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a8759b8ff872b4564c5a82406939e9c353148a8963b98b840b9f5e53399fcbaa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

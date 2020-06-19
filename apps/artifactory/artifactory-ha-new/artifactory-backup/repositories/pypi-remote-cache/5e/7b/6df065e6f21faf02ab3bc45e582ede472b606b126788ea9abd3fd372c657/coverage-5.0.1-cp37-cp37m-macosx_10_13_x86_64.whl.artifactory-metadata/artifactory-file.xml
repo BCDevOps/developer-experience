@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>5e/7b/6df065e6f21faf02ab3bc45e582ede472b606b126788ea9abd3fd372c657/coverage-5.0.1-cp37-cp37m-macosx_10_13_x86_64.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>coverage-5.0.1-cp37-cp37m-macosx_10_13_x86_64.whl</name>
+  <created>1577997684336</created>
+  <lastModified>1577038657000</lastModified>
+  <size>202344</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1577997684337</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>467a38e756a945d50bd856c6495a77f6444fe41b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0eda717a6751186e2e1c4cc393b28b62</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cfce79ce41cc1a1dc7fc85bb41eeeb32d34a4cf39a645c717c0550287e30ff06</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

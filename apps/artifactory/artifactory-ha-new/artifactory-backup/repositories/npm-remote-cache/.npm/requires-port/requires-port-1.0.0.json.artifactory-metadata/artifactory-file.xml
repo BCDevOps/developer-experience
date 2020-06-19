@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/requires-port/requires-port-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>requires-port-1.0.0.json</name>
+  <created>1576003618439</created>
+  <lastModified>1576003618421</lastModified>
+  <size>1295</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003618440</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7f6ecf8c9bfb8092e7279d46647da09b32095d43</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f5db75ef4fee019afd7ae1a91c7a031f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9091b970d0782e3380b1db39647a66affe607c19665c1cb424ed89ec750931ba</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

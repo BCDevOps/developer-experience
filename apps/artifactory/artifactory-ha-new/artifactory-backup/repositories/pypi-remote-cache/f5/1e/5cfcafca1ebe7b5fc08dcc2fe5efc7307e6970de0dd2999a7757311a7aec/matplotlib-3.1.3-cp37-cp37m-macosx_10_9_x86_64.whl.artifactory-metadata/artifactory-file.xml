@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>f5/1e/5cfcafca1ebe7b5fc08dcc2fe5efc7307e6970de0dd2999a7757311a7aec/matplotlib-3.1.3-cp37-cp37m-macosx_10_9_x86_64.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>matplotlib-3.1.3-cp37-cp37m-macosx_10_9_x86_64.whl</name>
+  <created>1581102472761</created>
+  <lastModified>1580709780000</lastModified>
+  <size>13181981</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581102472762</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2b0c5946d43d27a96cffa17a789dd7d671172b09</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bfa1559316ab03668e8f1fe271c2add9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4164265ca573481ce61c83322e6b33628203afeabeb3e22c50376f5d3ee0f9be</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

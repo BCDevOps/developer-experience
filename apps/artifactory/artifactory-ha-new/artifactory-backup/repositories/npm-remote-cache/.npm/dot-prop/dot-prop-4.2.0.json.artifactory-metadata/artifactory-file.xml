@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/dot-prop/dot-prop-4.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>dot-prop-4.2.0.json</name>
+  <created>1576003486078</created>
+  <lastModified>1576003486057</lastModified>
+  <size>975</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003486078</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a7bee85e7050bc0e05fe79c11fd3beced1b2af33</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d7050b029a2ca80d6148dee42a5c3fea</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a45543f6d096cde276caa5ee6715f2bfdcf7e1a38523195ea024915a74030b12</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

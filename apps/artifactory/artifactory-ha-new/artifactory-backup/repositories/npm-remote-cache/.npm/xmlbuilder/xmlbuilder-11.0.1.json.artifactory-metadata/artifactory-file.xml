@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/xmlbuilder/xmlbuilder-11.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xmlbuilder-11.0.1.json</name>
+  <created>1576003415595</created>
+  <lastModified>1576003415503</lastModified>
+  <size>1155</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003415596</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>bdad4affdf211c033bc629a622a03fa1a5136691</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9ef31c5d032bec8e577053b087188889</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>defd6965da3ffda0ffefc3fd5f81d7e8c66a594e04c1a2c51a195e6cca62a0c8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d10a6b0e4219e9f1bf410dd4aa7bb67f"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>probot extension to trigger events on a periodic schedule</npm.description>
+  <npm.keywords>["probot"]</npm.keywords>
+  <npm.name>probot-scheduler</npm.name>
+  <npm.version>2.0.0-beta.1</npm.version>
+</properties>

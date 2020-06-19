@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>assertj-parent-pom-2.2.1.pom</name>
+  <created>1576861445927</created>
+  <lastModified>1534586623000</lastModified>
+  <size>15346</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861445927</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>cf10baf6ccc134b32029c6991e9d11525bb82f1f</original>
+          <actual>cf10baf6ccc134b32029c6991e9d11525bb82f1f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>32b745d9b8d2f9f1c8a5ed930987f2ba</original>
+          <actual>32b745d9b8d2f9f1c8a5ed930987f2ba</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0ed0b033714ba1e6247d3e13efff0520b76f8b54d333e8cdb0ee5f36c7298560</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

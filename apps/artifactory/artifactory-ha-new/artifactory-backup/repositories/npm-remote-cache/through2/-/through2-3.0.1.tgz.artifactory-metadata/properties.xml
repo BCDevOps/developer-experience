@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"988e1f9636fc22d4b70594bf37bfa243"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a tiny wrapper around node.js streams.transform (streams2/3) to avoid explicit subclassing noise</npm.description>
+  <npm.keywords>["stream","streams2","through","transform"]</npm.keywords>
+  <npm.name>through2</npm.name>
+  <npm.version>3.0.1</npm.version>
+</properties>

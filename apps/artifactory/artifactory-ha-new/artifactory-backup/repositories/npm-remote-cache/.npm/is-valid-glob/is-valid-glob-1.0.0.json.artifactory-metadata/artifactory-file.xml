@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-valid-glob/is-valid-glob-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-valid-glob-1.0.0.json</name>
+  <created>1576003402873</created>
+  <lastModified>1576003402678</lastModified>
+  <size>1343</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003402874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d67ef98146f3ca2d1b9ea927d12310dcfa4e84f4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1f34d203ac679e5869ea3018269c7fa2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>28ccd522e0ec9a3f47b055bca05c0f73718f4194413307410dbb75d25523c2ef</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

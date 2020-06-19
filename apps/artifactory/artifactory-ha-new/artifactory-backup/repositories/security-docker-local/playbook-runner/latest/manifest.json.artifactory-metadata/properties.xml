@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <docker.label.architecture>x86_64</docker.label.architecture>
+  <docker.label.authoritative-source-url>registry.access.redhat.com</docker.label.authoritative-source-url>
+  <docker.label.build-date>2019-12-10T17:53:44.032126</docker.label.build-date>
+  <docker.label.com.redhat.build-host>cpt-1004.osbs.prod.upshift.rdu2.redhat.com</docker.label.com.redhat.build-host>
+  <docker.label.com.redhat.component>ubi8-container</docker.label.com.redhat.component>
+  <docker.label.com.redhat.license__terms>https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI</docker.label.com.redhat.license__terms>
+  <docker.label.description>The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.</docker.label.description>
+  <docker.label.distribution-scope>public</docker.label.distribution-scope>
+  <docker.label.io.k8s.description>The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.</docker.label.io.k8s.description>
+  <docker.label.io.k8s.display-name>Red Hat Universal Base Image 8</docker.label.io.k8s.display-name>
+  <docker.label.io.openshift.expose-services></docker.label.io.openshift.expose-services>
+  <docker.label.io.openshift.tags>base rhel8</docker.label.io.openshift.tags>
+  <docker.label.maintainer>Red Hat, Inc.</docker.label.maintainer>
+  <docker.label.name>ubi8</docker.label.name>
+  <docker.label.release>328</docker.label.release>
+  <docker.label.summary>Provides the latest release of Red Hat Universal Base Image 8.</docker.label.summary>
+  <docker.label.url>https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.1-328</docker.label.url>
+  <docker.label.vcs-ref>c42933bcdbf9f1c232e981a5e40de257c3534c8e</docker.label.vcs-ref>
+  <docker.label.vcs-type>git</docker.label.vcs-type>
+  <docker.label.vendor>Red Hat, Inc.</docker.label.vendor>
+  <docker.label.version>8.1</docker.label.version>
+  <docker.manifest>latest</docker.manifest>
+  <docker.manifest.digest>sha256:31fb790142cde83c6d67ece14b00eccd168f97d927d462781f39f7f2cc614834</docker.manifest.digest>
+  <docker.manifest.type>application/vnd.docker.distribution.manifest.v2+json</docker.manifest.type>
+  <docker.repoName>playbook-runner</docker.repoName>
+  <sha256>31fb790142cde83c6d67ece14b00eccd168f97d927d462781f39f7f2cc614834</sha256>
+</properties>

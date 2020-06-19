@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5792a578d23a71dc6d4bf4310851efd1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>string validation and sanitization</npm.description>
+  <npm.keywords>["validator","validation","validate","sanitization","sanitize","sanitisation","sanitise","assert"]</npm.keywords>
+  <npm.name>validator</npm.name>
+  <npm.version>10.11.0</npm.version>
+</properties>

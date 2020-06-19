@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/confusing-browser-globals</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>confusing-browser-globals</name>
+  <created>1579828143495</created>
+  <lastModified>1579828143495</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828143495</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

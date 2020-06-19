@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tsutils/-/tsutils-2.29.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tsutils-2.29.0.tgz</name>
+  <created>1576008060177</created>
+  <lastModified>1532452333000</lastModified>
+  <size>81457</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008060272</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>32b488501467acbedd4b85498673a0812aca0b99</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cf4248ec816519b201508dc374e148ef</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2af404fff12724eda2355f6de9d0a9bd66670606f7b0dc9f1169a67682536532</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

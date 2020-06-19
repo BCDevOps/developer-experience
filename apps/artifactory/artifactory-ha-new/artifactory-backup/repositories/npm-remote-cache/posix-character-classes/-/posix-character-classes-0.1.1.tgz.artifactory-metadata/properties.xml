@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1fc17a88bddf7099b36179e8acbb68e9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>posix character classes for creating regular expressions.</npm.description>
+  <npm.keywords>["character","classes","posix"]</npm.keywords>
+  <npm.name>posix-character-classes</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

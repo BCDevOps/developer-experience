@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66153A51F75F4</artifactory.internal.etag>
+  <nuget.authors>Microsoft.AspNetCore.Authorization</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Security.Claims:[4.0.1, ):.NETStandard1.3</nuget.dependency>
+  <nuget.description>ASP.NET Core authorization classes.
+Commonly used types:
+Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
+Microsoft.AspNetCore.Authorization.AuthorizeAttribute</nuget.description>
+  <nuget.digest>NCa7zOyObFF+s4gJKx+cNEy15M0AqIlgpAo00QPseo5HOwGd5q0KI4197fp61AJjZgF8sDUJGoOd+VaDqNwQ7Q==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Authorization</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.AspNetCore.Authorization</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore,authorization</nuget.tags>
+  <nuget.version>1.0.2</nuget.version>
+</properties>

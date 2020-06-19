@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3a797baf0ace1ade7950a73a86e80b61"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>helper function to get function arity</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-get-function-arity</npm.name>
+  <npm.version>7.7.0</npm.version>
+</properties>

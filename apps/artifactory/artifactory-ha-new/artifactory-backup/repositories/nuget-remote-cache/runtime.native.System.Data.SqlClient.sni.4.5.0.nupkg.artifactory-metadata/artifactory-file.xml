@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>runtime.native.System.Data.SqlClient.sni.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>runtime.native.System.Data.SqlClient.sni.4.5.0.nupkg</name>
+  <created>1578432199880</created>
+  <lastModified>1538775207000</lastModified>
+  <size>26331</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432199884</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5ef3f6cab3d72ce0c71150e120becbf3f8e7b3a6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fcaf6bf3e9c814663b582550d15563f4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1ef0d551a5ce12cb165e9d7c6ff4801c4743d8be4e283078035de694618da667</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@fimbul</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@fimbul</name>
+  <created>1576003408618</created>
+  <lastModified>1576003408618</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003408618</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

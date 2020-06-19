@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"294d08305190ec4be69f38591e4ae270"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a regular expression for file paths that contain a `node_modules` folder.</npm.description>
+  <npm.keywords>["node_modules","regular expression","regular expressions","regular","expression","expressions","exclude","include","ignore","node","module"]</npm.keywords>
+  <npm.name>node-modules-regexp</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

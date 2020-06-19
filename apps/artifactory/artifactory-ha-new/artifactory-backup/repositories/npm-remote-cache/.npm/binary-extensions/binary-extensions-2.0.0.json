@@ -1,0 +1,29 @@
+{
+  "name" : "binary-extensions",
+  "description" : "List of binary file extensions",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/binary-extensions",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/binary-extensions/-/binary-extensions-2.0.0.tgz",
+    "shasum" : "23c0df14f6a88077f5f986c0d167ec03c3d5537c"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "binary", "extensions", "extension", "file", "json", "list", "array" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts", "binary-extensions.json", "binary-extensions.json.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

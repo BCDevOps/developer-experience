@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74030BE36E527</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile259</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.3:.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.3:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.3:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.3:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>This package provides collections that are thread safe and guaranteed to never change their contents, also known as immutable collections. Like strings, any methods that perform modifications will not change the existing instance but instead return a new instance. For efficiency reasons, the implementation uses a sharing mechanism to ensure that newly created instances share as much data as possible with the previous instance while ensuring that operations have a predictable time complexity.
+
+Commonly Used Types:
+System.Collections.Immutable.ImmutableArray
+System.Collections.Immutable.ImmutableArray&lt;T>
+System.Collections.Immutable.ImmutableDictionary
+System.Collections.Immutable.ImmutableDictionary&lt;TKey,TValue>
+System.Collections.Immutable.ImmutableHashSet
+System.Collections.Immutable.ImmutableHashSet&lt;T>
+System.Collections.Immutable.ImmutableList
+System.Collections.Immutable.ImmutableList&lt;T>
+System.Collections.Immutable.ImmutableQueue
+System.Collections.Immutable.ImmutableQueue&lt;T>
+System.Collections.Immutable.ImmutableSortedDictionary
+System.Collections.Immutable.ImmutableSortedDictionary&lt;TKey,TValue>
+System.Collections.Immutable.ImmutableSortedSet
+System.Collections.Immutable.ImmutableSortedSet&lt;T>
+System.Collections.Immutable.ImmutableStack
+System.Collections.Immutable.ImmutableStack&lt;T></nuget.description>
+  <nuget.digest>YH9/rXDMkvtdImieokrWP5YWSRqUXRxgIKRAMFH68Cit4JoBc4ixcyLDtGQi/Zwi0RQi1S8cIz8lr6CTpsw8+g==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Collections.Immutable</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://github.com/dotnet/corefx</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Collections.Immutable</nuget.title>
+  <nuget.version>1.6.0</nuget.version>
+</properties>

@@ -1,0 +1,47 @@
+{
+  "name" : "cacheable-request",
+  "description" : "Wrap native HTTP requests with RFC compliant cache support",
+  "version" : "6.1.0",
+  "author" : "Luke Childs <lukechilds123@gmail.com> (http://lukechilds.co.uk)",
+  "repository" : "lukechilds/cacheable-request",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "src/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cacheable-request/-/cacheable-request-6.1.0.tgz",
+    "shasum" : "20ffb8bd162ba4be11e9567d823db651052ca912"
+  },
+  "dependencies" : {
+    "clone-response" : "^1.0.2",
+    "get-stream" : "^5.1.0",
+    "http-cache-semantics" : "^4.0.0",
+    "keyv" : "^3.0.0",
+    "lowercase-keys" : "^2.0.0",
+    "normalize-url" : "^4.1.0",
+    "responselike" : "^1.0.2"
+  },
+  "devDependencies" : {
+    "@keyv/sqlite" : "^2.0.0",
+    "ava" : "^1.1.0",
+    "coveralls" : "^3.0.0",
+    "create-test-server" : "3.0.0",
+    "delay" : "^4.0.0",
+    "eslint-config-xo-lukechilds" : "^1.0.0",
+    "nyc" : "^14.1.1",
+    "pify" : "^4.0.0",
+    "sqlite3" : "^4.0.2",
+    "this" : "^1.0.2",
+    "xo" : "^0.23.0"
+  },
+  "keywords" : [ "HTTP", "HTTPS", "cache", "caching", "layer", "cacheable", "RFC 7234", "RFC", "7234", "compliant" ],
+  "license" : "MIT",
+  "files" : [ "src" ],
+  "scripts" : {
+    "test" : "xo && nyc ava",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls"
+  },
+  "xo" : {
+    "extends" : "xo-lukechilds"
+  }
+}

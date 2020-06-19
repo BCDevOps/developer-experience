@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647F1864DFA0</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16300</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides support for code-page based encodings, including Windows-1252, Shift-JIS, and GB2312.
+
+Commonly Used Types:
+System.Text.CodePagesEncodingProvider
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>aQnlUgT+JK/81iv62zE7hR7FZJOgKbMNuxlK5l6u3CchtZ2FG5LIMnedmvVgT1phTnX4qWCUIoyfGTQlxrLNog==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Text.Encoding.CodePages</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Text.Encoding.CodePages</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

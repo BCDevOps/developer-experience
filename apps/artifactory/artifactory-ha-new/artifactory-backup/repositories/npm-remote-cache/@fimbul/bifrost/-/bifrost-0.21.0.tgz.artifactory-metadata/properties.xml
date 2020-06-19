@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cfb0d53343a82fcfd0a1ac0a1fccf89a"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>compatibility layer for tslint rules</npm.description>
+  <npm.keywords>["wotan","rules","formatters","tslint","compatibility"]</npm.keywords>
+  <npm.name>@fimbul/bifrost</npm.name>
+  <npm.version>0.21.0</npm.version>
+</properties>

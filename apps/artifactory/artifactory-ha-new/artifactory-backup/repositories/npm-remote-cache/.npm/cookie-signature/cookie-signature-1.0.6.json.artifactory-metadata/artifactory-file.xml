@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/cookie-signature/cookie-signature-1.0.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cookie-signature-1.0.6.json</name>
+  <created>1576003445467</created>
+  <lastModified>1576003445435</lastModified>
+  <size>740</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003445468</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>8c095e1292b8f2cf5eb9acc1e4df27cb9fe9b968</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a85d421f514b35662280237a26afbc1f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>143897e5a0028ba848542ddf20e9372c6c9e20ceccc9a3284d8fa1ad3fcbd600</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

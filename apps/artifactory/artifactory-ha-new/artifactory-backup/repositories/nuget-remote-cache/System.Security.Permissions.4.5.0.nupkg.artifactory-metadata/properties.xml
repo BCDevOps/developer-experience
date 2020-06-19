@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62C2468FD2ECB</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>System.Security.AccessControl:4.5.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Security.AccessControl:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16299</nuget.dependency>
+  <nuget.description>Provides types supporting Code Access Security (CAS). 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>O+e9qamSTJ4YOJCpnLgsf9FTGfsxJv2On1OdYkhmd/XA5AYRvUatkz7Rp3dS9XR7rhVuklnjST1dRoMK7N4cGw==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Data:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Data.OracleClient:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Drawing:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Net:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.ServiceProcess:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.frameworks>System.Transactions:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Security.Permissions</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Security.Permissions</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

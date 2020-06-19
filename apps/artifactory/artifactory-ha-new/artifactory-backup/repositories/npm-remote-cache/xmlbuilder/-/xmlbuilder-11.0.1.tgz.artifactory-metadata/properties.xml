@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fa196533a3520c0a2abf38f7dae4691e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>an xml builder for node.js</npm.description>
+  <npm.keywords>["xml","xmlbuilder"]</npm.keywords>
+  <npm.name>xmlbuilder</npm.name>
+  <npm.version>11.0.1</npm.version>
+</properties>

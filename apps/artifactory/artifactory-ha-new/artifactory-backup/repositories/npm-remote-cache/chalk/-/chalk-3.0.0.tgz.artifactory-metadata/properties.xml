@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3a589aa3ef2c93b8a6bac7ed3952df9c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>terminal string styling done right</npm.description>
+  <npm.keywords>["color","colour","colors","terminal","console","cli","string","str","ansi","style","styles","tty","formatting","rgb","256","shell","xterm","log","logging","command-line","text"]</npm.keywords>
+  <npm.name>chalk</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

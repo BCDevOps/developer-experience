@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74030EEF6D079</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.1</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:Windows8.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides classes that allow a compiler or tool to emit metadata and optionally generate a PE file on disk. The primary clients of these classes are script engines and compilers.
+
+Commonly Used Types:
+System.Reflection.Emit.AssemblyBuilder
+System.Reflection.Emit.FieldBuilder
+System.Reflection.Emit.TypeBuilder
+System.Reflection.Emit.MethodBuilder
+System.Reflection.Emit.ConstructorBuilder
+System.Reflection.Emit.GenericTypeParameterBuilder
+System.Reflection.Emit.ModuleBuilder
+System.Reflection.Emit.PropertyBuilder
+System.Reflection.Emit.AssemblyBuilderAccess
+System.Reflection.Emit.EventBuilder
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>ncwNbK0wlXxsijaEPTvAYF4jfq1UeNdZXS8V63UDPtgH5DQ9r54Fc3OR9PV4DyGJNftOOUK8PTPlg6KXzLkTFg==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Reflection.Emit</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://github.com/dotnet/corefx</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Reflection.Emit</nuget.title>
+  <nuget.version>4.6.0</nuget.version>
+</properties>

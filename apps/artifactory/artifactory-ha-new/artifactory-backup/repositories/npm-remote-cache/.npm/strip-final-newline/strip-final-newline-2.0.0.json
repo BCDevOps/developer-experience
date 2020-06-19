@@ -1,0 +1,28 @@
+{
+  "name" : "strip-final-newline",
+  "description" : "Strip the final newline character from a string/buffer",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/strip-final-newline",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/strip-final-newline/-/strip-final-newline-2.0.0.tgz",
+    "shasum" : "89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
+  },
+  "devDependencies" : {
+    "ava" : "^0.25.0",
+    "xo" : "^0.23.0"
+  },
+  "keywords" : [ "strip", "trim", "remove", "delete", "final", "last", "end", "file", "newline", "linebreak", "character", "string", "buffer" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

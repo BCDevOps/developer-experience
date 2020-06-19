@@ -1,0 +1,53 @@
+{
+  "name" : "array-sort",
+  "description" : "Fast and powerful array sorting. Sort an array of objects by one or more properties. Any number of nested properties or custom comparison functions may be used.",
+  "version" : "1.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/array-sort",
+  "repository" : "jonschlinkert/array-sort",
+  "contributors" : [ "Brian Woodward (https://twitter.com/doowb)", "Jan Stola (https://github.com/iamstolis)", "Jon Schlinkert (http://twitter.com/jonschlinkert)", "Kevin Ward (https://github.com/wkevina)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/array-sort/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/array-sort/-/array-sort-1.0.0.tgz",
+    "shasum" : "e4c05356453f56f53512a7d1d6123f2c54c0a88a"
+  },
+  "dependencies" : {
+    "default-compare" : "^1.0.0",
+    "get-value" : "^2.0.6",
+    "kind-of" : "^5.0.2"
+  },
+  "devDependencies" : {
+    "ansi-bold" : "^0.1.1",
+    "benchmarked" : "^0.1.5",
+    "glob" : "^7.0.3",
+    "gulp-format-md" : "^0.1.8",
+    "lodash.sortbyorder" : "^3.4.4",
+    "mocha" : "^2.4.5",
+    "should" : "^8.3.1"
+  },
+  "keywords" : [ "arr", "array", "asc", "ascend", "ascending", "desc", "descend", "descending", "dot", "element", "elements", "get", "multiple", "nested", "obj", "object", "order", "ordered", "path", "prop", "properties", "property", "sort", "sorted", "sorting" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "reflinks" : [ "verb" ],
+    "related" : {
+      "list" : [ "get-value", "set-value", "sort-asc", "sort-desc", "sort-object" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>resolve/-/resolve-1.1.7.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>resolve-1.1.7.tgz</name>
+  <created>1576003642521</created>
+  <lastModified>1527436567000</lastModified>
+  <size>9640</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003642522</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>203114d82ad2c5ed9e8e0411b3932875e889e97b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a456797891e5a1fa68386af76cd1b265</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>605726c06837d76d2da4946e25ce90c2467672f6f52293199f570dab74e0fe0b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

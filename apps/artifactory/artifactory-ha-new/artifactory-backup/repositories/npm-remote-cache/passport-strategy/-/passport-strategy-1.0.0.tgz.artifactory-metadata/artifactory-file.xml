@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>passport-strategy/-/passport-strategy-1.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>passport-strategy-1.0.0.tgz</name>
+  <created>1576003397789</created>
+  <lastModified>1527422136000</lastModified>
+  <size>2481</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003397789</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b5539aa8fc225a3d1ad179476ddf236b440f52e4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e21f197a1b0f54bc365d2338c2f969be</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f915fe20ada19b9abc95a0e5f113d666964d922c8ec97f283ae00ece4df3c920</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/websocket-client.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>websocket-client.html</name>
+  <created>1574234379489</created>
+  <lastModified>1574234379442</lastModified>
+  <size>20138</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234379490</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bef3e0d43896332229876c507e6e98bb2ea492b6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1a45e1a5f5041dbce3032e8f4766d967</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>58e8ff4001a04666d686f93ce9f41322086d4b14860b551e36081a387d994850</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

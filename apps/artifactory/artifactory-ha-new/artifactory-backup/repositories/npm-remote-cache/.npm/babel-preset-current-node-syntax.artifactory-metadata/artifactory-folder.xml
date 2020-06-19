@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/babel-preset-current-node-syntax</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>babel-preset-current-node-syntax</name>
+  <created>1586464355641</created>
+  <lastModified>1586464355641</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464355641</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

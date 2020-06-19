@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"178ae71252b88bf3ade8bfbcb17f6102"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ensure a function is only called once</npm.description>
+  <npm.keywords>["once","function","one","onetime","func","fn","single","call","called","prevent"]</npm.keywords>
+  <npm.name>onetime</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

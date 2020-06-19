@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"73498e197ff2480f5e1d1644940aa0b6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>core utilities to support eslint-plugin-import and other module-related plugins.</npm.description>
+  <npm.keywords>["eslint-plugin-import","eslint","modules","esmodules"]</npm.keywords>
+  <npm.name>eslint-module-utils</npm.name>
+  <npm.version>2.5.2</npm.version>
+</properties>

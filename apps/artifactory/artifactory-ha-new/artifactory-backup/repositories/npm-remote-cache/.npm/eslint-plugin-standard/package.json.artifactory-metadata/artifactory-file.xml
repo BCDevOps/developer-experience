@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-plugin-standard/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003397530</created>
+  <lastModified>1566246313000</lastModified>
+  <size>31334</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464341156</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a55091569b66e6a3bb805a1862643355c1ff74a8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5bbd4d206e03aef63c1ceb9916bc1004</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9c9bd5305dcecb17788da6df700f977f45c7e5232a5ae0fb7c124f3b59a57ec7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>yargs</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>yargs</name>
+  <created>1576003080840</created>
+  <lastModified>1576003080840</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003080840</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

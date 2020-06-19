@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/copy-descriptor/copy-descriptor-0.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>copy-descriptor-0.1.1.json</name>
+  <created>1576003670419</created>
+  <lastModified>1576003670377</lastModified>
+  <size>1258</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003670420</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a97a3ecfa38dd1c18834294d4df8aedbe793aa47</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1f745ae0b0f222fa8fc4991b1277feab</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e97f92bbd6b1b2ef61d441267127228936f59e7131804643eed6c419ad99c390</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

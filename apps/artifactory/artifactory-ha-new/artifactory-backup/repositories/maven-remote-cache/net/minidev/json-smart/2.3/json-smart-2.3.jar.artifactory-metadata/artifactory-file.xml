@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>net/minidev/json-smart/2.3/json-smart-2.3.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-smart-2.3.jar</name>
+  <created>1576861453714</created>
+  <lastModified>1490515017000</lastModified>
+  <size>120316</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861453715</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>007396407491352ce4fa30de92efb158adb76b5b</original>
+          <actual>007396407491352ce4fa30de92efb158adb76b5b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>f2a921d4baaa7308de04eed4d8d72715</original>
+          <actual>f2a921d4baaa7308de04eed4d8d72715</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>903f48c8aa4c3f6426440b8d32de89fa1dc23b1169abde25e4e1d068aa67708b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

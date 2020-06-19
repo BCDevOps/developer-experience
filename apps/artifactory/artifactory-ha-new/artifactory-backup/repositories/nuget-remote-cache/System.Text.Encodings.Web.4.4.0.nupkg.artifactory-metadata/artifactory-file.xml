@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Text.Encodings.Web.4.4.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Text.Encodings.Web.4.4.0.nupkg</name>
+  <created>1578432226312</created>
+  <lastModified>1544738719000</lastModified>
+  <size>77462</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432226312</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a7120ad10458668d45e3b81cc66bb41d5982e68b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bea0a0a289dc3d0747fc90d642cd360a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>08819ec7f2062ae4851366fc2a4b2b64853724957c6ca0f606ff19b8a31f1717</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

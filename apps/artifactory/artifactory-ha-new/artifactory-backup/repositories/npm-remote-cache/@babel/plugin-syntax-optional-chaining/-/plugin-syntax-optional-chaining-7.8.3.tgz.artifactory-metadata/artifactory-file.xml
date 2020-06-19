@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/plugin-syntax-optional-chaining/-/plugin-syntax-optional-chaining-7.8.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-syntax-optional-chaining-7.8.3.tgz</name>
+  <created>1586464317045</created>
+  <lastModified>1578950086000</lastModified>
+  <size>1462</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464317046</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4f69c2ab95167e0180cd5336613f8c5788f7d48a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5dcf5f55ba553670f50aa31f5f774748</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f597dcdf1d7ac372210e1f4b622f779f3bda962ec2ff6139b4633ee5be693ee4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

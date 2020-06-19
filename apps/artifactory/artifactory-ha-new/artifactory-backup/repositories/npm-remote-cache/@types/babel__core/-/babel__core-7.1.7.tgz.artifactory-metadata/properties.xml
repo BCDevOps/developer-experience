@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"858334142cf9bbf5149dce6d91b95baf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for @babel/core</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/babel__core</npm.name>
+  <npm.version>7.1.7</npm.version>
+</properties>

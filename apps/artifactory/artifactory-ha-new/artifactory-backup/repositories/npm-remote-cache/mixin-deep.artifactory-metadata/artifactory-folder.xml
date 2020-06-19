@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mixin-deep</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>mixin-deep</name>
+  <created>1576008070673</created>
+  <lastModified>1576008070673</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008070673</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

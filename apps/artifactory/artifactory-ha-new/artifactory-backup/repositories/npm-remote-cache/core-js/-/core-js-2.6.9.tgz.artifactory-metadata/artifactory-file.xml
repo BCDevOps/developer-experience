@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>core-js/-/core-js-2.6.9.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>core-js-2.6.9.tgz</name>
+  <created>1579828074203</created>
+  <lastModified>1558961673000</lastModified>
+  <size>615273</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828074205</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6b4b214620c834152e179323727fc19741b084f2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7fb812931aa90244ec1ab79b968a1753</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bf21340cebff14168f2192aa1a341734b41f4cde9d30e93bee281399f5f32a96</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

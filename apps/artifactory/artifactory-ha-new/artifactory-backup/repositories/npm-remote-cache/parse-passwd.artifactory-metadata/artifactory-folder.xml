@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>parse-passwd</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>parse-passwd</name>
+  <created>1576003607591</created>
+  <lastModified>1576003607591</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003607591</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a49099d108479157c6efcc4b739a00b2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>expand posix bracket expressions (character classes) in glob patterns.</npm.description>
+  <npm.keywords>["bracket","brackets","character class","expand","expression","posix"]</npm.keywords>
+  <npm.name>expand-brackets</npm.name>
+  <npm.version>2.1.4</npm.version>
+</properties>

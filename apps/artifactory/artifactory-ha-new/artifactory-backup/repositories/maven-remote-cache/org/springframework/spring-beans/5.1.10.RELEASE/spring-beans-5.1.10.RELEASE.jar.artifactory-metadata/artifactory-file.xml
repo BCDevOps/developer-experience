@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/spring-beans/5.1.10.RELEASE/spring-beans-5.1.10.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-beans-5.1.10.RELEASE.jar</name>
+  <created>1576861407174</created>
+  <lastModified>1569673040000</lastModified>
+  <size>673979</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861407175</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6aa17eabf08008f22e7824285663662e7c27e3f4</original>
+          <actual>6aa17eabf08008f22e7824285663662e7c27e3f4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>caa4f4e6aceb22fe6a19d2114209f89f</original>
+          <actual>caa4f4e6aceb22fe6a19d2114209f89f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c82469fd2715bdb3194dff9ab3fbb215f351473d428fc169328d975b30992b9d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

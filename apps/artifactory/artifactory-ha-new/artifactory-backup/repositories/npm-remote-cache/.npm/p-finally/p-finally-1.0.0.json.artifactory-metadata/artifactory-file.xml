@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-finally/p-finally-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-finally-1.0.0.json</name>
+  <created>1576003642336</created>
+  <lastModified>1576003642266</lastModified>
+  <size>907</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003642342</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>14a38ecd6f7e75f7bc3aa7a84718b8c8bef24560</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cc8e63327194b881f4f5199db2963d93</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bffb4c15d832f3361d0f51cc65e76f813d640e78445f7b4753a7ac9bd4283726</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

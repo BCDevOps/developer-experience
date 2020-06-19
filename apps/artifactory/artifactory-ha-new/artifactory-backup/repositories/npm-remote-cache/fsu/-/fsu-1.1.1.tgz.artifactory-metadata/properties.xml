@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1fd16d1f3444792088d0462cc83e6453"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>unique file name with streams support</npm.description>
+  <npm.keywords>["counter","file","filename","fs","stream","unique"]</npm.keywords>
+  <npm.name>fsu</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

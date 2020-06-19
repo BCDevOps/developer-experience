@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>strip-json-comments/-/strip-json-comments-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>strip-json-comments-2.0.1.tgz</name>
+  <created>1576003657131</created>
+  <lastModified>1527445564000</lastModified>
+  <size>2270</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003657131</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3c531942e908c2697c0ec344858c286c7ca0a60a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>af7d37e88560f64851d5c27b0abc617e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>dbe45febaf1bf7265c25733242bc0e7ac38b632db6a8e19f0341af4770425899</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

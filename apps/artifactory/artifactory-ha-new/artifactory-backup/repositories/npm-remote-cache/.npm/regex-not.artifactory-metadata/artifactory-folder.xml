@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/regex-not</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>regex-not</name>
+  <created>1576003476508</created>
+  <lastModified>1576003476508</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003476508</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

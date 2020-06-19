@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/assign-symbols</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>assign-symbols</name>
+  <created>1576003456519</created>
+  <lastModified>1576003456519</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003456519</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

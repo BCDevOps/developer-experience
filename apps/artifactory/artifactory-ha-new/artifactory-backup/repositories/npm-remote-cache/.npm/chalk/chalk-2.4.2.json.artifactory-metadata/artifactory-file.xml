@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/chalk/chalk-2.4.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>chalk-2.4.2.json</name>
+  <created>1576008063175</created>
+  <lastModified>1576008062786</lastModified>
+  <size>1412</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008063176</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>91e0a661ab7df9cf33f6b1ac1033487c97fb1fb1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a6f85745954c861e37ac6bb591f97e8a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1ea50ca0b4913932dd7f5a2bffa4558bf5c8c3dfc1fc9490a1fc6884bc289d10</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

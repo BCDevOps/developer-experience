@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/define-properties/define-properties-1.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>define-properties-1.1.3.json</name>
+  <created>1576003452727</created>
+  <lastModified>1576003452694</lastModified>
+  <size>1839</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003452728</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>dfd1efe1b94bac09437965a6c36920b038dc945b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6f81538a141aed3b27520da9eaa44e83</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e69467805cb3821722a002af85d3fed2d1b12c2054304ea65102b19dac6fbc54</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

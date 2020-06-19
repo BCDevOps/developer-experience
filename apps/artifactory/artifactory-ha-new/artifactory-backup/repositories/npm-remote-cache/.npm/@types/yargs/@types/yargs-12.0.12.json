@@ -1,0 +1,52 @@
+{
+  "name" : "@types/yargs",
+  "description" : "TypeScript definitions for yargs",
+  "version" : "12.0.12",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory" : "types/yargs"
+  },
+  "contributors" : [ {
+    "name" : "Martin Poelstra",
+    "url" : "https://github.com/poelstra",
+    "githubUsername" : "poelstra"
+  }, {
+    "name" : "Mizunashi Mana",
+    "url" : "https://github.com/mizunashi-mana",
+    "githubUsername" : "mizunashi-mana"
+  }, {
+    "name" : "Jeffery Grajkowski",
+    "url" : "https://github.com/pushplay",
+    "githubUsername" : "pushplay"
+  }, {
+    "name" : "Jeff Kenney",
+    "url" : "https://github.com/jeffkenney",
+    "githubUsername" : "jeffkenney"
+  }, {
+    "name" : "Jimi (Dimitris) Charalampidis",
+    "url" : "https://github.com/JimiC",
+    "githubUsername" : "JimiC"
+  }, {
+    "name" : "Steffen Viken Valvåg",
+    "url" : "https://github.com/steffenvv",
+    "githubUsername" : "steffenvv"
+  }, {
+    "name" : "Emily Marigold Klassen",
+    "url" : "https://github.com/forivall",
+    "githubUsername" : "forivall"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/yargs/-/yargs-12.0.12.tgz",
+    "shasum" : "45dd1d0638e8c8f153e87d296907659296873916"
+  },
+  "dependencies" : {
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "3.0",
+  "typesPublisherContentHash" : "797da61a576678d4a7247c12796a39175a72c67c12a6b2e34a47306ad6c42cdf"
+}

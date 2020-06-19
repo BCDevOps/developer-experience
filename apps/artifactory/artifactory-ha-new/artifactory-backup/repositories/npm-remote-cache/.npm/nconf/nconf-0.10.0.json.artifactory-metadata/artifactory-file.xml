@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/nconf/nconf-0.10.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nconf-0.10.0.json</name>
+  <created>1576003077273</created>
+  <lastModified>1576003077242</lastModified>
+  <size>1386</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003077274</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1d75e39d6fe4180f5a31b26c05dd61c94b2b588b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1050a6fdea5bdb34cda332df58103944</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>861377977cc8acd6da84d35381b5ab3f480cc68ad5f111a8b188cdd56a394de2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

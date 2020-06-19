@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ee976e75439af2b82e707f3a64c69684"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>implementation of function.prototype.bind</npm.description>
+  <npm.keywords>["function","bind","shim","es5"]</npm.keywords>
+  <npm.name>function-bind</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

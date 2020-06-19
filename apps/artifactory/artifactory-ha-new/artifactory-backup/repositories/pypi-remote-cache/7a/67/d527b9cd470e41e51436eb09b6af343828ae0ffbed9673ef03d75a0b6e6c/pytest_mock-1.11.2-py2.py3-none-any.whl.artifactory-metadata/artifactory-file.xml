@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>7a/67/d527b9cd470e41e51436eb09b6af343828ae0ffbed9673ef03d75a0b6e6c/pytest_mock-1.11.2-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pytest_mock-1.11.2-py2.py3-none-any.whl</name>
+  <created>1574023475890</created>
+  <lastModified>1571848581000</lastModified>
+  <size>10310</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023475890</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5ca9ec392ab877843d9d7eac2416ee07146148fa</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2e2c7d06975795e6b7405ef889c385c3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b3514caac35fe3f05555923eabd9546abce11571cc2ddf7d8615959d04f2c89e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4640f9c1fa2bb7b49f5b50d15edccb21"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fast, pluggable and easy-to-use parser-renderer factory.</npm.description>
+  <npm.keywords>["lexer","snapdragon"]</npm.keywords>
+  <npm.name>snapdragon</npm.name>
+  <npm.version>0.8.2</npm.version>
+</properties>

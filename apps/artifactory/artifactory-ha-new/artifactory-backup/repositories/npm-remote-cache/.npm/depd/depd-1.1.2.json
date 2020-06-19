@@ -1,0 +1,36 @@
+{
+  "name" : "depd",
+  "description" : "Deprecate all the things",
+  "version" : "1.1.2",
+  "author" : "Douglas Christopher Wilson <doug@somethingdoug.com>",
+  "repository" : "dougwilson/nodejs-depd",
+  "engines" : {
+    "node" : ">= 0.6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/depd/-/depd-1.1.2.tgz",
+    "shasum" : "9bcd52e14c097763e749b274c4346ed2e560b5a9"
+  },
+  "devDependencies" : {
+    "benchmark" : "2.1.4",
+    "beautify-benchmark" : "0.2.4",
+    "eslint" : "3.19.0",
+    "eslint-config-standard" : "7.1.0",
+    "eslint-plugin-markdown" : "1.0.0-beta.7",
+    "eslint-plugin-promise" : "3.6.0",
+    "eslint-plugin-standard" : "3.0.1",
+    "istanbul" : "0.4.5",
+    "mocha" : "~1.21.5"
+  },
+  "keywords" : [ "deprecate", "deprecated" ],
+  "license" : "MIT",
+  "files" : [ "lib/", "History.md", "LICENSE", "index.js", "Readme.md" ],
+  "scripts" : {
+    "bench" : "node benchmark/index.js",
+    "lint" : "eslint --plugin markdown --ext js,md .",
+    "test" : "mocha --reporter spec --bail test/",
+    "test-ci" : "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --no-exit test/",
+    "test-cov" : "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/"
+  },
+  "browser" : "lib/browser/index.js"
+}

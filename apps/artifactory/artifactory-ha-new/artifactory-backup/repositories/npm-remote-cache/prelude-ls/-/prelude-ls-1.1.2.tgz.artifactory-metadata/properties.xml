@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"64ef095ee5260f9d5f62ad68a2c989d1"</artifactory.internal.etag>
+  <npm.description>prelude.ls is a functionally oriented utility library. it is powerful and flexible. almost all of its functions are curried. it is written in, and is the recommended base library for, livescript.</npm.description>
+  <npm.keywords>["prelude","livescript","utility","ls","coffeescript","javascript","library","functional","array","list","object","string"]</npm.keywords>
+  <npm.name>prelude-ls</npm.name>
+  <npm.version>1.1.2</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6f749381b67dce4faab5b02aa6c9db55"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>traverse json schema passing each schema object to callback</npm.description>
+  <npm.keywords>["JSON-Schema","traverse","iterate"]</npm.keywords>
+  <npm.name>json-schema-traverse</npm.name>
+  <npm.version>0.4.1</npm.version>
+</properties>

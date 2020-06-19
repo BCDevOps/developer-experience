@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a70fdabd4c80d7f874d78a5a53701adc"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>allows you declare optionalpeerdependencies that can be satisfied by the top level module but ignored if they are not.</npm.description>
+  <npm.keywords>["optional","require","optionalPeerDependencies"]</npm.keywords>
+  <npm.name>require_optional</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

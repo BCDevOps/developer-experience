@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@gulp-sourcemaps/map-sources</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>map-sources</name>
+  <created>1576003086500</created>
+  <lastModified>1576003086500</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003086500</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

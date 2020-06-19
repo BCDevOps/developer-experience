@@ -1,0 +1,27 @@
+{
+  "name" : "acorn-globals",
+  "description" : "Detect global variables in JavaScript using acorn",
+  "version" : "4.3.4",
+  "author" : "ForbesLindesay",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ForbesLindesay/acorn-globals.git"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/acorn-globals/-/acorn-globals-4.3.4.tgz",
+    "shasum" : "9fa1926addc11c97308c4e66d7add0d40c3272e7"
+  },
+  "dependencies" : {
+    "acorn" : "^6.0.1",
+    "acorn-walk" : "^6.0.1"
+  },
+  "devDependencies" : {
+    "testit" : "^3.0.0"
+  },
+  "keywords" : [ "ast", "variable", "name", "lexical", "scope", "local", "global", "implicit" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "LICENSE" ],
+  "scripts" : {
+    "test" : "node test"
+  }
+}

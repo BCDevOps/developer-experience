@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/widest-line/widest-line-2.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>widest-line-2.0.1.json</name>
+  <created>1576003118846</created>
+  <lastModified>1576003118812</lastModified>
+  <size>1067</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003118847</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4ba8eb1b6af7812fa9e961a1274db6e581c3b96d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>dce4eceb9179ee0671c9545e19039e3d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4cdbdccfa6254d552e261224c438512a78e4b3c6c45a1b10442fc08155c8ada1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>esutils/-/esutils-2.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esutils-2.0.2.tgz</name>
+  <created>1579828389185</created>
+  <lastModified>1527379004000</lastModified>
+  <size>9297</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828389186</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>83b6e494115ab1e1838ad2341c1d078b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e978bed6f447a9f644f2a371e64a51673d5f2cb13401974fae6ee373304d796</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

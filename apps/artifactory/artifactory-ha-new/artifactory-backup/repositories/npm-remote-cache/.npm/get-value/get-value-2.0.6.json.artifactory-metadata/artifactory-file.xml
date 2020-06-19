@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/get-value/get-value-2.0.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>get-value-2.0.6.json</name>
+  <created>1576003437594</created>
+  <lastModified>1576003437571</lastModified>
+  <size>1650</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003437594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>af24107443ea8894f2ffcf8f181cdd95a0d39e71</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0ed1b6c7449ac178ad27e5acbd98ac2d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5365824a49424c262d08e5a12a089a76f6e5daabc3ca554a18fb4b6f9b24c0d0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

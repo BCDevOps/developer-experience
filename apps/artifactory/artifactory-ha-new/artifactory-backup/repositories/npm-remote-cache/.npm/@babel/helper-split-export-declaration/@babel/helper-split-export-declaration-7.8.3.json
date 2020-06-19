@@ -1,0 +1,21 @@
+{
+  "name" : "@babel/helper-split-export-declaration",
+  "description" : "",
+  "version" : "7.8.3",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-helper-split-export-declaration",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.8.3.tgz",
+    "shasum" : "31a9f30070f91368a7182cf05f831781065fc7a9"
+  },
+  "dependencies" : {
+    "@babel/types" : "^7.8.3"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "a7620bd266ae1345975767bbc7abf09034437017"
+}

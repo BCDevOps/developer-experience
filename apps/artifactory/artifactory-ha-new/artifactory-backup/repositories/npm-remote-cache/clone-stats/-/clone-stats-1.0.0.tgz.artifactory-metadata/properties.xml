@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"de568d02043226f1a745a9f7f9b762a7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>safely clone node's fs.stats instances without losing their class methods</npm.description>
+  <npm.keywords>["stats","fs","clone","copy","prototype"]</npm.keywords>
+  <npm.name>clone-stats</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

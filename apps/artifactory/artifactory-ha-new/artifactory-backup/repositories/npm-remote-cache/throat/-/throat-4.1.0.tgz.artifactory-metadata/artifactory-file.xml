@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>throat/-/throat-4.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>throat-4.1.0.tgz</name>
+  <created>1576003614799</created>
+  <lastModified>1527449267000</lastModified>
+  <size>3115</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003614799</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>89037cbc92c56ab18926e6ba4cbb200e15672a6a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ff8bea8370dc18a5eb7a6d5ac1c4bd15</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7474f1049a45ec6eed180734866fa8f23fff572bd0a47af998e9779ab15e7a1b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@octokit/request-error/-/request-error-1.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>request-error-1.2.1.tgz</name>
+  <created>1585853530285</created>
+  <lastModified>1580411769000</lastModified>
+  <size>4649</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853530286</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ede0714c773f32347576c25649dc013ae6b31801</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c97c3aac2329b4fe0fb62b8a8dcdebcf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>508d23d7ebbef9cd094f43c6094c932613af07ee223bed40692cf3461a9f51c6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

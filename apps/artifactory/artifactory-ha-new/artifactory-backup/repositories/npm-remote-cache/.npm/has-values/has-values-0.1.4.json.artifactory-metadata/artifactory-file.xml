@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/has-values/has-values-0.1.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>has-values-0.1.4.json</name>
+  <created>1576003425381</created>
+  <lastModified>1576003425094</lastModified>
+  <size>1455</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003425382</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a62d59bf93143974439b130658e3cab339ea5feb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>778545a4823abfe217896cbdf6dbd3de</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>20734acf08660cf8851029c1c068038e34f0a968f43f93171e68742e5cba1f44</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

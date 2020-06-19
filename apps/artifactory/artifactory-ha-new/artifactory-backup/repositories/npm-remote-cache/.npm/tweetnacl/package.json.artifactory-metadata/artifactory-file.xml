@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/tweetnacl/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003628544</created>
+  <lastModified>1581364149000</lastModified>
+  <size>72757</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464319990</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a8ace176bf0abe4f7489df1b7194140a9bbd0b09</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a42f302d859ebcea731ec2bc34e0f842</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5e68f9b434dfaed3201bd23a6f714ad6f8a2c825660f454d96addcac7d5ee268</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

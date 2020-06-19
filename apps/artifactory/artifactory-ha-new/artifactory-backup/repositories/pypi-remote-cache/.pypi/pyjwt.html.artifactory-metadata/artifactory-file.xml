@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pyjwt.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pyjwt.html</name>
+  <created>1580340964315</created>
+  <lastModified>1580425384428</lastModified>
+  <size>24844</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580425384626</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>29cecb4c93b28013829c56d1fedc5f9010c627a2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ff4f3c4163b12cd1ae7be35c478a81f5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c17d467d88bd18124cfc9c8f7c4744921e16b2f8b2cfa10c68bc78c8fb012ecb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

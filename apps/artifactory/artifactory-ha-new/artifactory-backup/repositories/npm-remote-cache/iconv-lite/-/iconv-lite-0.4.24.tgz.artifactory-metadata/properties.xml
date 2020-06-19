@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fd75d1bd67b550ece627b2ef307d775d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert character encodings in pure javascript.</npm.description>
+  <npm.keywords>["iconv","convert","charset","icu"]</npm.keywords>
+  <npm.name>iconv-lite</npm.name>
+  <npm.version>0.4.24</npm.version>
+</properties>

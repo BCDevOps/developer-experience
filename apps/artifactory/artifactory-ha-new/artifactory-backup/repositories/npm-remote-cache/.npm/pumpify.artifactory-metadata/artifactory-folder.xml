@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pumpify</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>pumpify</name>
+  <created>1576003099075</created>
+  <lastModified>1576003099075</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003099075</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

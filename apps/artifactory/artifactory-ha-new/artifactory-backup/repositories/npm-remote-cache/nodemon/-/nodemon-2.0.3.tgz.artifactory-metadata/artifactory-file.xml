@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>nodemon/-/nodemon-2.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nodemon-2.0.3.tgz</name>
+  <created>1586464317745</created>
+  <lastModified>1586372073000</lastModified>
+  <size>34598</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464317745</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e9c64df8740ceaef1cb00e1f3da57c0a93ef3714</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ae07664a881e849023e8ed17fea91afd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>eab4470058ee0753146a794830d2f973d4ee2817959ba57c8d505a65124696f7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

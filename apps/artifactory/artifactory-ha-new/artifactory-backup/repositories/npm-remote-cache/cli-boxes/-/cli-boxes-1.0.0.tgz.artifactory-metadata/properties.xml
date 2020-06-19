@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ab4bc1c90f9c5ad63a6e960c903186f7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>boxes for use in the terminal</npm.description>
+  <npm.keywords>["cli","box","boxes","terminal","term","console","ascii","unicode","border","text","json"]</npm.keywords>
+  <npm.name>cli-boxes</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

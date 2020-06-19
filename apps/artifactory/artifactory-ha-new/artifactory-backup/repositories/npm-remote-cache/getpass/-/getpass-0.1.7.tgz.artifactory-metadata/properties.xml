@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"32d7ddf970d9ed3e525fe1b2425f942d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>getpass for node.js</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>getpass</npm.name>
+  <npm.version>0.1.7</npm.version>
+</properties>

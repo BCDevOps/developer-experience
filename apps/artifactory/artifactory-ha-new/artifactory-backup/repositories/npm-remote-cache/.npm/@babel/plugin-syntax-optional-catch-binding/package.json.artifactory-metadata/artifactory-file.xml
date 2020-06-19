@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-optional-catch-binding/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1586464462357</created>
+  <lastModified>1578950074000</lastModified>
+  <size>76362</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464462357</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9649b44fd2e71e39d9d39d79a1936bcf937e8d75</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>392aa268a459c1b8fb51696d2965538f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e618429eb5c36e3b6c278749ccc5778f5a6cb627219a2aed66461ea3fbc1a946</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

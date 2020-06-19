@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>ca/bc/gov/open/cpf</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>cpf</name>
+  <created>1590433871917</created>
+  <lastModified>1590433871917</lastModified>
+  <additionalInfo>
+    <createdBy>pauldaustin@github</createdBy>
+    <modifiedBy>pauldaustin@github</modifiedBy>
+    <lastUpdated>1590433871917</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

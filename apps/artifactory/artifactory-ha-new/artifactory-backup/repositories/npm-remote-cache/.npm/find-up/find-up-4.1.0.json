@@ -1,0 +1,35 @@
+{
+  "name" : "find-up",
+  "description" : "Find a file or directory by walking up parent directories",
+  "version" : "4.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/find-up",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/find-up/-/find-up-4.1.0.tgz",
+    "shasum" : "97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
+  },
+  "dependencies" : {
+    "locate-path" : "^5.0.0",
+    "path-exists" : "^4.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^2.1.0",
+    "is-path-inside" : "^2.1.0",
+    "tempy" : "^0.3.0",
+    "tsd" : "^0.7.3",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "find", "up", "find-up", "findup", "look-up", "look", "file", "search", "match", "package", "resolve", "parent", "parents", "folder", "directory", "walk", "walking", "path" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

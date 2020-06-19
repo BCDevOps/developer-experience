@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sisteransi/-/sisteransi-1.0.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sisteransi-1.0.4.tgz</name>
+  <created>1576008064575</created>
+  <lastModified>1573410648000</lastModified>
+  <size>2599</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008064576</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>386713f1ef688c7c0304dc4c0632898941cad2e3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5cfd848a5a7bb676e1d2b9bf1ff310ae</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ff8063e841dfd272a96e5ee62b883e4ef28d063ac54ae50a31596152d07730bf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

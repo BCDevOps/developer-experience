@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a860b0c783173a661f651d70c5934ab6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>logger for gulp and gulp plugins</npm.description>
+  <npm.keywords>["gulp","gulp-util","log","logging"]</npm.keywords>
+  <npm.name>gulplog</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

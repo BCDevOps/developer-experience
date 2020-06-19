@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74030DC6EB425</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile49</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.1</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETPortable4.5-Profile259</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:Windows8.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.6.0:WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides the System.Reflection.Emit.DynamicMethod class, which represents a dynamic method that can be compiled, executed, and discarded. Discarded methods are available for garbage collection.
+
+Commonly Used Types:
+System.Reflection.Emit.DynamicMethod
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>2Kf0Kc7nEKkf+7Y6Rdgb6Fdx9xqdoTaBDfFUdIIUquuRKiaXZQDYbYkQxI4qe90CFgxkUeRWAdQvVLqUGC7MYg==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Reflection.Emit.Lightweight</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://github.com/dotnet/corefx</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Reflection.Emit.Lightweight</nuget.title>
+  <nuget.version>4.6.0</nuget.version>
+</properties>

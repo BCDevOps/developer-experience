@@ -1,0 +1,38 @@
+{
+  "name" : "util.promisify",
+  "description" : "Polyfill/shim for util.promisify in node versions < v8",
+  "version" : "1.0.0",
+  "author" : "Jordan Harband <ljharb@gmail.com>",
+  "homepage" : "https://github.com/ljharb/util.promisify#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/ljharb/util.promisify.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/ljharb/util.promisify/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/util.promisify/-/util.promisify-1.0.0.tgz",
+    "shasum" : "440f7165a459c9a16dc145eb8e72f35687097030"
+  },
+  "dependencies" : {
+    "define-properties" : "^1.1.2",
+    "object.getownpropertydescriptors" : "^2.0.3"
+  },
+  "devDependencies" : {
+    "@es-shims/api" : "^1.2.0",
+    "@ljharb/eslint-config" : "^11.0.0",
+    "eslint" : "^3.19.0",
+    "safe-publish-latest" : "^1.1.1"
+  },
+  "keywords" : [ "promisify", "promise", "util", "polyfill", "shim", "util.promisify" ],
+  "license" : "MIT",
+  "scripts" : {
+    "prepublish" : "safe-publish-latest",
+    "lint" : "eslint .",
+    "pretest" : "npm run lint",
+    "tests-only" : "es-shim-api --bound",
+    "test" : "npm run tests-only"
+  }
+}

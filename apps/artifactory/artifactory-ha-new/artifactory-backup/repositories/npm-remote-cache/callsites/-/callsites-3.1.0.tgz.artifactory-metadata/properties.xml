@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"37c0adb1138c0e1d64ae2eafc3bfeddf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get callsites from the v8 stack trace api</npm.description>
+  <npm.keywords>["stacktrace","v8","callsite","callsites","stack","trace","function","file","line","debug"]</npm.keywords>
+  <npm.name>callsites</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

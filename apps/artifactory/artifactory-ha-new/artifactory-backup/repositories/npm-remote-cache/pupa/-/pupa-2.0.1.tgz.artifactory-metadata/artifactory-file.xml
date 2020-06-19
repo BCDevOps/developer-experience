@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>pupa/-/pupa-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pupa-2.0.1.tgz</name>
+  <created>1585853630808</created>
+  <lastModified>1564242816000</lastModified>
+  <size>2280</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853630808</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dbdc9ff48ffbea4a26a069b6f9f7abb051008726</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d41824f281f4e705f3114abb9291fab6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>dcb82890172115a72f9b0ef1f90ddd4effa03e21851f3abf66fab39132e99928</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

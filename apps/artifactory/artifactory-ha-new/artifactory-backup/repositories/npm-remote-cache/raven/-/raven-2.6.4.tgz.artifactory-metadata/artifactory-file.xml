@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>raven/-/raven-2.6.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>raven-2.6.4.tgz</name>
+  <created>1576008061074</created>
+  <lastModified>1536059484000</lastModified>
+  <size>23448</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008061076</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>458d4a380c8fbb59e0150c655625aaf60c167ea3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>de459aa7654fdc929f641584265e4f39</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1ab625be3302c810875b85b9461c15b9a0531de777376a22b30d6ac58d497e10</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

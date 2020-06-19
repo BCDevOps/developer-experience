@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>d4/c2/6d7eaf91c81328c31b9d98fe97df3fa657b2d7d2610d8a14fc27ec48dafc/websockets-8.1-cp37-cp37m-macosx_10_6_intel.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>websockets-8.1-cp37-cp37m-macosx_10_6_intel.whl</name>
+  <created>1580425530768</created>
+  <lastModified>1572617622000</lastModified>
+  <size>66340</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580425530768</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>509cdf25be7e1c243884a82ebd657f595ca4a9a3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1c2acf27b7abb12d3e83b9866c1d7853</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b248ba3dd8a03b1a10b19efe7d4f7fa41d158fdaa95e2cf65af5a7b95a4f989</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"27fce83a49fcbb227c8633a18591275f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a fully persistent balanced binary search tree</npm.description>
+  <npm.keywords>["functional","red","black","tree","binary","search","balance","persistent","fully","dynamic","data","structure"]</npm.keywords>
+  <npm.name>functional-red-black-tree</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

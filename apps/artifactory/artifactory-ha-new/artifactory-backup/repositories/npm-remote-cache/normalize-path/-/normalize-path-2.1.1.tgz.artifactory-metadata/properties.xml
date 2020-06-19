@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b2f3932160dc03a5604dbac60ef59c34"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>normalize file path slashes to be unix-like forward slashes. also condenses repeat slashes to a single slash and removes and trailing slashes unless disabled.</npm.description>
+  <npm.keywords>["backslash","file","filepath","fix","forward","fp","fs","normalize","path","slash","slashes","trailing","unix","urix"]</npm.keywords>
+  <npm.name>normalize-path</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

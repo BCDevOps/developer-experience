@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fancy-log</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>fancy-log</name>
+  <created>1576003394217</created>
+  <lastModified>1576003394217</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003394217</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

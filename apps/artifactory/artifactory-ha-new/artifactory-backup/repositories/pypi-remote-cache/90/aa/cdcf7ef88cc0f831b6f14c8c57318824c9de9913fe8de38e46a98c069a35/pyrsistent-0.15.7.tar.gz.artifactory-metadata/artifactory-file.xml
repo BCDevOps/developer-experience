@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>90/aa/cdcf7ef88cc0f831b6f14c8c57318824c9de9913fe8de38e46a98c069a35/pyrsistent-0.15.7.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pyrsistent-0.15.7.tar.gz</name>
+  <created>1580514337204</created>
+  <lastModified>1578427362000</lastModified>
+  <size>107714</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580514337205</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7465438c9f50284667c629805276e685a5b365d2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>da9486d00ef5b213f40d5cf3c5bca82d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cdc7b5e3ed77bed61270a47d35434a30617b9becdf2478af76ad2c6ade307280</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

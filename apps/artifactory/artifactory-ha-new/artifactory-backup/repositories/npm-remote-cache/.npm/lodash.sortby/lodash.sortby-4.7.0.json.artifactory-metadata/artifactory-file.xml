@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lodash.sortby/lodash.sortby-4.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.sortby-4.7.0.json</name>
+  <created>1576003663020</created>
+  <lastModified>1576003663001</lastModified>
+  <size>957</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003663020</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d3b7b25c8ea1283588929d1a225454005e8aacb4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ac015357ac562ba6a2ef7a09f98a861e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>468d5231698ac03ef978c5b0a9b2f786b050f4e3def8a470e6852626d27bfe38</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

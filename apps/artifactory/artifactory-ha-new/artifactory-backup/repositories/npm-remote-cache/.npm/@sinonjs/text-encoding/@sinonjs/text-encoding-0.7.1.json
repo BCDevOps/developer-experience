@@ -1,0 +1,25 @@
+{
+  "name" : "@sinonjs/text-encoding",
+  "description" : "Polyfill for the Encoding Living Standard's API.",
+  "version" : "0.7.1",
+  "author" : "Joshua Bell <inexorabletash@gmail.com>",
+  "homepage" : "https://github.com/inexorabletash/text-encoding",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/inexorabletash/text-encoding.git"
+  },
+  "contributors" : [ "Joshua Bell <inexorabletash@gmail.com>", "Rick Eyre <rick.eyre@outlook.com>", "Eugen Podaru <eugen.podaru@live.com>", "Filip Dupanović <filip.dupanovic@gmail.com>", "Anne van Kesteren <annevk@annevk.nl>", "Author: Francis Avila <francisga@gmail.com>", "Michael J. Ryan <tracker1@gmail.com>", "Pierre Queinnec <pierre@queinnec.org>", "Zack Weinberg <zackw@panix.com>" ],
+  "bugs" : {
+    "url" : "https://github.com/inexorabletash/text-encoding/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz",
+    "shasum" : "8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
+  },
+  "keywords" : [ "encoding", "decoding", "living standard" ],
+  "license" : "(Unlicense OR Apache-2.0)",
+  "files" : [ "index.js", "lib/encoding.js", "lib/encoding-indexes.js" ],
+  "scripts" : {
+  }
+}

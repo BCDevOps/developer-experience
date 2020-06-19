@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/squareup/okio/okio-parent/1.13.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>1.13.0</name>
+  <created>1576861393342</created>
+  <lastModified>1576861393342</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861393342</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

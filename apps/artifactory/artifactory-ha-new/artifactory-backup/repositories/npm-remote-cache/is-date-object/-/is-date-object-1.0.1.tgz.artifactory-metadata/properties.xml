@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7624b87d596af5327861cb7ce7fc14f1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>is this value a js date object? this module works cross-realm/iframe, and despite es6 @@tostringtag.</npm.description>
+  <npm.keywords>["Date","ES6","toStringTag","@@toStringTag","Date object"]</npm.keywords>
+  <npm.name>is-date-object</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ajv/ajv-6.10.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ajv-6.10.2.json</name>
+  <created>1576003424886</created>
+  <lastModified>1576003424520</lastModified>
+  <size>3114</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003424886</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>65703ed2a68191d3cd8db38a401ce480138dfe9d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1c02d4d8502a9322896a395792545558</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>79c4375228286ab395dd8e05b6a68c2e10457720afa43345b043ea7f25982ee2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

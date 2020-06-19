@@ -1,0 +1,46 @@
+{
+  "name" : "collection-map",
+  "description" : "Returns an array of mapped values from an array or object.",
+  "version" : "1.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/collection-map",
+  "repository" : "jonschlinkert/collection-map",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/collection-map/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/collection-map/-/collection-map-1.0.0.tgz",
+    "shasum" : "aea0f06f8d26c780c2b75494385544b2255af18c"
+  },
+  "dependencies" : {
+    "arr-map" : "^2.0.2",
+    "for-own" : "^1.0.0",
+    "make-iterator" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.11",
+    "mocha" : "^3.2.0"
+  },
+  "keywords" : [ "collection", "map" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "arr-flatten", "arr-map", "for-in", "for-own" ]
+    },
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

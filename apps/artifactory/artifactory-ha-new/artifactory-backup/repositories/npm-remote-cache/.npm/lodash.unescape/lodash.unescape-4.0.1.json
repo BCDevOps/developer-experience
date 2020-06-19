@@ -1,0 +1,19 @@
+{
+  "name" : "lodash.unescape",
+  "description" : "The lodash method `_.unescape` exported as a module.",
+  "version" : "4.0.1",
+  "author" : "John-David Dalton <john.david.dalton@gmail.com> (http://allyoucanleet.com/)",
+  "homepage" : "https://lodash.com/",
+  "repository" : "lodash/lodash",
+  "contributors" : [ "John-David Dalton <john.david.dalton@gmail.com> (http://allyoucanleet.com/)", "Blaine Bublitz <blaine.bublitz@gmail.com> (https://github.com/phated)", "Mathias Bynens <mathias@qiwi.be> (https://mathiasbynens.be/)" ],
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/lodash.unescape/-/lodash.unescape-4.0.1.tgz",
+    "shasum" : "bf2249886ce514cda112fae9218cdc065211fc9c"
+  },
+  "keywords" : "lodash-modularized, unescape",
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "echo \"See https://travis-ci.org/lodash/lodash-cli for testing details.\""
+  },
+  "icon" : "https://lodash.com/icon.svg"
+}

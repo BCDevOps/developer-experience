@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e0f32f9b22c3f5a48bce7ba4c75dd751"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>oauth 1 signing. formerly a vendor lib in mikeal/request, now a standalone module.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>oauth-sign</npm.name>
+  <npm.version>0.9.0</npm.version>
+</properties>

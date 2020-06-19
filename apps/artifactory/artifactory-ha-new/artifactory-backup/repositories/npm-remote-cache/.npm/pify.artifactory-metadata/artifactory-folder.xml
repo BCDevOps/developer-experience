@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pify</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>pify</name>
+  <created>1576003609484</created>
+  <lastModified>1576003609484</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003609484</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,34 @@
+{
+  "name" : "md5",
+  "description" : "js function for hashing messages with MD5",
+  "tags" : [ "md5", "hash", "encryption", "message digest" ],
+  "version" : "2.2.1",
+  "author" : "Paul Vorbach <paul@vorba.ch> (http://paul.vorba.ch)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/pvorb/node-md5.git"
+  },
+  "contributors" : [ "salba" ],
+  "bugs" : {
+    "url" : "https://github.com/pvorb/node-md5/issues"
+  },
+  "main" : "md5.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/md5/-/md5-2.2.1.tgz",
+    "shasum" : "53ab38d5fe3c8891ba465329ea23fac0540126f9"
+  },
+  "dependencies" : {
+    "charenc" : "~0.0.1",
+    "crypt" : "~0.0.1",
+    "is-buffer" : "~1.1.1"
+  },
+  "optionalDependencies" : {
+  },
+  "devDependencies" : {
+    "mocha" : "~2.3.4"
+  },
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+    "test" : "mocha"
+  }
+}

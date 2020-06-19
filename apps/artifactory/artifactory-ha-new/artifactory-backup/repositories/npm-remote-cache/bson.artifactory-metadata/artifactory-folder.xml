@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>bson</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>bson</name>
+  <created>1582140575457</created>
+  <lastModified>1582140575457</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140575457</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

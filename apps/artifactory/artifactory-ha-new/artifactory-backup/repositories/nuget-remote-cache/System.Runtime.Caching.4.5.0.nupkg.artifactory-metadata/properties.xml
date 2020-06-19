@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62F04ED848C12</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:2.0.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Configuration.ConfigurationManager:4.5.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides classes to use caching facilities.
+
+Commonly Used Types:
+System.Runtime.Caching.CacheEntryChangeMonitor
+System.Runtime.Caching.CacheEntryRemovedArguments
+System.Runtime.Caching.CacheEntryUpdateArguments
+System.Runtime.Caching.CacheItem
+System.Runtime.Caching.CacheItemPolicy
+System.Runtime.Caching.ChangeMonitor
+System.Runtime.Caching.FileChangeMonitor
+System.Runtime.Caching.HostFileChangeMonitor
+System.Runtime.Caching.MemoryCache
+System.Runtime.Caching.ObjectCache
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>qKt7Kt7hY0FcAN2bFyH8Sj9RxQSIw7chgyN/lB4aXHoAdooEagLbDf522y1wdlyvT/vN/iwxpQUBxzhw+/9z7A==</nuget.digest>
+  <nuget.frameworks>System.Runtime.Caching:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Runtime.Caching</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Runtime.Caching</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>

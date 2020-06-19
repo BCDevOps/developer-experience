@@ -1,0 +1,26 @@
+{
+  "name" : "mute-stream",
+  "description" : "Bytes go in, but they don't come out (when muted).",
+  "version" : "0.0.7",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/isaacs/mute-stream"
+  },
+  "main" : "mute.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/mute-stream/-/mute-stream-0.0.7.tgz",
+    "shasum" : "3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
+  },
+  "devDependencies" : {
+    "tap" : "^5.4.4"
+  },
+  "keywords" : [ "mute", "stream", "pipe" ],
+  "license" : "ISC",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js --cov"
+  }
+}

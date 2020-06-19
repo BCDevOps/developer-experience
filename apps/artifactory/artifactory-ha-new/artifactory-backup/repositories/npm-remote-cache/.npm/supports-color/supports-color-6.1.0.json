@@ -1,0 +1,33 @@
+{
+  "name" : "supports-color",
+  "description" : "Detect whether a terminal supports color",
+  "version" : "6.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "chalk/supports-color",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/supports-color/-/supports-color-6.1.0.tgz",
+    "shasum" : "0764abc69c63d5ac842dd4867e8d025e880df8f3"
+  },
+  "dependencies" : {
+    "has-flag" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^0.25.0",
+    "import-fresh" : "^2.0.0",
+    "xo" : "^0.23.0"
+  },
+  "keywords" : [ "color", "colour", "colors", "terminal", "console", "cli", "ansi", "styles", "tty", "rgb", "256", "shell", "xterm", "command-line", "support", "supports", "capability", "detect", "truecolor", "16m" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "browser.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "browser" : "browser.js"
+}

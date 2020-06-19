@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7e3ad5fca20a2858e7f645289d48dda2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ecc js code based on jsbn</npm.description>
+  <npm.keywords>["jsbn","ecc","browserify"]</npm.keywords>
+  <npm.name>ecc-jsbn</npm.name>
+  <npm.version>0.1.2</npm.version>
+</properties>

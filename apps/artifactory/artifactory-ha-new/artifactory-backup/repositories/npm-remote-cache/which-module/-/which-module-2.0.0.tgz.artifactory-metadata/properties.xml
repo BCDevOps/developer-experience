@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ce028f30082fbbea9861a40437d17bd3"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>find the module object for something that was require()d</npm.description>
+  <npm.keywords>["which","module","exports","filename","require","reverse","lookup"]</npm.keywords>
+  <npm.name>which-module</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

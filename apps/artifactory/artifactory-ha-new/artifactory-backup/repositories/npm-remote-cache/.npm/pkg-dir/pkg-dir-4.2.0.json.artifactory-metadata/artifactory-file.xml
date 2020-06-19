@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pkg-dir/pkg-dir-4.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pkg-dir-4.2.0.json</name>
+  <created>1585853575778</created>
+  <lastModified>1585853575722</lastModified>
+  <size>1046</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853575778</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>cbd34719e21ea4cf3ca1d62bf054f9fa8768f681</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>adbf9e41bf5c8b068ba8a35b7303b46b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d2b1ec90da14e514df6727d6dcf2443267a2db0514963a1b6a2069f8b8de1c79</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

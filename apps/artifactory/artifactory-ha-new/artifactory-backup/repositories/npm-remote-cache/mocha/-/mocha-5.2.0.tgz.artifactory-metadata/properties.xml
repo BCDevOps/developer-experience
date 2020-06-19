@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"066370994522080caf511df37d33eb14"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple, flexible, fun test framework</npm.description>
+  <npm.keywords>["mocha","test","bdd","tdd","tap"]</npm.keywords>
+  <npm.name>mocha</npm.name>
+  <npm.version>5.2.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>node-notifier/-/node-notifier-5.4.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>node-notifier-5.4.3.tgz</name>
+  <created>1576003132744</created>
+  <lastModified>1566211388000</lastModified>
+  <size>771524</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003132745</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cb72daf94c93904098e28b9c590fd866e464bd50</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2aca1221b5813c282a7a5175c7f21ca2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1db35fe5b63cea54d5e610f5241adac5688837b3c59a5d6e671127ff0c86f26e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

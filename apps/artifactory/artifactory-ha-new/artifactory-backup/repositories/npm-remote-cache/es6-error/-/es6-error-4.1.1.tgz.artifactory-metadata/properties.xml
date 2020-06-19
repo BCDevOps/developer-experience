@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9aeb9c257e683268999655a2071219f2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>easily-extendable error for use with es6 classes</npm.description>
+  <npm.keywords>["es6","error","babel"]</npm.keywords>
+  <npm.name>es6-error</npm.name>
+  <npm.version>4.1.1</npm.version>
+</properties>

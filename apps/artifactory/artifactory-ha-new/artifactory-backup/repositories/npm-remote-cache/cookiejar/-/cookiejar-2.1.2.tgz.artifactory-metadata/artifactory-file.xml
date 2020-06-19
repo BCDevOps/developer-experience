@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>cookiejar/-/cookiejar-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cookiejar-2.1.2.tgz</name>
+  <created>1576003407773</created>
+  <lastModified>1527647290000</lastModified>
+  <size>4108</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003407774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dd8a235530752f988f9a0844f3fc589e3111125c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>51c6ee9e418634815351fca16070a98f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>be084edfbeeb80ce288c8d1bd46af8751d2cf810c70b943805f420b7df3a6cf5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

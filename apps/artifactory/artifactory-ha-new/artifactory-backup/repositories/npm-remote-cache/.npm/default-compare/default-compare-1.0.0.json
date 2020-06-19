@@ -1,0 +1,41 @@
+{
+  "name" : "default-compare",
+  "description" : "Basic sort algorithm that has similar behavior to Array.prototype.sort for null and undefined, but also allows sorting by an object property.",
+  "version" : "1.0.0",
+  "author" : "Brian Woodward (https://doowb.com)",
+  "homepage" : "https://github.com/doowb/default-compare",
+  "repository" : "doowb/default-compare",
+  "bugs" : {
+    "url" : "https://github.com/doowb/default-compare/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/default-compare/-/default-compare-1.0.0.tgz",
+    "shasum" : "cb61131844ad84d84788fb68fd01681ca7781a2f"
+  },
+  "dependencies" : {
+    "kind-of" : "^5.0.2"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.2"
+  },
+  "keywords" : [ "compare", "default" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

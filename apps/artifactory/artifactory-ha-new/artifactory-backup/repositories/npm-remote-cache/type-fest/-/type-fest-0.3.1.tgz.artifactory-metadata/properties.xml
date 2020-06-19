@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ad6f90a67b639212a83be6b3bfbd7145"</artifactory.internal.etag>
+  <artifactory.licenses>(MIT OR CC0-1.0)</artifactory.licenses>
+  <npm.description>a collection of essential typescript types</npm.description>
+  <npm.keywords>["typescript","ts","types","utility","util","utilities","omit","merge","json"]</npm.keywords>
+  <npm.name>type-fest</npm.name>
+  <npm.version>0.3.1</npm.version>
+</properties>

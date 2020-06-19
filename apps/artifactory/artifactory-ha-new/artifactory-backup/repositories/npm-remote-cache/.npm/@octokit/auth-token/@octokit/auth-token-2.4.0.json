@@ -1,0 +1,45 @@
+{
+  "name" : "@octokit/auth-token",
+  "description" : "GitHub API token authentication for browsers and Node.js",
+  "version" : "2.4.0",
+  "homepage" : "https://github.com/octokit/auth-token.js#readme",
+  "repository" : "https://github.com/octokit/auth-token.js",
+  "bugs" : {
+    "url" : "https://github.com/octokit/auth-token.js/issues"
+  },
+  "main" : "dist-node/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@octokit/auth-token/-/auth-token-2.4.0.tgz",
+    "shasum" : "b64178975218b99e4dfe948253f0673cbbb59d9f"
+  },
+  "dependencies" : {
+    "@octokit/types" : "^2.0.0"
+  },
+  "devDependencies" : {
+    "@octokit/request" : "^5.3.0",
+    "@pika/pack" : "^0.5.0",
+    "@pika/plugin-build-node" : "^0.7.0",
+    "@pika/plugin-build-web" : "^0.7.0",
+    "@pika/plugin-ts-standard-pkg" : "^0.7.0",
+    "@types/fetch-mock" : "^7.3.1",
+    "@types/jest" : "^24.0.13",
+    "fetch-mock" : "^7.3.7",
+    "jest" : "^24.8.0",
+    "semantic-release" : "^15.13.12",
+    "ts-jest" : "^24.0.2",
+    "typescript" : "^3.5.1"
+  },
+  "keywords" : [ "github", "octokit", "authentication", "api" ],
+  "license" : "MIT",
+  "files" : [ "dist-*/", "bin/" ],
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "types" : "dist-types/index.d.ts",
+  "module" : "dist-web/index.js",
+  "pika" : true,
+  "source" : "dist-src/index.js",
+  "sideEffects" : false
+}

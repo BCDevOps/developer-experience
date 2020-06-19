@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NSwag.ConsoleCore.13.1.3.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NSwag.ConsoleCore.13.1.3.nupkg</name>
+  <created>1578435946705</created>
+  <lastModified>1570688796000</lastModified>
+  <size>59209</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578435946706</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>94ff794bf88450d7933446b81fa8df85de837156</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7e76616f6262b6f160d9a69a87c50230</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>05953e332060760d57d1eb111d755ab27d9d67daf2c797318f2a77f3a3006e71</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

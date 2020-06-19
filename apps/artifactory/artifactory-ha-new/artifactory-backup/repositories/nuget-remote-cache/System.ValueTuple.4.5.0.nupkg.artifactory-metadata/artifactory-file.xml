@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.ValueTuple.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.ValueTuple.4.5.0.nupkg</name>
+  <created>1578496803555</created>
+  <lastModified>1545093875000</lastModified>
+  <size>204904</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496803556</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f001a074be6f5c3a20940e88ac46f7c97a010d57</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>54feb0ea3f3dfa8a85c8b8862685e2de</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e21fa9767d4e76bc0cee065c1d40cc34384a114bfec4d70e6c981168a926802</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

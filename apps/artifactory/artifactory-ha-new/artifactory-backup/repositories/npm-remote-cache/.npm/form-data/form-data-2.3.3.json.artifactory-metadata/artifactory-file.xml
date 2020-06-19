@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/form-data/form-data-2.3.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>form-data-2.3.3.json</name>
+  <created>1576008546092</created>
+  <lastModified>1576008546060</lastModified>
+  <size>2472</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008546093</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>29267790c05ce183622b816eeb306d43fbb0034d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ea728ec7efae942375d09ed1f3f09dbd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ce007a6bb0788dfe4d7a360489c87a773a3ccafe09a3e58102b1abcacec4b724</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

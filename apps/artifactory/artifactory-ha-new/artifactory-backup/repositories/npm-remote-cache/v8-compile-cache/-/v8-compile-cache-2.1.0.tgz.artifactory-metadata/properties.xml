@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4497c3958341feec4b4a2a1a372f227d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>require hook for automatic v8 compile cache persistence</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>v8-compile-cache</npm.name>
+  <npm.version>2.1.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>make-dir/-/make-dir-3.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>make-dir-3.0.2.tgz</name>
+  <created>1585853576168</created>
+  <lastModified>1581538266000</lastModified>
+  <size>3812</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853576169</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>04a1acbf22221e1d6ef43559f43e05a90dbb4392</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>89406b700150c472c4d874166c9a8672</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>145bb888e87dd1dcc74751a85a67cc589c208ae8850d2ed659b36c68b0ffa3a2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

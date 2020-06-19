@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>oauth-sign</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>oauth-sign</name>
+  <created>1576003426176</created>
+  <lastModified>1576003426176</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003426176</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

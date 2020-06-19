@@ -1,0 +1,29 @@
+{
+  "name" : "bytes",
+  "description" : "Utility to parse a string bytes to bytes and vice-versa",
+  "version" : "3.1.0",
+  "author" : "TJ Holowaychuk <tj@vision-media.ca> (http://tjholowaychuk.com)",
+  "repository" : "visionmedia/bytes.js",
+  "contributors" : [ "Jed Watson <jed.watson@me.com>", "Théo FIDRY <theo.fidry@gmail.com>" ],
+  "engines" : {
+    "node" : ">= 0.8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/bytes/-/bytes-3.1.0.tgz",
+    "shasum" : "f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
+  },
+  "devDependencies" : {
+    "eslint" : "5.12.1",
+    "mocha" : "5.2.0",
+    "nyc" : "13.1.0"
+  },
+  "keywords" : [ "byte", "bytes", "utility", "parse", "parser", "convert", "converter" ],
+  "license" : "MIT",
+  "files" : [ "History.md", "LICENSE", "Readme.md", "index.js" ],
+  "scripts" : {
+    "lint" : "eslint .",
+    "test" : "mocha --check-leaks --reporter spec",
+    "test-ci" : "nyc --reporter=text npm test",
+    "test-cov" : "nyc --reporter=html --reporter=text npm test"
+  }
+}

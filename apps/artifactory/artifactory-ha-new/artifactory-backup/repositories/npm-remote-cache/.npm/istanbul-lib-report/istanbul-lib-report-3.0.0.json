@@ -1,0 +1,41 @@
+{
+  "name" : "istanbul-lib-report",
+  "description" : "Base reporting library for istanbul",
+  "version" : "3.0.0",
+  "author" : "Krishnan Anantheswaran <kananthmail-github@yahoo.com>",
+  "homepage" : "https://istanbul.js.org/",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+ssh://git@github.com/istanbuljs/istanbuljs.git",
+    "directory" : "packages/istanbul-lib-report"
+  },
+  "bugs" : {
+    "url" : "https://github.com/istanbuljs/istanbuljs/issues"
+  },
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/istanbul-lib-report/-/istanbul-lib-report-3.0.0.tgz",
+    "shasum" : "7518fe52ea44de372f460a76b5ecda9ffb73d8a6"
+  },
+  "dependencies" : {
+    "istanbul-lib-coverage" : "^3.0.0",
+    "make-dir" : "^3.0.0",
+    "supports-color" : "^7.1.0"
+  },
+  "devDependencies" : {
+    "chai" : "^4.2.0",
+    "mocha" : "^6.2.2",
+    "nyc" : "^15.0.0-beta.2",
+    "rimraf" : "^3.0.0"
+  },
+  "keywords" : [ "istanbul", "report", "api", "lib" ],
+  "license" : "BSD-3-Clause",
+  "files" : [ "lib", "index.js" ],
+  "scripts" : {
+    "test" : "nyc --nycrc-path=../../monorepo-per-package-full.js mocha"
+  },
+  "gitHead" : "5319df684b508ff6fb19fe8b9a6147a3c5924e4b"
+}

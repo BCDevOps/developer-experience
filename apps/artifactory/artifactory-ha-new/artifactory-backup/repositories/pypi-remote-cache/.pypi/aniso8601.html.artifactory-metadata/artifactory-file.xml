@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/aniso8601.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>aniso8601.html</name>
+  <created>1574023030475</created>
+  <lastModified>1582154303541</lastModified>
+  <size>11384</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154303613</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>753fff2aeaa7ac9678c51c5e6e0b5d7b8d9ea160</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>20a4380f9fda6b325ed9f3b78275fc73</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e9a7a34d633e86ae4d9434b60555229d917274c598cdaaee23c27df061d2672d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

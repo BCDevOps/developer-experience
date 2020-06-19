@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"31873ef8adff0761eb3b8b3407e739a7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>schemas describing various structures used by nyc and istanbuljs</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@istanbuljs/schema</npm.name>
+  <npm.version>0.1.2</npm.version>
+</properties>

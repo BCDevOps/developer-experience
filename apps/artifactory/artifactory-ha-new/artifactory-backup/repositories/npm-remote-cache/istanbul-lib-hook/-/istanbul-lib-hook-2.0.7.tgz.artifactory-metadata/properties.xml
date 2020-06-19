@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8b7d6f9190f4d30fed3d8b29e776e5e6"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>hooks for require, vm and script used in istanbul</npm.description>
+  <npm.keywords>["istanbul","hook"]</npm.keywords>
+  <npm.name>istanbul-lib-hook</npm.name>
+  <npm.version>2.0.7</npm.version>
+</properties>

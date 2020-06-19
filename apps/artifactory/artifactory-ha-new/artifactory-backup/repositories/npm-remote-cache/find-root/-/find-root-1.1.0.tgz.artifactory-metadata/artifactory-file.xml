@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>find-root/-/find-root-1.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>find-root-1.1.0.tgz</name>
+  <created>1576003653729</created>
+  <lastModified>1527381697000</lastModified>
+  <size>2589</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003653730</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4838524d2005af54494889c94def73cf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>06e73caf9d5d5e562304de57a591835efa79e9d1da220ffba7d5b901127214d4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

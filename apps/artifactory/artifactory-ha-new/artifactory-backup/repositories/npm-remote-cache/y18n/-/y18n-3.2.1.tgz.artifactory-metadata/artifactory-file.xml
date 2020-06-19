@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>y18n/-/y18n-3.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>y18n-3.2.1.tgz</name>
+  <created>1576003083795</created>
+  <lastModified>1527460430000</lastModified>
+  <size>3424</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003083795</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6d15fba884c08679c0d77e88e7759e811e07fa41</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>58162ef2b2784394147b56df8736204d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4d7412e72d642106847b3caa8597a54b24178e3baaf406748d519d8b51462741</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/isort.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>isort.html</name>
+  <created>1574023489565</created>
+  <lastModified>1582154364634</lastModified>
+  <size>44904</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154364700</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8a2e82d97b9999db757c1ce19bc481ee0f6a9d4c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0de12f58ac5b4bf58d32651a7d4a0fe7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ccae0f37128599d0a9a14fd637e1a8494f48a0d87ca9c512430a1cd98a8a6b1d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5c5e830992fc0238de9707e4e7b32f9d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>github rest api client for node.js</npm.description>
+  <npm.keywords>["octokit","github","rest","api-client"]</npm.keywords>
+  <npm.name>@octokit/rest</npm.name>
+  <npm.version>16.35.0</npm.version>
+</properties>

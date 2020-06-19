@@ -1,0 +1,31 @@
+{
+  "name" : "isstream",
+  "description" : "Determine if an object is a Stream",
+  "version" : "0.1.2",
+  "author" : "Rod Vagg <rod@vagg.org>",
+  "homepage" : "https://github.com/rvagg/isstream",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rvagg/isstream.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/rvagg/isstream/issues"
+  },
+  "main" : "isstream.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/isstream/-/isstream-0.1.2.tgz",
+    "shasum" : "47e63f7af55afa6f92e1500e690eb8b8529c099a"
+  },
+  "devDependencies" : {
+    "tape" : "~2.12.3",
+    "core-util-is" : "~1.0.0",
+    "isarray" : "0.0.1",
+    "string_decoder" : "~0.10.x",
+    "inherits" : "~2.0.1"
+  },
+  "keywords" : [ "stream", "type", "streams", "readable-stream", "hippo" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "tar --xform 's/^package/readable-stream-1.0/' -zxf readable-stream-1.0.*.tgz && tar --xform 's/^package/readable-stream-1.1/' -zxf readable-stream-1.1.*.tgz && node test.js; rm -rf readable-stream-1.?/"
+  }
+}

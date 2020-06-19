@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"04ec6055e4032434ba8022e9ff3d1dbe"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>timings for http requests</npm.description>
+  <npm.keywords>["http","https","timer","timings"]</npm.keywords>
+  <npm.name>@szmarczak/http-timer</npm.name>
+  <npm.version>1.1.2</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"21a365bc28f2706405ecbd9d232b9f42"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>definitions of levels for logging purposes &amp; shareable symbol constants.</npm.description>
+  <npm.keywords>["winstonjs","winston","logging","logform","symbols","logs","levels"]</npm.keywords>
+  <npm.name>triple-beam</npm.name>
+  <npm.version>1.3.0</npm.version>
+</properties>

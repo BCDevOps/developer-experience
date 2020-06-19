@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>readdirp/-/readdirp-2.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>readdirp-2.2.1.tgz</name>
+  <created>1576003415984</created>
+  <lastModified>1536858652000</lastModified>
+  <size>7161</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003415984</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0e87622a3325aa33e892285caf8b4e846529a525</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3db1ba3d27a388ac352b82fcdd1ca5d8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c9a2309dc0970632d31d7701fd4a59b0616f9c7b944dc7ff5a701a9d638376a3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

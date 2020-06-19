@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>future-0.18.2.tar.gz</name>
+  <created>1574023041883</created>
+  <lastModified>1572483495000</lastModified>
+  <size>829220</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023041884</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d8c8b2d3889fc22bb38f049ed8e3dbdc35a83d6e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e4579c836b9c025872efe230f6270349</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

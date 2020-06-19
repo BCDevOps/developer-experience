@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/module/jackson-module-parameter-names</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jackson-module-parameter-names</name>
+  <created>1576861383950</created>
+  <lastModified>1576861383950</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861383950</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

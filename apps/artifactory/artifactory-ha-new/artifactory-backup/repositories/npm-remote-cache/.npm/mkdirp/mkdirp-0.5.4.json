@@ -1,0 +1,32 @@
+{
+  "name" : "mkdirp",
+  "description" : "Recursively mkdir, like `mkdir -p`",
+  "version" : "0.5.4",
+  "author" : "James Halliday <mail@substack.net> (http://substack.net)",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/substack/node-mkdirp.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/mkdirp/-/mkdirp-0.5.4.tgz",
+    "shasum" : "fd01504a6797ec5c9be81ff43d204961ed64a512"
+  },
+  "dependencies" : {
+    "minimist" : "^1.2.5"
+  },
+  "devDependencies" : {
+    "mock-fs" : "^3.7.0",
+    "tap" : "^5.4.2"
+  },
+  "keywords" : [ "mkdir", "directory" ],
+  "license" : "MIT",
+  "files" : [ "bin", "index.js" ],
+  "bin" : "bin/cmd.js",
+  "scripts" : {
+    "test" : "tap test/*.js"
+  },
+  "publishConfig" : {
+    "tag" : "legacy"
+  }
+}

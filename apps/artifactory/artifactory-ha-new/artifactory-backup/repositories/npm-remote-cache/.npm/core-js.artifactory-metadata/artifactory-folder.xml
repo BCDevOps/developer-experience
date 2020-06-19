@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/core-js</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>core-js</name>
+  <created>1579828071080</created>
+  <lastModified>1579828071080</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828071080</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

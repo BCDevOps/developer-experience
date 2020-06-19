@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/ibm/icu/icu4j/59.2/icu4j-59.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>icu4j-59.2.pom</name>
+  <created>1576861361974</created>
+  <lastModified>1555031737000</lastModified>
+  <size>4938</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861361974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>58e4c4bb8032c3e620c908b1b3b07c46ddd5e9d5</original>
+          <actual>58e4c4bb8032c3e620c908b1b3b07c46ddd5e9d5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>417eff3ed99a63d8f4ae4026632319d6</original>
+          <actual>417eff3ed99a63d8f4ae4026632319d6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ad42dd302b6691e62289615fd355ddf170c0ad2bea6111b9e52175b3090a992d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

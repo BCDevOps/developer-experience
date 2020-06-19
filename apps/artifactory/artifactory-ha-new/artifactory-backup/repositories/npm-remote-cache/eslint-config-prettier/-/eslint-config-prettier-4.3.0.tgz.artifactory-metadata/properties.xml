@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"eab57493d177dc30d1fdcdb688c98dce"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>turns off all rules that are unnecessary or might conflict with prettier.</npm.description>
+  <npm.keywords>["eslint","eslintconfig","prettier"]</npm.keywords>
+  <npm.name>eslint-config-prettier</npm.name>
+  <npm.version>4.3.0</npm.version>
+</properties>

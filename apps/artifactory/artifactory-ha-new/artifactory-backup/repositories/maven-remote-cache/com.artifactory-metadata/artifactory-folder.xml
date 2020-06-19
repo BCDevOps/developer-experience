@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>com</name>
+  <created>1576861353542</created>
+  <lastModified>1576861353542</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861353542</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

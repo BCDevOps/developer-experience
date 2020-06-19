@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D75007E5B1C48F</artifactory.internal.etag>
+  <nuget.authors>Chatham Financial Corp. and The Jaeger Authors</nuget.authors>
+  <nuget.copyright>Copyright 2018 (c) The Jaeger Authors. Copyright 2018 (c) Chatham Financial Corp.</nuget.copyright>
+  <nuget.dependency>Jaeger.Thrift:0.3.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.EnvironmentVariables:2.1.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:2.1.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:9.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>OpenTracing:0.12.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Jaeger .NET Tracing</nuget.description>
+  <nuget.digest>aRrdoHkk6liM8uXp+YO/K35H+OHHNdCmr7CoFZJ8kVRubboIVcH1iOZL0Z31xHdcm3FujuLIWCBd5POd7+ynng==</nuget.digest>
+  <nuget.iconUrl>https://github.com/jaegertracing/jaeger-client-csharp/raw/master/images/jaeger-icon.png</nuget.iconUrl>
+  <nuget.id>Jaeger</nuget.id>
+  <nuget.licenseUrl>https://github.com/jaegertracing/jaeger-client-csharp/blob/master/LICENSE</nuget.licenseUrl>
+  <nuget.owners>Chatham Financial Corp. and The Jaeger Authors</nuget.owners>
+  <nuget.projectUrl>https://github.com/jaegertracing/jaeger-client-csharp</nuget.projectUrl>
+  <nuget.releaseNotes>https://github.com/jaegertracing/jaeger-client-csharp/releases/tag/v0.3.6</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>jaeger tracing opentracing</nuget.tags>
+  <nuget.version>0.3.6</nuget.version>
+</properties>

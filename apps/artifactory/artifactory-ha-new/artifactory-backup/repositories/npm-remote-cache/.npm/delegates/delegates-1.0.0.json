@@ -1,0 +1,20 @@
+{
+  "name" : "delegates",
+  "description" : "delegate methods and accessors to another property",
+  "version" : "1.0.0",
+  "repository" : "visionmedia/node-delegates",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/delegates/-/delegates-1.0.0.tgz",
+    "shasum" : "84c6e159b81904fdca59a0ef44cd870d31250f9a"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "mocha" : "*",
+    "should" : "*"
+  },
+  "keywords" : [ "delegate", "delegation" ],
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

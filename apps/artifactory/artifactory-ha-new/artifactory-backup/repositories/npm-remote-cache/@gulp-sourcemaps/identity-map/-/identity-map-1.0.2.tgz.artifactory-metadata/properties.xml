@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"62b618a041ae8e7b59abd3422c6cc187"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>gulp plugin for generating an identity sourcemap for a file.</npm.description>
+  <npm.keywords>["sourcemap","identity","generate","stream"]</npm.keywords>
+  <npm.name>@gulp-sourcemaps/identity-map</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

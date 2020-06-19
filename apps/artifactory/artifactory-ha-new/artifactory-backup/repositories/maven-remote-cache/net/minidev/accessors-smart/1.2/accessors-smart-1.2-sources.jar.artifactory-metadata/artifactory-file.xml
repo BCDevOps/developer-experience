@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>net/minidev/accessors-smart/1.2/accessors-smart-1.2-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>accessors-smart-1.2-sources.jar</name>
+  <created>1576861459325</created>
+  <lastModified>1490515005000</lastModified>
+  <size>16277</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861459326</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>c837e3903ff07b478041f761915d764b98e71e05</original>
+          <actual>c837e3903ff07b478041f761915d764b98e71e05</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>358e11572f91db80ae10b368130a0bea</original>
+          <actual>358e11572f91db80ae10b368130a0bea</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>713c429ed1dad3ec612dbd04796e9e61ad35e3b6deb0c3fd83e8b65f9cdeaa53</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

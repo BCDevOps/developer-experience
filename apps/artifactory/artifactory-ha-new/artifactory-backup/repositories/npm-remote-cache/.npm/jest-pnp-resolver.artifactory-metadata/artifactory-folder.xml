@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-pnp-resolver</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jest-pnp-resolver</name>
+  <created>1576003615084</created>
+  <lastModified>1576003615084</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003615084</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

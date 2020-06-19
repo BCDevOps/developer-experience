@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6757F411DC257</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:Windows8.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>System.Buffers:4.4.0:Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.dependency>System.Numerics.Vectors:4.4.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Numerics.Vectors:4.4.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:Windows8.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.5.2:Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides types for efficient representation and pooling of managed, stack, and native memory segments and sequences of such segments, along with primitives to parse and format UTF-8 encoded text stored in those memory segments.
+
+Commonly Used Types:
+System.Span
+System.ReadOnlySpan
+System.Memory
+System.ReadOnlyMemory
+System.Buffers.MemoryPool
+System.Buffers.ReadOnlySequence
+System.Buffers.Text.Utf8Parser
+System.Buffers.Text.Utf8Formatter
+ 
+99ce22c306b07f99ddae60f443d23a983ae78f7b 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Memory</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Memory</nuget.title>
+  <nuget.version>4.5.2</nuget.version>
+</properties>

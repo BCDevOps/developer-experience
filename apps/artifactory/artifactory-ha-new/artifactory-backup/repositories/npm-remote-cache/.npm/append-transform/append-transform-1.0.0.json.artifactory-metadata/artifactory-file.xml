@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/append-transform/append-transform-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>append-transform-1.0.0.json</name>
+  <created>1579828433819</created>
+  <lastModified>1579828433768</lastModified>
+  <size>1172</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828433819</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>36f47e5642ea13d44f33a27ca0e4e4727d3e9e71</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cb7f3383e4d418203e666bbd86220e6d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a3040ad5c0ca57a52717da8e93f8c2293e11b25d87b549bd1644680c064e3591</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

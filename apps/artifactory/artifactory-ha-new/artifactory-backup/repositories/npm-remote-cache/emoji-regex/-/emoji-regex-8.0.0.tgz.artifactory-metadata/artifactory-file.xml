@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>emoji-regex/-/emoji-regex-8.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>emoji-regex-8.0.0.tgz</name>
+  <created>1585853572903</created>
+  <lastModified>1551812309000</lastModified>
+  <size>6664</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853572904</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e818fd69ce5ccfcb404594f842963bf53164cc37</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>598b731d8d33cfff04377ad55da187b0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b5ccd9fbfb08098eefbeb6b6b4b40db6db3acf9243e327e039925aa8661cb107</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d6db22bbf628b388829469a0bf0c21a5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>flexible ascii progress bar</npm.description>
+  <npm.keywords>["cli","progress"]</npm.keywords>
+  <npm.name>progress</npm.name>
+  <npm.version>2.0.3</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/event-emitter/event-emitter-0.3.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>event-emitter-0.3.5.json</name>
+  <created>1576003454093</created>
+  <lastModified>1576003454069</lastModified>
+  <size>1104</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003454093</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a4bb004fe1eaf7e55b412bf4fad43760f7758d5b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4e8d3d815c57d971e2e9597882871be1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>46f5c93066c98a30f4bf9230cbd45fc99f38f5bfa39ec9b32a376340f3b78154</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

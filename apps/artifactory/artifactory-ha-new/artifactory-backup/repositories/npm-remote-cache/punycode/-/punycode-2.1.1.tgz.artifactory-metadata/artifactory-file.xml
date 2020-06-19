@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>punycode/-/punycode-2.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>punycode-2.1.1.tgz</name>
+  <created>1576003494093</created>
+  <lastModified>1527426675000</lastModified>
+  <size>7270</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003494094</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b58b010ac40c22c5657616c8d2c2c02c7bf479ec</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>189447403a7580274f318eb19af7ea8c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e5ccd079bf02390e34cbb51b75f73a8be42795146a2e2e23cbb204dddb04ff3c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

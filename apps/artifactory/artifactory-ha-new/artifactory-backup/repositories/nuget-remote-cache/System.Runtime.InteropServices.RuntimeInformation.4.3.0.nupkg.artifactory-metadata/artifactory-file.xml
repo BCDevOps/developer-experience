@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Runtime.InteropServices.RuntimeInformation.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Runtime.InteropServices.RuntimeInformation.4.3.0.nupkg</name>
+  <created>1578432221793</created>
+  <lastModified>1544738742000</lastModified>
+  <size>179546</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432221893</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f92137d883bd9d1b318ac17b6fcc8187a43265ed</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3252ef18037286d65f84f9cfed000c9e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>318a65ebf6720ba8639b359121efa20e895d38c5b599f6f05ec76e0275c82860</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

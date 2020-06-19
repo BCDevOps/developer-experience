@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/functional-red-black-tree/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003428737</created>
+  <lastModified>1527384105000</lastModified>
+  <size>11719</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464339561</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5d6844beb1455fefc76f4a33c3b95918d290cd8f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1d15451820d9896655d4bd775230f61e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a316a3f6bb886ecaa90cdf79c94855e16c0905efdc6e7800b4bf69ad01f183fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

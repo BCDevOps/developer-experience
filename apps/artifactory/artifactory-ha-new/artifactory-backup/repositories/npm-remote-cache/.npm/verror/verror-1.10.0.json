@@ -1,0 +1,24 @@
+{
+  "name" : "verror",
+  "description" : "richer JavaScript errors",
+  "version" : "1.10.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/davepacheco/node-verror.git"
+  },
+  "engines" : [ "node >=0.6.0" ],
+  "main" : "./lib/verror.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/verror/-/verror-1.10.0.tgz",
+    "shasum" : "3a105ca17053af55d6e270c1f8288682e18da400"
+  },
+  "dependencies" : {
+    "assert-plus" : "^1.0.0",
+    "core-util-is" : "1.0.2",
+    "extsprintf" : "^1.2.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "make test"
+  }
+}

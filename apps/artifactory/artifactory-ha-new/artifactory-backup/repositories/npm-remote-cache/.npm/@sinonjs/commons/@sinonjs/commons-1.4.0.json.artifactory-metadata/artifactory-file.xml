@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@sinonjs/commons/@sinonjs/commons-1.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-1.4.0.json</name>
+  <created>1579828127696</created>
+  <lastModified>1579828127580</lastModified>
+  <size>1622</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828127697</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fd7255194f33ed65586467cdf27485bd3239fb67</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>5f3d442940e565c703d491de228cac6f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>339325c4bd1fe0833ca4577c75f68c0e5f07e9284bdfd56adbdaaafafa04fedf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

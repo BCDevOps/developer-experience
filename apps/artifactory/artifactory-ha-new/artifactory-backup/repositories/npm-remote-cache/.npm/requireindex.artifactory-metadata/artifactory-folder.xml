@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/requireindex</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>requireindex</name>
+  <created>1576003393275</created>
+  <lastModified>1576003393275</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003393275</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

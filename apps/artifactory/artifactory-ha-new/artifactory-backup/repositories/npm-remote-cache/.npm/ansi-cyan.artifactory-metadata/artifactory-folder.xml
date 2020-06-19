@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ansi-cyan</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>ansi-cyan</name>
+  <created>1576003073190</created>
+  <lastModified>1576003073190</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003073190</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

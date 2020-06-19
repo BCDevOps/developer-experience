@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>escape-goat</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>escape-goat</name>
+  <created>1585871271033</created>
+  <lastModified>1585871271033</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871271033</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,30 @@
+{
+  "name" : "once",
+  "description" : "Run a function exactly one time",
+  "version" : "1.4.0",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/isaacs/once"
+  },
+  "main" : "once.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/once/-/once-1.4.0.tgz",
+    "shasum" : "583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  },
+  "dependencies" : {
+    "wrappy" : "1"
+  },
+  "devDependencies" : {
+    "tap" : "^7.0.1"
+  },
+  "keywords" : [ "once", "function", "one", "single" ],
+  "license" : "ISC",
+  "files" : [ "once.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3cf6e35e1cf63611e65a9d534c28c1f8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>bash-like tilde expansion for node.js. expands a leading tilde in a file path to the user home directory, or `~+` to the cwd.</npm.description>
+  <npm.keywords>["cwd","expand","expansion","filepath","home","path","pwd","tilde","user","userhome"]</npm.keywords>
+  <npm.name>expand-tilde</npm.name>
+  <npm.version>2.0.2</npm.version>
+</properties>

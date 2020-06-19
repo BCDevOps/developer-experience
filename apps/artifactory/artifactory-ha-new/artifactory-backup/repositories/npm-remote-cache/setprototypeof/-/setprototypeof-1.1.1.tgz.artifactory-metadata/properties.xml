@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1bd91f06700e768a1a80cfccacdfed54"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a small polyfill for object.setprototypeof</npm.description>
+  <npm.keywords>["polyfill","object","setprototypeof"]</npm.keywords>
+  <npm.name>setprototypeof</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

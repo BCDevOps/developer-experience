@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>vivid-maven-remote-cache</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1568751189177</created>
+  <lastModified>1568751189177</lastModified>
+  <additionalInfo>
+    <lastUpdated>1568751189177</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

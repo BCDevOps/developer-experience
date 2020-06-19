@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614E76CC2AE9</artifactory.internal.etag>
+  <nuget.authors>Microsoft.AspNetCore.Routing</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Extensions:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Extensions:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Routing.Abstractions:[1.0.3, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Routing.Abstractions:[1.0.3, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.ObjectPool:[1.0.1, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.ObjectPool:[1.0.1, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:[1.0.2, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:[1.0.2, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Collections:[4.0.11, ):.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Text.RegularExpressions:[4.1.0, ):.NETStandard1.3</nuget.dependency>
+  <nuget.description>ASP.NET Core middleware for routing requests to application logic and for generating links.
+Commonly used types:
+ Microsoft.AspNetCore.Routing.Route
+Microsoft.AspNetCore.Routing.RouteCollection</nuget.description>
+  <nuget.digest>WaAW9DlmUXq7/HvqBxM3qrg0tQGV30B+Yf1laZh4SbvOtr0d50nq4QsIK0o3ZIGkf9pq007cGWWr60DG7Xe4Iw==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Routing</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.AspNetCore.Routing</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore,routing</nuget.tags>
+  <nuget.version>1.0.3</nuget.version>
+</properties>

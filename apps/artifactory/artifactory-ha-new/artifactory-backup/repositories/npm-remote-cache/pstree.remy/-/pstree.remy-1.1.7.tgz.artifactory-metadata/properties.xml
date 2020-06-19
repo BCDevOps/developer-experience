@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2a8b179d81b0cb887145f36100c88474"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>collects the full tree of processes from /proc</npm.description>
+  <npm.keywords>["ps","pstree","ps tree"]</npm.keywords>
+  <npm.name>pstree.remy</npm.name>
+  <npm.version>1.1.7</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/projectreactor/reactor-bom/Californium-SR12/reactor-bom-Californium-SR12.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>reactor-bom-Californium-SR12.pom</name>
+  <created>1576861357013</created>
+  <lastModified>1569335829000</lastModified>
+  <size>3985</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861357016</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7d3765d72b5540826f7a03802999da3ffcf8283a</original>
+          <actual>7d3765d72b5540826f7a03802999da3ffcf8283a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>40a265ebbc0214941d0fca0aae2abfcc</original>
+          <actual>40a265ebbc0214941d0fca0aae2abfcc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b1bea0195429ad8743e24b1427b3aab0bf180e8148fd525a0d3d7b98a1474e3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

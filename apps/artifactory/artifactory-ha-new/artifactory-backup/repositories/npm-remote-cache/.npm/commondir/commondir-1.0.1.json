@@ -1,0 +1,32 @@
+{
+  "name" : "commondir",
+  "description" : "compute the closest common parent for file paths",
+  "version" : "1.0.1",
+  "author" : {
+    "name" : "James Halliday",
+    "email" : "mail@substack.net",
+    "url" : "http://substack.net"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/substack/node-commondir.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/commondir/-/commondir-1.0.1.tgz",
+    "shasum" : "ddd800da0c66127393cca5950ea968a3aaf1253b"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "tape" : "^3.5.0"
+  },
+  "keywords" : [ "common", "path", "directory", "file", "parent", "root" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "tape test/*.js"
+  },
+  "engine" : {
+    "node" : ">=0.4"
+  }
+}

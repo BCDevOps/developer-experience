@@ -1,0 +1,28 @@
+{
+  "name" : "p-finally",
+  "description" : "`Promise#finally()` ponyfill - Invoked when the promise is settled regardless of outcome",
+  "version" : "2.0.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/p-finally",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/p-finally/-/p-finally-2.0.1.tgz",
+    "shasum" : "bd6fcaa9c559a096b680806f4d657b3f0f240561"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "promise", "finally", "handler", "function", "async", "await", "promises", "settled", "ponyfill", "polyfill", "shim", "bluebird" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

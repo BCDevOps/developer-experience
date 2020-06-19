@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9b3bb8ef65ff6ad252ddbbbbabb0aed1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a robust html entities encoder/decoder with full unicode support.</npm.description>
+  <npm.keywords>["string","entities","entity","html","encode","decode","unicode"]</npm.keywords>
+  <npm.name>he</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/kind-of/kind-of-5.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>kind-of-5.1.0.json</name>
+  <created>1576003437777</created>
+  <lastModified>1576003437717</lastModified>
+  <size>1946</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003437778</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d1eceb9f26acf09cd0f50b6ba4c38a99755bdddd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3923297dda7a9748b8563abb1242cdb4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e2f85c4dff1c1a2f10a37a4fe6e11dd26c0571aca80c37a34f4728f3f8dd933c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@szmarczak/http-timer/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1585871271161</created>
+  <lastModified>1580758689000</lastModified>
+  <size>49540</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464342173</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e9ad541b7726921e0b659fbf317b9a139699675b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>426b95c94495980f4d3d6e008488ae13</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0ba881655e86267aad48d52b13729fec8a1b7820f6fa8e6be14dbc18b3f6425a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

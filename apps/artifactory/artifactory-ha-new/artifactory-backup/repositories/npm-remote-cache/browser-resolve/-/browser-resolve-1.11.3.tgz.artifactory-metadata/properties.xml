@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"24bbaefc0ea1e83d02871106bff00027"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>resolve which handles browser field support in package.json</npm.description>
+  <npm.keywords>["resolve","browser"]</npm.keywords>
+  <npm.name>browser-resolve</npm.name>
+  <npm.version>1.11.3</npm.version>
+</properties>

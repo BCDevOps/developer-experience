@@ -1,0 +1,31 @@
+{
+  "name" : "scheduler",
+  "description" : "Cooperative scheduler for the browser environment.",
+  "version" : "0.13.6",
+  "homepage" : "https://reactjs.org/",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/react.git",
+    "directory" : "packages/scheduler"
+  },
+  "bugs" : {
+    "url" : "https://github.com/facebook/react/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/scheduler/-/scheduler-0.13.6.tgz",
+    "shasum" : "466a4ec332467b31a91b9bf74e5347072e4cd889"
+  },
+  "dependencies" : {
+    "loose-envify" : "^1.1.0",
+    "object-assign" : "^4.1.1"
+  },
+  "keywords" : [ "react" ],
+  "license" : "MIT",
+  "files" : [ "LICENSE", "README.md", "build-info.json", "index.js", "tracing.js", "tracing-profiling.js", "cjs/", "umd/" ],
+  "scripts" : {
+  },
+  "browserify" : {
+    "transform" : [ "loose-envify" ]
+  }
+}

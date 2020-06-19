@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b8aa95585646db49430dbaf185daec5d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the visual width of a string - the number of columns required to display it</npm.description>
+  <npm.keywords>["string","str","character","char","unicode","width","visual","column","columns","fullwidth","full-width","full","ansi","escape","codes","cli","command-line","terminal","console","cjk","chinese","japanese","korean","fixed-width"]</npm.keywords>
+  <npm.name>string-width</npm.name>
+  <npm.version>2.1.1</npm.version>
+</properties>

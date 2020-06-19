@@ -1,0 +1,29 @@
+{
+  "name" : "negotiator",
+  "description" : "HTTP content negotiation",
+  "version" : "0.6.2",
+  "repository" : "jshttp/negotiator",
+  "contributors" : [ "Douglas Christopher Wilson <doug@somethingdoug.com>", "Federico Romero <federico.romero@outboxlabs.com>", "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)" ],
+  "engines" : {
+    "node" : ">= 0.6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/negotiator/-/negotiator-0.6.2.tgz",
+    "shasum" : "feacf7ccf525a77ae9634436a64883ffeca346fb"
+  },
+  "devDependencies" : {
+    "eslint" : "5.16.0",
+    "eslint-plugin-markdown" : "1.0.0",
+    "mocha" : "6.1.4",
+    "nyc" : "14.0.0"
+  },
+  "keywords" : [ "http", "content negotiation", "accept", "accept-language", "accept-encoding", "accept-charset" ],
+  "license" : "MIT",
+  "files" : [ "lib/", "HISTORY.md", "LICENSE", "index.js", "README.md" ],
+  "scripts" : {
+    "lint" : "eslint --plugin markdown --ext js,md .",
+    "test" : "mocha --reporter spec --check-leaks --bail test/",
+    "test-cov" : "nyc --reporter=html --reporter=text npm test",
+    "test-travis" : "nyc --reporter=text npm test"
+  }
+}

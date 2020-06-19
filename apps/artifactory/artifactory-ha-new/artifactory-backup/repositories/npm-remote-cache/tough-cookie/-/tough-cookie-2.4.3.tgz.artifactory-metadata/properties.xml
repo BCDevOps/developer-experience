@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a27bde51ede38b03d579923358c3c475"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>rfc6265 cookies and cookie jar for node.js</npm.description>
+  <npm.keywords>["HTTP","cookie","cookies","set-cookie","cookiejar","jar","RFC6265","RFC2965"]</npm.keywords>
+  <npm.name>tough-cookie</npm.name>
+  <npm.version>2.4.3</npm.version>
+</properties>

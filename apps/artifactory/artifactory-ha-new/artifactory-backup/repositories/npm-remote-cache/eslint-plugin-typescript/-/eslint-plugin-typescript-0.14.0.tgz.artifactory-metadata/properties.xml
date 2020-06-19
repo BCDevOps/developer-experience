@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a598e0e748ec060e87fcee6eb518be1d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript plugin for eslint</npm.description>
+  <npm.keywords>["eslint","eslintplugin","eslint-plugin"]</npm.keywords>
+  <npm.name>eslint-plugin-typescript</npm.name>
+  <npm.version>0.14.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>camelcase/-/camelcase-2.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>camelcase-2.1.1.tgz</name>
+  <created>1576003435795</created>
+  <lastModified>1527362340000</lastModified>
+  <size>1967</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003435795</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7c1d16d679a1bbe59ca02cacecfb011e201f5a1f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>219dfe1eec3f9eaefff687dd09196776</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3dc15e1abb0eb9fa85846e661df399ccbcdbd1bf100506eadc610c8667c686a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

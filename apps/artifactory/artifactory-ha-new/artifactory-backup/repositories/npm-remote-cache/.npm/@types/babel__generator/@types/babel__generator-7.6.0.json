@@ -1,0 +1,41 @@
+{
+  "name" : "@types/babel__generator",
+  "description" : "TypeScript definitions for @babel/generator",
+  "version" : "7.6.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "directory" : "types/babel__generator"
+  },
+  "contributors" : [ {
+    "name" : "Troy Gerwien",
+    "url" : "https://github.com/yortus",
+    "githubUsername" : "yortus"
+  }, {
+    "name" : "Johnny Estilles",
+    "url" : "https://github.com/johnnyestilles",
+    "githubUsername" : "johnnyestilles"
+  }, {
+    "name" : "Melvin Groenhoff",
+    "url" : "https://github.com/mgroenhoff",
+    "githubUsername" : "mgroenhoff"
+  }, {
+    "name" : "Cameron Yan",
+    "url" : "https://github.com/khell",
+    "githubUsername" : "khell"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/babel__generator/-/babel__generator-7.6.0.tgz",
+    "shasum" : "f1ec1c104d1bb463556ecb724018ab788d0c172a"
+  },
+  "dependencies" : {
+    "@babel/types" : "^7.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "2.9",
+  "typesPublisherContentHash" : "dfa67637cd47499ff534300526632280d98604e8587e28d1e8a38c371a7e33ca"
+}

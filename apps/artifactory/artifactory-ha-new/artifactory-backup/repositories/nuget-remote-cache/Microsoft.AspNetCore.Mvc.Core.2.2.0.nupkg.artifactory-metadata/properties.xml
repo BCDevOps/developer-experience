@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D659756FA423D6</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Authentication.Core:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Authorization.Policy:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Extensions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.ResponseCaching.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Routing:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Routing.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyModel:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Tasks.Extensions:4.5.1:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core MVC core components. Contains common action result types, attribute routing, application model conventions, API explorer, application parts, filters, formatters, model binding, and more.
+Commonly used types:
+Microsoft.AspNetCore.Mvc.AreaAttribute
+Microsoft.AspNetCore.Mvc.BindAttribute
+Microsoft.AspNetCore.Mvc.ControllerBase
+Microsoft.AspNetCore.Mvc.FromBodyAttribute
+Microsoft.AspNetCore.Mvc.FromFormAttribute
+Microsoft.AspNetCore.Mvc.RequireHttpsAttribute
+Microsoft.AspNetCore.Mvc.RouteAttribute
+
+This package was built from the source code at https://github.com/aspnet/Mvc/tree/a6199bbfbab05583f987bae322fb04566841aaea</nuget.description>
+  <nuget.digest>fu2u/QFMmzCeearzOjn7/XX3sTFAO7PMxtKBWKwHwftL8IFSYyTb9F0m94+4iDPW9KsD1uDLs0eIEm49gOi3Uw==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Mvc.Core</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore aspnetcoremvc</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

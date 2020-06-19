@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4ef3227be6e13466d0cc5505bf6b20d9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>easily add plugin support to your node.js application.</npm.description>
+  <npm.keywords>["use"]</npm.keywords>
+  <npm.name>use</npm.name>
+  <npm.version>3.1.1</npm.version>
+</properties>

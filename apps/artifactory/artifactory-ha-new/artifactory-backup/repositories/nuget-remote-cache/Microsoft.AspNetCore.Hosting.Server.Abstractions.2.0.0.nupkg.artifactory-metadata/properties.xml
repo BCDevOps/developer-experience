@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614714AE1C2A</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Features:2.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Abstractions:2.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core hosting server abstractions for web applications.</nuget.description>
+  <nuget.digest>DpHsQd6HcczJmH5y2GD4ImW2MQgdrEN2r4FytUlJHYlPPncA/OqrArrn1EcRErnccaKZrB8wRhFZbinS3u4gcg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Hosting.Server.Abstractions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/Home/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore hosting</nuget.tags>
+  <nuget.version>2.0.0</nuget.version>
+</properties>

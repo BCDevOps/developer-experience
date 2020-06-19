@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"92892bd98a2bd6cdec267bfbca94dfdf"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get v8 stack traces as an array of callsite objects.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>stack-trace</npm.name>
+  <npm.version>0.0.10</npm.version>
+</properties>

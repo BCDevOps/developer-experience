@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/esutils/esutils-1.1.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esutils-1.1.6.json</name>
+  <created>1576003482615</created>
+  <lastModified>1576003482594</lastModified>
+  <size>1348</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003482615</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d62b78b23b53fe608d020655954cf092267df2a0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ec48085d4388647694b197618d94bc6d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a3c44ca2438c07246233cd84c54926b801bc55f4f2a3c41e0f682d5ebfee2a1e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

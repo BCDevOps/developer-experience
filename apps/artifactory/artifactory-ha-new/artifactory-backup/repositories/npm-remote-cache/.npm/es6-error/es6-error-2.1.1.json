@@ -1,0 +1,32 @@
+{
+  "name" : "es6-error",
+  "description" : "Easily-extendable error for use with ES6 classes",
+  "version" : "2.1.1",
+  "author" : "Ben Youngblood",
+  "homepage" : "https://github.com/bjyoungblood/es6-error",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/bjyoungblood/es6-error.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/bjyoungblood/es6-error/issues"
+  },
+  "main" : "dist/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/es6-error/-/es6-error-2.1.1.tgz",
+    "shasum" : "91384301ec5ed1c9a7247d1128247216f03547cd"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "babel" : "^5.1.11",
+    "chai" : "^3.2.0",
+    "mocha" : "^2.3.2"
+  },
+  "keywords" : [ "es6", "error", "babel" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha --compilers js:babel/register",
+    "prepublish" : "npm test && make dist"
+  }
+}

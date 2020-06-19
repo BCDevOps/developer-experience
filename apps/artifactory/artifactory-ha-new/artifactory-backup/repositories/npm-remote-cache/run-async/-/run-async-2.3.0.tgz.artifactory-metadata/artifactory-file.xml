@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>run-async/-/run-async-2.3.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>run-async-2.3.0.tgz</name>
+  <created>1576003506573</created>
+  <lastModified>1527438162000</lastModified>
+  <size>2473</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003506574</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>de25e6edfe737bfaf4b94652c6449e8a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c114544a38e3ba0efba2095d8e8ff45c838ffe23eb0b8c69c2e5522618f7ab69</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

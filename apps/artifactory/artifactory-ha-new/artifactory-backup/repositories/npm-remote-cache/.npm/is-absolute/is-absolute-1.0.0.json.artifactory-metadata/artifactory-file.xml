@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-absolute/is-absolute-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-absolute-1.0.0.json</name>
+  <created>1576003439184</created>
+  <lastModified>1576003439149</lastModified>
+  <size>1835</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003439185</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e08fee434f6a80199f47b62b5d3b899450d3e06d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>83544febb35dd15b969be7fe5d5ee251</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c26d1cd1c185564ebfe35fe1b29b79872533758950da232761a0b47d22986a05</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

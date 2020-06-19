@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/logging/log4j/log4j-bom/2.7/log4j-bom-2.7.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>log4j-bom-2.7.pom</name>
+  <created>1576861439336</created>
+  <lastModified>1475433216000</lastModified>
+  <size>5351</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861439337</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>3cb5745a896d50e860c2548203b1f501e814dce6</original>
+          <actual>3cb5745a896d50e860c2548203b1f501e814dce6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1af67b4f2d6e824d293e892e2ed24e46</original>
+          <actual>1af67b4f2d6e824d293e892e2ed24e46</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d8c09f52c7bfabfe51680e63c5d4aa1e2c1d2313ad8c3532e75159cb47d40256</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

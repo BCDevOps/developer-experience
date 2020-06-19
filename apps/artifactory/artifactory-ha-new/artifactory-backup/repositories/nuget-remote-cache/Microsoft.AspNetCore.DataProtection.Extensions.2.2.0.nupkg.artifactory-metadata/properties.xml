@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6597538F402EA</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.DataProtection:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Additional APIs for ASP.NET Core data protection.
+
+This package was built from the source code at https://github.com/aspnet/AspNetCore/tree/ce8cf65589734f82b0536c543aba5bd60d0a5a98</nuget.description>
+  <nuget.digest>SdOyLQQlYLO7P08LFLzjJVJW7PCv62CnyXJHT3Q+4ZjLc1eVWgz+1C0/E6rBKhF/z5zkFClgPEEYOK1lGhqtBw==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.DataProtection.Extensions</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore dataprotection</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

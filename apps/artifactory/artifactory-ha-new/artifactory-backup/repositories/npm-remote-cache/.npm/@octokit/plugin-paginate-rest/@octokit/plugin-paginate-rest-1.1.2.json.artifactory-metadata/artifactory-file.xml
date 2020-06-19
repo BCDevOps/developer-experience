@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-paginate-rest/@octokit/plugin-paginate-rest-1.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-paginate-rest-1.1.2.json</name>
+  <created>1585871275546</created>
+  <lastModified>1585871275433</lastModified>
+  <size>1427</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871275549</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fabb1c3d29a5b0e9b9249e97375e5af1afba803f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>de93bf1d45d864a4fc7e21fce0e46977</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0104254dba2d5ae18f8db79fa415b588a945068fcdfdf3f0a0dd14ed80aded23</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

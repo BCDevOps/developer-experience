@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-serializer</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jest-serializer</name>
+  <created>1576003467348</created>
+  <lastModified>1576003467348</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003467348</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

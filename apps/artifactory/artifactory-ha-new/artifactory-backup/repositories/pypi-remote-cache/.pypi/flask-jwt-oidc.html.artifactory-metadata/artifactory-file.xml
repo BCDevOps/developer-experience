@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/flask-jwt-oidc.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flask-jwt-oidc.html</name>
+  <created>1574023037828</created>
+  <lastModified>1582154272535</lastModified>
+  <size>2602</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154272622</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5bf5dfd396d85692bf818ccf8c9626118f743933</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6e5a4f4093d6f2b6d8217af3a9568390</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f2aa634942d0f2e17a8349fdb490f35dfade874f4465f61c07f1a9e42dce6d76</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

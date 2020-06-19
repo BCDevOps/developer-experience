@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/before-after-hook/before-after-hook-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>before-after-hook-2.1.0.json</name>
+  <created>1576008552479</created>
+  <lastModified>1576008552380</lastModified>
+  <size>2219</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008552480</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>8cd3146f8a0296aaa8e8c61dac19cbc25ae477ad</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1bc16bb36003d9609ee885f191572e42</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b525ac3a89a1878a86bd7dfcea8b0ea77d6f8e90ac564530cc4deb9c6608cc0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

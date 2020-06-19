@@ -1,0 +1,22 @@
+{
+  "name" : "semver",
+  "description" : "The semantic version parser used by npm.",
+  "version" : "5.6.0",
+  "repository" : "https://github.com/npm/node-semver",
+  "main" : "semver.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/semver/-/semver-5.6.0.tgz",
+    "shasum" : "7e74256fbaa49c75aa7c7a205cc22799cac80004"
+  },
+  "devDependencies" : {
+    "tap" : "^12.0.1"
+  },
+  "license" : "ISC",
+  "files" : [ "bin", "range.bnf", "semver.js" ],
+  "bin" : {
+    "semver" : "./bin/semver"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js --cov -J"
+  }
+}

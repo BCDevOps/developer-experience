@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ansi-gray/-/ansi-gray-0.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ansi-gray-0.1.1.tgz</name>
+  <created>1576003405004</created>
+  <lastModified>1527353656000</lastModified>
+  <size>1959</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003405004</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2962cf54ec9792c48510a3deb524436861ef7251</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>61d605663bc6e7336f9c12e7b761a13f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>008a8a83eb6fd7d0d7fb1a2de54eb53188a3b9d1d909a2b0baf431cc3539633b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

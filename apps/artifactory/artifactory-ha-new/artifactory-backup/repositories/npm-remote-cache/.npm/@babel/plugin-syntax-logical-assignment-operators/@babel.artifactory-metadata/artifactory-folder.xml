@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-logical-assignment-operators/@babel</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@babel</name>
+  <created>1586464316465</created>
+  <lastModified>1586464316465</lastModified>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464316465</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

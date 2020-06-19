@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"dd76556d6ec853024eed529afdedc976"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a super light and fast circular json parser.</npm.description>
+  <npm.keywords>["circular","JSON","fast","parser","minimal"]</npm.keywords>
+  <npm.name>flatted</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

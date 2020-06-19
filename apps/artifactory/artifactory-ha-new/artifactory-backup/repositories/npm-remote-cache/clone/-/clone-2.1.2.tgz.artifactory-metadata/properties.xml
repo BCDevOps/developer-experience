@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d8ce7a9ea1460c467a3b07abd6996bd9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>deep cloning of objects and arrays</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>clone</npm.name>
+  <npm.version>2.1.2</npm.version>
+</properties>

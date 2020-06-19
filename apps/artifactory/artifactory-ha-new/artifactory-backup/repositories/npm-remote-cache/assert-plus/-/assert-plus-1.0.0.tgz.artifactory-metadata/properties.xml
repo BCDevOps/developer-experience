@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8284f902f2d7c5933840e9062de2241e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>extra assertions on top of node's assert module</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>assert-plus</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

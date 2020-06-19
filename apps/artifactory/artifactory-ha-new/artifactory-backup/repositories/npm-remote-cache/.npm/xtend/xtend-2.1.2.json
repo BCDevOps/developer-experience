@@ -1,0 +1,43 @@
+{
+  "name" : "xtend",
+  "description" : "extend like a boss",
+  "version" : "2.1.2",
+  "author" : "Raynos <raynos2@gmail.com>",
+  "homepage" : "https://github.com/Raynos/xtend",
+  "repository" : "git://github.com/Raynos/xtend.git",
+  "contributors" : [ {
+    "name" : "Jake Verbaten"
+  }, {
+    "name" : "Matt Esch"
+  } ],
+  "bugs" : {
+    "url" : "https://github.com/Raynos/xtend/issues",
+    "email" : "raynos2@gmail.com"
+  },
+  "engines" : {
+    "node" : ">=0.4"
+  },
+  "main" : "index",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/xtend/-/xtend-2.1.2.tgz",
+    "shasum" : "6efecc2a4dad8e6962c4901b337ce7ba87b5d28b"
+  },
+  "dependencies" : {
+    "object-keys" : "~0.4.0"
+  },
+  "devDependencies" : {
+    "tape" : "~1.1.0"
+  },
+  "keywords" : [ "extend", "merge", "options", "opts", "object", "array" ],
+  "licenses" : [ {
+    "type" : "MIT",
+    "url" : "http://github.com/raynos/xtend/raw/master/LICENSE"
+  } ],
+  "scripts" : {
+    "test" : "node test"
+  },
+  "testling" : {
+    "files" : "test.js",
+    "browsers" : [ "ie/7..latest", "firefox/16..latest", "firefox/nightly", "chrome/22..latest", "chrome/canary", "opera/12..latest", "opera/next", "safari/5.1..latest", "ipad/6.0..latest", "iphone/6.0..latest" ]
+  }
+}

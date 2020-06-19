@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1fd9e8d50e226c64cdf550745cd62178"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>client to proxy webhooks to local host</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>smee-client</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

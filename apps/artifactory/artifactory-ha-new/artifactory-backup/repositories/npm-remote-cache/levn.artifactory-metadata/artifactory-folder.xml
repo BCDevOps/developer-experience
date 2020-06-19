@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>levn</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>levn</name>
+  <created>1576003430784</created>
+  <lastModified>1576003430784</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003430784</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

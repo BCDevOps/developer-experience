@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/uglify-js/uglify-js-3.6.9.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>uglify-js-3.6.9.json</name>
+  <created>1576008722692</created>
+  <lastModified>1576008722594</lastModified>
+  <size>1254</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008722693</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d92aa44db191a8574197944af80469ac86fef847</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e626673d41f7832edc59239982de5f42</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4f743555e5ffcff2d82c91d453adeff3e27c5d45f7a8b5c3afd966fd0cf9896d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

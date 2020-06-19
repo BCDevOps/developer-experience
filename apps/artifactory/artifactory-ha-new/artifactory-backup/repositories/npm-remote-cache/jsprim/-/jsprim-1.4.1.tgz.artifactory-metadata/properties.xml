@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"07fa4efad9f3688d08363e074a49e7df"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utilities for primitive javascript types</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>jsprim</npm.name>
+  <npm.version>1.4.1</npm.version>
+</properties>

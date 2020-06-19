@@ -1,0 +1,55 @@
+{
+  "name" : "package-hash",
+  "description" : "Generates a hash for an installed npm package, useful for salting caches",
+  "version" : "3.0.0",
+  "author" : "Mark Wubben (https://novemberborn.net/)",
+  "homepage" : "https://github.com/novemberborn/package-hash#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/novemberborn/package-hash.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/novemberborn/package-hash/issues"
+  },
+  "engines" : {
+    "node" : ">=6"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/package-hash/-/package-hash-3.0.0.tgz",
+    "shasum" : "50183f2d36c9e3e528ea0a8605dff57ce976f88e"
+  },
+  "dependencies" : {
+    "graceful-fs" : "^4.1.15",
+    "hasha" : "^3.0.0",
+    "lodash.flattendeep" : "^4.4.0",
+    "release-zalgo" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "@novemberborn/as-i-preach" : "^11.0.0",
+    "ava" : "^1.1.0",
+    "codecov" : "^3.1.0",
+    "nyc" : "^13.1.0",
+    "rimraf" : "^2.6.3",
+    "tar" : "^4.4.8"
+  },
+  "license" : "ISC",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "lint" : "as-i-preach",
+    "unpack-fixtures" : "node scripts/unpack-fixtures.js",
+    "pregenerate-fixture-index" : "npm run unpack-fixtures",
+    "generate-fixture-index" : "node scripts/generate-fixture-index.js",
+    "pretest" : "npm run unpack-fixtures",
+    "test" : "ava",
+    "posttest" : "npm run lint",
+    "coverage" : "nyc npm test",
+    "watch:test" : "npm run test -- --watch"
+  },
+  "standard-engine" : "@novemberborn/as-i-preach",
+  "nyc" : {
+    "cache" : true,
+    "exclude" : [ "scripts", "test" ],
+    "reporter" : [ "html", "lcov", "text" ]
+  }
+}

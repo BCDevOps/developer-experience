@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>union-value</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>union-value</name>
+  <created>1576008055774</created>
+  <lastModified>1576008055774</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008055774</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

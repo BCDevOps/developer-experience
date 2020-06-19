@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f0d628c13689293af7bfd7184c8f5de5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>functions that surround a string with ansistyle codes so it prints in style.</npm.description>
+  <npm.keywords>["ansi","style","terminal","console"]</npm.keywords>
+  <npm.name>ansistyles</npm.name>
+  <npm.version>0.1.3</npm.version>
+</properties>

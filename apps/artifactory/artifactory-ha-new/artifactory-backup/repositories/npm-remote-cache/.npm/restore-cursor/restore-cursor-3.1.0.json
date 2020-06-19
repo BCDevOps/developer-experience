@@ -1,0 +1,32 @@
+{
+  "name" : "restore-cursor",
+  "description" : "Gracefully restore the CLI cursor on exit",
+  "version" : "3.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/restore-cursor",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/restore-cursor/-/restore-cursor-3.1.0.tgz",
+    "shasum" : "39f67c54b3a7a58cea5236d95cf0034239631f7e"
+  },
+  "dependencies" : {
+    "onetime" : "^5.1.0",
+    "signal-exit" : "^3.0.2"
+  },
+  "devDependencies" : {
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "exit", "quit", "process", "graceful", "shutdown", "sigterm", "sigint", "terminate", "kill", "stop", "cli", "cursor", "ansi", "show", "term", "terminal", "console", "tty", "shell", "command-line" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && tsd"
+  }
+}

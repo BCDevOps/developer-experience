@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>5c/73/1dfa428150e3ccb0fa3e68db406e5be48698f2a979ccbcec795f28f44048/Pygments-2.4.2-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Pygments-2.4.2-py2.py3-none-any.whl</name>
+  <created>1573764189235</created>
+  <lastModified>1559019712000</lastModified>
+  <size>883095</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1573764189236</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b22c0e245d2f7874e09bf817352f25462874dd18</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ea723daf498a9805b481619c19ab75f8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>71e430bc85c88a430f000ac1d9b331d2407f681d6f6aec95e8bcfbc3df5b0127</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

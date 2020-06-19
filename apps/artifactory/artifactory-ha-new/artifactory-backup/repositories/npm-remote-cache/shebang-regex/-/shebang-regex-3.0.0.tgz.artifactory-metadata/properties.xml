@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"800d00b53670160a44fa6116b1cbb6e5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>regular expression for matching a shebang line</npm.description>
+  <npm.keywords>["regex","regexp","shebang","match","test","line"]</npm.keywords>
+  <npm.name>shebang-regex</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

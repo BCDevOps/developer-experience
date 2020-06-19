@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-autoconfigure</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>spring-boot-autoconfigure</name>
+  <created>1576861383402</created>
+  <lastModified>1576861383402</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861383402</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

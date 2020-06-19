@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e5bc184b3a1a309d93ef04c9183f8974"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>send parameterized requests to githubs apis with sensible defaults in browsers and node</npm.description>
+  <npm.keywords>["octokit","github","api","request"]</npm.keywords>
+  <npm.name>@octokit/request</npm.name>
+  <npm.version>5.3.4</npm.version>
+</properties>

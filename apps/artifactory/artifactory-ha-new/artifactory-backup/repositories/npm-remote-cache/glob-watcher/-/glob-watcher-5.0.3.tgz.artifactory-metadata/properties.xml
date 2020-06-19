@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"af375d81fc0e79f94b9cfdb9bc3d297b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>watch globs and execute a function upon change, with intelligent defaults for debouncing and queueing.</npm.description>
+  <npm.keywords>["watch","glob","async","queue","debounce","callback"]</npm.keywords>
+  <npm.name>glob-watcher</npm.name>
+  <npm.version>5.0.3</npm.version>
+</properties>

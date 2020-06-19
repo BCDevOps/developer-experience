@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-module-imports</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>helper-module-imports</name>
+  <created>1585871252355</created>
+  <lastModified>1585871252355</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871252355</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

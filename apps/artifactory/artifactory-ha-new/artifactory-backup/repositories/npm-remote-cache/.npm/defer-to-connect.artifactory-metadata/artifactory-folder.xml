@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/defer-to-connect</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>defer-to-connect</name>
+  <created>1585871270988</created>
+  <lastModified>1585871270988</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871270988</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

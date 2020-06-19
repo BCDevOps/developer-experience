@@ -1,0 +1,22 @@
+{
+  "name" : "prettier",
+  "description" : "Prettier is an opinionated code formatter",
+  "version" : "1.18.2",
+  "author" : "James Long",
+  "homepage" : "https://prettier.io",
+  "repository" : "prettier/prettier",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "main" : "./index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/prettier/-/prettier-1.18.2.tgz",
+    "shasum" : "6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  },
+  "license" : "MIT",
+  "files" : [ "*.js" ],
+  "bin" : "./bin-prettier.js",
+  "scripts" : {
+    "prepublishOnly" : "node -e \"assert.equal(require('.').version, require('..').version)\""
+  }
+}

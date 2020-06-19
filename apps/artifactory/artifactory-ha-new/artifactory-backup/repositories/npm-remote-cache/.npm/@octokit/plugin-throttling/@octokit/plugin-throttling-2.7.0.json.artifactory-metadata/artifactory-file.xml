@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-throttling/@octokit/plugin-throttling-2.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-throttling-2.7.0.json</name>
+  <created>1576008552421</created>
+  <lastModified>1576008552076</lastModified>
+  <size>1655</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008552422</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>330985f8d628155e0cc19c5705619df95906e318</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8e23e67f47fab6dacf338f2fd00a327e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>213f9842964a94504b6a608294ceadc2bd01f97c196715f47b77d00890eff3c7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

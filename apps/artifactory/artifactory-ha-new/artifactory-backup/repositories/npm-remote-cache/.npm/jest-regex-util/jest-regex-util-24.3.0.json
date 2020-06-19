@@ -1,0 +1,25 @@
+{
+  "name" : "jest-regex-util",
+  "version" : "24.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-regex-util"
+  },
+  "engines" : {
+    "node" : ">= 6"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-regex-util/-/jest-regex-util-24.3.0.tgz",
+    "shasum" : "d5a65f60be1ae3e310d5214a0307581995227b36"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "3a7a4f3a3f5489ac8e07dcddf76bb949c482ec87",
+  "types" : "build/index.d.ts"
+}

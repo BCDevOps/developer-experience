@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e8782d36757c9bc1bd3d8756a845087d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>default registry in gulp 4.</npm.description>
+  <npm.keywords>["registry","tasks","undertaker","gulp"]</npm.keywords>
+  <npm.name>undertaker-registry</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

@@ -1,0 +1,40 @@
+{
+  "name" : "@fimbul/ymir",
+  "description" : "Core library for the Fimbullinter project",
+  "version" : "0.21.0",
+  "author" : "Klaus Meinhardt",
+  "homepage" : "https://github.com/fimbullinter/wotan#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/fimbullinter/wotan",
+    "directory" : "packages/ymir"
+  },
+  "bugs" : {
+    "url" : "https://github.com/fimbullinter/wotan/issues"
+  },
+  "main" : "src/index",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@fimbul/ymir/-/ymir-0.21.0.tgz",
+    "shasum" : "8525726787aceeafd4e199472c0d795160b5d4a1"
+  },
+  "dependencies" : {
+    "inversify" : "^5.0.0",
+    "reflect-metadata" : "^0.1.12",
+    "tslib" : "^1.8.1"
+  },
+  "devDependencies" : {
+    "tsutils" : "^3.5.0"
+  },
+  "peerDependencies" : {
+    "tsutils" : ">=2.29.0",
+    "typescript" : ">= 3.3.0 || >= 3.6.0-dev || >= 3.7.0-dev"
+  },
+  "keywords" : [ "wotan", "fimbullinter", "core" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "types" : "src/index"
+}

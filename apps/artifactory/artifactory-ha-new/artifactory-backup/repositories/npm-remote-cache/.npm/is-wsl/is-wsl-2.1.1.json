@@ -1,0 +1,31 @@
+{
+  "name" : "is-wsl",
+  "description" : "Check if the process is running inside Windows Subsystem for Linux (Bash on Windows)",
+  "version" : "2.1.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/is-wsl",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-wsl/-/is-wsl-2.1.1.tgz",
+    "shasum" : "4a1c152d429df3d441669498e2486d3596ebaf1d"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "clear-module" : "^3.2.0",
+    "proxyquire" : "^2.1.0",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "check", "wsl", "windows", "subsystem", "linux", "detect", "bash", "process", "console", "terminal", "is" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

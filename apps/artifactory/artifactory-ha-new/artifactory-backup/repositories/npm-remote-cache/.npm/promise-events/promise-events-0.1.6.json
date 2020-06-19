@@ -1,0 +1,31 @@
+{
+  "name" : "promise-events",
+  "description" : "A promise-based events emitter",
+  "version" : "0.1.6",
+  "author" : "Yanick Rochon <yanick.rochon@gmail.com>",
+  "homepage" : "https://github.com/yanickrochon/promise-events#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/yanickrochon/promise-events.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/yanickrochon/promise-events/issues"
+  },
+  "engines" : {
+    "node" : ">=8.0.0"
+  },
+  "main" : "emitter.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/promise-events/-/promise-events-0.1.6.tgz",
+    "shasum" : "e02deb6d35de64f65de7dfd5b167864569c49e13"
+  },
+  "devDependencies" : {
+    "jest" : "^24.8.0"
+  },
+  "keywords" : [ "promise", "events", "async", "emitter" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "jest ./test",
+    "test-cov" : "npm run test -- --coverage"
+  }
+}

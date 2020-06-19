@@ -1,0 +1,28 @@
+{
+  "name" : "detect-newline",
+  "description" : "Detect the dominant newline character of a string",
+  "version" : "2.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/detect-newline",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/detect-newline/-/detect-newline-2.1.0.tgz",
+    "shasum" : "f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "newline", "linebreak", "line-break", "line", "lf", "crlf", "eol", "linefeed", "character", "char" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

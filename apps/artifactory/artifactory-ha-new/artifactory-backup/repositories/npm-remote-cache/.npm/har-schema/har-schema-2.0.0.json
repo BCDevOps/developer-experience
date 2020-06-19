@@ -1,0 +1,47 @@
+{
+  "name" : "har-schema",
+  "description" : "JSON Schema for HTTP Archive (HAR)",
+  "version" : "2.0.0",
+  "author" : "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "homepage" : "https://github.com/ahmadnassri/har-schema",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ahmadnassri/har-schema.git"
+  },
+  "contributors" : [ "Evgeny Poberezkin <e.poberezkin@me.com>" ],
+  "bugs" : {
+    "url" : "https://github.com/ahmadnassri/har-schema/issues"
+  },
+  "engines" : {
+    "node" : ">=4"
+  },
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/har-schema/-/har-schema-2.0.0.tgz",
+    "shasum" : "a94c2224ebcac04782a0d9035521f24735b7ec92"
+  },
+  "devDependencies" : {
+    "ajv" : "^5.0.0",
+    "codeclimate-test-reporter" : "^0.4.0",
+    "cz-conventional-changelog" : "^1.2.0",
+    "echint" : "^2.1.0",
+    "semantic-release" : "^6.3.2",
+    "snazzy" : "^5.0.0",
+    "tap" : "^8.0.1"
+  },
+  "keywords" : [ "har", "http", "archive", "JSON", "schema", "JSON-schema" ],
+  "license" : "ISC",
+  "files" : [ "lib" ],
+  "scripts" : {
+    "test" : "tap test --reporter spec",
+    "pretest" : "snazzy && echint",
+    "coverage" : "tap test --reporter silent --coverage",
+    "codeclimate" : "tap --coverage-report=text-lcov | codeclimate-test-reporter",
+    "semantic-release" : "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config" : {
+    "commitizen" : {
+      "path" : "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

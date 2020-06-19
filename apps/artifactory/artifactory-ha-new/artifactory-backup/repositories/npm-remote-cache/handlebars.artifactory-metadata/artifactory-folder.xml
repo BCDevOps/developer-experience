@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>handlebars</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>handlebars</name>
+  <created>1576003116625</created>
+  <lastModified>1576003116625</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003116625</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>six-1.14.0-py2.py3-none-any.whl</name>
+  <created>1580425563331</created>
+  <lastModified>1579111821000</lastModified>
+  <size>10938</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580425563331</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>10d27a1c0ef0e1ef65ca92220bfff25d2d228d08</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>eb7d3da1d4e6554cf48ff3e69cf49b0d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,31 @@
+{
+  "name" : "bser",
+  "description" : "JavaScript implementation of the BSER Binary Serialization",
+  "version" : "2.1.1",
+  "author" : "Wez Furlong <wez@fb.com> (http://wezfurlong.org)",
+  "homepage" : "https://facebook.github.io/watchman/docs/bser.html",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/watchman"
+  },
+  "bugs" : {
+    "url" : "https://github.com/facebook/watchman/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/bser/-/bser-2.1.1.tgz",
+    "shasum" : "e6787da20ece9d07998533cfd9de6f5c38f4bc05"
+  },
+  "dependencies" : {
+    "node-int64" : "^0.4.0"
+  },
+  "keywords" : [ "bser", "binary", "protocol" ],
+  "license" : "Apache-2.0",
+  "files" : [ "index.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "node test/bser.js"
+  }
+}

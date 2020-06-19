@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lodash.isboolean/lodash.isboolean-3.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.isboolean-3.0.3.json</name>
+  <created>1576003434712</created>
+  <lastModified>1576003434691</lastModified>
+  <size>966</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003434712</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>68eb94669d3c8a304f5ffb9637de0dacc122d073</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>633e433aa27ec11dd4c244310412409e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>92a10b976ae2c4c2c042bdc32a93eee0c10e7b5319fd0cd4da7fce9a063905a3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

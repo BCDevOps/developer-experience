@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/sver-compat/sver-compat-1.5.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sver-compat-1.5.0.json</name>
+  <created>1576003439150</created>
+  <lastModified>1576003439127</lastModified>
+  <size>881</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003439151</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f5d11039cdb0554bb0f302fc64d0b193147212c4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>f748c998193fb1d96ddcf9e7ab6ea87a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8e02d865f8a8f987dfcec1cbb48c580372d59ee83c6d610f58c397e282da29c7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

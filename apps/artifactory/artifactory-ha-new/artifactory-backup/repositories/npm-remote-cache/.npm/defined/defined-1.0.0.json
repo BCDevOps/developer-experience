@@ -1,0 +1,44 @@
+{
+  "name" : "defined",
+  "description" : "return the first argument that is `!== undefined`",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "James Halliday",
+    "email" : "mail@substack.net",
+    "url" : "http://substack.net"
+  },
+  "homepage" : "https://github.com/substack/defined",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/substack/defined.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/defined/-/defined-1.0.0.tgz",
+    "shasum" : "c98d9bcef75674188e110969151199e39b1fa693"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "tape" : "~3.5.0"
+  },
+  "keywords" : [ "undefined", "short-circuit", "||", "or", "//", "defined-or" ],
+  "license" : "MIT",
+  "directories" : {
+    "example" : "example",
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tape test/*.js"
+  },
+  "testling" : {
+    "files" : "test/*.js",
+    "browsers" : {
+      "ie" : [ 6, 7, 8, 9 ],
+      "ff" : [ 3.5, 10, 15.0 ],
+      "chrome" : [ 10, 22 ],
+      "safari" : [ 5.1 ],
+      "opera" : [ 12 ]
+    }
+  }
+}

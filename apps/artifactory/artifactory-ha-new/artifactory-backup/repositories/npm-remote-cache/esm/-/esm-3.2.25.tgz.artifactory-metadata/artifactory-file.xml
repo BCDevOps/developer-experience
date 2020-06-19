@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>esm/-/esm-3.2.25.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esm-3.2.25.tgz</name>
+  <created>1576008548171</created>
+  <lastModified>1558070685000</lastModified>
+  <size>91429</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008548172</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>342c18c29d56157688ba5ce31f8431fbb795cc10</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c9f53fe7f4deec7da0819bdcb616024d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>eb4dd4462e283b2623e6e95c5f7478b7b8c73055a2feee49f2ddd08c99c8458a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

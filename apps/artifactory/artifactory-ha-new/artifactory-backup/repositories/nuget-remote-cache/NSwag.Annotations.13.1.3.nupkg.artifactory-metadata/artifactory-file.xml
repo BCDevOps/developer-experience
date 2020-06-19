@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NSwag.Annotations.13.1.3.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NSwag.Annotations.13.1.3.nupkg</name>
+  <created>1578496775199</created>
+  <lastModified>1570688810000</lastModified>
+  <size>30203</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496775199</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2fdb42fa85f939241bb90180d2856d7abb378969</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a1ed6a6d35f29d3ae95d140dbc47b28e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ae3ab8c8235c25cde2909f1952d0bce908ad977b326b1465843577595af60f2a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

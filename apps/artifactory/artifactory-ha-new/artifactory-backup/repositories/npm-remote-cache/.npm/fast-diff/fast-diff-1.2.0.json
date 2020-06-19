@@ -1,0 +1,28 @@
+{
+  "name" : "fast-diff",
+  "description" : "Fast Javascript text diff",
+  "version" : "1.2.0",
+  "author" : "Jason Chen <jhchen7@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jhchen/fast-diff"
+  },
+  "bugs" : {
+    "url" : "https://github.com/jhchen/fast-diff/issues"
+  },
+  "main" : "diff.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/fast-diff/-/fast-diff-1.2.0.tgz",
+    "shasum" : "73ee11982d86caaf7959828d519cfe927fac5f03"
+  },
+  "devDependencies" : {
+    "lodash" : "~3.9.3",
+    "seedrandom" : "~2.4.0"
+  },
+  "keywords" : [ "diff" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+    "test" : "node test.js"
+  },
+  "types" : "diff.d.ts"
+}

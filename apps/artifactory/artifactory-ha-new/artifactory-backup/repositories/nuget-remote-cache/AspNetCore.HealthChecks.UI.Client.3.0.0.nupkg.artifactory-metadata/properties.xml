@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D740CB220B2C98</artifactory.internal.etag>
+  <nuget.authors>Xabaril Contributors</nuget.authors>
+  <nuget.dependency>Microsoft.Extensions.Diagnostics.HealthChecks:3.0.0:.NETCoreApp3.0</nuget.dependency>
+  <nuget.description>HealthChecks.UI.Client contains some mandatory abstractions to work with HealthChecks.UI.</nuget.description>
+  <nuget.digest>oLUIHci4QkqTI/47T2tAvDUjXPdFMGEmb2QSXXnWLA1V5h6R5t9ED8+3yiOZmguQWTTNe11TKBu2eIXo7+Jl/w==</nuget.digest>
+  <nuget.id>AspNetCore.HealthChecks.UI.Client</nuget.id>
+  <nuget.licenseUrl>https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/blob/master/LICENSE</nuget.licenseUrl>
+  <nuget.owners>Xabaril Contributors</nuget.owners>
+  <nuget.projectUrl>http://github.com/xabaril/AspNetCore.Diagnostics.HealthChecks</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>HealthCheck UI Client</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

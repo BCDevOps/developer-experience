@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/code-point-at/code-point-at-1.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>code-point-at-1.1.0.json</name>
+  <created>1576003606237</created>
+  <lastModified>1576003606219</lastModified>
+  <size>824</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003606238</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>8269e9872a8165f61df26121febff564181a02be</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4abaed884ef9892cac66d794218306dc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3f55cb73cc1f77bb32880eab77832637592e3ea32ff3eb8eed20ea5a99049915</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

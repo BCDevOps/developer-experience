@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@babel/plugin-syntax-json-strings</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plugin-syntax-json-strings</name>
+  <created>1586464310149</created>
+  <lastModified>1586464310149</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464310149</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,38 @@
+{
+  "name" : "append-transform",
+  "description" : "Install a transform to `require.extensions` that always runs last, even if additional extensions are added later.",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "James Talmage",
+    "email" : "james@talmage.io",
+    "url" : "github.com/jamestalmage"
+  },
+  "repository" : "istanbuljs/append-transform",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/append-transform/-/append-transform-1.0.0.tgz",
+    "shasum" : "046a52ae582a228bd72f58acfbe2967c678759ab"
+  },
+  "dependencies" : {
+    "default-require-extensions" : "^2.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^0.24.0",
+    "coveralls" : "^3.0.0",
+    "fake-module-system" : "^0.3.0",
+    "nyc" : "^11.3.0",
+    "xo" : "^0.15.1"
+  },
+  "keywords" : [ "transform", "require", "append", "last", "coverage", "source-map", "extension", "module" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "nyc --reporter=lcov --reporter=text ava"
+  },
+  "xo" : {
+    "ignores" : [ "test/_mock-module-system.js" ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name" : "xml-name-validator",
+  "description" : "Validates whether a string matches the production for an XML name or qualified name",
+  "version" : "3.0.0",
+  "author" : "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
+  "repository" : "jsdom/xml-name-validator",
+  "main" : "lib/xml-name-validator.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/xml-name-validator/-/xml-name-validator-3.0.0.tgz",
+    "shasum" : "6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
+  },
+  "devDependencies" : {
+    "eslint" : "^2.9.0",
+    "mocha" : "^2.4.5",
+    "waka" : "0.1.2"
+  },
+  "keywords" : [ "xml", "name", "qname" ],
+  "license" : "Apache-2.0",
+  "files" : [ "lib/" ],
+  "scripts" : {
+    "prepublish" : "node scripts/generate-grammar.js < lib/grammar.pegjs > lib/generated-parser.js",
+    "pretest" : "npm run prepublish",
+    "test" : "mocha",
+    "lint" : "eslint ."
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/defined</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>defined</name>
+  <created>1576003488072</created>
+  <lastModified>1576003488072</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003488072</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

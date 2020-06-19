@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/json-buffer/json-buffer-3.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>json-buffer-3.0.0.json</name>
+  <created>1585853579028</created>
+  <lastModified>1585853579001</lastModified>
+  <size>1030</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853579028</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1720a029fe00501920f1c6db79bf44759e2671e2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3f9a1eb3742906626f1796d6a5a9bf03</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f9aa9adea071dab8484aea8ee658a78c80d4860419810ef2626a72066787964c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

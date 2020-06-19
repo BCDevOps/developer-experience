@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e0836faadf4b192c3987c5117d62fff6"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>the semantic version parser used by npm.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>semver</npm.name>
+  <npm.version>6.3.0</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>fs-extra</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>fs-extra</name>
+  <created>1579828106007</created>
+  <lastModified>1579828106007</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828106007</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

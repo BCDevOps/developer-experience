@@ -1,0 +1,49 @@
+{
+  "name" : "querystring",
+  "description" : "Node's querystring module for all engines.",
+  "version" : "0.2.0",
+  "author" : "Irakli Gozalishvili <rfobic@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/Gozala/querystring.git",
+    "web" : "https://github.com/Gozala/querystring"
+  },
+  "bugs" : {
+    "url" : "http://github.com/Gozala/querystring/issues/"
+  },
+  "engines" : {
+    "node" : ">=0.4.x"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/querystring/-/querystring-0.2.0.tgz",
+    "shasum" : "b209849203bb25df820da756e747005878521620"
+  },
+  "devDependencies" : {
+    "test" : "~0.x.0",
+    "phantomify" : "~0.x.0",
+    "retape" : "~0.x.0",
+    "tape" : "~0.1.5"
+  },
+  "keywords" : [ "commonjs", "query", "querystring" ],
+  "licenses" : [ {
+    "type" : "MIT",
+    "url" : "https://github.com/Gozala/enchain/License.md"
+  } ],
+  "scripts" : {
+    "test" : "npm run test-node && npm run test-browser && npm run test-tap",
+    "test-browser" : "node ./node_modules/phantomify/bin/cmd.js ./test/common-index.js",
+    "test-node" : "node ./test/common-index.js",
+    "test-tap" : "node ./test/tap-index.js"
+  },
+  "testling" : {
+    "files" : "test/tap-index.js",
+    "browsers" : {
+      "iexplore" : [ 9, 10 ],
+      "chrome" : [ 16, 20, 25, "canary" ],
+      "firefox" : [ 10, 15, 16, 17, 18, "nightly" ],
+      "safari" : [ 5, 6 ],
+      "opera" : [ 12 ]
+    }
+  },
+  "id" : "querystring"
+}

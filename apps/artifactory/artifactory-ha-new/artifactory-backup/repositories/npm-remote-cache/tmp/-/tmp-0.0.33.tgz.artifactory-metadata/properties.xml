@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"094f64689467b6dfcafa6c2a83723081"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>temporary file and directory creator</npm.description>
+  <npm.keywords>["temporary","tmp","temp","tempdir","tempfile","tmpdir","tmpfile"]</npm.keywords>
+  <npm.name>tmp</npm.name>
+  <npm.version>0.0.33</npm.version>
+</properties>

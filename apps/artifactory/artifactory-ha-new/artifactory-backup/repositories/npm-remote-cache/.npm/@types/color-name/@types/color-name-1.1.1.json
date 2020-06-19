@@ -1,0 +1,27 @@
+{
+  "name" : "@types/color-name",
+  "description" : "TypeScript definitions for color-name",
+  "version" : "1.1.1",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "contributors" : [ {
+    "name" : "Junyoung Clare Jang",
+    "url" : "https://github.com/Ailrun",
+    "githubUsername" : "Ailrun"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/color-name/-/color-name-1.1.1.tgz",
+    "shasum" : "1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
+  },
+  "dependencies" : {
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "2.0",
+  "typesPublisherContentHash" : "e22c6881e2dcf766e32142cbb82d9acf9c08258bdf0da8e76c8a448d1be44ac7"
+}

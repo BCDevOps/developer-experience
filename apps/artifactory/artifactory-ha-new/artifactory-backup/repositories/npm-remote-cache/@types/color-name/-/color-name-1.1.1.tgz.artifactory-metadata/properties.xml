@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1513e971c589438d6d11f3da91478fee"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for color-name</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/color-name</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

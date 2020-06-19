@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"18bfccb10294ae19e7eb616ed1c05176"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node.js 0.12 path.isabsolute() ponyfill</npm.description>
+  <npm.keywords>["path","paths","file","dir","absolute","isabsolute","is-absolute","built-in","util","utils","core","ponyfill","polyfill","shim","is","detect","check"]</npm.keywords>
+  <npm.name>path-is-absolute</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

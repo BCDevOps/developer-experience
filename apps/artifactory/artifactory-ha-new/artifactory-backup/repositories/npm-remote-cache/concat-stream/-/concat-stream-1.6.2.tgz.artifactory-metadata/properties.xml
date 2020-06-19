@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f3d719f26732b5206541e52972316e84"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>writable stream that concatenates strings or binary data and calls a callback with the result</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>concat-stream</npm.name>
+  <npm.version>1.6.2</npm.version>
+</properties>

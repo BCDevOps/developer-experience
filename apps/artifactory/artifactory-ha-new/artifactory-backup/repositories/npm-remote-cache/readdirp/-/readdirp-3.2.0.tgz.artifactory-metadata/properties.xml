@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e0a3b0361bdfe37fc4bed3102f6a69a8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>recursive version of fs.readdir with streaming api.</npm.description>
+  <npm.keywords>["recursive","fs","stream","streams","readdir","filesystem","find","filter"]</npm.keywords>
+  <npm.name>readdirp</npm.name>
+  <npm.version>3.2.0</npm.version>
+</properties>

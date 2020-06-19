@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a8657f62064e3d6e0e4759bd3f853e91"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>allow parsing of the logical assignment operators</npm.description>
+  <npm.keywords>["babel-plugin"]</npm.keywords>
+  <npm.name>@babel/plugin-syntax-logical-assignment-operators</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

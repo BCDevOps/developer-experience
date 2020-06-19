@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/squareup/okhttp3/okhttp/3.9.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>3.9.0</name>
+  <created>1576861389681</created>
+  <lastModified>1576861389681</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861389681</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

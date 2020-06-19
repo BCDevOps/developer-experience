@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"eba74c93a3282240d5d954323215ef69"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>apply a source map to a vinyl file, merging it with preexisting source maps</npm.description>
+  <npm.keywords>["vinyl","sourcemaps","source maps","gulp"]</npm.keywords>
+  <npm.name>vinyl-sourcemaps-apply</npm.name>
+  <npm.version>0.2.1</npm.version>
+</properties>

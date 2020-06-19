@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"94f67a596e258636371cddf3b814ac6c"</artifactory.internal.etag>
+  <artifactory.licenses></artifactory.licenses>
+  <npm.description>array-slice method. slices `array` from the `start` index up to, but not including, the `end` index.</npm.description>
+  <npm.keywords>["array","javascript","js","slice","util","utils"]</npm.keywords>
+  <npm.name>array-slice</npm.name>
+  <npm.version>0.2.3</npm.version>
+</properties>

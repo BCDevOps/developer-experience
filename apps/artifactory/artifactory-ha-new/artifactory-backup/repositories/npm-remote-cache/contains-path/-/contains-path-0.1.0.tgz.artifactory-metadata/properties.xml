@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"21d51289f9b59826bac0b90be9ec75b5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>return true if a file path contains the given path.</npm.description>
+  <npm.keywords>["contains","directory","dirname","exec","ext","extname","file","filepath","fp","has","match","matches","path","regex","test"]</npm.keywords>
+  <npm.name>contains-path</npm.name>
+  <npm.version>0.1.0</npm.version>
+</properties>

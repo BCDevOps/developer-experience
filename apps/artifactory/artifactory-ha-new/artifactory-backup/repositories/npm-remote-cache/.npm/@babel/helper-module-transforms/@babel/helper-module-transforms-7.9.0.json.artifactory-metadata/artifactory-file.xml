@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-module-transforms/@babel/helper-module-transforms-7.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>helper-module-transforms-7.9.0.json</name>
+  <created>1585853559106</created>
+  <lastModified>1585853559067</lastModified>
+  <size>1084</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853559106</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>17d097647c6f94e482b9d2f76ecb316544b486fe</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>35714bad4b8d2c654c4b668816d52a88</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fce2f0c78489f286916eb9ca5908b943cd22588e956d7fbed2d9eef33f157056</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

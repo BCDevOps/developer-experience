@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"91367c43c8b8b1441078bf2c0652bd3d"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-2-Clause</artifactory.licenses>
+  <npm.description>ecmascript ast recursive visitor</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>esrecurse</npm.name>
+  <npm.version>4.2.1</npm.version>
+</properties>

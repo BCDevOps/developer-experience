@@ -1,0 +1,29 @@
+{
+  "name" : "touch",
+  "description" : "like touch(1) in node",
+  "version" : "3.1.0",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "repository" : "git://github.com/isaacs/node-touch.git",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/touch/-/touch-3.1.0.tgz",
+    "shasum" : "fe365f5f75ec9ed4e56825e0bb76d24ab74af83b"
+  },
+  "dependencies" : {
+    "nopt" : "~1.0.10"
+  },
+  "devDependencies" : {
+    "mutate-fs" : "^1.1.0",
+    "tap" : "^10.7.0"
+  },
+  "license" : "ISC",
+  "files" : [ "index.js", "bin/nodetouch.js" ],
+  "bin" : {
+    "nodetouch" : "./bin/nodetouch.js"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js --100 -J",
+    "preversion" : "npm test",
+    "postversion" : "npm publish",
+    "postpublish" : "git push origin --all; git push origin --tags"
+  }
+}

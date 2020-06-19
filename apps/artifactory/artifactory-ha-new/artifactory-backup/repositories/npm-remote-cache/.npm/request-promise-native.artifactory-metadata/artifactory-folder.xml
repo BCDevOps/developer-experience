@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/request-promise-native</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>request-promise-native</name>
+  <created>1576003396725</created>
+  <lastModified>1576003396725</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003396725</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

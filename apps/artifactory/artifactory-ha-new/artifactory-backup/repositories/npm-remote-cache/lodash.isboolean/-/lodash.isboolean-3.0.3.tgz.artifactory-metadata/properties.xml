@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"249af67b8085bdde56a0537fa7435d9c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.isboolean` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, isboolean"</npm.keywords>
+  <npm.name>lodash.isboolean</npm.name>
+  <npm.version>3.0.3</npm.version>
+</properties>

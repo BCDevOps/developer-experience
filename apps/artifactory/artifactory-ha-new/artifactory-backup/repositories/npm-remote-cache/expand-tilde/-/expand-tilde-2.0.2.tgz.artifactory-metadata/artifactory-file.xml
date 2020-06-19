@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>expand-tilde/-/expand-tilde-2.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>expand-tilde-2.0.2.tgz</name>
+  <created>1576003606647</created>
+  <lastModified>1527379594000</lastModified>
+  <size>2762</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003606647</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>97e801aa052df02454de46b02bf621642cdc8502</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3cf6e35e1cf63611e65a9d534c28c1f8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>244ad2312ccc0230c5bc64ba5df1ecbee4eacf5de2e2430a9b64a52a83826124</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

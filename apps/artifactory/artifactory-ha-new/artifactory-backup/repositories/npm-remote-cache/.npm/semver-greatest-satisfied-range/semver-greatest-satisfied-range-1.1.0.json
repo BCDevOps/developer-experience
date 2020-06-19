@@ -1,0 +1,39 @@
+{
+  "name" : "semver-greatest-satisfied-range",
+  "description" : "Find the greatest satisfied semver range from an array of ranges.",
+  "version" : "1.1.0",
+  "author" : "Gulp Team <team@gulpjs.com> (http://gulpjs.com/)",
+  "repository" : "gulpjs/semver-greatest-satisfied-range",
+  "contributors" : [ "Blaine Bublitz <blaine.bublitz@gmail.com>" ],
+  "engines" : {
+    "node" : ">= 0.10"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/semver-greatest-satisfied-range/-/semver-greatest-satisfied-range-1.1.0.tgz",
+    "shasum" : "13e8c2658ab9691cb0cd71093240280d36f77a5b"
+  },
+  "dependencies" : {
+    "sver-compat" : "^1.5.0"
+  },
+  "devDependencies" : {
+    "eslint" : "^1.7.3",
+    "eslint-config-gulp" : "^2.0.0",
+    "expect" : "^1.19.0",
+    "istanbul" : "^0.4.3",
+    "istanbul-coveralls" : "^1.0.3",
+    "jscs" : "^2.3.5",
+    "jscs-preset-gulp" : "^1.0.0",
+    "mocha" : "^2.4.5"
+  },
+  "keywords" : [ "semver", "range", "max", "satisfied", "range", "array", "greatest" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "LICENSE" ],
+  "scripts" : {
+    "lint" : "eslint . && jscs index.js test/",
+    "pretest" : "npm run lint",
+    "test" : "mocha --async-only",
+    "cover" : "istanbul cover _mocha --report lcovonly",
+    "coveralls" : "npm run cover && istanbul-coveralls"
+  }
+}

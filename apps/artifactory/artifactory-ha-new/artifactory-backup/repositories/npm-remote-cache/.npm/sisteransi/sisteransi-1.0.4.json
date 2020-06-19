@@ -1,0 +1,30 @@
+{
+  "name" : "sisteransi",
+  "description" : "ANSI escape codes for some terminal swag",
+  "version" : "1.0.4",
+  "author" : {
+    "name" : "Terkel Gjervig",
+    "email" : "terkel@terkel.com",
+    "url" : "https://terkel.com"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/terkelg/sisteransi"
+  },
+  "main" : "src/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/sisteransi/-/sisteransi-1.0.4.tgz",
+    "shasum" : "386713f1ef688c7c0304dc4c0632898941cad2e3"
+  },
+  "devDependencies" : {
+    "tap-spec" : "^5.0.0",
+    "tape" : "^4.11.0"
+  },
+  "keywords" : [ "ansi", "escape codes", "escape", "terminal", "style" ],
+  "license" : "MIT",
+  "files" : [ "src" ],
+  "scripts" : {
+    "test" : "tape test/*.js | tap-spec"
+  },
+  "types" : "./src/sisteransi.d.ts"
+}

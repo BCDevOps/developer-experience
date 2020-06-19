@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>webidl-conversions</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>webidl-conversions</name>
+  <created>1576003133943</created>
+  <lastModified>1576003133943</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003133943</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

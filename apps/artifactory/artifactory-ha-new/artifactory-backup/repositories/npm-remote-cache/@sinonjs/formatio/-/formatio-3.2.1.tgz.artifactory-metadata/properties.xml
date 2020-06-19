@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"27b73f6e8beeb9c69fe3d17106b698a7"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>human-readable object formatting</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@sinonjs/formatio</npm.name>
+  <npm.version>3.2.1</npm.version>
+</properties>

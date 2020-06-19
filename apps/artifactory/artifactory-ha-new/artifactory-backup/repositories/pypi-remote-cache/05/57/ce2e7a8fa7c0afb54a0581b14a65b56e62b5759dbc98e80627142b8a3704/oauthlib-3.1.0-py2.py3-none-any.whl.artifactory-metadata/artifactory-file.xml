@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>05/57/ce2e7a8fa7c0afb54a0581b14a65b56e62b5759dbc98e80627142b8a3704/oauthlib-3.1.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>oauthlib-3.1.0-py2.py3-none-any.whl</name>
+  <created>1574234383265</created>
+  <lastModified>1565103043000</lastModified>
+  <size>147368</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234383266</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>52c42c870fea99ec71d4b1af876e3fb73f7c6ddf</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>de4829861f156a7fd7404f9f8d9ca444</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df884cd6cbe20e32633f1db1072e9356f53638e4361bef4e8b03c9127c9328ea</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

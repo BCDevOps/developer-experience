@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/session/spring-session-bom/Bean-SR8/spring-session-bom-Bean-SR8.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-session-bom-Bean-SR8.pom</name>
+  <created>1576861361129</created>
+  <lastModified>1569931738000</lastModified>
+  <size>2969</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861361129</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6beb893ff37090b3ec7db32be5cd603e5e6f683b</original>
+          <actual>6beb893ff37090b3ec7db32be5cd603e5e6f683b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>5aff31f7f1f18faa72c789993377dcae</original>
+          <actual>5aff31f7f1f18faa72c789993377dcae</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>008a311bed44866ad2d421fa3afabb92f84a260bab0f7346fe5365ba310341ed</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

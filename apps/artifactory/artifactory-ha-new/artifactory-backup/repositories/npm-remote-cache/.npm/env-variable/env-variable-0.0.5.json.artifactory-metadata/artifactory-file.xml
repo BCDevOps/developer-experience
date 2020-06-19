@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/env-variable/env-variable-0.0.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>env-variable-0.0.5.json</name>
+  <created>1576008549978</created>
+  <lastModified>1576008549479</lastModified>
+  <size>1310</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008549978</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6a8b29a5c8c7334df56d05c067c52f2f6916b9ca</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0a6cef63282787d91c92a911149eb6bc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>77726b5981ae5914143daa6c2568fa71e5532bd28591f29ce48c7c81bb16299f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+{
+  "name" : "which-module",
+  "description" : "Find the module object for something that was require()d",
+  "version" : "2.0.0",
+  "author" : "nexdrew",
+  "homepage" : "https://github.com/nexdrew/which-module#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/nexdrew/which-module.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/nexdrew/which-module/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/which-module/-/which-module-2.0.0.tgz",
+    "shasum" : "d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
+  },
+  "devDependencies" : {
+    "ava" : "^0.19.1",
+    "coveralls" : "^2.13.1",
+    "nyc" : "^10.3.0",
+    "standard" : "^10.0.2",
+    "standard-version" : "^4.0.0"
+  },
+  "keywords" : [ "which", "module", "exports", "filename", "require", "reverse", "lookup" ],
+  "license" : "ISC",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "pretest" : "standard",
+    "test" : "nyc ava",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls",
+    "release" : "standard-version"
+  }
+}

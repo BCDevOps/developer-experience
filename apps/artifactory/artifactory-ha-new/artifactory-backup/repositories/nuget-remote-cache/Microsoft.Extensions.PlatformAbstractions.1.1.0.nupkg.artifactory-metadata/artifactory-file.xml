@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.PlatformAbstractions.1.1.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.PlatformAbstractions.1.1.0.nupkg</name>
+  <created>1578497269915</created>
+  <lastModified>1545094505000</lastModified>
+  <size>30191</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578497269916</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>fa47773e825e248c565325f4b309a4a93a38f994</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>aacba038a2066410b7fe11a36b719d65</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>97e9d544b33e253857cf013120f1ce76687a374bde86b0365573dcbdc5469264</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

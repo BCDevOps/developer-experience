@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/read-pkg-up/read-pkg-up-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>read-pkg-up-1.0.1.json</name>
+  <created>1576003426177</created>
+  <lastModified>1576003425978</lastModified>
+  <size>1036</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003426178</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5a63b1dc471f74578699d43cbdd2a06decbad006</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9deee720dfd57d9925b7ed2a84ebb08b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fd69d60241c32b40479169f1a34704372dd57fa71dd884e96affc388986e8b6c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+{
+  "name" : "@types/nconf",
+  "description" : "TypeScript definitions for nconf",
+  "version" : "0.10.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "contributors" : [ {
+    "name" : "Jeff Goddard",
+    "url" : "https://github.com/jedigo",
+    "githubUsername" : "jedigo"
+  }, {
+    "name" : "\n//                 Jean-Martin Thibault",
+    "url" : "https://github.com/jmthibault",
+    "githubUsername" : "jmthibault"
+  }, {
+    "name" : "Dave Houston",
+    "url" : "https://github.com/ew73",
+    "githubUsername" : "ew73"
+  } ],
+  "main" : "",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@types/nconf/-/nconf-0.10.0.tgz",
+    "shasum" : "a5c9753a09c59d44c8e6dc94b57d73f70eb12ebe"
+  },
+  "dependencies" : {
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "types" : "index",
+  "typeScriptVersion" : "2.0",
+  "typesPublisherContentHash" : "446c82c6df51d6120c3323c2e91fb0b35b9ec9a71b0eeb8a816db67f9f4d5e51"
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ceb01ad953dd6887b2907282dbceec9a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>turn a writable and readable stream into a streams2 duplex stream with support for async initialization and streams1/streams2 input</npm.description>
+  <npm.keywords>["duplex","streams2","streams","stream","writable","readable","async"]</npm.keywords>
+  <npm.name>duplexify</npm.name>
+  <npm.version>3.7.1</npm.version>
+</properties>

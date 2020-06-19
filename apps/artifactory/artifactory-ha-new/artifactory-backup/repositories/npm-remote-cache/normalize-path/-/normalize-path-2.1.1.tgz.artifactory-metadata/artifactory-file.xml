@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>normalize-path/-/normalize-path-2.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>normalize-path-2.1.1.tgz</name>
+  <created>1576003402893</created>
+  <lastModified>1527417225000</lastModified>
+  <size>3159</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003402973</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1ab28b556e198363a8c1a6f7e6fa20137fe6aed9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b2f3932160dc03a5604dbac60ef59c34</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>920110b8616e904bbfaaa5546a7f47ee69f3ed3e5393f52746f3618fb19702b5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

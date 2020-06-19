@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/make-iterator/make-iterator-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>make-iterator-1.0.1.json</name>
+  <created>1576003439920</created>
+  <lastModified>1576003439892</lastModified>
+  <size>1438</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003439920</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>473cdd395012a00f4af98abab4dbf03e67c396ba</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>29540408bffde565d257c78795aabeb7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d0d593fd89bc5a7b978feb27cd53f59cbd219f104ffa4313555f8c7d1798a068</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

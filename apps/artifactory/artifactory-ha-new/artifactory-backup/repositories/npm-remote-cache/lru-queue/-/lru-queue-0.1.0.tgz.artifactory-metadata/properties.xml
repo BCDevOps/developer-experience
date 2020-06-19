@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1f8812dd83b2b310de2e8cefcfbfdd22"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>lru queue</npm.description>
+  <npm.keywords>["lru","cache","queue"]</npm.keywords>
+  <npm.name>lru-queue</npm.name>
+  <npm.version>0.1.0</npm.version>
+</properties>

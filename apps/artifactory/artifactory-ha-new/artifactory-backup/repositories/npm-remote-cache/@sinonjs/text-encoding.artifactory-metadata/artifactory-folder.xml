@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@sinonjs/text-encoding</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>text-encoding</name>
+  <created>1579828421336</created>
+  <lastModified>1579828421336</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828421336</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

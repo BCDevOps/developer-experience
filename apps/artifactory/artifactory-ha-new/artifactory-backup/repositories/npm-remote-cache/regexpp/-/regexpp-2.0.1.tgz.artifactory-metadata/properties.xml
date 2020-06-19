@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"51db7e6b68028251432f3be0d96415bd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>regular expression parser for ecmascript 2018.</npm.description>
+  <npm.keywords>["regexp","regular","expression","parser","validator","ast","abstract","syntax","tree","ecmascript","es2015","es2016","es2017","es2018","annexB"]</npm.keywords>
+  <npm.name>regexpp</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

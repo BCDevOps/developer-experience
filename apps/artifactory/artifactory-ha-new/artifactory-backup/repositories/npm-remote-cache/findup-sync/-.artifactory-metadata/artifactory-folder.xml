@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>findup-sync/-</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>-</name>
+  <created>1576003123002</created>
+  <lastModified>1576003123002</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003123002</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D661471C4949C3</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>runtime.native.System.Security.Cryptography.OpenSsl:4.3.0:Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.dependency>System.Collections:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime.Handles:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime.Numerics:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Algorithms:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Algorithms:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Encoding:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Encoding:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Primitives:4.3.0:.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>System.Security.Cryptography.Primitives:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Text.Encoding:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.description>Provides cryptographic algorithm implementations and key management for non-Windows systems with OpenSSL.
+
+Commonly Used Types:
+System.Security.Cryptography.RSAOpenSsl
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>ZFMKGUiXMPhz+MaOayRRNeomDALWhZGIAmF2g1jQFFeVEyul7od3QYIv8F3NDGHtyidpbvmej5MCohyt87Eynw==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Security.Cryptography.OpenSsl</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Security.Cryptography.OpenSsl</nuget.title>
+  <nuget.version>4.3.0</nuget.version>
+</properties>

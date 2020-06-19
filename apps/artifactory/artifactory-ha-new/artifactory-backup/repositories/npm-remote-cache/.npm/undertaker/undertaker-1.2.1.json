@@ -1,0 +1,55 @@
+{
+  "name" : "undertaker",
+  "description" : "Task registry that allows composition through series/parallel methods.",
+  "version" : "1.2.1",
+  "author" : "Gulp Team <team@gulpjs.com> (http://gulpjs.com/)",
+  "repository" : "gulpjs/undertaker",
+  "contributors" : [ "Blaine Bublitz <blaine.bublitz@gmail.com>", "Damien Lebrun <dinoboff@hotmail.com>" ],
+  "engines" : {
+    "node" : ">= 0.10"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/undertaker/-/undertaker-1.2.1.tgz",
+    "shasum" : "701662ff8ce358715324dfd492a4f036055dfe4b"
+  },
+  "dependencies" : {
+    "arr-flatten" : "^1.0.1",
+    "arr-map" : "^2.0.0",
+    "bach" : "^1.0.0",
+    "collection-map" : "^1.0.0",
+    "es6-weak-map" : "^2.0.1",
+    "last-run" : "^1.1.0",
+    "object.defaults" : "^1.0.0",
+    "object.reduce" : "^1.0.0",
+    "undertaker-registry" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "async-once" : "^1.0.0",
+    "del" : "^2.0.2",
+    "eslint" : "^1.7.3",
+    "eslint-config-gulp" : "^2.0.0",
+    "expect" : "^1.19.0",
+    "gulp-jshint" : "^1.8.4",
+    "istanbul" : "^0.4.3",
+    "istanbul-coveralls" : "^1.0.3",
+    "jscs" : "^2.3.5",
+    "jscs-preset-gulp" : "^1.0.0",
+    "mocha" : "^2.4.5",
+    "once" : "^1.3.1",
+    "through2" : "^2.0.0",
+    "undertaker-common-tasks" : "^1.0.0",
+    "undertaker-task-metadata" : "^1.0.0",
+    "vinyl-fs" : "^2.2.0"
+  },
+  "keywords" : [ "registry", "runner", "task" ],
+  "license" : "MIT",
+  "files" : [ "LICENSE", "index.js", "lib" ],
+  "scripts" : {
+    "lint" : "eslint . && jscs index.js lib/ test/",
+    "pretest" : "npm run lint",
+    "test" : "mocha --async-only",
+    "cover" : "istanbul cover _mocha --report lcovonly",
+    "coveralls" : "npm run cover && istanbul-coveralls"
+  }
+}

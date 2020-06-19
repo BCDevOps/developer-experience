@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"02822e3db48e8c5b844fa309fa2cc56b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>brace expansion as known from sh/bash</npm.description>
+  <npm.keywords>[]</npm.keywords>
+  <npm.name>brace-expansion</npm.name>
+  <npm.version>1.1.11</npm.version>
+</properties>

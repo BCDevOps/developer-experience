@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c74a7b524b57c17482bc97048ae84eaf"</artifactory.internal.etag>
+  <artifactory.licenses>Artistic-2.0</artifactory.licenses>
+  <npm.description>a package manager for javascript</npm.description>
+  <npm.keywords>["install","modules","package manager","package.json"]</npm.keywords>
+  <npm.name>npm</npm.name>
+  <npm.version>6.13.3</npm.version>
+</properties>

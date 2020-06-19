@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"de80634110e01148c00a9454e1e29b69"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>validate identifier/keywords name</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-validator-identifier</npm.name>
+  <npm.version>7.9.5</npm.version>
+</properties>

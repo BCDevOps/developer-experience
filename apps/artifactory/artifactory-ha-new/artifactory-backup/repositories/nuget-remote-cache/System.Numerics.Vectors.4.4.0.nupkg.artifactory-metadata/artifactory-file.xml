@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Numerics.Vectors.4.4.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Numerics.Vectors.4.4.0.nupkg</name>
+  <created>1578432211642</created>
+  <lastModified>1544738719000</lastModified>
+  <size>337043</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432211698</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>650b2f895fb507a5aedf51bd9512d3c35b54f66c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cb0852b96bc0d7c0eca72bad64ce8f5c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6ae5d02b67e52ff2699c1feb11c01c526e2f60c09830432258e0809486aabb65</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NuGet.CommandLine.4.4.1.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NuGet.CommandLine.4.4.1.nupkg</name>
+  <created>1578432188076</created>
+  <lastModified>1538705164000</lastModified>
+  <size>1590324</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432188077</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>12d4640d4aaa1d68a1dfa97ab620078d35ff0e80</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d231960c2516451fd1fb080880c6f548</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4ba9247f4f10200013e361f35df1e17217af7f2d69b6434e998109c1172cf3eb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

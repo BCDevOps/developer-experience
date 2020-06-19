@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/supports-hyperlinks/supports-hyperlinks-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>supports-hyperlinks-2.1.0.json</name>
+  <created>1585853551144</created>
+  <lastModified>1585853551109</lastModified>
+  <size>1190</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853551145</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>604f880ed92876801fb97591066dd5719c5ff1ac</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8059913a3896fb8c4b160005ada9bfc0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5bc56e3274941f4cc3d86e84c877033eaddeb86afcf7c3d1f935c1573bfdec1c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

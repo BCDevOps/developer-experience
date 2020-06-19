@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"129378d11d8873cb0c8ce99a16178136"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>a javascript text diff implementation.</npm.description>
+  <npm.keywords>["diff","javascript"]</npm.keywords>
+  <npm.name>diff</npm.name>
+  <npm.version>3.5.0</npm.version>
+</properties>

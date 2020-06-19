@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6a2c6f3ffed6ed50faaff89ef8eab0a0"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a glob matcher in javascript</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>minimatch</npm.name>
+  <npm.version>3.0.4</npm.version>
+</properties>

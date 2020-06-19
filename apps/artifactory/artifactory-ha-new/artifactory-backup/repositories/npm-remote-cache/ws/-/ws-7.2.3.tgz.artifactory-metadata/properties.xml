@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b2c4832dc0259b901fa2f97fd54c3038"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simple to use, blazing fast and thoroughly tested websocket client and server for node.js</npm.description>
+  <npm.keywords>["HyBi","Push","RFC-6455","WebSocket","WebSockets","real-time"]</npm.keywords>
+  <npm.name>ws</npm.name>
+  <npm.version>7.2.3</npm.version>
+</properties>

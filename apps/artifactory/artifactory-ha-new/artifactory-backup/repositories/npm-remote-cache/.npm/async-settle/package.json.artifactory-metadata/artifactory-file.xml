@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/async-settle/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003112231</created>
+  <lastModified>1534633025000</lastModified>
+  <size>10255</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464314170</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ee39d49b3838c08ef0f8fa87f403510fa09ef4a6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e92a42752d200948516d165cc2ee6953</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e841f6f5d8241dd865804bf88b6c784a19a0f5179d96ee290e47199a4bb1e9a7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

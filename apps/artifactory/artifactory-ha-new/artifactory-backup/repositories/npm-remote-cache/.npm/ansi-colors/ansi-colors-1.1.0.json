@@ -1,0 +1,48 @@
+{
+  "name" : "ansi-colors",
+  "description" : "Collection of ansi colors and styles.",
+  "version" : "1.1.0",
+  "author" : "Brian Woodward (https://github.com/doowb)",
+  "homepage" : "https://github.com/doowb/ansi-colors",
+  "repository" : "doowb/ansi-colors",
+  "contributors" : [ "Brian Woodward (https://twitter.com/doowb)", "Jon Schlinkert (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/doowb/ansi-colors/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ansi-colors/-/ansi-colors-1.1.0.tgz",
+    "shasum" : "6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
+  },
+  "dependencies" : {
+    "ansi-wrap" : "^0.1.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.3",
+    "typescript" : "^2.7.1"
+  },
+  "keywords" : [ "ansi-bgblack", "ansi-bgblue", "ansi-bgcyan", "ansi-bggreen", "ansi-bgmagenta", "ansi-bgred", "ansi-bgwhite", "ansi-bgyellow", "ansi-black", "ansi-blue", "ansi-bold", "ansi-cyan", "ansi-dim", "ansi-gray", "ansi-green", "ansi-grey", "ansi-hidden", "ansi-inverse", "ansi-italic", "ansi-magenta", "ansi-red", "ansi-reset", "ansi-strikethrough", "ansi-underline", "ansi-white", "ansi-yellow", "bgblack", "bgblue", "bgcyan", "bggreen", "bgmagenta", "bgred", "bgwhite", "bgyellow", "black", "blue", "bold", "cyan", "dim", "gray", "green", "grey", "hidden", "inverse", "italic", "magenta", "red", "reset", "strikethrough", "underline", "white", "yellow" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "types/index.d.ts" ],
+  "scripts" : {
+    "test" : "mocha && tsc --project types"
+  },
+  "types" : "./types/index.d.ts",
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "reflinks" : [ "verb-readme-generator", "verb" ],
+    "related" : {
+      "list" : [ "ansi-bgblack", "ansi-bgblue", "ansi-bgcyan", "ansi-bggreen", "ansi-bgmagenta", "ansi-bgred", "ansi-bgwhite", "ansi-bgyellow", "ansi-black", "ansi-blue", "ansi-bold", "ansi-cyan", "ansi-dim", "ansi-gray", "ansi-green", "ansi-grey", "ansi-hidden", "ansi-inverse", "ansi-italic", "ansi-magenta", "ansi-red", "ansi-reset", "ansi-strikethrough", "ansi-underline", "ansi-white", "ansi-wrap", "ansi-yellow" ]
+    }
+  }
+}

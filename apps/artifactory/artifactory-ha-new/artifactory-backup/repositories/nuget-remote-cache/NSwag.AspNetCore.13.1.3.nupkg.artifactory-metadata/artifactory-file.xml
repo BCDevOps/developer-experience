@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NSwag.AspNetCore.13.1.3.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NSwag.AspNetCore.13.1.3.nupkg</name>
+  <created>1578432239477</created>
+  <lastModified>1570688820000</lastModified>
+  <size>4655250</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432239478</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>11e08fd4ee2feb70ae4ff8158000abc95c826937</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2c7763ed6867f4b6bd63d40177e9f11a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0ce0eb56ccdbc00189d9c1321430c916e13cc50663a8ce9745fa3a01c6123580</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

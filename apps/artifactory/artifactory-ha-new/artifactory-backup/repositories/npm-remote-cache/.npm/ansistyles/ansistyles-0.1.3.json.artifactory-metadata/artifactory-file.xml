@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ansistyles/ansistyles-0.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ansistyles-0.1.3.json</name>
+  <created>1576003414881</created>
+  <lastModified>1576003414680</lastModified>
+  <size>777</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003414882</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1821c77e1ad09488cdc108572f902effb6db2b2b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b093417d547efa30e1bf5f6834e789d6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>44fe1ee9b4b7d0d61bf77c9e85810830e13160401a6fa34bd3ed69bace87c52d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

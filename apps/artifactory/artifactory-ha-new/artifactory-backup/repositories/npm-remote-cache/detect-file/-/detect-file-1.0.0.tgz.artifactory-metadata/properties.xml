@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"33cb5cec16ed9e6c1a70d2a78c6de066"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detects if a file exists and returns the resolved filepath.</npm.description>
+  <npm.keywords>["detect","exists","file","file exists","file-path","filepath","path","resolve","resolve file","resolve filepath"]</npm.keywords>
+  <npm.name>detect-file</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

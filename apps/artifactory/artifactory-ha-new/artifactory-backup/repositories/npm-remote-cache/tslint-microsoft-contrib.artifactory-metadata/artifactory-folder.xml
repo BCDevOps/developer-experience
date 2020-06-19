@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tslint-microsoft-contrib</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>tslint-microsoft-contrib</name>
+  <created>1576008055574</created>
+  <lastModified>1576008055574</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008055574</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

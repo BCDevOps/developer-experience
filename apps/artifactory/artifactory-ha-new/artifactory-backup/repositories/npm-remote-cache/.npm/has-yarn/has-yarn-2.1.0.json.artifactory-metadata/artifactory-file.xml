@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/has-yarn/has-yarn-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>has-yarn-2.1.0.json</name>
+  <created>1585853586315</created>
+  <lastModified>1585853586282</lastModified>
+  <size>823</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853586315</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5af7e50095d33fe5af7238b27882e00adedb29e9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e6efa5033faff429f3bd5040baaec7b9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c698921e6d40dcdabaa9086591b0b28e79302e38cfb9bb120d077bb238245698</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

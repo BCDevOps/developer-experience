@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"47bdffdc45737e867a1f9dbe4f3f3d55"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.flatten` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, flatten"</npm.keywords>
+  <npm.name>lodash.flatten</npm.name>
+  <npm.version>4.4.0</npm.version>
+</properties>

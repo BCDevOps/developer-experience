@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>1e/59/df7894473577bf2eb9522ca1de91b199d0565ae46e91b69f01f89fbcf675/hypothesis-4.38.1-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hypothesis-4.38.1-py3-none-any.whl</name>
+  <created>1574023473901</created>
+  <lastModified>1569950587000</lastModified>
+  <size>273036</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023473902</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e2a6f2cbec2f816a41fc449860b499fd71a383a5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>11db23ec57e5768b253029a56727fd83</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d66286a7a67946d843b37c5656321ea3fd318c259dc0ed9aeb6f2d4b037b876a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-windows</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>is-windows</name>
+  <created>1576003607908</created>
+  <lastModified>1576003607908</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003607908</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

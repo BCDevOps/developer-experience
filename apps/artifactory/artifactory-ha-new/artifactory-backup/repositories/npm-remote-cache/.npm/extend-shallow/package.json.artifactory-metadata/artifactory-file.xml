@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extend-shallow/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003404684</created>
+  <lastModified>1527380039000</lastModified>
+  <size>26592</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464325268</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a2429903919bbef894f4d56a59f63394eeb27a08</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>24c6ea45539b715c4723190a4524981e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>23b8a07ac736786525bdbd61f15d4e8f693e1aa7e0773ca9dea14e0bbfe9a067</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

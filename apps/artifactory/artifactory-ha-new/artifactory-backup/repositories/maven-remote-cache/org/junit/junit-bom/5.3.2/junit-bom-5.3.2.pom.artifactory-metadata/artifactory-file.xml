@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/junit/junit-bom/5.3.2/junit-bom-5.3.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>junit-bom-5.3.2.pom</name>
+  <created>1576861359679</created>
+  <lastModified>1543173041000</lastModified>
+  <size>4083</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861359679</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>77a1f81ca52ce0cea00d90375051b9399cd0e0e7</original>
+          <actual>77a1f81ca52ce0cea00d90375051b9399cd0e0e7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>1e53583c9833b7ff2bc23af30a5eda15</original>
+          <actual>1e53583c9833b7ff2bc23af30a5eda15</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aa7e29d64dc5c8cc9b432557af0e7778f91de6468cb654c805ba753da57afc55</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

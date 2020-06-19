@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>acorn-globals/-/acorn-globals-4.3.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>acorn-globals-4.3.4.tgz</name>
+  <created>1576003413882</created>
+  <lastModified>1568130417000</lastModified>
+  <size>3145</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003413883</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9fa1926addc11c97308c4e66d7add0d40c3272e7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>10671b28a512f99790b8f6b959dc97e2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3720546b6c330666a43c2fd7cdb49cadeea7f40417ce7c30fa80d56aba32b01f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

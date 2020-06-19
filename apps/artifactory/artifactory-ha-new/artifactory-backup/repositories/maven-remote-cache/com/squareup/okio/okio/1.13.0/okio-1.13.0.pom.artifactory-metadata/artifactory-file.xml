@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/squareup/okio/okio/1.13.0/okio-1.13.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>okio-1.13.0.pom</name>
+  <created>1576861393153</created>
+  <lastModified>1494606259000</lastModified>
+  <size>1632</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861393153</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7d0cd3135da2c2cc8058fd99ade5cf55cb06587e</original>
+          <actual>7d0cd3135da2c2cc8058fd99ade5cf55cb06587e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>c46dcd9422bcacb6678e8c448afe7b0d</original>
+          <actual>c46dcd9422bcacb6678e8c448afe7b0d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>dda2f84bcd3e051c7afd83054ce8f0166dd47e1de1797c08a6bff728f41aaa2b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

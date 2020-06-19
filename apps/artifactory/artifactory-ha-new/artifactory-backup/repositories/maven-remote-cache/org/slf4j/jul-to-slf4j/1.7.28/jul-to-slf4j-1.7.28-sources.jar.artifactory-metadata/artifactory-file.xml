@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/slf4j/jul-to-slf4j/1.7.28/jul-to-slf4j-1.7.28-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jul-to-slf4j-1.7.28-sources.jar</name>
+  <created>1576861430750</created>
+  <lastModified>1565425756000</lastModified>
+  <size>6173</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861430750</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>38e319ad85f5b34c10429493902c25c8859ab9b2</original>
+          <actual>38e319ad85f5b34c10429493902c25c8859ab9b2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>f13db8acf914f399644f5373d586efa6</original>
+          <actual>f13db8acf914f399644f5373d586efa6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a61eba7eee752312648854325098e8b38f99e701564762dbf1d93aa852338beb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

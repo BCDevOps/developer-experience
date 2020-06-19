@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>prompts</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>prompts</name>
+  <created>1576008064184</created>
+  <lastModified>1576008064184</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008064184</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,28 @@
+{
+  "name" : "unique-stream",
+  "description" : "node.js through stream that emits a unique stream of objects based on criteria",
+  "version" : "2.3.1",
+  "author" : "Eugene Ware <eugene@noblesamurai.com>",
+  "repository" : "eugeneware/unique-stream",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/unique-stream/-/unique-stream-2.3.1.tgz",
+    "shasum" : "c65d110e9a4adf9a6c5948b28053d9a8d04cbeac"
+  },
+  "dependencies" : {
+    "json-stable-stringify-without-jsonify" : "^1.0.1",
+    "through2-filter" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "after" : "~0.8.1",
+    "chai" : "^4.2.0",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^5.2.0"
+  },
+  "keywords" : [ "unique", "stream", "unique-stream", "streaming", "streams" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha",
+    "coverage" : "istanbul cover _mocha"
+  }
+}

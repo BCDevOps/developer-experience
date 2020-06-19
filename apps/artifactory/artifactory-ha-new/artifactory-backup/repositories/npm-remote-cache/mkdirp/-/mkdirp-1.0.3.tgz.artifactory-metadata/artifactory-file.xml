@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mkdirp/-/mkdirp-1.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mkdirp-1.0.3.tgz</name>
+  <created>1583874228581</created>
+  <lastModified>1579899658000</lastModified>
+  <size>6672</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1583874228582</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4cf2e30ad45959dddea53ad97d518b6c8205e1ea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e2bb1c59ca2c2f2d888b27b6eefb6ed3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>57a22c01848677073aa4fc08f498472327fdb3cac3aea4c035bcd9954c29c774</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

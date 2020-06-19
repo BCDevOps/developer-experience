@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/prompts/prompts-2.3.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>prompts-2.3.2.json</name>
+  <created>1585853634890</created>
+  <lastModified>1585853634852</lastModified>
+  <size>1221</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853634890</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>62db8c21d857c66e843b8abb9308238912e21c57</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>fee7071d04e6b80dae2a579b98e1f79e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>51b6fc723419e7141f943a618f162f86b31c39b69d3121f24f7ae34a1ad9c8d5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

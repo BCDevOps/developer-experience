@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7f1f2739cadbc7bc14d35c29f92f2969"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns true if a value is any of the object types: array, regexp, plain object, function or date. this is useful for determining if a value can be extended, e.g. "can the value have keys?"</npm.description>
+  <npm.keywords>["array","assign","check","date","extend","extensible","function","is","object","regex","test"]</npm.keywords>
+  <npm.name>is-extendable</npm.name>
+  <npm.version>0.1.1</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-callable</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>is-callable</name>
+  <created>1576003630760</created>
+  <lastModified>1576003630760</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003630760</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,42 @@
+{
+  "name" : "flatted",
+  "description" : "A super light and fast circular JSON parser.",
+  "version" : "2.0.1",
+  "author" : "Andrea Giammarchi",
+  "homepage" : "https://github.com/WebReflection/flatted#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/WebReflection/flatted.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/WebReflection/flatted/issues"
+  },
+  "main" : "cjs/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/flatted/-/flatted-2.0.1.tgz",
+    "shasum" : "69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
+  },
+  "devDependencies" : {
+    "circular-json" : "latest",
+    "circular-json-es6" : "latest",
+    "coveralls" : "latest",
+    "istanbul" : "latest",
+    "jsan" : "latest",
+    "uglify-js" : "latest"
+  },
+  "keywords" : [ "circular", "JSON", "fast", "parser", "minimal" ],
+  "license" : "ISC",
+  "scripts" : {
+    "bench" : "node test/bench.js",
+    "build" : "npm run cjs && npm test && npm run esm && npm run min && npm run size",
+    "coveralls" : "cat ./coverage/lcov.info | coveralls",
+    "cjs" : "cp index.js cjs/index.js; echo 'module.exports = Flatted;' >> cjs/index.js",
+    "esm" : "cp index.js esm/index.js; echo 'export default Flatted;' >> esm/index.js; echo 'export var parse = Flatted.parse;' >> esm/index.js; echo 'export var stringify = Flatted.stringify;' >> esm/index.js",
+    "min" : "echo '/*! (c) 2018, Andrea Giammarchi, (ISC) */'>min.js && uglifyjs index.js --support-ie8 -c -m >> min.js",
+    "size" : "cat index.js | wc -c;cat min.js | wc -c;gzip -c9 min.js | wc -c;cat min.js | brotli | wc -c",
+    "test" : "istanbul cover test/index.js"
+  },
+  "types" : "types.d.ts",
+  "unpkg" : "min.js",
+  "module" : "esm/index.js"
+}

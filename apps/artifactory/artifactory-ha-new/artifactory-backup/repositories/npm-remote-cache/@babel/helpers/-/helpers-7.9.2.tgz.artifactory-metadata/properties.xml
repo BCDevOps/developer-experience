@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a61948938c0bc7fcc4a7a119347c445b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>collection of helper functions used by babel transforms.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helpers</npm.name>
+  <npm.version>7.9.2</npm.version>
+</properties>

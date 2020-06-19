@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/arr-diff/arr-diff-4.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>arr-diff-4.0.0.json</name>
+  <created>1576003085492</created>
+  <lastModified>1576003085462</lastModified>
+  <size>1664</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003085492</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>493ca551cfe80d4e597cdf41eae9c2a23a2a724e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0ffbdb049f9a27e596e2d0d66dab75ce</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4987f4435d9ee7bec64ee0f3138ec98ff8a776ab4d63ed522adf6ec4282da95c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

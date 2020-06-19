@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/acorn/acorn-7.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>acorn-7.1.1.json</name>
+  <created>1585853579158</created>
+  <lastModified>1585853579133</lastModified>
+  <size>1032</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853579159</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>590d455ac165ea5297bf2d235d9d0180c9da74af</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>373d7b3e3c725150a33e2d69c7db6fd8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d90db531525ce92ed0543faa1688d214a66c8c093e4dbc3135b79f6596ce29ab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

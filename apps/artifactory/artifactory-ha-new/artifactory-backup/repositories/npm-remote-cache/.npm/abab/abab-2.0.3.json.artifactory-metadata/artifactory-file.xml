@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/abab/abab-2.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>abab-2.0.3.json</name>
+  <created>1576003413680</created>
+  <lastModified>1576003413483</lastModified>
+  <size>1181</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003413681</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>ad331c1234106e5a9cec5fbcf241c7222b6451f8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ecc596c0137e8092f72f6ad56458ae50</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cfa9cdb8aafe1518ce41f96ca7f1f89dea6393bb264c6c61008035605aa522ed</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

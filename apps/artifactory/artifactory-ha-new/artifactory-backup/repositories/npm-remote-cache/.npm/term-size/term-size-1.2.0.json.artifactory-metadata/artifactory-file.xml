@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/term-size/term-size-1.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>term-size-1.2.0.json</name>
+  <created>1576003129889</created>
+  <lastModified>1576003129806</lastModified>
+  <size>883</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003129890</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>721a73bc419007a6738d72b05f8563da997e9195</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9fa7c3b1672e4a291708766d9c9f1e72</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>09bc867fd4cdeb0ae60c9012898053f8a089ac32df600aa0101a01f4ffa019bd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

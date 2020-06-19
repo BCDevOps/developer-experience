@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>react-is/-/react-is-16.8.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>react-is-16.8.6.tgz</name>
+  <created>1579828378897</created>
+  <lastModified>1553754258000</lastModified>
+  <size>5507</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828378898</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5bbc1e2d29141c9fbdfed456343fe2bc430a6a16</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>88f12959221a24496ae38bba7f344d35</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>db4eed5fc21736447d27d305cf1adf958cb1683cb29ad23269f23bfaa13d76b6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/readdirp/readdirp-3.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>readdirp-3.2.0.json</name>
+  <created>1576008068974</created>
+  <lastModified>1576008068476</lastModified>
+  <size>1230</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008068976</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>948df4957d8f55aedca566b0e78e96cc89130c22</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4933a6e46e498009e82bdabd0b08db54</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b58b6a4cd68a6f039cb43ae173dfda7493e2a7f085e01a5dce933fd8fb311153</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

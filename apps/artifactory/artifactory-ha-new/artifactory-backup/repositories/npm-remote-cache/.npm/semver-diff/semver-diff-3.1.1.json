@@ -1,0 +1,32 @@
+{
+  "name" : "semver-diff",
+  "description" : "Get the diff type of two semver versions: 0.0.1 0.0.2  patch",
+  "version" : "3.1.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/semver-diff",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/semver-diff/-/semver-diff-3.1.1.tgz",
+    "shasum" : "05f77ce59f325e00e2706afd67bb506ddb1ca32b"
+  },
+  "dependencies" : {
+    "semver" : "^6.3.0"
+  },
+  "devDependencies" : {
+    "ava" : "^2.4.0",
+    "tsd" : "^0.9.0",
+    "xo" : "^0.25.3"
+  },
+  "keywords" : [ "semver", "version", "semantic", "diff", "difference" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name" : "array-initial",
+  "description" : "Get all but the last element or last n elements of an array.",
+  "version" : "1.1.0",
+  "author" : {
+    "name" : "Jon Schlinkert",
+    "url" : "https://github.com/jonschlinkert"
+  },
+  "homepage" : "https://github.com/jonschlinkert/array-initial",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/jonschlinkert/array-initial.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/array-initial/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/array-initial/-/array-initial-1.1.0.tgz",
+    "shasum" : "2fa74b26739371c3947bd7a7adc73be334b3d795"
+  },
+  "dependencies" : {
+    "array-slice" : "^1.0.0",
+    "is-number" : "^4.0.0"
+  },
+  "devDependencies" : {
+    "mocha" : "^2.0.0",
+    "should" : "^11.2.1"
+  },
+  "keywords" : [ "array", "fast", "first", "initial", "javascript", "js", "last", "rest", "util", "utility", "utils" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha -R spec"
+  }
+}

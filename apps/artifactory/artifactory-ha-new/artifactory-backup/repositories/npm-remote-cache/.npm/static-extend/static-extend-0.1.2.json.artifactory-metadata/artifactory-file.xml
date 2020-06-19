@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/static-extend/static-extend-0.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>static-extend-0.1.2.json</name>
+  <created>1576003664780</created>
+  <lastModified>1576003664754</lastModified>
+  <size>1483</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003664781</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>09deb4c29e6f595cb5bb4019a37bac3c4f36f088</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3d25c7151eecba44fbcb44cb973c5160</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>67c272c4631cd6fe917d6190b58b6321b451a952507389201d8b037d8049ff43</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

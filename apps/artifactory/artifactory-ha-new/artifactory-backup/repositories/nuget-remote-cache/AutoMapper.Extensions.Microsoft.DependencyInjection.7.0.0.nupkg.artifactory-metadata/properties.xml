@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D71F2A06D1B5B2</artifactory.internal.etag>
+  <nuget.authors>Jimmy Bogard</nuget.authors>
+  <nuget.copyright>Copyright Jimmy Bogard</nuget.copyright>
+  <nuget.dependency>AutoMapper:9.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection.Abstractions:2.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>AutoMapper extensions for ASP.NET Core</nuget.description>
+  <nuget.digest>prXKbljp+ubYf3jAcgHJytxlZUPsj/kjTyXSTaS/9U/coUzLIun8N+UpHFrY3g2d7pp0PzIlWY60m+zRq1vrZQ==</nuget.digest>
+  <nuget.iconUrl>https://s3.amazonaws.com/automapper/icon.png</nuget.iconUrl>
+  <nuget.id>AutoMapper.Extensions.Microsoft.DependencyInjection</nuget.id>
+  <nuget.licenseUrl>https://github.com/AutoMapper/AutoMapper/blob/master/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Jimmy Bogard</nuget.owners>
+  <nuget.projectUrl>http://automapper.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>7.0.0</nuget.version>
+</properties>

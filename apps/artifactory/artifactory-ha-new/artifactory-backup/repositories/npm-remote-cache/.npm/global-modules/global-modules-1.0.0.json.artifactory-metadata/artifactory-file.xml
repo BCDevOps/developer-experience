@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/global-modules/global-modules-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>global-modules-1.0.0.json</name>
+  <created>1576003128793</created>
+  <lastModified>1576003128772</lastModified>
+  <size>1599</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003128794</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b151b6da5793940b351ae92abdc2b1e0f3d41aaa</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>065f6d675b1e94a80d9c54d1cbc89b4c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>729bcac2299be6b3fd392d08ce6853bffbad3feef9f1e9c78cd2662cdbd610bb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d25562e4e13073b8191acee34171fd86"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>streams3, a user-land copy of the stream library from node.js</npm.description>
+  <npm.keywords>["readable","stream","pipe"]</npm.keywords>
+  <npm.name>readable-stream</npm.name>
+  <npm.version>3.4.0</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2751868d9fa31ebbbe851fdcb729115d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>define a non-enumerable property on an object. uses reflect.defineproperty when available, otherwise object.defineproperty.</npm.description>
+  <npm.keywords>["define","define-property","enumerable","key","non","non-enumerable","object","prop","property","value"]</npm.keywords>
+  <npm.name>define-property</npm.name>
+  <npm.version>2.0.2</npm.version>
+</properties>

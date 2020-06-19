@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"aa7675df57afd8404d9aaa55e659f7a8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get the command from a shebang</npm.description>
+  <npm.keywords>["cmd","command","parse","shebang"]</npm.keywords>
+  <npm.name>shebang-command</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

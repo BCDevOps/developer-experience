@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/sshpk</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>sshpk</name>
+  <created>1576003497618</created>
+  <lastModified>1576003497618</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003497618</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

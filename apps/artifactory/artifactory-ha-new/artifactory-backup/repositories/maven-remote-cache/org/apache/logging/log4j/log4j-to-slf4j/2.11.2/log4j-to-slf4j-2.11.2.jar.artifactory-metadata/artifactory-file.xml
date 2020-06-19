@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>log4j-to-slf4j-2.11.2.jar</name>
+  <created>1576861412149</created>
+  <lastModified>1549415665000</lastModified>
+  <size>17522</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861412149</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6d37bf7b046c0ce2669f26b99365a2cfa45c4c18</original>
+          <actual>6d37bf7b046c0ce2669f26b99365a2cfa45c4c18</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>93537eaabc3192f88a16f71bc5f312f1</original>
+          <actual>93537eaabc3192f88a16f71bc5f312f1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4361dd0623b7fc042ad9d6b1eabb0b6a7f92b9cfc21218308f4a386c9ad40ce5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

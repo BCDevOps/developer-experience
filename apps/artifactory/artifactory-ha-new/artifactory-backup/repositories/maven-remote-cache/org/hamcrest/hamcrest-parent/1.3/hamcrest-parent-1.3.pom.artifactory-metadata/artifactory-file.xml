@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hamcrest-parent-1.3.pom</name>
+  <created>1576861444379</created>
+  <lastModified>1341868017000</lastModified>
+  <size>1972</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861444380</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>80391bd32bfa4837a15215d5e9f07c60555c379a</original>
+          <actual>80391bd32bfa4837a15215d5e9f07c60555c379a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>7591ddb3581de8684c17e51741a7461d</original>
+          <actual>7591ddb3581de8684c17e51741a7461d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6d535f94efb663bdb682c9f27a50335394688009642ba7a9677504bc1be4129b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

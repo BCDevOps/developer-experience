@@ -1,0 +1,32 @@
+{
+  "name" : "color",
+  "description" : "Color conversion and manipulation with CSS string support",
+  "version" : "3.0.0",
+  "repository" : "Qix-/color",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/color/-/color-3.0.0.tgz",
+    "shasum" : "d920b4328d534a3ac8295d68f7bd4ba6c427be9a"
+  },
+  "dependencies" : {
+    "color-convert" : "^1.9.1",
+    "color-string" : "^1.5.2"
+  },
+  "devDependencies" : {
+    "mocha" : "^2.2.5",
+    "xo" : "^0.12.1"
+  },
+  "keywords" : [ "color", "colour", "css" ],
+  "license" : "MIT",
+  "files" : [ "CHANGELOG.md", "LICENSE", "index.js" ],
+  "scripts" : {
+    "pretest" : "xo",
+    "test" : "mocha"
+  },
+  "xo" : {
+    "rules" : {
+      "no-cond-assign" : 0,
+      "new-cap" : 0
+    }
+  },
+  "authors" : [ "Josh Junon <i.am.qix@gmail.com>", "Heather Arthur <fayearthur@gmail.com>", "Maxime Thirouin" ]
+}

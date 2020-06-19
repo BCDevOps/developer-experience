@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0b72aaedbb1190ac84d5d5e3f232d58f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fast, minimal glob matcher for node.js. similar to micromatch, minimatch and multimatch, but complete bash 4.3 wildcard support only (no support for exglobs, posix brackets or braces)</npm.description>
+  <npm.keywords>["bash","expand","expansion","expression","file","files","filter","find","glob","globbing","globs","globstar","match","matcher","matches","matching","micromatch","minimatch","multimatch","nanomatch","path","pattern","patterns","regex","regexp","regular","shell","wildcard"]</npm.keywords>
+  <npm.name>nanomatch</npm.name>
+  <npm.version>1.2.13</npm.version>
+</properties>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74031187DA6E5</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETCoreApp3.0</nuget.dependency>
+  <nuget.dependency>System.Memory:4.5.2:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.CompilerServices.Unsafe:4.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Primitives shared by framework extensions. Commonly used types include:
+Microsoft.Extensions.Primitives.IChangeToken
+Microsoft.Extensions.Primitives.StringValues
+Microsoft.Extensions.Primitives.StringSegment</nuget.description>
+  <nuget.digest>tEB42Idh+5jbRcnNU15xWBpUte1kE5ZPHQbPVgJVxo1xBbTbDfKQME5DBg09sbyehvbIDK9FxAUYC5+KL6UXEg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.Primitives</nuget.id>
+  <nuget.licenseUrl>https://licenses.nuget.org/Apache-2.0</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>primitives</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

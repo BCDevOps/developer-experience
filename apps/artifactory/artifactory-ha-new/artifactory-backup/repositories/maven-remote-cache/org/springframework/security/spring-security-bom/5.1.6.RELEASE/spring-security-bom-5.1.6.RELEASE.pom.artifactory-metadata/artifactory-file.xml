@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/security/spring-security-bom/5.1.6.RELEASE/spring-security-bom-5.1.6.RELEASE.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-security-bom-5.1.6.RELEASE.pom</name>
+  <created>1576861360924</created>
+  <lastModified>1565048110000</lastModified>
+  <size>5026</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861360924</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>9b1f3eb64cf6d67b5285911d69d7da51731c90f7</original>
+          <actual>9b1f3eb64cf6d67b5285911d69d7da51731c90f7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>4b8b5d118f713d3686e11a8168b62079</original>
+          <actual>4b8b5d118f713d3686e11a8168b62079</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cab0f341933b642613f7b598d5c30ccee2be4d17987567ce5994d1945e71574c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

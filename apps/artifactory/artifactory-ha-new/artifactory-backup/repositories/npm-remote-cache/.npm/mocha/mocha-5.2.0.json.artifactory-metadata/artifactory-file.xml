@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mocha/mocha-5.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mocha-5.2.0.json</name>
+  <created>1579828426408</created>
+  <lastModified>1579828426196</lastModified>
+  <size>19983</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828426409</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>784b822c7c925d25c3434fa960608b9be3c9932f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>2406484b4a4a047c7c8359c08be8c0ca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7ad14809546ea90aa3cb59b59a5204c884d1f3655f5a1f93ec5312655e01b8bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

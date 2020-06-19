@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"94f547bd072d0081f3f55b682ec0146c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>improved typeof detection for node.js and the browser.</npm.description>
+  <npm.keywords>["type","typeof","types"]</npm.keywords>
+  <npm.name>type-detect</npm.name>
+  <npm.version>4.0.8</npm.version>
+</properties>

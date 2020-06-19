@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sift</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>sift</name>
+  <created>1582140563979</created>
+  <lastModified>1582140563979</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140563979</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

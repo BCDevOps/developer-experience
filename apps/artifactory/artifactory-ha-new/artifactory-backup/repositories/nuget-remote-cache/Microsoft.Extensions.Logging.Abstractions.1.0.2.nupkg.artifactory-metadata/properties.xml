@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647E18EFCC3E</artifactory.internal.etag>
+  <nuget.authors>Microsoft.Extensions.Logging.Abstractions</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>System.Collections:[4.0.11, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Collections.Concurrent:[4.0.12, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:[4.0.11, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Globalization:[4.0.11, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Linq:[4.1.0, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Reflection:[4.1.0, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:[4.0.1, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:[4.1.0, ):.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime.InteropServices:[4.1.0, ):.NETStandard1.1</nuget.dependency>
+  <nuget.description>Logging abstractions for Microsoft.Extensions.Logging.
+Commonly used types:
+Microsoft.Extensions.Logging.ILogger
+Microsoft.Extensions.Logging.ILoggerFactory
+Microsoft.Extensions.Logging.ILogger&lt;TCategoryName>
+Microsoft.Extensions.Logging.LogLevel
+Microsoft.Extensions.Logging. 
+Microsoft.Extensions.Logging.</nuget.description>
+  <nuget.digest>OCp/XXkJEvz/GFnEyErvfBVOGeRlDQKNQPRhhLcTP3Y4OV6F9jL9Wv7aBLBokJWKKvefxKMFiXT3HTR18Lc/rA==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.Logging.Abstractions</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.Extensions.Logging.Abstractions</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>logging</nuget.tags>
+  <nuget.version>1.0.2</nuget.version>
+</properties>

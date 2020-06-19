@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.Options.3.1.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.Options.3.1.0.nupkg</name>
+  <created>1578439422599</created>
+  <lastModified>1575391542000</lastModified>
+  <size>91778</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578439422600</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c1103c2b4084bb0473f9bcbb6799f1087d3a5cea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f3499c0d055428906422137d2b0e5f9b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d043ac9aefe82c0cfd597a750ad325725cddbece6379ad33266a247b21676c2a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.Http.Extensions.1.0.2.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.Http.Extensions.1.0.2.nupkg</name>
+  <created>1578496750008</created>
+  <lastModified>1544741977000</lastModified>
+  <size>50099</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496750063</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>49197a14b32a6a11cd3718347ee20373417a1f36</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>01e1c67308b8c3d96018b623aef70943</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3af9fe0188819c3de6aff724c9849c4ac6f4d205f595cadcd4eebaa5d81cf3bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

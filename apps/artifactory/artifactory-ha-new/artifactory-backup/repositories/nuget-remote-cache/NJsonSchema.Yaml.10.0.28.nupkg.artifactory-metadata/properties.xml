@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D76F5C3D6E4762</artifactory.internal.etag>
+  <nuget.authors>Rico Suter</nuget.authors>
+  <nuget.copyright>Copyright © Rico Suter, 2018</nuget.copyright>
+  <nuget.dependency>Microsoft.CSharp:4.4.1:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>Microsoft.CSharp:4.4.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.CSharp:4.4.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>NJsonSchema:10.0.28:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>YamlDotNet.Signed:5.1.0:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>YamlDotNet.Signed:5.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>YamlDotNet.Signed:5.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>JSON Schema reader, generator and validator for .NET</nuget.description>
+  <nuget.digest>ztsvZbY5TuD9unQkm94mzz0XS8phrqoyFuWIUEaKHCHbahsc2m6hHIqLww1K7gsP0nzLaNQf0IKEYw1qAS+ghw==</nuget.digest>
+  <nuget.iconUrl>https://raw.githubusercontent.com/RSuter/NJsonSchema/master/assets/NuGetIcon.png</nuget.iconUrl>
+  <nuget.id>NJsonSchema.Yaml</nuget.id>
+  <nuget.licenseUrl>https://github.com/rsuter/NJsonSchema/blob/master/LICENSE.md</nuget.licenseUrl>
+  <nuget.owners>Rico Suter</nuget.owners>
+  <nuget.projectUrl>http://njsonschema.org/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>json schema validation generator .net</nuget.tags>
+  <nuget.version>10.0.28</nuget.version>
+</properties>

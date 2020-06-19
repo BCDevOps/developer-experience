@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lru-cache/lru-cache-4.1.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lru-cache-4.1.5.json</name>
+  <created>1576008062379</created>
+  <lastModified>1576008061983</lastModified>
+  <size>1149</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008062472</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>da858f1af4ce5f261fe83642cdeac16857ca2c4f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>2664b778465875e663530a6d61155801</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>54031c7e5271a22fc8a5575a7a18d37736add6d9df33e34b2b4436737623fee4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

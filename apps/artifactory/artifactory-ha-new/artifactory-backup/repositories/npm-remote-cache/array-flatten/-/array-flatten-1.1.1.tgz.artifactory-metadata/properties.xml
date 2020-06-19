@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"dc8f65c347b435464faa4e6e6bc01d3a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>flatten an array of nested arrays into a single flat array</npm.description>
+  <npm.keywords>["array","flatten","arguments","depth"]</npm.keywords>
+  <npm.name>array-flatten</npm.name>
+  <npm.version>1.1.1</npm.version>
+</properties>

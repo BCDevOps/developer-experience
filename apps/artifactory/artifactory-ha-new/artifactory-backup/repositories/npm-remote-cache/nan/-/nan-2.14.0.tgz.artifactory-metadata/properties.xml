@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"503af03960626bc726306816098fbc9d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>native abstractions for node.js: c++ header for node 0.8 -> 11 compatibility</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>nan</npm.name>
+  <npm.version>2.14.0</npm.version>
+</properties>

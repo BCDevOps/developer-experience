@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>html-encoding-sniffer-1.0.2.tgz</name>
+  <created>1576003142891</created>
+  <lastModified>1527393639000</lastModified>
+  <size>3713</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003142892</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e70d84b94da53aa375e11fe3a351be6642ca46f8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cf0ec65d23e814b0b8fc2e55e7ef7067</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>860357df7bb42d2e9928eea9c7764897f069fde1f5a74fce20f951345d89b687</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

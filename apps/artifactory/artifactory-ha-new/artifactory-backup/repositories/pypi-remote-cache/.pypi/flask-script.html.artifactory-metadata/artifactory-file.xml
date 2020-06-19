@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/flask-script.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flask-script.html</name>
+  <created>1574023019128</created>
+  <lastModified>1582154301736</lastModified>
+  <size>6000</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154301787</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>31c6e2fb0dd0280cbe5309c2c3bf30082487e796</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>726700f0e584b47fb3c5135fdf5d81ed</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a925dacab1525a87d0ed9777c300e7fe5782476f3930724e749591efcf16ff9a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

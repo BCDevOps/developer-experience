@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"bb43dfc07947ef0682b978b989477cc1"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>node.js module to detect the c standard library (libc) implementation family and version</npm.description>
+  <npm.keywords>["libc","glibc","musl"]</npm.keywords>
+  <npm.name>detect-libc</npm.name>
+  <npm.version>1.0.3</npm.version>
+</properties>

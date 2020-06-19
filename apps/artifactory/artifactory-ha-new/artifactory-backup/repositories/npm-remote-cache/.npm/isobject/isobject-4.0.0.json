@@ -1,0 +1,51 @@
+{
+  "name" : "isobject",
+  "description" : "Returns true if the value is an object and not an array or null.",
+  "version" : "4.0.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/isobject",
+  "repository" : "jonschlinkert/isobject",
+  "contributors" : [ "(https://github.com/LeSuisse)", "Brian Woodward (https://twitter.com/doowb)", "Jon Schlinkert (http://twitter.com/jonschlinkert)", "Magnús Dæhlen (https://github.com/magnudae)", "Tom MacWright (https://macwright.org)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/isobject/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.cjs.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/isobject/-/isobject-4.0.0.tgz",
+    "shasum" : "3f1c9155e73b192022a80819bacd0343711697b0"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "esm" : "^3.2.22",
+    "gulp-format-md" : "^0.1.9",
+    "mocha" : "^2.4.5",
+    "rollup" : "^1.10.1"
+  },
+  "keywords" : [ "check", "is", "is-object", "isobject", "kind", "kind-of", "kindof", "native", "object", "type", "typeof", "value" ],
+  "license" : "MIT",
+  "files" : [ "index.d.ts", "index.cjs.js", "index.js" ],
+  "scripts" : {
+    "build" : "rollup -i index.js -o index.cjs.js -f cjs",
+    "test" : "mocha -r esm",
+    "prepublish" : "npm run build"
+  },
+  "types" : "index.d.ts",
+  "module" : "index.js",
+  "verb" : {
+    "related" : {
+      "list" : [ "extend-shallow", "is-plain-object", "kind-of", "merge-deep" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "reflinks" : [ "verb" ]
+  }
+}

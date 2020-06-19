@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>bcr-pypi-local</repoKey>
+    <path>.pypi/simple.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>simple.html</name>
+  <created>1574752049274</created>
+  <lastModified>1574752049204</lastModified>
+  <size>202</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1574752049275</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>bce9526ee2456d054de2c66577d35f05055e3c5a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>54fa9bf053de99142d0e1c70337ec13c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0f4e483267f843b019d5fd87bbbab305a6177edd6d57cada3ca6bf46e100b355</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

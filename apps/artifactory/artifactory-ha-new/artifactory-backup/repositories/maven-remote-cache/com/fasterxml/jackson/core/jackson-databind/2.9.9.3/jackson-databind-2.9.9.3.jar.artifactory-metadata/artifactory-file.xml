@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/core/jackson-databind/2.9.9.3/jackson-databind-2.9.9.3.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jackson-databind-2.9.9.3.jar</name>
+  <created>1576861409466</created>
+  <lastModified>1565055748000</lastModified>
+  <size>1348389</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861409467</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>68ddd453458765757fd3ffca9437f9a42d91003e</original>
+          <actual>68ddd453458765757fd3ffca9437f9a42d91003e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>4b960b1790dd5292d5eb605e482aa4a7</original>
+          <actual>4b960b1790dd5292d5eb605e482aa4a7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5e5b577397531280728ea32a7fdcbefa8187eb84ec0d3d3cae35a0d6350792ba</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

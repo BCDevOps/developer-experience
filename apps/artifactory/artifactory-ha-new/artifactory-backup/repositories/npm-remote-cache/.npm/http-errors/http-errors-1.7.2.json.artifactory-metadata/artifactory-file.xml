@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/http-errors/http-errors-1.7.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>http-errors-1.7.2.json</name>
+  <created>1576008059273</created>
+  <lastModified>1576008058677</lastModified>
+  <size>1541</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>48d5e73c7b809040e985c418799b9e1c21ba0182</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>95250a46161a65165dba5c44b4b6ad62</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b6f34fa11516ff0c4c651bf308cdf31a2011d9429f49560509eb810053b8df47</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

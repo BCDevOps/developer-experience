@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7c483523b33b0640efedcc6561c545e2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detect if a buffer is utf8 encoded.</npm.description>
+  <npm.keywords>["utf8","charset"]</npm.keywords>
+  <npm.name>is-utf8</npm.name>
+  <npm.version>0.2.1</npm.version>
+</properties>

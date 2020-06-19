@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.jaegertracing</groupId>
+  <artifactId>jaeger-client</artifactId>
+  <version>1.0.0</version>
+  <name>jaeger-client</name>
+  <description>Jaeger Java bindings for OpenTracing API</description>
+  <url>https://github.com/jaegertracing/jaeger-client-java</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>oibe</id>
+      <name>Onwukike Ibe</name>
+      <email>oibe@uber.com</email>
+    </developer>
+    <developer>
+      <id>yurishkuro</id>
+      <name>Yuri Shkuro</name>
+      <email>ys@uber.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:jaegertracing/jaeger-client-java.git</connection>
+    <developerConnection>scm:git:git@github.com:jaegertracing/jaeger-client-java.git</developerConnection>
+    <url>git@github.com:jaegertracing/jaeger-client-java.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>io.jaegertracing</groupId>
+      <artifactId>jaeger-thrift</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jaegertracing</groupId>
+      <artifactId>jaeger-core</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jaegertracing</groupId>
+      <artifactId>jaeger-tracerresolver</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

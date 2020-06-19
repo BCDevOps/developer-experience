@@ -1,0 +1,26 @@
+{
+  "name" : "@babel/helper-module-imports",
+  "description" : "Babel helper functions for inserting module loads",
+  "version" : "7.8.3",
+  "author" : "Logan Smyth <loganfsmyth@gmail.com>",
+  "homepage" : "https://babeljs.io/",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-helper-module-imports",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/helper-module-imports/-/helper-module-imports-7.8.3.tgz",
+    "shasum" : "7fe39589b39c016331b6b8c3f441e8f0b1419498"
+  },
+  "dependencies" : {
+    "@babel/types" : "^7.8.3"
+  },
+  "devDependencies" : {
+    "@babel/core" : "^7.8.3"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "a7620bd266ae1345975767bbc7abf09034437017"
+}

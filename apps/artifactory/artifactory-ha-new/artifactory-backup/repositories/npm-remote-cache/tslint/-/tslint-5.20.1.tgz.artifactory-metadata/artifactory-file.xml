@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tslint/-/tslint-5.20.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tslint-5.20.1.tgz</name>
+  <created>1576003069105</created>
+  <lastModified>1572976268000</lastModified>
+  <size>300187</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003069106</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e401e8aeda0152bc44dd07e614034f3f80c67b7d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ce7c46ab63822dcf701ea990fd749028</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>958e99984a1abf94adeaecb356cb32e4c2a3db88d84082488fdfda9b11512203</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

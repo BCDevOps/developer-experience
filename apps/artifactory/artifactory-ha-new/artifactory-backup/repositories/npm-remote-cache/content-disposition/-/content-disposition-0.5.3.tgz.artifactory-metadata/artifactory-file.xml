@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>content-disposition/-/content-disposition-0.5.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>content-disposition-0.5.3.tgz</name>
+  <created>1576008065489</created>
+  <lastModified>1545077937000</lastModified>
+  <size>6755</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065489</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e130caf7e7279087c5616c2007d0485698984fbd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1949626739360eda2e0cf28a8e239823</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e6004e617648aa8f8b1ce6f97c113b6208a1ecc83f449149a2223bfebb9d7be</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

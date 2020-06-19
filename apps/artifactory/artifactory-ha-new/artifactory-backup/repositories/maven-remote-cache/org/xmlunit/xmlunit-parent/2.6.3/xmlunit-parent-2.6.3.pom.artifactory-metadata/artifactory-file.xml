@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/xmlunit/xmlunit-parent/2.6.3/xmlunit-parent-2.6.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xmlunit-parent-2.6.3.pom</name>
+  <created>1576861445919</created>
+  <lastModified>1561126648000</lastModified>
+  <size>18136</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861445920</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>72e600d24dfbc010cba81056f4f0f8644af3b3f5</original>
+          <actual>72e600d24dfbc010cba81056f4f0f8644af3b3f5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>ddd55ba46fb3d00ece82e67ef347fb77</original>
+          <actual>ddd55ba46fb3d00ece82e67ef347fb77</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bf95cd6569bfc3ff493642cc99268b88aa70cfb85e1b87f81ef2dc49687b8a73</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

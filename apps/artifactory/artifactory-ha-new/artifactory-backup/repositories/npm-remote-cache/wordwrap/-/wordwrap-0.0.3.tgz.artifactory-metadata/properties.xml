@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e34009799e266c31e4622204316dfb76"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>wrap those words. show them at what columns to start and stop.</npm.description>
+  <npm.keywords>["word","wrap","rule","format","column"]</npm.keywords>
+  <npm.name>wordwrap</npm.name>
+  <npm.version>0.0.3</npm.version>
+</properties>

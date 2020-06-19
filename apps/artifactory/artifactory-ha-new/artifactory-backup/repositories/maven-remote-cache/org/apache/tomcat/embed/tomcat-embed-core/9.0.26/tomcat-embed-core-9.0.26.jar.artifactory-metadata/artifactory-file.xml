@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/apache/tomcat/embed/tomcat-embed-core/9.0.26/tomcat-embed-core-9.0.26.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tomcat-embed-core-9.0.26.jar</name>
+  <created>1576861410410</created>
+  <lastModified>1568649779000</lastModified>
+  <size>3363162</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861410411</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6312ba542bc58fa9ee789a43516ce4d862548a6b</original>
+          <actual>6312ba542bc58fa9ee789a43516ce4d862548a6b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>50a7095cb7e9d57f63e3bfa334a0cf68</original>
+          <actual>50a7095cb7e9d57f63e3bfa334a0cf68</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2d725511840bccf8a247aee2f89da6b4f6252c3b9b83574b268073f8cf71bd52</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

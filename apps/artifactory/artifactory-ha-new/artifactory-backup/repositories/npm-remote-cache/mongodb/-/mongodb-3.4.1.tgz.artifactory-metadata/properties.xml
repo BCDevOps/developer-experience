@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b7a3e58022c32b8fde57f4fa34d4c813"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>the official mongodb driver for node.js</npm.description>
+  <npm.keywords>["mongodb","driver","official"]</npm.keywords>
+  <npm.name>mongodb</npm.name>
+  <npm.version>3.4.1</npm.version>
+</properties>

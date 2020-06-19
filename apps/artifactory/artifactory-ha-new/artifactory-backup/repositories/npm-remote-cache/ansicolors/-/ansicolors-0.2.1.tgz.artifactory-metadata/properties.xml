@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b7e4bce87c04a4926ae5fdf511adc8f3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>functions that surround a string with ansicolor codes so it prints in color.</npm.description>
+  <npm.keywords>["ansi","colors","highlight","string"]</npm.keywords>
+  <npm.name>ansicolors</npm.name>
+  <npm.version>0.2.1</npm.version>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/merge-descriptors/merge-descriptors-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>merge-descriptors-1.0.1.json</name>
+  <created>1576003446544</created>
+  <lastModified>1576003446509</lastModified>
+  <size>1140</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003446545</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4eaab233fa2ec9804333b1c5f6ad4a3639eb5c65</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4fcebf5aa3544d36930451fd15c3245d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2b464c3047e51c8c506c250982f02c5c0b9d316fdfc950f4ae16f34addcb8439</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

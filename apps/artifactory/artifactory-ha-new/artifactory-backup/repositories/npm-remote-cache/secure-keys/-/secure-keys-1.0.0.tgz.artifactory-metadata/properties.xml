@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6a90f0173be7834db566609f64d0dae6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>encrypt/decrypt the values of a given object</npm.description>
+  <npm.keywords>["secure-keys","conversion","crypto","secure","config"]</npm.keywords>
+  <npm.name>secure-keys</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

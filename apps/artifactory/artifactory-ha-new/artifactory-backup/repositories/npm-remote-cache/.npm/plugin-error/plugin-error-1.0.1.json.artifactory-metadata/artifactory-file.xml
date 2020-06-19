@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/plugin-error/plugin-error-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-error-1.0.1.json</name>
+  <created>1576003394211</created>
+  <lastModified>1576003394129</lastModified>
+  <size>1474</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003394212</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>216bbb1a512a8abd90909796fa743e2b29d6ecfb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b1705c9e0f1f69988c4e0d7ea23c4752</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>add975cf16e29e962e0484a5195dc11f5937cdaad0a62fac634cd566797e6fd5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

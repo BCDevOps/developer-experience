@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/v8-to-istanbul/v8-to-istanbul-4.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>v8-to-istanbul-4.1.3.json</name>
+  <created>1585853554340</created>
+  <lastModified>1585853554233</lastModified>
+  <size>1317</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853554340</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>794320a3ea60877f6580168625a0ddb40c9a6fd3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9276af5ef7d0891523f1e596ff44b650</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8930f046765788d38f5a328d66c7432bdfb1bea6b21266d7049274cc6e4efef4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

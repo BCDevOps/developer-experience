@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/asynckit/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003477499</created>
+  <lastModified>1527355907000</lastModified>
+  <size>16271</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464345922</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6c33019fcbb635eac0c0a11d4dc60516926dfbfb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>34349b180d8fff99867769eadfb4b93e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7b1338b310058043d5b1d0aa190d7a1dd381d26735c3b0fc0bd1a2e4a46ecd87</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>eslint-scope/-/eslint-scope-4.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>eslint-scope-4.0.3.tgz</name>
+  <created>1576008056683</created>
+  <lastModified>1552669918000</lastModified>
+  <size>16124</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008056778</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ca03833310f6889a3264781aa82e63eb9cfe7848</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a74d983c7bb0e066c52e502facc0d087</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f983aaa06a7bac456d142d6b41730cbbfaca4693b6e0b6fcbb732de83e4ed84b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

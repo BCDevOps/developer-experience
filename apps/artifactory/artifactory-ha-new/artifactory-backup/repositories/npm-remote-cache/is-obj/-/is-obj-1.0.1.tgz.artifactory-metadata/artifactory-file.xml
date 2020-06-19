@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-obj/-/is-obj-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-obj-1.0.1.tgz</name>
+  <created>1576003624693</created>
+  <lastModified>1527397169000</lastModified>
+  <size>1518</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003624693</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3e4729ac1f5fde025cd7d83a896dab9f4f67db0f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6d336385e3e57e5583a6ddf9ce72edad</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3339a6cef2426d08f1e12d6268292c7ecbe8389f79559fd758e1da7f16846e8f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

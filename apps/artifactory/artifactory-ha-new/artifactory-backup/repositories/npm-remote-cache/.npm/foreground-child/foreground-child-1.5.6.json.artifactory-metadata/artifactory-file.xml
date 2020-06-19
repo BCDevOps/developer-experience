@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/foreground-child/foreground-child-1.5.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>foreground-child-1.5.6.json</name>
+  <created>1579828147396</created>
+  <lastModified>1579828147279</lastModified>
+  <size>1176</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828147397</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>26e294c4be67c4822035bae96e8cd933c4ce80e2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>134e7886e5689783a214583ff047143b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6b24798e7854ef72980bd65eeb9d1e3de292e6175acf18706caec8be5bef928e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

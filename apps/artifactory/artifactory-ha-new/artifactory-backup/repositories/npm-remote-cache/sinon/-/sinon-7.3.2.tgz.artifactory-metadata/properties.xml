@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"76c9ba712270f0d708f5445c9e1bc74e"</artifactory.internal.etag>
+  <artifactory.licenses>BSD-3-Clause</artifactory.licenses>
+  <npm.description>javascript test spies, stubs and mocks.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>sinon</npm.name>
+  <npm.version>7.3.2</npm.version>
+</properties>

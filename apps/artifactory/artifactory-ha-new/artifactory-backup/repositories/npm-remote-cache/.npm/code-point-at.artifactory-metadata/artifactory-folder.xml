@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/code-point-at</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>code-point-at</name>
+  <created>1576003605756</created>
+  <lastModified>1576003605756</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003605756</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

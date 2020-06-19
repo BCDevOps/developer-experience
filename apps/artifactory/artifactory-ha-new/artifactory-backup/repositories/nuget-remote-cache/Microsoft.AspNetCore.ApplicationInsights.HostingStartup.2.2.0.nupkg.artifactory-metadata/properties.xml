@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D659750BC0D32F</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.ApplicationInsights.AspNetCore:2.1.1:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.ApplicationInsights.AspNetCore:2.1.1:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.ApplicationInsights.AspNetCore:2.1.1:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Razor.Runtime:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Razor.Runtime:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Razor.Runtime:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Json:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Json:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Json:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DiagnosticAdapter:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DiagnosticAdapter:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DiagnosticAdapter:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Configuration:2.2.0:.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Configuration:2.2.0:.NETCoreApp2.1</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Configuration:2.2.0:.NETFramework4.6.1</nuget.dependency>
+  <nuget.description>ASP.NET Core lightup integration with Application Insights.</nuget.description>
+  <nuget.digest>PFkpZGS4I8hMsT988nzksggYXyFqx5g4OkU0WNSUtYnL8R9/G33w6vQJaz60fABWEgtdibM+RLqyYxOfVDAjQg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.ApplicationInsights.HostingStartup</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore ApplicationInsights Analytics Telemetry AppInsights</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

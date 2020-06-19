@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>ce/42/3aeda98f96e85fd26180534d36570e4d18108d62ae36f87694b476b83d6f/Werkzeug-0.16.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Werkzeug-0.16.0-py2.py3-none-any.whl</name>
+  <created>1573593688583</created>
+  <lastModified>1568903985000</lastModified>
+  <size>327277</size>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1573593688584</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0c2759010bf7778b5823e62bebb3a589be01f9b3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3f395ea52f056eda06133ece1ed360a8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e5f4a1f98b52b18a93da705a7458e55afb26f32bff83ff5d19189f92462d65c4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

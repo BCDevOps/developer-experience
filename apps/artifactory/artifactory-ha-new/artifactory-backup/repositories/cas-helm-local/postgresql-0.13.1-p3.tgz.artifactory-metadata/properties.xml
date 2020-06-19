@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <chart.appVersion>9.6.10</chart.appVersion>
+  <chart.description>Object-relational database management system (ORDBMS) with an emphasis on extensibility and on standards-compliance.</chart.description>
+  <chart.home>https://www.postgresql.org/</chart.home>
+  <chart.maintainers>Alec Wenzowski - alec@button.is</chart.maintainers>
+  <chart.name>postgresql</chart.name>
+  <chart.sources>https://github.com/bcgov/cas-helm</chart.sources>
+  <chart.sources>https://github.com/sclorg/postgresql-container</chart.sources>
+  <chart.version>0.13.1-p3</chart.version>
+</properties>

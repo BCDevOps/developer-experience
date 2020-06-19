@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"41713cc442b067e28df85fbb88824599"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>log all requests and request errors</npm.description>
+  <npm.keywords>["github","api","sdk","toolkit"]</npm.keywords>
+  <npm.name>@octokit/plugin-request-log</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

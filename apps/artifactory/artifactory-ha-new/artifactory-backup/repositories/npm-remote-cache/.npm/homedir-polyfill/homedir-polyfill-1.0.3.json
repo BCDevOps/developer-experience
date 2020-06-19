@@ -1,0 +1,45 @@
+{
+  "name" : "homedir-polyfill",
+  "description" : "Node.js os.homedir polyfill for older versions of node.js.",
+  "version" : "1.0.3",
+  "author" : "Brian Woodward (https://github.com/doowb)",
+  "homepage" : "https://github.com/doowb/homedir-polyfill",
+  "repository" : "doowb/homedir-polyfill",
+  "bugs" : {
+    "url" : "https://github.com/doowb/homedir-polyfill/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/homedir-polyfill/-/homedir-polyfill-1.0.3.tgz",
+    "shasum" : "743298cef4e5af3e194161fbadcc2151d3a058e8"
+  },
+  "dependencies" : {
+    "parse-passwd" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.11",
+    "mocha" : "^3.1.2"
+  },
+  "keywords" : [ "home", "homedir", "homedirectory", "os", "os-homedir", "polyfill", "userhome" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "polyfill.js", "LICENSE" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "related" : {
+      "list" : [ "parse-passwd" ]
+    },
+    "reflinks" : [ "verb", "verb-generate-readme" ]
+  }
+}

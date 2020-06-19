@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/gulp-clean/gulp-clean-0.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>gulp-clean-0.4.0.json</name>
+  <created>1576003078170</created>
+  <lastModified>1576003078148</lastModified>
+  <size>1074</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003078171</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>467f19038ce1b8b1e7cfb8a666825bb5ff703afd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>736c24dffcd1def3559954b81243a4e5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e71d68e377eb07c9a935a61256096d11a1e676ec1c7ffb7233dcccab92a133a5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

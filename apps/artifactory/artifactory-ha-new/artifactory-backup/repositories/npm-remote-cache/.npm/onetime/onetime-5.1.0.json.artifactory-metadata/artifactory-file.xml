@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/onetime/onetime-5.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>onetime-5.1.0.json</name>
+  <created>1585853568539</created>
+  <lastModified>1585853568506</lastModified>
+  <size>879</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853568540</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c6263fbd087ddd64701534b2e0a910dbab5b186a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cb5b748dc9d91bc20ceeee5dd34d5db6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4d66c5ce3e643511b0e7aacd4c8cffe13b5c1028f3031aa93c1698d980464d9b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

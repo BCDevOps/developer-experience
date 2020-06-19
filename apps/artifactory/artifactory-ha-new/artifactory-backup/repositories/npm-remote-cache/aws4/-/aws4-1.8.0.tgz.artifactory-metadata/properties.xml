@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"dc49ff5beae4bbb05fc74f4538d8399a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>signs and prepares requests using aws signature version 4</npm.description>
+  <npm.keywords>["amazon","aws","signature","s3","ec2","autoscaling","cloudformation","elasticloadbalancing","elb","elasticbeanstalk","cloudsearch","dynamodb","kinesis","lambda","glacier","sqs","sns","iam","sts","ses","swf","storagegateway","datapipeline","directconnect","redshift","opsworks","rds","monitoring","cloudtrail","cloudfront","codedeploy","elasticache","elasticmapreduce","elastictranscoder","emr","cloudwatch","mobileanalytics","cognitoidentity","cognitosync","cognito","containerservice","ecs","appstream","keymanagementservice","kms","config","cloudhsm","route53","route53domains","logs"]</npm.keywords>
+  <npm.name>aws4</npm.name>
+  <npm.version>1.8.0</npm.version>
+</properties>

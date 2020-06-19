@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614EE4BFA964</artifactory.internal.etag>
+  <nuget.authors>Microsoft.Extensions.PlatformAbstractions</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>::.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>System.AppContext:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection.Extensions:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.description>Abstractions that unify behavior and API across .NET Framework, .NET Core and Mono</nuget.description>
+  <nuget.digest>gVPyS9GVFw5ydtfbEFxYy7wjjOzZ34gJ55AKQnmPoGbXkvI97pN2MAdyCIWlDJSQ4dlz7dX4NvPy1Y5CXaEK+A==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.Extensions.PlatformAbstractions</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.Extensions.PlatformAbstractions</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.version>1.0.0</nuget.version>
+</properties>

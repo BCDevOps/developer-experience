@@ -1,0 +1,40 @@
+{
+  "name" : "posix-character-classes",
+  "description" : "POSIX character classes for creating regular expressions.",
+  "version" : "0.1.1",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/posix-character-classes",
+  "repository" : "jonschlinkert/posix-character-classes",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/posix-character-classes/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/posix-character-classes/-/posix-character-classes-0.1.1.tgz",
+    "shasum" : "01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.12",
+    "mocha" : "^3.2.0"
+  },
+  "keywords" : [ "character", "classes", "posix" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "reflinks" : [ "verb", "verb-generate-readme" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "related-list" : [ "micromatch", "nanomatch", "extglob", "expand-brackets" ]
+  }
+}

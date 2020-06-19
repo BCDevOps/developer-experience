@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7372c3997931b10710f73a972b209e22"</artifactory.internal.etag>
+  <artifactory.licenses></artifactory.licenses>
+  <npm.description>writable stream that formats bunyan records that are piped into it.</npm.description>
+  <npm.keywords>["bunyan","stream","log","logger","format","pretty","color","style"]</npm.keywords>
+  <npm.name>bunyan-format</npm.name>
+  <npm.version>0.2.1</npm.version>
+</properties>

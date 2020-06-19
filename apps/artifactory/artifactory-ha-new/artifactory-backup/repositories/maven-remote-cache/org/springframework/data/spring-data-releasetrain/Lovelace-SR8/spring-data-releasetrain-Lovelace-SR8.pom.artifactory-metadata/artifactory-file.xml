@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/data/spring-data-releasetrain/Lovelace-SR8/spring-data-releasetrain-Lovelace-SR8.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-data-releasetrain-Lovelace-SR8.pom</name>
+  <created>1576861435101</created>
+  <lastModified>1557746837000</lastModified>
+  <size>4647</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861435102</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>4badea33061c4bcf07990fe81cdc450e81f6ae25</original>
+          <actual>4badea33061c4bcf07990fe81cdc450e81f6ae25</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>6debcd79b70465b305dc37da2dd35e70</original>
+          <actual>6debcd79b70465b305dc37da2dd35e70</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2fc3b30774267cc09778663cd08250f17b37332dec251723ce3c7450801eb2e6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

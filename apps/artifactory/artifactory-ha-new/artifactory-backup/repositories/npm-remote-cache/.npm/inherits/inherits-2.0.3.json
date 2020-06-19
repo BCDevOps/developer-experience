@@ -1,0 +1,21 @@
+{
+  "name" : "inherits",
+  "description" : "Browser-friendly inheritance fully compatible with standard node.js inherits()",
+  "version" : "2.0.3",
+  "repository" : "git://github.com/isaacs/inherits",
+  "main" : "./inherits.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/inherits/-/inherits-2.0.3.tgz",
+    "shasum" : "633c2c83e3da42a502f52466022480f4208261de"
+  },
+  "devDependencies" : {
+    "tap" : "^7.1.0"
+  },
+  "keywords" : [ "inheritance", "class", "klass", "oop", "object-oriented", "inherits", "browser", "browserify" ],
+  "license" : "ISC",
+  "files" : [ "inherits.js", "inherits_browser.js" ],
+  "scripts" : {
+    "test" : "node test"
+  },
+  "browser" : "./inherits_browser.js"
+}

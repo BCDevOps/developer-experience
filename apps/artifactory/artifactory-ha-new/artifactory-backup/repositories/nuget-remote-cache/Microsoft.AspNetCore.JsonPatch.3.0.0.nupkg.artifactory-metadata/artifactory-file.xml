@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.JsonPatch.3.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.JsonPatch.3.0.0.nupkg</name>
+  <created>1578432177108</created>
+  <lastModified>1569248230000</lastModified>
+  <size>49586</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432177109</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>717f416828db49b9c0ac1161fa4785f09ee3e8c9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bbae6f4834d0b0aa1355161c010a5d5f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7f84f1980f087f1b5f38f528e9e071afed8117200e44071731eed6e2418b11a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

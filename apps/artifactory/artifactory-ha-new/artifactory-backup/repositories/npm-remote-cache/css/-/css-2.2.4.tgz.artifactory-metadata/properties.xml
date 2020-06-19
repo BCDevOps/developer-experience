@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"48f8b1cf0f1a0620471128d495ff3562"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>css parser / stringifier</npm.description>
+  <npm.keywords>["css","parser","stringifier","stylesheet"]</npm.keywords>
+  <npm.name>css</npm.name>
+  <npm.version>2.2.4</npm.version>
+</properties>

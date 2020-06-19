@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7e47c366c72cb9e2ad5952a034a385e3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>support for representing 64-bit integers in javascript</npm.description>
+  <npm.keywords>["math","integer","int64"]</npm.keywords>
+  <npm.name>node-int64</npm.name>
+  <npm.version>0.4.0</npm.version>
+</properties>

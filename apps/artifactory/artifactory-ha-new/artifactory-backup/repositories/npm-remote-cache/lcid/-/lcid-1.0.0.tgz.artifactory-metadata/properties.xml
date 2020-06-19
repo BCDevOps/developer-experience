@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"33e24746875ebbcc37c40c7297388609"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>mapping between standard locale identifiers and windows locale identifiers (lcid)</npm.description>
+  <npm.keywords>["lcid","locale","string","str","id","identifier","windows","language","lang","map","mapping","convert","json","bcp47","ietf","tag"]</npm.keywords>
+  <npm.name>lcid</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>runtime.native.System.Security.Cryptography.OpenSsl.4.3.0.nupkg</name>
+  <created>1578496758885</created>
+  <lastModified>1538747063000</lastModified>
+  <size>17048</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496758886</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>d6b1a44687da43b523a09e7dbce51f03ac8b2c8b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>04dc3c70e1d798c97df6c0768884bfd1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>272d352a1b5c0a5db08cca59587f97ddf8477159fe4b296558563ccd6973ffa2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,40 @@
+{
+  "name" : "jest-resolve-dependencies",
+  "version" : "25.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-resolve-dependencies"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-resolve-dependencies/-/jest-resolve-dependencies-25.3.0.tgz",
+    "shasum" : "b0e4ae053dd44ddacc18c6ee12b5b7c28e445a90"
+  },
+  "dependencies" : {
+    "@jest/types" : "^25.3.0",
+    "jest-regex-util" : "^25.2.6",
+    "jest-snapshot" : "^25.3.0"
+  },
+  "devDependencies" : {
+    "jest-haste-map" : "^25.3.0",
+    "jest-resolve" : "^25.3.0",
+    "jest-runtime" : "^25.3.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "45a4936d96d74cdee6b91122a51a556e3ebe6dc8",
+  "types" : "build/index.d.ts"
+}

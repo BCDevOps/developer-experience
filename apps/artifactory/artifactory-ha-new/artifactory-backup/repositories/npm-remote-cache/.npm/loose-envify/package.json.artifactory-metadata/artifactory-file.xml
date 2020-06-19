@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/loose-envify/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003603952</created>
+  <lastModified>1531220990000</lastModified>
+  <size>10887</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464343777</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>25bb31914ab6777fef4cb5a750f3e9fd62997026</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ff7dfaf14204cb0931ee4ffe2c39c3ce</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8308f78cb3a381710dcdc032b44fba16e349d459c184911cf19fee904b857978</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6597545424AB1</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Hosting.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Http.Extensions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.EnvironmentVariables:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.FileExtensions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.FileProviders.Physical:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Hosting.Abstractions:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.DiagnosticSource:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Metadata:1.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core hosting infrastructure and startup logic for web applications.
+
+This package was built from the source code at https://github.com/aspnet/Hosting/tree/0724e6cde1149ee1a19bfec9c13a2c9327b71213</nuget.description>
+  <nuget.digest>YJmyRNkRrfjhohF9vpgSN7e3f0CS4x2VJ6VYrRCQoP82A+Rlp1SsZpkrExAvetk/acXgk5c9OyHDh7lb8GqWRg==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Hosting</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore hosting</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

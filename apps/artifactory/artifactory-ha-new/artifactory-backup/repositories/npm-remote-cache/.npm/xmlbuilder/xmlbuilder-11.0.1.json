@@ -1,0 +1,41 @@
+{
+  "name" : "xmlbuilder",
+  "description" : "An XML builder for node.js",
+  "version" : "11.0.1",
+  "author" : "Ozgur Ozcitak <oozcitak@gmail.com>",
+  "homepage" : "http://github.com/oozcitak/xmlbuilder-js",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/oozcitak/xmlbuilder-js.git"
+  },
+  "contributors" : [ ],
+  "bugs" : {
+    "url" : "http://github.com/oozcitak/xmlbuilder-js/issues"
+  },
+  "engines" : {
+    "node" : ">=4.0"
+  },
+  "main" : "./lib/index",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/xmlbuilder/-/xmlbuilder-11.0.1.tgz",
+    "shasum" : "be9bae1c8a046e76b31127726347d0ad7002beb3"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "coffeescript" : "1.*",
+    "mocha" : "*",
+    "coffee-coverage" : "2.*",
+    "istanbul" : "*",
+    "coveralls" : "*",
+    "xpath" : "*"
+  },
+  "keywords" : [ "xml", "xmlbuilder" ],
+  "license" : "MIT",
+  "scripts" : {
+    "prepublishOnly" : "coffee -co lib src",
+    "postpublish" : "rm -rf lib",
+    "test" : "mocha \"test/**/*.coffee\" && istanbul report text lcov"
+  },
+  "typings" : "./typings/index.d.ts"
+}

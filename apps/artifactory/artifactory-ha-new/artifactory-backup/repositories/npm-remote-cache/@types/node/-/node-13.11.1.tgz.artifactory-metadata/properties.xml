@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cfc89b73d867f55193ac72d6e28b3b21"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for node.js</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/node</npm.name>
+  <npm.version>13.11.1</npm.version>
+</properties>

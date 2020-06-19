@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-fullwidth-code-point/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576004965186</created>
+  <lastModified>1552896549000</lastModified>
+  <size>7225</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464315860</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b01ee37bcc8be50a5ab9ca9091d3bf8f802ea21b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a450ebc54a39728ef58d31a6a0a7b84f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f9d98d25a40b68b747b75da5bbee6c0b447280a1e620183001d0199684e95c55</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

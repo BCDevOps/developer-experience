@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b769da51259f513f0f202643e8f2911a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>http content negotiation</npm.description>
+  <npm.keywords>["http","content negotiation","accept","accept-language","accept-encoding","accept-charset"]</npm.keywords>
+  <npm.name>negotiator</npm.name>
+  <npm.version>0.6.2</npm.version>
+</properties>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tr46</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>tr46</name>
+  <created>1576003662856</created>
+  <lastModified>1576003662856</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003662856</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

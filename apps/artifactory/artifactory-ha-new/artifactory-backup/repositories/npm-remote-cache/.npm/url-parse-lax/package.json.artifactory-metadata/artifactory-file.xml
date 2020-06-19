@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/url-parse-lax/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003419473</created>
+  <lastModified>1560274643000</lastModified>
+  <size>9918</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464317697</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>5308d691d9699660bb194914ff1e7c39a506363c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>23f247ae44869aa2cdfe4bbf9b9a198b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ebcdfcacf05bdf6d09b242d7e1e7a62cc1710467ef23319da996a4ff66372bf2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

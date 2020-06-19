@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-member-expression-to-functions</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>helper-member-expression-to-functions</name>
+  <created>1585853549489</created>
+  <lastModified>1585853549489</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853549489</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

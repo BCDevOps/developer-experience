@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/default-compare/default-compare-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>default-compare-1.0.0.json</name>
+  <created>1576003437481</created>
+  <lastModified>1576003437444</lastModified>
+  <size>1175</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003437482</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>56d554c5c7540fb726975ecb656bd0cdd9012e9d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>20e4be2c36e3922f4a95e4fd6edffc2a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0f48d034c6a6b1a7809957a919552e74a8890f333c7db933744b714152f87a86</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

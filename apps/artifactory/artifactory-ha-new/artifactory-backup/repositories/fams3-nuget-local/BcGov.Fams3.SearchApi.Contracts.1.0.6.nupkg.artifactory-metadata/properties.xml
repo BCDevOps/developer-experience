@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <nuget.authors>PathFinder</nuget.authors>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.description>Package Description</nuget.description>
+  <nuget.digest>5xgNTLsAKouSetpVr16HLr+4tN3EYYCQCqAk6TF1xxpC3brR4+l7MXgBPUoQ8kBKF3bvsdu7/Xdk1gYK8wb8ig==</nuget.digest>
+  <nuget.id>BcGov.Fams3.SearchApi.Contracts</nuget.id>
+  <nuget.owners>PathFinder</nuget.owners>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>1.0.6</nuget.version>
+</properties>

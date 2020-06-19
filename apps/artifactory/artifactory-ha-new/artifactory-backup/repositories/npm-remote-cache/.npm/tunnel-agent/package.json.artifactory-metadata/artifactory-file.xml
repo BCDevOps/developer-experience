@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/tunnel-agent/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003426084</created>
+  <lastModified>1527451377000</lastModified>
+  <size>10503</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464319963</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>304ed64fbea9e2c728cebde1c199cbac0d854f97</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>03911fc1f433b33bccf8a4a2a5de2375</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b4ebcf4f76335dfbb14f510ffd2acefc10299defb365444583feddcf1b4b7740</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

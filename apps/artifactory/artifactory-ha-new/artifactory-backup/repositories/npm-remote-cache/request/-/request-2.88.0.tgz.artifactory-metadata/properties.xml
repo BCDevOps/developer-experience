@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d2f4658aa40c2abdca764aa40c6fca07"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>simplified http request client.</npm.description>
+  <npm.keywords>["http","simple","util","utility"]</npm.keywords>
+  <npm.name>request</npm.name>
+  <npm.version>2.88.0</npm.version>
+</properties>

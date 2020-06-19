@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/aws4</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>aws4</name>
+  <created>1576003418385</created>
+  <lastModified>1576003418385</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003418385</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

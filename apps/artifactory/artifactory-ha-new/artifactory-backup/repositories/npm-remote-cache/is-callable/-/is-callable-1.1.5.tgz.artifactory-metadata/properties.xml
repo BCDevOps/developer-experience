@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5a69abbe4f2e27a9491b9a60c479194f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>is this js value callable? works with functions and generatorfunctions, despite es6 @@tostringtag.</npm.description>
+  <npm.keywords>["Function","function","callable","generator","generator function","arrow","arrow function","ES6","toStringTag","@@toStringTag"]</npm.keywords>
+  <npm.name>is-callable</npm.name>
+  <npm.version>1.1.5</npm.version>
+</properties>

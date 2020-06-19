@@ -1,0 +1,62 @@
+{
+  "name" : "nise",
+  "description" : "Fake XHR and server",
+  "version" : "1.5.0",
+  "author" : "",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/sinonjs/nise.git"
+  },
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/nise/-/nise-1.5.0.tgz",
+    "shasum" : "d03ea0e6c1b75c638015aa3585eddc132949a50d"
+  },
+  "dependencies" : {
+    "@sinonjs/formatio" : "^3.1.0",
+    "@sinonjs/text-encoding" : "^0.7.1",
+    "just-extend" : "^4.0.2",
+    "lolex" : "^4.1.0",
+    "path-to-regexp" : "^1.7.0"
+  },
+  "devDependencies" : {
+    "@sinonjs/referee" : "^2.0.0",
+    "browserify" : "^16.2.3",
+    "eslint" : "^4.17.0",
+    "eslint-config-sinon" : "^1.0.1",
+    "eslint-plugin-ie11" : "1.0.0",
+    "eslint-plugin-mocha" : "^4.9.0",
+    "husky" : "^2.3.0",
+    "jsdom" : "11.6.2",
+    "jsdom-global" : "3.0.2",
+    "mocha" : "^6.1.4",
+    "mochify" : "^6.2.0",
+    "nyc" : "^14.1.1",
+    "proxyquire" : "^1.8.0",
+    "proxyquire-universal" : "^1.0.8",
+    "proxyquireify" : "^3.2.1",
+    "sinon" : "^7"
+  },
+  "keywords" : [ "test", "testing", "fake", "mock", "xhr", "server" ],
+  "license" : "BSD-3-Clause",
+  "files" : [ "nise.js", "lib/**/*.js" ],
+  "scripts" : {
+    "bundle" : "browserify -s nise -o nise.js lib/index.js",
+    "lint" : "eslint .",
+    "prepublish" : "npm run bundle",
+    "prepublishOnly" : "mkdocs gh-deploy -r upstream || mkdocs gh-deploy -r origin",
+    "test" : "mocha lib/**/*.test.js",
+    "test:coverage" : "nyc --reporter=lcov --reporter=text --all npm test -- --reporter dot",
+    "test:headless" : "mochify --https-server --plugin [ proxyquire-universal ] lib/**/*.test.js"
+  },
+  "husky" : {
+    "hooks" : {
+      "pre-commit" : "npm run lint -- --fix && npm run test",
+      "pre-push" : "npm run lint && npm run test"
+    }
+  },
+  "module" : "nise.js",
+  "nyc" : {
+    "exclude" : [ "nise.js", "coverage/**", "**/*.test.js" ]
+  }
+}

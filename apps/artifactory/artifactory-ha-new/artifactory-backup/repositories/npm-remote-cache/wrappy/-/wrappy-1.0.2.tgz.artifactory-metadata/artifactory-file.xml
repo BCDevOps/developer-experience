@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>wrappy/-/wrappy-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>wrappy-1.0.2.tgz</name>
+  <created>1576003115547</created>
+  <lastModified>1527459520000</lastModified>
+  <size>1676</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003115548</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>b5243d8f3ec1aa35f1364605bc0d1036e30ab69f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>567b1699cfae49cb20f598571a6c90c7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>aff3730d91b7b1e143822956d14608f563163cf11b9d0ae602df1fe1e430fdfb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>bcrentities-docker-local</repoKey>
+    <path>bcgov-s2i-caddy/1</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>1</name>
+  <created>1578377430218</created>
+  <lastModified>1578377430218</lastModified>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1578377430218</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

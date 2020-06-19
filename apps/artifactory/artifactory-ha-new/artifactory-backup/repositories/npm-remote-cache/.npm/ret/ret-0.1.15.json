@@ -1,0 +1,31 @@
+{
+  "name" : "ret",
+  "description" : "Tokenizes a string that represents a regular expression.",
+  "version" : "0.1.15",
+  "author" : "Roly Fentanes (https://github.com/fent)",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/fent/ret.js.git"
+  },
+  "engines" : {
+    "node" : ">=0.12"
+  },
+  "main" : "./lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ret/-/ret-0.1.15.tgz",
+    "shasum" : "b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
+  },
+  "devDependencies" : {
+    "istanbul" : "*",
+    "vows" : "*"
+  },
+  "keywords" : [ "regex", "regexp", "regular expression", "parser", "tokenizer" ],
+  "license" : "MIT",
+  "files" : [ "lib" ],
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "scripts" : {
+    "test" : "istanbul cover vows -- --spec test/*-test.js"
+  }
+}

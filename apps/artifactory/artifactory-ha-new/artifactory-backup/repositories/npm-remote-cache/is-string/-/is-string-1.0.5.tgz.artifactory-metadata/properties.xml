@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"abe51bbe7cdfeff3c4253a143a9617c6"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>is this value a js string object or primitive? this module works cross-realm/iframe, and despite es6 @@tostringtag.</npm.description>
+  <npm.keywords>["String","string","ES6","toStringTag","@@toStringTag","String object"]</npm.keywords>
+  <npm.name>is-string</npm.name>
+  <npm.version>1.0.5</npm.version>
+</properties>

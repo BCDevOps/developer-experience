@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/wrapt.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>wrapt.html</name>
+  <created>1574023493712</created>
+  <lastModified>1582154369020</lastModified>
+  <size>8350</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154369142</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7a0d263bff3e017df81200253088d0a30c22dc75</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0a3c5ee0f8aedf84e5c88ed7d2825f2b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8144a8a2e4f07febae581925dd2cb53b46379d7b64fafccf90fa35dd6179dc3e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

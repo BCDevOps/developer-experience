@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5f3a6c5fdf638bcd945f2ce94087e9a7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if the character represented by a given unicode code point is fullwidth</npm.description>
+  <npm.keywords>["fullwidth","full-width","full","width","unicode","character","char","string","str","codepoint","code","point","is","detect","check"]</npm.keywords>
+  <npm.name>is-fullwidth-code-point</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

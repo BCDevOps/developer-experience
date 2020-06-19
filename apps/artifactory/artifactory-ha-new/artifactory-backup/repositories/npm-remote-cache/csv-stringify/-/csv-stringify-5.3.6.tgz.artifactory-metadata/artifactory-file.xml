@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>csv-stringify/-/csv-stringify-5.3.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>csv-stringify-5.3.6.tgz</name>
+  <created>1583960450346</created>
+  <lastModified>1577115137000</lastModified>
+  <size>14359</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1583960450374</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2655e2e1c01b97b3963bccbc9407b8fb876dc589</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cbdbf28310ed8378e172ee587d83fa25</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2aae37c169d66893e56839cb55f4ff648357dbd02f4f6e18b24cf41efe38a162</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

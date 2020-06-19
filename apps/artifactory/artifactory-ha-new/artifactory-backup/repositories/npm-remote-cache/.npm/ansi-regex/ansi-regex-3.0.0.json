@@ -1,0 +1,29 @@
+{
+  "name" : "ansi-regex",
+  "description" : "Regular expression for matching ANSI escape codes",
+  "version" : "3.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "chalk/ansi-regex",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ansi-regex/-/ansi-regex-3.0.0.tgz",
+    "shasum" : "ed0317c322064f79466c02966bddb605ab37d998"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "ansi", "styles", "color", "colour", "colors", "terminal", "console", "cli", "string", "tty", "escape", "formatting", "rgb", "256", "shell", "xterm", "command-line", "text", "regex", "regexp", "re", "match", "test", "find", "pattern" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava",
+    "view-supported" : "node fixtures/view-codes.js"
+  }
+}

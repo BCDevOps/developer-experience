@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/simplejson.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>simplejson.html</name>
+  <created>1581102467081</created>
+  <lastModified>1581103117310</lastModified>
+  <size>84636</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581103117427</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>05b7e746717547132ea4b7dd12250e39afccdc24</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f8998a3076e23ea154c1e26fb9e042e9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a3e12f107757aa73588f525c7e7468c6745e23ef0edf93564fff2a7a647c8e5b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

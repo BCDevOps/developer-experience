@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.Hosting.Abstractions.2.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.Hosting.Abstractions.2.0.0.nupkg</name>
+  <created>1578432210093</created>
+  <lastModified>1544738728000</lastModified>
+  <size>26718</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432210097</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8f9e48e0583ba9c2b959d17d722d872e96ae22a8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6843aaca0d4883d39cb7d08905f122a4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e7cf75dbee7d77b3596282a6f1b818c018cc53035be1f56a63e7271fe7e1db74</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

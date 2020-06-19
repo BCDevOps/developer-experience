@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/class-utils/class-utils-0.3.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>class-utils-0.3.6.json</name>
+  <created>1576003649505</created>
+  <lastModified>1576003649484</lastModified>
+  <size>1888</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003649506</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>aa9ba2815d02e227c07a4f7c7681fdcd4bd71afe</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8bd1e2bb6e8a8e3cac1d413706e7868c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4bd35c0cd742f81b54cc83fc008f8a97b444dae191c9a29f56d3e7e3549c9032</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

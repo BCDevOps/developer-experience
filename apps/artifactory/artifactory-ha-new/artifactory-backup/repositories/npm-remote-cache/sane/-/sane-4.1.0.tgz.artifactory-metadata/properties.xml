@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ad42caf58284afc28379ec45c175dfe9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>sane aims to be fast, small, and reliable file system watcher.</npm.description>
+  <npm.keywords>["watch","file","fswatcher","watchfile","fs","watching"]</npm.keywords>
+  <npm.name>sane</npm.name>
+  <npm.version>4.1.0</npm.version>
+</properties>

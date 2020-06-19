@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.9.9</name>
+  <created>1576861383934</created>
+  <lastModified>1576861383934</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861383934</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"bb898872d6d17211831340eb058c39b4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utility to parse a string bytes to bytes and vice-versa</npm.description>
+  <npm.keywords>["byte","bytes","utility","parse","parser","convert","converter"]</npm.keywords>
+  <npm.name>bytes</npm.name>
+  <npm.version>3.1.0</npm.version>
+</properties>

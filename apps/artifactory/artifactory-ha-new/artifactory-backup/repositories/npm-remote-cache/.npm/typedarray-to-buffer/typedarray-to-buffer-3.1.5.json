@@ -1,0 +1,39 @@
+{
+  "name" : "typedarray-to-buffer",
+  "description" : "Convert a typed array to a Buffer without a copy",
+  "version" : "3.1.5",
+  "author" : {
+    "name" : "Feross Aboukhadijeh",
+    "email" : "feross@feross.org",
+    "url" : "http://feross.org/"
+  },
+  "homepage" : "http://feross.org",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/feross/typedarray-to-buffer.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/feross/typedarray-to-buffer/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz",
+    "shasum" : "a97ee7a9ff42691b9f783ff1bc5112fe3fca9080"
+  },
+  "dependencies" : {
+    "is-typedarray" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "airtap" : "0.0.4",
+    "standard" : "*",
+    "tape" : "^4.0.0"
+  },
+  "keywords" : [ "buffer", "typed array", "convert", "no copy", "uint8array", "uint16array", "uint32array", "int16array", "int32array", "float32array", "float64array", "browser", "arraybuffer", "dataview" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "standard && npm run test-node && npm run test-browser",
+    "test-browser" : "airtap -- test/*.js",
+    "test-browser-local" : "airtap --local -- test/*.js",
+    "test-node" : "tape test/*.js"
+  }
+}

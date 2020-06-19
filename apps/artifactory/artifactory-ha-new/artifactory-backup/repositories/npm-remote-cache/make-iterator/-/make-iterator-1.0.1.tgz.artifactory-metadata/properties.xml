@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"00db37fa649cf22ee768b93b63e81300"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert an argument into a valid iterator. based on the `.makeiterator()` implementation in mout https://github.com/mout/mout.</npm.description>
+  <npm.keywords>["arr","array","contains","for-own","forown","forOwn","function","iterate","iterator","make"]</npm.keywords>
+  <npm.name>make-iterator</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

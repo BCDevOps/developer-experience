@@ -1,0 +1,36 @@
+{
+  "name" : "pkg-conf",
+  "description" : "Get namespaced config from the closest package.json",
+  "version" : "3.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/pkg-conf",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/pkg-conf/-/pkg-conf-3.1.0.tgz",
+    "shasum" : "d9f9c75ea1bae0e77938cde045b276dac7cc69ae"
+  },
+  "dependencies" : {
+    "find-up" : "^3.0.0",
+    "load-json-file" : "^5.2.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.4.1",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "json", "read", "parse", "file", "fs", "graceful", "load", "pkg", "package", "config", "conf", "configuration", "object", "namespace", "namespaced" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  },
+  "fixture" : {
+    "foo" : true
+  }
+}

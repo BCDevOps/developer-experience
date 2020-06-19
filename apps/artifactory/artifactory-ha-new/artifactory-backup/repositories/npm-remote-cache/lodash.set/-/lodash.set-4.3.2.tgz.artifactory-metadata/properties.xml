@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"37b8b8abe2755087e6e6cb77c5584bb7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.set` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, set"</npm.keywords>
+  <npm.name>lodash.set</npm.name>
+  <npm.version>4.3.2</npm.version>
+</properties>

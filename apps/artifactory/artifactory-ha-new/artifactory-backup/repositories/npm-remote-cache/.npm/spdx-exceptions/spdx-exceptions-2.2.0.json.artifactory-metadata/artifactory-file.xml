@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/spdx-exceptions/spdx-exceptions-2.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spdx-exceptions-2.2.0.json</name>
+  <created>1576008066075</created>
+  <lastModified>1576008065582</lastModified>
+  <size>560</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008066075</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>69e7f6fa31548b1887cea5b4db8765369fd0396a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>7962dbd3df6a1d8dc8349a9d54ae3264</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6a1d419918668ba8a54916cee1a86dc58468143bea39c1d901d003668bfd4865</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

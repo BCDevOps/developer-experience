@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"503f4702f6c4598b7e91df5426d9c96e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for stack-utils</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/stack-utils</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>23/a8/8aa68e70959e1287da9154e5164bb8bd5dd7025e41ae54e8d177b8d165c9/ecdsa-0.13.2-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ecdsa-0.13.2-py2.py3-none-any.whl</name>
+  <created>1574025258398</created>
+  <lastModified>1555529658000</lastModified>
+  <size>59060</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574025258399</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2c6b6c1a930d5c2353e4cbbe6fd8d96dee265792</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>07e6070e33de157448afc9f47b04e3a8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>20c17e527e75acad8f402290e158a6ac178b91b881f941fc6ea305bfdfb9657c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

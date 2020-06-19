@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>diff/-/diff-4.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>diff-4.0.1.tgz</name>
+  <created>1576008548472</created>
+  <lastModified>1546829391000</lastModified>
+  <size>181514</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008548472</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>0c667cb467ebbb5cea7f14f135cc2dba7780a8ff</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6a9538e5441926a9fa2509c710f97842</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6ae915e3c2ed59c8bf360a0959aa68cd116755ceb5ccef6ea40899164b9114e7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

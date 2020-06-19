@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5572fda22c332a0413d42e72f7bc4819"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>parse, validate, manipulate, and display dates</npm.description>
+  <npm.keywords>["moment","date","time","parse","format","validate","i18n","l10n","ender"]</npm.keywords>
+  <npm.name>moment</npm.name>
+  <npm.version>2.24.0</npm.version>
+</properties>

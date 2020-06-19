@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>promise-events/-/promise-events-0.1.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>promise-events-0.1.6.tgz</name>
+  <created>1576008067482</created>
+  <lastModified>1564642056000</lastModified>
+  <size>10158</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008067483</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e02deb6d35de64f65de7dfd5b167864569c49e13</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a452a0bd34abe60690aa4a68ab073679</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7e7982855e5390e02659ad6c602dcb789a2dc6f1770bfa72647154faa913bc19</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

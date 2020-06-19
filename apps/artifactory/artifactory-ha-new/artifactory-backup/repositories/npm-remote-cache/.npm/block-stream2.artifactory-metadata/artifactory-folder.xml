@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/block-stream2</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>block-stream2</name>
+  <created>1576003413173</created>
+  <lastModified>1576003413173</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003413173</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

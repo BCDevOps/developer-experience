@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/type-fest/type-fest-0.3.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>type-fest-0.3.1.json</name>
+  <created>1576008058873</created>
+  <lastModified>1576008057678</lastModified>
+  <size>1092</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008058874</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1c23f7b10c65ce92b1bc5712e5686a09b708dd3e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0cd4ec147d8a4ae2ab07f3bb065cecea</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d757e732f495b19f0ed30f77b7c459efb8daa66e510075bd58ac697407ba8ed2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

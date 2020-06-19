@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D74030DE5281CE</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile49</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile259</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.1</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides classes that allow a compiler or tool to emit Microsoft intermediate language (MSIL). The primary clients of these classes are script engines and compilers.
+
+Commonly Used Types:
+System.Reflection.Emit.ILGenerator
+System.Reflection.Emit.Label
+System.Reflection.Emit.CustomAttributeBuilder
+System.Reflection.Emit.LocalBuilder
+System.Reflection.Emit.ParameterBuilder
+System.Reflection.Emit.SignatureHelper
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>68dJ8vv5XS//ylWg0TMyJsMRDTC51YKRmwnldTwInfZBLPW1aPCxpLYhKJSM+Sy4os1vnmC2Crc7BUJDGYusIA==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Reflection.Emit.ILGeneration</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://github.com/dotnet/corefx</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Reflection.Emit.ILGeneration</nuget.title>
+  <nuget.version>4.6.0</nuget.version>
+</properties>

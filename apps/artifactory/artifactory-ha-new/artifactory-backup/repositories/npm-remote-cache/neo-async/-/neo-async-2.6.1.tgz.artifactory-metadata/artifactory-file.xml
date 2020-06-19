@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>neo-async/-/neo-async-2.6.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>neo-async-2.6.1.tgz</name>
+  <created>1576008069777</created>
+  <lastModified>1557712599000</lastModified>
+  <size>38617</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008069778</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ac27ada66167fa8849a6addd837f6b189ad2081c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f0eb4f4cc5b1bb239cebcafcceb0d168</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ea0c37479d3e6d239d47b055db650def4caa6d1b9770797b7e8eedb2b2ca2aa2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

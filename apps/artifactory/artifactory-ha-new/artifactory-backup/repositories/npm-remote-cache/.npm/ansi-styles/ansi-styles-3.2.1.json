@@ -1,0 +1,37 @@
+{
+  "name" : "ansi-styles",
+  "description" : "ANSI escape codes for styling strings in the terminal",
+  "version" : "3.2.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "chalk/ansi-styles",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ansi-styles/-/ansi-styles-3.2.1.tgz",
+    "shasum" : "41fbb20243e50b12be0f04b8dedbf07520ce841d"
+  },
+  "dependencies" : {
+    "color-convert" : "^1.9.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "babel-polyfill" : "^6.23.0",
+    "svg-term-cli" : "^2.1.1",
+    "xo" : "*"
+  },
+  "keywords" : [ "ansi", "styles", "color", "colour", "colors", "terminal", "console", "cli", "string", "tty", "escape", "formatting", "rgb", "256", "shell", "xterm", "log", "logging", "command-line", "text" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava",
+    "screenshot" : "svg-term --command='node screenshot' --out=screenshot.svg --padding=3 --width=55 --height=3 --at=1000 --no-cursor"
+  },
+  "ava" : {
+    "require" : "babel-polyfill"
+  }
+}

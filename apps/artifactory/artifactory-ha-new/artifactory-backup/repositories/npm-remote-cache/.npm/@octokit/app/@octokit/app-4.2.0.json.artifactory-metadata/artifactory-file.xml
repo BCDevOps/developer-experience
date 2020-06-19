@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/app/@octokit/app-4.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>app-4.2.0.json</name>
+  <created>1585853547394</created>
+  <lastModified>1585853547355</lastModified>
+  <size>1621</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853547410</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>1b36e30bb3fd53eba9e6566cbed446e7caf31ac6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>57f11949fc3063e713a8ae0a30375b7a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e845ae61dcb0960d3b8072d0b18bd5014c586003ee7ca6bdc0bdc7a3cd6551ef</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

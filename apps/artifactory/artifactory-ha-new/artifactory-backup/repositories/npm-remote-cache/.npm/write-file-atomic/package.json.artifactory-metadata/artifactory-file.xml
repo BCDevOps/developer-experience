@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/write-file-atomic/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003106713</created>
+  <lastModified>1584662406000</lastModified>
+  <size>49732</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464311346</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>23c107d53135475a076ebc270aebedf6b7f9391c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e101fe2cf6a1811050f8e17251356681</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f418e6d13b645a5dd8a15739f8a2d48e42c19a99d59ed21f8686da727b9c1e18</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

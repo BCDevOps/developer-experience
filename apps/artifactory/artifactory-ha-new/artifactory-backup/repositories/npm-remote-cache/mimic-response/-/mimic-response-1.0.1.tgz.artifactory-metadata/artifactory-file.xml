@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>mimic-response/-/mimic-response-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mimic-response-1.0.1.tgz</name>
+  <created>1585853573901</created>
+  <lastModified>1531308311000</lastModified>
+  <size>1894</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853573901</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4923538878eef42063cb8a3e3b0798781487ab1b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2816656e809c73986dd2dc4e24b3351a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>42f1002c0eac7badf544c0e8cb876744a4fe9454a698d9e98a991100acca8ce8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

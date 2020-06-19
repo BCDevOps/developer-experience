@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"40accde4e2a22a6c05b871d0da2e8359"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>simply swizzle your arguments</npm.description>
+  <npm.keywords>["argument","arguments","swizzle","swizzling","parameter","parameters","mixed","array"]</npm.keywords>
+  <npm.name>simple-swizzle</npm.name>
+  <npm.version>0.2.2</npm.version>
+</properties>

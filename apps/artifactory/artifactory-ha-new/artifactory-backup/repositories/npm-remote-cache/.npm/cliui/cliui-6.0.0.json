@@ -1,0 +1,50 @@
+{
+  "name" : "cliui",
+  "description" : "easily create complex multi-column command-line-interfaces",
+  "version" : "6.0.0",
+  "author" : "Ben Coe <ben@npmjs.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/yargs/cliui.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/cliui/-/cliui-6.0.0.tgz",
+    "shasum" : "511d702c0c4e41ca156d7d0e96021f23e13225b1"
+  },
+  "dependencies" : {
+    "string-width" : "^4.2.0",
+    "strip-ansi" : "^6.0.0",
+    "wrap-ansi" : "^6.2.0"
+  },
+  "devDependencies" : {
+    "chai" : "^4.2.0",
+    "chalk" : "^3.0.0",
+    "coveralls" : "^3.0.3",
+    "mocha" : "^6.2.2",
+    "nyc" : "^14.1.1",
+    "standard" : "^12.0.1"
+  },
+  "keywords" : [ "cli", "command-line", "layout", "design", "console", "wrap", "table" ],
+  "license" : "ISC",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "pretest" : "standard",
+    "test" : "nyc mocha",
+    "coverage" : "nyc --reporter=text-lcov mocha | coveralls"
+  },
+  "config" : {
+    "blanket" : {
+      "pattern" : [ "index.js" ],
+      "data-cover-never" : [ "node_modules", "test" ],
+      "output-reporter" : "spec"
+    }
+  },
+  "standard" : {
+    "ignore" : [ "**/example/**" ],
+    "globals" : [ "it" ]
+  },
+  "engine" : {
+    "node" : ">=8"
+  }
+}

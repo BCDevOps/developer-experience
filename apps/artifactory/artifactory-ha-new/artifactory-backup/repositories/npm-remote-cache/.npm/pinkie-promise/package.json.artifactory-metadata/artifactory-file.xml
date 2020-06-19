@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pinkie-promise/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003637745</created>
+  <lastModified>1527423494000</lastModified>
+  <size>5242</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464328848</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>046b1ae227668437bb02234fdef2b0fa95b62d27</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e5e839a6b6086d9c312eff3efd33cc0c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>570c201db4c249d53fb4ae84fd8a40950be6695d682817ae033927ff15d8a3b0</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

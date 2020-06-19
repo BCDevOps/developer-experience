@@ -1,0 +1,36 @@
+{
+  "name" : "foreground-child",
+  "description" : "Run a child as if it's the foreground process.  Give it stdio.  Exit when it exits.",
+  "version" : "1.5.6",
+  "author" : "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "homepage" : "https://github.com/tapjs/foreground-child#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/tapjs/foreground-child.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/tapjs/foreground-child/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/foreground-child/-/foreground-child-1.5.6.tgz",
+    "shasum" : "4fd71ad2dfde96789b980a5c0a295937cb2f5ce9"
+  },
+  "dependencies" : {
+    "cross-spawn" : "^4",
+    "signal-exit" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "tap" : "^8.0.1"
+  },
+  "license" : "ISC",
+  "files" : [ "index.js" ],
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "tap --coverage test/*.js",
+    "changelog" : "bash changelog.sh",
+    "postversion" : "npm run changelog && git add CHANGELOG.md && git commit -m 'update changelog - '${npm_package_version}"
+  }
+}

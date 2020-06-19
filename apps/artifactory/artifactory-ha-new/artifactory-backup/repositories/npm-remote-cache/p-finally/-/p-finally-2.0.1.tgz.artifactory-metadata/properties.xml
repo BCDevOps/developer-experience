@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1757cb81625fd0af7745711fdcb8eea1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>`promise#finally()` ponyfill - invoked when the promise is settled regardless of outcome</npm.description>
+  <npm.keywords>["promise","finally","handler","function","async","await","promises","settled","ponyfill","polyfill","shim","bluebird"]</npm.keywords>
+  <npm.name>p-finally</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

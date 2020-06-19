@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Jaeger.Thrift.VendoredThrift.0.3.6.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Jaeger.Thrift.VendoredThrift.0.3.6.nupkg</name>
+  <created>1578432228894</created>
+  <lastModified>1570989913000</lastModified>
+  <size>119415</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432228894</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>60b338143e616f9192751b2d21ee9995585cb258</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>381999174c5ea5548700bae2519641c4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c114a3ed6200d99b3ecc2ee1f63ae03a08b38556728a3df5162cf18da94209b7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

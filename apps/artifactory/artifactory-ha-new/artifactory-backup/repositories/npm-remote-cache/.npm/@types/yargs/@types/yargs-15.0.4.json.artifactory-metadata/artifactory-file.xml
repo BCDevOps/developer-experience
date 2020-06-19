@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/yargs/@types/yargs-15.0.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>yargs-15.0.4.json</name>
+  <created>1585871275028</created>
+  <lastModified>1585871274834</lastModified>
+  <size>1815</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871275028</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>af56b316228913dbb3ff593101b6948f28d4f4da</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cb640e5c635ab1428492ca7b8920f02a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fe5e991891ecf01ebb51fae5b20d938980af3efff4d8f978f55f169f4f2be283</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

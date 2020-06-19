@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>opener</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>opener</name>
+  <created>1579828381369</created>
+  <lastModified>1579828381369</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828381369</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"544c2fbb8393b98af367c7cf5e226c90"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>source map support for gulp.js</npm.description>
+  <npm.keywords>["gulpplugin","gulp","source maps","sourcemaps"]</npm.keywords>
+  <npm.name>gulp-sourcemaps</npm.name>
+  <npm.version>2.6.5</npm.version>
+</properties>

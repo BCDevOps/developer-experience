@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"bee8e804d306d321bce74d0a3bfe98b8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get colors in your node.js console</npm.description>
+  <npm.keywords>["ansi","terminal","colors"]</npm.keywords>
+  <npm.name>colors</npm.name>
+  <npm.version>1.4.0</npm.version>
+</properties>

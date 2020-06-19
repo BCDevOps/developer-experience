@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cf59ec3696e391318860579aae54fe65"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>log a deprecation message with stack</npm.description>
+  <npm.keywords>["deprecate","deprecated","deprecation"]</npm.keywords>
+  <npm.name>deprecation</npm.name>
+  <npm.version>2.3.1</npm.version>
+</properties>

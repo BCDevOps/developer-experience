@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0f8dbce4057e053ba398e380db39631e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>parser and generator for css color strings</npm.description>
+  <npm.keywords>["color","colour","rgb","css"]</npm.keywords>
+  <npm.name>color-string</npm.name>
+  <npm.version>1.5.3</npm.version>
+</properties>

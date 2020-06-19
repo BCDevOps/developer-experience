@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.DependencyInjection.2.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.DependencyInjection.2.0.0.nupkg</name>
+  <created>1578432198496</created>
+  <lastModified>1544738721000</lastModified>
+  <size>35254</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432198497</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cc1f2c579c8bdf6d2825ab0ad4afc1561b21c02a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>099f41a88032581ff6bbabcbe48575fb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f8aaa2b95f27732f5bd7186d0c4c61e2ce14e7bb4ac6ac78a40cabe9dfff1105</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

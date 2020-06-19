@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Text.Encoding.CodePages.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Text.Encoding.CodePages.4.5.0.nupkg</name>
+  <created>1578432210603</created>
+  <lastModified>1545092635000</lastModified>
+  <size>4270497</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432210604</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7ff9833bfa22b5f6cb046a2b73a3235b70d6bc77</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8017d75f0c3bc7e51cd944a7366dea7e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>43eed1ec45523adb172332a38df0a7bdf36e97a004d4dc732598ab1b4242a3a7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

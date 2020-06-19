@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4b0bc63e58b926cac211d9d51ebab135"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>an implementation of the whatwg url standard's url api and parsing machinery</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>whatwg-url</npm.name>
+  <npm.version>7.1.0</npm.version>
+</properties>

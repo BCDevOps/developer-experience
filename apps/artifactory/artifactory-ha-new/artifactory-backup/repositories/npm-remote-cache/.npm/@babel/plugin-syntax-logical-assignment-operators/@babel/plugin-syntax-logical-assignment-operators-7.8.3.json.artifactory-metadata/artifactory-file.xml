@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-logical-assignment-operators/@babel/plugin-syntax-logical-assignment-operators-7.8.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-syntax-logical-assignment-operators-7.8.3.json</name>
+  <created>1586464316512</created>
+  <lastModified>1586464316424</lastModified>
+  <size>959</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464316513</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>03cfae5c1458ee93c0765c62a0f1aabc877dfdc7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>730b4a442e7fd46a2a8189fd2e06f7ca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5c21e0d6e93e3917f954e1d3529a79101c8ab90f1cfd519a2beadf2b9f86c2c1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

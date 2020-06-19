@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/astroid.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>astroid.html</name>
+  <created>1574023491303</created>
+  <lastModified>1582154366000</lastModified>
+  <size>32066</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154366067</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ee18f04af8766b0f67a0254721b198a454ab1d84</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>766210142bddaa0f6ecc0afdd3302179</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>19020d3343c80c408c2b8a40fb6d9e8cb5c0104451074e71663517dafcab2ae5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,30 @@
+{
+  "name" : "colornames",
+  "description" : "Map color names to HEX color values.",
+  "version" : "1.1.1",
+  "author" : "Tim Oxley",
+  "homepage" : "https://github.com/timoxley/colornames#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/timoxley/colornames.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/timoxley/colornames/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/colornames/-/colornames-1.1.1.tgz",
+    "shasum" : "f8889030685c7c4ff9e2a559f5077eb76a816f96"
+  },
+  "devDependencies" : {
+    "tape" : "^4.4.0"
+  },
+  "keywords" : [ "color", "colour", "names", "css", "hex", "rgb", "convert" ],
+  "license" : "MIT",
+  "directories" : {
+    "example" : "example"
+  },
+  "scripts" : {
+    "test" : "node test.js"
+  }
+}

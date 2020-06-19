@@ -1,0 +1,41 @@
+{
+  "name" : "bunyan-sentry-stream",
+  "description" : "Write log to Sentry/Raven by using Bunyan",
+  "version" : "1.2.1",
+  "author" : "Chauffeur-Privé",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/transcovo/bunyan-sentry-stream.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/transcovo/bunyan-sentry-stream/issues"
+  },
+  "engines" : {
+    "node" : ">=4.8.4"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/bunyan-sentry-stream/-/bunyan-sentry-stream-1.2.1.tgz",
+    "shasum" : "fdd9f42fa75879f2a210579bdc2712f8285cd12b"
+  },
+  "dependencies" : {
+    "lodash.omit" : "4.5.0"
+  },
+  "devDependencies" : {
+    "bunyan" : "1.8.12",
+    "chai" : "4.1.2",
+    "eslint" : "~1.10.3",
+    "eslint-config-cp" : "~1.1.0",
+    "mocha" : "3.5.0",
+    "nyc" : "11.2.1",
+    "sinon" : "3.2.1"
+  },
+  "keywords" : [ "bunyan", "sentry", "raven", "log" ],
+  "license" : "Apache-2.0",
+  "scripts" : {
+    "test" : "nyc _mocha -b",
+    "pretest" : "npm run lint",
+    "lint" : "eslint .",
+    "mocha" : "_mocha -b"
+  }
+}

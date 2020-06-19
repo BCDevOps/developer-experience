@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/eclipse/jetty/jetty-bom/9.4.18.v20190429</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>9.4.18.v20190429</name>
+  <created>1576861434628</created>
+  <lastModified>1576861434628</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861434628</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a076ec0fc0de98b437f6e682d832f678"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>logger for npm</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>npmlog</npm.name>
+  <npm.version>4.1.2</npm.version>
+</properties>

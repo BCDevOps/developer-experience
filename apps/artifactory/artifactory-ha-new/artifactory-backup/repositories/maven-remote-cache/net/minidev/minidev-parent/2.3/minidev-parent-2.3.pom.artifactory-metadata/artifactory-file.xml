@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>net/minidev/minidev-parent/2.3/minidev-parent-2.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>minidev-parent-2.3.pom</name>
+  <created>1576861447073</created>
+  <lastModified>1490515007000</lastModified>
+  <size>8480</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861447074</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>72ab9862ec467c116f47cc876476d8781b87f87b</original>
+          <actual>72ab9862ec467c116f47cc876476d8781b87f87b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>bec688a620a7b9c7932e32c8ce7ff539</original>
+          <actual>bec688a620a7b9c7932e32c8ce7ff539</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>950d8f0c02c24e4a38edde374532a42bfed55910e07ef0314905d8e34a250954</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

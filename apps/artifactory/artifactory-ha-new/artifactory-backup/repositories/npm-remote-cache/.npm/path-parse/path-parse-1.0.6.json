@@ -1,0 +1,24 @@
+{
+  "name" : "path-parse",
+  "description" : "Node.js path.parse() ponyfill",
+  "version" : "1.0.6",
+  "author" : "Javier Blanco <http://jbgutierrez.info>",
+  "homepage" : "https://github.com/jbgutierrez/path-parse#readme",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jbgutierrez/path-parse.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/jbgutierrez/path-parse/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/path-parse/-/path-parse-1.0.6.tgz",
+    "shasum" : "d62dbb5679405d72c4737ec58600e9ddcf06d24c"
+  },
+  "keywords" : [ "path", "paths", "file", "dir", "parse", "built-in", "util", "utils", "core", "ponyfill", "polyfill", "shim" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "node test.js"
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pause</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>pause</name>
+  <created>1576003397590</created>
+  <lastModified>1576003397590</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003397590</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

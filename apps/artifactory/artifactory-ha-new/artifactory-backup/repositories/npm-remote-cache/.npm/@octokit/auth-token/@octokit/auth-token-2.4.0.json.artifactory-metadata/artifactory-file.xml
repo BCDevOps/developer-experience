@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/auth-token/@octokit/auth-token-2.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>auth-token-2.4.0.json</name>
+  <created>1585871285518</created>
+  <lastModified>1585871285482</lastModified>
+  <size>1426</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585871285518</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0ae041b05c8ddf29bb3a77f85695f5ca8238d530</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6f3bed981b21b5df1ea84fcfc74f4251</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a984de9f3b413272113ec88a49d0d3f40bc00422c313bdcb7246c2777e075d28</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

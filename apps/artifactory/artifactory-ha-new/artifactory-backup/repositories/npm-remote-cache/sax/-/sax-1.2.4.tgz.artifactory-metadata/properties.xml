@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7ecffd3e929014af7d5913f54d262738"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>an evented streaming xml parser in javascript</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>sax</npm.name>
+  <npm.version>1.2.4</npm.version>
+</properties>

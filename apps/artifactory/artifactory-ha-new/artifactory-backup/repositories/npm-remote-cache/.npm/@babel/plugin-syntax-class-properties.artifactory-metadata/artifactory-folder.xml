@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-class-properties</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plugin-syntax-class-properties</name>
+  <created>1586464375953</created>
+  <lastModified>1586464375953</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464375953</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

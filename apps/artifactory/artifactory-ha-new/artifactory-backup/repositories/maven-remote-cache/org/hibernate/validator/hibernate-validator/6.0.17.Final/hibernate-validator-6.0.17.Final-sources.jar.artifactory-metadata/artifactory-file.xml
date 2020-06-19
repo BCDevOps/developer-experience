@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hibernate-validator-6.0.17.Final-sources.jar</name>
+  <created>1576861420841</created>
+  <lastModified>1560432338000</lastModified>
+  <size>825257</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861420842</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7018c4feae164e19041a968e4d1e5576008b264f</original>
+          <actual>7018c4feae164e19041a968e4d1e5576008b264f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>35bc486812b47207d338ee1f54e5e6b6</original>
+          <actual>35bc486812b47207d338ee1f54e5e6b6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>865ae07d485ce74b4bc75809296b419bd33ebecae6bb37274548f95d3264497d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

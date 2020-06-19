@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/forever-agent/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003419780</created>
+  <lastModified>1527383173000</lastModified>
+  <size>8041</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464339812</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>be75a19cbeb28621e0a767ef83f9f70c4a2bb97b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9e6ef96089dd23304c2ea7d2fb731c9c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>52252cd3b536d56e62ad6ce84291839d611e678cb0f7aa1d1d3a305a183caa09</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

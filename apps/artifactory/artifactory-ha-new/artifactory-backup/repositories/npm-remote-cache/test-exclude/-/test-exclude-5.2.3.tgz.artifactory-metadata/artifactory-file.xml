@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>test-exclude/-/test-exclude-5.2.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>test-exclude-5.2.3.tgz</name>
+  <created>1576003099160</created>
+  <lastModified>1556138688000</lastModified>
+  <size>5368</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003099161</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c3d3e1e311eb7ee405e092dac10aefd09091eac0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ab0263b79b7644376518e987f328a6a5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f87b76e421ef5da35aeb828016dcacfded5829d5a340f2e54440f868a8360569</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

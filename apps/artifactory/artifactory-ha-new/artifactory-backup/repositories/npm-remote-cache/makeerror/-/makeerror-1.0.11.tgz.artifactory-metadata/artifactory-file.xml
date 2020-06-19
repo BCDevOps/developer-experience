@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>makeerror/-/makeerror-1.0.11.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>makeerror-1.0.11.tgz</name>
+  <created>1576003619797</created>
+  <lastModified>1527405593000</lastModified>
+  <size>2599</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003619798</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e01a5c9109f2af79660e4e8b9587790184f5a96c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>78d7956fcc4d5ca2a92134d159edf85e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4e5f34e88c9f2e5bb59a9a250709b9fa7adcb3c43cbe90951cdbc5676a768e55</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

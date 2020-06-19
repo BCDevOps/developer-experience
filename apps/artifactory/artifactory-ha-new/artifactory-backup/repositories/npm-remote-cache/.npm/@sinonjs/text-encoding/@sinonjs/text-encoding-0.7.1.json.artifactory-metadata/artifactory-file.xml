@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@sinonjs/text-encoding/@sinonjs/text-encoding-0.7.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>text-encoding-0.7.1.json</name>
+  <created>1579828421509</created>
+  <lastModified>1579828421449</lastModified>
+  <size>1286</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828421510</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2e7a01f98c31b76e663a690aa94fe5b678c35e30</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4eaa9f3d187bdafefc17db494d3458e0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d7344f74e20759c55b1f3f87c2644ef0b50d6c533f78bb2b90bc84092ba4425e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

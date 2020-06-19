@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"95f6abf4133408f3f8bd1509f9b5b34d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging.</npm.description>
+  <npm.keywords>["configuration","key value store","plugabble"]</npm.keywords>
+  <npm.name>nconf</npm.name>
+  <npm.version>0.10.0</npm.version>
+</properties>

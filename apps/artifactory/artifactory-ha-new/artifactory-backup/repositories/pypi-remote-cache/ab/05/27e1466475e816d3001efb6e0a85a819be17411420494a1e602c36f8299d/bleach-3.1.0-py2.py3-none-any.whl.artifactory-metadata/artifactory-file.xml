@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>ab/05/27e1466475e816d3001efb6e0a85a819be17411420494a1e602c36f8299d/bleach-3.1.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>bleach-3.1.0-py2.py3-none-any.whl</name>
+  <created>1573764188551</created>
+  <lastModified>1547046654000</lastModified>
+  <size>157465</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1573764188551</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>142b35c7fb6f86db96e8c58a81f2fec0af46d52d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>276ec92594a28d975b49435697a7410a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>213336e49e102af26d9cde77dd2d0397afabc5a6bf2fed985dc35b5d1e285a16</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

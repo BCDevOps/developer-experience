@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9f790d7180667e1d8d1110f2cf321b62"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>use node's fs.realpath, but fall back to the js implementation if the native one fails</npm.description>
+  <npm.keywords>["realpath","fs","polyfill"]</npm.keywords>
+  <npm.name>fs.realpath</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

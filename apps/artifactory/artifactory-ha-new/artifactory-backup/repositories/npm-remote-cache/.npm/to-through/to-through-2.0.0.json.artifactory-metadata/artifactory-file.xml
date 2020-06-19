@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/to-through/to-through-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>to-through-2.0.0.json</name>
+  <created>1576003094367</created>
+  <lastModified>1576003094350</lastModified>
+  <size>1288</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003094368</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>52da0fc87d181c5e2e0cbcb077a2a45bbd55d4b3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0b82dfbdb3e8c8a4e57cb8a0151d9e56</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>514e1d51f72d30e15aee003fccd0eb44121f86f86c0c6851bf9334c3a8d60700</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

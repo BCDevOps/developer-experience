@@ -1,0 +1,18 @@
+{
+  "name" : "extsprintf",
+  "description" : "extended POSIX-style sprintf",
+  "version" : "1.4.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/davepacheco/node-extsprintf.git"
+  },
+  "engines" : [ "node >=0.6.0" ],
+  "main" : "./lib/extsprintf.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/extsprintf/-/extsprintf-1.4.0.tgz",
+    "shasum" : "e2689f8f356fad62cca65a3a91c5df5f9551692f"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fa9a3ebe5d94411b366d05173b5c155c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>unicode symbols with windows cmd fallbacks</npm.description>
+  <npm.keywords>["unicode","cli","cmd","command-line","characters","symbol","symbols","figure","figures","fallback"]</npm.keywords>
+  <npm.name>figures</npm.name>
+  <npm.version>3.2.0</npm.version>
+</properties>

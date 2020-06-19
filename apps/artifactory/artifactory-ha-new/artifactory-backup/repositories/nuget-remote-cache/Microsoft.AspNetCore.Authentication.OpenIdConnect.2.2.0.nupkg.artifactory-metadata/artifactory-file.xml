@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.Authentication.OpenIdConnect.2.2.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.Authentication.OpenIdConnect.2.2.0.nupkg</name>
+  <created>1580862020534</created>
+  <lastModified>1543878886000</lastModified>
+  <size>65586</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1580862020534</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>070ae3051c31212f7695b74f623179b9c77ba856</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d712f1cf5f2bb2e4d70a89f7a2b3c6fe</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>018919f28ba2b541f836684b92c6b122fab3d3e7d2d3dc4ec9e16338218f3ff9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

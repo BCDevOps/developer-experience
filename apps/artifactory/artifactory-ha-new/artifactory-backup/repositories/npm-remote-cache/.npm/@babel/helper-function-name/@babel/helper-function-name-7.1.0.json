@@ -1,0 +1,22 @@
+{
+  "name" : "@babel/helper-function-name",
+  "description" : "Helper function to change the property 'name' of every function",
+  "version" : "7.1.0",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-helper-function-name",
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/helper-function-name/-/helper-function-name-7.1.0.tgz",
+    "shasum" : "a0ceb01685f73355d4360c1247f582bfafc8ff53"
+  },
+  "dependencies" : {
+    "@babel/helper-get-function-arity" : "^7.0.0",
+    "@babel/template" : "^7.1.0",
+    "@babel/types" : "^7.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  }
+}

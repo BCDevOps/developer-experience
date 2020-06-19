@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@gulp-sourcemaps/map-sources/@gulp-sourcemaps/map-sources-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>map-sources-1.0.0.json</name>
+  <created>1576003087085</created>
+  <lastModified>1576003086987</lastModified>
+  <size>1344</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003087086</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5f7e044dd38c4168eecd1145ab0be201d88be341</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8fa54a383e107b49b0ef763af9b06313</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2aec4ee15bbc44708d35fcc3cf2ac30f6dbbbaadb4a864c6400f1844dffb7032</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

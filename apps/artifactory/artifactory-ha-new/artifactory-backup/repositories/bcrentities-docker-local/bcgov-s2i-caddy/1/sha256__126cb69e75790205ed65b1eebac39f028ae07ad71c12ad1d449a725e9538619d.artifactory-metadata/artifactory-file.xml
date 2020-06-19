@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>bcrentities-docker-local</repoKey>
+    <path>bcgov-s2i-caddy/1/sha256__126cb69e75790205ed65b1eebac39f028ae07ad71c12ad1d449a725e9538619d</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sha256__126cb69e75790205ed65b1eebac39f028ae07ad71c12ad1d449a725e9538619d</name>
+  <created>1578377423140</created>
+  <lastModified>1578377422990</lastModified>
+  <size>16540</size>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1578377423177</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6d40044aa8bec050c946bd9b4cbb9b66cea7ebc6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>15165453926b2a07df5a2c0af72a36f7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>126cb69e75790205ed65b1eebac39f028ae07ad71c12ad1d449a725e9538619d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

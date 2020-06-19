@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/stack-utils/@types/stack-utils-1.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>stack-utils-1.0.1.json</name>
+  <created>1576003415073</created>
+  <lastModified>1576003414890</lastModified>
+  <size>810</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003415074</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>21ab5749223a4d984fdf3ef5d4b79125f1947ee7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d9d2d1d11828f994a14c1eb4974710d3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7ac42e4b3601dac77d51b5179516c63af6f58ce73dd1e164ad23b67bd19f3200</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

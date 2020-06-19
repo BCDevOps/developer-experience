@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/psl/psl-1.6.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>psl-1.6.0.json</name>
+  <created>1576008068672</created>
+  <lastModified>1576008068291</lastModified>
+  <size>1611</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008068673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4420cfe16bfbe4d878286369a1f39ca2efee10f6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1b4c13a5a87dd6d0dccae77a547b4cc4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>883193be618ae891c6d1efd803302848ab1d0ccf818161559a6d7cb2dc4b1a9c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

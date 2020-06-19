@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/send/send-0.17.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>send-0.17.1.json</name>
+  <created>1576008059273</created>
+  <lastModified>1576008058683</lastModified>
+  <size>1862</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059273</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2b820c70bd5b59902d9500f7a7bb505a567db6ed</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0a26df4d85a67ef10c60e0d5383b1264</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6c0ad22a9cde02e51e35604e8ad6fe3bf62560a2bd2025b84727ca3fb3f5886a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

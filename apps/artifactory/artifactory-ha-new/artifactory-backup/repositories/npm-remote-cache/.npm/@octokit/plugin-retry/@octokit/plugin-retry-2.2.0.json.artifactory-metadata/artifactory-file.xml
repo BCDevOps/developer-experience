@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@octokit/plugin-retry/@octokit/plugin-retry-2.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-retry-2.2.0.json</name>
+  <created>1576008552489</created>
+  <lastModified>1576008552183</lastModified>
+  <size>1519</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008552490</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>767cfa8074102ffc5f81d0bb728cb383d4b0a764</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>626cfb7bc3d8dd95771762ad7461b494</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e89a2bf49160699a6dc855d99779a32ff14f310532ac437c7a1dafa491dfa3ed</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

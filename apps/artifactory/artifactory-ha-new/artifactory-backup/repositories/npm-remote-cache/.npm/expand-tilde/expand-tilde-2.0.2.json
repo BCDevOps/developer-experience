@@ -1,0 +1,47 @@
+{
+  "name" : "expand-tilde",
+  "description" : "Bash-like tilde expansion for node.js. Expands a leading tilde in a file path to the user home directory, or `~+` to the cwd.",
+  "version" : "2.0.2",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/expand-tilde",
+  "repository" : "jonschlinkert/expand-tilde",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/expand-tilde/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/expand-tilde/-/expand-tilde-2.0.2.tgz",
+    "shasum" : "97e801aa052df02454de46b02bf621642cdc8502"
+  },
+  "dependencies" : {
+    "homedir-polyfill" : "^1.0.1"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.9",
+    "is-windows" : "^0.2.0",
+    "mocha" : "^2.5.3"
+  },
+  "keywords" : [ "cwd", "expand", "expansion", "filepath", "home", "path", "pwd", "tilde", "user", "userhome" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "run" : true,
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "braces", "expand-brackets", "is-glob", "micromatch" ]
+    },
+    "reflinks" : [ "verb" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Diagnostics.DiagnosticSource.4.5.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Diagnostics.DiagnosticSource.4.5.0.nupkg</name>
+  <created>1578439442425</created>
+  <lastModified>1545091502000</lastModified>
+  <size>154861</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578439442493</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8750f245c7b838d79b346ce1ce3a2100491abb54</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>33b6cd4f1022a14b634aa76d64a77e0c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d2bf1bb2682c6f7d1b1c99ef8bdf283d315cc4b7eeaaab7d99ca1e11c60515f9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

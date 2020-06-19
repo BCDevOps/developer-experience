@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/mockito/mockito-core/3.1.0/mockito-core-3.1.0-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mockito-core-3.1.0-sources.jar</name>
+  <created>1576861454707</created>
+  <lastModified>1569930479000</lastModified>
+  <size>487244</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861454707</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>30e8ff3451ac57bc46f5954f667378bc3f85b8f5</original>
+          <actual>30e8ff3451ac57bc46f5954f667378bc3f85b8f5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>56455da794277a499a7ac5e666988199</original>
+          <actual>56455da794277a499a7ac5e666988199</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4f23acaa29ce8783b00f794c6e556c26f3046ee4ad7da4ce08255c9676aba2ce</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

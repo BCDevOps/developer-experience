@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>nopt/-/nopt-1.0.10.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nopt-1.0.10.tgz</name>
+  <created>1576003427493</created>
+  <lastModified>1527417168000</lastModified>
+  <size>10240</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003427494</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6ddd21bd2a31417b92727dd585f8a6f37608ebee</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0550802fa3c30003a03e16d03f724b8a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>426562943bfbbfc059eac83575ade5b78c6c01e5c1000a90a7defecfe2334927</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

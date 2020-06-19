@@ -1,0 +1,33 @@
+{
+  "name" : "jws",
+  "description" : "Implementation of JSON Web Signatures",
+  "version" : "3.2.2",
+  "author" : "Brian J Brennan",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/brianloveswords/node-jws.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jws/-/jws-3.2.2.tgz",
+    "shasum" : "001099f3639468c9414000e99995fa52fb478304"
+  },
+  "dependencies" : {
+    "jwa" : "^1.4.1",
+    "safe-buffer" : "^5.0.1"
+  },
+  "devDependencies" : {
+    "semver" : "^5.1.0",
+    "tape" : "~2.14.0"
+  },
+  "keywords" : [ "jws", "json", "web", "signatures" ],
+  "license" : "MIT",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "make test"
+  },
+  "gitHead" : "c0f6b27bcea5a2ad2e304d91c2e842e4076a6b03",
+  "readmeFilename" : "readme.md"
+}

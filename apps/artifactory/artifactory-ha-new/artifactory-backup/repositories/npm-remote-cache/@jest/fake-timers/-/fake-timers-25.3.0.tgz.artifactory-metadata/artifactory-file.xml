@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@jest/fake-timers/-/fake-timers-25.3.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fake-timers-25.3.0.tgz</name>
+  <created>1586464339542</created>
+  <lastModified>1586352091000</lastModified>
+  <size>7210</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464339542</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>995aad36d5c8984165ca5db12e740ab8dbf7042a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fdf2a413c6cd5b9ef3e058e0e69d15cd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bd4e186fcf155a86e73b850267940c6e93b61bf9935ed805ef601d8a9e9021de</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

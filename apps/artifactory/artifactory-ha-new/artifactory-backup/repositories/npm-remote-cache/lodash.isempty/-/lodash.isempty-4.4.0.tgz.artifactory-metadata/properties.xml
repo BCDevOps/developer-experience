@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0551ad662c3af9514cd6397b5d590266"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.isempty` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, isempty"</npm.keywords>
+  <npm.name>lodash.isempty</npm.name>
+  <npm.version>4.4.0</npm.version>
+</properties>

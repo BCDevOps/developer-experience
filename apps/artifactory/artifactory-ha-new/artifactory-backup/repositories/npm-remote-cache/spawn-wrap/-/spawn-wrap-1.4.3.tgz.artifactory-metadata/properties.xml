@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"65d62b81d48e842b004ba525ac4e57be"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>wrap all spawned node.js child processes by adding environs and arguments ahead of the main javascript file argument.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>spawn-wrap</npm.name>
+  <npm.version>1.4.3</npm.version>
+</properties>

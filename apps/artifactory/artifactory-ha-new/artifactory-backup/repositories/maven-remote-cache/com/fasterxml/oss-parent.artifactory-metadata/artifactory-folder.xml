@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/oss-parent</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>oss-parent</name>
+  <created>1576861354187</created>
+  <lastModified>1576861354187</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861354187</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@jest/console/@jest/console-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>console-24.9.0.json</name>
+  <created>1576008063578</created>
+  <lastModified>1576008062980</lastModified>
+  <size>819</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008063579</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0011f294cc413224509bfb48470b9ae5db1f99da</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>62d8ad6431a843f871b97090de1d834f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d4009c88ece350e26c06b991743d66e25415ed9cbbde3f1999788783e4e22ab9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

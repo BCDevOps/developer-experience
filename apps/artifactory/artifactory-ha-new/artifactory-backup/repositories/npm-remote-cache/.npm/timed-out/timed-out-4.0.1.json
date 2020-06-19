@@ -1,0 +1,27 @@
+{
+  "name" : "timed-out",
+  "description" : "Emit `ETIMEDOUT` or `ESOCKETTIMEDOUT` when ClientRequest is hanged",
+  "version" : "4.0.1",
+  "author" : {
+    "name" : "Vsevolod Strukchinsky",
+    "email" : "floatdrop@gmail.com"
+  },
+  "repository" : "floatdrop/timed-out",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/timed-out/-/timed-out-4.0.1.tgz",
+    "shasum" : "f32eacac5a175bea25d7fab565ab3ed8741ef56f"
+  },
+  "devDependencies" : {
+    "mocha" : "*",
+    "xo" : "^0.16.0"
+  },
+  "keywords" : [ "http", "https", "get", "got", "url", "uri", "request", "util", "utility", "simple" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && mocha"
+  }
+}

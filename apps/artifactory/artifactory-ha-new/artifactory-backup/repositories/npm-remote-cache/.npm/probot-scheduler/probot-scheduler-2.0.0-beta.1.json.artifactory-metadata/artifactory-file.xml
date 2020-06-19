@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/probot-scheduler/probot-scheduler-2.0.0-beta.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>probot-scheduler-2.0.0-beta.1.json</name>
+  <created>1576003086587</created>
+  <lastModified>1576003086523</lastModified>
+  <size>1046</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003086588</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0fca9074166e85fb5d9370baf78293e58765e4af</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>692caeb5520d8a93dc4605ce53a5d09e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>00b9b23d058117eec699a63b43e33aed289f38745a1003bf5d33b2c9a8991f9a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a944d9336278ebdef4bb8974d6baa551"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>generate a cryptographically strong random string</npm.description>
+  <npm.keywords>["random","string","text","id","identifier","slug","salt","crypto","strong","secure","hex"]</npm.keywords>
+  <npm.name>crypto-random-string</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

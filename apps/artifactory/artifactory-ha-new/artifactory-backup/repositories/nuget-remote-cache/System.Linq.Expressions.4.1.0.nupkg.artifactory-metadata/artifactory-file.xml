@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Linq.Expressions.4.1.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Linq.Expressions.4.1.0.nupkg</name>
+  <created>1578432222404</created>
+  <lastModified>1544741997000</lastModified>
+  <size>1929236</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432222405</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>634c90a133277b1534c4c01143f073ac3cdb961d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>37262e1fd5b97d6cd858587af564db36</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ef3a81f855e092f86d941ce9719c9df35c5ccd63f40f7b96b2cc801b0dededbe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

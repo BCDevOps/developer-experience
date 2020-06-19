@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cb0cbe764a2f9bce39dfb31fe54f7d0e"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>shim for require.main.filename() that works in as many environments as possible</npm.description>
+  <npm.keywords>["require","shim","iisnode"]</npm.keywords>
+  <npm.name>require-main-filename</npm.name>
+  <npm.version>1.0.1</npm.version>
+</properties>

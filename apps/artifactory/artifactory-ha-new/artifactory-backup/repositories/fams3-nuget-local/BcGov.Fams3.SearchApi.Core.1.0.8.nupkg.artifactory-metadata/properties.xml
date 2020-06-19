@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <nuget.authors>PathFinder</nuget.authors>
+  <nuget.dependency>BcGov.Fams3.SearchApi.Contracts:1.0.8:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>FluentValidation:8.6.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>MassTransit:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>MassTransit.AspNetCore:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>MassTransit.RabbitMQ:5.5.6:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Configuration.Binder:3.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Hosting.Abstractions:3.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options.ConfigurationExtensions:3.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Options.DataAnnotations:3.0.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>OpenTracing:0.12.1:.NETStandard2.0</nuget.dependency>
+  <nuget.description>A core Librairy for BCGOV SearchApi Related Products</nuget.description>
+  <nuget.digest>bRn599g9xl0mfwM4eiA41AfcO02dvkX1MP34IrOcXLnkR9Xu08lwCQ4KBvvHRXD5i9Vwi4gzAR6B1lcweKf0xA==</nuget.digest>
+  <nuget.id>BcGov.Fams3.SearchApi.Core</nuget.id>
+  <nuget.owners>PathFinder</nuget.owners>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.version>1.0.8</nuget.version>
+</properties>

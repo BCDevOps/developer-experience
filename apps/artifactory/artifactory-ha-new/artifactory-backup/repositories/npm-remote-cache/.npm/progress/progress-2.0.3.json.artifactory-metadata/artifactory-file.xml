@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/progress/progress-2.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>progress-2.0.3.json</name>
+  <created>1576008069174</created>
+  <lastModified>1576008068682</lastModified>
+  <size>826</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069174</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>74d62a12f8a8cf8f15c935ed7c1435bc0939710e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>5afd8adcffea0a3e945aac883db13e16</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4d8d61b89017af672f51583bcfd5791cf25abc8fdf05e753e0e28dd933e6b671</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

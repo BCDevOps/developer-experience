@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7543b5a45c9446b7efc0d0550d303467"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>jest's reporters</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@jest/reporters</npm.name>
+  <npm.version>25.3.0</npm.version>
+</properties>

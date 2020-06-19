@@ -1,0 +1,35 @@
+{
+  "name" : "imurmurhash",
+  "description" : "An incremental implementation of MurmurHash3",
+  "version" : "0.1.4",
+  "author" : {
+    "name" : "Jens Taylor",
+    "email" : "jensyt@gmail.com",
+    "url" : "https://github.com/homebrewing"
+  },
+  "homepage" : "https://github.com/jensyt/imurmurhash-js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jensyt/imurmurhash-js"
+  },
+  "bugs" : {
+    "url" : "https://github.com/jensyt/imurmurhash-js/issues"
+  },
+  "engines" : {
+    "node" : ">=0.8.19"
+  },
+  "main" : "imurmurhash.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/imurmurhash/-/imurmurhash-0.1.4.tgz",
+    "shasum" : "9218b9b2b928a238b13dc4fb6b6d576f231453ea"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+  },
+  "keywords" : [ "murmur", "murmurhash", "murmurhash3", "hash", "incremental" ],
+  "license" : "MIT",
+  "files" : [ "imurmurhash.js", "imurmurhash.min.js", "package.json", "README.md" ],
+  "scripts" : {
+  }
+}

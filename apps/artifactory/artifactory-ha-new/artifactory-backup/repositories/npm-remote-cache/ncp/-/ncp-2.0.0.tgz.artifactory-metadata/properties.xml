@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1abb425c80e5e0780bf14cac044ef181"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>asynchronous recursive file copy utility.</npm.description>
+  <npm.keywords>["cli","copy"]</npm.keywords>
+  <npm.name>ncp</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

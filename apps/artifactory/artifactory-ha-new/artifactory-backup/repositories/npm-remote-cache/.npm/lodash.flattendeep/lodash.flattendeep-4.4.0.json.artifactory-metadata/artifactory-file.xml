@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lodash.flattendeep/lodash.flattendeep-4.4.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>lodash.flattendeep-4.4.0.json</name>
+  <created>1579828386275</created>
+  <lastModified>1579828385998</lastModified>
+  <size>982</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828386275</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5646247078158aabdd31799fc59a9f8c42ae5690</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6fcc2e08fa4e4fa76953681ca114fbf1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>016d1f6da4a94bc11f621241ef36616ef1a68f53c0ff6aa1cbe58dee4c64dd6d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

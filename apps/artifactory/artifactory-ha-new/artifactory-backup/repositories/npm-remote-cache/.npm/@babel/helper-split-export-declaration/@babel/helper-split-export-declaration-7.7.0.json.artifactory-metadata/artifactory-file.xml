@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/helper-split-export-declaration/@babel/helper-split-export-declaration-7.7.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>helper-split-export-declaration-7.7.0.json</name>
+  <created>1576008723594</created>
+  <lastModified>1576008723516</lastModified>
+  <size>698</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008723594</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7bff701c8b5e13acb3f16f1eb26dd07a0739982d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>24ba6e88dc01ae1e31c56ecb2e621dfb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1e2e77b89bb646b342e2bc06f9f2b0fbe44bfea1ee81a3254739dc9952d46aad</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

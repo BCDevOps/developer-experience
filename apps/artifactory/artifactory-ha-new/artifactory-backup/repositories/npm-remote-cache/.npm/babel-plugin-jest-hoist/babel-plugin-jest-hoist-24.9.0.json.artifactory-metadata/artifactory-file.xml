@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/babel-plugin-jest-hoist/babel-plugin-jest-hoist-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel-plugin-jest-hoist-24.9.0.json</name>
+  <created>1576008061074</created>
+  <lastModified>1576008060687</lastModified>
+  <size>823</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008061074</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>95ad00e10ca3a65a7af5fc5de330c9f34f99301f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>263e0ea15698318fe26dbe2c5a3e5810</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b63318556d7fd823e2ddd26b2ac07c0eb4d0da8767e5989310fb44ef5661fead</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

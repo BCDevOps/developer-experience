@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"744155598dd330b1cc7b7eb2cbfaf427"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>iterate over the own enumerable properties of an object, and return an object with properties that evaluate to true from the callback. exit early by returning `false`. javascript/node.js.</npm.description>
+  <npm.keywords>["for","for-in","for-own","has","has-own","hasOwn","key","keys","object","own","value"]</npm.keywords>
+  <npm.name>for-own</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

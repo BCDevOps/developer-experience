@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/to-regex-range/to-regex-range-5.0.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>to-regex-range-5.0.1.json</name>
+  <created>1576008069773</created>
+  <lastModified>1576008069379</lastModified>
+  <size>1855</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069773</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c35b1d98770b8a122f20c361de3d19e3a3e13647</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8531826ed7f31f75c0936576bf1f209e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a1cec9f2326d16676443fb47c2f36cb31a220acd688556465714de285ae7a9d1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

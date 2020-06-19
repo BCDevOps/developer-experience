@@ -1,0 +1,20 @@
+{
+  "name" : "babel",
+  "description" : "Turn ES6 code into readable vanilla ES5 with source maps",
+  "version" : "6.23.0",
+  "author" : "Sebastian McKenzie <sebmck@gmail.com>",
+  "homepage" : "https://babeljs.io/",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/babel/-/babel-6.23.0.tgz",
+    "shasum" : "d0d1e7d803e974765beea3232d4e153c0efb90f4"
+  },
+  "license" : "MIT",
+  "bin" : {
+    "babel" : "./lib/cli.js",
+    "babel-node" : "./lib/cli.js",
+    "babel-external-helpers" : "./lib/cli.js"
+  },
+  "scripts" : {
+  }
+}

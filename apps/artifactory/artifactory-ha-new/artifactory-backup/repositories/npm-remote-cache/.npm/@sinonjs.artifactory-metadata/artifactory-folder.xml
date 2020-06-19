@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@sinonjs</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@sinonjs</name>
+  <created>1579828104234</created>
+  <lastModified>1579828104234</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828104234</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

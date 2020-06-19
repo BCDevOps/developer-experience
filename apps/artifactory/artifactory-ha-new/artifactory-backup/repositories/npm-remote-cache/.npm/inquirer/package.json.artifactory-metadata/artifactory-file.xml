@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/inquirer/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003429473</created>
+  <lastModified>1583819565000</lastModified>
+  <size>217816</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464320629</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>df72ef4b3f5e7a18a1e4c7d23ef4f573a35f8173</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9655eb251ea1f5ff87ab67aa64363524</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a35149618984a19c57efdf868f8f1726d33bf5b41792e698b38d6be23695aa88</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

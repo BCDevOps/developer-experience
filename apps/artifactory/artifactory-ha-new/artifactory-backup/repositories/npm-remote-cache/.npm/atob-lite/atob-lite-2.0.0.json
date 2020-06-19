@@ -1,0 +1,40 @@
+{
+  "name" : "atob-lite",
+  "description" : "Smallest/simplest possible means of using atob with both Node and browserify",
+  "version" : "2.0.0",
+  "author" : {
+    "name" : "Hugh Kennedy",
+    "email" : "hughskennedy@gmail.com",
+    "url" : "http://hughsk.io/"
+  },
+  "homepage" : "https://github.com/hughsk/atob-lite",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/hughsk/atob-lite.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/hughsk/atob-lite/issues"
+  },
+  "main" : "atob-node.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/atob-lite/-/atob-lite-2.0.0.tgz",
+    "shasum" : "0fef5ad46f1bd7a8502c65727f0367d5ee43d696"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "browserify" : "^10.2.4",
+    "smokestack" : "^3.3.0",
+    "tap-closer" : "^1.0.0",
+    "tap-spec" : "^4.0.0",
+    "tape" : "^4.0.0"
+  },
+  "keywords" : [ "atob", "base64", "isomorphic", "browser", "node", "shared" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "npm run test-node && npm run test-browser",
+    "test-node" : "node test | tap-spec",
+    "test-browser" : "browserify test | smokestack | tap-spec"
+  },
+  "browser" : "atob-browser.js"
+}

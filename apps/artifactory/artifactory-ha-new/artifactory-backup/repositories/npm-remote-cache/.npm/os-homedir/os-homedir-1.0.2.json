@@ -1,0 +1,29 @@
+{
+  "name" : "os-homedir",
+  "description" : "Node.js 4 `os.homedir()` ponyfill",
+  "version" : "1.0.2",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/os-homedir",
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/os-homedir/-/os-homedir-1.0.2.tgz",
+    "shasum" : "ffbc4988336e0e833de0c168c7ef152121aa7fb3"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "path-exists" : "^2.0.0",
+    "xo" : "^0.16.0"
+  },
+  "keywords" : [ "builtin", "core", "ponyfill", "polyfill", "shim", "os", "homedir", "home", "dir", "directory", "folder", "user", "path" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  }
+}

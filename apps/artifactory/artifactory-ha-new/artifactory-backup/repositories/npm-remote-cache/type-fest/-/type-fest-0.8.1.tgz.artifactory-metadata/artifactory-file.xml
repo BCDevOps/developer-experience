@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>type-fest/-/type-fest-0.8.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>type-fest-0.8.1.tgz</name>
+  <created>1585853561951</created>
+  <lastModified>1569404030000</lastModified>
+  <size>21970</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853561951</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>09e249ebde851d3b1e48d27c105444667f17b83d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4bcceb8c6c02dfd452ce9f2564eed691</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9f196f4105285775fc89dc50afe583e8576cf2043e111430159c4c3dc8b2f5c7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

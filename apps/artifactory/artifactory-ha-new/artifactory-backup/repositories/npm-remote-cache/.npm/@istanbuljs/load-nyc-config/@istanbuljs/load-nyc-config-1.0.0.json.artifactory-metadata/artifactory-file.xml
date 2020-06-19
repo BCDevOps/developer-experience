@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@istanbuljs/load-nyc-config/@istanbuljs/load-nyc-config-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>load-nyc-config-1.0.0.json</name>
+  <created>1585853553325</created>
+  <lastModified>1585853553281</lastModified>
+  <size>1246</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853553326</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>39795b9fef20a731c8828ecd0ac440e22b77c2f8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6148729f1e1c6afb19e9d749f0d3f32e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>36c82f62eab124d653b3dd5601ffbb8b03c32dc92fe5fbc8998da755a30dd7cb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

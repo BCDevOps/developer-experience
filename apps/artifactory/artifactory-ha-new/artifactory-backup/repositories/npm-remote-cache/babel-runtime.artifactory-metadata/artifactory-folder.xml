@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>babel-runtime</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>babel-runtime</name>
+  <created>1579828378628</created>
+  <lastModified>1579828378628</lastModified>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828378628</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

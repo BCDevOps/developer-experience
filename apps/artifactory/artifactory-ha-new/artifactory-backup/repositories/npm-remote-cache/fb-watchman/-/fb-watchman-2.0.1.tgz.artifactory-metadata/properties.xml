@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2678641f6831d2ca0165c6f24bc03fd1"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>bindings for the watchman file watching service</npm.description>
+  <npm.keywords>["facebook","watchman","file","watch","watcher","watching","fs.watch","fswatcher","fs","glob","utility"]</npm.keywords>
+  <npm.name>fb-watchman</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>capture-stack-trace/-/capture-stack-trace-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>capture-stack-trace-1.0.1.tgz</name>
+  <created>1576008549977</created>
+  <lastModified>1535730676000</lastModified>
+  <size>1511</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008549977</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1d2080ee256022ef84051ed7a0170e0d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>daa5730dedf2b5ee67de5ea10de9ce226564f9fd50eae769bcedada99c6eab1f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

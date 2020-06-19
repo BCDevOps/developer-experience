@@ -1,0 +1,32 @@
+{
+  "name" : "p-reduce",
+  "description" : "Reduce a list of values using promises into a promise for a value",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/p-reduce",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/p-reduce/-/p-reduce-1.0.0.tgz",
+    "shasum" : "18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "delay" : "^1.3.1",
+    "xo" : "*"
+  },
+  "keywords" : [ "promise", "reduce", "collection", "iterable", "iterator", "async", "await", "promises", "accumulate", "bluebird" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

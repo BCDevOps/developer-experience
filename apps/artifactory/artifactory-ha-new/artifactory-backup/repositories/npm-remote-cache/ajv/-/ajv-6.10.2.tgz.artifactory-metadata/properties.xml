@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2ab00c102f6c56acddbf622b95959d79"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>another json schema validator</npm.description>
+  <npm.keywords>["JSON","schema","validator","validation","jsonschema","json-schema","json-schema-validator","json-schema-validation"]</npm.keywords>
+  <npm.name>ajv</npm.name>
+  <npm.version>6.10.2</npm.version>
+</properties>

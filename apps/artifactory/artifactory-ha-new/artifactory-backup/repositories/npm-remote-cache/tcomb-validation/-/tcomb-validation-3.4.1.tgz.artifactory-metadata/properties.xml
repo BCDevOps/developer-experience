@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d8b7a0440c5172fb6ba73cd4dc7ddedd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>general purpose validation library for javascript</npm.description>
+  <npm.keywords>["tcomb","validation","models","domain"]</npm.keywords>
+  <npm.name>tcomb-validation</npm.name>
+  <npm.version>3.4.1</npm.version>
+</properties>

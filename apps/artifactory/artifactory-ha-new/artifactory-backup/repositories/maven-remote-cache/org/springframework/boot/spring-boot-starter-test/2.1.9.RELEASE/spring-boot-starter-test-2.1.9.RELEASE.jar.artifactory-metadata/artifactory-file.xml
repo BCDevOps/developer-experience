@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/springframework/boot/spring-boot-starter-test/2.1.9.RELEASE/spring-boot-starter-test-2.1.9.RELEASE.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-boot-starter-test-2.1.9.RELEASE.jar</name>
+  <created>1576861450263</created>
+  <lastModified>1570033235000</lastModified>
+  <size>402</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861450263</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>feaf22a6e3b437f7eff9e4bef2b7370ba5e0b408</original>
+          <actual>feaf22a6e3b437f7eff9e4bef2b7370ba5e0b408</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>98aeb6849f2e364341f34e3d59033927</original>
+          <actual>98aeb6849f2e364341f34e3d59033927</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>db7226a760942176e673134217009cde0eb8d37a87887bc8c74e181165a68de9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

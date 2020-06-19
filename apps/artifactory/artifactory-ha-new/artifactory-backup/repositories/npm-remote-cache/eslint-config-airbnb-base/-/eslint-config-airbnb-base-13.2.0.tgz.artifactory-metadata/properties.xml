@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e75229b763f328830b5d12c3e4ba2093"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>airbnb's base js eslint config, following our styleguide</npm.description>
+  <npm.keywords>["eslint","eslintconfig","config","airbnb","javascript","styleguide","es2015","es2016","es2017","es2018"]</npm.keywords>
+  <npm.name>eslint-config-airbnb-base</npm.name>
+  <npm.version>13.2.0</npm.version>
+</properties>

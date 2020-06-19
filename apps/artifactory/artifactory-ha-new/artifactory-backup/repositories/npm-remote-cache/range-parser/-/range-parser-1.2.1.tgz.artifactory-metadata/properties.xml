@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"03ee4757f00d0b3ddd2e31f1abde6bcd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>range header field string parser</npm.description>
+  <npm.keywords>["range","parser","http"]</npm.keywords>
+  <npm.name>range-parser</npm.name>
+  <npm.version>1.2.1</npm.version>
+</properties>

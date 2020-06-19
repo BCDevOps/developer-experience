@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/extsprintf/extsprintf-1.3.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>extsprintf-1.3.0.json</name>
+  <created>1576003627682</created>
+  <lastModified>1576003627665</lastModified>
+  <size>522</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003627683</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>cb027def27ff521d8d658538f43f1a47a7118cd3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e7b7a745367b74f18240849e880dc132</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7a594328b28e52ce33b596934c5a49a0d626d0d307b20361550eb6e16f3d458f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

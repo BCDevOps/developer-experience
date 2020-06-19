@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/pyrfc3339.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pyrfc3339.html</name>
+  <created>1574023049946</created>
+  <lastModified>1582154309126</lastModified>
+  <size>1684</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154309242</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ba10ed3eb91f098b6d07480fd73c939ef94910bd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cba8fe16852582741a8b7c6a4eef11f3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f61764d75dad3eebddcba6df2c77c17e8b8b987208b29eb505dfe98e85704e93</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

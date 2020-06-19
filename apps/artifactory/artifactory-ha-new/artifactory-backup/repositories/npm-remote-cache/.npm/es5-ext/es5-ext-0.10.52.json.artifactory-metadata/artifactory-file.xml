@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es5-ext/es5-ext-0.10.52.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es5-ext-0.10.52.json</name>
+  <created>1576008722307</created>
+  <lastModified>1576008722222</lastModified>
+  <size>2185</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008722307</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>61fe73c6c53d0890cfbfa3b107e986930284203c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>57f32fb4e3297b9d3f5c65ebdd177af6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>af12768f956399ab836241198e4f37f66e13abe04636cce4cf8b3d9b4570f870</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

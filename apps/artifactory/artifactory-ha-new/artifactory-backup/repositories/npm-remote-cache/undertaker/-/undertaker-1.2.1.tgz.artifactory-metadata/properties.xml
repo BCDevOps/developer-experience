@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2b43301f500bc2dc42d4f1dbe06a59d2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>task registry that allows composition through series/parallel methods.</npm.description>
+  <npm.keywords>["registry","runner","task"]</npm.keywords>
+  <npm.name>undertaker</npm.name>
+  <npm.version>1.2.1</npm.version>
+</properties>

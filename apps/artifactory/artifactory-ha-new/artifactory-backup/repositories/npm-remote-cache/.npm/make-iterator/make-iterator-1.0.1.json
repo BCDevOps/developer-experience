@@ -1,0 +1,45 @@
+{
+  "name" : "make-iterator",
+  "description" : "Convert an argument into a valid iterator. Based on the `.makeIterator()` implementation in mout https://github.com/mout/mout.",
+  "version" : "1.0.1",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/make-iterator",
+  "repository" : "jonschlinkert/make-iterator",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/make-iterator/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/make-iterator/-/make-iterator-1.0.1.tgz",
+    "shasum" : "29b33f312aa8f547c4a5e490f56afcec99133ad6"
+  },
+  "dependencies" : {
+    "kind-of" : "^6.0.2"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.3"
+  },
+  "keywords" : [ "arr", "array", "contains", "for-own", "forown", "forOwn", "function", "iterate", "iterator", "make" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "any", "arr-filter", "arr-map", "array-every", "collection-map", "utils" ]
+    },
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "reflinks" : [ "verb", "verb-readme-generator" ]
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>tslint-eslint-rules/-/tslint-eslint-rules-5.4.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>tslint-eslint-rules-5.4.0.tgz</name>
+  <created>1576003395640</created>
+  <lastModified>1534306826000</lastModified>
+  <size>112914</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003395641</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e488cc9181bf193fe5cd7bfca213a7695f1737b5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4a08eef0f2736b8a5af2121ceac61af5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9de3f43cae43e756381b0d27e5fd32b6597cd867e8e35464322e74358ee73d55</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

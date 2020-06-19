@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b1a0dbcc3c326780ebfa31536e3af74c"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a library of cross-platform tested terminal/console command strings for doing things like color and cursor positioning.  this is a subset of both ansi and vt100.  all control codes included work on both windows &amp; unix-like oses, except where noted.</npm.description>
+  <npm.keywords>[]</npm.keywords>
+  <npm.name>console-control-strings</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

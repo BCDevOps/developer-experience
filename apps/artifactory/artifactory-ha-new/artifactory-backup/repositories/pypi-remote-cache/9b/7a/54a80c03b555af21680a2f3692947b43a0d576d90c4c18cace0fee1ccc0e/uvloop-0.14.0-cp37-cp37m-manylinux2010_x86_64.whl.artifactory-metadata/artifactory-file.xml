@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>9b/7a/54a80c03b555af21680a2f3692947b43a0d576d90c4c18cace0fee1ccc0e/uvloop-0.14.0-cp37-cp37m-manylinux2010_x86_64.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>uvloop-0.14.0-cp37-cp37m-manylinux2010_x86_64.whl</name>
+  <created>1574124606029</created>
+  <lastModified>1572979429000</lastModified>
+  <size>3810897</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574124606030</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9f98d4d8f328ad6e1f88f12216d03fcf57384b44</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f4f9cd4d796d09ab59abe3e5ba579b0f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e7514d7a48c063226b7d06617cbb12a14278d4323a065a8d46a7962686ce2e95</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>bcrentities-pypi-local</repoKey>
+    <path>registry-schemas/2.2.0/registry_schemas-2.2.0.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>registry_schemas-2.2.0.tar.gz</name>
+  <created>1579565779993</created>
+  <lastModified>1579565779954</lastModified>
+  <size>11412</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579565779994</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>33940ab3fbb43a47bb2528b758f376c1a7129eb6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>32d75fcc39b0d1ca9886839ae8ae192d</original>
+          <actual>32d75fcc39b0d1ca9886839ae8ae192d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>25abed78e4ff58d4387612cc30c75d8bdab7882e7acf8ebae44350ae7ec6e4eb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

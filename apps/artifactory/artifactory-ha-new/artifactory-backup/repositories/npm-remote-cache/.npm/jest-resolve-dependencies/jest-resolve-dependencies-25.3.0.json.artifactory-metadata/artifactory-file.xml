@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/jest-resolve-dependencies/jest-resolve-dependencies-25.3.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jest-resolve-dependencies-25.3.0.json</name>
+  <created>1586464321881</created>
+  <lastModified>1586464321839</lastModified>
+  <size>1044</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464321881</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>87f4524c395f3f9d4402357cf0000dcd43e9cf81</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8c84db4d22016d1912f0a43525b2701e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9e85d0eae139e86f981f32680628405b82d8cffb09f60dba22ce47462d9acf6e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

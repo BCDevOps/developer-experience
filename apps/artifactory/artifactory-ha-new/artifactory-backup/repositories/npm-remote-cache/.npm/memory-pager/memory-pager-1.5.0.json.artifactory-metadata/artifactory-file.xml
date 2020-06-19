@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/memory-pager/memory-pager-1.5.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>memory-pager-1.5.0.json</name>
+  <created>1582140579911</created>
+  <lastModified>1582140579807</lastModified>
+  <size>824</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1582140579915</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>95b11c98e66e01f800824ef8f5fe0b0c16e13603</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e02537e787a408a1627ccd26bc733ae8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>43aacceb60a54a41f8a392df04142cabb590c90394be1c11bd1072d7ab859a23</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

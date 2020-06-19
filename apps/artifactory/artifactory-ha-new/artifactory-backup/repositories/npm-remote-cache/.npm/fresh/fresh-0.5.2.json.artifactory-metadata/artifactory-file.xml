@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/fresh/fresh-0.5.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>fresh-0.5.2.json</name>
+  <created>1576003446564</created>
+  <lastModified>1576003446534</lastModified>
+  <size>1538</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003446564</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>8ada678db7cedef539ce13f76b1b5f54bbf7f822</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6a8635803bd74e9b6b793a8f9e51dd52</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>97b1f433c541434f09d5056778c5c79ad4dc97b65ce351e88e561650cc95a49f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

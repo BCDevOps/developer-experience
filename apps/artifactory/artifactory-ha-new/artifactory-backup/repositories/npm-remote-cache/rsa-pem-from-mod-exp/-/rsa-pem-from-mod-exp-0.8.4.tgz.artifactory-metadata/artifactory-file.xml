@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>rsa-pem-from-mod-exp/-/rsa-pem-from-mod-exp-0.8.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>rsa-pem-from-mod-exp-0.8.4.tgz</name>
+  <created>1576003397093</created>
+  <lastModified>1527437998000</lastModified>
+  <size>5716</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003397094</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>362a42c6d304056d493b3f12bceabb2c6576a6d4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>bb345950d7f4709e3252db5b66114261</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e8cf17234d5f217e0480692fa0d560636f05ccf206cf6dc857efe7347a8908ab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

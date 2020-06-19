@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>OpenTracing.0.12.1.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>OpenTracing.0.12.1.nupkg</name>
+  <created>1578432198293</created>
+  <lastModified>1569424437000</lastModified>
+  <size>177977</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432198295</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a1f70cf8a970930d65e3e3f98624f3fdbf8b5bfd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6ac55449f31de9299a59127e27c90157</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>973d0d348a4a268aa3e49ba6592da146ebcb9c47d91cf35ca3c1e2f5cb343fe2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

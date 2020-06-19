@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/babel-preset-jest</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>babel-preset-jest</name>
+  <created>1576003394999</created>
+  <lastModified>1576003394999</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003394999</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

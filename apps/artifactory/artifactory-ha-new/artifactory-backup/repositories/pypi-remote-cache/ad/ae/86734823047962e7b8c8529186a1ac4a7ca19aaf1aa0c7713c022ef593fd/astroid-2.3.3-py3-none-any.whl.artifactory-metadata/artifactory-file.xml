@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>ad/ae/86734823047962e7b8c8529186a1ac4a7ca19aaf1aa0c7713c022ef593fd/astroid-2.3.3-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>astroid-2.3.3-py3-none-any.whl</name>
+  <created>1574023491533</created>
+  <lastModified>1573065783000</lastModified>
+  <size>205689</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023491534</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e495a9a54bf868d06dc73f577fd52cadd1f05069</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7780380d868832919a46ba7dcf68d785</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>840947ebfa8b58f318d42301cf8c0a20fd794a33b61cc4638e28e9e61ba32f42</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

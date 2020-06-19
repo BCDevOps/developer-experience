@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/snakecase-keys/snakecase-keys-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>snakecase-keys-3.1.0.json</name>
+  <created>1579828351880</created>
+  <lastModified>1579828351840</lastModified>
+  <size>927</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828351880</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>beb3584b1ed03c193840daf4859f2d93010b5340</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>03e0802385fe67b6f480cc621fe94e79</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>026ae51f18f240ec7b62547babd8bbe6b6a10ac24debb9019b7002d7b75ca3e9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

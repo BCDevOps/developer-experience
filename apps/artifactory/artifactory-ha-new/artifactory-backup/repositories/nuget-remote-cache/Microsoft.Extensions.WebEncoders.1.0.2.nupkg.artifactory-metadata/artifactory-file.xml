@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.WebEncoders.1.0.2.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.WebEncoders.1.0.2.nupkg</name>
+  <created>1578496803156</created>
+  <lastModified>1544741866000</lastModified>
+  <size>22342</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496803156</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a38411650d5de78cee74a41cf001a33ffe64a31d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>6fcd51d929bdc2ee92c729ad3e56d2ac</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>becb704d51cee64eac5d1f312ce149f4c7fcf984209ff924fe5ba4a2db17552e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

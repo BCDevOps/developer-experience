@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b2dfecc7f5d82757435ab20a3900d997"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>babel helper functions for inserting module loads</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/helper-module-imports</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

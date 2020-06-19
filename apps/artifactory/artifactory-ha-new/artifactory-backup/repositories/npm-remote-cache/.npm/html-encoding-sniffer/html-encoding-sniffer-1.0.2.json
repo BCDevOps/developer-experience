@@ -1,0 +1,26 @@
+{
+  "name" : "html-encoding-sniffer",
+  "description" : "Sniff the encoding from a HTML byte stream",
+  "version" : "1.0.2",
+  "author" : "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
+  "repository" : "jsdom/html-encoding-sniffer",
+  "main" : "lib/html-encoding-sniffer.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz",
+    "shasum" : "e70d84b94da53aa375e11fe3a351be6642ca46f8"
+  },
+  "dependencies" : {
+    "whatwg-encoding" : "^1.0.1"
+  },
+  "devDependencies" : {
+    "eslint" : "^3.8.0",
+    "mocha" : "^3.1.2"
+  },
+  "keywords" : [ "encoding", "html" ],
+  "license" : "MIT",
+  "files" : [ "lib/" ],
+  "scripts" : {
+    "test" : "mocha",
+    "lint" : "eslint lib test"
+  }
+}

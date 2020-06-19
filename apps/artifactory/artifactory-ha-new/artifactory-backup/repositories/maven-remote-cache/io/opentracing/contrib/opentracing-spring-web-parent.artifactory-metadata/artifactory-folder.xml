@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-spring-web-parent</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>opentracing-spring-web-parent</name>
+  <created>1576861433372</created>
+  <lastModified>1576861433372</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861433372</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/supports-color/supports-color-6.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>supports-color-6.1.0.json</name>
+  <created>1576008072973</created>
+  <lastModified>1576008072083</lastModified>
+  <size>1042</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008072974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>16787011d86a5d0b30a7d4d0491c9507e57d3346</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3f9000880ed5d4612d7edd8866298f16</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0409968d94945f58a5e55ccaba261ee0469b7c5d9d8244872d12f0262fff5482</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

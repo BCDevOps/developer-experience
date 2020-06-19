@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-plain-object/is-plain-object-2.0.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-plain-object-2.0.4.json</name>
+  <created>1576003436850</created>
+  <lastModified>1576003436814</lastModified>
+  <size>1976</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003436851</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b2779e7048a3006199ade5f1bc3d404c24c409c2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0e210fcb9b5f166e033ed9d0d472ea92</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9b3353b3dad7ef081cae6584c2a38fe81ed5502e244249b8937d74930efe614a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

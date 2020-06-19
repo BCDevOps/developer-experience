@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-descriptor/is-descriptor-1.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-descriptor-1.0.2.json</name>
+  <created>1576003622117</created>
+  <lastModified>1576003622043</lastModified>
+  <size>1690</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003622117</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f47a44f2373d7be34fc946be0d280bd759997ffc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>309fa44c271d2026d7e17e236cd23c5f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>83632d31e873f7e932636da73ca1b34a900ab623af0141b9feea39b76e3a7864</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

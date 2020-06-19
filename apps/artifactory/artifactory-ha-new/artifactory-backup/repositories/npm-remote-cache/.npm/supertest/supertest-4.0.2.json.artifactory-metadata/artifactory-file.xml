@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/supertest/supertest-4.0.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>supertest-4.0.2.json</name>
+  <created>1576003073684</created>
+  <lastModified>1576003073596</lastModified>
+  <size>1496</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003073685</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>6b167e837e0cf4a4e8b2953dc00b692fe5737082</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>bcc223402ee0a7781b1c0f21a2fe81df</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>88ac7bc31ce14567c44ce177e65015e07d89967921289ab0c8e3b3c595cf9d1b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

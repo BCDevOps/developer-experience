@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5fab4bb68d920d26a1029377bb99fa46"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>browser-friendly inheritance fully compatible with standard node.js inherits()</npm.description>
+  <npm.keywords>["inheritance","class","klass","oop","object-oriented","inherits","browser","browserify"]</npm.keywords>
+  <npm.name>inherits</npm.name>
+  <npm.version>2.0.3</npm.version>
+</properties>

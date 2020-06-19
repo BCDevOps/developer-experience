@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d5efec2afc8b29ff367a2127cd1890b2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detect whether or not an object is a typed array</npm.description>
+  <npm.keywords>["typed","array","detect","is","util"]</npm.keywords>
+  <npm.name>is-typedarray</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>sprintf-js/-/sprintf-js-1.0.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sprintf-js-1.0.3.tgz</name>
+  <created>1576008725254</created>
+  <lastModified>1527444212000</lastModified>
+  <size>10330</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008725254</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>04e6926f662895354f3dd015203633b857297e2c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8e6b31a052754055683e4a35a317feab</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3afb26bcc328dc90f516515acf2783ad35b08dbfe9e0ada18264c3c4ddaa1a83</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

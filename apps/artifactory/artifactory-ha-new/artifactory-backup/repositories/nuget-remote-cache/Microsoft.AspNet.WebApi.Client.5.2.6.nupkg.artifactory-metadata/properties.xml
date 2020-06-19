@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647B76DE0526</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.Net.Http:2.2.22:.NETPortable0.0-wp8+netcore45+net45+wp81+wpa81</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:10.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:6.0.4:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:6.0.4:.NETPortable0.0-wp8+netcore45+net45+wp81+wpa81</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json.Bson:1.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.description>This package adds support for formatting and content negotiation to System.Net.Http. It includes support for JSON, XML, and form URL encoded data.</nuget.description>
+  <nuget.digest>91JMnE9zdIDphG00qgRvl8ZwKEjqAbNlJdfXUoMiIWPfpYyH7fyCsTSj6/aynRdw/Qr/K70xC7QC6MOJ1vFBJQ==</nuget.digest>
+  <nuget.frameworks>System.Net.Http:.NETFramework4.5</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNet.WebApi.Client</nuget.id>
+  <nuget.language>en-US</nuget.language>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft,aspnet</nuget.owners>
+  <nuget.projectUrl>https://www.asp.net/web-api</nuget.projectUrl>
+  <nuget.releaseNotes>Please visit http://go.microsoft.com/fwlink/?LinkID=403010 to view the release notes.</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.summary>This package adds support for formatting and content negotiation to System.Net.Http.</nuget.summary>
+  <nuget.tags>Microsoft AspNet WebApi AspNetWebApi HttpClient</nuget.tags>
+  <nuget.title>Microsoft ASP.NET Web API 2.2 Client Libraries</nuget.title>
+  <nuget.version>5.2.6</nuget.version>
+</properties>

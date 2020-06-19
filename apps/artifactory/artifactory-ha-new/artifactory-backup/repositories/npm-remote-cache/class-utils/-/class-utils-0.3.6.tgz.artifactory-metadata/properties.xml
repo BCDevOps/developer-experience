@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"8c08ba0d2e8509039d51951f64ae8d4e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utils for working with javascript classes and prototype methods.</npm.description>
+  <npm.keywords>["array","assign","class","copy","ctor","define","delegate","descriptor","extend","extends","inherit","inheritance","merge","method","object","prop","properties","property","prototype","util","utils"]</npm.keywords>
+  <npm.name>class-utils</npm.name>
+  <npm.version>0.3.6</npm.version>
+</properties>

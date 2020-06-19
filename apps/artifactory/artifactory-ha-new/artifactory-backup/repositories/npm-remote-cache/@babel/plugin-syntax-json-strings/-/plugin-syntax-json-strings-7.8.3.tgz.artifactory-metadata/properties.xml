@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"06ccb95abef3c46d7514800bea475905"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>allow parsing of the u+2028 line separator and u+2029 paragraph separator in js strings</npm.description>
+  <npm.keywords>["babel-plugin"]</npm.keywords>
+  <npm.name>@babel/plugin-syntax-json-strings</npm.name>
+  <npm.version>7.8.3</npm.version>
+</properties>

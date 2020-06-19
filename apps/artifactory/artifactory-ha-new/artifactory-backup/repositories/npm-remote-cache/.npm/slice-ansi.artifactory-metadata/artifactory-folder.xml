@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/slice-ansi</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>slice-ansi</name>
+  <created>1576003582561</created>
+  <lastModified>1576003582561</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003582561</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1b469d538f9b387d83b3cb7e5994f7a5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>recursively flatten an array or arrays.</npm.description>
+  <npm.keywords>["arr","array","elements","flat","flatten","nested","recurse","recursive","recursively"]</npm.keywords>
+  <npm.name>arr-flatten</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

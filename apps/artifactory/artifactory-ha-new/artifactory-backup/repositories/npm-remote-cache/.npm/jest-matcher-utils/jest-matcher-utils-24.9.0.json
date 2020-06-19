@@ -1,0 +1,31 @@
+{
+  "name" : "jest-matcher-utils",
+  "description" : "A set of utility functions for expect and related packages",
+  "version" : "24.9.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/jest-matcher-utils"
+  },
+  "engines" : {
+    "node" : ">= 6"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jest-matcher-utils/-/jest-matcher-utils-24.9.0.tgz",
+    "shasum" : "f5b3661d5e628dffe6dd65251dfdae0e87c3a073"
+  },
+  "dependencies" : {
+    "chalk" : "^2.0.1",
+    "jest-diff" : "^24.9.0",
+    "jest-get-type" : "^24.9.0",
+    "pretty-format" : "^24.9.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "9ad0f4bc6b8bdd94989804226c28c9960d9da7d1"
+}

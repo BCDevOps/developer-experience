@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>es5-ext/-/es5-ext-0.10.52.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es5-ext-0.10.52.tgz</name>
+  <created>1576008721996</created>
+  <lastModified>1572342430000</lastModified>
+  <size>138234</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008721996</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bb21777e919a04263736ded120a9d665f10ea63f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b1c2048409560bb0b7c46cb1dd67b124</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>027eb42f070e6a6aa78a8b92f559ba0c6615da038a685798f2de44e7a574345c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6597576ACE39F</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.JsonPatch:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:2.2.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>ASP.NET Core MVC formatters for JSON input and output and for JSON PATCH input using Json.NET.
+
+This package was built from the source code at https://github.com/aspnet/Mvc/tree/a6199bbfbab05583f987bae322fb04566841aaea</nuget.description>
+  <nuget.digest>Kbw0p0+FcaGlPLJimKCrEZS8FCmodnCBFxMwAa2lnTeVS7g9A+HWKYr0AaalRcIxtLRZMOaGiYKALvW4SUSmsQ==</nuget.digest>
+  <nuget.iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Mvc.Formatters.Json</nuget.id>
+  <nuget.licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</nuget.licenseUrl>
+  <nuget.owners>Microsoft</nuget.owners>
+  <nuget.projectUrl>https://asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore aspnetcoremvc json</nuget.tags>
+  <nuget.version>2.2.0</nuget.version>
+</properties>

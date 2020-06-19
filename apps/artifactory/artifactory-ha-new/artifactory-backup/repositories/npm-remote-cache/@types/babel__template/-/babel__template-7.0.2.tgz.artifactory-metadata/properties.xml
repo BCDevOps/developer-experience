@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"14786d892d7c6a5472898e8d445d66ff"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for @babel/template</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/babel__template</npm.name>
+  <npm.version>7.0.2</npm.version>
+</properties>

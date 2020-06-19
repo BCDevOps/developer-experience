@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>glogg/-/glogg-1.0.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>glogg-1.0.2.tgz</name>
+  <created>1576008064373</created>
+  <lastModified>1544473268000</lastModified>
+  <size>2825</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008064375</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2d7dd702beda22eb3bffadf880696da6d846313f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d7068e1556150dbe0d709a4a1db80573</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0065353d31538819a2382071ec2db914206acd73bcf9af74470d9aea19eeea31</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

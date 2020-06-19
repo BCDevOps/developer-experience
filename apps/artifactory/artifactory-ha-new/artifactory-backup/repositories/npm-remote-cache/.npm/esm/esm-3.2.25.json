@@ -1,0 +1,27 @@
+{
+  "name" : "esm",
+  "description" : "Tomorrow's ECMAScript modules today!",
+  "version" : "3.2.25",
+  "author" : "John-David Dalton <john.david.dalton@gmail.com>",
+  "repository" : "standard-things/esm",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "main" : "esm.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/esm/-/esm-3.2.25.tgz",
+    "shasum" : "342c18c29d56157688ba5ce31f8431fbb795cc10"
+  },
+  "keywords" : "commonjs, ecmascript, export, import, modules, node, require",
+  "license" : "MIT",
+  "files" : [ "index.js", "esm.js", "esm/loader.js" ],
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky" : {
+    "hooks" : {
+      "precommit" : "npm run lint"
+    }
+  },
+  "runkitExample" : "require = require(\"esm\")(module)\nrequire(\"lodash-es\")"
+}

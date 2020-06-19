@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"745329d06dcc1e7d0c3bb19c98db92ff"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>execute a callback when a request closes, finishes, or errors</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>on-finished</npm.name>
+  <npm.version>2.3.0</npm.version>
+</properties>

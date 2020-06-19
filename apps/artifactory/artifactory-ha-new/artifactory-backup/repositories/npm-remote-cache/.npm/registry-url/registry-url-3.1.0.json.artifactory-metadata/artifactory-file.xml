@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/registry-url/registry-url-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>registry-url-3.1.0.json</name>
+  <created>1576003626313</created>
+  <lastModified>1576003626295</lastModified>
+  <size>882</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003626313</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d69f8e5a53363757d9a3d5ef146c841f25b2cec0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>0422ced919b36edc902cc8d643610464</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>acf07178ebdf8dc721f02c2f92fdeaae68548160c98a8d309214179a11123359</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

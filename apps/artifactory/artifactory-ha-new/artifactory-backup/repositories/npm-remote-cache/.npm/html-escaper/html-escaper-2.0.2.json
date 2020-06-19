@@ -1,0 +1,39 @@
+{
+  "name" : "html-escaper",
+  "description" : "fast and safe way to escape and unescape &<>'\" chars",
+  "version" : "2.0.2",
+  "author" : "Andrea Giammarchi",
+  "homepage" : "https://github.com/WebReflection/html-escaper",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/WebReflection/html-escaper.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/WebReflection/html-escaper/issues"
+  },
+  "main" : "./cjs/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/html-escaper/-/html-escaper-2.0.2.tgz",
+    "shasum" : "dfd60027da36a36dfcbe236262c00a5822681453"
+  },
+  "devDependencies" : {
+    "ascjs" : "^3.1.2",
+    "coveralls" : "^3.0.11",
+    "istanbul" : "^0.4.5",
+    "rollup" : "^2.1.0",
+    "uglify-js" : "^3.8.0"
+  },
+  "keywords" : [ "html", "escape", "encode", "unescape", "decode", "entities" ],
+  "license" : "MIT",
+  "scripts" : {
+    "build" : "npm run cjs && npm run rollup && npm run minify && npm test && npm run size",
+    "cjs" : "ascjs esm cjs",
+    "coveralls" : "cat ./coverage/lcov.info | coveralls",
+    "minify" : "uglifyjs index.js --comments=/^!/ --compress --mangle -o min.js",
+    "rollup" : "rollup --config rollup.config.js",
+    "size" : "cat index.js | wc -c;cat min.js | wc -c;gzip -c min.js | wc -c",
+    "test" : "istanbul cover ./test/index.js"
+  },
+  "unpkg" : "min.js",
+  "module" : "./esm/index.js"
+}

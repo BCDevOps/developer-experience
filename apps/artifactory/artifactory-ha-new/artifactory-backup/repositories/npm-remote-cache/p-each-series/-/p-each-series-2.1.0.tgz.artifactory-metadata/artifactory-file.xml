@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>p-each-series/-/p-each-series-2.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-each-series-2.1.0.tgz</name>
+  <created>1585853578258</created>
+  <lastModified>1554353607000</lastModified>
+  <size>2397</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853578263</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>961c8dd3f195ea96c747e636b262b800a6b1af48</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8f8bee242643bc41a69c919b5df6163c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>675853cd325735e89ce19ab6b637461b68032bba4796512742bd08d0e81ec853</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

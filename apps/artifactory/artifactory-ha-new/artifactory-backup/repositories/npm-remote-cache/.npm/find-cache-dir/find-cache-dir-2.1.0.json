@@ -1,0 +1,34 @@
+{
+  "name" : "find-cache-dir",
+  "description" : "Finds the common standard cache directory",
+  "version" : "2.1.0",
+  "repository" : "avajs/find-cache-dir",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/find-cache-dir/-/find-cache-dir-2.1.0.tgz",
+    "shasum" : "8d0f94cd13fe43c6c7c261a0d86115ca918c05f7"
+  },
+  "dependencies" : {
+    "commondir" : "^1.0.1",
+    "make-dir" : "^2.0.0",
+    "pkg-dir" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^1.3.1",
+    "coveralls" : "^3.0.3",
+    "del" : "^4.0.0",
+    "nyc" : "^13.3.0",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "cache", "directory", "dir", "caching", "find", "search" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && nyc ava"
+  },
+  "nyc" : {
+    "reporter" : [ "lcov", "text" ]
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/entrypoints.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>entrypoints.html</name>
+  <created>1574023488665</created>
+  <lastModified>1582154363462</lastModified>
+  <size>2592</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154363516</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4192778ef2313bdb54748164496ff7be7893f9fd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>34b6fac34c56cc7f76b7117133786cee</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6898f74865cad4cb8b7c815205873fd8ab2ee5d0ffa9a4edf829fdd0e756d8c1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

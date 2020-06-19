@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>bcrentities-pypi-local</repoKey>
+    <path>registry-schemas/2.3.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.3.0</name>
+  <created>1579715671475</created>
+  <lastModified>1579715671475</lastModified>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579715671475</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

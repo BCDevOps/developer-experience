@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/babel-plugin-istanbul/babel-plugin-istanbul-5.2.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>babel-plugin-istanbul-5.2.0.json</name>
+  <created>1576003109784</created>
+  <lastModified>1576003109681</lastModified>
+  <size>2048</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003109785</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f7f1cf93e3f8f129c64d16a9cde29e3c9a4b4d3a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>cfde0e3ab9490ea71460518d1db8d443</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>90776ca139ee7da55b43abda78a5d383d02cb2b278bb06399d72052845e0ffab</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

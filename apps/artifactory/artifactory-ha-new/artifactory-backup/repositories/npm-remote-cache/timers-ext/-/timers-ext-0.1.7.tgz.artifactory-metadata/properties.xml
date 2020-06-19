@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1cf540c7550e903037ba5d03a382248f"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>timers extensions</npm.description>
+  <npm.keywords>["timeout","delay","interval","time","timer","timers"]</npm.keywords>
+  <npm.name>timers-ext</npm.name>
+  <npm.version>0.1.7</npm.version>
+</properties>

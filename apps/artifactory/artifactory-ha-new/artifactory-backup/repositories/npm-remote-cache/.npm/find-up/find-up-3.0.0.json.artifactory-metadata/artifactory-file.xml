@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/find-up/find-up-3.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>find-up-3.0.0.json</name>
+  <created>1576008069075</created>
+  <lastModified>1576008068580</lastModified>
+  <size>962</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069076</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e3d029191d96532003b5515f4d068354e6c90ac4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>30d3b49a4926e8b806fa947edb791bad</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e1ea2c31621fb4aa9ad1ac57a91c5491e79c0dadd492e0470b68c9b89e0de49e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

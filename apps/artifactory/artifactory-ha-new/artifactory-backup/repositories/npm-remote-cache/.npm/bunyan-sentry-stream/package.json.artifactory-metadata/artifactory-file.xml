@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/bunyan-sentry-stream/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003400073</created>
+  <lastModified>1527361880000</lastModified>
+  <size>11208</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464334173</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>54350d685b64fdc28aedbcb0cfb144b88ee08d4d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ba612d5ca0f9792b1c6bdee62f4dc186</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8fdf228f5176175e2a32c9d29b4f722a0ab3dd74d1627eb597d2baec55bff61f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

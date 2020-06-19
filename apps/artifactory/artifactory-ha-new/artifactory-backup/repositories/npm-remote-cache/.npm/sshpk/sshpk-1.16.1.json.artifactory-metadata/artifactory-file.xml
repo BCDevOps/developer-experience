@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/sshpk/sshpk-1.16.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>sshpk-1.16.1.json</name>
+  <created>1576008059080</created>
+  <lastModified>1576008058583</lastModified>
+  <size>1483</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008059173</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c32f8eee312ccec9a7f3c673edc77ee1d5fbd3d1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>560c9c43ababb7d9046751e3e8b64b39</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>697cf7ccfa8bc021c110004babb70aa719280d303426b86158ea6b8f6f25f159</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

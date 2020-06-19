@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/import-lazy/import-lazy-2.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>import-lazy-2.1.0.json</name>
+  <created>1576003412084</created>
+  <lastModified>1576003411980</lastModified>
+  <size>883</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003412085</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c41ff45b8925208cdc5d5634392eb98ba310a588</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3929131a8ca64278eea2c4585dceccdc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4ea93e515066f548cbf00d67a720bf02a524932870d934ec35f7fe74f94081a1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

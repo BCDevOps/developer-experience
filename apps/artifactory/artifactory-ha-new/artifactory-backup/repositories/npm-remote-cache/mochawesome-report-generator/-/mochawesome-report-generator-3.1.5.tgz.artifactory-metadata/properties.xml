@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"853cecf58a40a5d406a3afc37c0275b9"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>generates gorgeous html reports from mochawesome reporter.</npm.description>
+  <npm.keywords>["mochawesome","mocha","reporter","json","react","report generator"]</npm.keywords>
+  <npm.name>mochawesome-report-generator</npm.name>
+  <npm.version>3.1.5</npm.version>
+</properties>

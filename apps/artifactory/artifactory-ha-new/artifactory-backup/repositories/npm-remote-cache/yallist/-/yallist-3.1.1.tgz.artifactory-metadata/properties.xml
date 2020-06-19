@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9e08cccb5a9b8401d82588f188288468"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>yet another linked list</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>yallist</npm.name>
+  <npm.version>3.1.1</npm.version>
+</properties>

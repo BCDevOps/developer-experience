@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/matchdep/matchdep-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>matchdep-2.0.0.json</name>
+  <created>1576003122586</created>
+  <lastModified>1576003122564</lastModified>
+  <size>1147</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003122586</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7a2687daa564241be8e19017340e9a944439985a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>eee7eecc7c4b8d88904ff5432a148d73</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c209fc432387e58b8c5e4078df71ec8a48f8953806cfd41bb0c710c892afbbe5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

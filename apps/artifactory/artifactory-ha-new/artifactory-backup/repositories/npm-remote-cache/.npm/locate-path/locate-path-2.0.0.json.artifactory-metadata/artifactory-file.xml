@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/locate-path/locate-path-2.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>locate-path-2.0.0.json</name>
+  <created>1576003631753</created>
+  <lastModified>1576003631736</lastModified>
+  <size>962</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003631753</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>71a315cda069ee4f0bc16d7cc7cc6d382a52d4fc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8662539afa206205eb76f2fa40336735</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2730d689cf4e6cf6495f39813a516dc75beaae27f6c9a59991315836887abacd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

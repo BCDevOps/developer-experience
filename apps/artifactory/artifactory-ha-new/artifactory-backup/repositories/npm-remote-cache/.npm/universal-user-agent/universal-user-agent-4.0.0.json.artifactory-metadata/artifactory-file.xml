@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/universal-user-agent/universal-user-agent-4.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>universal-user-agent-4.0.0.json</name>
+  <created>1576003104483</created>
+  <lastModified>1576003104443</lastModified>
+  <size>1132</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003104487</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>703bae1d0280e3cc47deece364d72c76562cc5be</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d8de1320b645b10d737b30a84245d21e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f665f02cd04a0c67a9f38f46388974fabb664cf4daa5fb8221e5370b62b33c92</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

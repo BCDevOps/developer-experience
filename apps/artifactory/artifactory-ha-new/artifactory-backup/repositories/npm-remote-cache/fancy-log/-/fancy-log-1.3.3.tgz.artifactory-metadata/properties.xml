@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"31d835cdfb6319a761a81073882050ca"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>log things, prefixed with a timestamp.</npm.description>
+  <npm.keywords>["console.log","log","logger","logging","pretty","timestamp"]</npm.keywords>
+  <npm.name>fancy-log</npm.name>
+  <npm.version>1.3.3</npm.version>
+</properties>

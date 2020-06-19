@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f0429594f765b5fdaa1d5ffff2e8ee98"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>let a globally installed package use a locally installed version of itself if available</npm.description>
+  <npm.keywords>["import","local","require","resolve","global","version","prefer","cli"]</npm.keywords>
+  <npm.name>import-local</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

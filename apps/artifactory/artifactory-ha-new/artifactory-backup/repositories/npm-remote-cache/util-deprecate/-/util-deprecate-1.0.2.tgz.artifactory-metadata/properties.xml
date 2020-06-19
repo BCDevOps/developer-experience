@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"280e304a953ba3a89f52cc6ad616b284"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the node.js `util.deprecate()` function with browser support</npm.description>
+  <npm.keywords>["util","deprecate","browserify","browser","node"]</npm.keywords>
+  <npm.name>util-deprecate</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

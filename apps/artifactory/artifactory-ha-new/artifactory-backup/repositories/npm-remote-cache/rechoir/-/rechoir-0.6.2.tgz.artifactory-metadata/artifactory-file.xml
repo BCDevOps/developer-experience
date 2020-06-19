@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>rechoir/-/rechoir-0.6.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>rechoir-0.6.2.tgz</name>
+  <created>1576003436914</created>
+  <lastModified>1527435014000</lastModified>
+  <size>3776</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003436914</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>85204b54dba82d5742e28c96756ef43af50e3384</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9a0aa4db2a887a452ef08921160c7eb4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>141faa56cef4953ffbe236336a09af64097560338de5abbce57f990fb62ac635</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

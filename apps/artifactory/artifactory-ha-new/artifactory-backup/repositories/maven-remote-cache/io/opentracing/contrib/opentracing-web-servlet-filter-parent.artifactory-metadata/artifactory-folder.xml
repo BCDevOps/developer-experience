@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-web-servlet-filter-parent</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>opentracing-web-servlet-filter-parent</name>
+  <created>1576861441049</created>
+  <lastModified>1576861441049</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861441049</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

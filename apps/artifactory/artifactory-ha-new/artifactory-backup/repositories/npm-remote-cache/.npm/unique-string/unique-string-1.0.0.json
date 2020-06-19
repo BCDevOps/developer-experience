@@ -1,0 +1,34 @@
+{
+  "name" : "unique-string",
+  "description" : "Generate a unique random string",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/unique-string",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/unique-string/-/unique-string-1.0.0.tgz",
+    "shasum" : "9e1057cca851abb93398f8b33ae187b99caec11a"
+  },
+  "dependencies" : {
+    "crypto-random-string" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "unique", "string", "random", "uniq", "str", "rand", "text", "id", "identifier", "slug", "hex" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

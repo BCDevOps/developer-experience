@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f606a90ed815010e79af7c9f7047fc79"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ecmascript spec abstract operations.</npm.description>
+  <npm.keywords>["ECMAScript","ES","abstract","operation","abstract operation","JavaScript","ES5","ES6","ES7"]</npm.keywords>
+  <npm.name>es-abstract</npm.name>
+  <npm.version>1.16.3</npm.version>
+</properties>

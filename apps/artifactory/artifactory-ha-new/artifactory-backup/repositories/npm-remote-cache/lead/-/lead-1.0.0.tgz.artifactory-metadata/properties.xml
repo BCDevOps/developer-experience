@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"31c599473c05b0e1d61051086207a3da"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>sink your streams.</npm.description>
+  <npm.keywords>["streams","sink","through","writeable"]</npm.keywords>
+  <npm.name>lead</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

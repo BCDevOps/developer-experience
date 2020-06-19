@@ -1,0 +1,46 @@
+{
+  "name" : "babel-jest",
+  "description" : "Jest plugin to use babel for transformation.",
+  "version" : "25.2.6",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/babel-jest"
+  },
+  "engines" : {
+    "node" : ">= 8.3"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/babel-jest/-/babel-jest-25.2.6.tgz",
+    "shasum" : "fe67ff4d0db3626ca8082da8881dd5e84e07ae75"
+  },
+  "dependencies" : {
+    "@jest/transform" : "^25.2.6",
+    "@jest/types" : "^25.2.6",
+    "@types/babel__core" : "^7.1.0",
+    "babel-plugin-istanbul" : "^6.0.0",
+    "babel-preset-jest" : "^25.2.6",
+    "chalk" : "^3.0.0",
+    "slash" : "^3.0.0"
+  },
+  "devDependencies" : {
+    "@babel/core" : "^7.1.0"
+  },
+  "peerDependencies" : {
+    "@babel/core" : "^7.0.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "typesVersions" : {
+    "<3.8" : {
+      "build/*" : [ "build/ts3.4/*" ]
+    }
+  },
+  "gitHead" : "43207b743df164e9e58bd483dd9167b9084da18b",
+  "types" : "build/index.d.ts"
+}

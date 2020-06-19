@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>ab/ba/f97030b7e8ec0a981abdca173de4e727b3a7b4ed5dba492f362ba87d59a2/pandas-1.0.1-cp37-cp37m-macosx_10_9_x86_64.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pandas-1.0.1-cp37-cp37m-macosx_10_9_x86_64.whl</name>
+  <created>1581102457338</created>
+  <lastModified>1580935982000</lastModified>
+  <size>9757154</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1581102457339</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bfca0a9a30087b2272db170b42699eef510196f5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0b13d9999d6529f05510c7c7231f1a44</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2530aea4fe46e8df7829c3f05e0a0f821c893885d53cb8ac9b89cc67c143448c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

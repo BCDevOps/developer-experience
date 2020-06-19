@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ts-jest/-/ts-jest-25.3.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ts-jest-25.3.1.tgz</name>
+  <created>1586464307623</created>
+  <lastModified>1585926671000</lastModified>
+  <size>41993</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464307623</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>58e2ed3506e4e4487c0b9b532846a5cade9656ba</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2f8956f163ce4cc8ff78b646be3fb160</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b0e4aba35bdb5d4f6f5e0bf1d80d90583fb7dfb4e80776c5185a4d3cf4cd2039</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

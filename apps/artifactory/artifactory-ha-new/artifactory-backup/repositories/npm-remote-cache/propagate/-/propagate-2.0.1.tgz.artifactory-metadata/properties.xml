@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3b82bd5b183d8dc645396c2ff4410e41"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>propagate events from one event emitter into another</npm.description>
+  <npm.keywords>["event","events","emitter","eventemitter","propagation"]</npm.keywords>
+  <npm.name>propagate</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

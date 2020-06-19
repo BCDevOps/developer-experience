@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>xtend/-/xtend-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xtend-2.1.2.tgz</name>
+  <created>1576003442897</created>
+  <lastModified>1527460310000</lastModified>
+  <size>2360</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003442973</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6efecc2a4dad8e6962c4901b337ce7ba87b5d28b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9b09968c165c6c9cca4c98d362619104</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1576bc77a416855ef55c5f6a8cfa0d060c0d10fb15d423b217a6e3a864455cbf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

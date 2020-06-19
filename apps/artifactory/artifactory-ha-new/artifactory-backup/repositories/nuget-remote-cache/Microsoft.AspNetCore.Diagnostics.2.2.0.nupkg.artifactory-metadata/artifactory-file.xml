@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.AspNetCore.Diagnostics.2.2.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.AspNetCore.Diagnostics.2.2.0.nupkg</name>
+  <created>1578436019358</created>
+  <lastModified>1543878941000</lastModified>
+  <size>116158</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578436019358</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8bb55690c7725a016ed7493c8b255da5f07aca17</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1c766c074508a2d9c160d9249e344688</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6125be9a32b666c2d2be83bbc9889d579b3ad8d0e2b725ca20e18809a0d00543</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

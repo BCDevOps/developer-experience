@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/es6-symbol/es6-symbol-3.1.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>es6-symbol-3.1.3.json</name>
+  <created>1576008058380</created>
+  <lastModified>1576008057884</lastModified>
+  <size>2349</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008058380</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0c3bc785ab194da745602130c4a1d8055c5ec59b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>936146963609134aa3bd84f7a544c015</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0d7264e83cd0ccb46cadef4d74ca43db2e464f77e8bc2d7106235d321d965e53</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

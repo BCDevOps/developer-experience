@@ -1,0 +1,46 @@
+{
+  "name" : "eslint-scope",
+  "description" : "ECMAScript scope analyzer for ESLint",
+  "version" : "4.0.3",
+  "homepage" : "http://github.com/eslint/eslint-scope",
+  "repository" : "eslint/eslint-scope",
+  "bugs" : {
+    "url" : "https://github.com/eslint/eslint-scope/issues"
+  },
+  "engines" : {
+    "node" : ">=4.0.0"
+  },
+  "main" : "lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/eslint-scope/-/eslint-scope-4.0.3.tgz",
+    "shasum" : "ca03833310f6889a3264781aa82e63eb9cfe7848"
+  },
+  "dependencies" : {
+    "esrecurse" : "^4.1.0",
+    "estraverse" : "^4.1.1"
+  },
+  "devDependencies" : {
+    "chai" : "^3.4.1",
+    "eslint" : "^3.15.0",
+    "eslint-config-eslint" : "^4.0.0",
+    "eslint-release" : "^1.0.0",
+    "espree" : "^3.1.1",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^3.2.0",
+    "npm-license" : "^0.3.3",
+    "shelljs" : "^0.7.6",
+    "typescript" : "~2.0.10",
+    "typescript-eslint-parser" : "^1.0.0"
+  },
+  "license" : "BSD-2-Clause",
+  "files" : [ "LICENSE", "README.md", "lib" ],
+  "scripts" : {
+    "test" : "node Makefile.js test",
+    "lint" : "node Makefile.js lint",
+    "generate-release" : "eslint-generate-release",
+    "generate-alpharelease" : "eslint-generate-prerelease alpha",
+    "generate-betarelease" : "eslint-generate-prerelease beta",
+    "generate-rcrelease" : "eslint-generate-prerelease rc",
+    "publish-release" : "eslint-publish-release"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2263406212d244e093289e425583335e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>error classes used in node_redis</npm.description>
+  <npm.keywords>["redis","javascript","node","error"]</npm.keywords>
+  <npm.name>redis-errors</npm.name>
+  <npm.version>1.2.0</npm.version>
+</properties>

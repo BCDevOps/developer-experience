@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>http-signature</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>http-signature</name>
+  <created>1576003418393</created>
+  <lastModified>1576003418393</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003418393</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

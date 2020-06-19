@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/python-dotenv.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>python-dotenv.html</name>
+  <created>1574023061257</created>
+  <lastModified>1582154281805</lastModified>
+  <size>15292</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154281871</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>8f4567ae22964342f669fd7103d2b0c0eb13d185</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>241879e3a988c04fb3dcd1675f241582</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>905323573246fe449a0984720d0d0af123225dcb3fd5d91b29a241bb6b872c1d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

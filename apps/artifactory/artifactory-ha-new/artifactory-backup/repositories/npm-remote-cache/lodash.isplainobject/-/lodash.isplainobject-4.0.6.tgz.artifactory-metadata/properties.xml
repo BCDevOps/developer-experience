@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"af2f29d56ed4bedf78db1cb72af6b286"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.isplainobject` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, isplainobject"</npm.keywords>
+  <npm.name>lodash.isplainobject</npm.name>
+  <npm.version>4.0.6</npm.version>
+</properties>

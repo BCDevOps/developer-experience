@@ -1,0 +1,26 @@
+{
+  "name" : "media-typer",
+  "description" : "Simple RFC 6838 media type parser and formatter",
+  "version" : "0.3.0",
+  "author" : "Douglas Christopher Wilson <doug@somethingdoug.com>",
+  "repository" : "jshttp/media-typer",
+  "engines" : {
+    "node" : ">= 0.6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/media-typer/-/media-typer-0.3.0.tgz",
+    "shasum" : "8710d7af0aa626f8fffa1ce00168545263255748"
+  },
+  "devDependencies" : {
+    "istanbul" : "0.3.2",
+    "mocha" : "~1.21.4",
+    "should" : "~4.0.4"
+  },
+  "license" : "MIT",
+  "files" : [ "LICENSE", "HISTORY.md", "index.js" ],
+  "scripts" : {
+    "test" : "mocha --reporter spec --check-leaks --bail test/",
+    "test-cov" : "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis" : "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  }
+}

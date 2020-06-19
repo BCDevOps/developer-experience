@@ -1,0 +1,34 @@
+{
+  "name" : "jwa",
+  "description" : "JWA implementation (supports all JWS algorithms)",
+  "version" : "1.4.1",
+  "author" : "Brian J. Brennan <brianloveswords@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/brianloveswords/node-jwa.git"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/jwa/-/jwa-1.4.1.tgz",
+    "shasum" : "743c32985cb9e98655530d53641b66c8645b039a"
+  },
+  "dependencies" : {
+    "buffer-equal-constant-time" : "1.0.1",
+    "ecdsa-sig-formatter" : "1.0.11",
+    "safe-buffer" : "^5.0.1"
+  },
+  "devDependencies" : {
+    "base64url" : "^2.0.0",
+    "jwk-to-pem" : "^2.0.1",
+    "semver" : "4.3.6",
+    "tap" : "6.2.0"
+  },
+  "keywords" : [ "jwa", "jws", "jwt", "rsa", "ecdsa", "hmac" ],
+  "license" : "MIT",
+  "directories" : {
+    "test" : "test"
+  },
+  "scripts" : {
+    "test" : "make test"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name" : "type-fest",
+  "description" : "A collection of essential TypeScript types",
+  "version" : "0.8.1",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/type-fest",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/type-fest/-/type-fest-0.8.1.tgz",
+    "shasum" : "09e249ebde851d3b1e48d27c105444667f17b83d"
+  },
+  "devDependencies" : {
+    "@sindresorhus/tsconfig" : "^0.4.0",
+    "@typescript-eslint/eslint-plugin" : "^2.2.0",
+    "@typescript-eslint/parser" : "^2.2.0",
+    "eslint-config-xo-typescript" : "^0.18.0",
+    "tsd" : "^0.7.3",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "typescript", "ts", "types", "utility", "util", "utilities", "omit", "merge", "json" ],
+  "license" : "(MIT OR CC0-1.0)",
+  "files" : [ "index.d.ts", "source" ],
+  "scripts" : {
+    "test" : "xo && tsd"
+  },
+  "xo" : {
+    "extends" : "xo-typescript",
+    "extensions" : [ "ts" ],
+    "rules" : {
+      "import/no-unresolved" : "off",
+      "@typescript-eslint/indent" : "off"
+    }
+  }
+}

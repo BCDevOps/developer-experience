@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/media-typer/media-typer-0.3.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>media-typer-0.3.0.json</name>
+  <created>1576003613660</created>
+  <lastModified>1576003613620</lastModified>
+  <size>968</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003613661</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2f228a738be1ec0048d2c480ca243afdfe696211</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9ca846c871271bfa8e54a1f20a53a0ed</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0e11999fd782d344d09905604a4b6fb73c8a6c180ff119d7926c87421c07a2ca</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

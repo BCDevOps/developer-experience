@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/duplexer3/duplexer3-0.1.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>duplexer3-0.1.4.json</name>
+  <created>1576003654155</created>
+  <lastModified>1576003654135</lastModified>
+  <size>701</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003654156</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>a6006a275e97aa40a9691a932ad49475afeee219</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>81c9c1d7c2bcf416028c60063d30241d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>21e73c3af184fafc288488b2bace733e9795766479219d13ff782d5c43cd33fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

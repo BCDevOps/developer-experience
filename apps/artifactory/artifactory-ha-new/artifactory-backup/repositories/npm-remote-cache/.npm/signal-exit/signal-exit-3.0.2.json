@@ -1,0 +1,36 @@
+{
+  "name" : "signal-exit",
+  "description" : "when you want to fire an event no matter how a process exits.",
+  "version" : "3.0.2",
+  "author" : "Ben Coe <ben@npmjs.com>",
+  "homepage" : "https://github.com/tapjs/signal-exit",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/tapjs/signal-exit.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/tapjs/signal-exit/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/signal-exit/-/signal-exit-3.0.2.tgz",
+    "shasum" : "b5fdc08f1287ea1178628e415e25132b73646c6d"
+  },
+  "devDependencies" : {
+    "chai" : "^3.5.0",
+    "coveralls" : "^2.11.10",
+    "nyc" : "^8.1.0",
+    "standard" : "^7.1.2",
+    "standard-version" : "^2.3.0",
+    "tap" : "^8.0.1"
+  },
+  "keywords" : [ "signal", "exit" ],
+  "license" : "ISC",
+  "files" : [ "index.js", "signals.js" ],
+  "scripts" : {
+    "pretest" : "standard",
+    "test" : "tap --timeout=240 ./test/*.js --cov",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls",
+    "release" : "standard-version"
+  }
+}

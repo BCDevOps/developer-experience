@@ -1,0 +1,29 @@
+{
+  "name" : "map-obj",
+  "description" : "Map object keys and values into a new object",
+  "version" : "4.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/map-obj",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/map-obj/-/map-obj-4.1.0.tgz",
+    "shasum" : "b91221b542734b9f14256c0132c897c5d7256fd5"
+  },
+  "devDependencies" : {
+    "ava" : "^2.0.0",
+    "tsd" : "^0.7.3",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "map", "object", "key", "keys", "value", "values", "iterate", "iterator", "rename", "modify", "deep", "recurse", "recursive" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

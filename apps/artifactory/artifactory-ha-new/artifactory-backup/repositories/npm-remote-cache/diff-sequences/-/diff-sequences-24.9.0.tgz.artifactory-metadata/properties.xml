@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"b038ad5e0b06e20f1a4821940d389265"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>compare items in two sequences to find a longest common subsequence</npm.description>
+  <npm.keywords>["fast","linear","space","callback","diff"]</npm.keywords>
+  <npm.name>diff-sequences</npm.name>
+  <npm.version>24.9.0</npm.version>
+</properties>

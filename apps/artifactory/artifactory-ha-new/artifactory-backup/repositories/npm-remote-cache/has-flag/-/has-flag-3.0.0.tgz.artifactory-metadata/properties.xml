@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1fa1fa951639c7058277abcecca86922"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if argv has a specific flag</npm.description>
+  <npm.keywords>["has","check","detect","contains","find","flag","cli","command-line","argv","process","arg","args","argument","arguments","getopt","minimist","optimist"]</npm.keywords>
+  <npm.name>has-flag</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

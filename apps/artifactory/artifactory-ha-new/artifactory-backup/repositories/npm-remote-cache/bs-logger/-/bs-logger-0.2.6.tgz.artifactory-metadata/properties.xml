@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9467be06f3370e138bb79a232e5e1684"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>bare simple logger for nodejs</npm.description>
+  <npm.keywords>["bare simple logger","simple logger","simple","logger","typescript","lib","library"]</npm.keywords>
+  <npm.name>bs-logger</npm.name>
+  <npm.version>0.2.6</npm.version>
+</properties>

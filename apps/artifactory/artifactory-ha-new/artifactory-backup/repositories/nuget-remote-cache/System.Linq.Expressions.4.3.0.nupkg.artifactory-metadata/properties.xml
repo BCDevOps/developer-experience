@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D661472134B941</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.3</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile259</nuget.dependency>
+  <nuget.dependency>System.Collections:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Collections:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Globalization:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Globalization:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Linq:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Linq:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.ObjectModel:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.ILGeneration:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.Lightweight:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Emit.Lightweight:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.Extensions:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Extensions:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETStandard1.6</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides classes, interfaces and enumerations that enable language-level code expressions to be represented as objects in the form of expression trees.
+
+Commonly Used Types:
+System.Linq.IQueryable&lt;T>
+System.Linq.IQueryable
+System.Linq.Expressions.Expression&lt;TDelegate>
+System.Linq.Expressions.Expression
+System.Linq.Expressions.ExpressionVisitor
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>YbkO+a5vd5+8intkg+6PVEnN0FyBsFI19wRH5lanOyqrfDQXhLmZ91MjdHRKcuLDpc0TgA6iNBf6wyzPrlzebQ==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.3</nuget.frameworks>
+  <nuget.frameworks>System.Core:.NETFramework4.5</nuget.frameworks>
+  <nuget.frameworks>System.Core:.NETFramework4.6.3</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Linq.Expressions</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Linq.Expressions</nuget.title>
+  <nuget.version>4.3.0</nuget.version>
+</properties>

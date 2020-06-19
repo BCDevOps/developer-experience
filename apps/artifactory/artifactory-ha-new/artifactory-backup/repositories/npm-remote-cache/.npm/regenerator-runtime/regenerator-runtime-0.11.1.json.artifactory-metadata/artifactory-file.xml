@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/regenerator-runtime/regenerator-runtime-0.11.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>regenerator-runtime-0.11.1.json</name>
+  <created>1579828378917</created>
+  <lastModified>1579828378803</lastModified>
+  <size>697</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828378918</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>bffd1cb5f5d854ceafc1ec638bb1c1ba12ba9139</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>20c927d62b47b7886464be36a26dad95</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e374f1c8d7d9874d088dfce5a177e1a1036b46a42027f76d992ab7f05012877b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

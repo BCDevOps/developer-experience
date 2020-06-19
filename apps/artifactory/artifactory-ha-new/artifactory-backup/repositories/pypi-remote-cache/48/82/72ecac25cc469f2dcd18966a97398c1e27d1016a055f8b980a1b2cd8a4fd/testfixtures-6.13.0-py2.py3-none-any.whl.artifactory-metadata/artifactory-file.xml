@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>48/82/72ecac25cc469f2dcd18966a97398c1e27d1016a055f8b980a1b2cd8a4fd/testfixtures-6.13.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>testfixtures-6.13.0-py2.py3-none-any.whl</name>
+  <created>1582055691634</created>
+  <lastModified>1582020784000</lastModified>
+  <size>88187</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582055691636</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>af2745d5cb3a3234062ddb2813b7b5975947fd05</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2cb58fa7a88b8c380a014fc5a6c3cc91</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13ed160824e0eff537cbda9c7cb3c3165445e5cfa1e8eaea67cc92b9b4aa8f86</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

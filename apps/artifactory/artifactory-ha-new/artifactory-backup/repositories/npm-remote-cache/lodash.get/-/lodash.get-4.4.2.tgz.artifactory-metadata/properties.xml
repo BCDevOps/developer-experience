@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"331dd1c0a1f33c4146771930bad06aca"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.get` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, get"</npm.keywords>
+  <npm.name>lodash.get</npm.name>
+  <npm.version>4.4.2</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"73dff28a2f7b59aafdbba8a2e1882c2e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>easily read/write json files.</npm.description>
+  <npm.keywords>["read","write","file","json","fs","fs-extra"]</npm.keywords>
+  <npm.name>jsonfile</npm.name>
+  <npm.version>4.0.0</npm.version>
+</properties>

@@ -1,0 +1,20 @@
+{
+  "name" : "escape-html",
+  "description" : "Escape string for use in HTML",
+  "version" : "1.0.3",
+  "repository" : "component/escape-html",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/escape-html/-/escape-html-1.0.3.tgz",
+    "shasum" : "0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  },
+  "devDependencies" : {
+    "benchmark" : "1.0.0",
+    "beautify-benchmark" : "0.2.4"
+  },
+  "keywords" : [ "escape", "html", "utility" ],
+  "license" : "MIT",
+  "files" : [ "LICENSE", "Readme.md", "index.js" ],
+  "scripts" : {
+    "bench" : "node benchmark/index.js"
+  }
+}

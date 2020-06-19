@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/unset-value/unset-value-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>unset-value-1.0.0.json</name>
+  <created>1576003426179</created>
+  <lastModified>1576003425990</lastModified>
+  <size>1544</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003426183</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2629c6ac842ab68369cfd75c681a0847246d2784</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8c432bd071ce9ee5b68993654d860380</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>59863a7e655fbed76fe02b07d776ce871bd089c79bd33bc1a54338d21624e532</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

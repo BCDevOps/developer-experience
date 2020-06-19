@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>runtime.native.System.4.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>runtime.native.System.4.0.0.nupkg</name>
+  <created>1578496873357</created>
+  <lastModified>1544741912000</lastModified>
+  <size>16852</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496873358</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>2a3ac9674daa8ebe9c70e0ce1aaa2ac9efb05649</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c7f1fba3985849f9580e37d6e6e6a9cf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6e668cd28bd3e17e1aa8324e476e7961d6bfbb77e61d9b2453efa5327b32f3de</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

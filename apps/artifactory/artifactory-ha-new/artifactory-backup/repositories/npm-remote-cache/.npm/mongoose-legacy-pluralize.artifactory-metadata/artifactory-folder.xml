@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/mongoose-legacy-pluralize</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>mongoose-legacy-pluralize</name>
+  <created>1582140567164</created>
+  <lastModified>1582140567164</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140567164</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

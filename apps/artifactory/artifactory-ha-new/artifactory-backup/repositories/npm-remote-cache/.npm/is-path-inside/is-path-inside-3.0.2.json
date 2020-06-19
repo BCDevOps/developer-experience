@@ -1,0 +1,29 @@
+{
+  "name" : "is-path-inside",
+  "description" : "Check if a path is inside another path",
+  "version" : "3.0.2",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/is-path-inside",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/is-path-inside/-/is-path-inside-3.0.2.tgz",
+    "shasum" : "f5220fc82a3e233757291dddc9c5877f2a1f3017"
+  },
+  "devDependencies" : {
+    "ava" : "^2.1.0",
+    "tsd" : "^0.7.2",
+    "xo" : "^0.24.0"
+  },
+  "keywords" : [ "path", "inside", "folder", "directory", "dir", "file", "resolve" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "test" : "xo && ava && tsd"
+  }
+}

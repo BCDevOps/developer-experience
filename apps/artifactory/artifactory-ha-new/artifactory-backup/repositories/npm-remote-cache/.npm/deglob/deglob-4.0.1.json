@@ -1,0 +1,37 @@
+{
+  "name" : "deglob",
+  "description" : "Take a list of glob patterns and return an array of file locations, respecting `.gitignore` and allowing for ignore patterns via `package.json`.",
+  "version" : "4.0.1",
+  "author" : "Dan Flettre <fletd01@yahoo.com>",
+  "homepage" : "https://github.com/flet/deglob",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/flet/deglob.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/flet/deglob/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/deglob/-/deglob-4.0.1.tgz",
+    "shasum" : "0685c6383992fd6009be10653a2b1116696fad55"
+  },
+  "dependencies" : {
+    "find-root" : "^1.0.0",
+    "glob" : "^7.0.5",
+    "ignore" : "^5.0.0",
+    "pkg-config" : "^1.1.0",
+    "run-parallel" : "^1.1.2",
+    "uniq" : "^1.0.1"
+  },
+  "devDependencies" : {
+    "standard" : "*",
+    "tap-spec" : "^5.0.0",
+    "tape" : "^4.0.0"
+  },
+  "keywords" : [ "cli", "command", "deglob", "files", "glob", "unglob", "gitignore", "ignore", "file" ],
+  "license" : "ISC",
+  "scripts" : {
+    "test" : "standard && tape test/*.js | tap-spec"
+  }
+}

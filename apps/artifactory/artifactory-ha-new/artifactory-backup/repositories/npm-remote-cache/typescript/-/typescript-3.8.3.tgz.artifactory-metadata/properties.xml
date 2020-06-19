@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"4b2148e248d002efd3b8f70dc2bf2473"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>typescript is a language for application scale javascript development</npm.description>
+  <npm.keywords>["TypeScript","Microsoft","compiler","language","javascript"]</npm.keywords>
+  <npm.name>typescript</npm.name>
+  <npm.version>3.8.3</npm.version>
+</properties>

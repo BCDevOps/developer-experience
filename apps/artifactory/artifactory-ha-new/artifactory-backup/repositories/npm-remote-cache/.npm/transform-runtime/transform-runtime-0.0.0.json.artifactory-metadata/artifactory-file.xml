@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/transform-runtime/transform-runtime-0.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>transform-runtime-0.0.0.json</name>
+  <created>1576003072828</created>
+  <lastModified>1576003072803</lastModified>
+  <size>439</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003072828</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7127bacff2926e6f41294ac896722d488e18cb73</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>a0b98f631599ede717bd1bb9e405c4b8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>baea081d8bca2624e35f218c5174bce8e6afb4bf3ddb004f2f13b98b650b6e6c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

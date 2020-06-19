@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e14007876e1f7eda27b883f46f8713a8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>javascript redis protocol (resp) parser</npm.description>
+  <npm.keywords>["redis","protocol","parser","database","javascript","node","nodejs","resp","hiredis"]</npm.keywords>
+  <npm.name>redis-parser</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

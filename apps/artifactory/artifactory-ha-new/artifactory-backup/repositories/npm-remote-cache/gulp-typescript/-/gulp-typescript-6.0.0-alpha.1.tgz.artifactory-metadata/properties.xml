@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2a17e5be29203cce90f6730a7ea22936"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a typescript compiler for gulp with incremental compilation support.</npm.description>
+  <npm.keywords>["typescript","gulpplugin","incremental compilation","ts","tsc","compile","compiler","transpile"]</npm.keywords>
+  <npm.name>gulp-typescript</npm.name>
+  <npm.version>6.0.0-alpha.1</npm.version>
+</properties>

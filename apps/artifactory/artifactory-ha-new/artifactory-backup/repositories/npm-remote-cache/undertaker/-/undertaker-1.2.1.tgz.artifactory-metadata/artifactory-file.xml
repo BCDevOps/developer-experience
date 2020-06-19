@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>undertaker/-/undertaker-1.2.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>undertaker-1.2.1.tgz</name>
+  <created>1576003117357</created>
+  <lastModified>1554654107000</lastModified>
+  <size>7796</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003117357</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>701662ff8ce358715324dfd492a4f036055dfe4b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2b43301f500bc2dc42d4f1dbe06a59d2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a6b9f9cff281ce54d8f9d00253a6f473248f51dd77c0cae22e8c80647e005a67</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

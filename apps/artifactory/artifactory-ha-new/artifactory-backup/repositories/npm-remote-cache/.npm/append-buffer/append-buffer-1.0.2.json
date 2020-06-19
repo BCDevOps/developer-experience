@@ -1,0 +1,41 @@
+{
+  "name" : "append-buffer",
+  "description" : "Append a buffer to another buffer ensuring to preserve line ending characters.",
+  "version" : "1.0.2",
+  "author" : "Brian Woodward (https://doowb.com)",
+  "homepage" : "https://github.com/doowb/append-buffer",
+  "repository" : "doowb/append-buffer",
+  "bugs" : {
+    "url" : "https://github.com/doowb/append-buffer/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/append-buffer/-/append-buffer-1.0.2.tgz",
+    "shasum" : "d8220cf466081525efea50614f3de6514dfa58f1"
+  },
+  "dependencies" : {
+    "buffer-equal" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.5.0"
+  },
+  "keywords" : [ "append", "append-buffer", "concat", "concat-buffer", "eol", "join", "join-buffer", "normalize", "buffer" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

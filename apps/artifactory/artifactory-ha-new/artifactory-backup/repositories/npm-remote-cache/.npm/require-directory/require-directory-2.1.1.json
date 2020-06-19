@@ -1,0 +1,37 @@
+{
+  "name" : "require-directory",
+  "description" : "Recursively iterates over specified directory, require()'ing each file, and returning a nested hash structure containing those modules.",
+  "version" : "2.1.1",
+  "author" : "Troy Goode <troygoode@gmail.com> (http://github.com/troygoode/)",
+  "homepage" : "https://github.com/troygoode/node-require-directory/",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/troygoode/node-require-directory.git"
+  },
+  "contributors" : [ {
+    "name" : "Troy Goode",
+    "email" : "troygoode@gmail.com",
+    "web" : "http://github.com/troygoode/"
+  } ],
+  "bugs" : {
+    "url" : "http://github.com/troygoode/node-require-directory/issues/"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/require-directory/-/require-directory-2.1.1.tgz",
+    "shasum" : "8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  },
+  "devDependencies" : {
+    "jshint" : "^2.6.0",
+    "mocha" : "^2.1.0"
+  },
+  "keywords" : [ "require", "directory", "library", "recursive" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "mocha",
+    "lint" : "jshint index.js test/test.js"
+  }
+}

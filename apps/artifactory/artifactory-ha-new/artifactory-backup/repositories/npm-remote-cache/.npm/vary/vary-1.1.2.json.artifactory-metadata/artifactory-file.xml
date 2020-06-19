@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/vary/vary-1.1.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>vary-1.1.2.json</name>
+  <created>1576003418384</created>
+  <lastModified>1576003418183</lastModified>
+  <size>1404</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003418384</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>4d43c04d759afb3c6a24014cf688a901ab6017cd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e6f2e52c202caa59011a89433e8f2a6e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6bc20887cc899b2e0dbfbe78485c5d45d8ecaffb190cbc8507e5f6c81ec88d66</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/expand-tilde/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003606416</created>
+  <lastModified>1527379594000</lastModified>
+  <size>18756</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464329366</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f31dc78d7f5b2bc2f5f0911da4a2c0ded29f3a13</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>cb4036b7921837e669c25b2478911f58</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ffdf917c249ad91d84e0322551fe9e6f32fcfac9ac204b6898ad3497188c4afd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

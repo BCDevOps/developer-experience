@@ -1,0 +1,38 @@
+{
+  "name" : "content-disposition",
+  "description" : "Create and parse Content-Disposition header",
+  "version" : "0.5.3",
+  "author" : "Douglas Christopher Wilson <doug@somethingdoug.com>",
+  "repository" : "jshttp/content-disposition",
+  "engines" : {
+    "node" : ">= 0.6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/content-disposition/-/content-disposition-0.5.3.tgz",
+    "shasum" : "e130caf7e7279087c5616c2007d0485698984fbd"
+  },
+  "dependencies" : {
+    "safe-buffer" : "5.1.2"
+  },
+  "devDependencies" : {
+    "deep-equal" : "1.0.1",
+    "eslint" : "5.10.0",
+    "eslint-config-standard" : "12.0.0",
+    "eslint-plugin-import" : "2.14.0",
+    "eslint-plugin-markdown" : "1.0.0-rc.1",
+    "eslint-plugin-node" : "7.0.1",
+    "eslint-plugin-promise" : "4.0.1",
+    "eslint-plugin-standard" : "4.0.0",
+    "istanbul" : "0.4.5",
+    "mocha" : "5.2.0"
+  },
+  "keywords" : [ "content-disposition", "http", "rfc6266", "res" ],
+  "license" : "MIT",
+  "files" : [ "LICENSE", "HISTORY.md", "README.md", "index.js" ],
+  "scripts" : {
+    "lint" : "eslint --plugin markdown --ext js,md .",
+    "test" : "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov" : "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis" : "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  }
+}

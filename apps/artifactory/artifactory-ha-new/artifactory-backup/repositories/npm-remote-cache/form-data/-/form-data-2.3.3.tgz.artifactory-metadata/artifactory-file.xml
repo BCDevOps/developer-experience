@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>form-data/-/form-data-2.3.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>form-data-2.3.3.tgz</name>
+  <created>1576008545955</created>
+  <lastModified>1539761187000</lastModified>
+  <size>34269</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008545956</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>dcce52c05f644f298c6a7ab936bd724ceffbf3a6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>08833fa830e83c7c4962e446a0b1a759</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e39ecf83f4c79bb67004b7023d353e718db5a0c27bd4909957187b8d4e5033c8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

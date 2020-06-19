@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/eslint-plugin-mocha/eslint-plugin-mocha-6.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>eslint-plugin-mocha-6.1.1.json</name>
+  <created>1579828422671</created>
+  <lastModified>1579828422634</lastModified>
+  <size>1889</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828422672</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>ed6958e0f161d97c70e72917b89efcf7bda0a896</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8626ae4fc93e2292cbc0813120455542</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>622a84792121a81aea0fedfbe47fbd913be62e574a5ec044331780d32cd65d17</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

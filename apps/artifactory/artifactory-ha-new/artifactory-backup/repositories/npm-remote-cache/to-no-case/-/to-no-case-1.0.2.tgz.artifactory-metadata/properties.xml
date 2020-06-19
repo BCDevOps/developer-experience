@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"586f4da8e8bb1ad393e8fc681490bb7c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>remove any existing casing from a string.</npm.description>
+  <npm.keywords>["camel","camelcase","case","pascal","pascalcase","sentence","sentencecase","slug","slugcase","snake","snakecase","string","title","titlecase"]</npm.keywords>
+  <npm.name>to-no-case</npm.name>
+  <npm.version>1.0.2</npm.version>
+</properties>

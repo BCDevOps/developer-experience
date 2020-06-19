@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/memory-pager/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1582140578725</created>
+  <lastModified>1547048308000</lastModified>
+  <size>18819</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1586464333037</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>62979c68632e9f504c1e0b1120b3819bb9ff6bd7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>eafb9c3554df67afd75aa1ace49197fd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3a347078fe8ba98b5b6d92bc952175fdf4df999a7b5d738a82badb55486f960a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"fb2d8f06a6cab32103f4ee61ebe072b1"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>convert windows backslash paths to slash paths</npm.description>
+  <npm.keywords>["path","seperator","slash","backslash","windows","convert"]</npm.keywords>
+  <npm.name>slash</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>source-map/-/source-map-0.6.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>source-map-0.6.1.tgz</name>
+  <created>1576003074378</created>
+  <lastModified>1527443474000</lastModified>
+  <size>199644</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003074379</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>74722af32e9614e9c287a8d0bbde48b5e2f1a263</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>79c3ddee196e8b414e8b5c3b9caa8581</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>bdbca10d17ff5a5802d5acfc7b2f22f9f9bf587632a95650d3c5f513c7092b86</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

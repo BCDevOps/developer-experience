@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Click-7.0-py2.py3-none-any.whl</name>
+  <created>1573593687384</created>
+  <lastModified>1537909027000</lastModified>
+  <size>81299</size>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1573593687385</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>c5b8267a60ed6a4035eaa575485c2d11d3cf5688</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4de489e31c57834a21b8be7111dab613</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-fullwidth-code-point-1.0.0.tgz</name>
+  <created>1576008044685</created>
+  <lastModified>1527397141000</lastModified>
+  <size>2124</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008044686</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ef9e31386f031a7f0d643af82fde50c457ef00cb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>edbd4281a6ac4fb8d1082592c411f250</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>77ed656a130d47cc804c1d8fdae8f0fc4ad355625552fcde37703ca5f8b3686c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

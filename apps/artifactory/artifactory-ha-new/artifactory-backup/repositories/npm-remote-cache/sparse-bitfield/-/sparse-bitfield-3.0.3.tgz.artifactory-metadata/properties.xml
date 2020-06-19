@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"62d6decae7ea9045a595287a7a0737eb"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>bitfield that allocates a series of small buffers to support sparse bits without allocating a massive buffer</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>sparse-bitfield</npm.name>
+  <npm.version>3.0.3</npm.version>
+</properties>

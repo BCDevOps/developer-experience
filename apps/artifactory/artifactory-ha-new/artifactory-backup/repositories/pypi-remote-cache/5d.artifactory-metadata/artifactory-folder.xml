@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>5d</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>5d</name>
+  <created>1578439450560</created>
+  <lastModified>1578439450560</lastModified>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1578439450560</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

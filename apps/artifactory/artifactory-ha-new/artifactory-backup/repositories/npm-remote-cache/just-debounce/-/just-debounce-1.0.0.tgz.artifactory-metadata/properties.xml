@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3ba76680963570d470d239578b5c3e92"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a simple debounce with no dependencies or crazy defaults</npm.description>
+  <npm.keywords>["debounce"]</npm.keywords>
+  <npm.name>just-debounce</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

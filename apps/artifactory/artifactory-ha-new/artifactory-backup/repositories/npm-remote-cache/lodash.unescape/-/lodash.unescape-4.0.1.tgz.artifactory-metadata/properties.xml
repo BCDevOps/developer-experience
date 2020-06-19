@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"d1bfb7d77a0d8bb8905b8f0c769dbe8e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>the lodash method `_.unescape` exported as a module.</npm.description>
+  <npm.keywords>"lodash-modularized, unescape"</npm.keywords>
+  <npm.name>lodash.unescape</npm.name>
+  <npm.version>4.0.1</npm.version>
+</properties>

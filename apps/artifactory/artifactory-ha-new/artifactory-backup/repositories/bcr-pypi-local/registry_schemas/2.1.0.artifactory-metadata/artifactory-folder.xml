@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>bcr-pypi-local</repoKey>
+    <path>registry_schemas/2.1.0</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.1.0</name>
+  <created>1574751988723</created>
+  <lastModified>1574751988723</lastModified>
+  <additionalInfo>
+    <createdBy>thorwolpert@github</createdBy>
+    <modifiedBy>thorwolpert@github</modifiedBy>
+    <lastUpdated>1574751988723</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

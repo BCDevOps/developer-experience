@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/flask-marshmallow.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>flask-marshmallow.html</name>
+  <created>1574023038287</created>
+  <lastModified>1582154305238</lastModified>
+  <size>8532</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154305293</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>63d66b36d97debb94c917ad400515ade53f8ba9b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>794a4a0f5cafe3a32f45458063a3db13</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>337650758b655d9ea5428522ba38bcda0c3553161953bec8a2ed760b525e0af1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-number/is-number-4.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-number-4.0.0.json</name>
+  <created>1576003607680</created>
+  <lastModified>1576003607657</lastModified>
+  <size>1482</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003607680</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>bbbcd54ffe13765af128f6a52be13bf7e86784b6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4d0e63f5bad054ca4b7d9688a9dcf977</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c8532db5a6a914069eaa7974fcfdb996d8ebb643f9686e3c440e63034ea1e243</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

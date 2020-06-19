@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/ow2/ow2/1.3/ow2-1.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ow2-1.3.pom</name>
+  <created>1576861449849</created>
+  <lastModified>1303229224000</lastModified>
+  <size>9509</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861449850</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>f679d6639bfb209b0836a5e7cf09bfbcc1a41f06</original>
+          <actual>f679d6639bfb209b0836a5e7cf09bfbcc1a41f06</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>304ffc7a7cd24547235154ea93ef9ef2</original>
+          <actual>304ffc7a7cd24547235154ea93ef9ef2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>51215c67d2c068d8b7d2f6f80f51372a098075deccc448d4bdd7b987ba8328fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

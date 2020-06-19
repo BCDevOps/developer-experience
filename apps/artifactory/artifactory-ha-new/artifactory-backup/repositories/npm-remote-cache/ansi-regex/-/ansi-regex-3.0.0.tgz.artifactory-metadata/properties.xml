@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"1cc176457cc56d720f68eaf26b2afe8b"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>regular expression for matching ansi escape codes</npm.description>
+  <npm.keywords>["ansi","styles","color","colour","colors","terminal","console","cli","string","tty","escape","formatting","rgb","256","shell","xterm","command-line","text","regex","regexp","re","match","test","find","pattern"]</npm.keywords>
+  <npm.name>ansi-regex</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

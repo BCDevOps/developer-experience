@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>colornames/-/colornames-1.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>colornames-1.1.1.tgz</name>
+  <created>1576003627388</created>
+  <lastModified>1527365867000</lastModified>
+  <size>9181</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003627388</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>f8889030685c7c4ff9e2a559f5077eb76a816f96</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f6eae553f73e1d5198de7390befa8fbf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3b243775eb272bd5713ab19cd2df493f2cb0b40c1b725cb5c4cf2ca2b34c7ad6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

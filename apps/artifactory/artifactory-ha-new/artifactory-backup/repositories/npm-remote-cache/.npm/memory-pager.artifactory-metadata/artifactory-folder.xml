@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/memory-pager</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>memory-pager</name>
+  <created>1582140578715</created>
+  <lastModified>1582140578715</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1582140578715</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

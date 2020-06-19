@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5159c8360c4313e9e09d71d3cbd04574"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>utilities for working with typescript's ast</npm.description>
+  <npm.keywords>["typescript","ts","ast","typeguard","utils","helper","node"]</npm.keywords>
+  <npm.name>tsutils</npm.name>
+  <npm.version>3.17.1</npm.version>
+</properties>

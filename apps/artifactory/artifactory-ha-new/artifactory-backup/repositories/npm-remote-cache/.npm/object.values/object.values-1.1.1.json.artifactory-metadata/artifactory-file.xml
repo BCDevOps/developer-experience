@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/object.values/object.values-1.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>object.values-1.1.1.json</name>
+  <created>1585853569009</created>
+  <lastModified>1585853568973</lastModified>
+  <size>1910</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853569009</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>da0a49fe31bea356027f52c13df04fd4be9ed5b9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>669253db27f418d48efe0f59362d67b0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ff1bea494dbebdd2f4a1621a798398f1da39d24bef6261c7a4221baaa655ec48</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

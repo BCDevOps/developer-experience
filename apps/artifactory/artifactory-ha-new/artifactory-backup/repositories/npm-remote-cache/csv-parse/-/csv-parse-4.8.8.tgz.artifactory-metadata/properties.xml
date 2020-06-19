@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"805d8fcf615f9311033fdedd5f7c82f5"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>csv parsing implementing the node.js `stream.transform` api</npm.description>
+  <npm.keywords>["csv","parse","parser","convert","tsv","stream"]</npm.keywords>
+  <npm.name>csv-parse</npm.name>
+  <npm.version>4.8.8</npm.version>
+</properties>

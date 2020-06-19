@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>standard-engine/-/standard-engine-12.0.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>standard-engine-12.0.0.tgz</name>
+  <created>1576003096031</created>
+  <lastModified>1566246373000</lastModified>
+  <size>11134</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003096032</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1643dceba96ca9c04c535a1fb28d79bfb21b3572</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>344e6ec2a566d754a108429b6448bcea</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>293728a0d43d3e8549e3b3070dc42af44fe73c2d2b8335f0cdc80c1d8d606914</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

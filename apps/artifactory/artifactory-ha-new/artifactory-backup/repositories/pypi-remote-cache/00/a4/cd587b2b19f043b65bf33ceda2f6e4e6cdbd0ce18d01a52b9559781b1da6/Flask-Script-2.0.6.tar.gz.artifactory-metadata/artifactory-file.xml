@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>00/a4/cd587b2b19f043b65bf33ceda2f6e4e6cdbd0ce18d01a52b9559781b1da6/Flask-Script-2.0.6.tar.gz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Flask-Script-2.0.6.tar.gz</name>
+  <created>1574023019458</created>
+  <lastModified>1504697073000</lastModified>
+  <size>43146</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574023019459</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4b09b280e63e1444ffdaf942264436a674fcc1a6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3fbd91fe13cebedfb2431331f6eabb68</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6425963d91054cfcc185807141c7314a9c5ad46325911bd24dcb489bd0161c65</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

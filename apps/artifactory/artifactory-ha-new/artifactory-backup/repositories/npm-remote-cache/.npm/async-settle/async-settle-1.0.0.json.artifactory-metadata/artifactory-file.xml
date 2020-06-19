@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/async-settle/async-settle-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>async-settle-1.0.0.json</name>
+  <created>1576003112611</created>
+  <lastModified>1576003112588</lastModified>
+  <size>1258</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003112612</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>3f231c6a2978815c4fbd74a52851018fde0ed1e5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>45430648cffa91e8d5904f1da5f41d38</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7d45f6176522201aae2ed3e7cf39a438a3114b1b25fb7f39ec4c81bb226817f9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

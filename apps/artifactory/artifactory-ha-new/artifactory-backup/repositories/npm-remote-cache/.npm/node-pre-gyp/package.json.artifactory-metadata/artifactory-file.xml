@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/node-pre-gyp/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1576003605178</created>
+  <lastModified>1572038838000</lastModified>
+  <size>250397</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003605178</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bf2fb955c6e75bbc61b23e2c8248327889bf71c3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c5addd3e7dcf0b2b30bd00a3d698636e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>93966a82799db9d794a8ad88b5e142fba3adaa8a490cad36180173452936a7dc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

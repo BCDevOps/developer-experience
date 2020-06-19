@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>request-promise-native/-/request-promise-native-1.0.8.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>request-promise-native-1.0.8.tgz</name>
+  <created>1576008056573</created>
+  <lastModified>1572829670000</lastModified>
+  <size>3430</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008056673</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a455b960b826e44e2bf8999af64dff2bfe58cb36</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>787bc253d38f35c2575b545408e80374</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4b739f30d726c26c2e61b97d718e14c31a25b52db65bd529716b5c5c833e3fdb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

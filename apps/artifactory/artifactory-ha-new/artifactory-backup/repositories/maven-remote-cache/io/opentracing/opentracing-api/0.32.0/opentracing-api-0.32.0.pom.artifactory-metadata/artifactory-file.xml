@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/opentracing-api/0.32.0/opentracing-api-0.32.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-api-0.32.0.pom</name>
+  <created>1576861441249</created>
+  <lastModified>1553550522000</lastModified>
+  <size>1859</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861441250</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>3b4e0b728fb4147e4eb84dc619a684bd60556181</original>
+          <actual>3b4e0b728fb4147e4eb84dc619a684bd60556181</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>165ed045235b0b366639fd22fab49a5a</original>
+          <actual>165ed045235b0b366639fd22fab49a5a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>88ff9df689f7b91ac161f48294ff9095c2dcf088fb9c28ce9e8d681e40524a69</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

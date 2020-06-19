@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"31b231eddd00e22788d41d12d0599a70"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>translate ecdsa signatures between asn.1/der and jose-style concatenation</npm.description>
+  <npm.keywords>["ecdsa","der","asn.1","jwt","jwa","jsonwebtoken","jose"]</npm.keywords>
+  <npm.name>ecdsa-sig-formatter</npm.name>
+  <npm.version>1.0.11</npm.version>
+</properties>

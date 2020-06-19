@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"9a084b0e745277fa5f051d7a9d79523e"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>test whether an object looks like a promises-a+ promise</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>is-promise</npm.name>
+  <npm.version>2.1.0</npm.version>
+</properties>

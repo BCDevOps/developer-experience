@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"effb58881c1aca12da9d3a18335bdc3f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>check if your code is running as an npm script</npm.description>
+  <npm.keywords>["npm","is","check","detect","env","environment"]</npm.keywords>
+  <npm.name>is-npm</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

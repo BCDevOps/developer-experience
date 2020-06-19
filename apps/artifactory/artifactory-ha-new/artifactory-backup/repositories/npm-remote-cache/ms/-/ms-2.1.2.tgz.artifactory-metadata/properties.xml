@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"5a8310f20fd4b97c7f8eeaf65f896a7a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>tiny millisecond conversion utility</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>ms</npm.name>
+  <npm.version>2.1.2</npm.version>
+</properties>

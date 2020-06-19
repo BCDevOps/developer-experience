@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7782d75736a48d364b415c41df0855a4"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>unpipe a stream from all destinations</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>unpipe</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

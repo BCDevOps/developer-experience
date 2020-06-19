@@ -1,0 +1,37 @@
+{
+  "name" : "js-yaml",
+  "description" : "YAML 1.2 parser and serializer",
+  "version" : "3.13.1",
+  "author" : "Vladimir Zapparov <dervus.grim@gmail.com>",
+  "homepage" : "https://github.com/nodeca/js-yaml",
+  "repository" : "nodeca/js-yaml",
+  "contributors" : [ "Aleksey V Zapparov <ixti@member.fsf.org> (http://www.ixti.net/)", "Vitaly Puzrin <vitaly@rcdesign.ru> (https://github.com/puzrin)", "Martin Grenfell <martin.grenfell@gmail.com> (http://got-ravings.blogspot.com)" ],
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/js-yaml/-/js-yaml-3.13.1.tgz",
+    "shasum" : "aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  },
+  "dependencies" : {
+    "argparse" : "^1.0.7",
+    "esprima" : "^4.0.0"
+  },
+  "devDependencies" : {
+    "ansi" : "^0.3.1",
+    "benchmark" : "^2.1.4",
+    "browserify" : "^16.2.2",
+    "codemirror" : "^5.13.4",
+    "eslint" : "^4.1.1",
+    "fast-check" : "1.1.3",
+    "istanbul" : "^0.4.5",
+    "mocha" : "^5.2.0",
+    "uglify-js" : "^3.0.1"
+  },
+  "keywords" : [ "yaml", "parser", "serializer", "pyyaml" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "lib/", "bin/", "dist/" ],
+  "bin" : {
+    "js-yaml" : "bin/js-yaml.js"
+  },
+  "scripts" : {
+    "test" : "make test"
+  }
+}

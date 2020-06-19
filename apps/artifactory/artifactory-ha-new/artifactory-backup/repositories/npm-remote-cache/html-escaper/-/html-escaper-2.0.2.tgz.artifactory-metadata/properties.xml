@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"81b8d8f735c3d68acd4c6a5cf0b8e5de"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>fast and safe way to escape and unescape &amp;&lt;&gt;'" chars</npm.description>
+  <npm.keywords>["html","escape","encode","unescape","decode","entities"]</npm.keywords>
+  <npm.name>html-escaper</npm.name>
+  <npm.version>2.0.2</npm.version>
+</properties>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"313f83d1e7db384ad942e074c9935d1a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>use the system's native `realpath`</npm.description>
+  <npm.keywords>["realpath"]</npm.keywords>
+  <npm.name>realpath-native</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

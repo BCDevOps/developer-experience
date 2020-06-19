@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"42ec151186ae4bd9980a212083d98bbe"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>returns an array with only the unique values from the first array, by excluding all values from additional arrays using strict equality for comparisons.</npm.description>
+  <npm.keywords>["arr","array","array differ","array-differ","diff","differ","difference"]</npm.keywords>
+  <npm.name>arr-diff</npm.name>
+  <npm.version>4.0.0</npm.version>
+</properties>

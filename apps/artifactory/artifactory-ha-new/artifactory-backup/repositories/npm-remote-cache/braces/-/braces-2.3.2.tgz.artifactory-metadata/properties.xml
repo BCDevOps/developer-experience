@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c0b57e8c8e11d32d2bd8879ab71f248f"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>bash-like brace expansion, implemented in javascript. safer than other brace expansion libs, with complete support for the bash 4.3 braces specification, without sacrificing speed.</npm.description>
+  <npm.keywords>["alpha","alphabetical","bash","brace","braces","expand","expansion","filepath","fill","fs","glob","globbing","letter","match","matches","matching","number","numerical","path","range","ranges","sh"]</npm.keywords>
+  <npm.name>braces</npm.name>
+  <npm.version>2.3.2</npm.version>
+</properties>

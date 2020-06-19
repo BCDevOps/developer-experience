@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0d3a4c05ac40e48fc0e164ad211803f3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>domain name parser based on the public suffix list</npm.description>
+  <npm.keywords>["publicsuffix","publicsuffixlist"]</npm.keywords>
+  <npm.name>psl</npm.name>
+  <npm.version>1.4.0</npm.version>
+</properties>

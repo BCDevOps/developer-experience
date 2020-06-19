@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ip/ip-1.1.5.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ip-1.1.5.json</name>
+  <created>1576003397095</created>
+  <lastModified>1576003397077</lastModified>
+  <size>736</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003397095</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>e3337103b974739f01d35dc02a9a30b5e78f4819</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6909a83ea4bca2890271a4003c88af6f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>12376abe747c5860c6b35a5467e12876201500f8f22bbc0e03804b13240079b1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

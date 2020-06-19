@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/expect/expect-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>expect-25.2.6.json</name>
+  <created>1585853551699</created>
+  <lastModified>1585853551667</lastModified>
+  <size>1135</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853551699</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>95e64c262b3a9ef02cf9aeba0414ded78e066bc2</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d040c82728cade409057b612bc31ad51</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4f940a07a6b72040499646eae1195cad34a6adc4f900e272a19daed693431be4</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

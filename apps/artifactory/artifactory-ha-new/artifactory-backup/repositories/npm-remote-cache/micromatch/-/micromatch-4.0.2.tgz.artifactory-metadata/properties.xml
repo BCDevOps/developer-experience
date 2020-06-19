@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2d80393d223d4305329529c7e4f906e0"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>glob matching for javascript/node.js. a replacement and faster alternative to minimatch and multimatch.</npm.description>
+  <npm.keywords>["bash","bracket","character-class","expand","expansion","expression","extglob","extglobs","file","files","filter","find","glob","globbing","globs","globstar","lookahead","lookaround","lookbehind","match","matcher","matches","matching","micromatch","minimatch","multimatch","negate","negation","path","pattern","patterns","posix","regex","regexp","regular","shell","star","wildcard"]</npm.keywords>
+  <npm.name>micromatch</npm.name>
+  <npm.version>4.0.2</npm.version>
+</properties>

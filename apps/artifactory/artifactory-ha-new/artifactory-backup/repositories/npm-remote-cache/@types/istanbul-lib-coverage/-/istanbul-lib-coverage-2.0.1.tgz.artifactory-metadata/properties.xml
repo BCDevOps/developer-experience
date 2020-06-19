@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"003f3ac5b3129856a4cab4002d7f7202"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>typescript definitions for istanbul-lib-coverage</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@types/istanbul-lib-coverage</npm.name>
+  <npm.version>2.0.1</npm.version>
+</properties>

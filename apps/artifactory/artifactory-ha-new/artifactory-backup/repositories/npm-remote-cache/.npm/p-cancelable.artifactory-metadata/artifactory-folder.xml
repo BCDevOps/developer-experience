@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/p-cancelable</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>p-cancelable</name>
+  <created>1585853578349</created>
+  <lastModified>1585853578349</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853578349</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

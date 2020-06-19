@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ansi-colors</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>ansi-colors</name>
+  <created>1576004965388</created>
+  <lastModified>1576004965388</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576004965388</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

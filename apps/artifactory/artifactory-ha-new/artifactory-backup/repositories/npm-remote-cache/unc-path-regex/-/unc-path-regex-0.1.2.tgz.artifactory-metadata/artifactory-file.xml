@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>unc-path-regex/-/unc-path-regex-0.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>unc-path-regex-0.1.2.tgz</name>
+  <created>1576003659891</created>
+  <lastModified>1527452734000</lastModified>
+  <size>2206</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003659892</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9d3c9bf76116484d419d6b80c103c93e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6bbaa9a0f445290ffceac14be915b25526732cd782ff27a4bed93984c35590f1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

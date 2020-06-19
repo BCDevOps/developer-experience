@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/nanomatch/nanomatch-1.2.13.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>nanomatch-1.2.13.json</name>
+  <created>1576003419675</created>
+  <lastModified>1576003419487</lastModified>
+  <size>2708</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003419676</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f10f00992fa8d1f55eba28916d82f4ac09241623</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3524eae54ea4b7126a859fb7360a7ba3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>809d2046a3bd065d6fd83f89b64d889127ff6922e2225767db4770ba7d592b62</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

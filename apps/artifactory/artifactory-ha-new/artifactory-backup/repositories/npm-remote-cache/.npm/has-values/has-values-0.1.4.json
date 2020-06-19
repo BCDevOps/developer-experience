@@ -1,0 +1,43 @@
+{
+  "name" : "has-values",
+  "description" : "Returns true if any values exist, false if empty. Works for booleans, functions, numbers, strings, nulls, objects and arrays. ",
+  "version" : "0.1.4",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/has-values",
+  "repository" : "jonschlinkert/has-values",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/has-values/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/has-values/-/has-values-0.1.4.tgz",
+    "shasum" : "6d61de95d91dfca9b9a02089ad384bff8f62b771"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.7",
+    "mocha" : "^2.4.5"
+  },
+  "keywords" : [ "array", "boolean", "empty", "find", "function", "has", "hasOwn", "javascript", "js", "key", "keys", "node.js", "null", "number", "object", "properties", "property", "string", "type", "util", "utilities", "utility", "value" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "run" : true,
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "has-value", "isobject", "is-plain-object" ]
+    },
+    "reflinks" : [ "verb" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

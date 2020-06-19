@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/jackson/jackson-bom/2.9.8/jackson-bom-2.9.8.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jackson-bom-2.9.8.pom</name>
+  <created>1576861434061</created>
+  <lastModified>1544908130000</lastModified>
+  <size>12389</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861434062</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>71a71bf9ed72c6902fdaabf6fccd376016492884</original>
+          <actual>71a71bf9ed72c6902fdaabf6fccd376016492884</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>0113932cc1a915f2e46b570f7fa4b332</original>
+          <actual>0113932cc1a915f2e46b570f7fa4b332</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>fbee567358aa7b6a10a0b59c75a11adfdb128a3a7ddc4f409ea7109b34b451f9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7f3c0100192dc7fea190cffd4093f6d7"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>is this value a js regex? works cross-realm/iframe, and despite es6 @@tostringtag</npm.description>
+  <npm.keywords>["regex","regexp","is","regular expression","regular","expression"]</npm.keywords>
+  <npm.name>is-regex</npm.name>
+  <npm.version>1.0.5</npm.version>
+</properties>

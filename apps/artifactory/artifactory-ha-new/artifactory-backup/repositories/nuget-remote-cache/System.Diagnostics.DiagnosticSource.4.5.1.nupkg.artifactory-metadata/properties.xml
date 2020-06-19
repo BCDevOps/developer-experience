@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6647CBBF84812</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation. All rights reserved.</nuget.copyright>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>::.NETPortable4.5-Profile111</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Collections:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Collections:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Tracing:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Tracing:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETStandard1.1</nuget.dependency>
+  <nuget.dependency>System.Threading:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.description>Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)
+
+Commonly Used Types:
+System.Diagnostics.DiagnosticListener
+System.Diagnostics.DiagnosticSource
+ 
+02b11eeee1fbc5f3ef43a1452fe07efd25fa1715 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>/tu8MfTToEdI+I0L10NkGXqGuLDIvmkWqjnaSit3o8i5SZz8A0kz9YLxfZltFKbxmsOpYqnyoysPvPlQMZVwxg==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.5</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>System:.NETFramework4.5</nuget.frameworks>
+  <nuget.frameworks>System:.NETFramework4.6</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Diagnostics.DiagnosticSource</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Diagnostics.DiagnosticSource</nuget.title>
+  <nuget.version>4.5.1</nuget.version>
+</properties>

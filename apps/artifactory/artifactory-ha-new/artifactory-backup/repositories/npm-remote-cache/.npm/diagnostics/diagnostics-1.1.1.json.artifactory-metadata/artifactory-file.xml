@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/diagnostics/diagnostics-1.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>diagnostics-1.1.1.json</name>
+  <created>1576008062682</created>
+  <lastModified>1576008062288</lastModified>
+  <size>1234</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008062683</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>d63e494fb8ba21c42856567a36c043d4ca4c7a6d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>b7a0fb13d66dceec2735010b316ad2f0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3a0a257da488a3960300ed27254c302f08e69655e8798a5537c8c0e786529d97</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>csv/-/csv-5.3.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>csv-5.3.2.tgz</name>
+  <created>1585871241804</created>
+  <lastModified>1583265912000</lastModified>
+  <size>3800</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585871241804</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>50b344e25dfbb8c62684a1bcec18c22468b2161e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b7ce80571819766a21926d06bd4ef538</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d60f77c88dcca6bd8d9fc54a29ff40ce7cb35dec4ca47c795939c427f66664a7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

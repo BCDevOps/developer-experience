@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-object-rest-spread/@babel/plugin-syntax-object-rest-spread-7.7.4.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-syntax-object-rest-spread-7.7.4.json</name>
+  <created>1576008054474</created>
+  <lastModified>1576008053978</lastModified>
+  <size>905</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008054577</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2588cf1a26c74f70e2fbd3fa0372ca146c168a2b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>d24c00ea0b29831f97ec5eb3897770a0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7aa6b13fa0880a823ddaf58d27f4a65cf955ed0a5c65b8e6130e24128ea95562</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

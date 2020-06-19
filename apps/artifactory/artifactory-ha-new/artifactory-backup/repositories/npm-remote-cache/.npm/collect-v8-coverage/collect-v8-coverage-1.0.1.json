@@ -1,0 +1,44 @@
+{
+  "name" : "collect-v8-coverage",
+  "version" : "1.0.1",
+  "repository" : "SimenB/collect-v8-coverage",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz",
+    "shasum" : "cc2c8e94fc18bbdffe64d6534570c8a673b27f59"
+  },
+  "devDependencies" : {
+    "@commitlint/cli" : "^8.2.0",
+    "@commitlint/config-conventional" : "^8.2.0",
+    "@semantic-release/changelog" : "^3.0.6",
+    "@semantic-release/git" : "^7.0.18",
+    "husky" : "^3.0.9",
+    "lint-staged" : "^9.4.2",
+    "prettier" : "^1.19.1",
+    "semantic-release" : "^15.13.31"
+  },
+  "license" : "MIT",
+  "files" : [ "CHANGELOG.md", "index.js", "index.d.ts" ],
+  "scripts" : {
+  },
+  "lint-staged" : {
+    "*.{js,ts,md,json}" : [ "prettier --write", "git add" ]
+  },
+  "types" : "index.d.ts",
+  "husky" : {
+    "hooks" : {
+      "commit-msg" : "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit" : "lint-staged"
+    }
+  },
+  "commitlint" : {
+    "extends" : [ "@commitlint/config-conventional" ]
+  },
+  "release" : {
+    "plugins" : [ "@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git", "@semantic-release/github" ]
+  },
+  "prettier" : {
+    "singleQuote" : true,
+    "trailingComma" : "all"
+  }
+}

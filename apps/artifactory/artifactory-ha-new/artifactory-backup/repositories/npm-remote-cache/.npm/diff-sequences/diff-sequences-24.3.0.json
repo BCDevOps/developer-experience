@@ -1,0 +1,32 @@
+{
+  "name" : "diff-sequences",
+  "description" : "Compare items in two sequences to find a longest common subsequence",
+  "version" : "24.3.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/facebook/jest.git",
+    "directory" : "packages/diff-sequences"
+  },
+  "engines" : {
+    "node" : ">= 6"
+  },
+  "main" : "build/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/diff-sequences/-/diff-sequences-24.3.0.tgz",
+    "shasum" : "0f20e8a1df1abddaf4d9c226680952e64118b975"
+  },
+  "devDependencies" : {
+    "benchmark" : "^2.1.4",
+    "diff" : "^4.0.1"
+  },
+  "keywords" : [ "fast", "linear", "space", "callback", "diff" ],
+  "license" : "MIT",
+  "scripts" : {
+    "perf" : "node --expose-gc perf/index.js"
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "3a7a4f3a3f5489ac8e07dcddf76bb949c482ec87",
+  "types" : "build/index.d.ts"
+}

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/wordwrap/wordwrap-0.0.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>wordwrap-0.0.3.json</name>
+  <created>1576003117335</created>
+  <lastModified>1576003117314</lastModified>
+  <size>897</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003117335</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c8702fb8c0bc6983564deb36ff6e06bd33448356</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>6a244489c209558f13a956f1893990dd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>75f87a37575d3750b496bf02cc50d60d844e36657e50be2d1434d454d150698f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>com/fasterxml/oss-parent/28/oss-parent-28.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>oss-parent-28.pom</name>
+  <created>1576861392830</created>
+  <lastModified>1487954517000</lastModified>
+  <size>20015</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861392831</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>dbba8c0b4673e1fe6e21ba8a7ffa6bf4c132bf53</original>
+          <actual>dbba8c0b4673e1fe6e21ba8a7ffa6bf4c132bf53</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>6a7f71ad1894171e23c6fc175ac0dbbc</original>
+          <actual>6a7f71ad1894171e23c6fc175ac0dbbc</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c4c369e36b8820ad26d2e6c70ff44ad99efafe19399a5d1178e9ea82f4d2fd38</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

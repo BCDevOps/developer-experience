@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/sentry</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>sentry</name>
+  <created>1576861362338</created>
+  <lastModified>1576861362338</lastModified>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861362338</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

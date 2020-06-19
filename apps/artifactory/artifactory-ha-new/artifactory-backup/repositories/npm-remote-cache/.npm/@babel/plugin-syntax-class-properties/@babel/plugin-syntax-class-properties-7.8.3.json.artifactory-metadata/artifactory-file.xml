@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@babel/plugin-syntax-class-properties/@babel/plugin-syntax-class-properties-7.8.3.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plugin-syntax-class-properties-7.8.3.json</name>
+  <created>1586464377953</created>
+  <lastModified>1586464377917</lastModified>
+  <size>895</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1586464377954</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>22584c36df9a21b9ed2f01bbf321e73388b17c0c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e71bf863d809e807a3b9bbe389da6e38</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f006f8aa3b80fd11903790e697b7d148b9bd2dba93fb95cd88925f36bd9c52fe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-maven-remote-cache</repoKey>
+    <path>aaron-santos/lwjgl/3.0.0rc1</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>3.0.0rc1</name>
+  <created>1575478381800</created>
+  <lastModified>1575478381800</lastModified>
+  <additionalInfo>
+    <createdBy>pwei1018@github</createdBy>
+    <modifiedBy>pwei1018@github</modifiedBy>
+    <lastUpdated>1575478381800</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

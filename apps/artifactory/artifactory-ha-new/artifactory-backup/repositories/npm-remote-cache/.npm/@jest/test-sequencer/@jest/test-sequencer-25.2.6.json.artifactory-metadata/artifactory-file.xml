@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@jest/test-sequencer/@jest/test-sequencer-25.2.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>test-sequencer-25.2.6.json</name>
+  <created>1585853532320</created>
+  <lastModified>1585853532288</lastModified>
+  <size>926</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853532321</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>fbda5247785a1c8fc372c1c2ad1e3769d0891aff</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e9eed452a7c517844f3ec2af2b0dec57</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2b34cdd2554bc2fa78ba0143ab0ae9502d0d5041910c1c7201e5ca823815082a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

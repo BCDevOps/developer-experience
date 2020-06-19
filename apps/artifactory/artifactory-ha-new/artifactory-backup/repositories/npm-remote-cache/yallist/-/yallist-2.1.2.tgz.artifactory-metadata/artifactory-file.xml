@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>yallist/-/yallist-2.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>yallist-2.1.2.tgz</name>
+  <created>1576003608392</created>
+  <lastModified>1527460495000</lastModified>
+  <size>4239</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003608392</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1c11f9218f076089a47dd512f93c6699a6a81d52</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c75ab65aa7ee9067694839e685e3b39a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c7b31084d3525e17314b46c28e58ceb6cd8f10a9ff926daf48303976f8acb0b2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

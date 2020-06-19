@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/ansi-colors/ansi-colors-4.1.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ansi-colors-4.1.1.json</name>
+  <created>1576008546556</created>
+  <lastModified>1576008546509</lastModified>
+  <size>2103</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008546557</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f72020c5ea089f7df10e4171a0c80fc74188c697</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>2d608279db2dcceb1a07bffb9c82fe54</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9c1cafd632aa199682cacd80f95b46d4ebc9afb860707beb37a470203c7fa42b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

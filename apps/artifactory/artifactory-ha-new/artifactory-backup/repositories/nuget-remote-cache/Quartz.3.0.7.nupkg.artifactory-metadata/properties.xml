@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D62C513279D034</artifactory.internal.etag>
+  <nuget.authors>Marko Lahma</nuget.authors>
+  <nuget.copyright>Copyright Marko Lahma</nuget.copyright>
+  <nuget.dependency>Microsoft.CSharp:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5.2</nuget.dependency>
+  <nuget.dependency>System.Collections.NonGeneric:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Collections.Specialized:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.ComponentModel.TypeConverter:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Configuration.ConfigurationManager:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Data.Common:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Data.SqlClient:4.5.1:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Net.NameResolution:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.TypeExtensions:4.5.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Runtime.Serialization.Xml:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Threading.Thread:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Xml.XmlSerializer:4.3.0:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Quartz Scheduling Framework for .NET</nuget.description>
+  <nuget.digest>3vCJ/eJQzEne1ZocNftmPBjuA0vFHs8rOG3bQcSsB9fbQuZpmkrmOH+0Iq7mlibSbR9f1VV4TUMnkkbPUd7Kqw==</nuget.digest>
+  <nuget.frameworks>Microsoft.CSharp:.NETFramework4.5.2</nuget.frameworks>
+  <nuget.frameworks>System.Configuration:.NETFramework4.5.2</nuget.frameworks>
+  <nuget.frameworks>System.Runtime.Remoting:.NETFramework4.5.2</nuget.frameworks>
+  <nuget.id>Quartz</nuget.id>
+  <nuget.licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</nuget.licenseUrl>
+  <nuget.owners>Marko Lahma</nuget.owners>
+  <nuget.projectUrl>https://www.quartz-scheduler.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://github.com/quartznet/quartznet/releases</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>scheduling tasks jobs triggers scheduler threading</nuget.tags>
+  <nuget.title>Quartz.NET</nuget.title>
+  <nuget.version>3.0.7</nuget.version>
+</properties>

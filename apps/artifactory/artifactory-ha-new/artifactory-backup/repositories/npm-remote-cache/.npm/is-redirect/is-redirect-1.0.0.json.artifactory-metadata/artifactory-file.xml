@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/is-redirect/is-redirect-1.0.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>is-redirect-1.0.0.json</name>
+  <created>1576003654281</created>
+  <lastModified>1576003654262</lastModified>
+  <size>786</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003654282</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>5ffad12a89ad03de825f16aea34747f052f338d0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>04935f26a88635f962e8e699a64dd85a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5a6898bbb3beb97bce886373682942cfbd75fe670f430ed4df4a58930b231d20</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

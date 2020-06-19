@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"e89b0ec0f3c1be57d27e6a110c6d7dd8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>remove a byte order mark (bom) from a buffer.</npm.description>
+  <npm.keywords>["bom","buffer","byte-order-mark","normalize","remove","strip","strip-bom","strip-bom-buffer","strip-bom-string"]</npm.keywords>
+  <npm.name>remove-bom-buffer</npm.name>
+  <npm.version>3.0.0</npm.version>
+</properties>

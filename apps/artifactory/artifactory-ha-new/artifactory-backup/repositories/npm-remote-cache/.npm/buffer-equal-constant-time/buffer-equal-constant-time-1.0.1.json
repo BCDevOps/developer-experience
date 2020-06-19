@@ -1,0 +1,20 @@
+{
+  "name" : "buffer-equal-constant-time",
+  "description" : "Constant-time comparison of Buffers",
+  "version" : "1.0.1",
+  "author" : "GoInstant Inc., a salesforce.com company",
+  "repository" : "git@github.com:goinstant/buffer-equal-constant-time.git",
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz",
+    "shasum" : "f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
+  },
+  "devDependencies" : {
+    "mocha" : "~1.15.1"
+  },
+  "keywords" : [ "buffer", "equal", "constant-time", "crypto" ],
+  "license" : "BSD-3-Clause",
+  "scripts" : {
+    "test" : "mocha test.js"
+  }
+}

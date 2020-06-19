@@ -1,0 +1,20 @@
+{
+  "name" : "to-snake-case",
+  "description" : "Convert a string to snake case.",
+  "version" : "1.0.0",
+  "repository" : "git://github.com/ianstormtaylor/to-snake-case.git",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/to-snake-case/-/to-snake-case-1.0.0.tgz",
+    "shasum" : "ce746913897946019a87e62edfaeaea4c608ab8c"
+  },
+  "dependencies" : {
+    "to-space-case" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "mocha" : "^2.3.4"
+  },
+  "keywords" : [ "snake", "case", "snakecase", "string" ],
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

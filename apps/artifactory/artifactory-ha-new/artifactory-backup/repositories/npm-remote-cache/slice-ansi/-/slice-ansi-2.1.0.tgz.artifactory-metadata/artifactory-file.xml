@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>slice-ansi/-/slice-ansi-2.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>slice-ansi-2.1.0.tgz</name>
+  <created>1576008064675</created>
+  <lastModified>1548450997000</lastModified>
+  <size>2363</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008064678</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cacd7693461a637a5788d92a7dd4fba068e81636</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>7b4920c7268ad2dedd019908729719b5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>44144ec2302bffdee1331ec593022c9851e5682c6777da0717e368ef01947b08</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

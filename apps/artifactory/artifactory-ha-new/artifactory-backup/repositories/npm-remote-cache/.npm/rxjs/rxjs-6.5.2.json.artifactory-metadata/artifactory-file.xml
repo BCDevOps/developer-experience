@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/rxjs/rxjs-6.5.2.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>rxjs-6.5.2.json</name>
+  <created>1579828136175</created>
+  <lastModified>1579828136011</lastModified>
+  <size>4094</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828136176</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>f16791d7dda94faf1bed5d79368a04ca0ae5816c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>51087ac09ae9898d4b06f7389f1862e2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>51eeb52834537691b33630cee392b40d0afeee70382785f94c143982ddb51d97</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

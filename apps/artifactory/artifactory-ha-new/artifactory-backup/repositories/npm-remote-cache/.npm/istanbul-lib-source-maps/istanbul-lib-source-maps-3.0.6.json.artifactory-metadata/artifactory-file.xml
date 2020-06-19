@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/istanbul-lib-source-maps/istanbul-lib-source-maps-3.0.6.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>istanbul-lib-source-maps-3.0.6.json</name>
+  <created>1576003108190</created>
+  <lastModified>1576003108157</lastModified>
+  <size>1181</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003108190</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>7ae4ac751079b67ddccadee078c8ec8f896ba372</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>9f83cd8d80407f6607b795bb404c8b95</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>28d3551907556c5bf815ac420c0759eff3d77a4ad46755d5e36bcf5d8b33acde</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

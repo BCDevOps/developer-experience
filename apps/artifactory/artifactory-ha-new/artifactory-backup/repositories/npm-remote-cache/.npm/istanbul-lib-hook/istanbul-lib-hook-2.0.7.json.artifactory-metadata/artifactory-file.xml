@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/istanbul-lib-hook/istanbul-lib-hook-2.0.7.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>istanbul-lib-hook-2.0.7.json</name>
+  <created>1579828373602</created>
+  <lastModified>1579828373556</lastModified>
+  <size>976</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1579828373603</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>0a7a84b72d2ae01abd76236053066e93387a837f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1f728924e2b7202b174ac32ec0b7d4e0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d645b2e1642cbddebfdbc50fa373b94f025a750d2c2b2a7f2fa6ce6a9befc2e9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

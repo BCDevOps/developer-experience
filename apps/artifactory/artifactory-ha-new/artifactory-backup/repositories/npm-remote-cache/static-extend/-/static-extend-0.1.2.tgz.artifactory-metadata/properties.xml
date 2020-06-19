@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"685c7b45bd48268f9eeffbccecb2d313"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>adds a static `extend` method to a class, to simplify inheritance. extends the static properties, prototype properties, and descriptors from a `parent` constructor onto `child` constructors.</npm.description>
+  <npm.keywords>["class","ctor","descriptor","extend","extends","inherit","inheritance","merge","method","prop","properties","property","prototype"]</npm.keywords>
+  <npm.name>static-extend</npm.name>
+  <npm.version>0.1.2</npm.version>
+</properties>

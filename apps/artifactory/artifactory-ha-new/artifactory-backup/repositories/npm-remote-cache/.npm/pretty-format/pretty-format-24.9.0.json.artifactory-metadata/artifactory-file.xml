@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/pretty-format/pretty-format-24.9.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>pretty-format-24.9.0.json</name>
+  <created>1576008067482</created>
+  <lastModified>1576008067202</lastModified>
+  <size>1248</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008067487</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>b42f3e39aa64246e55f07dc648283aaa2e80214f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>ab14f0d75a249bf75f2ae0cd7128be40</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>280576b6bd8a52a9cc6f408674c76e38a03d2bd92a366d7e8b7401987ff70d4d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

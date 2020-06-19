@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6f2d4f91146881c499fd785f6b68cc52"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>handlebars provides the power necessary to let you build semantic templates effectively with no frustration</npm.description>
+  <npm.keywords>["handlebars","mustache","template","html"]</npm.keywords>
+  <npm.name>handlebars</npm.name>
+  <npm.version>4.3.5</npm.version>
+</properties>

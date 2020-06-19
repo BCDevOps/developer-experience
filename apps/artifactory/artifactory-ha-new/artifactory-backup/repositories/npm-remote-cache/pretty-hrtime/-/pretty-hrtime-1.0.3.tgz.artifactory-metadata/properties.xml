@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ab8842bbafb579ee66a6cf32c6510c5a"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>process.hrtime() to words</npm.description>
+  <npm.keywords>["hrtime","benchmark"]</npm.keywords>
+  <npm.name>pretty-hrtime</npm.name>
+  <npm.version>1.0.3</npm.version>
+</properties>

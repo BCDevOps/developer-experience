@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/kubernetes.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>kubernetes.html</name>
+  <created>1574234371216</created>
+  <lastModified>1574234371170</lastModified>
+  <size>22284</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1574234371217</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>48ba973467bc265b0639fff868e7aeee6d752e7c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>64ded40868227d1aac56aed9a2c17e1a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c7dca755894bd3c331c1bc1e47dce0a36e60fb52954efade8be7a5e7f39c2955</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/string-length/string-length-3.1.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>string-length-3.1.0.json</name>
+  <created>1585853552563</created>
+  <lastModified>1585853552534</lastModified>
+  <size>1032</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1585853552564</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>eee0846e4ba3de297506f1663476ec3fb9eab4a7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>8775ba63ad4a82f6148cdc550faba7b6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>766bb33385f0c84cde72e3bcf4728bb71972c9de867037a72672a10b7a17f425</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

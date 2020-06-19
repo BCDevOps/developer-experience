@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>io/opentracing/contrib/opentracing-spring-web/2.1.3/opentracing-spring-web-2.1.3.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opentracing-spring-web-2.1.3.jar</name>
+  <created>1576861442211</created>
+  <lastModified>1565945362000</lastModified>
+  <size>46163</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861442212</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>51680aab8b97b65cb6476c65b9a9511fdee24773</original>
+          <actual>51680aab8b97b65cb6476c65b9a9511fdee24773</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>6ab7ad6e420cdc7df14da71f1f9ab137</original>
+          <actual>6ab7ad6e420cdc7df14da71f1f9ab137</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d30c4f6825b0b2e90694497559397cbb6e97ce8737457174bbfa446f46bf0882</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

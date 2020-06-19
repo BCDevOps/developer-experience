@@ -1,0 +1,35 @@
+{
+  "name" : "responselike",
+  "description" : "A response-like object for mocking a Node.js HTTP response stream",
+  "version" : "1.0.2",
+  "author" : "lukechilds",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lukechilds/responselike.git"
+  },
+  "main" : "src/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/responselike/-/responselike-1.0.2.tgz",
+    "shasum" : "918720ef3b631c5642be068f15ade5a46f4ba1e7"
+  },
+  "dependencies" : {
+    "lowercase-keys" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "^0.22.0",
+    "coveralls" : "^2.13.1",
+    "eslint-config-xo-lukechilds" : "^1.0.0",
+    "get-stream" : "^3.0.0",
+    "nyc" : "^11.1.0",
+    "xo" : "^0.19.0"
+  },
+  "keywords" : [ "http", "https", "response", "mock", "request", "responselike" ],
+  "license" : "MIT",
+  "scripts" : {
+    "test" : "xo && nyc ava",
+    "coverage" : "nyc report --reporter=text-lcov | coveralls"
+  },
+  "xo" : {
+    "extends" : "xo-lukechilds"
+  }
+}

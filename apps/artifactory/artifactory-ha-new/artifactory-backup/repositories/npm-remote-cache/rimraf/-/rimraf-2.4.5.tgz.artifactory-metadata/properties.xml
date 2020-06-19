@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"3dc671102d3aed07906c3b99bd83c58c"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a deep deletion module for node (like `rm -rf`)</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>rimraf</npm.name>
+  <npm.version>2.4.5</npm.version>
+</properties>

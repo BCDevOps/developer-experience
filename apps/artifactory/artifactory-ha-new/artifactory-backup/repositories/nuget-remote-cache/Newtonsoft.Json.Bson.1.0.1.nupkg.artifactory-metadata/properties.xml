@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6324D62D36BBC</artifactory.internal.etag>
+  <nuget.authors>James Newton-King</nuget.authors>
+  <nuget.copyright>Copyright © James Newton-King 2017</nuget.copyright>
+  <nuget.dependency>NETStandard.Library:1.6.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:10.0.1:.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>Newtonsoft.Json:10.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.description>Json.NET BSON adds support for reading and writing BSON</nuget.description>
+  <nuget.digest>W5Ke5xei9yS0ljQZuT75VgSp5M43eCPm5hHAelvKyGGU4dV7hYCmtwdsxoADb/exO6pYHeu/Iki43TdYPzfESQ==</nuget.digest>
+  <nuget.iconUrl>http://www.newtonsoft.com/content/images/nugeticon.png</nuget.iconUrl>
+  <nuget.id>Newtonsoft.Json.Bson</nuget.id>
+  <nuget.licenseUrl>https://raw.github.com/JamesNK/Newtonsoft.Json.Bson/master/LICENSE.md</nuget.licenseUrl>
+  <nuget.owners>James Newton-King</nuget.owners>
+  <nuget.projectUrl>http://www.newtonsoft.com/json</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>bson</nuget.tags>
+  <nuget.title>Json.NET BSON</nuget.title>
+  <nuget.version>1.0.1</nuget.version>
+</properties>

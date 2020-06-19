@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"0c2c460c7ac767b7c00cb1e3b9984397"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>http agent that keeps socket connections alive between keep-alive requests. formerly part of mikeal/request, now a standalone module.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>forever-agent</npm.name>
+  <npm.version>0.6.1</npm.version>
+</properties>

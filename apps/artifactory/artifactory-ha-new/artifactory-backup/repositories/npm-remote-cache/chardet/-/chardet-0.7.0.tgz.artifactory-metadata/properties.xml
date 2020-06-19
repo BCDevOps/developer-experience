@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"2d3af06beead0821b7acbbf3ff302f64"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>character detector</npm.description>
+  <npm.keywords>["encoding","character","utf8","detector","chardet","icu"]</npm.keywords>
+  <npm.name>chardet</npm.name>
+  <npm.version>0.7.0</npm.version>
+</properties>

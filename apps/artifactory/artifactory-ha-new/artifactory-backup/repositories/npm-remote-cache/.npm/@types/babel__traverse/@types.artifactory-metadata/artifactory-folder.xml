@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/@types/babel__traverse/@types</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>@types</name>
+  <created>1576008061585</created>
+  <lastModified>1576008061585</lastModified>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008061585</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

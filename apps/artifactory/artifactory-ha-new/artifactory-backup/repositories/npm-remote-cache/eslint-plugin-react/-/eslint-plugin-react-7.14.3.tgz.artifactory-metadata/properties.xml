@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"dd72a5b6899d398bc82ae2098e34c82d"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>react specific linting rules for eslint</npm.description>
+  <npm.keywords>["eslint","eslint-plugin","eslintplugin","react"]</npm.keywords>
+  <npm.name>eslint-plugin-react</npm.name>
+  <npm.version>7.14.3</npm.version>
+</properties>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>opener/-/opener-1.5.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>opener-1.5.1.tgz</name>
+  <created>1579828381389</created>
+  <lastModified>1535426814000</lastModified>
+  <size>3046</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828381389</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1ef0fb0ac1a95239ed5a60f3ecbe7237</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cdcbf03705e52bf60e2941da959b30bd3cd1aa1e63a38e6c8aa7cb154b014c79</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

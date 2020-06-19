@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/deep-extend/deep-extend-0.6.0.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>deep-extend-0.6.0.json</name>
+  <created>1576003657383</created>
+  <lastModified>1576003657357</lastModified>
+  <size>1452</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003657383</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>075bff11229f7076ae1a2e85bf079e008d8f0c3b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>346858a8c6c66a270189d821bc23890b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>1e9938977825784b8526647a8edf6604a10e94c413ca3b0e44e54fda2be2b5c1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/istanbul-lib-coverage</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>istanbul-lib-coverage</name>
+  <created>1576003478229</created>
+  <lastModified>1576003478229</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003478229</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

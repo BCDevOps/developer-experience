@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"90c9ed2bc56bd39e6afa1c775d3bf6df"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>get your path prepended with locally installed binaries</npm.description>
+  <npm.keywords>["npm","run","path","package","bin","binary","binaries","script","cli","command-line","execute","executable"]</npm.keywords>
+  <npm.name>npm-run-path</npm.name>
+  <npm.version>4.0.1</npm.version>
+</properties>

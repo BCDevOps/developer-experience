@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>NConsole.3.9.6519.30868.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>NConsole.3.9.6519.30868.nupkg</name>
+  <created>1578496745851</created>
+  <lastModified>1542571559000</lastModified>
+  <size>70916</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578496745852</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ab8c99764fe7add1653514ba42a503e6cf15e055</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b65b29c754747401544845200d7b9fe2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7008b4ab363e96c9d8f030c359b95eed3177a8ebcbd49d276b6196a38f12e1af</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

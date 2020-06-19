@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.VisualStudio.Web.CodeGenerators.Mvc.3.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.VisualStudio.Web.CodeGenerators.Mvc.3.0.0.nupkg</name>
+  <created>1578432233093</created>
+  <lastModified>1569255042000</lastModified>
+  <size>1862132</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432233094</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>1581d39c5537ce7f28e8578cac4026303fe6eaea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b8b218fab66def96bb152263d1ff593d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>667595eea622bbe5d9f07afb36bb12544ee769f8f89e205ba26bc0c3343bc71e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

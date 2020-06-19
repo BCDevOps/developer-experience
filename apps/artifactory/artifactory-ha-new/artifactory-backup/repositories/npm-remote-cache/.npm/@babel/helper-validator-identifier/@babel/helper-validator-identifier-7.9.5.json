@@ -1,0 +1,23 @@
+{
+  "name" : "@babel/helper-validator-identifier",
+  "description" : "Validate identifier/keywords name",
+  "version" : "7.9.5",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-helper-validator-identifier",
+  "main" : "./lib/index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/@babel/helper-validator-identifier/-/helper-validator-identifier-7.9.5.tgz",
+    "shasum" : "90977a8e6fbf6b431a7dc31752eee233bf052d80"
+  },
+  "devDependencies" : {
+    "charcodes" : "^0.2.0",
+    "unicode-13.0.0" : "^0.8.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  },
+  "publishConfig" : {
+    "access" : "public"
+  },
+  "gitHead" : "5b97e77e030cf3853a147fdff81844ea4026219d",
+  "exports" : "./lib/index.js"
+}

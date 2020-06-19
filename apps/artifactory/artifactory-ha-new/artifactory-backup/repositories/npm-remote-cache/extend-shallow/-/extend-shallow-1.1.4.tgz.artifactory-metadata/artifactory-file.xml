@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>extend-shallow/-/extend-shallow-1.1.4.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>extend-shallow-1.1.4.tgz</name>
+  <created>1576003405784</created>
+  <lastModified>1527380039000</lastModified>
+  <size>2236</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003405785</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>19d6bf94dfc09d76ba711f39b872d21ff4dd9071</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>876eafdc63203283021ce5cf48ba089a</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9d778679696fad7a951cf8162524b2d9afed9d6d83d55d8e465cbab2a9ea86bc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

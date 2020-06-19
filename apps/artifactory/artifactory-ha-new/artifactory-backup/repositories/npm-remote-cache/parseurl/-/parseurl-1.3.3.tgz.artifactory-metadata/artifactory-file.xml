@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>parseurl/-/parseurl-1.3.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>parseurl-1.3.3.tgz</name>
+  <created>1576008068473</created>
+  <lastModified>1555388191000</lastModified>
+  <size>3952</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008068475</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>9da19e7bee8d12dff0513ed5b76957793bc2e8d4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2fd0b209274d78b79ba9c339fd88b8b2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>56ef4bfa11e097ce8196b26fa04b42d6091c32498fcab4478e6dd298435f021a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

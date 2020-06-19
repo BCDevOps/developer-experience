@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>safe-buffer/-/safe-buffer-5.1.2.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>safe-buffer-5.1.2.tgz</name>
+  <created>1576008065974</created>
+  <lastModified>1527438557000</lastModified>
+  <size>9822</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008065974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>991ec69d296e0313747d59bdfd2b745c35f8828d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>dc7142b470e0957c5c34098b6fced0ab</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e09206c60fccafb952c854af7629cbb031a98d6da2e143fb3aa3c8a48402aa22</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"14306688d4947a100f6cce5b00d07afd"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>a cache for managing namespaced sub-caches</npm.description>
+  <npm.keywords>["cache","fragment"]</npm.keywords>
+  <npm.name>fragment-cache</npm.name>
+  <npm.version>0.2.1</npm.version>
+</properties>

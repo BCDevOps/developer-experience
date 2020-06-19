@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/asyncio-nats-streaming.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>asyncio-nats-streaming.html</name>
+  <created>1574023031365</created>
+  <lastModified>1582154269628</lastModified>
+  <size>1560</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1582154269811</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>03e7a456720cc36a76dfe0e4306075e8e202f9f5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9bb8fa944b62c28e76d75bd2fa16dbd3</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2150df287b1b811256f3af7b2a9dac5f29497c37c3f8ca664f9594d098e0db88</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

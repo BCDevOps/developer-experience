@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>@types/supports-color/-/supports-color-5.3.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>supports-color-5.3.0.tgz</name>
+  <created>1576003065880</created>
+  <lastModified>1523393473000</lastModified>
+  <size>1591</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003065881</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>eb6a52e9531fb3ebcd401cec774d1bdfb571f793</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9c33b37c4f8c5820c7d2d0dab23e1ed6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>19115fb479c963354592e8d805d1b650eab0cc157df6b533ab0028bcafee0d7d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

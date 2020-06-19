@@ -1,0 +1,31 @@
+{
+  "name" : "decode-uri-component",
+  "description" : "A better decodeURIComponent",
+  "version" : "0.2.0",
+  "author" : {
+    "name" : "Sam Verschueren",
+    "email" : "sam.verschueren@gmail.com",
+    "url" : "github.com/SamVerschueren"
+  },
+  "repository" : "SamVerschueren/decode-uri-component",
+  "engines" : {
+    "node" : ">=0.10"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/decode-uri-component/-/decode-uri-component-0.2.0.tgz",
+    "shasum" : "eb3913333458775cb84cd1a1fae062106bb87545"
+  },
+  "devDependencies" : {
+    "ava" : "^0.17.0",
+    "coveralls" : "^2.13.1",
+    "nyc" : "^10.3.2",
+    "xo" : "^0.16.0"
+  },
+  "keywords" : [ "decode", "uri", "component", "decodeuricomponent", "components", "decoder", "url" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && nyc ava",
+    "coveralls" : "nyc report --reporter=text-lcov | coveralls"
+  }
+}

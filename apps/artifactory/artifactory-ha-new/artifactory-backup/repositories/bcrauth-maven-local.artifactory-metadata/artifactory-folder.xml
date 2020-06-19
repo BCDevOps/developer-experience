@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>bcrauth-maven-local</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1576618011732</created>
+  <lastModified>1576618011732</lastModified>
+  <additionalInfo>
+    <lastUpdated>1576618011732</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>decamelize</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>decamelize</name>
+  <created>1576003436150</created>
+  <lastModified>1576003436150</lastModified>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003436150</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

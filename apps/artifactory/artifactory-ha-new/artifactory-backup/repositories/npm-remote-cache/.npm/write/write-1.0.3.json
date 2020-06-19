@@ -1,0 +1,49 @@
+{
+  "name" : "write",
+  "description" : "Write data to a file, replacing the file if it already exists and creating any intermediate directories if they don't already exist. Thin wrapper around node's native fs methods.",
+  "version" : "1.0.3",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/write",
+  "repository" : "jonschlinkert/write",
+  "contributors" : [ "Charlike Mike Reagent (https://i.am.charlike.online)", "Jon Schlinkert (http://twitter.com/jonschlinkert)" ],
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/write/issues"
+  },
+  "engines" : {
+    "node" : ">=4"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/write/-/write-1.0.3.tgz",
+    "shasum" : "0800e14523b923a387e415123c865616aae0f5c3"
+  },
+  "dependencies" : {
+    "mkdirp" : "^0.5.1"
+  },
+  "devDependencies" : {
+    "async-each" : "^1.0.1",
+    "delete" : "^1.1.0",
+    "gulp-format-md" : "^1.0.0",
+    "mocha" : "^3.4.2"
+  },
+  "keywords" : [ "file", "filepath", "files", "filesystem", "folder", "fs", "fs.writeFile", "fs.writeFileSync", "path", "write" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "run" : true,
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "related" : {
+      "list" : [ "delete", "read-data", "read-yaml", "write-data", "write-json", "write-yaml" ]
+    },
+    "reflinks" : [ "verb" ],
+    "lint" : {
+      "reflinks" : true
+    }
+  }
+}

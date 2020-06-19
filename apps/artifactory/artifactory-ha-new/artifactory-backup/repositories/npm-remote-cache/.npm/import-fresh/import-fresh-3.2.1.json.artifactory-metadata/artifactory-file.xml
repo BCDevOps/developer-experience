@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/import-fresh/import-fresh-3.2.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>import-fresh-3.2.1.json</name>
+  <created>1576008069773</created>
+  <lastModified>1576008069379</lastModified>
+  <size>985</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008069774</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>17f7c153175ae2c987fafe9757d1746b19fe3b31</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>1349c8eeb3df196bc685dbfb3f0bd9b2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df25c663d5c4eb2252b028eaafbaac2a5151ff0e539aab236fbe6d91b0a1c630</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

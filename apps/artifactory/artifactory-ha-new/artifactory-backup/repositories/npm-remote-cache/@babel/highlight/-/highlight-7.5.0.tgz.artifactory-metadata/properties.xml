@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"7d802ce8dbd8db43e44a498860a9b4b2"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>syntax highlight javascript strings for output in terminals.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>@babel/highlight</npm.name>
+  <npm.version>7.5.0</npm.version>
+</properties>

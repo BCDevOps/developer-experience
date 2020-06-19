@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66153BE76BE3D</artifactory.internal.etag>
+  <nuget.authors>Microsoft.AspNetCore.Mvc.ApiExplorer</nuget.authors>
+  <nuget.copyright>Copyright © Microsoft Corporation</nuget.copyright>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:[1.0.3, ):.NETFramework4.5.1</nuget.dependency>
+  <nuget.dependency>Microsoft.AspNetCore.Mvc.Core:[1.0.3, ):.NETStandard1.6</nuget.dependency>
+  <nuget.description>ASP.NET Core MVC API explorer functionality for discovering metadata such as the list of controllers and actions, and their URLs and allowed HTTP methods.</nuget.description>
+  <nuget.digest>c5VdylC6Qz+luxjXW5ByVNke8bQa9w2inVO16+ep972IsVCrICtL3FtzwzipYQWMhYPMnl/Nj2mkdHgMnjRi5A==</nuget.digest>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>Microsoft.AspNetCore.Mvc.ApiExplorer</nuget.id>
+  <nuget.licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm</nuget.licenseUrl>
+  <nuget.owners>Microsoft.AspNetCore.Mvc.ApiExplorer</nuget.owners>
+  <nuget.projectUrl>http://www.asp.net/</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.tags>aspnetcore,aspnetcoremvc</nuget.tags>
+  <nuget.version>1.0.3</nuget.version>
+</properties>

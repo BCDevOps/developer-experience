@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"078f2be13009cd3206a6460298ead0e8"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>base stream implementations for winston@3 and up.</npm.description>
+  <npm.keywords>["winston","transport","winston3"]</npm.keywords>
+  <npm.name>winston-transport</npm.name>
+  <npm.version>4.3.0</npm.version>
+</properties>

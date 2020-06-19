@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>ignore-by-default/-/ignore-by-default-1.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>ignore-by-default-1.0.1.tgz</name>
+  <created>1576003396583</created>
+  <lastModified>1527395176000</lastModified>
+  <size>1648</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576003396584</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>346f2aa3d9851dc2cf209b955a38e54e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8cb3c6b43293704f021f87b0addf3f615a4a518f27a5b80fd9dc7ed8a28cf593</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

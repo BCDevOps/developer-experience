@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>MassTransit.5.5.6+build.2221.sha.1f6a8f0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>MassTransit.5.5.6+build.2221.sha.1f6a8f0.nupkg</name>
+  <created>1578432232101</created>
+  <lastModified>1571580126000</lastModified>
+  <size>1246929</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432232102</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>59f1146b171eedd8838680ce1c42fa42c378b0f0</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>50c8c6cfaf7d12dd84f535fea706c7d5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ad97b74e05ab4c373397ba3e6288b42edf4b164a5ecacda6ea811d745ad69b20</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

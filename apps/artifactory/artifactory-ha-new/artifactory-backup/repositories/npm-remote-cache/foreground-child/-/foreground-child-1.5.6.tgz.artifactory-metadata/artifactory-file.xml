@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>foreground-child/-/foreground-child-1.5.6.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>foreground-child-1.5.6.tgz</name>
+  <created>1579828146681</created>
+  <lastModified>1527383108000</lastModified>
+  <size>3808</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828146681</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4fd71ad2dfde96789b980a5c0a295937cb2f5ce9</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f063fa3c6865f83ebcd15d752c370765</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f31c6279638e310b2469b4485e8ab1f06d698fc1c2219cdf7c2ecbfcbe7eed16</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

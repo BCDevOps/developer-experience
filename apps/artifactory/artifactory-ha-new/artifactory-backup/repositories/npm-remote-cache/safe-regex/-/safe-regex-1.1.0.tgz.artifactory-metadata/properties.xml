@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"6729d2a26cdabb856b9506e567bd8a57"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>detect possibly catastrophic, exponential-time regular expressions</npm.description>
+  <npm.keywords>["catastrophic","exponential","regex","safe","sandbox"]</npm.keywords>
+  <npm.name>safe-regex</npm.name>
+  <npm.version>1.1.0</npm.version>
+</properties>

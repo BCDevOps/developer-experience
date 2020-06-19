@@ -1,0 +1,22 @@
+{
+  "name" : "babel-runtime",
+  "description" : "babel selfContained runtime",
+  "version" : "6.26.0",
+  "author" : "Sebastian McKenzie <sebmck@gmail.com>",
+  "repository" : "https://github.com/babel/babel/tree/master/packages/babel-runtime",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/babel-runtime/-/babel-runtime-6.26.0.tgz",
+    "shasum" : "965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  },
+  "dependencies" : {
+    "core-js" : "^2.4.0",
+    "regenerator-runtime" : "^0.11.0"
+  },
+  "devDependencies" : {
+    "babel-helpers" : "^6.22.0",
+    "babel-plugin-transform-runtime" : "^6.23.0"
+  },
+  "license" : "MIT",
+  "scripts" : {
+  }
+}

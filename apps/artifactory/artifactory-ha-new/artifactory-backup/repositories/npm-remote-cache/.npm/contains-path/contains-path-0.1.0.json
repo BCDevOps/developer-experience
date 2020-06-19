@@ -1,0 +1,35 @@
+{
+  "name" : "contains-path",
+  "description" : "Return true if a file path contains the given path.",
+  "version" : "0.1.0",
+  "author" : "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "homepage" : "https://github.com/jonschlinkert/contains-path",
+  "repository" : "jonschlinkert/contains-path",
+  "bugs" : {
+    "url" : "https://github.com/jonschlinkert/contains-path/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/contains-path/-/contains-path-0.1.0.tgz",
+    "shasum" : "fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
+  },
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "mocha" : "*"
+  },
+  "keywords" : [ "contains", "directory", "dirname", "exec", "ext", "extname", "file", "filepath", "fp", "has", "match", "matches", "path", "regex", "test" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "related" : {
+      "list" : [ "ends-with", "path-ends-with", "path-segments", "is-absolute", "is-relative", "parse-filepath" ]
+    }
+  }
+}

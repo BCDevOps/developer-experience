@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/esrecurse/esrecurse-4.2.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>esrecurse-4.2.1.json</name>
+  <created>1576003428288</created>
+  <lastModified>1576003428187</lastModified>
+  <size>1382</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576003428288</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>2158fb2dc42644b55d6eae7254af15f9ec2655a5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>67ef3ce04805bbfe0f95a901c06d2a6d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>55cff34a11c2fb7b36c28c23ad9f13a103df60ab057274467f3f7c2efff3e250</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

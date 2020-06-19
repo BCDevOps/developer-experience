@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D72B366431E38E</artifactory.internal.etag>
+  <nuget.authors>Microsoft,Serilog Contributors</nuget.authors>
+  <nuget.dependency>Microsoft.Extensions.DependencyInjection.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Hosting.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Microsoft.Extensions.Logging.Abstractions:2.1.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Serilog:2.8.0:.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>Serilog.Extensions.Logging:3.0.1:.NETStandard2.0</nuget.dependency>
+  <nuget.description>Serilog support for .NET Core logging in hosted services</nuget.description>
+  <nuget.digest>yG2i/fNl9in6o2ZE3OCd0CnItQKOHXt6m+0frz81iwDsHS2OfjSLwUDqUrYh4HGqwcjhIaFwH0zKSDUc/n2rLA==</nuget.digest>
+  <nuget.iconUrl>http://serilog.net/images/serilog-extension-nuget.png</nuget.iconUrl>
+  <nuget.id>Serilog.Extensions.Hosting</nuget.id>
+  <nuget.licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</nuget.licenseUrl>
+  <nuget.owners>Microsoft,Serilog Contributors</nuget.owners>
+  <nuget.projectUrl>https://github.com/serilog/serilog-extensions-hosting</nuget.projectUrl>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.tags>serilog aspnet aspnetcore hosting</nuget.tags>
+  <nuget.version>3.0.0</nuget.version>
+</properties>

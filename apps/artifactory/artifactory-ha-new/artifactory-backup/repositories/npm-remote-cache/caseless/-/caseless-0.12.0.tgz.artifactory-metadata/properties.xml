@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"a56bd266e79aba281ea50cf2dba000fa"</artifactory.internal.etag>
+  <artifactory.licenses>Apache-2.0</artifactory.licenses>
+  <npm.description>caseless object set/get/has, very useful when working with http headers.</npm.description>
+  <npm.keywords>["headers","http","caseless"]</npm.keywords>
+  <npm.name>caseless</npm.name>
+  <npm.version>0.12.0</npm.version>
+</properties>

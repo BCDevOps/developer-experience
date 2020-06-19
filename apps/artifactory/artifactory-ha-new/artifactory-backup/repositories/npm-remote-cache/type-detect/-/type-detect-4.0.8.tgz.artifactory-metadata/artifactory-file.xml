@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>type-detect/-/type-detect-4.0.8.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>type-detect-4.0.8.tgz</name>
+  <created>1579828108412</created>
+  <lastModified>1527451735000</lastModified>
+  <size>8070</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828108474</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>7646fb5f18871cfbb7749e69bd39a6388eb7450c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>94f547bd072d0081f3f55b682ec0146c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3f9e101a7de731f94b59ee2d6087565d8b4dd79b3da65a3a2656e67428d19cf7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

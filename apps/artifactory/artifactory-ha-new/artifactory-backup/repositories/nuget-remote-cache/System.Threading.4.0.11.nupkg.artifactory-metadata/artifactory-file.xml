@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>System.Threading.4.0.11.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>System.Threading.4.0.11.nupkg</name>
+  <created>1578432231301</created>
+  <lastModified>1544741983000</lastModified>
+  <size>708036</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432231302</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cc6f5018fec1d75d0703d36a87927677d91bb092</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>aec5be5ac46776c1db563f6084554c47</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9a86f566fdea2d0850d7fc4e2d766662aa6788d50c09f9f4da7f1991a021a9a7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

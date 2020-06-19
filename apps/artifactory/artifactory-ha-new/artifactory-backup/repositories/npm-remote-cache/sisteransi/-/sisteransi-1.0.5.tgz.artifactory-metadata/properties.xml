@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"ec400feecfe27bdc6dc60df9f2eab531"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>ansi escape codes for some terminal swag</npm.description>
+  <npm.keywords>["ansi","escape codes","escape","terminal","style"]</npm.keywords>
+  <npm.name>sisteransi</npm.name>
+  <npm.version>1.0.5</npm.version>
+</properties>

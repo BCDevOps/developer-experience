@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>ac/6c/a641af18e416e6501c10b03742387176626a1d48196100160df796f36632/PyHamcrest-2.0.0-py3-none-any.whl</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>PyHamcrest-2.0.0-py3-none-any.whl</name>
+  <created>1579647457522</created>
+  <lastModified>1579189704000</lastModified>
+  <size>51943</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1579647457523</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>e23a08e8b22beb7bc7dd5808888cd8be029e6017</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>eb6d0a7dacf3477353a4dbf83f3ad940</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>36cda5e849e3ee9ce54628667471e5e769f596259bb3c13c3596f6059a615ef8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

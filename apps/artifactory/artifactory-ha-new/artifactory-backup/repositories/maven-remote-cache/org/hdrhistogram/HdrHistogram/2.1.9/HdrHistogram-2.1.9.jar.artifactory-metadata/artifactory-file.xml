@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>maven-remote-cache</repoKey>
+    <path>org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>HdrHistogram-2.1.9.jar</name>
+  <created>1576861411392</created>
+  <lastModified>1463582011000</lastModified>
+  <size>114165</size>
+  <additionalInfo>
+    <createdBy>exxdlq</createdBy>
+    <modifiedBy>exxdlq</modifiedBy>
+    <lastUpdated>1576861411392</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>e4631ce165eb400edecfa32e03d3f1be53dee754</original>
+          <actual>e4631ce165eb400edecfa32e03d3f1be53dee754</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>ee302e5e7489719991aa0ca2dd67febd</original>
+          <actual>ee302e5e7489719991aa0ca2dd67febd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>95d40913be28dfd439cefea9170c40898ea84f11f25e6ff8de50339b8a7b5e3e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

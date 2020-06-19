@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>AutoMapper.9.0.0.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>AutoMapper.9.0.0.nupkg</name>
+  <created>1578432187699</created>
+  <lastModified>1565614832000</lastModified>
+  <size>357910</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578432187703</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ef4e78810edfc381144ff1c8e1968c757fda2509</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>b39e24bc9fef98d91383b1f4f2d54292</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4b5390b6abe2f23ff1b52243bd09cdbfabf12c70584aecc738cb8243e0b960b7</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

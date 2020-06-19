@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>external-editor/-/external-editor-3.1.0.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>external-editor-3.1.0.tgz</name>
+  <created>1576008060988</created>
+  <lastModified>1562602038000</lastModified>
+  <size>6645</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008061073</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>cb03f740befae03ea4d283caed2741a83f335495</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4abfde2e8a01372bae558949d9b26b05</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c66f80f10acedf85b466bf6b8848e4ab74edd6e00e18c4840fa585fffd229a90</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

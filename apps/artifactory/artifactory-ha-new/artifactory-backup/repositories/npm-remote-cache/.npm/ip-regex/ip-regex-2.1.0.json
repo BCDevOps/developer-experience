@@ -1,0 +1,31 @@
+{
+  "name" : "ip-regex",
+  "description" : "Regular expression for matching IP addresses (IPv4 & IPv6)",
+  "version" : "2.1.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/ip-regex",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/ip-regex/-/ip-regex-2.1.0.tgz",
+    "shasum" : "fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "xo" : "*"
+  },
+  "keywords" : [ "ip", "ipv6", "ipv4", "regex", "regexp", "re", "match", "test", "find", "text", "pattern", "internet", "protocol", "address", "validate" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "test" : "xo && ava"
+  },
+  "xo" : {
+    "esnext" : true
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>picomatch/-/picomatch-2.1.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>picomatch-2.1.1.tgz</name>
+  <created>1576008067985</created>
+  <lastModified>1573079009000</lastModified>
+  <size>21232</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008068073</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ecdfbea7704adb5fe6fb47f9866c4c0e15e905c5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a58a665607ea59a5c2c4519282f6a261</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4de6e1c0d17c8ef95d36695d93a1fefc6cfc3c375fd693d0c2b40dd4fd9e41c6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

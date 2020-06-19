@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"72a4bcde169f7d483f5106b87c9ff56c"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>expressive query building for mongodb</npm.description>
+  <npm.keywords>["mongodb","query","builder"]</npm.keywords>
+  <npm.name>mquery</npm.name>
+  <npm.version>3.2.2</npm.version>
+</properties>

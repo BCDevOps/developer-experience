@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>.pypi/cryptography.html</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>cryptography.html</name>
+  <created>1580344503699</created>
+  <lastModified>1580344503511</lastModified>
+  <size>385270</size>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1580344503700</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>3b4c10bbee277cc15c0bc8572f0dc005edb11b52</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a2099581624d4bc859fec88b090c8b85</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>ef17b816d896cecc7c46741041bdeebb39f1e872e6b8a3933689edd3ea7f66cd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

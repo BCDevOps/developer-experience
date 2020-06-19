@@ -1,0 +1,42 @@
+{
+  "name" : "parse-passwd",
+  "description" : "Parse a passwd file into a list of users.",
+  "version" : "1.0.0",
+  "author" : "Brian Woodward (https://github.com/doowb)",
+  "homepage" : "https://github.com/doowb/parse-passwd",
+  "repository" : "doowb/parse-passwd",
+  "bugs" : {
+    "url" : "https://github.com/doowb/parse-passwd/issues"
+  },
+  "engines" : {
+    "node" : ">=0.10.0"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/parse-passwd/-/parse-passwd-1.0.0.tgz",
+    "shasum" : "6d5b934a456993b23d37f40a382d6f1666a8e5c6"
+  },
+  "devDependencies" : {
+    "gulp-format-md" : "^0.1.11",
+    "mocha" : "^3.1.2"
+  },
+  "keywords" : [ "etc", "etc-passwd", "etc/passwd", "parse", "parse-passwd", "passwd" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "LICENSE" ],
+  "scripts" : {
+    "test" : "mocha"
+  },
+  "verb" : {
+    "toc" : false,
+    "layout" : "default",
+    "tasks" : [ "readme" ],
+    "plugins" : [ "gulp-format-md" ],
+    "lint" : {
+      "reflinks" : true
+    },
+    "related" : {
+      "list" : [ ]
+    },
+    "reflinks" : [ "verb", "verb-generate-readme" ]
+  }
+}

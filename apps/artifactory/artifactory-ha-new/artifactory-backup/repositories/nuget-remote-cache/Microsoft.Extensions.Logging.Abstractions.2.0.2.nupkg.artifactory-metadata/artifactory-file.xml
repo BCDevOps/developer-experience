@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>nuget-remote-cache</repoKey>
+    <path>Microsoft.Extensions.Logging.Abstractions.2.0.2.nupkg</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>Microsoft.Extensions.Logging.Abstractions.2.0.2.nupkg</name>
+  <created>1578439434249</created>
+  <lastModified>1545095224000</lastModified>
+  <size>49749</size>
+  <additionalInfo>
+    <createdBy>uaxfwa</createdBy>
+    <modifiedBy>uaxfwa</modifiedBy>
+    <lastUpdated>1578439434250</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>ef0424c29a783ed523dda692b61dc1f25c431328</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8dcd454d4b16498c8f1cc0bc28cf7826</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8a21ca8adba20f5909b3a6a1b910a15bea8aa52802869783fd5f775f80717236</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

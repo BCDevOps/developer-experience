@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"83d3f9f047e9700f6c4ac4028c4c5c53"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>match balanced character pairs, like "{" and "}"</npm.description>
+  <npm.keywords>["match","regexp","test","balanced","parse"]</npm.keywords>
+  <npm.name>balanced-match</npm.name>
+  <npm.version>1.0.0</npm.version>
+</properties>

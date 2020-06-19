@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/camelcase/camelcase-5.3.1.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>camelcase-5.3.1.json</name>
+  <created>1576008072380</created>
+  <lastModified>1576008072078</lastModified>
+  <size>961</size>
+  <additionalInfo>
+    <createdBy>_system_</createdBy>
+    <modifiedBy>_system_</modifiedBy>
+    <lastUpdated>1576008072478</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>58d3731d4807981cceae593c981b5d0095c16d90</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>4d744dcf7595166378fa3fbfb37432f0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>4ffdf6bb79966b287d35ac06be5628404da72a7d90494cdca7722819298f9aa5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

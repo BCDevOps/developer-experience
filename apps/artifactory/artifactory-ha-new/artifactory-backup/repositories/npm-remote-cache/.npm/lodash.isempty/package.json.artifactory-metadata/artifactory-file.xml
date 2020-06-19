@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>.npm/lodash.isempty/package.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>package.json</name>
+  <created>1579828421276</created>
+  <lastModified>1546622657000</lastModified>
+  <size>37567</size>
+  <additionalInfo>
+    <createdBy>cvarjao@idir</createdBy>
+    <modifiedBy>cvarjao@idir</modifiedBy>
+    <lastUpdated>1579828421277</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>a1e8a5eb7a6b8dfa1ba98162dd4d8b610524c16a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>316769ee9d37cb819fd3b27db8e4830b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0c7d89541afabb06a94d5dcdd8c041ccf102cba80032e41f7f5352c8552cd22e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

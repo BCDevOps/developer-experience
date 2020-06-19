@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>pypi-remote-cache</repoKey>
+    <path>58/b4/4850a0ccc6f567cc0ebe7060d20ffd4258b8210efadc259da62dc6ed9c65</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>4850a0ccc6f567cc0ebe7060d20ffd4258b8210efadc259da62dc6ed9c65</name>
+  <created>1578439444561</created>
+  <lastModified>1578439444561</lastModified>
+  <additionalInfo>
+    <createdBy>uhdbvk</createdBy>
+    <modifiedBy>uhdbvk</modifiedBy>
+    <lastUpdated>1578439444561</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

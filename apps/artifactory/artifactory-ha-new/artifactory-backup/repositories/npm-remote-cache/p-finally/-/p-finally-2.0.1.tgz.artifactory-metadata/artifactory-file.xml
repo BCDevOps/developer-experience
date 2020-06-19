@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>p-finally/-/p-finally-2.0.1.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>p-finally-2.0.1.tgz</name>
+  <created>1585853581994</created>
+  <lastModified>1560955743000</lastModified>
+  <size>1909</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1585853581994</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>bd6fcaa9c559a096b680806f4d657b3f0f240561</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1757cb81625fd0af7745711fdcb8eea1</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b47f02524d59c3298c96c973a77bbc5147851c9618265047b95d82f0c631789f</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

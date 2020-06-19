@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D6614EB305B6F1</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Platforms:1.0.1:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>Microsoft.NETCore.Targets:1.0.1:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.5</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.2</nuget.dependency>
+  <nuget.dependency>::.NETPortable0.0-Profile259</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.IO:4.1.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.0.1:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.0.1:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.0.1:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.0.1:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.1.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>::Windows8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhone8.0</nuget.dependency>
+  <nuget.dependency>::WindowsPhoneApp8.1</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides types that retrieve information about assemblies, modules, members, parameters, and other entities in managed code by examining their metadata. These types also can be used to manipulate instances of loaded types, for example to hook up events or to invoke methods.
+
+Commonly Used Types:
+System.Reflection.MethodInfo
+System.Reflection.PropertyInfo
+System.Reflection.ParameterInfo
+System.Reflection.FieldInfo
+System.Reflection.ConstructorInfo
+System.Reflection.Assembly
+System.Reflection.MemberInfo
+System.Reflection.EventInfo
+System.Reflection.Module
+ 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>ZxQ++Pb7EESDDHDGbporTxhQ9Q312t+qUXczg2Lqe56f5LC6Wc1OrG4cjbTgwoXCOeTCs85hORYYtBGq/0X3wg==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.2</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Reflection</nuget.id>
+  <nuget.licenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799417</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>true</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Reflection</nuget.title>
+  <nuget.version>4.1.0</nuget.version>
+</properties>

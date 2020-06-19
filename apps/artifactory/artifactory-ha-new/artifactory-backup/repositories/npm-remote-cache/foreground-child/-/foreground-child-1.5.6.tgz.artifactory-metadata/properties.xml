@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f063fa3c6865f83ebcd15d752c370765"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>run a child as if it's the foreground process.  give it stdio.  exit when it exits.</npm.description>
+  <npm.keywords>no_content</npm.keywords>
+  <npm.name>foreground-child</npm.name>
+  <npm.version>1.5.6</npm.version>
+</properties>

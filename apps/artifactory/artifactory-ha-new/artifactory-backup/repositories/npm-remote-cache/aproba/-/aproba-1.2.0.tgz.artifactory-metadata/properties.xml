@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"c1aee140d00296437e04d2b9285083e1"</artifactory.internal.etag>
+  <artifactory.licenses>ISC</artifactory.licenses>
+  <npm.description>a ridiculously light-weight argument validator (now browser friendly)</npm.description>
+  <npm.keywords>["argument","validate"]</npm.keywords>
+  <npm.name>aproba</npm.name>
+  <npm.version>1.2.0</npm.version>
+</properties>

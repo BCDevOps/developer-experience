@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>npm-remote-cache</repoKey>
+    <path>graceful-fs/-/graceful-fs-4.2.3.tgz</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>graceful-fs-4.2.3.tgz</name>
+  <created>1576008074774</created>
+  <lastModified>1571871189000</lastModified>
+  <size>8435</size>
+  <additionalInfo>
+    <createdBy>dgqzdw</createdBy>
+    <modifiedBy>dgqzdw</modifiedBy>
+    <lastUpdated>1576008074775</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <actual>4a12ff1b60376ef09862c2093edd908328be8423</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>773cf084f012d777eb815f60212437b2</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>982d3ba32bb6c9bcf4868bba575d5bb7360ba1de2d2b9adb78589d6b9f7ac778</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

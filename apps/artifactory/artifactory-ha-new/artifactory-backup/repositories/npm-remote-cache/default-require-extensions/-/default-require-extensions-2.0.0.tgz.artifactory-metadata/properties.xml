@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"cc1999982b0933bad83f0174f8080bc3"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>node's default require extensions as a separate module</npm.description>
+  <npm.keywords>["require","extension","default","node"]</npm.keywords>
+  <npm.name>default-require-extensions</npm.name>
+  <npm.version>2.0.0</npm.version>
+</properties>

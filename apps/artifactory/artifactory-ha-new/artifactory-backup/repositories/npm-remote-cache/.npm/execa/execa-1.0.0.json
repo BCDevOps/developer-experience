@@ -1,0 +1,47 @@
+{
+  "name" : "execa",
+  "description" : "A better `child_process`",
+  "version" : "1.0.0",
+  "author" : {
+    "name" : "Sindre Sorhus",
+    "email" : "sindresorhus@gmail.com",
+    "url" : "sindresorhus.com"
+  },
+  "repository" : "sindresorhus/execa",
+  "engines" : {
+    "node" : ">=6"
+  },
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/execa/-/execa-1.0.0.tgz",
+    "shasum" : "c6236a5bb4df6d6f15e88e7f017798216749ddd8"
+  },
+  "dependencies" : {
+    "cross-spawn" : "^6.0.0",
+    "get-stream" : "^4.0.0",
+    "is-stream" : "^1.1.0",
+    "npm-run-path" : "^2.0.0",
+    "p-finally" : "^1.0.0",
+    "signal-exit" : "^3.0.0",
+    "strip-eof" : "^1.0.0"
+  },
+  "devDependencies" : {
+    "ava" : "*",
+    "cat-names" : "^1.0.2",
+    "coveralls" : "^3.0.1",
+    "delay" : "^3.0.0",
+    "is-running" : "^2.0.0",
+    "nyc" : "^13.0.1",
+    "tempfile" : "^2.0.0",
+    "xo" : "*"
+  },
+  "keywords" : [ "exec", "child", "process", "execute", "fork", "execfile", "spawn", "file", "shell", "bin", "binary", "binaries", "npm", "path", "local" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "lib" ],
+  "scripts" : {
+    "test" : "xo && nyc ava"
+  },
+  "nyc" : {
+    "reporter" : [ "text", "lcov" ],
+    "exclude" : [ "**/fixtures/**", "**/test.js", "**/test/**" ]
+  }
+}

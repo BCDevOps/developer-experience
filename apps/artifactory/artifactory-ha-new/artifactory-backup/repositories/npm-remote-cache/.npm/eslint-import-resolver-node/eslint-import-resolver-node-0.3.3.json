@@ -1,0 +1,40 @@
+{
+  "name" : "eslint-import-resolver-node",
+  "description" : "Node default behavior import resolution plugin for eslint-plugin-import.",
+  "version" : "0.3.3",
+  "author" : "Ben Mosher (me@benmosher.com)",
+  "homepage" : "https://github.com/benmosher/eslint-plugin-import",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/benmosher/eslint-plugin-import"
+  },
+  "bugs" : {
+    "url" : "https://github.com/benmosher/eslint-plugin-import/issues"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.3.tgz",
+    "shasum" : "dbaa52b6b2816b50bc6711af75422de808e98404"
+  },
+  "dependencies" : {
+    "debug" : "^2.6.9",
+    "resolve" : "^1.13.1"
+  },
+  "devDependencies" : {
+    "chai" : "^3.5.0",
+    "coveralls" : "^3.0.0",
+    "mocha" : "^3.5.3",
+    "nyc" : "^11.7.1"
+  },
+  "keywords" : [ "eslint", "eslintplugin", "esnext", "modules", "eslint-plugin-import" ],
+  "license" : "MIT",
+  "files" : [ "index.js" ],
+  "scripts" : {
+    "prepublishOnly" : "cp ../../{LICENSE,.npmrc} ./",
+    "test" : "nyc mocha",
+    "coveralls" : "nyc report --reporter lcovonly && cd ../.. && coveralls < ./resolvers/node/coverage/lcov.info"
+  },
+  "nyc" : {
+    "exclude" : [ "test/" ]
+  }
+}

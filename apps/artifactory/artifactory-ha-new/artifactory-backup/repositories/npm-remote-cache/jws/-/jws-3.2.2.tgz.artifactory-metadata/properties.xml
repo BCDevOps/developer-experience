@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>"f54e93c608de71243af483d38c4a6155"</artifactory.internal.etag>
+  <artifactory.licenses>MIT</artifactory.licenses>
+  <npm.description>implementation of json web signatures</npm.description>
+  <npm.keywords>["jws","json","web","signatures"]</npm.keywords>
+  <npm.name>jws</npm.name>
+  <npm.version>3.2.2</npm.version>
+</properties>

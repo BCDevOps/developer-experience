@@ -1,0 +1,46 @@
+{
+  "name" : "realpath-native",
+  "description" : "Use the system's native `realpath`",
+  "version" : "2.0.0",
+  "author" : "Simen Bekkhus <sbekkhus91@gmail.com>",
+  "repository" : "SimenB/realpath-native",
+  "engines" : {
+    "node" : ">=8"
+  },
+  "main" : "index.js",
+  "dist" : {
+    "tarball" : "https://artifacts.developer.gov.bc.ca/artifactory/api/npm//npm-remote-cache/realpath-native/-/realpath-native-2.0.0.tgz",
+    "shasum" : "7377ac429b6e1fd599dc38d08ed942d0d7beb866"
+  },
+  "devDependencies" : {
+    "@commitlint/cli" : "^8.3.5",
+    "@commitlint/config-conventional" : "^8.3.4",
+    "ava" : "^2.4.0",
+    "eslint" : "^6.8.0",
+    "eslint-config-simenb-base" : "^15.0.1",
+    "eslint-config-simenb-node" : "^2.0.0",
+    "husky" : "^3.1.0",
+    "lint-staged" : "^9.5.0",
+    "prettier" : "^1.19.1"
+  },
+  "keywords" : [ "realpath" ],
+  "license" : "MIT",
+  "files" : [ "index.js", "index.d.ts" ],
+  "scripts" : {
+    "lint" : "eslint .",
+    "test" : "eslint . && ava"
+  },
+  "lint-staged" : {
+    "*.js" : [ "eslint --fix", "git add" ],
+    "*.{md,json,ts}" : [ "prettier --write", "git add" ]
+  },
+  "types" : "index.d.ts",
+  "commitlint" : {
+    "extends" : [ "@commitlint/config-conventional" ]
+  },
+  "prettier" : {
+    "proseWrap" : "always",
+    "singleQuote" : true,
+    "trailingComma" : "es5"
+  }
+}

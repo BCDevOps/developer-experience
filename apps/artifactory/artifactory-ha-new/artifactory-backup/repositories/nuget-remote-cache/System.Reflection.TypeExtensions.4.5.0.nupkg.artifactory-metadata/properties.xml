@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <artifactory.internal.etag>0x8D66482BFFE8F9D</artifactory.internal.etag>
+  <nuget.authors>Microsoft</nuget.authors>
+  <nuget.copyright>© Microsoft Corporation.  All rights reserved.</nuget.copyright>
+  <nuget.dependency>::MonoAndroid1.0</nuget.dependency>
+  <nuget.dependency>::MonoTouch1.0</nuget.dependency>
+  <nuget.dependency>::.NETCoreApp2.0</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6</nuget.dependency>
+  <nuget.dependency>::.NETFramework4.6.1</nuget.dependency>
+  <nuget.dependency>::.NETStandard2.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Contracts:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Diagnostics.Debug:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Linq:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Reflection:4.3.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>System.Reflection.Primitives:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Resources.ResourceManager:4.3.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETCoreApp1.0</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.3</nuget.dependency>
+  <nuget.dependency>System.Runtime:4.3.0:.NETStandard1.5</nuget.dependency>
+  <nuget.dependency>System.Runtime.Extensions:4.3.0:.NETCore5.0</nuget.dependency>
+  <nuget.dependency>::UAP10.0.16299</nuget.dependency>
+  <nuget.dependency>::Xamarin.iOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.Mac2.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.TVOS1.0</nuget.dependency>
+  <nuget.dependency>::Xamarin.WatchOS1.0</nuget.dependency>
+  <nuget.description>Provides extensions methods for System.Type that are designed to be source-compatible with older framework reflection-based APIs.
+
+Commonly Used Types:
+System.Reflection.TypeExtensions
+System.Reflection.BindingFlags
+ 
+30ab651fcb4354552bd4891619a0bdd81e0ebdbf 
+When using NuGet 3.x this package requires at least version 3.4.</nuget.description>
+  <nuget.digest>Si8PkGGxxDKLm6ap31x4hoDBsL3yX+gwmGJWqVJUwHofyTubjj8MjC6ckhAmjGWszWLA1wGNC+QAQMQkWG8qbw==</nuget.digest>
+  <nuget.frameworks>mscorlib:.NETFramework4.6</nuget.frameworks>
+  <nuget.frameworks>mscorlib:.NETFramework4.6.1</nuget.frameworks>
+  <nuget.iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</nuget.iconUrl>
+  <nuget.id>System.Reflection.TypeExtensions</nuget.id>
+  <nuget.licenseUrl>https://github.com/dotnet/corefx/blob/master/LICENSE.TXT</nuget.licenseUrl>
+  <nuget.owners>microsoft,dotnetframework</nuget.owners>
+  <nuget.projectUrl>https://dot.net/</nuget.projectUrl>
+  <nuget.releaseNotes>https://go.microsoft.com/fwlink/?LinkID=799421</nuget.releaseNotes>
+  <nuget.requireLicenseAcceptance>false</nuget.requireLicenseAcceptance>
+  <nuget.title>System.Reflection.TypeExtensions</nuget.title>
+  <nuget.version>4.5.0</nuget.version>
+</properties>
