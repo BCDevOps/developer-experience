@@ -3,46 +3,129 @@
     vars.yaml
   tasks:
 
+      # create processed folder
+    - name: Create processed directory if it does not exist
+      file:
+        path: ./processed
+        state: directory
+        mode: '0755'
+
       # setup
     - name: make sure we're in the artifactory namespace
       command: >
-        oc project devops-artifactory
+        oc project {{ project_name }}
 
-      # make storage
-    - name: process 00-patroni-pgsql-prereq
+      # make secret
+    - name: process patroni-secret.yaml
       command: >
-        oc process -f ./00-patroni-pgsql-prereq.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: storage_prereq_processed
-    - copy: content="{{ storage_prereq_processed.stdout }}" dest=./processed/00-patroni-pgsql-prereq.json
-    - name: apply 00-patroni-pgsql-prereq
+        oc process -f ./patroni-secret.yaml --param-file=./{{env}}-artifactory-ha.env APP_DB_PASSWORD={{ db_password }} --ignore-unknown-parameters=true
+      register: patroni_secret_processed
+    - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
+    - name: apply patroni-secret
       command: >
-        oc apply -f ./processed/00-patroni-pgsql-prereq.json
-
-      # wait until they're done.
-    - pause:
-        prompt: "Hit enter to continue once the storage is fully provisioned"
+        oc apply -f ./processed/patroni-secret.json
 
       # deploy patroni stateful set
-    - name: process 01-patroni-pgsql
+    - name: process patroni-statefulset
       command: >
-        oc process -f ./01-patroni-pgsql.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: storage_processed
-    - copy: content="{{ storage_processed.stdout }}" dest=./processed/01-patroni-pgsql.json
-    - name: apply 01-patroni-pgsql
+        oc process -f ./patroni-statefulset.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+      register: patroni_statefulset_processed
+    - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
+    - name: apply patroni-statefulset
       command: >
-        oc apply -f ./processed/01-patroni-pgsql.json
+        oc apply -f ./processed/patroni-statefulset.json
 
       # wait until they're done.
     - pause:
         prompt: "Hit enter to continue once the patroni stateful set is fully deployed"
 
-      # deploy artifactory helm chart
+      # build template from artifactory helm chart
     - name: create template from helm chart
       command: >
-        oc process -f ./02-artifactory-ha-pre.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: pre_processed
-    - copy: content="{{ pre_processed.stdout }}" dest=./processed/02-artifactory-ha-pre.json
-    - name: apply 02-artifactory-ha-pre
-      command: >
-        oc apply -f ./processed/02-artifactory-ha-pre.json
+        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values.yaml --set database.password={{ db_password }}
+      register: artifactory_processed
+    - copy: content="{{ artifactory_processed.stdout }}" dest=./processed/artifactory_processed.yaml
 
+      # wait for the template to finish
+    - pause:
+        seconds: 15
+
+      # deploy template
+    - name: apply artifactory_processed
+      command: >
+        oc apply -f ./processed/artifactory_processed.yaml
+
+      # wait for the service to show up
+    - pause:
+        seconds: 15
+
+      # make route
+    - name: process route.yaml
+      command: >
+        oc process -f ./route.yaml --param-file=./{{env}}-artifactory-ha.env URL={{ URL }} APP_DB_PASSWORD={{ db_password }} --ignore-unknown-parameters=true
+      register: route_processed
+    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
+    - name: apply route
+      command: >
+        oc apply -f ./processed/route.json
+
+      # wait until they're done.
+    - pause:
+        prompt: "Hit enter to continue once artifactory is fully deployed"
+
+    - name: Set Artifactory Admin password
+      uri:
+        url: "https://{{ URL }}/artifactory/api/security/users/authorization/changePassword"
+        user: "admin"
+        password: "password"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{"userName": "admin", "oldPassword": "password", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
+        force_basic_auth: yes
+
+      # make secret
+    - name: process artifactory-admin-secret.yaml
+      command: >
+        oc process -f ./artifactory-admin-secret.yaml --param-file=./{{env}}-artifactory-ha.env ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }} --ignore-unknown-parameters=true
+      register: app_secret_processed
+    - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
+    - name: apply artifactory-admin-secret
+      command: >
+        oc apply -f ./processed/artifactory-admin-secret.json
+
+    - name: Set Artifactory Custom URL Base
+      uri:
+        url: "https://{{ URL }}/artifactory/api/system/configuration/baseUrl"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        headers:
+          Content-type: "text/plain"
+        body: "https://{{ URL }}/artifactory"
+        force_basic_auth: yes
+
+      # wait until they're done.
+    - pause:
+        prompt: "Log into Artifactory and add licenses, then press enter to continue."
+
+    - name: Create authenticated_users group
+      uri:
+        url: "https://{{ URL }}/artifactory/api/security/groups/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "name": "authenticated_users", "description" : "All newly authenticated users are added to this group", "autoJoin" : true }'
+        force_basic_auth: yes
+        status_code: 201
+      ignore_errors: yes
+
+      # delete processed folder
+    - name: remove proccessed directory
+      file:
+        path: ./processed
+        state: absent

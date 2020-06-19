@@ -19,9 +19,6 @@ Currently these steps have been manually configured.
 
 - Configuration / Artifactory Licences
   - Apply licenses (1 for each node)
-- Configuration / General Configuration
-  - Server Name: artifactory
-  - Custom Base URL: https://artifacts.pathfinder.gov.bc.ca/artifactory
 - Security / Security Configuration
   - [ ] Allow Anonymous Access (disable this)
   - [*] Hide Existence of Unauthorized Resources

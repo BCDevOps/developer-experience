@@ -6,7 +6,7 @@
       # setup
     - name: make sure we're in the artifactory namespace
       command: >
-        oc project devops-artifactory
+        oc project {{ project_name }}
 
       # make secrets
     - name: process 00-artifactory-prereq

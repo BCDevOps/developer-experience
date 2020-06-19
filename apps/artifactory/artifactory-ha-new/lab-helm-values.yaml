@@ -1,5 +1,7 @@
 artifactory:
   name: "artifactory"
+  image:
+    version: "7.4.3"
   masterKey: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
   joinKey: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
   primary:
@@ -29,6 +31,8 @@ artifactory:
   persistence:
     name: artifactory
     size: 10Gi
+  service:
+    pool: "all"
 securityContext:
   enabled: true
   fsGroup: 1000680000
