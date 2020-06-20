@@ -6,8 +6,8 @@ metadata:
       Template for creating custom resource for Artifactory
   name: artifactory-cr-template
 objects:
-- apiVersion: artifactoryrepo.operators.bcgov/v1alpha1
-  kind: ArtifactoryRepo
+- apiVersion: artifacts.operators.bcgov/v1alpha1
+  kind: ArtifactRepo
   metadata:
     name: ${TEAM_NAME}-${REPO_TYPE}-${REPO_LOCATOR}
   spec:
@@ -21,7 +21,7 @@ objects:
     requester: ${REQUESTER}
     user: ${USER}
 parameters:
-- description: Cluster where the CR is being created (choose between "lab" or "prod"
+- description: Cluster where the CR is being created (choose between "lab" or "prod")
   displayName: Console Name
   name: CONSOLE_NAME
   value: lab

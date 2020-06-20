@@ -1,0 +1,101 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  annotations:
+    description: |-
+      Template for creating the artifactory operator Service Account
+  name: artifactory-operator-sa-template
+objects:
+- apiVersion: v1
+  kind: ServiceAccount
+  metadata:
+    name: artifactory-operator
+- apiVersion: rbac.authorization.k8s.io/v1
+  kind: Role
+  metadata:
+    name: artifactory-operator
+  rules:
+  - apiGroups:
+    - ""
+    resources:
+    - pods
+    - services
+    - services/finalizers
+    - endpoints
+    - persistentvolumeclaims
+    - events
+    - configmaps
+    - secrets
+    verbs:
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
+  - apiGroups:
+    - apps
+    resources:
+    - deployments
+    - daemonsets
+    - replicasets
+    - statefulsets
+    verbs:
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
+  - apiGroups:
+    - monitoring.coreos.com
+    resources:
+    - servicemonitors
+    verbs:
+    - get
+    - create
+  - apiGroups:
+    - apps
+    resourceNames:
+    - artifactory-operator
+    resources:
+    - deployments/finalizers
+    verbs:
+    - update
+  - apiGroups:
+    - ""
+    resources:
+    - pods
+    verbs:
+    - get
+  - apiGroups:
+    - apps
+    resources:
+    - replicasets
+    - deployments
+    verbs:
+    - get
+  - apiGroups:
+    - route.openshift.io
+    attributeRestrictions: null
+    resources:
+    - '*'
+    verbs:
+    - '*'
+  - apiGroups: 
+    - artifacts.operators.bcgov
+    resources: ['*']
+    verbs: ['*']
+- apiVersion: rbac.authorization.k8s.io/v1
+  kind: RoleBinding
+  metadata:
+    name: artifactory-operator
+  subjects:
+  - kind: ServiceAccount
+    name: artifactory-operator
+  roleRef:
+    kind: Role
+    name: artifactory-operator
+    apiGroup: rbac.authorization.k8s.io

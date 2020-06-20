@@ -111,21 +111,16 @@ A separate PR to add a cluster CR role to the bcdevex-admin team has been create
 Admins must deploy the following using `oc apply` or `oc create`:
 
 ``` bash
-deploy/crds/crd-artifactoryrepo.yaml
-deploy/crds/crd-artifactorysa.yaml
+oc apply -f deploy/crds/crd-artifactrepo.yaml
+oc apply -f deploy/crds/crd-artifactsvca.yaml
 oc apply -f deploy/clusterrole-artifactory-aggregate.yaml
 oc apply -f deploy/clusterrole-artifactory-operator.yaml
-oc apply -f deploy/role-artifactory-operator.yaml
 ```
 
-example command to add this cluster-role to an account:
+Add object admin to bcdevops-admin
 
 ``` bash
-oc adm policy add-cluster-role-to-user artifactory-cluster-operator system:serviceaccount:devops-artifactory:artifactory-operator
-
 oc adm policy add-cluster-role-to-user artifactory-object-admin system:serviceaccount:openshift:bcdevops-admin
-
-oc policy add-role-to-user artifactory-operator -z artifactory-operator -n devops-artifactory
 ```
 
 #### Build Operator Image
@@ -141,7 +136,7 @@ $ docker push <image-name>
 # alt push method:
 # ../oc-push-image.sh -i <image-name> -n <namespace> -r docker-registry.pathfinder.gov.bc.ca
 
-$ oc -n <namespace> tag <image-name>:latest <image-name>:v1-stable
+$ oc -n <namespace> tag <image-name>:latest <image-name>:v1-0.9.0-stable
 ```
 
 ## How to run
@@ -161,14 +156,39 @@ In the project, confirm that the secret `artifactory-admin` exists with a passwo
 #### Deploy Artifactory Operator
 
 ``` bash
-oc process -f deploy/operator-tmpl.yaml -p ARTIFACTORY_BASE_DNS=artifacts.lab.pathfinder.gov.bc.ca -p IMAGE_TAG=v1-stable
+# create service account and roles first
+oc process -f ./deploy/operator-sa-tmpl.yaml | oc apply -f -
+```
+
+Need to ensure appropriate cluster roles are assigned to the operator service account
+
+``` bash
+oc adm policy add-cluster-role-to-user artifactory-cluster-operator system:serviceaccount:devops-artifactory:artifactory-operator
+```
+
+``` bash
+oc process -f deploy/operator-tmpl.yaml \
+-p ARTIFACTORY_BASE_DNS=${BASE_DNS} \
+-p IMAGE_TAG=${IMAGE_TAG} \
+-p IMAGE=${NAMESPACE}/${IMAGE_NAME} \
+| oc apply -f -
+```
+
+Sample Manifest generation without apply:
+
+``` bash
+oc process -f ./deploy/operator-tmpl.yaml \
+-p ARTIFACTORY_BASE_DNS=artifacts-old.lab.pathfinder.gov.bc.ca \
+-p IMAGE_TAG=v1-0.9.0-stable \
+-p IMAGE=test-artifactory/artifactory-operator \
+-o yaml
 ```
 
 ## Creating Artifactory Custom Resources and Objects
 
 > Must have cluster-role artifactory-admin
 
-An example Artifactory CR (Custom Resource) exists under `deploy/crds/artifactory-cr-template.yaml`
+Example Artifactory CR (Custom Resource) exists under `deploy/crds/tmpl-artifactory-repo.yaml` and `deploy/crds/tmpl-artifactory-sa.yaml`
 
 An example env file also exists under `deploy/crds/team-type-locator.env`
 

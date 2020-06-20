@@ -17,7 +17,7 @@
 
     - name: Set service account info
       set_fact:
-        service_account_name: "{{ spec.sa_name | default('{{ meta.name }}-{{ project_plate }}-{{ license_plate }}', true) }}"
+        service_account_name: "{{ sa_name | default('{{ meta.name }}-{{ project_plate }}-{{ license_plate }}', true) }}"
 
     - import_role:
         name: "artifactory_serviceacct"

@@ -6,8 +6,8 @@ metadata:
       Template for creating custom resource for Artifactory Service Accounts
   name: artifactory-sa-cr-template
 objects:
-- apiVersion: artifactorysa.operators.bcgov/v1alpha1
-  kind: ArtifactorySA
+- apiVersion: artifacts.operators.bcgov/v1alpha1
+  kind: ArtifactSvcA
   metadata:
     name: ${CR_NAME}
   spec:
@@ -16,7 +16,7 @@ objects:
     sa_name: ""
     descriptor: "${DESCRIPTOR}"
 parameters:
-- description: Name for the ArtifactorySA custom resource
+- description: Name for the ArtifactSvcA custom resource
   displayName: CR Name
   name: CR_NAME
   value: blank

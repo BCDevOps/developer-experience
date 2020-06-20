@@ -1,19 +1,19 @@
 ---
 - version: v1alpha1
-  group: artifactoryrepo.operators.bcgov
-  kind: ArtifactoryRepo
+  group: artifacts.operators.bcgov
+  kind: ArtifactRepo
   playbook: /opt/ansible/artrepository-main.yml
   reconcilePeriod: 0
   watchDependentResources: True
   finalizer:
-    name: finalizer.artifactoryrepo.operators.bcgov
+    name: finalrepo.artifacts.operators.bcgov
     playbook: /opt/ansible/artrepository-destroy.yml
 - version: v1alpha1
-  group: artifactorysa.operators.bcgov
-  kind: ArtifactorySA
+  group: artifacts.operators.bcgov
+  kind: ArtifactSvcA
   playbook: /opt/ansible/artserviceacct-main.yml
   reconcilePeriod: 0
   watchDependentResources: True
   finalizer:
-    name: finalizer.artifactorysa.operators.bcgov
+    name: finalsvcacct.artifacts.operators.bcgov
     playbook: /opt/ansible/artserviceacct-destroy.yml
