@@ -1,0 +1,29 @@
+
+@import '../../../node_modules/@bcgov/bc-sans/css/BCSans.css';
+
+h1 {
+     font-size: 50px;
+     }
+body { 
+    color: #333; }
+article {
+     font-size: 20px;
+     font-family: BCSans Verdana, sans-serif;
+     height: 100vh;
+     width: 100vw;
+     flex-direction: column;
+
+     background: linear-gradient(to bottom right, #EEE, #AAA);
+     }
+
+.wraper{
+    padding: 15% 30% 20% 30%;
+    justify-content: center;
+    display: relative; 
+
+}
+.stay_right{
+    text-align: right; 
+}
+a { color: #dc8100; text-decoration: none; }
+a:hover { color: #333; text-decoration: none; }
