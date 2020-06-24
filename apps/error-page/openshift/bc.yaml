@@ -50,6 +50,7 @@ objects:
       git:
         uri: ${SOURCE_REPOSITORY_URL}
         ref: ${SOURCE_REPOSITORY_REF}
+      contextDir: ${SOURCE_REPOSITORY_DIR}
       type: Git
     strategy:
       sourceStrategy:
@@ -144,4 +145,9 @@ parameters:
   displayName: SOURCE_REPOSITORY_URL
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/w8896699/error-page
+  value: https://github.com/BCDevOps/developer-experience
+- description: SOURCE_REPOSITORY_DIR
+  displayName: SOURCE_REPOSITORY_DIR
+  name: SOURCE_REPOSITORY_DIR
+  required: true
+  value: apps/error-page
