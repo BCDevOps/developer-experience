@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Template
 metadata:
   creationTimestamp: null
-  name: error-page-bc-template
+  name: ${NAME}-bc-template
 labels:
-  template: error-page
+  template: ${NAME}
 objects:
 # the image stream for the node js build
 - apiVersion: v1
@@ -13,6 +13,7 @@ objects:
     creationTimestamp: null
     labels:
       shared: true
+      app: ${NAME}
     name: ${NAME}
   spec:
     lookupPolicy:
@@ -21,6 +22,8 @@ objects:
   kind: ImageStream
   metadata:
     creationTimestamp: null
+    labels:
+      app: ${NAME}
     name: ${NAME}-static
   spec:
     lookupPolicy:
@@ -29,6 +32,8 @@ objects:
   kind: BuildConfig
   metadata:
     creationTimestamp: null
+    labels:
+      app: ${NAME}
     name: ${NAME}
   spec:
     completionDeadlineSeconds: 1500 # terminate the build if it takes longer than 900 seconds, our builds are avg 10 minutes as of Feb 2019
@@ -73,8 +78,9 @@ objects:
   metadata:
     creationTimestamp: null
     labels:
-      build: ${NAME}-static-second
-    name: ${NAME}-static-second
+      build: ${NAME}-static
+      app: ${NAME}
+    name: ${NAME}-static
   spec:
     runPolicy: SerialLatestOnly
     nodeSelector: null
