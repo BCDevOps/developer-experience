@@ -2,6 +2,7 @@
 - name: Create route for docker registry
   k8s:
     state: present
+    namespace: "{{ artifactory_namespace }}"
     definition:
       apiVersion: route.openshift.io/v1
       kind: Route
@@ -9,11 +10,10 @@
         labels:
           app: artifactory
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
-        namespace: "devops-artifactory"
       spec:
         host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.{{ external_dns_suffix }}"
         port:
-          targetPort: https
+          targetPort: http
         tls:
           insecureEdgeTerminationPolicy: Redirect
           termination: edge

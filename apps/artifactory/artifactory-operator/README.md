@@ -141,7 +141,7 @@ $ oc -n <namespace> tag <image-name>:latest <image-name>:v1-0.9.0-stable
 
 ## How to run
 
-#### Change project context
+#### Change project contexth
 
 ``` bash
 oc project <artifactory-project>

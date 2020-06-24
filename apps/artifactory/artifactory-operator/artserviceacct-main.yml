@@ -11,12 +11,14 @@
   
     - name: Generate variables
       set_fact:
+        artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
         project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
         license_plate: "{{ lookup('password', '/dev/null length=6 chars=ascii_letters') | lower }}"
         generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
 
-    - name: Set service account info
+    - name: Set calculated variables
       set_fact:
+        artifactory_url: "http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081"
         service_account_name: "{{ sa_name | default('{{ meta.name }}-{{ project_plate }}-{{ license_plate }}', true) }}"
 
     - import_role:

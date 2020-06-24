@@ -11,10 +11,13 @@
     - name: Generate variables
       set_fact:
         admin_user: "admin"
+        admin_pass_loc: /tmp/ansible-operator/password
+        artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
         project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
 
-    - name: Set account name
+    - name: Set calculated variables
       set_fact:
+        artifactory_url: "http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081"
         service_account_name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
 
     - name: Delete artifactory user
@@ -56,6 +59,7 @@
     - name: Delete docker registry route
       k8s:
         state: absent
+        namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE') }}"
         definition:
           apiVersion: route.openshift.io/v1
           kind: Route
@@ -63,7 +67,6 @@
             labels:
               app: artifactory
             name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
-            namespace: "devops-artifactory"
 
     - name: Delete secret for service account
       k8s:

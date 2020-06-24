@@ -50,6 +50,10 @@ objects:
             env:
               - name: ARTIFACTORY_BASE_DNS
                 value: ${ARTIFACTORY_BASE_DNS}
+              - name: ARTIFACTORY_NAMESPACE
+                valueFrom:
+                  fieldRef:
+                    fieldPath: metadata.namespace
               - name: WATCH_NAMESPACE
               - name: POD_NAME
                 valueFrom:

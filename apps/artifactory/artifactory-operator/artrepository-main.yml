@@ -10,7 +10,12 @@
   
     - name: Generate variables
       set_fact:
+        artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
         project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
+
+    - name: Set calculated variables
+      set_fact:
+        artifactory_url: "http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081"
 
     - import_role:
         name: "artifactory_repo"
