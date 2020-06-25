@@ -10,7 +10,6 @@ objects:
   metadata:
     name: ${NAME}
   spec:
-    sa_name: ""
     descriptor: "${DESCRIPTOR}"
 parameters:
 - description: Name for the ArtifactSvcA custom resource

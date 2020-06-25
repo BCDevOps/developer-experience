@@ -1,0 +1,12 @@
+localhost
+
+[all:vars]
+svcAcct=artifactory-operator
+namespace=test-artifactory
+DEPLOY_NAME="artifactory-operator"
+ARTIFACTORY_BASE_DNS="artifacts-old.lab.pathfinder.gov.bc.ca"
+IMAGE_REGISTRY="docker-registry.default.svc:5000"
+IMAGE="test-artifactory/artifactory-operator"
+IMAGE_TAG="v1-0.9.0-stable"
+secretName="artifactory-admin"
+

@@ -3,15 +3,6 @@
   connection:   local
   gather_facts: no
   tasks:
-  - name: Set deployment facts
-    set_fact:
-      DEPLOY_NAME: "artifactory-operator"
-      ARTIFACTORY_BASE_DNS: "artifacts-old.lab.pathfinder.gov.bc.ca"
-      IMAGE_REGISTRY: "docker-registry.default.svc:5000"
-      IMAGE: "test-artifactory/artifactory-operator"
-      IMAGE_TAG: "v1-0.9.0-stable"
-      secretName: "artifactory-admin"
-
   - name: deploy Project Roles
     k8s:
       state: "{{ state | default('present') }}"
