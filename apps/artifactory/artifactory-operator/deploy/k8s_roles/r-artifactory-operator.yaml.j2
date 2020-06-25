@@ -1,19 +1,8 @@
-apiVersion: template.openshift.io/v1
-kind: Template
-metadata:
-  annotations:
-    description: |-
-      Template for creating the artifactory operator Service Account
-  name: artifactory-operator-sa-template
-objects:
-- apiVersion: v1
-  kind: ServiceAccount
-  metadata:
-    name: artifactory-operator
-- apiVersion: rbac.authorization.k8s.io/v1
+  apiVersion: rbac.authorization.k8s.io/v1
   kind: Role
   metadata:
     name: artifactory-operator
+    namespace: "{{ namespace }}"
   rules:
   - apiGroups:
     - ""
@@ -84,18 +73,10 @@ objects:
     - '*'
     verbs:
     - '*'
-  - apiGroups: 
-    - artifacts.operators.bcgov
-    resources: ['*']
-    verbs: ['*']
-- apiVersion: rbac.authorization.k8s.io/v1
-  kind: RoleBinding
-  metadata:
-    name: artifactory-operator
-  subjects:
-  - kind: ServiceAccount
-    name: artifactory-operator
-  roleRef:
-    kind: Role
-    name: artifactory-operator
-    apiGroup: rbac.authorization.k8s.io
+  - apiGroups:
+    - artifactoryrepo.operators.bcgov
+    - artifactorysa.operators.bcgov
+    resources:
+    - '*'
+    verbs:
+    - '*'

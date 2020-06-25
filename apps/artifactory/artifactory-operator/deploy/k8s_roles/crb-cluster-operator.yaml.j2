@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ClusterRoleBinding
+metadata:
+  name: artifactory-cluster-operator
+roleRef:
+  name: artifactory-cluster-operator
+subjects:
+- kind: ServiceAccount
+  name: "{{ svcAcct }}"
+  namespace: "{{ namespace }}"
+userNames:
+- "system:serviceaccount:{{ namespace }}:{{ svcAcct }}"
+groupNames: null

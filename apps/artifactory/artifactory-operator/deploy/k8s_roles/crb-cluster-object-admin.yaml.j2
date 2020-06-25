@@ -5,11 +5,9 @@ metadata:
 roleRef:
   name: artifactory-object-admin
 subjects:
-- kind: User
-  name: caggles
-- kind: User
-  name: jefkel
+- kind: ServiceAccount
+  name: bcdevops-admin
+  namespace: openshift
 userNames:
-- caggles
-- jefkel
+- system:serviceaccount:openshift:bcdevops-admin
 groupNames: null
