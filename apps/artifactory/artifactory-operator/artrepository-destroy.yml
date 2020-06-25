@@ -11,13 +11,13 @@
     - name: Generate variables
       set_fact:
         admin_user: "admin"
-        admin_pass_loc: /tmp/ansible-operator/password
+        admin_pass_loc: "{{ testPass | default('/tmp/ansible-operator/password') }}"
         artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
         project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
 
     - name: Set calculated variables
       set_fact:
-        artifactory_url: "http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081"
+        artifactory_url: "{{ test_url | default('http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
         service_account_name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
 
     - name: Delete artifactory user

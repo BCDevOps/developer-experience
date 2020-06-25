@@ -2,8 +2,7 @@ apiVersion: template.openshift.io/v1
 kind: Template
 metadata:
   annotations:
-    description: |-
-      Template for creating custom resource for Artifactory
+    description: "Template for creating custom resource for Artifactory Repository creation"
   name: artifactory-cr-template
 objects:
 - apiVersion: artifactoryrepo.operators.bcgov/v1alpha1

@@ -7,13 +7,10 @@ meta:
 # Operator Repo-CR variables
 
 # Operator ServiceAcct CR variables
-spec:
-  cr_name: servicetester-2
-  sa_name: "servicetester-2-jefkel-hxjlpf"
-  descriptor: "Jeffs other test"
+#sa_name: servicetester-2-jefkel-jabfqj
+descriptor: "Jeffs other test"
 
 # Operator build/deploy variables
-console: ""
-artifactory_url: "https://artifacts.lab.pathfinder.gov.bc.ca"
-admin_pass_loc: "~/projects/bcdevops/art_creds"
-external_dns_suffix: "artifacts.lab.pathfinder.gov.bc.ca"
+test_url: "https://artifacts-old.lab.pathfinder.gov.bc.ca"
+testPass: "~/projects/bcdevops/art_creds"
+external_dns_suffix: "artifacts-old.lab.pathfinder.gov.bc.ca"

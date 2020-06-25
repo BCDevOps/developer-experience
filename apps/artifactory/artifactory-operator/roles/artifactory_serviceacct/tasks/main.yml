@@ -1,5 +1,6 @@
 ---
   # tasks file for artifactory service account
+
 - name: Check artifactory user
   uri:
     url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
@@ -13,7 +14,14 @@
     status_code: 200,404
   register: sa_exists
 
-# - name: Check SA k8s secret
+- block:
+  - name: "No Action Required"
+    debug:
+      msg: "Artifactory User already exists: {{ service_account_name }}"
+  - meta: end_play
+  when: sa_exists.status == 200
+
+  # - name: Check SA k8s secret
 #   k8s_info:
 #     api_version: v1
 #     kind: secret
@@ -24,7 +32,6 @@
 - name: Generate Password
   set_fact:
     generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
-#  when: (check_sa_secret.resources|length<1)
   when: sa_exists.status == 404
 
 - name: Create artifactory user
@@ -59,30 +66,6 @@
         username: "{{ service_account_name | b64encode }}"
         password: "{{ generated_password | b64encode }}"
   when: created_sa.changed
-
-- name: Check ServiceAccount CR
-#  k8s_info:  ## using ansible 2.7, not supported yet
-  k8s_facts:
-    api_version: v1alpha1
-    kind: ArtifactorySA
-    name: "{{ meta.name }}"
-    namespace: "{{ meta.namespace }}"
-  register: check_sa_cr
-
-- name: Update CR ServiceAccount detail
-  k8s:
-    state: present
-    definition:
-      apiVersion: v1alpha1
-      kind: ArtifactorySA
-      metadata:
-        name: "{{ meta.name }}"
-        namespace: "{{ meta.namespace }}"
-      spec:
-        cr_name: "{{ spec.cr_name }}"
-        sa_name: "{{ service_account_name }}"
-        descriptor: "{{ spec.descriptor }}"
-  when: created_sa.changed and (check_sa_cr.resources|length>0)
 
 # # Generating an admin token (to replace a service account user), requires adding to a group for access controls.
 # - name: Generate admin token
