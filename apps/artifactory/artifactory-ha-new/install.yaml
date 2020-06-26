@@ -124,18 +124,18 @@
         status_code: 201
       ignore_errors: yes
 
-    - name: Create SSO link
-      uri:
-        url: "https://{{ URL }}/artifactory/api/system/configuration"
-        user: "admin"
-        password: "{{ artifactory_password }}"
-        method: PATCH
-        headers:
-          Content-type: "application/yaml"
-        body: "{{ lookup('file', env+'-sso-link-local.yaml') }}"
-        force_basic_auth: yes
-        status_code: 201
-      ignore_errors: yes
+#    - name: Create SSO link
+#      uri:
+#        url: "https://{{ URL }}/artifactory/api/system/configuration"
+#        user: "admin"
+#        password: "{{ artifactory_password }}"
+#        method: PATCH
+#        headers:
+#          Content-type: "application/yaml"
+#        body: "{{ lookup('file', env+'-sso-link-local.yaml') }}"
+#        force_basic_auth: yes
+#        status_code: 201
+#      ignore_errors: yes
 
       # delete processed folder
     - name: remove proccessed directory
