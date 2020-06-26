@@ -3,3 +3,5 @@ setenv-prod.sh
 apps/artifactory/artifactory-ha/upgrade/backup/*
 apps/artifactory/artifactory-ha/processed/*
 apps/artifactory/artifactory-ha-new/processed/*
+apps/artifactory/artifactory-ha-new/lab-sso-link-local.yaml
+apps/artifactory/artifactory-ha-new/prod-sso-link-local.yaml

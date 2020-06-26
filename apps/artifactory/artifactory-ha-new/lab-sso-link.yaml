@@ -1,0 +1,15 @@
+security:   #Security configuration (LDAP, SAML, Password Policy, ...)
+  oauthSettings:   #OAuth SSO settings
+    enableIntegration: true   #If set to true, authentication with an OAuth provider is enabled and Artifactory will display all OAuth providers configured. If not set, authentication is by Artifactory user/password
+    oauthProvidersSettings:   #OAuth SSO provider (e.g. GitHub, Google) settings
+    persistUsers: true   #When set, Artifactory will create an Artifactory user account for any new user logging in to Artifactory for the first time
+    allowUserToAccessProfile: true   #When set, users created after authenticating using OAuth, will be able to access their profile. This means they are able to generate their API Key and set their password for future use
+        github-oauth:
+           id: artifactory-oauth-lab   #The Unique ID of the OAuth Provider setting
+           enabled: true   #When set, the OAuth SSO provider setting is enabled
+           apiUrl: https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo   #The URL used for API access, if needed to get user data (e.g. https://api.github.com/user)
+           authUrl: https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth   #The URL used for the initial authentication step (e.g.  https://github.com/login/oauth/authorize)
+           basicUrl: https://sso.pathfinder.gov.bc.ca/   #The URL used to acquire a token via basic auth (e.g. https://github.com/)
+           providerType: openid   #The provider type
+           secret: secret  #The OAuth2 shared secret, given by the provider
+           tokenUrl: https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/token   #The URL used to acquire a token from the provider

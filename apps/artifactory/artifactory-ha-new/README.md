@@ -5,3 +5,4 @@ oc delete statefulsets,services,routes,secrets,configmaps,pvc -l app=postgresql
 oc delete statefulsets,services,routes,secrets,configmaps,pvc -l statefulset=postgresql
 
 oc cp 20200618.195526.zip artifactory-artifactory-ha-primary-0:/var/opt/jfrog/artifactory/backup/artifactory/20200618.195526.zip
+
