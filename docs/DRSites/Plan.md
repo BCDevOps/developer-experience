@@ -27,7 +27,7 @@ pros:
 cons:
 - time consuming to migrate all production data
 - will require a complex setup to achieve active-active data replication which may be even more challenging due to the network latency between the on-prem production instance and the failover cloud-hosted instance. 
-- still experience temporary service downtime during migration as to prevent data corruption
+- users will experience a temporary service downtime during the initial data migration from the production instance to the maintenance instance to avoid data corruption
 
 **Blockers:**
 - migrate RocketChat service from pathfinder to developer
