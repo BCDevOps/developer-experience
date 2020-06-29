@@ -26,6 +26,7 @@ pros:
 
 cons:
 - time consuming to migrate all production data
+- will require a complex setup to achieve active-active data replication which may be even more challenging due to the network latency between the on-prem production instance and the failover cloud-hosted instance. 
 - still experience temporary service downtime during migration as to prevent data corruption
 
 **Blockers:**
