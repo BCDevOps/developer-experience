@@ -27,6 +27,9 @@ cons:
 - time consuming to migrate all production data
 - still experience temporary service downtime during migration as to prevent data corruption
 
+**Blockers:**
+- migrate RocketChat service from pathfinder to developer
+- test out cloud cluster storage difference and effects
 
 
 ### Your thoughts!
