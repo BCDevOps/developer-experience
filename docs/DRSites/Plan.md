@@ -14,7 +14,8 @@ pros:
 - starts with clean chats focusing on communicating the maintenance/troubleshooting progress
 
 cons:
-- user cannot continue on previous conversations until production RocketChat is brought back up again
+- no history sharing is available between the production and maintenance instances. No content from the main production instance is available when switching to the maintenance instance.  Users cannot continue on previous conversations until production RocketChat is brought back up again. After switching back to the main production instance, the content generated in the maintenance instance is not available anymore.
+- requires to re-login to access the maintenance instance
 - incoming and outgoing webhooks temporarily unavailable
 
 **Plan B: A fully migrated production instance:**
