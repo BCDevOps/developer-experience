@@ -21,6 +21,9 @@
 
 Don't run unless you're sure ;)
 
+```
 oc delete statefulsets,services,routes,secrets,configmaps,pvc -l app=artifactory-ha
 oc delete statefulsets,services,routes,secrets,configmaps,pvc -l app=postgresql
 oc delete statefulsets,services,routes,secrets,configmaps,pvc -l statefulset=postgresql
+```
+
