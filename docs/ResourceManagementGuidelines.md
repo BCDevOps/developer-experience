@@ -81,8 +81,8 @@ This solution is even *better* than using a high CPU limit, because it makes it 
 
 ## How Do I Start?
 
-The Platform Team regularly contacts those teams with very large ratios to encourage them to shrink them down a little - this would be a good way to get started.
-
+The Platform Team regularly contacts those teams with very large ratios to encourage them to shrink them down a little - this would be a good way to get started. 
 We are also hard at work on developing an easy-to-use dashboard where you'll be able to check your ratio at a glance!
 
 In the meantime, check out the "Metrics" tab for your running pods the Openshift console to get an idea of how much CPU you're actually using compared to how much you have requested.
+Your team can use the information found in our [Application Resource Tuning](https://github.com/BCDevOps/developer-experience/blob/master/docs/resource-tuning-recommendations.md) document for some guidance on how to start looking for the right request and limit values!
