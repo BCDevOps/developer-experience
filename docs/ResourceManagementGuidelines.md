@@ -76,7 +76,7 @@ Well, there aren't any nodes with 8 CPUs left available, so it simply does its b
 Now, if another pod comes along with another very high CPU limit, the platform has a more difficult time guessing whether it should put that pod onto the same node (because you're only using a half a CPU right now, so there is currently 5.5 CPUs left) because it doesn't know whether your pod will suddenly need all 5.5 of those extra CPUs to accommodate spike in traffic.
 If it guesses wrong and puts this other pod into the same node, and then a spike *does* occur, your application will be left trying to accomodate a great deal of traffic with maybe only 3 or 4 CPUs out of the 8 you think might be necessary.
 
-On the other han,d let's say you have a pod where your request is 0.5 CPUs and your limit is 0.75 CPUs, and you have robust horizontal scaling. 
+On the other hand, let's say you have a pod where your request is 0.5 CPUs and your limit is 0.75 CPUs, and you have robust horizontal scaling. 
 The platform is happy to stick that pod on *any* node that has even just 1 CPU left, no problem. It can save spaces on those nodes with 5-6 CPUs for those applications that aren't yet as well-tuned as your is.
 And if you have a sudden spike in traffic? Your application can spin up several more nodes very quickly, which can, again, be easily scheduled on pretty much any node, which means that you could potentially have up to 8 CPUs worth of resource claimed during your spike, across countless *different* nodes.
 And because your application can be balanced so easily across so many nodes, it's extremely unlikely that you'll end up in competition for the remaining CPU on any single node with another resource-hogging pod.
