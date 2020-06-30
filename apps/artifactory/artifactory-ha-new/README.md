@@ -14,7 +14,8 @@
 3. In `env-helm-values` folder, paste the resulting strings into `masterKey` and `joinKey`. These are not secret - don't worry about uploading them to github.
 4. Update `env-artifactory-ha.env` to ensure that it has the correct storage class type.
 5. You may update the resource requests and limits in `env-helm-values.yaml` to suit the needs of the cluster.
-6. At this point, following the instructions in Section 1 for this new environment should work smoothly.
+6. Make sure you add `env-sso-link-local.yaml` to the gitignore file.
+7. At this point, following the instructions in Section 1 for this new environment should work smoothly.
 
 ## 3. Deleting Everything
 
