@@ -77,6 +77,37 @@ A: Your Pods will be deployed with the configured request, and will have the def
 **Q: What happens if I create a deployment with a request that is higher than the default limit?**  
 A: You will be required to define a limit. 
 
+**Q: Is there any way I can check for myself the actual CPU consumption of running pods in my project?"**
+A: There is a way which requires you to make use of the `oc` client versus using the web console. Additional math will be required past this point as there is no way of automating this in a cross-platform fashion using just `oc`.
+
+```
+oc adm top pod
+NAME              CPU(cores)   MEMORY(bytes)
+<redacted>        3m           285Mi
+<redacted>        3m           299Mi
+<redacted>        3m           285Mi
+<redacted>        0m           13Mi
+<redacted>        9m           61Mi
+<redacted>        4m           98Mi
+<redacted>        0m           28Mi
+<redacted>        2            26Mi
+```
+
+For the above, the column of numbers involving `CPU(cores)` is what you want to add up. the `m` suffix stands for millicores, so for the above, add up the numbers and divide by 1000 to get the actual consumption of CPU cores by the pods in the current project. If the CPU usage has no `m` suffix, then that is just measured in cores, and not millicores. For the above example, the total would then be 2 + (3+3+3+9+4)/1000 = 2.022 CPU cores of actual CPU consumption.
+
+**Q: Is there an easy way to use `oc` to get the current value of CPU Requests allowed for the project currently logged into with `oc`?
+A: Certainly. The following one-liner will display the current value of CPU requests as currently alloted for the current project.
+```
+oc get quota compute-long-running-quota -o=custom-columns=Requests:.status.used."requests\.cpu"
+```
+
+Example output of the above, the `m` at the end again means millicores, so dividing the number by 1000 tells us the current project per this example has a total alloted CPU Requests value of 14.5 CPU cores.
+
+```
+Requests
+14500m
+```
+
 
 ## Jenkins Resource Configuration Recommendations
 Tuning the resources of Jenkins deployments can have a large affect on the available resources of the platform. As of the this writing, Jenkins accounts for the largest user of CPU Requests and Limits on the platform. Recent analysis has indicated:
