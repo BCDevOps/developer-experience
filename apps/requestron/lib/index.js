@@ -5,6 +5,7 @@ const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
 const averageTime = require('./averageTime');
 const onboardingComment = require('./onboarding')
+const opsAwayComment = require('./opsAway')
 
 module.exports = (app) => {
 
@@ -27,6 +28,9 @@ module.exports = (app) => {
 
       // create a link to the Onboarding Journey for new project sets
       await onboardingComment(context);
+
+      // create a message for service unavailability
+      await opsAwayComment(context);
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
