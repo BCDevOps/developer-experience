@@ -2,8 +2,8 @@ artifactory:
   name: "artifactory"
   image:
     version: "7.4.3"
-  masterKey: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
-  joinKey: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
+  masterKey: 3d5ffc86f2958dd644a882fc470b553cf599289a0bcd017f3d7ca3efa504a294
+  joinKey: d13dcdf2c294ee083075b04cf15526ee8059521483d66aede74018c21665de1d
   primary:
     resources:
       requests:

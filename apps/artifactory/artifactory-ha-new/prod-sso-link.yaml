@@ -5,7 +5,7 @@ security:
     enableIntegration: true
     oauthProvidersSettings:
       devhub-sso:
-        id: artifactory-oauth-lab
+        id: artifactory-oauth
         enabled: true
         apiUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo"
         authUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth"
