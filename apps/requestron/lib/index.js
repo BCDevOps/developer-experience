@@ -30,7 +30,7 @@ module.exports = (app) => {
       await onboardingComment(context);
 
       // create a message for service unavailability
-      await opsAwayComment(context);
+      // await opsAwayComment(context, 'next Monday');
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
