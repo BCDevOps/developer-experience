@@ -29,8 +29,8 @@ ansible-playbook clusterAdmin.yml -i ${Inventory File}
 
 ``` bash
 operator-sdk build artifactory-operator
-../oc-push-image.sh -i artifactory-operator -n test-artifactory -r docker-registry.lab.pathfinder.gov.bc.ca
-oc -n test-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.9.0-stable
+../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r docker-registry.lab.pathfinder.gov.bc.ca
+oc -n devops-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.9.1-stable
 ```
 
 ### Deploy Operator
