@@ -10,6 +10,6 @@ security:
         apiUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo"
         authUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth"
         basicUrl: "https://sso.pathfinder.gov.bc.ca/"
-        providerType: github
+        providerType: openId
         secret: xxxxxxxxxxxxxxxxxxxx
         tokenUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/token"
