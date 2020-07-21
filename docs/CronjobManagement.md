@@ -62,4 +62,6 @@ In this situation, the correct solution is to put your cronjon into a **persiste
 This just means that, instead of spinning up a new pod every time the platform tries to run your job, it spins up one pod, one time, and that pod stays up, running the job repeatedly.
 This eliminates the need for a pod to bounce up and down very often.
 
-
+There are a number of ways to approach creating this kind of persistent pod. 
+A good option might be [Jobber](https://hub.docker.com/_/jobber) - the platform team has not made extensive use of this, but development teams are welcome to test it (or any other solution) out as a problem.
+If your team finds a good solution that works well, we invite you to include a link to your deployment config on this document!
