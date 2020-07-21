@@ -37,8 +37,15 @@ We don't have a handy rule-of-thumb to decide how often is too often - while it 
 If you have a job that runs every 15 minutes but takes 10 seconds to run, spinning up a new pod every time might be worthwhile, since that's one less pod on the platform for 14 and a half minutes.
 On the other hand, if your job takes 12 minutes to run, it might no longer be worthwhile to spend the overhead shutting the pod down for only 3 minutes in each window.
 
+As a general rule you should take a closer look at any cronjob that runs more often than every 10 minutes. 
+This is not to say that every job that runs that often is a problem and *requires* tweaking, but rather that these jobs require a little extra checking to determine *if* they require adjustment.
+
+Similarly, you should take a second look at any job that requires more than a minute or two to complete.
+
+However, we are not going to provide specific limits on what counts as "too often" or "too long" and which *require* action on your part.
 There is a reason why teams on this platform are given so much freedom to make their own decisions - we trust you to be educated on best practices, to be community-minded, and to understand your application better than we ever could.
 **Use your own best judgement when deciding if your cronjob runs too often.**
+And remember that this is a shared platform - don't use more resources than you actually require.
 
 To check and see what cronjobs you have on your project that run very often, try this command:
 
