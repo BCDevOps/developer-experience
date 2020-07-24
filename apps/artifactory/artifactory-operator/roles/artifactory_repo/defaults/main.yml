@@ -1,0 +1,46 @@
+---
+# defaults file for artifactory
+console: ""
+team_name: ""
+repository_type: ""
+repository_locator: ""
+repository_description: ""
+admin_user: admin
+admin_pass_loc: /tmp/ansible-operator/password
+artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
+external_dns_suffix: "{{ lookup('env', 'ARTIFACTORY_BASE_DNS')}}"
+## For local testing, use external route for artifactory service
+#artifactory_url: https://{{ external_dns_suffix }}
+artifactory_url: "http://artifactory:8081"
+artifactory_repo_endpoint: artifactory/api/repositories
+artifactory_permission_endpoint: artifactory/api/v2/security/permissions
+artifactory_group_endpoint: artifactory/api/security/groups
+artifactory_user_endpoint: artifactory/api/security/users
+artifactory_token_endpoint: artifactory/api/security/token
+list_virtual_repositories: ""
+dict_repo_layout:
+  maven: "maven-2-default"
+  gradle: "gradle-default"
+  ivy: "ivy-default"
+  sbt: "sbt-default"
+  helm: "simple-default"
+  cocoapods: "simple-default"
+  opkg: "simple-default"
+  rpm: "simple-default"
+  nuget: "nuget-default"
+  cran: "simple-default"
+  gems: "simple-default"
+  npm: "npm-default"
+  bower: "bower-default"
+  debian: "simple-default"
+  composer: "composer-default"
+  pypi: "simple-default"
+  docker: "simple-default"
+  vagrant: "simple-default"
+  gitlfs: "simple-default"
+  go: "simple-default"
+  yum: "simple-default"
+  conan: "conan-default"
+  chef: "simple-default"
+  puppet: "puppet-default"
+  generic: "simple-default"

@@ -1,0 +1,13 @@
+{"name": "{{ repo_permission.json.name }}",
+  "repo": {
+    "repositories": ["{{ repo_permission.json.name }}"],
+    "actions": {
+      "users" : {
+        "{{ repo_permission.json.name }}" : ["read","write","annotate","delete","manage"]
+{% for user in people %}
+        , "{{ user.name }}" : {{ user.perms }}
+{% endfor %}
+      }
+    }
+  }
+}
