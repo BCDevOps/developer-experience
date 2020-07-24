@@ -1,0 +1,46 @@
+---
+- name: Set service account info
+  set_fact:
+    service_account_name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+
+- name: Create Repository Admin Service Account
+  include_role: 
+    name: artifactory_serviceacct
+
+- name: Check existing Permission object
+  uri:
+    url: "{{ artifactory_url }}/{{ artifactory_permission_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: HEAD
+    body_format: json
+    headers:
+      Content-type: "application/json"
+    force_basic_auth: yes
+    status_code: 200,404
+  register: repo_permission
+
+- fail:
+    msg: "Permission Target already exists: {{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+  when: repo_permission.status == 200
+
+- name: Add Permission for repository
+  uri:
+    url: "{{ artifactory_url }}/{{ artifactory_permission_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: POST
+    body_format: json
+    headers:
+      Content-type: "application/json"
+    body: "{{ lookup('template', 'PermissionTargetV2.json.j2') }}"
+    force_basic_auth: yes
+    status_code: 200,201
+  register: create_perm
+  when: repo_permission.status == 404
+  changed_when: create_perm.status == 201
+
+- name: Include docker tasks
+  include_tasks: "docker-local.yml"
+  when: repository_type == "docker"

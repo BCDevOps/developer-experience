@@ -1,0 +1,13 @@
+{
+  "name": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}",
+  "repo": {
+    "include-patterns": ["**"],
+    "exclude-patterns": [""], 
+    "repositories": ["{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"], 
+    "actions": {
+      "users" : {
+        "{{ service_account_name }}" : ["manage","read","write","annotate","delete","manage"]
+      }
+    }
+  }
+}

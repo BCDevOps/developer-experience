@@ -1,0 +1,31 @@
+---
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: test-vars-artifactorySA.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        admin_user: "admin"
+
+    - name: Set account name
+      set_fact:
+#        service_account_name: "{{ spec.sa_name | default('junker', true) }}"
+        service_account_name: "{{ meta.name | default('junker', true) }}"
+
+    - name: Find ArtifactorySA if exists
+      k8s_info:
+        api_version: v1alpha1
+        kind: ArtifactorySA
+        name: "{{ service_account_name }}"
+        namespace: "{{ meta.namespace }}"
+      register: check_sa_cr
+
+    - name: show check value
+      debug:
+        msg: "{{ check_sa_cr.resources[0].metadata }}"
+      when: (check_sa_cr.resources|length>0)

@@ -1,0 +1,16 @@
+---
+# Operator common CR variables
+meta:
+  name: servicetester-2
+  namespace: jefkel-dev
+
+# Operator Repo-CR variables
+
+# Operator ServiceAcct CR variables
+#sa_name: servicetester-2-jefkel-jabfqj
+descriptor: "Jeffs other test"
+
+# Operator build/deploy variables
+test_url: "https://artifacts-old.lab.pathfinder.gov.bc.ca"
+testPass: "~/projects/bcdevops/art_creds"
+external_dns_suffix: "artifacts-old.lab.pathfinder.gov.bc.ca"

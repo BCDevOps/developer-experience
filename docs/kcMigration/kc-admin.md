@@ -52,6 +52,20 @@
 
 [x] create scripts for the IDP migration
 
+[ ] work with WAM team to setup SiteMinder federation services for the new URLs
+  - sbox IDIR
+  - sbox BCeID
+  - dev IDIR
+  - dev BCeID
+  - test IDIR
+  - test BCeID
+  - prod IDIR
+  - prod BCeID
+
+[ ] expend Platform Service Project Registry with KeyCloak metadata
+
+[ ] import collected info to Project Registry
+
 [ ] Optional: test multi-domain setup in two instances:
 
 [ ] setup traffic monitoring on the old KC instance:
