@@ -42,7 +42,7 @@
       # build template from artifactory helm chart
     - name: create template from helm chart
       command: >
-        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values.yaml --set database.password={{ db_password }}
+        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values-local.yaml --set database.password={{ db_password }}
       register: artifactory_processed
     - copy: content="{{ artifactory_processed.stdout }}" dest=./processed/artifactory_processed.yaml
 

@@ -3,7 +3,8 @@
 1. Login to the correct openshift cluster.
 2. Navigate to the correct project.
 3. Open `vars.yaml` and update the `env`, `url` and `project-name` accordingly.
-4. Copy the appropriate `env-helm-values.yaml` file 
+4. Copy the appropriate `env-helm-values.yaml` file and call it `env-helm-values-local.yaml`
+5. Open `env-helm-values-local.yaml` and provide the missing ECS credential.
 4. Copy the appropriate `env-sso-link.yaml` file and call it `env-sso-link-local.yaml`
 5. Open the `env-sso-link-local.yaml` file and provide the missing SSO client secret.
 6. Run `ansible-playbook install.yaml` and follow the in-built instructions.

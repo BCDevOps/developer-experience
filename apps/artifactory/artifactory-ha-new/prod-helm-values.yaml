@@ -31,6 +31,13 @@ artifactory:
   persistence:
     name: artifactory
     size: 10Gi
+    type: aws-s3
+    awsS3:
+      bucketName: "artifactory-test-bucket"
+      endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
+      region: US-Standard
+      identity: "artifactory-test"
+      credential: "xxxxxxxxxxxxxxxxxx"
   service:
     pool: "all"
 securityContext:
