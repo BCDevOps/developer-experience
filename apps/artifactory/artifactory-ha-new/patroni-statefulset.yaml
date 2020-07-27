@@ -55,7 +55,7 @@ objects:
           "postgresql":{
             "parameters":{
               "max_prepared_transactions":0,
-              "max_connections":100,
+              "max_connections":200,
               "max_locks_per_transaction":64
             },
             "use_pg_rewind":true,
