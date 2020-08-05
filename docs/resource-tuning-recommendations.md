@@ -51,7 +51,7 @@ Using a 2:1 ratio makes you a **great community member**!
 Having a **1.5:1 ratio** of CPU Limit:CPU Request is an amazing goal for teams who have already started tuning their applications and are looking to make the best possible use of the platform's capabilities. Using a 1.5:1 ratio makes you an **amazing community member**!
 
 ### CPU and Memory Utilization
-We highly recommend you watch our episode on CPU and Memory utilization
+Here is an awesome 4 min video that includes an example of resource tuning for a sample Openshift application.
 
 https://youtu.be/rkxVZgn9icU
 
@@ -175,5 +175,4 @@ The observations from the testing can be summarized as follows:
     - CPU Limit: 1000m+
     - Memory Request: 512M
     - Memory Limit: 1-2GB (May vary depending on usage)
-
 
