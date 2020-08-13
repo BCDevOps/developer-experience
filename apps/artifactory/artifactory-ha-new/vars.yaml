@@ -1,5 +1,6 @@
 env: lab
-db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+#db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+db_password: "temppass"
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
-URL: 'artifacts.lab.pathfinder.gov.bc.ca'
+URL: 'artifacts.klab.devops.gov.bc.ca'
 project_name: 'devops-artifactory'

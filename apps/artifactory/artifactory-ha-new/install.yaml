@@ -15,10 +15,38 @@
       command: >
         oc project {{ project_name }}
 
-      # make secret
-    - name: process patroni-secret.yaml
+      # make patroni build
+    - name: process patroni-build.yaml
       command: >
-        oc process -f ./patroni-secret.yaml --param-file=./{{env}}-artifactory-ha.env APP_DB_PASSWORD={{ db_password }} --ignore-unknown-parameters=true
+        oc process -f ./patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
+                                           -p GIT_REF=master \
+                                           -p SUFFIX=-pg11 \
+                                           -p OUT_VERSION=v11-latest \
+                                           -p PG_VERSION=11
+      register: patroni_build_processed
+    - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
+    - name: apply patroni-build
+      command: >
+        oc apply -f ./processed/patroni-build.json
+
+    - name: trigger patroni build
+      command: >
+        oc start-build patroni-pg11
+
+    - pause:
+        prompt: "Hit enter to continue once the patroni build is finished"
+
+    - name: tag patroni build
+      command: >
+        oc tag patroni:v11-latest patroni:v11-stable
+
+      # make secret
+    - name: process patroni-prereq.yaml
+      command: >
+        oc process -f ./patroni-prereq.yaml \
+                                             -p NAME=patroni \
+                                             -p SUFFIX=-001 \
+                                             -p APP_DB_PASSWORD={{ db_password }}
       register: patroni_secret_processed
     - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
     - name: apply patroni-secret
@@ -26,9 +54,13 @@
         oc apply -f ./processed/patroni-secret.json
 
       # deploy patroni stateful set
-    - name: process patroni-statefulset
+    - name: process patroni-deploy.yaml
       command: >
-        oc process -f ./patroni-statefulset.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
+        oc process -f ./patroni-deploy.yaml -p NAME=patroni \
+                                             -p "IMAGE_STREAM_NAMESPACE=devops-artifactory" \
+                                             -p "IMAGE_STREAM_TAG=patroni:v11-latest" \
+                                             -p REPLICAS=3 \
+                                             -p SUFFIX=-001
       register: patroni_statefulset_processed
     - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
     - name: apply patroni-statefulset
@@ -39,21 +71,26 @@
     - pause:
         prompt: "Hit enter to continue once the patroni stateful set is fully deployed"
 
-      # build template from artifactory helm chart
-    - name: create template from helm chart
-      command: >
-        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values-local.yaml --set database.password={{ db_password }}
-      register: artifactory_processed
-    - copy: content="{{ artifactory_processed.stdout }}" dest=./processed/artifactory_processed.yaml
+#      # build template from artifactory helm chart
+#    - name: create template from helm chart
+#      command: >
+#        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values-local.yaml --set database.password={{ db_password }}
+#      register: artifactory_processed
+#    - copy: content="{{ artifactory_processed.stdout }}" dest=./processed/artifactory_processed.yaml
+#
+#      # wait for the template to finish
+#    - pause:
+#        seconds: 15
 
-      # wait for the template to finish
-    - pause:
-        seconds: 15
+#      # deploy template
+#    - name: apply artifactory_processed
+#      command: >
+#        oc apply -f ./processed/artifactory_processed.yaml
 
       # deploy template
     - name: apply artifactory_processed
       command: >
-        oc apply -f ./processed/artifactory_processed.yaml
+        oc apply -f ./manifest.yaml
 
       # wait for the service to show up
     - pause:
