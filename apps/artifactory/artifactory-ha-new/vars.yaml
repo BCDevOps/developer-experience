@@ -1,6 +1,23 @@
 env: lab
-#db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
-db_password: "temppass"
-artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
-URL: 'artifacts.klab.devops.gov.bc.ca'
+
+URL: 'artifacts.apps.klab.devops.gov.bc.ca'
 project_name: 'devops-artifactory'
+master_key: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
+join_key: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
+artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
+
+cpu_limit: "3"
+memory_limit: "3Gi"
+cpu_request: "1"
+memory_request: "1Gi"
+storage_size: "10Gi"
+
+db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
+
+s3_bucket_name: "artifactory-test-bucket"
+s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
+s3_identity: "artifactory-test"
+s3_password: "xxxxxxxxxxxxx"
+
+build: false

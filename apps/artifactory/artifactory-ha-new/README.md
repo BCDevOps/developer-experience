@@ -25,7 +25,8 @@ Don't run unless you're sure ;)
 
 ```
 oc delete statefulsets,services,routes,secrets,configmaps,pvc -l app=artifactory-ha
-oc delete statefulsets,services,routes,secrets,configmaps,pvc -l app=patroni-001
-oc delete statefulsets,services,routes,secrets,configmaps,pvc -l statefulset=patroni-001
+oc delete statefulsets,services,routes,secrets -l app=patroni-001
+oc delete configmaps -l cluster-name=patroni-001
+oc delete pvc -l app=patroni-001
 ```
 

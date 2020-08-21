@@ -1,6 +1,6 @@
 - hosts: localhost
   vars_files:
-    vars.yaml
+    vars_local.yaml
   tasks:
 
       # create processed folder
@@ -24,21 +24,27 @@
                                            -p OUT_VERSION=v11-latest \
                                            -p PG_VERSION=11
       register: patroni_build_processed
+      when: build
     - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
+      when: build
     - name: apply patroni-build
       command: >
         oc apply -f ./processed/patroni-build.json
+      when: build
 
     - name: trigger patroni build
       command: >
         oc start-build patroni-pg11
+      when: build
 
     - pause:
         prompt: "Hit enter to continue once the patroni build is finished"
+      when: build
 
     - name: tag patroni build
       command: >
         oc tag patroni:v11-latest patroni:v11-stable
+      when: build
 
       # make secret
     - name: process patroni-prereq.yaml
@@ -46,7 +52,9 @@
         oc process -f ./patroni-prereq.yaml \
                                              -p NAME=patroni \
                                              -p SUFFIX=-001 \
-                                             -p APP_DB_PASSWORD={{ db_password }}
+                                             -p APP_DB_PASSWORD={{ db_password }} \
+                                             -p APP_DB_USERNAME=artifactory \
+                                             -p APP_DB_NAME=artifactory
       register: patroni_secret_processed
     - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
     - name: apply patroni-secret
@@ -58,8 +66,10 @@
       command: >
         oc process -f ./patroni-deploy.yaml -p NAME=patroni \
                                              -p "IMAGE_STREAM_NAMESPACE=devops-artifactory" \
-                                             -p "IMAGE_STREAM_TAG=patroni:v11-latest" \
-                                             -p REPLICAS=3 \
+                                             -p "IMAGE_STREAM_TAG=patroni:v11-stable" \
+                                             -p IMAGE_REGISTRY=image-registry.openshift-image-registry.svc:5000 \
+                                             -p STORAGE_CLASS=netapp-block-standard \
+                                             -p REPLICAS=1 \
                                              -p SUFFIX=-001
       register: patroni_statefulset_processed
     - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
@@ -70,6 +80,12 @@
       # wait until they're done.
     - pause:
         prompt: "Hit enter to continue once the patroni stateful set is fully deployed"
+
+    - name: build manifest from template
+      template:
+        src: manifest.yaml.j2
+        dest: ./processed/manifest.yaml
+
 
 #      # build template from artifactory helm chart
 #    - name: create template from helm chart
@@ -88,9 +104,9 @@
 #        oc apply -f ./processed/artifactory_processed.yaml
 
       # deploy template
-    - name: apply artifactory_processed
+    - name: apply artifactory manifest
       command: >
-        oc apply -f ./manifest.yaml
+        oc apply -f ./processed/manifest.yaml
 
       # wait for the service to show up
     - pause:
@@ -121,6 +137,7 @@
           Content-type: "application/json"
         body: '{"userName": "admin", "oldPassword": "password", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
         force_basic_auth: yes
+        validate_certs: no
 
       # make secret
     - name: process artifactory-admin-secret.yaml
@@ -142,6 +159,7 @@
           Content-type: "text/plain"
         body: "https://{{ URL }}/artifactory"
         force_basic_auth: yes
+        validate_certs: no
 
       # wait until they're done.
     - pause:
@@ -159,6 +177,7 @@
         body: '{ "name": "authenticated_users", "description" : "All newly authenticated users are added to this group", "autoJoin" : true }'
         force_basic_auth: yes
         status_code: 201
+        validate_certs: no
       ignore_errors: yes
 
     - name: Create SSO link
@@ -172,6 +191,7 @@
         body: "{{ lookup('file', env+'-sso-link-local.yaml') }}"
         force_basic_auth: yes
         status_code: 201
+        validate_certs: no
       ignore_errors: yes
 
       # delete processed folder
