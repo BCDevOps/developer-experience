@@ -185,7 +185,7 @@ metadata:
 data:
   migrate.sh: |
     #!/bin/bash
-    
+
     # Flags
     FLAG_Y="y"
     FLAG_N="n"
@@ -198,7 +198,7 @@ data:
     WRAPPER_SCRIPT_TYPE_DOCKER_COMPOSE="DOCKERCOMPOSE"
     
     SENSITIVE_KEY_VALUE="__sensitive_key_hidden___"
-    
+
     # Shared system keys
     SYS_KEY_SHARED_JFROGURL="shared.jfrogUrl"
     SYS_KEY_SHARED_SECURITY_JOINKEY="shared.security.joinKey"
@@ -220,26 +220,26 @@ data:
     SYS_KEY_SHARED_ELASTICSEARCH_CLUSTERSETUP="shared.elasticsearch.clusterSetup"
     SYS_KEY_SHARED_ELASTICSEARCH_UNICASTFILE="shared.elasticsearch.unicastFile"
     SYS_KEY_SHARED_ELASTICSEARCH_CLUSTERSETUP_VALUE="YES"
-    
+
     # Define this in product specific script. Should contain the path to unitcast file
     # File used by insight server to write cluster active nodes info. This will be read by elasticsearch
     #SYS_KEY_SHARED_ELASTICSEARCH_UNICASTFILE_VALUE=""
     
     SYS_KEY_RABBITMQ_ACTIVE_NODE_NAME="shared.rabbitMq.active.node.name"
     SYS_KEY_RABBITMQ_ACTIVE_NODE_IP="shared.rabbitMq.active.node.ip"
-    
+
     # Filenames
     FILE_NAME_SYSTEM_YAML="system.yaml"
     FILE_NAME_JOIN_KEY="join.key"
     FILE_NAME_MASTER_KEY="master.key"
     FILE_NAME_INSTALLER_YAML="installer.yaml"
-    
+
     # Global constants used in business logic
     NODE_TYPE_STANDALONE="standalone"
     NODE_TYPE_CLUSTER_NODE="node"
     NODE_TYPE_DATABASE="database"
-    
-    # External(isable) databases 
+
+    # External(isable) databases
     DATABASE_POSTGRES="POSTGRES"
     DATABASE_ELASTICSEARCH="ELASTICSEARCH"
     DATABASE_RABBITMQ="RABBITMQ"
@@ -257,10 +257,10 @@ data:
     ELASTICSEARCH_CONTAINER="elasticsearch"
     RABBITMQ_CONTAINER="rabbitmq"
     REDIS_CONTAINER="redis"
-    
+
     #Adding a small timeout before a read ensures it is positioned correctly in the screen
     read_timeout=0.5
-    
+
     # Options related to data directory location
     PROMPT_DATA_DIR_LOCATION="Installation Directory"
     KEY_DATA_DIR_LOCATION="installer.data_dir"
@@ -274,7 +274,7 @@ data:
     PROMPT_POSTGRES_INSTALL="Do you want to install $POSTGRES_LABEL?"
     KEY_POSTGRES_INSTALL="installer.install_postgresql"
     VALID_VALUES_POSTGRES_INSTALL="$FLAGS_Y_N"
-    
+
     # Postgres connection details
     RPM_DEB_POSTGRES_HOME_DEFAULT="/var/opt/jfrog/postgres"
     RPM_DEB_MESSAGE_STANDALONE_POSTGRES_DATA="$POSTGRES_LABEL home will have data and its configuration"
@@ -336,7 +336,7 @@ data:
     PROMPT_STANDALONE_ELASTICSEARCH_INSTALL="Do you want to install $ELASTICSEARCH_LABEL?"
     KEY_STANDALONE_ELASTICSEARCH_INSTALL="installer.install_elasticsearch"
     VALID_VALUES_STANDALONE_ELASTICSEARCH_INSTALL="$FLAGS_Y_N"
-    
+
     # Elasticsearch connection details
     MESSAGE_ELASTICSEARCH_DETAILS="Provide the $ELASTICSEARCH_LABEL connection details"
     PROMPT_ELASTICSEARCH_URL="$ELASTICSEARCH_LABEL URL"
@@ -348,7 +348,7 @@ data:
     PROMPT_ELASTICSEARCH_PASSWORD="$ELASTICSEARCH_LABEL password"
     KEY_ELASTICSEARCH_PASSWORD="$SYS_KEY_SHARED_ELASTICSEARCH_PASSWORD"
     IS_SENSITIVE_ELASTICSEARCH_PASSWORD="$FLAG_Y"
-    
+
     # Cluster related questions
     MESSAGE_CLUSTER_MASTER_KEY="Provide the cluster's master key. It can be found in the data directory of the first node under /etc/security/master.key"
     PROMPT_CLUSTER_MASTER_KEY="Master Key"
@@ -361,12 +361,12 @@ data:
     IS_SENSITIVE_JOIN_KEY="$FLAG_Y"
     REGEX_JOIN_KEY="^[a-zA-Z0-9]{16,}\$"
     ERROR_MESSAGE_JOIN_KEY="Invalid Join Key"
-    
+
     # Rabbitmq related cluster information
     MESSAGE_RABBITMQ_ACTIVE_NODE_NAME="Provide an active ${RABBITMQ_LABEL} node name. Run the command [ hostname -s ] on any of the existing nodes in the product cluster to get this"
     PROMPT_RABBITMQ_ACTIVE_NODE_NAME="${RABBITMQ_LABEL} active node name"
     KEY_RABBITMQ_ACTIVE_NODE_NAME="$SYS_KEY_RABBITMQ_ACTIVE_NODE_NAME"
-    
+
     # Rabbitmq related cluster information (necessary only for docker-compose)
     PROMPT_RABBITMQ_ACTIVE_NODE_IP="${RABBITMQ_LABEL} active node ip"
     KEY_RABBITMQ_ACTIVE_NODE_IP="$SYS_KEY_RABBITMQ_ACTIVE_NODE_IP"
@@ -378,11 +378,11 @@ data:
     KEY_JFROGURL="$SYS_KEY_SHARED_JFROGURL"
     REGEX_JFROGURL="^https?://.*:{0,}[0-9]{0,4}\$"
     ERROR_MESSAGE_JFROGURL="Invalid JFrog URL"
-    
-    
+
+
     # Set this to FLAG_Y on upgrade
     IS_UPGRADE="${FLAG_N}"
-    
+
     # This belongs in JFMC but is the ONLY one that needs it so keeping it here for now. Can be made into a method and overridden if necessary
     MESSAGE_MULTIPLE_PG_SCHEME="Please setup $POSTGRES_LABEL with schema as described in https://www.jfrog.com/confluence/display/JFROG/Installing+Mission+Control"
     
@@ -2926,7 +2926,7 @@ data:
     trimMasterKey () {
         local masterKeyDir=/opt/jfrog/artifactory/var/etc/security
         local oldMasterKey=$(<${masterKeyDir}/master.key)
-        local oldMasterKey_Length=$(echo ${#oldMasterKey})
+        local oldMasterKey_Length=$(echo $oldMasterKey | wc -m)
         local newMasterKey=
         if [[ ${oldMasterKey_Length} -gt 32 ]]; then
             bannerSection "TRIM MASTERKEY"
@@ -4715,7 +4715,7 @@ metadata:
     release: artifactory
 spec:
   serviceName: artifactory-artifactory-ha-member
-  replicas: "{{ replica_count }}"
+  replicas: {{ artifactory_replica_count }}
   updateStrategy:
     type: RollingUpdate
   selector:
@@ -4740,9 +4740,6 @@ spec:
       terminationGracePeriodSeconds: 30
       imagePullSecrets:
       - name: 4302974-as-mcs-artifactory-pull-secret
-      securityContext:
-        runAsUser: 1030
-        fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"
@@ -4982,9 +4979,6 @@ spec:
       terminationGracePeriodSeconds: 30
       imagePullSecrets:
       - name: 4302974-as-mcs-artifactory-pull-secret
-      securityContext:
-        runAsUser: 1030
-        fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"

@@ -30,3 +30,10 @@ oc delete configmaps -l cluster-name=patroni-001
 oc delete pvc -l app=patroni-001
 ```
 
+## 4. Helm Template
+
+If you want to produce a fresh manifest, you can use the following:
+
+```
+helm template artifactory jfrog/artifactory-ha -f ./lab-helm-values-local.yaml --set database.password=<<insert temp password here>>
+```

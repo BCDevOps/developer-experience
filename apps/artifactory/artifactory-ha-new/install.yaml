@@ -1,6 +1,6 @@
 - hosts: localhost
   vars_files:
-    vars_local.yaml
+    vars-local.yaml
   tasks:
 
       # create processed folder
@@ -18,11 +18,11 @@
       # make patroni build
     - name: process patroni-build.yaml
       command: >
-        oc process -f ./patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
+        oc process -f ./templates/patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
                                            -p GIT_REF=master \
-                                           -p SUFFIX=-pg11 \
-                                           -p OUT_VERSION=v11-latest \
-                                           -p PG_VERSION=11
+                                           -p SUFFIX=-pg{{ db_version }} \
+                                           -p OUT_VERSION=v{{ db_version }}-latest \
+                                           -p PG_VERSION={{ db_version }}
       register: patroni_build_processed
       when: build
     - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
@@ -34,7 +34,7 @@
 
     - name: trigger patroni build
       command: >
-        oc start-build patroni-pg11
+        oc start-build patroni-pg{{ db_version }}
       when: build
 
     - pause:
@@ -43,13 +43,13 @@
 
     - name: tag patroni build
       command: >
-        oc tag patroni:v11-latest patroni:v11-stable
+        oc tag patroni:v{{ db_version }}-latest patroni:v{{ db_version }}-stable
       when: build
 
       # make secret
     - name: process patroni-prereq.yaml
       command: >
-        oc process -f ./patroni-prereq.yaml \
+        oc process -f ./templates/patroni-prereq.yaml \
                                              -p NAME=patroni \
                                              -p SUFFIX=-001 \
                                              -p APP_DB_PASSWORD={{ db_password }} \
@@ -64,12 +64,12 @@
       # deploy patroni stateful set
     - name: process patroni-deploy.yaml
       command: >
-        oc process -f ./patroni-deploy.yaml -p NAME=patroni \
+        oc process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
                                              -p "IMAGE_STREAM_NAMESPACE=devops-artifactory" \
-                                             -p "IMAGE_STREAM_TAG=patroni:v11-stable" \
+                                             -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
                                              -p IMAGE_REGISTRY=image-registry.openshift-image-registry.svc:5000 \
-                                             -p STORAGE_CLASS=netapp-block-standard \
-                                             -p REPLICAS=1 \
+                                             -p STORAGE_CLASS={{ db_storage_class }} \
+                                             -p REPLICAS={{ db_replica_count }} \
                                              -p SUFFIX=-001
       register: patroni_statefulset_processed
     - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
@@ -83,25 +83,8 @@
 
     - name: build manifest from template
       template:
-        src: manifest.yaml.j2
+        src: ./templates/manifest.yaml.j2
         dest: ./processed/manifest.yaml
-
-
-#      # build template from artifactory helm chart
-#    - name: create template from helm chart
-#      command: >
-#        helm template artifactory jfrog/artifactory-ha -f ./{{env}}-helm-values-local.yaml --set database.password={{ db_password }}
-#      register: artifactory_processed
-#    - copy: content="{{ artifactory_processed.stdout }}" dest=./processed/artifactory_processed.yaml
-#
-#      # wait for the template to finish
-#    - pause:
-#        seconds: 15
-
-#      # deploy template
-#    - name: apply artifactory_processed
-#      command: >
-#        oc apply -f ./processed/artifactory_processed.yaml
 
       # deploy template
     - name: apply artifactory manifest
@@ -115,7 +98,9 @@
       # make route
     - name: process route.yaml
       command: >
-        oc process -f ./route.yaml --param-file=./{{env}}-artifactory-ha.env URL={{ URL }} APP_DB_PASSWORD={{ db_password }} --ignore-unknown-parameters=true
+        oc process -f ./templates/route.yaml \
+            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+            URL={{ artifactory_url }}
       register: route_processed
     - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
     - name: apply route
@@ -128,7 +113,7 @@
 
     - name: Set Artifactory Admin password
       uri:
-        url: "https://{{ URL }}/artifactory/api/security/users/authorization/changePassword"
+        url: "https://{{ artifactory_url }}/artifactory/api/security/users/authorization/changePassword"
         user: "admin"
         password: "password"
         method: POST
@@ -142,7 +127,9 @@
       # make secret
     - name: process artifactory-admin-secret.yaml
       command: >
-        oc process -f ./artifactory-admin-secret.yaml --param-file=./{{env}}-artifactory-ha.env ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }} --ignore-unknown-parameters=true
+        oc process -f ./templates/artifactory-admin-secret.yaml \
+            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+            ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }}
       register: app_secret_processed
     - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
     - name: apply artifactory-admin-secret
@@ -151,13 +138,13 @@
 
     - name: Set Artifactory Custom URL Base
       uri:
-        url: "https://{{ URL }}/artifactory/api/system/configuration/baseUrl"
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/baseUrl"
         user: "admin"
         password: "{{ artifactory_password }}"
         method: PUT
         headers:
           Content-type: "text/plain"
-        body: "https://{{ URL }}/artifactory"
+        body: "https://{{ artifactory_url }}/artifactory"
         force_basic_auth: yes
         validate_certs: no
 
@@ -167,7 +154,7 @@
 
     - name: Create authenticated_users group
       uri:
-        url: "https://{{ URL }}/artifactory/api/security/groups/authenticated_users"
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
         user: "admin"
         password: "{{ artifactory_password }}"
         method: PUT
@@ -180,17 +167,22 @@
         validate_certs: no
       ignore_errors: yes
 
+    - name: build sso link from template
+      template:
+        src: ./templates/{{ env }}-sso-link.yaml.j2
+        dest: ./processed/{{ env }}-sso-link.yaml
+
     - name: Create SSO link
       uri:
-        url: "https://{{ URL }}/artifactory/api/system/configuration"
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration"
         user: "admin"
         password: "{{ artifactory_password }}"
         method: PATCH
         headers:
           Content-type: "application/yaml"
-        body: "{{ lookup('file', env+'-sso-link-local.yaml') }}"
+        body: "{{ lookup('file', './processed/'+env+'-sso-link.yaml') }}"
         force_basic_auth: yes
-        status_code: 201
+        status_code: 200
         validate_certs: no
       ignore_errors: yes
 
