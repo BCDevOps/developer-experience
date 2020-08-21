@@ -5,7 +5,6 @@ apps/artifactory/artifactory-ha/processed/*
 apps/artifactory/artifactory-ha-new/processed/*
 apps/artifactory/artifactory-ha-new/lab-sso-link-local.yaml
 apps/artifactory/artifactory-ha-new/prod-sso-link-local.yaml
-apps/artifactory/artifactory-ha-new/lab-helm-values-local.yaml
-apps/artifactory/artifactory-ha-new/prod-helm-values-local.yaml
+apps/artifactory/artifactory-ha-new/vars-local.yaml
 *node_modules/
 *.nvm/
