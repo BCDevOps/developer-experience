@@ -1,0 +1,82 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-to-migrate-db-to-sso74
+spec:
+  autoSelector: true
+  parallelism: 0
+  completions: 1
+  template:
+    metadata:
+      name: job-to-migrate-db-to-sso74
+    spec:
+      containers:
+      - env:
+        - name: DB_POSTGRESQL_SERVICE_HOST
+          value: sso-pgsql-master-sbox-78
+        - name: DB_POSTGRESQL_SERVICE_PORT
+          value: "5432"
+        - name: DB_SERVICE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_JNDI
+          value: java:jboss/datasources/KeycloakDS
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: app-db-username
+              name: sso-pgsql-sbox-78
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: app-db-password
+              name: sso-pgsql-sbox-78
+        - name: DB_DATABASE
+          valueFrom:
+            secretKeyRef:
+              key: app-db-name
+              name: sso-pgsql-sbox-78
+        - name: TX_DATABASE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_MIN_POOL_SIZE
+          value: "5"
+        - name: DB_MAX_POOL_SIZE
+          value: "20"
+        - name: DB_TX_ISOLATION
+        - name: JGROUPS_PING_PROTOCOL
+          value: dns.DNS_PING
+        - name: OPENSHIFT_DNS_PING_SERVICE_NAME
+          value: sso-ping-sbox-78
+        - name: OPENSHIFT_DNS_PING_SERVICE_PORT
+          value: "8888"
+        - name: X509_CA_BUNDLE
+          value: /var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
+        - name: JGROUPS_CLUSTER_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-jgroups-sbox-78
+        - name: SSO_ADMIN_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: username
+              name: sso-admin-sbox-78
+        - name: SSO_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-admin-sbox-78
+        - name: SSO_REALM
+        - name: SSO_SERVICE_USERNAME
+        - name: SSO_SERVICE_PASSWORD
+        - name: JAVA_OPTS_APPEND
+          value: -Dkeycloak.profile.feature.authorization=enabled -Djboss.persistent.log.dir=/var/log/eap -Djboss.as.management.blocking.timeout=600
+        image: sso74-db-migration-image:latest
+        imagePullPolicy: Always
+        name: job-to-migrate-db-to-sso74
+        # Keep the pod running after the SQL migration
+        # file was generated, so we can retrieve it
+        command:
+          - "/bin/bash"
+          - "-c"
+          - "/opt/eap/bin/openshift-launch.sh || sleep 600"
+      restartPolicy: Never
