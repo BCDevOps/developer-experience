@@ -13,16 +13,16 @@ We are planning for an accelerated deployment cadence in order to remove blocker
 
 **The full upgrade timeline is to have the upgrade rolled out to production within 3 weeks.**
 
-- Dev SSO Upgrade: `Aug 26th`
+#### Dev SSO Upgrade: `Aug 26th`
 As no production applications will be affected, service maintenance downtime will be scheduled during work hours.  The expected SSO service outage is for 1.5 hours.
 
 2 weeks are set aside for Dev environment testing before the Test environment is scheduled to be upgraded.
 
-- Test SSO Upgrade: `Sep 9th`
+#### Test SSO Upgrade: `Sep 9th`
 As no production application will be affected, service maintenance downtime will be scheduled during work hours.  The expected service outage is for 1.5 hours.
 1 week is set aside for Test environment validation before the Production environment is scheduled to be upgraded.
 
-- Production SSO Update: `Sep 17`
+#### Production SSO Update: `Sep 17`
 Current service downtime for the upgrade is scheduled for 5:30PM - 7:30PM (2 hours), on **September 17, 2020**.
 
 
@@ -39,7 +39,7 @@ After the upgrade is in place in Dev environment, you should start testing out t
 
 There will be a __two week__ interval between Dev and Test upgrades where you and your team will be able to test out your application integration as well as API Usage. We will assume that Dev SSO upgrade works fine for your application integration if we do not hear of any issues by Sep 4.
 
-Between Test and Prod, there will be __one week__ to report any bugs, or integration issues. The two week interval between Dev and Test environments will the best opportunity to debug and integrate your application with the new version of Keycloak.
+Between Test and Prod, there will be __one week__ to report any bugs, or integration issues.
 
 Platform Service team will able available to help troubleshoot issues encountered after the upgrade if any SSO admin action is needed. However, if you have any customization in the realm, please refer to the release notes (provided in the top of the doc) for details.
 
