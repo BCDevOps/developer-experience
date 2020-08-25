@@ -65,9 +65,9 @@
     - name: process patroni-deploy.yaml
       command: >
         oc process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
-                                             -p "IMAGE_STREAM_NAMESPACE=devops-artifactory" \
+                                             -p "IMAGE_STREAM_NAMESPACE={{ project_name }}" \
                                              -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
-                                             -p IMAGE_REGISTRY=image-registry.openshift-image-registry.svc:5000 \
+                                             -p IMAGE_REGISTRY={{ image_registry }} \
                                              -p STORAGE_CLASS={{ db_storage_class }} \
                                              -p REPLICAS={{ db_replica_count }} \
                                              -p SUFFIX=-001
