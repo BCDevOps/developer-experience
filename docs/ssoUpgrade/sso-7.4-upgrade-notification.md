@@ -13,7 +13,9 @@ The planning is for an accelerated deployment cadence in order to remove blocker
 
 The full upgrade timeline is to have the upgrade rolled out to production within 3 weeks.
 - Dev SSO: `Aug 26th`
-As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
+As no production application will be affected, service maintenance downtime will be scheduled during work hours.  The expected service outage is for 1.5 hours.
+
+2 weeks are set aside for Dev environment testing before the Test environment is scheduled to be upgraded.
 
 - Test SSO: `Sep 9th`
 We are setting aside 2 weeks before the Test upgrade so that app teams will be able to get prepared for going to production (if actions needed, app teams could verify during Test upgrade). As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
