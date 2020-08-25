@@ -45,10 +45,12 @@ cp <ss>.yaml <ss>-gluster.yaml
 # 1.2 scale down statefulset
 oc scale statefulset <ss> --replicas=0
 # 2. remove PVCs + configmaps + statefulset
-oc get all -l "cluster-name=<cluster_name>"
-oc delete all -l "cluster-name=<cluster_name>"
-# 3. create brand new statefulset and wait for it to spin up
+oc get all,statefulset,pvc,configmap
+oc delete [<object>]
+# 3. create brand new statefulset
 oc create -f <ss>-gluster.yaml
+# 4. wait for it to spin up
+oc get pods --watch
 # 5. restore db
 oc rsh <bkup_pod>
   ./backup.sh -l
@@ -140,7 +142,7 @@ oc scale job/job-to-migrate-db-to-sso74 --replicas=0
 
 
 ### 3. Start DB Update Process:
-1. Get the fresh copy of prod data (sandbox testing only)
+1. (sandbox testing only) Get the fresh copy of prod data
 ```shell
 oc rsh sso-bkup-4-lrvzf
 [backup pod]
@@ -170,9 +172,9 @@ patronictl list
 3. Apply the database update manually
 ```shell
 # copy sql script
-oc rsync --no-perms=true ./db-update/ sso-pgsql-sbox-78-0:/tmp
+oc rsync --no-perms=true ./db-update/ <db_primary_pod>:/tmp
 # apply script to DB
-oc rsh sso-pgsql-sbox-78-0
+oc rsh <db_primary_pod>
 [db pod]
   psql -U sso -d rhsso -W -f /tmp/keycloak-database-update.sql
 ```
@@ -191,9 +193,22 @@ oc apply -f ./temporary-upgrade-objects/<env>/sso-<env>-upgrade-tmp.yaml
 # scale up upgrade pod
 oc scale dc <sso_upgrade_dc> --replicas=1
 oc get pods --watch
-oc logs -f <sso_upgrade_pod>
+# track resource level and capture logs
+oc adm top pods
+oc logs -f <sso_upgrade_pod> > <env>-upgrade-dc-log.log
+# wait till you see log with `Red Hat Single Sign-On 7.4.2.GA (WildFly Core 10.1.11.Final-redhat-00001) started in xms` for server to finish start up process
 ```
 
 2. verify if the app is working all right, test with the local user created before the upgrade
+```shell
+# create a secret route for testing app, add in proper labelling for removal afterwards
+cp <sso_route>-route.yaml <sso_route>-tmp-route.yaml
+oc create -f <sso_route>-tmp-route.yaml
+```
 
-3. Once complete, remove all temporary objects (the temporary DC and configmap)
+3. Once complete, remove all temporary objects (the temporary DC, configmap, and route)
+```shell
+oc scale dc <sso_upgrade_dc> --replicas=0
+oc get all,configmap,route -l "usage=tmp-upgrade-object"
+oc delete all,configmap,route -l "usage=tmp-upgrade-object"
+```
