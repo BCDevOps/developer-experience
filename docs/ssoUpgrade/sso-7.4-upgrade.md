@@ -58,7 +58,7 @@ As a direct upgrade with existing instance did not work, we have to manually han
 > --- 5min
 - take DB backup
 > --- 5min
-- update patroni storage type
+- update patroni storage type (in dev sso, switch from netapp-block back to gluster)
 > --- 15min
 - run upgrade works on both DB and deployment
 > --- 30min

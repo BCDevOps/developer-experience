@@ -34,18 +34,21 @@ oc rsh <bkup_pod>
   ./backup.sh -r <pgsql_service_name>:5432/<db_name>
   exit
 
-# update patroni storage type
+# update patroni storage type (for DEV-SSO only, switch from netapp-block back to gluster)
 oc get statefulset
 oc get statefulset <ss> -o yaml > <ss>.yaml
-# 0. update statefulset volume to netapp
-cp <ss>.yaml <ss>-netapp.yaml
-# 1. scale down statefulset
+# 0. update quota to add gluster storage
+oc get quota storage-gluster-block-quota -o yaml > storage-gluster-block-quota.yaml
+oc --as=system:serviceaccount:openshift:bcdevops-admin apply -f storage-gluster-block-quota.yaml
+# 1.1 update statefulset volume to gluster
+cp <ss>.yaml <ss>-gluster.yaml
+# 1.2 scale down statefulset
 oc scale statefulset <ss> --replicas=0
 # 2. remove PVCs + configmaps + statefulset
 oc get all -l "cluster-name=<cluster_name>"
 oc delete all -l "cluster-name=<cluster_name>"
 # 3. create brand new statefulset and wait for it to spin up
-oc create -f <ss>-netapp.yaml
+oc create -f <ss>-gluster.yaml
 # 5. restore db
 oc rsh <bkup_pod>
   ./backup.sh -l
