@@ -84,6 +84,8 @@ if things go wrong during upgrade and need to roll back:
 
 
 ### 1. Obtain upgrade DB script:
+**Notes:** The DB scripts have been obtained already for dev/test/prod, see them in ./temporary-upgrade-objects/<env>/db-update/keycloak-database-update.sql
+
 (an example run in sandbox env)
 1. get a dev backup and restore in sbox
 2. follow https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html/red_hat_single_sign-on_for_openshift_on_openjdk/tutorials#upgrading-sso-db-from-previous-version
@@ -124,6 +126,8 @@ oc scale job/job-to-migrate-db-to-sso74 --replicas=0
 
 
 ### 2. Create Upgrade Objects (DC and Configmap) using the same BCGov SSO image:
+**Notes:** The DCs and configmaps have been obtained already for dev/test/prod, see them in ./temporary-upgrade-objects.
+
 1. Get the current SSO deployment config as starting point
 2. Update the following according to `sso-upgrade-dc.yaml`
   - create configmap <configmap_name> for upgrade version of `standalone-openshift.xml`
@@ -181,6 +185,10 @@ patronictl list
 ### 4.Kickoff Upgrade with Upgrade Objects:
 1. scale up the Upgrade DC with 1 replica and monitor:
 ```shell
+# update the dc from ./temporary-upgrade-objects with the correct istag sha
+# create the dc
+oc apply -f ./temporary-upgrade-objects/<env>/sso-<env>-upgrade-tmp.yaml
+# scale up upgrade pod
 oc scale dc <sso_upgrade_dc> --replicas=1
 oc get pods --watch
 oc logs -f <sso_upgrade_pod>

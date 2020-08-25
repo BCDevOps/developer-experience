@@ -68,3 +68,5 @@ As a direct upgrade with existing instance did not work, we have to manually han
 > --- 15mins
 
 ***In total, expect 1.5 hours of maintenance window for each environment.***
+
+For details of each tasks, refer to [step scripts](./sso-7.4-upgrade-steps.md)
