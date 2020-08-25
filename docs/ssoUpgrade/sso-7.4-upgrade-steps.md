@@ -187,6 +187,8 @@ patronictl list
 ### 4.Kickoff Upgrade with Upgrade Objects:
 1. scale up the Upgrade DC with 1 replica and monitor:
 ```shell
+# Update istag
+oc tag -n devops-sso-tools sso:7.4-78 sso:<env>-7.4
 # update the dc from ./temporary-upgrade-objects with the correct istag sha
 # create the dc
 oc apply -f ./temporary-upgrade-objects/<env>/sso-<env>-upgrade-tmp.yaml
