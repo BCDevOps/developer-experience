@@ -19,7 +19,7 @@ As no production application will be affected, service maintenance downtime will
 We are setting aside 2 weeks before the Test upgrade so that app teams will be able to get prepared for going to production (if actions needed, app teams could verify during Test upgrade). As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
 
 - Production SSO: `Sep 17`
-We will set aside another weeks before introducing the production SSO service upgrade. Specific date and time to be determined. The maintenance period will be scheduled after office hours to minimize impacts. Expect 1.5 hours of maintenance window for each environment.
+Current service downtime for the upgrade is scheduled for 5:30PM - 7:30PM (2 hours), on September 17, 2020.
 
 
 ### Will there be an impact on the Platform apps?
