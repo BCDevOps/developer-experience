@@ -35,7 +35,7 @@ In addition, expect some minor changes to existing configurations such as authen
 
 ### Do I need to do anything?
 
-We highly recommend teams to test out existing usages for applications on Dev and Test KeyCloak, for example to test on any custom authentication flows and IDP integrations. If the upgrade does affect application's authentication process, please work on remediating it and get ready with plans to update for your production application integration.
+After the upgrade is in place on Dev environment, you should start testing out the application integration right away and alert the PS team immediately if you find any critical/unsolvable application integration issues caused by the upgrade.
 
 There will be a __two week__ interval between Dev and Test upgrades where you and your team will be able to test out your application integration as well as API Usage. 
 
