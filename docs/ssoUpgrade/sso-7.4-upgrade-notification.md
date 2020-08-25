@@ -9,13 +9,13 @@ We are upgrading our RedHat SSO Services from 7.3 to 7.4, which is KeyCloak 4.8 
 
 ### When?
 
-- Dev SSO:
-Please expect the upgrade to happen at Thursday Aug 26th. As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
+- Dev SSO: `Aug 26th`
+As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
 
-- Test SSO:
-Test upgrade is scheduled to happen at Sep 9th. We are setting aside 2 weeks before the Test upgrade so that app teams will be able to get prepared for going to production (if actions needed, app teams could verify during Test upgrade). As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
+- Test SSO: `Sep 9th`
+We are setting aside 2 weeks before the Test upgrade so that app teams will be able to get prepared for going to production (if actions needed, app teams could verify during Test upgrade). As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
 
-- Production SSO:
+- Production SSO: `Sep 17`
 We will set aside another weeks before introducing the production SSO service upgrade. Specific date and time to be determined. The maintenance period will be scheduled after office hours to minimize impacts. Expect 1.5 hours of maintenance window for each environment.
 
 
