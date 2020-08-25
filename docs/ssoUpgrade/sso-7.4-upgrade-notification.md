@@ -18,7 +18,8 @@ As no production application will be affected, service maintenance downtime will
 2 weeks are set aside for Dev environment testing before the Test environment is scheduled to be upgraded.
 
 - Test SSO: `Sep 9th`
-We are setting aside 2 weeks before the Test upgrade so that app teams will be able to get prepared for going to production (if actions needed, app teams could verify during Test upgrade). As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
+As no production application will be affected, service maintenance downtime will be scheduled during work hours.  The expected service outage is for 1.5 hours.
+1 week is set aside for Test environment validation before the Production environment is scheduled to be upgraded.
 
 - Production SSO: `Sep 17`
 Current service downtime for the upgrade is scheduled for 5:30PM - 7:30PM (2 hours), on September 17, 2020.
