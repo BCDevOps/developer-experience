@@ -21,7 +21,9 @@ We will set aside another weeks before introducing the production SSO service up
 
 ### Will there be an impact on the Platform apps?
 
-Yes, there will be service downtime during the upgrade. In addition, do expect some minor changes to existing configurations, such as authentication flows and OIDC settings. There will not be direct impact on how the authentication works according to the release note, but some configurations will be updated automatically during the upgrade.
+Yes, there will be service downtime during the upgrade.  The expected service outage is 1.5 hours, with the production environment scheduled outside of business hours. (after 5:00PM)
+
+In addition, expect some minor changes to existing configurations such as authentication flows and OIDC settings.  Both from update flow configuration changes, as well as theme fixes we are applying at the same time.
 
 
 ### Do I need to do anything?
