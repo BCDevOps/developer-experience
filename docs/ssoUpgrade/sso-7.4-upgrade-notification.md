@@ -9,6 +9,9 @@ We are upgrading our RedHat SSO Services from 7.3 to 7.4, which is KeyCloak 4.8 
 
 ### When?
 
+The planning is for an accelerated deployment cadence in order to remove blockers for the OpenShift 4 migration.  This will require fast action from our development teams, both from the initial functional validation activities, as well as notifying the platform-experience team immediately of any critical issues identified during testing.
+
+The full upgrade timeline is to have the upgrade rolled out to production within 3 weeks.
 - Dev SSO: `Aug 26th`
 As no production application will be affected, service maintenance downtime will be scheduled during work hours. Expect 1.5 hours of maintenance window for each environment.
 
