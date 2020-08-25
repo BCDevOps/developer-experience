@@ -30,7 +30,9 @@ In addition, expect some minor changes to existing configurations such as authen
 
 We highly recommend teams to test out existing usages for applications on Dev and Test KeyCloak, for example to test on any custom authentication flows and IDP integrations. If the upgrade does affect application's authentication process, please work on remediating it and get ready with plans to update for your production application integration.
 
-We are planning on a 2-week break between Dev and Test upgrade for teams to test out the application integration as well as API usage. In the case where teams do find out necessary work required before upgrade happen to Prod, the Test instance upgrade will be a good chance to test it out.
+There will be a __two week__ interval between Dev and Test upgrades where you and your team will be able to test out your application integration as well as API Usage. 
+
+Between Test and Prod, there will be __one week__ to report any bugs, or integration issues. The two week interval between Dev and Test environments will the best opportunity to debug and integrate your application with the new version of Keycloak.
 
 Platform Service team will able available on supporting with issues encountered after the upgrade if any admin action is needed. However, if you have any customization in the realm, please refer to the release note (provided in the top of the doc) for details.
 
