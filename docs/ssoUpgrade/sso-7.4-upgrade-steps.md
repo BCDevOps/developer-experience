@@ -61,13 +61,13 @@ oc apply -f <sso_route>-route.yaml
 
 # check for pdb
 oc get pdb
-
-
-# if things go wrong, shut down app and restore db:
-oc scale dc <sso_dc> --replicas=0
-oc rsh <bkup_pod>
-  > ./backup.sh -r <pgsql_service_name>:5432/<db_name>
 ```
+
+### Rollback Plan:
+if things go wrong during upgrade and need to roll back:
+1. Remove all temporary objects in progress
+2. shut down app
+3. DB restore with the immediate backup (details: https://github.com/bcgov/ocp-sso/wiki/2.4-Update-immutable-field-in-statefulset-with-DB-backup)
 
 
 
