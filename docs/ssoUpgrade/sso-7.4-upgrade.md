@@ -100,4 +100,3 @@ As a direct upgrade with existing instance did not work, we have to manually han
 > --- 15mins
 
 ***In total, expect 1.5 hours of maintenance window for each environment.***
-
