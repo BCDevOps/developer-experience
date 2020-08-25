@@ -7,6 +7,8 @@ Note: temporary keeping this as a doc. Once upgrade is completed, move to sso wi
 mkdir update-tmp-<env>
 cd update-tmp-<env>
 
+# create a local user in master realm for testing after the upgrade and DB operations
+
 # remove existing pdb
 oc get pdb
 oc get pdb sso-dev -o yaml > sso-dev-pdb.yaml
@@ -40,8 +42,8 @@ cp <ss>.yaml <ss>-netapp.yaml
 # 1. scale down statefulset
 oc scale statefulset <ss> --replicas=0
 # 2. remove PVCs + configmaps + statefulset
-oc get all -l "cluster-name=<clsuter_name>"
-oc delete all -l "cluster-name=<clsuter_name>"
+oc get all -l "cluster-name=<cluster_name>"
+oc delete all -l "cluster-name=<cluster_name>"
 # 3. create brand new statefulset and wait for it to spin up
 oc create -f <ss>-netapp.yaml
 # 5. restore db
@@ -49,6 +51,7 @@ oc rsh <bkup_pod>
   ./backup.sh -l
   ./backup.sh -r <pgsql_service_name>:5432/<db_name>
   exit
+# 6. test on the restore with table assertion
 
 # run manual upgrade
 follow section `Manual Steps for RHSSO 7.4 upgrade`
@@ -68,11 +71,14 @@ if things go wrong during upgrade and need to roll back:
 1. Remove all temporary objects in progress
 2. shut down app
 3. DB restore with the immediate backup (details: https://github.com/bcgov/ocp-sso/wiki/2.4-Update-immutable-field-in-statefulset-with-DB-backup)
-
+4. rollback DC to a previous working version
 
 
 ## Manual Steps for RHSSO 7.4 upgrade
-As a direct upgrade with existing instance did not work, we have to manually handle the upgrade with separate job pod and update existing data.
+(As a direct upgrade with existing instance did not work, we have to manually handle the upgrade with separate job pod and update existing data.)
+
+**Notes:** step 1 & 2 are completed as prerequsites for the upgrade in dev/test/prod. In the case where they need to be generated again, follow the steps. Otherwise, start with Step 3.
+
 
 ### 1. Obtain upgrade DB script:
 (an example run in sandbox env)
@@ -127,7 +133,7 @@ oc scale job/job-to-migrate-db-to-sso74 --replicas=0
 
 
 ### 3. Start DB Update Process:
-1. Get the fresh copy of prod data
+1. Get the fresh copy of prod data (sandbox testing only)
 ```shell
 oc rsh sso-bkup-4-lrvzf
 [backup pod]
@@ -177,4 +183,6 @@ oc get pods --watch
 oc logs -f <sso_upgrade_pod>
 ```
 
-2. Once complete, remove all temporary objects
+2. verify if the app is working all right, test with the local user created before the upgrade
+
+3. Once complete, remove all temporary objects (the temporary DC and configmap)
