@@ -109,7 +109,7 @@ spec:
         - name: JAVA_OPTS_APPEND
           value: -Dkeycloak.profile.feature.authorization=enabled -Djboss.persistent.log.dir=/var/log/eap -Djboss.as.management.blocking.timeout=1200
         # TODO: update image sha
-        image: docker-registry.default.svc:5000/devops-sso-dev/sso@sha256:00e76ac9254a671bcdaf9eb427304c2794c5e83f8d7f87cda941182dc5607687
+        image: docker-registry.default.svc:5000/devops-sso-dev/sso@sha256:0a42c04c962d07c7c841005ca9e869794664bfa1bcd8b2b905a63609b0d51a36
         imagePullPolicy: Always
         name: rh-sso
         ports:

@@ -2,14 +2,19 @@
 Note: temporary keeping this as a doc. Once upgrade is completed, move to sso wiki page for the record, and turn into automation for upgrade pipeline.
 
 ### Detailed steps that need to be completed during the upgrade process:
+
 ```shell
 # temporary folder to save files:
 mkdir update-tmp-<env>
 cd update-tmp-<env>
 
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
 # create a local user in master realm for testing after the upgrade and DB operations
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
 
-# remove existing pdb
+# remove existing pdb (DID YOU CREATE A LOCAL USER? ^^^)
 oc get pdb
 oc get pdb sso-dev -o yaml > sso-dev-pdb.yaml
 oc delete pdb sso-dev
@@ -188,7 +193,7 @@ patronictl list
 1. scale up the Upgrade DC with 1 replica and monitor:
 ```shell
 # Update istag
-oc tag -n devops-sso-tools sso:7.4-78 sso:<env>-7.4
+oc tag devops-sso-tools/sso:7.4-78 sso:<env>-7.4
 # update the dc from ./temporary-upgrade-objects with the correct istag sha
 # create the dc
 oc apply -f ./temporary-upgrade-objects/<env>/sso-<env>-upgrade-tmp.yaml
@@ -205,6 +210,8 @@ oc logs -f <sso_upgrade_pod> > <env>-upgrade-dc-log.log
 ```shell
 # create a secret route for testing app, add in proper labelling for removal afterwards
 cp <sso_route>-route.yaml <sso_route>-tmp-route.yaml
+# modify route and add the label
+#   usage: tmp-upgrade-object
 oc create -f <sso_route>-tmp-route.yaml
 ```
 
