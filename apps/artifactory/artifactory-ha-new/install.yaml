@@ -91,6 +91,11 @@
       command: >
         oc apply -f ./processed/manifest.yaml
 
+#      # deploy template
+#    - name: apply artifactory manifest
+#      command: >
+#        oc apply -f ./manifest-test.yaml
+
       # wait for the service to show up
     - pause:
         seconds: 15

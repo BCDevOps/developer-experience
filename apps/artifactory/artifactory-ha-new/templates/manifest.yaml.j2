@@ -19,21 +19,21 @@ spec:
   egress:
   - {}
 ---
-# Source: artifactory-ha/templates/artifactory-node-pdb.yaml
-apiVersion: policy/v1beta1
-kind: PodDisruptionBudget
-metadata:
-  name: artifactory-artifactory-ha-node
-  labels:
-    app: artifactory-ha
-    component: artifactory
-    release: artifactory
-spec:
-  selector:
-    matchLabels:
-      app: artifactory-ha
-      release: artifactory
-  minAvailable: 1
+## Source: artifactory-ha/templates/artifactory-node-pdb.yaml
+#apiVersion: policy/v1beta1
+#kind: PodDisruptionBudget
+#metadata:
+#  name: artifactory-artifactory-ha-node
+#  labels:
+#    app: artifactory-ha
+#    component: artifactory
+#    release: artifactory
+#spec:
+#  selector:
+#    matchLabels:
+#      app: artifactory-ha
+#      release: artifactory
+#  minAvailable: 1
 ---
 # Source: artifactory-ha/templates/artifactory-serviceaccount.yaml
 apiVersion: v1
@@ -4932,8 +4932,11 @@ spec:
           secretName: artifactory-artifactory-ha-primary-system-yaml
   volumeClaimTemplates:
   - metadata:
+      annotations:
+        volume.beta.kubernetes.io/storage-class: "{{ artifactory_storage_class }}"
       name: volume
     spec:
+      storageClassName: "{{ artifactory_storage_class }}"
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
@@ -5182,8 +5185,11 @@ spec:
           secretName: artifactory-artifactory-ha-primary-system-yaml
   volumeClaimTemplates:
   - metadata:
+      annotations:
+        volume.beta.kubernetes.io/storage-class: "{{ artifactory_storage_class }}"
       name: volume
     spec:
+      storageClassName: "{{ artifactory_storage_class }}"
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:

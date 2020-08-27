@@ -1,34 +1,39 @@
+build: false
+
 env: lab
-#image_registry: "image-registry.openshift-image-registry.svc:5000"
-image_registry: "docker-registry.default.svc:5000"
+image_registry: "image-registry.openshift-image-registry.svc:5000"
+#image_registry: "docker-registry.default.svc:5000"
 
 artifactory_instance_name: "artifactory-ha"
-#artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
-artifactory_url: 'artifact-test.pathfinder.gov.bc.ca'
-project_name: 'test-artifactory'
+artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
+#artifactory_url: 'artifact-test.pathfinder.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
+project_name: 'devops-artifactory'
 artifactory_replica_count: 0
 artifactory_version: 7.4.3
+artifactory_storage_class: netapp-block-standard
 master_key: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
 join_key: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
-cpu_limit: "3"
+cpu_limit: "2"
 memory_limit: "3Gi"
-cpu_request: "1"
+cpu_request: "0.5"
 memory_request: "1Gi"
 storage_size: "10Gi"
 
 db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+#db_password: temppass
 db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
-db_replica_count: 2
-db_storage_class: netapp-block-standard
+db_replica_count: 1
+db_storage_class: netapp-file-standard
 db_version: 11
 
-sso_secret: "xxxxxxxxxxxxxxxxx"
+sso_secret: "xxxxxxxxxxxxxxxxxxxx"
 
 s3_bucket_name: "artifactory-test-bucket"
 s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
 s3_identity: "artifactory-test"
-s3_password: "xxxxxxxxxxxxxxxxxx"
-
-build: false
+s3_password: "xxxxxxxxxxxxxxxxxxxxxxx"
