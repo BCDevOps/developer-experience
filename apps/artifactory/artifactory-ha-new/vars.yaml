@@ -28,7 +28,7 @@ db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars
 #db_password: temppass
 db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
 db_replica_count: 1
-db_storage_class: netapp-file-standard
+db_storage_class: netapp-block-standard
 db_version: 11
 
 sso_secret: "xxxxxxxxxxxxxxxxxxxx"
