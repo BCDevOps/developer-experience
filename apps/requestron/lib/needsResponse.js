@@ -35,16 +35,20 @@ module.exports = async function checkNeedsResponse(context) {
             //get  the most recent comment
             let recent_comment = comments[issues[i].comments - 1];
 
-            //if the most recent comment is from an ops team member (or is excluded from staleness tracking) and the client-response label is on the ticket, remove the client-response label
-            if ((team_members.includes(recent_comment.user.login) || current_labels.includes('staleness-exception')) &&
-                current_labels.includes('client-response')) {
-                await instance.delete('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels/client-response')
-                console.log('client-response removed')
-            } else if (!current_labels.includes('staleness-exception') &&
-                !current_labels.includes('client-response') &&
-                !team_members.includes(recent_comment.user.login)) {
-                await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: ['client-response']})
-                console.log('client-response added')
+            if (recent_comment > 0) {
+
+                //if the most recent comment is from an ops team member (or is excluded from staleness tracking) and the client-response label is on the ticket, remove the client-response label
+                if ((team_members.includes(recent_comment.user.login) || current_labels.includes('staleness-exception')) &&
+                    current_labels.includes('client-response')) {
+                    await instance.delete('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels/client-response')
+                    console.log('client-response removed')
+                } else if (!current_labels.includes('staleness-exception') &&
+                    !current_labels.includes('client-response') &&
+                    !team_members.includes(recent_comment.user.login)) {
+                    await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: ['client-response']})
+                    console.log('client-response added')
+                }
+
             }
         }
 
