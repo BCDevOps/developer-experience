@@ -13,9 +13,9 @@ module.exports = async function setMilestone(context) {
     try {
 
         //get the list of milestones in the devops-requests repo.
-        const get_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/milestones')
-        const milestones = get_response["data"]
-        let most_recent_milestone = milestones[0]
+        const get_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/milestones');
+        const milestones = get_response["data"];
+        let most_recent_milestone = milestones[0];
 
         //figure out which milestone is the most recent one (based on due date).
         //we normally only have the one milestone active at a time anyway, but just in case.

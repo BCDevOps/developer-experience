@@ -1,16 +1,25 @@
 require('probot');
+const createScheduler = require('probot-scheduler');
 const setEstimate = require('./estimate');
 const setSwimlane = require('./swimlane');
 const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
 const averageTime = require('./averageTime');
-const onboardingComment = require('./onboarding')
-const opsAwayComment = require('./opsAway')
+const onboardingComment = require('./onboarding');
+const checkNeedsResponse = require('./needsResponse');
+const checkStaleness = require('./staleIssue');
+const opsAwayComment = require('./opsAway');
 
 module.exports = (app) => {
 
+  createScheduler(app, {
+    delay: 0,
+    interval: 120 * 1000 //every two minutes
+  });
+
   app.on('issues.opened', issueOpened);
   app.on('issues.closed', issueClosed);
+  app.on('schedule.repository', scheduleTriggered);
 
   async function issueOpened(context) {
     try {
@@ -47,6 +56,20 @@ module.exports = (app) => {
 
       // find the average time to close of all ops tickets and stick it on ops-controller
       await averageTime(context);
+
+    } catch (err) {
+      throw Error('Unable to handle issue: ' + err)
+    }
+  }
+
+  async function scheduleTriggered(context) {
+    try {
+
+      //check which tickets have been most recently commented-on by a non-platform-ops user, and mark for needing response
+      await checkNeedsResponse(context);
+
+      //mark for issue staleness after 1 week of no response from the client.
+      await checkStaleness(context);
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
