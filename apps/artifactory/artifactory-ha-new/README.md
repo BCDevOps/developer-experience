@@ -41,18 +41,36 @@ Otherwise, follow these instructions to create a new one:
 * On the next page, `Required`, leave everything as default and click "Next"
 * On the next page, `Optional`, turn Quota on, set it to `Notification Only at` and provide a reasonable value, depending on the nature of the installation.
 * Ignore the other sections (`Bucket Tagging` and `Bucket Retention Period`) and click "Save"
-* Your new bucket is ready! Copy down the appropriate information into your `vars-local.yaml` file.
+* Your new bucket is ready! Copy down the appropriate information into your `vars-local.yaml` file in the Object Store section.
 
 ### c. Making a new SSO Client
 
 Any separate installation of Artifactory currently requires its own SSO client on Keycloak. 
+
+* Log into the SSO admin console and go to the devhub realm.
+* On the menu, under `Configure`, click on `Clients`.
+* On the top-right corner of the table listing the existing clients, click "Create"
+* Give your new client a `Client ID` with the format `oauth-artifactory-cluster` where cluster is the name of the cluster on which you plan to install artifactory.
+* Make sure `Client Protocol` says `openid-connect`.
+* The `Root URL` is the URL that your new installation will use. 
+   * The format should be like `https://artifacts.apps.klab.devops.gov.bc.ca/artifactory` - you need to include the `https` and the `/artifactory` at the end.
+   * Your `vars-local.yaml` file has a pretty broad selection of possible URLs that the various clusters might use. It isn't a complete list, but it's a good starting point.
+* Click Save, and you'll find yourself on a page with a broader set of settings to configure for your new client.
+* Change `Access Type` to `confidential`. 
+* Change `Implicit Flow Enabled` to on.
+* Copy the `Admin URL` into the `Base URL` box.
+* Change `Web Origins` to `*`.
+* Click "Save" - now, back at the top of the page, a few new tabs should have appeared.
+* Click on the "Credentials" tab.
+* `Client Authenticator` should say `Client Id and Secret`. If it doesn't, change that. 
+* Copy the `Secret` and paste both it and the client ID into your `vars-local.yaml` file into the appropriate variables under the Keycloak section.
 
 ### d. Artifactory Licenses
 
 * In the same folder as this file, create a local directory called "licenses". This directory is already in .gitignore
 * In that folder, you will need to create a new file (or set of files) with license keys for your new Artifactory installation.
    * 1 license key is required per node in your installation, so keep that in mind.
-* Once you have created the file, edit your `vars-local.yaml` file to put the filename into the lookup for the variable `artifactory_licenses`
+* Once you have created the file, edit your `vars-local.yaml` file to put the filename into the lookup for the variable `artifactory_licenses` in the Artifactory section.
 
 The license file must be formatted like this:
 
