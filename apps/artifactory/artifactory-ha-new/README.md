@@ -91,12 +91,7 @@ The licenseKeys must be on a single line. Any line breaks should be represented 
 
 1. Login to the correct openshift cluster.
 2. Navigate to the correct project.
-3. 
-4. Open `vars_local.yaml` and update any of the variables as required. 
-    * Note that the `build` variable only reflects whether or not you want to build a new image for patroni.
-    * You will need to insert the sso and and s3 secrets - these are found most easily as secrets in an existing artifactory namespace.
-6. Run `ansible-playbook install.yaml` and follow the in-built instructions.
-
+3. Run `ansible-playbook install.yaml`.
 
 ## 3. Deleting Everything
 

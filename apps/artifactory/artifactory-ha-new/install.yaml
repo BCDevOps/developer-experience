@@ -32,21 +32,21 @@
         oc apply -f ./processed/patroni-build.json
       when: build
 
-    - name: Trigger patroni build
+    - name: Get patroni build information
       command: >
-        oc start-build patroni-pg{{ db_version }}
-      register: build_result
+        oc get buildconfig patroni-pg{{ db_version}}
       when: build
+      register: build_result
       ignore_errors: yes
 
-    - name: Get build name
+    - name: Get build number
       set_fact:
-        build_name: "{{ build_result.stdout | regex_replace('build.build.openshift.io/(?P<name>.+) started$', '\\g<name>') }}"
+        build_number: "{{ build_result.stdout | regex_search('([0-9]+)$') }}"
       when: build
 
-    - name: Get build status for {{ build_name }}
+    - name: Get build status for patroni-pg{{ db_version}}-{{ build_number }}
       command: >
-        oc get build {{ build_name }}
+        oc get build patroni-pg{{ db_version}}-{{ build_number }}
       register: build_status
       until: '"Complete" in build_status.stdout_lines[1]'
       retries: 30
