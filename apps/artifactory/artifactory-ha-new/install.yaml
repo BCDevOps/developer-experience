@@ -214,7 +214,7 @@
           Content-type: "application/json"
         body: '{ "autoJoin" : false }'
         force_basic_auth: yes
-        status_code: 201
+        status_code: 200
         validate_certs: no
       ignore_errors: yes
 
@@ -262,7 +262,7 @@
           Content-type: "application/json"
         body: "{{ lookup('file', 'templates/authenticated_users_permissions.json') }}"
         force_basic_auth: yes
-        status_code: 200
+        status_code: 201
         validate_certs: no
       ignore_errors: yes
 
