@@ -1,15 +1,16 @@
 security:
+  hideUnauthorizedResources: true
   oauthSettings:
     persistUsers: true
     allowUserToAccessProfile: true
     enableIntegration: true
     oauthProvidersSettings:
       devhub-sso:
-        id: artifactory-oauth
+        id: {{ sso_id }}
         enabled: true
         apiUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo"
         authUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth"
         basicUrl: "https://sso.pathfinder.gov.bc.ca/"
         providerType: openId
-        secret: xxxxxxxxxxxxxxxxxxxx
+        secret: {{ sso_secret }}
         tokenUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/token"
