@@ -24,9 +24,11 @@ module.exports = async function checkNeedsResponse(context) {
         const team = team_response["data"];
         let team_members = [];
         for (let i in team) {team_members.push(team[i].login)}
+        console.log(team_members);
 
         //for each open issue, check the most recent comment
         for (let i in issues) {
+
             let comment_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/comments');
             let comments = comment_response["data"];
 
@@ -36,6 +38,7 @@ module.exports = async function checkNeedsResponse(context) {
 
             //get  the most recent comment
             let recent_comment = comments[issues[i].comments - 1];
+            console.log("Checking issue " + issues[i].number + " with " + recent_comment + " comments.");
 
             if (recent_comment > 0) {
 
