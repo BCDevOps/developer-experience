@@ -13,6 +13,8 @@ const instance = axios.create({
 module.exports = async function checkNeedsResponse(context) {
     try {
 
+        console.log("checking responses");
+
         // get a list of open issues in the repo
         const issue_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues');
         const issues = issue_response["data"];
