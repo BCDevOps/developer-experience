@@ -13,8 +13,6 @@ const instance = axios.create({
 module.exports = async function checkNeedsResponse(context) {
     try {
 
-        console.log("checking responses");
-
         // get a list of open issues in the repo
         const issue_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues');
         const issues = issue_response["data"];
@@ -24,7 +22,6 @@ module.exports = async function checkNeedsResponse(context) {
         const team = team_response["data"];
         let team_members = [];
         for (let i in team) {team_members.push(team[i].login)}
-        console.log(team_members);
 
         //for each open issue, check the most recent comment
         for (let i in issues) {
@@ -38,20 +35,19 @@ module.exports = async function checkNeedsResponse(context) {
 
             //get  the most recent comment
             let recent_comment = comments[issues[i].comments - 1];
-            console.log("Checking issue " + issues[i].number + " with " + recent_comment + " comments.");
 
-            if (recent_comment > 0) {
+            if (issues[i].comments > 0) {
 
                 //if the most recent comment is from an ops team member (or is excluded from staleness tracking) and the client-response label is on the ticket, remove the client-response label
                 if ((team_members.includes(recent_comment.user.login) || current_labels.includes('staleness-exception')) &&
                     current_labels.includes('client-response')) {
                     await instance.delete('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels/client-response')
-                    console.log('client-response removed')
+
                 } else if (!current_labels.includes('staleness-exception') &&
                     !current_labels.includes('client-response') &&
                     !team_members.includes(recent_comment.user.login)) {
                     await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: ['client-response']})
-                    console.log('client-response added')
+
                 }
 
             }
