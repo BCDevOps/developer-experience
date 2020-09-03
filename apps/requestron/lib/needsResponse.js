@@ -36,9 +36,7 @@ module.exports = async function checkNeedsResponse(context) {
             //get  the most recent comment
             let recent_comment = comments[issues[i].comments - 1];
 
-            if (issues[i].comments > 0) {
-
-                console.log(recent_comment);
+            if (recent_comment !== undefined) {
 
                 //if the most recent comment is from an ops team member (or is excluded from staleness tracking) and the client-response label is on the ticket, remove the client-response label
                 if ((team_members.includes(recent_comment.user.login) || current_labels.includes('staleness-exception')) &&
