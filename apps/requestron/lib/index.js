@@ -14,7 +14,7 @@ module.exports = (app) => {
 
   createScheduler(app, {
     delay: 0,
-    interval:  60 * 1000 //every hour
+    interval: 60 * 60 * 1000 //every hour
   });
 
   app.on('issues.opened', issueOpened);
