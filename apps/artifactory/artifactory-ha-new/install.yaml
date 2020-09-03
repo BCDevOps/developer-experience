@@ -32,6 +32,11 @@
         oc apply -f ./processed/patroni-build.json
       when: build
 
+      # wait for the service to show up
+    - name: Wait for the build to start
+      pause:
+        seconds: 5
+
     - name: Get patroni build information
       command: >
         oc get buildconfig patroni-pg{{ db_version}}
