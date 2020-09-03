@@ -46,7 +46,9 @@ module.exports = async function checkNeedsResponse(context) {
                 } else if (!current_labels.includes('staleness-exception') &&
                     !current_labels.includes('client-response') &&
                     !team_members.includes(recent_comment.user.login)) {
-                    await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: ['client-response']})
+                    // add client-response to the list of labels and push the whole list.
+                    current_labels.push('client-response');
+                    await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: current_labels})
 
                 }
 
