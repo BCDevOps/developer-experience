@@ -22,11 +22,17 @@
       - cr-artifactory-cluster-operator.yaml
       - cr-artifactory-object-admin.yaml
 
-  - name: deploy Cluster RoleBindings
-    k8s:
-      state: "{{ state | default('present') }}"
-      definition: "{{ lookup('template', '../deploy/k8s_roles/{{ item }}') }}"
-    with_items:
-      - crb-cluster-operator.yaml.j2
-      - crb-cluster-object-admin.yaml.j2
+#  - name: deploy Cluster RoleBindings
+#    k8s:
+#      state: "{{ state | default('present') }}"
+#      definition: "{{ lookup('template', '../deploy/k8s_roles/{{ item }}') }}"
+#    with_items:
+#      - crb-cluster-operator.yaml.j2
+#      - crb-cluster-object-admin.yaml.j2
 
+  - name: deploy Cluster RoleBindings
+    command: >
+      oc adm policy add-cluster-role-to-user {{ item.clusterrole }} system:serviceaccount:{{ item.namespace }}:{{ item.serviceaccount }}
+    with_items:
+      - { clusterrole: "artifactory-cluster-operator", namespace: "{{ namespace }}", serviceaccount: "{{ svcAcct }}" }
+      - { clusterrole: "artifactory-object-admin", namespace: "openshift", serviceaccount: "active" }
