@@ -103,7 +103,7 @@ if things go wrong during upgrade and need to roll back:
 ## Manual Steps for RHSSO 7.4 upgrade
 (As a direct upgrade with existing instance did not work, we have to manually handle the upgrade with separate job pod and update existing data.)
 
-**Notes:** step 1 & 2 are completed as prerequsites for the upgrade in dev/test/prod. In the case where they need to be generated again, follow the steps. Otherwise, start with Step 3.
+**Notes:** step 1 & 2 are completed as prerequisites for the upgrade in dev/test/prod. In the case where they need to be generated again, follow the steps. Otherwise, start with Step 3.
 
 
 ### 1. Obtain upgrade DB script:
@@ -169,7 +169,7 @@ oc rsh sso-bkup-4-lrvzf
 [backup pod]
   ./backup.sh -l
   # figure out the correct copy to restore
-  ./backup.sh -r sso-pgsql-master-sbox-78:5432/rhsso
+  ./backup.sh -r <db_service_name>:5432/<sso_db_name>
   # then get all transaction tables in file
   exit
 ```
@@ -181,7 +181,7 @@ patronictl list
 psql -U postgres
   # swtich to correct table
   \c rhsso
-  # drop all xxxjbosststxtable tables
+  # drop all xxxjbosststxtable tables -> TODO: use wildcard
   DROP TABLE xxx, xxx, xxx;
   # verify
   \d
@@ -197,7 +197,7 @@ oc rsync --no-perms=true ./db-update/ <db_primary_pod>:/tmp
 # apply script to DB
 oc rsh <db_primary_pod>
 [db pod]
-  psql -U sso -d rhsso -W -f /tmp/keycloak-database-update.sql
+  psql -U <sso_db_user> -d <sso_db_name> -W -f /tmp/keycloak-database-update.sql
 ```
 
 4. check for patroni cluster sync before exiting
