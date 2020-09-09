@@ -67,9 +67,25 @@ oc rsh <bkup_pod>
 follow section `Manual Steps for RHSSO 7.4 upgrade`
 
 # continue on Jenkins pipeline to create the new PDB, dc and route
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
+# Note that pipeline job for upgrade has been expired already, we will need to manually kick off the deployment based on local bcdk configs
+# Step 1: comment out the `applyAndDeploy` step, console log the array of objects
+# Step 2: turn the output array into a oc list object
+# Step 3: remove secret objects from it to prevent value changes
+# Step 4: Turn sso dc replicas to 0
+# Step 5: Grab the istag, and put in dc container image ref
+# Step 6: Double Check and dry run
+# Step 7: oc apply
+# Step 8: verify patroni cluster restarted and alright
+# Step 9: remove original route and create tmp one, scale up app to 1 replica and test!
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
 
 
 # verify app is up, then setup the route with cert
+oc get routes
+oc delete route <tmp_route>
 oc apply -f <sso_route>-route.yaml
 
 # check for pdb
@@ -194,7 +210,12 @@ patronictl list
 ```shell
 # Update istag
 oc tag devops-sso-tools/sso:7.4-78 sso:<env>-7.4
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
 # update the dc from ./temporary-upgrade-objects with the correct istag sha
+# =============================== IMPORTANT ========================================
+# =============================== IMPORTANT ========================================
+
 # create the dc
 oc apply -f ./temporary-upgrade-objects/<env>/sso-<env>-upgrade-tmp.yaml
 # scale up upgrade pod
