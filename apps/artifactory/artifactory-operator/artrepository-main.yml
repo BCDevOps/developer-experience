@@ -16,7 +16,7 @@
     - name: Set calculated variables
       set_fact:
         admin_pass_loc: "{{ testPass | default('/tmp/ansible-operator/password') }}"
-        artifactory_url: "{{ test_url | default('http://artifactory-artifactory-ha.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
+        artifactory_url: "http://artifactory-ha.{{ artifactory_namespace }}.svc.cluster.local:8081"
 
     - import_role:
         name: "artifactory_repo"

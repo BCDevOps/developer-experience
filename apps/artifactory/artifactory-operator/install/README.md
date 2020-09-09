@@ -30,9 +30,8 @@ ansible-playbook clusterAdmin.yml -i ${Inventory File}
 ``` bash
 operator-sdk build artifactory-operator
 ../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.klab.devops.gov.bc.ca
-oc -n devops-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.9.1-stable
+oc -n devops-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.19.1-stable
 ```
-
 ### Deploy Operator
 
 *START in* `{reporoot}/apps/artifactory/artifactory-operator/install`
