@@ -22,7 +22,7 @@ objects:
         insecureEdgeTerminationPolicy: Redirect
     to:
       kind: Service
-      name: artifactory-${ARTIFACTORY_NAME}
+      name: ${ARTIFACTORY_NAME}
 
 parameters:
 - description: Artifactory DNS Suffix

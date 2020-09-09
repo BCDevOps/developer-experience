@@ -3,7 +3,7 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: artifactory-artifactory-ha-artifactory-networkpolicy
+  name: artifactory-ha-artifactory-networkpolicy
   labels:
     app: artifactory-ha
     release: artifactory
@@ -23,7 +23,7 @@ spec:
 #apiVersion: policy/v1beta1
 #kind: PodDisruptionBudget
 #metadata:
-#  name: artifactory-artifactory-ha-node
+#  name: artifactory-ha-node
 #  labels:
 #    app: artifactory-ha
 #    component: artifactory
@@ -43,13 +43,13 @@ metadata:
     app: artifactory-ha
     component: artifactory
     release: artifactory
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
 ---
 # Source: artifactory-ha/templates/artifactory-binarystore-secret.yaml
 kind: Secret
 apiVersion: v1
 metadata:
-  name: artifactory-artifactory-ha-binarystore
+  name: artifactory-ha-binarystore
   labels:
     app: artifactory-ha
     release: artifactory
@@ -112,7 +112,7 @@ stringData:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -128,7 +128,7 @@ stringData:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: artifactory-artifactory-ha-primary-system-yaml
+  name: artifactory-ha-primary-system-yaml
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -162,7 +162,7 @@ stringData:
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: artifactory-artifactory-ha-installer-info
+  name: artifactory-ha-installer-info
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -176,7 +176,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: artifactory-artifactory-ha-migration-scripts
+  name: artifactory-ha-migration-scripts
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -4612,7 +4612,7 @@ metadata:
     component: artifactory
     heritage: Helm
     release: artifactory
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
 rules:
 - apiGroups:
   - ""
@@ -4635,21 +4635,21 @@ metadata:
     component: artifactory
     heritage: Helm
     release: artifactory
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
 subjects:
 - kind: ServiceAccount
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
 roleRef:
   kind: Role
   apiGroup: rbac.authorization.k8s.io
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
 ---
 # Source: artifactory-ha/templates/artifactory-service.yaml
 # Service for all Artifactory cluster nodes.
 apiVersion: v1
 kind: Service
 metadata:
-  name: artifactory-artifactory-ha
+  name: artifactory-ha
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -4678,7 +4678,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: artifactory-artifactory-ha-primary
+  name: artifactory-ha-primary
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -4697,7 +4697,7 @@ spec:
     protocol: TCP
     name: artifactory
   selector:
-    role: artifactory-artifactory-ha-primary
+    role: artifactory-ha-primary
     app: artifactory-ha
     component: "artifactory"
     release: artifactory
@@ -4706,7 +4706,7 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: artifactory-artifactory-ha-member
+  name: artifactory-ha-member
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -4714,21 +4714,21 @@ metadata:
     heritage: Helm
     release: artifactory
 spec:
-  serviceName: artifactory-artifactory-ha-member
-  replicas: {{ artifactory_replica_count }}
+  serviceName: artifactory-ha-member
+  replicas: 0
   updateStrategy:
     type: RollingUpdate
   selector:
     matchLabels:
       app: artifactory-ha
-      role: artifactory-artifactory-ha-member
+      role: artifactory-ha-member
       release: artifactory
   template:
     metadata:
       labels:
         app: artifactory-ha
         chart: artifactory-ha-2.4.6
-        role: artifactory-artifactory-ha-member
+        role: artifactory-ha-member
         heritage: Helm
         component: artifactory
         release: artifactory
@@ -4736,7 +4736,7 @@ spec:
         checksum/binarystore: 93517d59d7178127759ab923ea2ffd437a36616b2a675d9ffa60d6dc73b562d5
         checksum/systemyaml: 574244887a15a3818f6d4d6488853f1a46578b9af11480c182f292e8f91a1ffa
     spec:
-      serviceAccountName: artifactory-artifactory-ha
+      serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
       imagePullSecrets:
       - name: 4302974-as-mcs-artifactory-pull-secret
@@ -4761,7 +4761,7 @@ spec:
         - '-c'
         - >
           echo "Waiting for primary node to be ready...";
-          while [ "$(wget --spider -S -T 3 http://artifactory-artifactory-ha-primary:8082/ 2>&1 | grep '^  HTTP/' | awk '{print $2}')" != "200" ];
+          while [ "$(wget --spider -S -T 3 http://artifactory-ha-primary:8082/ 2>&1 | grep '^  HTTP/' | awk '{print $2}')" != "200" ];
             do echo "Primary not ready. Waiting..."; sleep 3;
           done;
           echo "Primary node ready!";
@@ -4788,7 +4788,7 @@ spec:
         - name: ARTIFACTORY_MASTER_KEY
           valueFrom:
             secretKeyRef:
-              name: "artifactory-artifactory-ha"
+              name: "artifactory-ha"
               key: master-key
         resources:
           {}
@@ -4827,7 +4827,7 @@ spec:
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: artifactory-artifactory-ha
+              name: artifactory-ha
               key: db-password
         - name: JF_SHARED_NODE_PRIMARY
           value: "false"
@@ -4873,7 +4873,7 @@ spec:
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: artifactory-artifactory-ha
+              name: artifactory-ha
               key: db-password
         - name: JF_SHARED_NODE_PRIMARY
           value: "false"
@@ -4920,16 +4920,16 @@ spec:
       volumes:
       - name: binarystore-xml
         secret:
-          secretName: artifactory-artifactory-ha-binarystore
+          secretName: artifactory-ha-binarystore
       - name: migration-scripts
         configMap:
-          name: artifactory-artifactory-ha-migration-scripts
+          name: artifactory-ha-migration-scripts
       - name: installer-info
         configMap:
-          name: artifactory-artifactory-ha-installer-info
+          name: artifactory-ha-installer-info
       - name: systemyaml
         secret:
-          secretName: artifactory-artifactory-ha-primary-system-yaml
+          secretName: artifactory-ha-primary-system-yaml
   volumeClaimTemplates:
   - metadata:
       annotations:
@@ -4946,7 +4946,7 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: artifactory-artifactory-ha-primary
+  name: artifactory-ha-primary
   labels:
     app: artifactory-ha
     chart: artifactory-ha-2.4.6
@@ -4955,21 +4955,21 @@ metadata:
     heritage: Helm
     release: artifactory
 spec:
-  serviceName: artifactory-artifactory-ha-primary
+  serviceName: artifactory-ha-primary
   replicas: 1
   updateStrategy:
     type: RollingUpdate
   selector:
     matchLabels:
       app: artifactory-ha
-      role: artifactory-artifactory-ha-primary
+      role: artifactory-ha-primary
       release: artifactory
   template:
     metadata:
       labels:
         app: artifactory-ha
         chart: artifactory-ha-2.4.6
-        role: artifactory-artifactory-ha-primary
+        role: artifactory-ha-primary
         component: artifactory
         heritage: Helm
         release: artifactory
@@ -4978,7 +4978,7 @@ spec:
         checksum/systemyaml: 574244887a15a3818f6d4d6488853f1a46578b9af11480c182f292e8f91a1ffa
         checksum/admin-creds: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
     spec:
-      serviceAccountName: artifactory-artifactory-ha
+      serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
       imagePullSecrets:
       - name: 4302974-as-mcs-artifactory-pull-secret
@@ -5034,12 +5034,12 @@ spec:
         - name: ARTIFACTORY_JOIN_KEY
           valueFrom:
             secretKeyRef:
-              name: "artifactory-artifactory-ha"
+              name: "artifactory-ha"
               key: join-key
         - name: ARTIFACTORY_MASTER_KEY
           valueFrom:
             secretKeyRef:
-              name: "artifactory-artifactory-ha"
+              name: "artifactory-ha"
               key: master-key
         volumeMounts:
         - name: volume
@@ -5076,7 +5076,7 @@ spec:
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: artifactory-artifactory-ha
+              name: artifactory-ha
               key: db-password
         - name: JF_SHARED_NODE_PRIMARY
           value: "true"
@@ -5126,7 +5126,7 @@ spec:
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: artifactory-artifactory-ha
+              name: artifactory-ha
               key: db-password
         - name: JF_SHARED_NODE_PRIMARY
           value: "true"
@@ -5173,16 +5173,16 @@ spec:
       volumes:
       - name: binarystore-xml
         secret:
-          secretName: artifactory-artifactory-ha-binarystore
+          secretName: artifactory-ha-binarystore
       - name: migration-scripts
         configMap:
-          name: artifactory-artifactory-ha-migration-scripts
+          name: artifactory-ha-migration-scripts
       - name: installer-info
         configMap:
-          name: artifactory-artifactory-ha-installer-info
+          name: artifactory-ha-installer-info
       - name: systemyaml
         secret:
-          secretName: artifactory-artifactory-ha-primary-system-yaml
+          secretName: artifactory-ha-primary-system-yaml
   volumeClaimTemplates:
   - metadata:
       annotations:
