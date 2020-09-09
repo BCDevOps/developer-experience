@@ -11,6 +11,7 @@ cd update-tmp-<env>
 # =============================== IMPORTANT ========================================
 # =============================== IMPORTANT ========================================
 # create a local user in master realm for testing after the upgrade and DB operations
+# Give it a view role!
 # =============================== IMPORTANT ========================================
 # =============================== IMPORTANT ========================================
 
