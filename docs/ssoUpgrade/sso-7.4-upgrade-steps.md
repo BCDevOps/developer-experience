@@ -71,14 +71,18 @@ follow section `Manual Steps for RHSSO 7.4 upgrade`
 # =============================== IMPORTANT ========================================
 # =============================== IMPORTANT ========================================
 # Note that pipeline job for upgrade has been expired already, we will need to manually kick off the deployment based on local bcdk configs
+# Step 0: go to .pipeline/lib/deploy.js, comment out steps that process files:
+#   - sso74-x509-postgresql.yaml
+#   - sso74-x509-postgresql-secrets.yaml
+#   - sso74-x509-secrets.yaml
 # Step 1: comment out the `applyAndDeploy` step, console log the array of objects
-# Step 2: turn the output array into a oc list object
-# Step 3: remove secret objects from it to prevent value changes
-# Step 4: Turn sso dc replicas to 0
-# Step 5: Grab the istag, and put in dc container image ref
-# Step 6: Double Check and dry run
-# Step 7: oc apply
-# Step 8: verify patroni cluster restarted and alright
+# Step 2: take a copy of secret objects, in case the value got updated
+# Step 3: turn the output array into a oc list object
+# Step 4: remove secret objects from it to prevent value changes
+# Step 5: Turn sso dc replicas to 0
+# Step 6: Grab the istag, and put in dc.spec.template.spec.containers.image
+# Step 7: Double Check and dry run
+# Step 8: oc apply (note that patroni cluster should not be restarting now)
 # Step 9: remove original route and create tmp one, scale up app to 1 replica and test!
 # =============================== IMPORTANT ========================================
 # =============================== IMPORTANT ========================================
