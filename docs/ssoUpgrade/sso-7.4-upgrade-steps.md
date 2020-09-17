@@ -177,18 +177,20 @@ oc rsh sso-bkup-4-lrvzf
 
 2. Remove transaction tables:
 ```shell
+# copy over the SQL scripts
+oc cp ./temporary-upgrade-objects/drop-temp-tables.sql <db_primary_pod>:/tmp
+oc cp ./temporary-upgrade-objects/verify-temp-tables.sql <db_primary_pod>:/tmp
+
+# rsh into the db pod:
 oc rsh <db_primary_pod>
-patronictl list
-psql -U postgres
-  # swtich to correct table
-  \c rhsso
-  # drop all xxxjbosststxtable tables -> TODO: use wildcard
-  DROP TABLE xxx, xxx, xxx;
-  # verify
-  \d
-  \q
-# verify db sync up:
-patronictl list
+  # check on cluster status first
+  patronictl list
+  # run the script to verify
+  psql -U <username> -d <sso_db_name> -W -f /tmp/verify-temp-tables.sql
+  # if all matching, execute
+  psql -U <username> -d <sso_db_name> -W -f /tmp/drop-temp-tables.sql
+  # verify db sync up:
+  patronictl list
 ```
 
 3. Apply the database update manually

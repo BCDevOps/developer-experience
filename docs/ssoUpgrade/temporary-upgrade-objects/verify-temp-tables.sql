@@ -16,8 +16,8 @@ FOR _tbl  IN
     WHERE  table_name LIKE 'ossso' || '%'  -- your table name prefix, set as "ossso"
     AND    table_schema NOT LIKE 'pg\_%'    -- exclude system schemas
 LOOP
-  --  RAISE NOTICE '%',
-EXECUTE
+   RAISE NOTICE '%',
+-- EXECUTE
   'DROP TABLE ' || _tbl;  -- see below
 END LOOP;
 END
