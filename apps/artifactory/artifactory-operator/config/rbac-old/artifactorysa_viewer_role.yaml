@@ -1,0 +1,20 @@
+# permissions for end users to view artifactorysas.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: artifactorysa-viewer-role
+rules:
+- apiGroups:
+  - artifactory.operators.bcgov
+  resources:
+  - artifactorysas
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - artifactory.operators.bcgov
+  resources:
+  - artifactorysas/status
+  verbs:
+  - get

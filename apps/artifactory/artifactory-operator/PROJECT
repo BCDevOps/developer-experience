@@ -1,0 +1,11 @@
+domain: operators.bcgov
+layout: ansible.sdk.operatorframework.io/v1
+projectName: artifactory-operator
+resources:
+- group: artifactory
+  kind: ArtifactoryRepo
+  version: v1alpha1
+- group: artifactory
+  kind: ArtifactorySA
+  version: v1alpha1
+version: 3-alpha

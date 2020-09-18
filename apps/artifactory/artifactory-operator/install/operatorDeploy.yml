@@ -6,16 +6,16 @@
   - name: deploy Project Roles
     k8s:
       state: "{{ state | default('present') }}"
-      definition: "{{ lookup('template', '../deploy/k8s_roles/r-artifactory-operator.yaml.j2') }}"
+      definition: "{{ lookup('template', '../config/rbac/r-artifactory-operator.yaml.j2') }}"
 
   - name: deploy Project RoleBindings
     k8s:
       state: "{{ state | default('present') }}"
-      definition: "{{ lookup('template', '../deploy/k8s_roles/rb-artifactory-operator.yaml.j2') }}"
+      definition: "{{ lookup('template', '../config/rbac/rb-artifactory-operator.yaml.j2') }}"
 
 #  - name: create buildConfig? or run local build/push of image?
 
   - name: Create Operator Deployment
     k8s:
       state: "{{ state | default('present') }}"
-      definition: "{{ lookup('template', '../deploy/d-artifactory-operator.yaml.j2') }}"
+      definition: "{{ lookup('template', '../config/manager/d-artifactory-operator.yaml.j2') }}"

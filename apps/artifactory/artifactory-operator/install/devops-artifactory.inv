@@ -8,6 +8,6 @@ DEPLOY_NAME="artifactory-operator"
 ARTIFACTORY_BASE_DNS="artifacts.apps.klab.devops.gov.bc.ca/"
 IMAGE_REGISTRY="image-registry.openshift-image-registry.svc:5000"
 IMAGE="devops-artifactory/artifactory-operator"
-IMAGE_TAG="v1-0.19.0-stable"
+IMAGE_TAG="v1-1.0.0-stable"
 secretName="artifactory-ha-admin"
 

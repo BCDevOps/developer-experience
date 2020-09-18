@@ -6,15 +6,15 @@
   - name: deploy CRDs
     k8s:
       state: "{{ state | default('present') }}"
-      src: ../deploy/crds/{{ item }}
+      src: ../config/crd/bases/{{ item }}
     with_items:
-      - crd-artifactrepo.yaml
-      - crd-artifactsvca.yaml
+      - artifactory.devops.gov.bc.ca_artifactoryrepos.yaml
+      - artifactory.devops.gov.bc.ca_artifactorysas.yaml
 
   - name: deploy Cluster Roles
     k8s:
       state: "{{ state | default('present') }}"
-      src: ../deploy/k8s_roles/{{ item }}
+      src: ../config/rbac/{{ item }}
     with_items:
       - cr-aggregate-artifactrepos-view.yaml
       - cr-aggregate-artifactsvcas-admin-edit.yaml
@@ -35,4 +35,4 @@
       oc adm policy add-cluster-role-to-user {{ item.clusterrole }} system:serviceaccount:{{ item.namespace }}:{{ item.serviceaccount }}
     with_items:
       - { clusterrole: "artifactory-cluster-operator", namespace: "{{ namespace }}", serviceaccount: "{{ svcAcct }}" }
-      - { clusterrole: "artifactory-object-admin", namespace: "openshift", serviceaccount: "active" }
+      - { clusterrole: "artifactory-object-admin", namespace: "openshift", serviceaccount: "bcdevops-admin" }
