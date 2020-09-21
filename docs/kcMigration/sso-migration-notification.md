@@ -15,7 +15,6 @@ This service name migration will carry out in the sequence of dev, test and then
 
 - Step 2 - Product teams verify existing `pathfinder` SSO services working fine
 - Step 3 - Platform Services team work with product teams to troubleshot any issue found
-- Step 5 - Shutdown the pathfinder service name
 
 
 #### Dev SSO New Service Name Enable on `Sep 24th`
