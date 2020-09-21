@@ -1,7 +1,7 @@
 
 ### What is happening?
 
-Hi team, the KeyCloak SSO service is finally removing its *Pathfinder* sticker and getting a new name.  This change does not affect the service offering but does change how you will access it.  The name is changing from sso.pathfinder.gov.bc.ca to oidc.gov.bc.ca.  For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
+Hi team, the KeyCloak SSO service is finally starting the process of removing its *Pathfinder* sticker and getting a new name.  This change does not affect the service offering but will eventually change how you will access it.  The name is changing from sso.pathfinder.gov.bc.ca to oidc.gov.bc.ca.  For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
 
 ### When?
 
