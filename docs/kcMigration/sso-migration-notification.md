@@ -14,7 +14,7 @@ This service name migration will carry out in the sequence of dev, test and then
   - **Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for four weeks/two sprints (or longer depends on the feedback), which allows product teams to update integrated applications and conduct thorough testing.**
 
 - Step 2 - Product teams verify existing `pathfinder` SSO services working fine
-- Step 4 - Platform Services team work with product teams to troubleshot any issue found
+- Step 3 - Platform Services team work with product teams to troubleshot any issue found
 - Step 5 - Shutdown the pathfinder service name
 
 
