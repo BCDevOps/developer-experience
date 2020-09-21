@@ -44,7 +44,6 @@ Once the service name enablment is complete, SSO service will return back to nor
 
 ### Do I need to do anything?
 
-Yes, you will need to participate in both `Step 2 & 3` after new service name is enabled.
 
 For Step 2, you should check on all existing usages of SSO KeyCloak immediately. There will be __one week__ to report any bugs or integration issues, before we move onto the next environment. Platform Service team will able available to help troubleshoot issues relevant to the service name change when any SSO admin action is needed.
 
