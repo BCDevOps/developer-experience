@@ -42,7 +42,7 @@ Once the service name enablment is complete, SSO service will return back to nor
 
 ### Do I need to do anything?
 
-For Step 2, you should check on all existing usages of SSO KeyCloak immediately. There will be __one week__ to report any bugs or integration issues, before we move onto the next environment. Platform Service team will able available to help troubleshoot issues relevant to the service name change when any SSO admin action is needed.
+You should check on all existing usages of SSO KeyCloak after the new name has been added to confirm your use of the sso-dev.pathfinder.gov.bc.ca service name is not impacted. There will be __one week__ to report any bugs or integration issues, before we move onto the next environment. Platform Service team will able available to help troubleshoot issues relevant to the service name change when any SSO admin action is needed.
 
 For Step 3, you should start to update the SSO service name for all application integrations and test out the authentication flow as soon as possible. (If you have BCSC integration with your realm, stay tune for more details on how to proceed with the update. We will be working with some polit teams and BCSC team once Dev SSO has the new service name in place.)
 
