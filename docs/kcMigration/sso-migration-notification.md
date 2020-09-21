@@ -5,7 +5,7 @@ Hi team, the KeyCloak SSO service is finally removing its *Pathfinder* sticker a
 
 ### When?
 
-We are planning for an accelerated deployment cadence in order to remove blockers for the OpenShift 4 migration. This will require fast action from product teams, both from the initial functional validation activities, as well as notifying the platform-experience team immediately of any critical issues identified during testing.
+Starting on September 24, 2020 a second vanity name will be available for accessing your dev SSO services.  This change will continue to add an oidc.gov.bc.ca name to each of the SSO environments over the coming weeks, completing the addition of a second name in the production SSO service on October 8, 2020.
 
 This service name migration will carry out in the sequence of dev, test and then prod. For each environment, here are the major steps:
 
