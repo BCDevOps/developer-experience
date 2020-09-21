@@ -11,7 +11,7 @@ This service name migration will carry out in the sequence of dev, test and then
 
 - Step 1 - Enable new service name `*.oidc.gov.bc.ca`.
 
-  - **Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for `a period of time (TODO: decide on how long)`, which allows product teams to update integrated applications and conduct thorough testing.**
+  - **Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for four weeks/two sprints (or longer depends on the feedback), which allows product teams to update integrated applications and conduct thorough testing.**
 
 - Step 2 - Product teams verify existing `pathfinder` SSO services working fine
 - Step 3 - Product teams update application's SSO configuration to the new service and test out SSO integrations
@@ -66,5 +66,4 @@ Here are the recommended ways to start with:
 
 ### Where do I get help if my app doesn't work after the change is complete?
 
-- TODO: shall we add the miro boarding?
 - Please post in #sso RocketChat channel, including the realm ID, environment, detailed description of the issue.
