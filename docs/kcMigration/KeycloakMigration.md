@@ -23,7 +23,7 @@ Phase 2. ***Platform Services team and WAM Team*** to request for services and c
 - set of new SiteMinder Federation services (IDIR and BCeID)
 
 Phase 3. ***Platform Services team*** start communication and enable the new DEV services
-- work with ***product teams*** on the verifying and identifying issues and actions
+- work with ***product teams*** on the identifying and resolving issues
 - ***product teams*** start to update application SSO integration, identify issues and actions
 
 Phase 3.1. figure out the process for product teams to update BCSC configuration if needed

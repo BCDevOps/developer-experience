@@ -7,7 +7,7 @@ Hi team, the KeyCloak SSO service is finally starting the process of removing it
 
 Starting on September 24, 2020 a second vanity name will be available for accessing your dev SSO services.  This change will continue to add an oidc.gov.bc.ca name to each of the SSO environments over the coming weeks, completing the addition of a second name in the production SSO service on October 8, 2020.
 
-This service name migration will carry out in the sequence of dev, test and then prod. For each environment, here are the major steps:
+The new service name will be enabled in the sequence of dev, test and then prod SSO. For each environment, here are the major steps:
 
 - Step 1 - Enable new service name `*.oidc.gov.bc.ca`.
 
@@ -33,7 +33,7 @@ Current SSO service disruption for the new production service name is scheduled 
 
 ### Will there be an impact on the Platform apps?
 
-Yes there will be service disruption when we enable the new SSO service name, but the effects are expected to be temporary and will last for about 10mins for each realm. This is caused by KeyCloak internal settings update from Platform Services team, if you are interested in more details, refer to [doc](./KeycloakMigration.md).
+Yes there will be service disruption when we enable the new SSO service name, but the effects are expected to be temporary and will last for about 10mins for each realm (included in the 2 hours service maintenance window). This is caused by KeyCloak internal settings update from Platform Services team, if you are interested in more details, refer to [doc](./KeycloakMigration.md).
 
 Also note that production SSO service disruption will be scheduled outside of business hours, after 5:00PM.
 
