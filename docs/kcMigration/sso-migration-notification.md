@@ -46,7 +46,7 @@ You should check on all existing usages of SSO KeyCloak after the new name has b
 
 Once the change has been completed in an environment, you can begin to update the SSO service name for all application integrations and test out the authentication flow with the new enterprise service name. (If you have BCSC integration with your realm, stay tuned for more details on how to proceed with the update. We will be working with some polit teams and BCSC team once Dev SSO has the new service name in place.)
 
-Here are the recommended ways to start with:
+### Here are the recommended ways to start with:
 
 - Verify your applications authentication flow are working with the original SSO service after we have enabled the new service name
 - Test on KeyCloak console login with both new and original service name
