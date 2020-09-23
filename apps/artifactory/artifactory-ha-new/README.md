@@ -85,7 +85,7 @@ The license file must be formatted like this:
 ]
 ```
 
-The licenseKeys must be on a single line. Any line breaks should be represented by a `\n` character.
+The licenseKeys must be on a single line. Any line breaks should be represented by a `\n` character. Many IDEs will allow you to find/replace the linebreak, making conversion much easier.
 
 ## 1. Installing Artifactory 7
 

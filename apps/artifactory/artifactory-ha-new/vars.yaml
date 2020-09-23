@@ -1,6 +1,14 @@
 # Do you want to build a fresh image of Postgres for your patroni installation?
 # This needs to be set to true the first time you run an installation on a new namespace.
-build: false
+build: true
+
+# Do you need to build the NetworkSecurityPolicy or no?
+# This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
+nsp: true
+
+# The first registry is for OCP4, the second is for OCP3.
+image_registry: "image-registry.openshift-image-registry.svc:5000"
+#image_registry: "docker-registry.default.svc:5000"
 
 
 
@@ -14,11 +22,11 @@ artifactory_password: "{{ lookup('password', './processed/artifactory-admin-pass
 
 # Pick the right URL for the cluster.
 # If you're installing on a cluster that already has artifactory installed, you'll need to change the "artifacts" to something else, like "artifacts-test".
-artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
 #artifactory_url: 'artifacts-test.pathfinder.gov.bc.ca'
-#artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
+artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
 
 # Which namespace are you installing into?
 project_name: 'devops-artifactory'
@@ -31,8 +39,8 @@ artifactory_storage_class: netapp-block-standard
 
 # These are not secret, so it's fine if they get uploaded to github.
 # A new installation requires a new master key and join key. See the README for how to generate new ones.
-master_key: 7287fa3b6a6246fc5a485fb2a64ed313f038b65023c81dc071dd63a307f3441a
-join_key: 72831a65b05d3c0332a65c4f97191c5eda497387d2b246ad5eba0e06baa3c227
+master_key: 750bdcdb19db56a852ef49cf79f2114f951feacaa6c85d81a12fba237ac99266
+join_key: 2ff3acea396c8e04c9bb474b0dd7a1098c481d1dca9808b1a26554f3ab1ec7f1
 
 # Lookup for a file with the license keys for this installation.
 # See the README for more details on the file location and formatting.
@@ -53,12 +61,9 @@ storage_size: "10Gi"
 ####################################################
 
 db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+
 db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
 db_storage_class: netapp-block-standard
-
-# The first registry is for OCP4, the second is for OCP3. This is relevant if you're building a new postgres image.
-image_registry: "image-registry.openshift-image-registry.svc:5000"
-#image_registry: "docker-registry.default.svc:5000"
 
 # This is the total number of replicas in the Patroni statefulset. Don't set this below 1.
 db_replica_count: 2
@@ -74,8 +79,8 @@ db_version: 11
 
 # The Client ID name and secret for this installation.
 # See the README for more details.
-sso_id: "client-id-name"
-sso_secret: "xxxxxxxxxxxxxxxx"
+sso_id: "artifactory-oauth"
+sso_secret: "xxxxxxxxxxxx"
 
 
 
@@ -84,13 +89,13 @@ sso_secret: "xxxxxxxxxxxxxxxx"
 ####################################################
 
 # This is the name if the bucket you created in section 0b of the README.
-s3_bucket_name: "filler-bucket-name"
+s3_bucket_name: "artifactory-bucket"
 
 # You don't need to touch this.
 s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
 
 # This is the username and secret of the object user you created in section 0b of the README.
-s3_identity: "filler-identity-name"
+s3_identity: "artifactory-user"
 s3_password: "xxxxxxxxxxxxxxxx"
 
 

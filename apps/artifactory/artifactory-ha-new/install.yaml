@@ -19,11 +19,13 @@
       template:
         src: ./templates/nsp.yaml.j2
         dest: ./processed/nsp.yaml
+      when: nsp
 
       # deploy template
     - name: Apply network security policy
       command: >
         oc apply -f ./processed/nsp.yaml
+      when: nsp
 
       # make patroni build
     - name: Build Patroni image (processing)
