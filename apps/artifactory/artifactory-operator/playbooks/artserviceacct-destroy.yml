@@ -1,0 +1,47 @@
+---
+
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: ../test/test-vars-artifactorySA.yml
+      when: meta is undefined
+
+    - name: Generate variables
+      set_fact:
+        admin_user: "admin"
+        admin_pass_loc: "{{ testPass | default('/tmp/ansible-operator/password') }}"
+        artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
+
+    - name: Set calculated variables
+      set_fact:
+        artifactory_url: "{{ test_url | default('http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
+        service_account_name: "{{ sa_name  | default('MISSING_SA') }}"
+
+    - name: Delete artifactory user
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+        user: "{{ admin_user }}"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: DELETE
+        body_format: json
+        headers:
+          Content-type: "application/json" 
+        force_basic_auth: yes
+      ignore_errors: yes
+      register: del_artsa
+      changed_when: del_artsa.status == 200
+      when: sa_name is defined
+      
+    - name: Delete Secret for Service Account
+      k8s:
+        state: absent
+        definition:
+          apiVersion: v1
+          kind: Secret
+          metadata:
+            name: "{{ service_account_name }}"
+            namespace: "{{ meta.namespace }}"
+      when: sa_name is defined
