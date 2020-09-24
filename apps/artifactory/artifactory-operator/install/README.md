@@ -28,12 +28,7 @@ ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
 *START in* `{reporoot}/apps/artifactory/artifactory-operator`
 
 ``` bash
-make docker-build docker-push IMG=image-registry.apps.klab.devops.gov.bc.ca/devops-artifactory/artifactory-operator:v1-1.0.0-stable
-make docker-build docker-push REGISTRY=image-registry.apps.klab.devops.gov.bc.ca NAMESPACE=devops-artifactory OPERATOR_NAME=artifactory-operator OPERATOR_TAG=v1-1.0.0-stable
-
-operator-sdk build artifactory-operator
-../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.klab.devops.gov.bc.ca
-oc -n devops-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.19.1-stable
+../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.klab.devops.gov.bc.ca -t v1-1.0.0-stable
 ```
 ### Deploy Operator
 
