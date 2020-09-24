@@ -1,2 +1,129 @@
-env: lab
-project_name: test-artifactory
+# Do you want to build a fresh image of Postgres for your patroni installation?
+# This needs to be set to true the first time you run an installation on a new namespace.
+build: true
+
+# Do you need to build the NetworkSecurityPolicy or no?
+# This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
+nsp: true
+
+# The first registry is for OCP4, the second is for OCP3.
+image_registry: "image-registry.openshift-image-registry.svc:5000"
+#image_registry: "docker-registry.default.svc:5000"
+
+
+
+####################################################
+#             ARTIFACTORY SETTINGS                 #
+####################################################
+
+artifactory_instance_name: "artifactory-ha"
+artifactory_version: 7.4.3
+artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
+
+# Pick the right URL for the cluster.
+# If you're installing on a cluster that already has artifactory installed, you'll need to change the "artifacts" to something else, like "artifacts-test".
+#artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
+#artifactory_url: 'artifacts-test.pathfinder.gov.bc.ca'
+artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
+
+# Which namespace are you installing into?
+project_name: 'devops-artifactory'
+
+# This is the number of members in the artifactory installation - set to 0 if you only want the primary up.
+artifactory_replica_count: 1
+
+# netapp-file-standard is better, probably, but broken on KLAB.
+artifactory_storage_class: netapp-block-standard
+
+# These are not secret, so it's fine if they get uploaded to github.
+# A new installation requires a new master key and join key. See the README for how to generate new ones.
+master_key: 750bdcdb19db56a852ef49cf79f2114f951feacaa6c85d81a12fba237ac99266
+join_key: 2ff3acea396c8e04c9bb474b0dd7a1098c481d1dca9808b1a26554f3ab1ec7f1
+
+# Lookup for a file with the license keys for this installation.
+# See the README for more details on the file location and formatting.
+artifactory_licenses: "{{ lookup('file', 'licenses/artifactory.lab.lic') }}"
+
+# These are the requests/limits for the artifactory installation.
+# The primary and all members will each get the same requests/limits.
+cpu_limit: "2"
+memory_limit: "3Gi"
+cpu_request: "0.5"
+memory_request: "1Gi"
+storage_size: "10Gi"
+
+
+
+####################################################
+#               PATRONI SETTINGS                   #
+####################################################
+
+db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars=ascii_letters,digits') }}"
+
+db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
+db_storage_class: netapp-block-standard
+
+# This is the total number of replicas in the Patroni statefulset. Don't set this below 1.
+db_replica_count: 2
+
+# Postgres major version to use.
+db_version: 11
+
+
+
+####################################################
+#               KEYCLOAK SETTINGS                  #
+####################################################
+
+# The Client ID name and secret for this installation.
+# See the README for more details.
+sso_id: "artifactory-oauth"
+sso_secret: "xxxxxxxxxxxx"
+
+
+
+####################################################
+#              OBJECT STORE SETTINGS               #
+####################################################
+
+# This is the name if the bucket you created in section 0b of the README.
+s3_bucket_name: "artifactory-bucket"
+
+# You don't need to touch this.
+s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
+
+# This is the username and secret of the object user you created in section 0b of the README.
+s3_identity: "artifactory-user"
+s3_password: "xxxxxxxxxxxxxxxx"
+
+
+
+####################################################
+#               CACHING REPOSITORIES               #
+####################################################
+
+repo_list:
+  - { repo_key: 'python-remote', repo_desc: 'Remote Python Repository', remote_url: 'https://www.python.org', pkg_type: 'generic' }
+  - { repo_key: 'jenkins-remote', repo_desc: 'Remote Jenkins Repository', remote_url: 'https://updates.jenkins.io/download/', pkg_type: 'generic' }
+  - { repo_key: 'npm-remote', repo_desc: 'Remote NPM Repository', remote_url: 'https://registry.npmjs.org', pkg_type: 'npm' }
+  - { repo_key: 'atlassian-maven-remote', repo_desc: 'Remote Atlassian Maven Repository', remote_url: 'https://maven.atlassian.com/repository/public/', pkg_type: 'maven' }
+  - { repo_key: 'boundlessgeo-maven-remote', repo_desc: 'Remote BoundlessGeo Maven Repository', remote_url: 'http://repo.boundlessgeo.com/main/', pkg_type: 'maven' }
+  - { repo_key: 'geosolutions-maven-remote', repo_desc: 'Remote Geo-Solutions Maven Repository', remote_url: 'http://maven.geo-solutions.it/', pkg_type: 'maven' }
+  - { repo_key: 'jasperreports-maven-remote', repo_desc: 'Remote JasperReports Maven Repository', remote_url: 'http://jasperreports.sourceforge.net/maven2', pkg_type: 'maven' }
+  - { repo_key: 'jaspersoftjr-maven-remote', repo_desc: 'Remote Jaspersoft JR Maven Repository', remote_url: 'http://jaspersoft.artifactoryonline.com/jaspersoft/jr-ce-releases/', pkg_type: 'maven' }
+  - { repo_key: 'jaspersoftjrs-maven-remote', repo_desc: 'Remote Jaspersoft JRS Maven Repository', remote_url: 'http://jaspersoft.artifactoryonline.com/jaspersoft/jrs-ce-releases/', pkg_type: 'maven' }
+  - { repo_key: 'jaspersoft3p-maven-remote', repo_desc: 'Remote Jaspersoft 3rd Party Maven Repository', remote_url: 'https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/', pkg_type: 'maven' }
+  - { repo_key: 'jcenter-maven-remote', repo_desc: 'Remote JCenter Maven Repository', remote_url: 'http://jcenter.bintray.com', pkg_type: 'maven' }
+  - { repo_key: 'jfrog-maven-remote', repo_desc: 'Remote JFrog Artifactory Maven Repository', remote_url: 'https://jfrog.bintray.com/artifactory/', pkg_type: 'maven' }
+  - { repo_key: 'oracle-maven-remote', repo_desc: 'Remote Oracle Maven Repository', remote_url: 'https://maven.oracle.com', pkg_type: 'maven' }
+  - { repo_key: 'osgeo-maven-remote', repo_desc: 'Remote OSGeo Maven Repository', remote_url: 'http://download.osgeo.org/webdav/geotools/', pkg_type: 'maven' }
+  - { repo_key: 'primefaces-maven-remote', repo_desc: 'Remote PrimeFaces Maven Repository', remote_url: 'http://repository.primefaces.org', pkg_type: 'maven' }
+  - { repo_key: 'jenkinspub-maven-remote', repo_desc: 'Remote Jenkins Public Maven Repository', remote_url: 'http://repo.jenkins-ci.org/public', pkg_type: 'maven' }
+  - { repo_key: 'jenkinsrel-maven-remote', repo_desc: 'Remote Jenkins Releases Maven Repository', remote_url: 'http://repo.jenkins-ci.org/releases', pkg_type: 'maven' }
+  - { repo_key: 'maven-remote', repo_desc: 'Remote Maven Repository', remote_url: 'https://repo1.maven.org/maven2', pkg_type: 'maven' }
+  - { repo_key: 'vivid-maven-remote', repo_desc: 'Remote Vivid Maven Repository', remote_url: 'http://mvn.vividsolutions.com/artifactory/repo', pkg_type: 'maven' }
+  - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
+  - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://pypi.org/', pkg_type: 'pypi' }
+  - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
