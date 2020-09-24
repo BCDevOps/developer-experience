@@ -1,0 +1,26 @@
+---
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: test-vars-artifactoryRepo.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        user: "servicetester-2-jefkel-hxjlpf"
+        password: "`Vf3\&z`7M8a:pe.(P59FdW:"
+
+    - name: Get available repositories
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/repositories"
+        user: "{{ user }}"
+        password: "{{ password }}"
+        method: GET
+        headers:
+          Content-type: "application/x-www-form-urlencoded"
+        force_basic_auth: yes
+      register: repo_list
+#      changed_when: ops_token.status == 201

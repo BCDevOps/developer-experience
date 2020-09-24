@@ -1,0 +1,18 @@
+---
+# Operator common CR variables
+meta:
+  namespace: jefkel-dev
+
+# Operator Repo-CR variables
+team_name: "jtest"
+repository_type: "docker"
+repository_locator: "local"
+repository_description: "Test Docker repo"
+
+# Operator ServiceAcct CR variables
+
+# Operator build/deploy variables
+console: ""
+artifactory_url: "https://artifacts-old.lab.pathfinder.gov.bc.ca"
+admin_pass_loc: "~/projects/bcdevops/art_creds"
+external_dns_suffix: "artifacts-old.lab.pathfinder.gov.bc.ca"

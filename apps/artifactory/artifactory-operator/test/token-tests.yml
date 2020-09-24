@@ -1,0 +1,48 @@
+---
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: test-vars-artifactoryRepo.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        admin_user: "admin"
+        OPERATOR_SA: "ops-admin"
+        project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
+        generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+
+    - name: Get Service ID for Artifactory
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/system/service_id"
+        user: "admin"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: GET
+        force_basic_auth: yes
+        return_content: yes
+      register: service_id
+
+    - name: Create administrative token for operator
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/security/token"
+        user: "admin"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: POST
+        headers:
+          Content-type: "application/x-www-form-urlencoded"
+        body_format: form-urlencoded
+        body: '{"username":"{{ OPERATOR_SA }}", "expires_in":"0", "scope":"{{service_id.content}}:admin", "token_type":"Bearer"}'
+        force_basic_auth: yes
+        status_code: 201,200
+      register: ops_token
+#      changed_when: ops_token.status == 201
+
+    - debug:
+        msg: "{{ops_token}}"
+
+    - name: test Token access
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/security/token"

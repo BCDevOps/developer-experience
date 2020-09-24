@@ -1,0 +1,151 @@
+apiVersion: v1
+kind: Template
+metadata:
+  creationTimestamp: null
+  name: ${NAME}-app-web
+labels:
+  template: ${NAME}-app-web
+  app: ${NAME}
+objects:
+- apiVersion: v1
+  data:
+    Caddyfile: |
+      0.0.0.0:4000
+      root /var/www/html/dist/Error-page
+      log stdout
+      errors stdout
+      rewrite { to {path} {path}/ / }
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: null
+    name: caddy-${NAME}-static
+    labels:
+      app: ${NAME}
+      deploymentconfig: ${NAME}-static
+      app-name: ${NAME}-static
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    creationTimestamp: null
+    name: ${NAME}-static
+  spec:
+    lookupPolicy:
+      local: false
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: ${NAME}
+    name: ${NAME}-static
+  spec:
+    minReadySeconds: 20 # should be ready for at least 20 seconds before the container is considered available. This will allow us
+    # to catch any errors on deploy before they are available to the web
+    replicas: 3
+    selector:
+      deploymentconfig: ${NAME}
+    strategy:
+      resources:
+        requests:
+          cpu: '10m'
+          memory: '50Mi'
+        limits:
+          cpu: '150m'
+          memory: '75Mi'
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          deploymentconfig: ${NAME}
+      spec:
+        containers:
+        - image: ${NAME}-static:${VERSION}
+          name: error-page-web-app
+          args:
+          - /tmp/scripts/run
+          ports:
+          - containerPort: 4000
+            protocol: TCP
+          resources:
+            requests:
+              cpu: '10m'
+              memory: '50Mi'
+            limits:
+              cpu: '150m'
+              memory: '75Mi'
+          env:
+            - name: SITE_NAME
+              value: ${SITE_NAME}
+          volumeMounts:
+          - name: caddy-${NAME}-static
+            mountPath: /etc/Caddyfile
+            readOnly: true
+            subPath: Caddyfile
+        volumes:
+        - name: caddy-${NAME}-static
+          configMap:
+            defaultMode: 420
+            name: caddy-${NAME}-static
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - error-page-web-app
+        from:
+          kind: ImageStreamTag
+          name: ${NAME}-static:${VERSION}
+      type: ImageChange
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: ${NAME}
+    name: ${NAME}-static
+  spec:
+    ports:
+    - name: web
+      port: 4000
+      protocol: TCP
+      targetPort: 4000
+    selector:
+      deploymentconfig: ${NAME}-static
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    annotations:
+      haproxy.router.openshift.io/disable_cookies: 'true'
+    creationTimestamp: null
+    labels:
+      app: ${NAME}
+    name: ${NAME}-static
+  spec:
+    host:
+    port:
+      targetPort: web
+    tls:
+      insecureEdgeTerminationPolicy: Redirect
+      termination: edge
+    to:
+      kind: Service
+      name: ${NAME}-static
+      weight: 100
+    wildcardPolicy: None
+parameters:
+- description: A name used for all objects
+  displayName: Name
+  name: NAME
+  required: true
+  value: error-page
+- description: Title of the app
+  displayName: Title
+  name: SITE_NAME
+  required: true
+  value: 'Maintenance Page'
+- description: A version used for the image tags
+  displayName: version
+  name: VERSION
+  required: true
+  value: v1.0.0

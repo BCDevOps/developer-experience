@@ -35,6 +35,25 @@ Resource limits set an upper limit of what a pod can burst to if the resources a
 :ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.   
 :ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large cpu and memory limits.   
 
+**Being A Good Resource Citizen**
+
+:star: :star: :star: 
+
+Having a **3:1 ratio** of CPU Limit:CPU Request is a good starting place for new applications that haven't yet been tuned. Using a 3:1 ratio makes you a **good community member**!
+
+:star: :star: :star: :star: 
+
+Having a **2:1 ratio** of CPU Limit:CPU Request is a great next step for teams whose projects are working and stable, and who are in a position to start tuning their application more effectively - especially those who are seeking to make better use of horizontal scaling.
+Using a 2:1 ratio makes you a **great community member**!
+
+:star: :star: :star: :star: :star: 
+
+Having a **1.5:1 ratio** of CPU Limit:CPU Request is an amazing goal for teams who have already started tuning their applications and are looking to make the best possible use of the platform's capabilities. Using a 1.5:1 ratio makes you an **amazing community member**!
+
+### CPU and Memory Utilization
+Here is an awesome 4 min video that includes an example of resource tuning for a sample Openshift application.
+
+https://youtu.be/rkxVZgn9icU
 
 ### Resource FAQ's
 
@@ -62,6 +81,37 @@ A: Your Pods will be deployed with the configured request, and will have the def
 
 **Q: What happens if I create a deployment with a request that is higher than the default limit?**  
 A: You will be required to define a limit. 
+
+**Q: Is there any way I can check for myself the actual CPU consumption of running pods in my project?"**
+A: There is a way which requires you to make use of the `oc` client versus using the web console. Additional math will be required past this point as there is no way of automating this in a cross-platform fashion using just `oc`.
+
+```
+oc adm top pod
+NAME              CPU(cores)   MEMORY(bytes)
+<redacted>        3m           285Mi
+<redacted>        3m           299Mi
+<redacted>        3m           285Mi
+<redacted>        0m           13Mi
+<redacted>        9m           61Mi
+<redacted>        4m           98Mi
+<redacted>        0m           28Mi
+<redacted>        2            26Mi
+```
+
+For the above, the column of numbers involving `CPU(cores)` is what you want to add up. the `m` suffix stands for millicores, so for the above, add up the numbers and divide by 1000 to get the actual consumption of CPU cores by the pods in the current project. If the CPU usage has no `m` suffix, then that is just measured in cores, and not millicores. For the above example, the total would then be 2 + (3+3+3+9+4)/1000 = 2.022 CPU cores of actual CPU consumption.
+
+**Q: Is there an easy way to use `oc` to get the current value of CPU Requests allowed for the project currently logged into with `oc`?
+A: Certainly. The following one-liner will display the current value of CPU requests as currently alloted for the current project.
+```
+oc get quota compute-long-running-quota -o=custom-columns=Requests:.status.used."requests\.cpu"
+```
+
+Example output of the above, the `m` at the end again means millicores, so dividing the number by 1000 tells us the current project per this example has a total alloted CPU Requests value of 14.5 CPU cores.
+
+```
+Requests
+14500m
+```
 
 
 ## Jenkins Resource Configuration Recommendations
@@ -125,5 +175,4 @@ The observations from the testing can be summarized as follows:
     - CPU Limit: 1000m+
     - Memory Request: 512M
     - Memory Limit: 1-2GB (May vary depending on usage)
-
 

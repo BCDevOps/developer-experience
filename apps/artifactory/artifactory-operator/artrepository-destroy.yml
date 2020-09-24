@@ -1,0 +1,80 @@
+---
+- hosts:        localhost
+  connection:   local
+  gather_facts: no
+  
+  tasks:
+    - name: Setup Testing Variables
+      include_vars: ./test/test-vars-artifactoryRepo.yml
+      when: meta is undefined
+  
+    - name: Generate variables
+      set_fact:
+        admin_user: "admin"
+        admin_pass_loc: "{{ testPass | default('/tmp/ansible-operator/password') }}"
+        artifactory_namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE')}}"
+        project_plate: "{{ meta.namespace | regex_replace('\\-tools$|-dev$|-test$|-prod$', '')}}"
+
+    - name: Set calculated variables
+      set_fact:
+        artifactory_url: "{{ test_url | default('http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
+        service_account_name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+
+    - name: Delete artifactory user
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+        user: "{{ admin_user }}"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: DELETE
+        body_format: json
+        headers:
+          Content-type: "application/json" 
+        force_basic_auth: yes
+      ignore_errors: yes
+
+    - name: Delete artifactory permission target
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/security/permissions/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+        user: "{{ admin_user }}"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: DELETE
+        body_format: json
+        headers:
+          Content-type: "application/json" 
+        force_basic_auth: yes
+      ignore_errors: yes
+
+    - name: Delete artifactory repository
+      uri:
+        url: "{{ artifactory_url }}/artifactory/api/repositories/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+        user: "{{ admin_user }}"
+        password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+        method: DELETE
+        body_format: json
+        headers:
+          Content-type: "application/json" 
+        force_basic_auth: yes
+      ignore_errors: yes
+
+    - name: Delete docker registry route
+      k8s:
+        state: absent
+        namespace: "{{ lookup('env', 'ARTIFACTORY_NAMESPACE') }}"
+        definition:
+          apiVersion: route.openshift.io/v1
+          kind: Route
+          metadata:
+            labels:
+              app: artifactory
+            name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+
+    - name: Delete secret for service account
+      k8s:
+        state: absent
+        definition:
+          apiVersion: v1
+          kind: Secret
+          metadata:
+            name: "{{ service_account_name }}"
+            namespace: "{{ meta.namespace }}"
+            type: kubernetes.io/basic-auth

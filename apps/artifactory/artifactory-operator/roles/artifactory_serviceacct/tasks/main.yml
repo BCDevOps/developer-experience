@@ -1,0 +1,84 @@
+---
+  # tasks file for artifactory service account
+
+- name: Check artifactory user
+  uri:
+    url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: GET
+    body_format: json
+    headers:
+      Content-type: "application/json"
+    force_basic_auth: yes
+    status_code: 200,404
+  register: sa_exists
+
+- block:
+  - name: "No Action Required"
+    debug:
+      msg: "Artifactory User already exists: {{ service_account_name }}"
+  - meta: end_play
+  when: sa_exists.status == 200
+
+  # - name: Check SA k8s secret
+#   k8s_info:
+#     api_version: v1
+#     kind: secret
+#     name: "{{ service_account_name }}"
+#     namespace: "{{ meta.namespace }}"
+#   register: check_sa_secret
+
+- name: Generate Password
+  set_fact:
+    generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+  when: sa_exists.status == 404
+
+- name: Create artifactory user
+  uri:
+    url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: PUT
+    body_format: json
+    headers:
+      Content-type: "application/json" 
+    body: "{{ lookup('template', 'create_account.json.j2') }}"
+    force_basic_auth: yes
+    status_code: 201
+  register: created_sa
+  changed_when: created_sa.status == 201
+  when: sa_exists.status == 404
+
+# - name: Change artifactory SA Password
+
+- name: Create Secret for Service Account
+  k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: "{{ service_account_name }}"
+        namespace: "{{ meta.namespace }}"
+      type: kubernetes.io/basic-auth
+      data:
+        username: "{{ service_account_name | b64encode }}"
+        password: "{{ generated_password | b64encode }}"
+  when: created_sa.changed
+
+# # Generating an admin token (to replace a service account user), requires adding to a group for access controls.
+# - name: Generate admin token
+#   uri:
+#     url: "{{ artifactory_url }}/{{ artifactory_token_endpoint }}"
+#     user: "{{ admin_user }}"
+#     password: "{{ lookup('file', '/tmp/ansible-operator/password') }}"
+#     method: POST
+#     headers:
+#       Content-type: "application/x-www-form-urlencoded"
+#     body_format: form-urlencoded
+#     body: '{"username":"{{ service_account_name }}", "expires_in":"0", "scope":"member-of-groups:*", "token_type":"Bearer"}'
+#     force_basic_auth: yes
+#     #status_code: 200
+#   register: token_gen
+#   when: sa_name == ""

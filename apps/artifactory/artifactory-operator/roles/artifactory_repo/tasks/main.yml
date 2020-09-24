@@ -1,0 +1,44 @@
+---
+# tasks file for artifactory
+- name: Check Repository existence
+  uri:
+    url: "{{ artifactory_url }}/{{ artifactory_repo_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}" 
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: GET
+    body_format: json
+    headers:
+      Content-type: "application/json" 
+    force_basic_auth: yes
+    status_code: 200,400,404
+  register: repo_exists
+
+- block:
+    - name: "End play if repo already exists"
+      debug:
+        msg: "Repository already exists: {{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
+    - meta: end_play
+  when: repo_exists.status == 200
+
+- name: Create Repository
+  uri:
+    url: "{{ artifactory_url }}/{{ artifactory_repo_endpoint }}/{{ team_name }}-{{ repository_type }}-{{ repository_locator }}" 
+    user: "{{ admin_user }}"
+    password: "{{ lookup('file', '{{ admin_pass_loc }}') }}"
+    method: PUT
+    body_format: json
+    headers:
+      Content-type: "application/json" 
+    body: "{{ lookup('template', 'artRepository-{{ repository_locator }}.json.j2') }}"
+    force_basic_auth: yes
+  register: repo_create
+  changed_when: repo_create.status == 200
+
+- name: Include locator type tasks
+  include_tasks: "{{ repository_locator }}.yml"
+
+- name: Update Repo CR
+  debug:
+    msg: "Update the calling CR here"
+    
+
