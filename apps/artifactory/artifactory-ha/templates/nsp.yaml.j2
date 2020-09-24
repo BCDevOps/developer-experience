@@ -1,5 +1,5 @@
 ---
-apiVersion: security.developer.gov.bc.ca/v1alpha1
+apiVersion: security.devops.gov.bc.ca/v1alpha1
 kind: NetworkSecurityPolicy
 metadata:
   name: egress-internet
@@ -10,7 +10,7 @@ spec:
   destination:
     - - ext:network=any
 ---
-apiVersion: security.developer.gov.bc.ca/v1alpha1
+apiVersion: security.devops.gov.bc.ca/v1alpha1
 kind: NetworkSecurityPolicy
 metadata:
   name: intra-namespace-comms
@@ -21,7 +21,7 @@ spec:
   destination:
     - - $namespace={{ project_name }}
 ---
-apiVersion: security.developer.gov.bc.ca/v1alpha1
+apiVersion: security.devops.gov.bc.ca/v1alpha1
 kind: NetworkSecurityPolicy
 metadata:
   name: int-cluster-k8s-api-comms
