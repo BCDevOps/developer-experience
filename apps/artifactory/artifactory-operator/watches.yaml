@@ -4,6 +4,8 @@
   group: artifactory.devops.gov.bc.ca
   kind: ArtifactoryRepository
   playbook: /opt/ansible/playbooks/artrepository-main.yml
+  vars:
+    meta: '{{ ansible_operator_meta }}'
   finalizer:
     name: finalrepo.artifactory.devops.gov.bc.ca
     playbook: /opt/ansible/playbooks/artrepository-destroy.yml
@@ -11,6 +13,8 @@
   group: artifactory.devops.gov.bc.ca
   kind: ArtifactoryServiceAccount
   playbook: /opt/ansible/playbooks/artserviceacct-main.yml
+  vars:
+    meta: '{{ ansible_operator_meta }}'
   finalizer:
     name: finalsvcacct.artifactory.devops.gov.bc.ca
     playbook: /opt/ansible/playbooks/artserviceacct-destroy.yml

@@ -8,18 +8,21 @@
       kind: Route
       metadata:
         labels:
-          app: artifactory
+          app: artifactory-ha
         name: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}"
       spec:
         host: "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}.{{ external_dns_suffix }}"
         port:
-          targetPort: http
+          targetPort: router
         tls:
           insecureEdgeTerminationPolicy: Redirect
           termination: edge
+          certificate: "{{ lookup('file', '{{ docker_cert_loc }}') }}"
+          key: "{{ lookup('file', '{{ docker_private_key_loc }}') }}"
+          caCertificate: "{{ lookup('file', '{{ docker_cert_ca_loc }}') }}"
         to:
           kind: Service
-          name: artifactory
+          name: artifactory-ha
           weight: 100
         wildcardPolicy: None
 

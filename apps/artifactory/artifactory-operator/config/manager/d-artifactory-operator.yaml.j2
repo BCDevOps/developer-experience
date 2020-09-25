@@ -25,8 +25,11 @@ spec:
           volumeMounts:
           - mountPath: /tmp/ansible-operator/runner
             name: runner
-          - mountPath: /tmp/ansible-operator/
+          - mountPath: /tmp/ansible-operator/admin/
             name: artifactory-secret
+            readOnly: true
+          - mountPath: /tmp/ansible-operator/cert/
+            name: artifactory-cert
             readOnly: true
           env:
             - name: ARTIFACTORY_BASE_DNS
@@ -50,3 +53,6 @@ spec:
         - name: artifactory-secret
           secret:
             secretName: {{ secretName }}
+        - name: artifactory-cert
+          secret:
+            secretName: {{ dockerSecretName }}

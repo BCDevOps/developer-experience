@@ -40,7 +40,7 @@ Create the ArtifactoryRepo Custom Resource:
 
 ``` bash
  oc --as=system:serviceaccount:openshift:bcdevops-admin process -f ./config/samples/tmpl-artifactory-repo.yaml --param-file=./config/samples/team-type-locator.env --ignore-unknown-parameters=true | oc --as=system:serviceaccount:openshift:bcdevops-admin create -f -
- oc process -f ./config/crd/samples/tmpl-artifactory-repo.yaml --param-file=./config/samples/team-type-locator.env --ignore-unknown-parameters=true | oc create -f -
+ oc process -f ./config/samples/tmpl-artifactory-repo.yaml --param-file=./config/samples/team-type-locator.env --ignore-unknown-parameters=true | oc create -f -
 ```
 
 A repository Service Account user (and namespace secret) is created with each repository.  This service account will be named `{TEAM_NAME}-{REPO_TYPE}-{REPO_LOCATOR}`, and can be used to manage the repository access.

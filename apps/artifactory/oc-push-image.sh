@@ -54,7 +54,7 @@ if [ ! -z "${DEBUG}" ]; then
   set -x
 fi
 
-if [ -z "${DOCKER_IMAGE}" ] || [ -z "${OPENSHIFT_NAMESPACE}" || [ -z "${OPENSHIFT_IMAGE_TAG}" ]; then
+if [ -z "${DOCKER_IMAGE}" ] || [ -z "${OPENSHIFT_NAMESPACE}" ] || [ -z "${OPENSHIFT_IMAGE_TAG}" ]; then
   echo -e \\n"Missing parameters - name of Docker Image, OpenShift Namespace, Image Tag"\\n
   usage
 fi

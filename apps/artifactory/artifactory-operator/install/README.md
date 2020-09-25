@@ -50,7 +50,7 @@ oc get <cr plural> --all-namespaces
 - After ALL CR instances of the CRDs have been deleted, then you will be able to simply run:
 
 ``` bash
-ansible-playbook operatorDeploy.yml -i ${Inventory File} -e "state=absent"
+ansible-playbook install/operatorDeploy.yml -i install/${Inventory File} -e "state=absent"
 ```
 
 - and then as cluster-admin:
