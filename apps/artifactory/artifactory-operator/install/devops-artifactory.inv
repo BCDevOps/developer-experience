@@ -1,0 +1,13 @@
+localhost
+
+[all:vars]
+svcAcct=artifactory-operator
+installName="artifactory-artifactory-ha"
+namespace=devops-artifactory
+DEPLOY_NAME="artifactory-operator"
+ARTIFACTORY_BASE_DNS="artifacts.lab.pathfinder.gov.bc.ca"
+IMAGE_REGISTRY="docker-registry.default.svc:5000"
+IMAGE="devops-artifactory/artifactory-operator"
+IMAGE_TAG="v1-0.9.1-stable"
+secretName="artifactory-ha-admin"
+

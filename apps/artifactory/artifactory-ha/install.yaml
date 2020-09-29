@@ -1,84 +1,301 @@
 - hosts: localhost
   vars_files:
-    vars.yaml
+    vars-local.yaml
   tasks:
 
+      # create processed folder
+    - name: Create processed directory if it does not exist
+      file:
+        path: ./processed
+        state: directory
+        mode: '0755'
+
       # setup
-    - name: make sure we're in the artifactory namespace
+    - name: Change to Artifactory namespace
       command: >
         oc project {{ project_name }}
 
-      # make secrets
-    - name: process 00-artifactory-prereq
-      command: >
-        oc process -f ./00-artifactory-prereq.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: secrets_processed
-    - copy: content="{{ secrets_processed.stdout }}" dest=./processed/00-artifactory-prereq.json
-    - name: apply 00-artifactory-prereq
-      command: >
-        oc apply -f ./processed/00-artifactory-prereq.json
+    - name: Build network security policy from template
+      template:
+        src: ./templates/nsp.yaml.j2
+        dest: ./processed/nsp.yaml
+      when: nsp
 
-      # make storage
-    - name: process 00-patroni-pgsql-prereq
+      # deploy template
+    - name: Apply network security policy
       command: >
-        oc process -f ./00-patroni-pgsql-prereq.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: storage_prereq_processed
-    - copy: content="{{ storage_prereq_processed.stdout }}" dest=./processed/00-patroni-pgsql-prereq.json
-    - name: apply 00-patroni-pgsql-prereq
-      command: >
-        oc apply -f ./processed/00-patroni-pgsql-prereq.json
+        oc apply -f ./processed/nsp.yaml
+      when: nsp
 
-      # wait until they're done.
-    - pause:
-        prompt: "Hit enter to continue once the storage is fully provisioned"
+      # make patroni build
+    - name: Build Patroni image (processing)
+      command: >
+        oc process -f ./templates/patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
+                                           -p GIT_REF=master \
+                                           -p SUFFIX=-pg{{ db_version }} \
+                                           -p OUT_VERSION=v{{ db_version }}-latest \
+                                           -p PG_VERSION={{ db_version }}
+      register: patroni_build_processed
+      when: build
+    - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
+      when: build
+    - name: Build Patroni image (apply)
+      command: >
+        oc apply -f ./processed/patroni-build.json
+      when: build
+
+      # wait for the service to show up
+    - name: Wait for the build to start
+      pause:
+        seconds: 5
+
+    - name: Get patroni build information
+      command: >
+        oc get buildconfig patroni-pg{{ db_version}}
+      when: build
+      register: build_result
+      ignore_errors: yes
+
+    - name: Get build number
+      set_fact:
+        build_number: "{{ build_result.stdout | regex_search('([0-9]+)$') }}"
+      when: build
+
+    - name: Get build status for patroni-pg{{ db_version}}-{{ build_number }}
+      command: >
+        oc get build patroni-pg{{ db_version}}-{{ build_number }}
+      register: build_status
+      until: '"Complete" in build_status.stdout_lines[1]'
+      retries: 30
+      delay: 30
+      when: build
+
+    - name: Tag Patroni build
+      command: >
+        oc tag patroni:v{{ db_version }}-latest patroni:v{{ db_version }}-stable
+      when: build
+
+      # make secret
+    - name: Make the Patroni secrets (processing)
+      command: >
+        oc process -f ./templates/patroni-prereq.yaml \
+                                             -p NAME=patroni \
+                                             -p SUFFIX=-001 \
+                                             -p APP_DB_PASSWORD={{ db_password }} \
+                                             -p APP_DB_USERNAME=artifactory \
+                                             -p APP_DB_NAME=artifactory
+      register: patroni_secret_processed
+    - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
+    - name: Make the Patroni secrets (apply)
+      command: >
+        oc apply -f ./processed/patroni-secret.json
 
       # deploy patroni stateful set
-    - name: process 01-patroni-pgsql
+    - name: Make the Patroni statefulset (processing)
       command: >
-        oc process -f ./01-patroni-pgsql.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: storage_processed
-    - copy: content="{{ storage_processed.stdout }}" dest=./processed/01-patroni-pgsql.json
-    - name: apply 01-patroni-pgsql
+        oc process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
+                                             -p "IMAGE_STREAM_NAMESPACE={{ project_name }}" \
+                                             -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
+                                             -p IMAGE_REGISTRY={{ image_registry }} \
+                                             -p STORAGE_CLASS={{ db_storage_class }} \
+                                             -p REPLICAS={{ db_replica_count }} \
+                                             -p SUFFIX=-001
+      register: patroni_statefulset_processed
+    - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
+    - name: Make the Patroni statefulset (apply)
       command: >
-        oc apply -f ./processed/01-patroni-pgsql.json
+        oc apply -f ./processed/patroni-statefulset.json
 
-      # wait until they're done.
-    - pause:
-        prompt: "Hit enter to continue once the patroni stateful set is fully deployed"
+    - name: Check deployment status for patroni statefulset
+      command: >
+        oc get statefulset patroni-001
+      register: patroni_status
+      until: '"{{ db_replica_count }}/{{ db_replica_count}}" in patroni_status.stdout_lines[1]'
+      retries: 10
+      delay: 10
 
-      # deploy artifactory stateful sets
-    - name: process 02-artifactory-ha-pre
-      command: >
-        oc process -f ./02-artifactory-ha-pre.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: pre_processed
-    - copy: content="{{ pre_processed.stdout }}" dest=./processed/02-artifactory-ha-pre.json
-    - name: apply 02-artifactory-ha-pre
-      command: >
-        oc apply -f ./processed/02-artifactory-ha-pre.json
+    - name: Build manifest from template
+      template:
+        src: ./templates/manifest.yaml.j2
+        dest: ./processed/manifest.yaml
 
-    - name: process 03a-artifactory-ha-primary
+      # deploy template
+    - name: Apply artifactory manifest
       command: >
-        oc process -f ./03a-artifactory-ha-primary.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: primary_processed
-    - copy: content="{{ primary_processed.stdout }}" dest=./processed/03a-artifactory-ha-primary.json
-    - name: apply 03a-artifactory-ha-primary
-      command: >
-        oc apply -f ./processed/03a-artifactory-ha-primary.json
+        oc apply -f ./processed/manifest.yaml
 
-    - name: process 03b-artifactory-ha-member
-      command: >
-        oc process -f ./03b-artifactory-ha-member.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: member_processed
-    - copy: content="{{ member_processed.stdout }}" dest=./processed/03b-artifactory-ha-member.json
-    - name: apply 03b-artifactory-ha-member
-      command: >
-        oc apply -f ./processed/03b-artifactory-ha-member.json
+      # wait for the service to show up
+    - name: Wait for the artifactory service to create before continuing.
+      pause:
+        seconds: 5
 
-    - name: process 04-artifactory-ha-post
+      # make route
+    - name: Make the artifactory's route (processing)
       command: >
-        oc process -f ./04-artifactory-ha-post.yaml --param-file=./{{env}}-artifactory-ha.env --ignore-unknown-parameters=true
-      register: post_processed
-    - copy: content="{{ post_processed.stdout }}" dest=./processed/04-artifactory-ha-post.json
-    - name: apply 04-artifactory-ha-post
+        oc process -f ./templates/route.yaml \
+            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+            URL={{ artifactory_url }}
+      register: route_processed
+    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
+    - name: Make the artifactory's route (apply)
       command: >
-        oc apply -f ./processed/04-artifactory-ha-post.json
+        oc apply -f ./processed/route.json
+
+    - name: Check deployment status for artifactory
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/version"
+        user: "admin"
+        password: "password"
+        method: GET
+        force_basic_auth: yes
+        validate_certs: no
+      register: artifactory_status
+      ignore_errors: yes
+      until: artifactory_status.status == 200
+      retries: 20
+      delay: 10
+
+    - name: Set Artifactory admin password
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/users/authorization/changePassword"
+        user: "admin"
+        password: "password"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{"userName": "admin", "oldPassword": "password", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
+        force_basic_auth: yes
+        validate_certs: no
+
+      # make secret
+    - name: Make the admin secret (processing)
+      command: >
+        oc process -f ./templates/artifactory-admin-secret.yaml \
+            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+            ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }}
+      register: app_secret_processed
+    - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
+    - name: Make the admin secret (apply)
+      command: >
+        oc apply -f ./processed/artifactory-admin-secret.json
+
+    - name: Set artifactory custom URL base
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/baseUrl"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        headers:
+          Content-type: "text/plain"
+        body: "https://{{ artifactory_url }}/artifactory"
+        force_basic_auth: yes
+        validate_certs: no
+
+    - name: Upload artifactory licenses
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/licenses"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ artifactory_licenses }}"
+        force_basic_auth: yes
+        validate_certs: no
+
+    - name: Create authenticated_users group
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "name": "authenticated_users", "description" : "All newly authenticated users are added to this group", "autoJoin" : true }'
+        force_basic_auth: yes
+        status_code: 201
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Update reader's group
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/readers"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "autoJoin" : false }'
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Build artifactory config from template
+      template:
+        src: ./templates/artifactory-config.yaml.j2
+        dest: ./processed/artifactory-config.yaml
+
+    - name: Apply artifactory configuration (including SSO)
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PATCH
+        headers:
+          Content-type: "application/yaml"
+        body: "{{ lookup('file', './processed/artifactory-config.yaml') }}"
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Create remote repos
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/repositories/{{ item.repo_key }}"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{"key" : "{{ item.repo_key }}", "description" : "{{ item.repo_desc }}", "rclass" : "remote", "url" : "{{ item.remote_url }}", "packageType" : "{{ item.pkg_type }}"}'
+        force_basic_auth: yes
+      ignore_errors: yes
+      loop: "{{ repo_list }}"
+
+    - name: Update authenticated_users's group
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', 'templates/authenticated_users_permissions.json') }}"
+        force_basic_auth: yes
+        status_code: 201
+        validate_certs: no
+      ignore_errors: yes
+
+    # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
+    # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.
+    #
+    # if we try to run the rest of the processing while the members are booting up, it causes issues where certain steps
+    # will fail if a member is in the middle of joining the cluster when we try to hit the API.
+    #
+    # this is not ideal, but it works for now - i'm waiting on jfrog to get me a better way to do this.
+    - name: Turn on members
+      command: >
+        oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
+
+      # delete processed folder
+    - name: Remove proccessed directory
+      file:
+        path: ./processed
+        state: absent

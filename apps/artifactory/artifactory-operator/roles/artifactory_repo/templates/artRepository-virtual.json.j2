@@ -1,0 +1,8 @@
+{% set repo_list = list_virtual_repositories.split(',') %}
+{
+  "key": "{{ team_name }}-{{ repository_type }}-{{ repository_locator }}",
+  "rclass": "virtual",
+  "packageType": "{{ repository_type }}",
+  "description": "{{ repository_description }}",
+  "repositories": {{ repo_list }}
+  }

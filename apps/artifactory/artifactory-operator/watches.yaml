@@ -2,6 +2,18 @@
 - version: v1alpha1
   group: artifactoryrepo.operators.bcgov
   kind: ArtifactoryRepo
-  role: /opt/ansible/roles/artifactory
-  playbook: /opt/ansible/roles/main.yml
+  playbook: /opt/ansible/artrepository-main.yml
   reconcilePeriod: 0
+  watchDependentResources: True
+  finalizer:
+    name: finalrepo.artifactoryrepo.operators.bcgov
+    playbook: /opt/ansible/artrepository-destroy.yml
+- version: v1alpha1
+  group: artifactorysa.operators.bcgov
+  kind: ArtifactorySA
+  playbook: /opt/ansible/artserviceacct-main.yml
+  reconcilePeriod: 0
+  watchDependentResources: True
+  finalizer:
+    name: finalsvcacct.artifactorysa.operators.bcgov
+    playbook: /opt/ansible/artserviceacct-destroy.yml
