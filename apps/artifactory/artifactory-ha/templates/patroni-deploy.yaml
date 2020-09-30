@@ -11,21 +11,38 @@ metadata:
     tags: postgresql
   name: patroni-pgsql-persistent
 labels:
-  app: ${DATABASE_NAME}${SUFFIX}
+  app: ${NAME}${SUFFIX}
   phase: deploy
-  app.kubernetes.io/instance: ${DATABASE_NAME}${SUFFIX}
+  app.kubernetes.io/instance: ${NAME}${SUFFIX}
   app.kubernetes.io/component: database
-  app.kubernetes.io/name: patroni  
+  app.kubernetes.io/name: patroni
   app.kubernetes.io/managed-by: template
-  app.kubernetes.io/version: "10"
 objects:
+# It doesn't seem to be used/needed - remote it?
+#- apiVersion: v1
+#  kind: Service
+#  metadata:
+#    creationTimestamp: null
+#    labels:
+#      cluster-name: ${NAME}${SUFFIX}
+#    name: ${NAME}${SUFFIX}
+#  spec:
+#    ports:
+#    - name: 'postgresql'
+#      port: 5432
+#      protocol: TCP
+#      targetPort: 5432
+#    sessionAffinity: None
+#    type: ClusterIP
+#  status:
+#    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
     creationTimestamp: null
     labels:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}-master${SUFFIX}
+      cluster-name: ${NAME}${SUFFIX}
+    name: ${NAME}-master${SUFFIX}
   spec:
     ports:
     - port: 5432
@@ -33,7 +50,7 @@ objects:
       protocol: TCP
       targetPort: 5432
     selector:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
+      cluster-name: ${NAME}${SUFFIX}
       role: master
       app.kubernetes.io/name: patroni
     sessionAffinity: None
@@ -64,52 +81,33 @@ objects:
 # - apiVersion: v1
 #   kind: ConfigMap
 #   metadata:
+#     name: ${NAME}${SUFFIX}-config
+# - apiVersion: v1
+#   kind: ConfigMap
+#   metadata:
 #     name: ${NAME}${SUFFIX}-leader
-- apiVersion: v1
-  kind: ConfigMap
-  metadata:
-    labels:
-      app.kubernetes.io/name: patroni
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}${SUFFIX}-config
-    annotations:
-      config: |
-        {
-          "synchronous_mode":"yes",
-          "synchronous_mode_strict":false,
-          "postgresql":{
-            "parameters":{
-              "max_prepared_transactions":0,
-              "max_connections":100,
-              "max_locks_per_transaction":64
-            },
-            "use_pg_rewind":true,
-            "use_slots":true
-          },
-          "synchronous_standby_names":"*"
-        }
 - apiVersion: apps/v1
   kind: StatefulSet
   metadata:
     creationTimestamp: null
     generation: 3
     labels:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}${SUFFIX}
+      cluster-name: ${NAME}${SUFFIX}
+    name: ${NAME}${SUFFIX}
   spec:
     podManagementPolicy: OrderedReady
-    replicas: ${{PATRONI_NUM_REPLICAS}}
+    replicas: ${{REPLICAS}}
     revisionHistoryLimit: 10
     selector:
       matchLabels:
-        statefulset: ${DATABASE_NAME}${SUFFIX}
-    serviceName: ${DATABASE_NAME}${SUFFIX}
+        statefulset: ${NAME}${SUFFIX}
+    serviceName: ${NAME}${SUFFIX}
     template:
       metadata:
         creationTimestamp: null
         labels:
-          statefulset: ${DATABASE_NAME}${SUFFIX}
-          cluster-name: ${DATABASE_NAME}${SUFFIX}
+          statefulset: ${NAME}${SUFFIX}
+          cluster-name: ${NAME}${SUFFIX}
           app.kubernetes.io/name: patroni
       spec:
         affinity:
@@ -119,8 +117,8 @@ objects:
                 matchExpressions:
                 - key: statefulset
                   operator: In
-                  values: 
-                  - ${DATABASE_NAME}${SUFFIX}
+                  values:
+                  - ${NAME}${SUFFIX}
               topologyKey: "kubernetes.io/hostname"
         containers:
         - env:
@@ -145,44 +143,44 @@ objects:
                 apiVersion: v1
                 fieldPath: metadata.namespace
           - name: PATRONI_KUBERNETES_LABELS
-            value: '{"cluster-name": "${DATABASE_NAME}${SUFFIX}", "app.kubernetes.io/name": "patroni"}'
+            value: '{"cluster-name": "${NAME}${SUFFIX}", "app.kubernetes.io/name": "patroni"}'
           - name: PATRONI_SUPERUSER_USERNAME
             valueFrom:
               secretKeyRef:
                 key: superuser-username
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: PATRONI_SUPERUSER_PASSWORD
             valueFrom:
               secretKeyRef:
                 key: superuser-password
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: PATRONI_REPLICATION_USERNAME
             valueFrom:
               secretKeyRef:
                 key: replication-username
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: PATRONI_REPLICATION_PASSWORD
             valueFrom:
               secretKeyRef:
                 key: replication-password
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: APP_USER
             valueFrom:
               secretKeyRef:
                 key: app-db-username
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: APP_PASSWORD
             valueFrom:
               secretKeyRef:
                 key: app-db-password
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: APP_DATABASE
             valueFrom:
               secretKeyRef:
                 key: app-db-name
-                name: ${DATABASE_NAME}${SUFFIX}
+                name: ${NAME}${SUFFIX}
           - name: PATRONI_SCOPE
-            value: ${DATABASE_NAME}${SUFFIX}
+            value: ${NAME}${SUFFIX}
           - name: PATRONI_NAME
             valueFrom:
               fieldRef:
@@ -198,13 +196,7 @@ objects:
             value: 0.0.0.0:5432
           - name: PATRONI_RESTAPI_LISTEN
             value: 0.0.0.0:8008
-          - name: POSTGRESQL_SYNCHRONOUS_MODE
-            value: "on"
-#          - name: POSTGRESQL_SYNCHRONOUS_MODE_STRICT
-#            value: "false"
-#          - name: POSTGRESQL_SYNC_STANDBY_NAMES
-#            value: "'*'"
-          image: ${IMAGE_REGISTRY}/${PATRONI_IMAGE_STREAM_NAMESPACE}/${PATRONI_IMAGE_STREAM_TAG}
+          image: ${IMAGE_REGISTRY}/${IMAGE_STREAM_NAMESPACE}/${IMAGE_STREAM_TAG}
           # Because we are using image reference to a tag, we need to always pull the image otherwise
           #   we end up with outdated/out-of-sync image depending on the node where it is running
           imagePullPolicy: Always
@@ -237,24 +229,24 @@ objects:
         restartPolicy: Always
         schedulerName: default-scheduler
         securityContext: {}
-        serviceAccountName: ${DATABASE_NAME}${SUFFIX}
+        serviceAccountName: ${NAME}${SUFFIX}
         terminationGracePeriodSeconds: 0
     updateStrategy:
       type: RollingUpdate
     volumeClaimTemplates:
     - metadata:
         annotations:
-         # volume.beta.kubernetes.io/storage-class: ${STORAGE_CLASS}
+          volume.beta.kubernetes.io/storage-class: ${STORAGE_CLASS}
         labels:
-          app: ${DATABASE_NAME}${SUFFIX}
+          app: ${NAME}${SUFFIX}
         name: postgresql
       spec:
-        #storageClassName: ${STORAGE_CLASS}
+        storageClassName: ${STORAGE_CLASS}
         accessModes:
         - ReadWriteOnce
         resources:
           requests:
-            storage: ${PATRONI_PVC_SIZE}
+            storage: ${PVC_SIZE}
 # It doesn't seem to be used/needed - remote it?
 #- apiVersion: v1
 #  kind: Endpoints
@@ -264,93 +256,25 @@ objects:
 #      cluster-name: ${NAME}${SUFFIX}
 #    name: ${NAME}${SUFFIX}
 #  subsets: []
-- apiVersion: v1
-  kind: ServiceAccount
-  metadata:
-    labels:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}${SUFFIX}
-- apiVersion: rbac.authorization.k8s.io/v1
-  kind: Role
-  metadata:
-    labels:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}${SUFFIX}
-  rules:
-  - apiGroups:
-    - ""
-    resources:
-    - services
-    verbs:
-    - create
-    - get
-    - list
-    - patch
-    - update
-    - watch
-    - delete
-  - apiGroups:
-    - ""
-    resources:
-    - configmaps
-    verbs:
-    - create
-    - get
-    - list
-    - patch
-    - update
-    - watch
-    - delete
-  - apiGroups:
-    - ""
-    resources:
-    - endpoints
-    verbs:
-    - get
-    - patch
-    - update
-    - create
-    - list
-    - watch
-    - delete
-  - apiGroups:
-    - ""
-    resources:
-    - pods
-    verbs:
-    - get
-    - list
-    - patch
-    - update
-    - watch
-- apiVersion: rbac.authorization.k8s.io/v1
-  kind: RoleBinding
-  metadata:
-    labels:
-      cluster-name: ${DATABASE_NAME}${SUFFIX}
-    name: ${DATABASE_NAME}${SUFFIX}
-  roleRef:
-    apiGroup: rbac.authorization.k8s.io
-    kind: Role
-    name: ${DATABASE_NAME}${SUFFIX}
-  subjects:
-  - kind: ServiceAccount
-    name: ${DATABASE_NAME}${SUFFIX}
 parameters:
 - description: The name of the application for labelling all artifacts.
   displayName: Application Name
-  name: DATABASE_NAME
+  name: NAME
   value: patroni
 - name: SUFFIX
   description: A suffix appended to all artifact's name (NAME)
+- name: REPLICAS
+  displayName: REPLICAS
+  description: The number of statefulSet replicas to use.
+  value: '3'
 - description: Starting amount of CPU the container can use.
   displayName: CPU REQUEST
   name: CPU_REQUEST
-  value: '100m'
+  value: '250m'
 - description: Maximum amount of CPU the container can use.
   displayName: CPU Limit
   name: CPU_LIMIT
-  value: '500m'
+  value: '1'
 - description: Starting amount of memory the container can use.
   displayName: Memory Request
   name: MEMORY_REQUEST
@@ -362,19 +286,17 @@ parameters:
 - description: The OpenShift Namespace where the patroni and postgresql ImageStream
     resides.
   displayName: ImageStream Namespace
-  name: PATRONI_IMAGE_STREAM_NAMESPACE
+  name: IMAGE_STREAM_NAMESPACE
   value: "bcgov"
-- name: PATRONI_NUM_REPLICAS
-  description: Number of replicas in Patroni statefulSet
-  value: '3'
-- name: PATRONI_IMAGE_STREAM_TAG
+- name: IMAGE_STREAM_TAG
   description: Patroni ImageTag
-  value: patroni:v10-stable
+  value: patroni:v11-stable
 - description: The size of the persistent volume to create.
   displayName: Persistent Volume Size
-  name: PATRONI_PVC_SIZE
+  name: PVC_SIZE
   value: 1Gi
 - name: STORAGE_CLASS
-  value: gluster-block
+  value: netapp-block-standard
 - name: IMAGE_REGISTRY
-  value: docker-registry.default.svc:5000
+  #ocp3#docker-registry.default.svc:5000
+  value: image-registry.openshift-image-registry.svc:5000
