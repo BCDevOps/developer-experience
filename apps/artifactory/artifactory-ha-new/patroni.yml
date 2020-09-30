@@ -1,0 +1,101 @@
+- hosts: localhost
+  vars_files:
+    vars-pat-local.yaml
+  tasks:
+
+      # create processed folder
+    - name: Create processed directory if it does not exist
+      file:
+        path: ./processed
+        state: directory
+        mode: '0755'
+
+      # setup
+    - name: Change to Artifactory namespace
+      command: >
+        oc project {{ project_name }}
+
+      # deploy template
+    - name: Build Patroni image (processing)
+      command: >
+        oc process -f ./templates/patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
+                                           -p GIT_REF=master \
+                                           -p SUFFIX=-pg{{ db_version }} \
+                                           -p OUT_VERSION=v{{ db_version }}-latest \
+                                           -p PG_VERSION={{ db_version }}
+      register: patroni_build_processed
+      when: build
+    - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
+      when: build
+    - name: Build Patroni image (apply)
+      command: >
+        oc apply -f ./processed/patroni-build.json
+      when: build
+
+      # wait for the service to show up
+    - name: Wait for the build to start
+      pause:
+        seconds: 5
+
+    - name: Get patroni build information
+      command: >
+        oc get buildconfig patroni-pg{{ db_version}}
+      when: build
+      register: build_result
+      ignore_errors: yes
+
+    - name: Get build number
+      set_fact:
+        build_number: "{{ build_result.stdout | regex_search('([0-9]+)$') }}"
+      when: build
+
+    - name: Get build status for patroni-pg{{ db_version}}-{{ build_number }}
+      command: >
+        oc get build patroni-pg{{ db_version}}-{{ build_number }}
+      register: build_status
+      until: '"Complete" in build_status.stdout_lines[1]'
+      retries: 30
+      delay: 30
+      when: build
+
+    - name: Tag Patroni build
+      command: >
+        oc tag patroni:v{{ db_version }}-latest patroni:v{{ db_version }}-stable
+      when: build
+
+      # make secret
+    - name: Make the Patroni secrets (processing)
+      command: >
+        oc process -f ./templates/patroni-prereq.yaml \
+                                             -p NAME=patroni \
+                                             -p SUFFIX=-001 \
+                                             -p APP_DB_PASSWORD={{ db_password }} \
+                                             -p APP_DB_USERNAME=artifactory \
+                                             -p APP_DB_NAME=artifactory
+      register: patroni_secret_processed
+    - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
+    - name: Make the Patroni secrets (apply)
+      command: >
+        oc apply -f ./processed/patroni-secret.json
+      # deploy patroni stateful set
+    - name: Make the Patroni statefulset (processing)
+      command: >
+        oc process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
+                                             -p "IMAGE_STREAM_NAMESPACE={{ project_name }}" \
+                                             -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
+                                             -p IMAGE_REGISTRY={{ image_registry }} \
+                                             -p STORAGE_CLASS={{ db_storage_class }} \
+                                             -p REPLICAS={{ db_replica_count }} \
+                                             -p SUFFIX=-001
+      register: patroni_statefulset_processed
+    - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
+    - name: Make the Patroni statefulset (apply)
+      command: >
+        oc apply -f ./processed/patroni-statefulset.json
+    - name: Check deployment status for patroni statefulset
+      command: >
+        oc get statefulset patroni-001
+      register: patroni_status
+      until: '"{{ db_replica_count }}/{{ db_replica_count}}" in patroni_status.stdout_lines[1]'
+      retries: 10
+      delay: 10

@@ -34,6 +34,58 @@ no anonymous access as we do not lock down remote access to the repository by lo
 
 this means that in order to effectively use the caching repositories, a service account will be required.  This is currently created with a private repository.
 
+### Pulling Artifacts from caching repositories
+
+Following are some examples of how to pull artifacts from caching repositories:
+
+*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.apps.klab.devops.gov.bc.ca/` and a service account with appropriate permissions (`test-devops-artifactory-gjafwu` in this case) is already assigned.
+
+#### NPM
+
+For this guide, we will use a repository in Artifactory called `npm-remote` which is pointing to the remote npm repository `https://registry.npmjs.org`.
+
+Steps:
+
+Set npm registry
+
+```bash
+$ npm config set registry https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/
+
+```
+
+Authenticate to the registry
+
+```bash
+$ npm login
+Username: test-devops-artifactory-gjafwu
+Password:
+
+Email: (this IS public) test-devops-artifactory-gjafwu@artifactory.local
+
+Logged in as test-devops-artifactory-gjafwu on https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/.
+```
+
+Once the authentication is complete, you can now pull artifacts from this registry
+
+```bash
+$ npm install inspectpack --registry https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/
+
++ inspectpack@4.5.2
+updated 1 package in 3.131s
+4 packages are looking for funding
+  run `npm fund` for details
+```
+*Note*: The user that has authenticated to artifactory must have appropriate permissions to pull from the repository, otherwise this command return with permissions errors, just like the one shown below:
+
+```bash
+npm ERR! code E403
+npm ERR! 403 403 Forbidden - GET https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/inspectpack
+npm ERR! 403 In most cases, you or one of your dependencies are requesting
+npm ERR! 403 a package version that is forbidden by your security policy.
+```
+
+
+
 ## Merging Private repositories with caching repositories
 
 to merge multiple repositories into a single virtual repository, you can request a private repository of type "virtual".
