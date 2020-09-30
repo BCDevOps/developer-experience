@@ -18,7 +18,7 @@
 
     - name: Set Art URL and SA name
       set_fact:
-        artifactory_url: "{{ test_url | default('http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
+        artifactory_url: "{{ test_url | default('http://artifactory-ha.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
         service_account_name: "{{ sa_name | default('{{ meta.name }}-{{ project_plate }}-{{ license_plate }}', true) }}"
     
     - import_role:
@@ -30,7 +30,7 @@
         state: present
         definition:
           apiVersion: v1alpha1
-          kind: ArtifactorySA
+          kind: ArtifactoryServiceAccount
           metadata:
             name: "{{ meta.name }}"
             namespace: "{{ meta.namespace }}"

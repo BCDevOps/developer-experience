@@ -6,7 +6,7 @@ metadata:
   name: artifactory-sa-cr-template
 objects:
 - apiVersion: artifactory.devops.gov.bc.ca/v1alpha1
-  kind: ArtifactoryServiceaAccount
+  kind: ArtifactoryServiceAccount
   metadata:
     name: ${NAME}
   spec:

@@ -58,7 +58,7 @@ Example ArtifactorySA CR (Custom Resource) exists under `config/crd/bases/tmpl-a
 Create the ArtifactorySA Custom Resource:
 
 ``` bash
- oc process -f ./config/crd/bases/tmpl-artifactory-sa.yaml -p DESCRIPTOR="Description of Service Account" | oc create -f -
+ oc process -f ./config/samples/tmpl-artifactory-sa.yaml -p NAME="test" -p DESCRIPTOR="Description of Service Account" | oc create -f -
 ```
 
 #### Service Account Permissions
