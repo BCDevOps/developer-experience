@@ -75,7 +75,7 @@ updated 1 package in 3.131s
 4 packages are looking for funding
   run `npm fund` for details
 ```
-*Note*: The user that has authenticated to artifactory must have appropriate permissions to pull from the repository, otherwise this command return with permissions errors, just like the one shown below:
+*Note*: The user that has authenticated to artifactory must have appropriate permissions to pull from the repository, otherwise this command will return with permissions errors, just like the one shown below:
 
 ```bash
 npm ERR! code E403
