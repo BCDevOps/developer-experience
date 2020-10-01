@@ -205,21 +205,6 @@
         force_basic_auth: yes
         validate_certs: no
 
-    - name: Create authenticated_users group
-      uri:
-        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
-        user: "admin"
-        password: "{{ artifactory_password }}"
-        method: PUT
-        body_format: json
-        headers:
-          Content-type: "application/json"
-        body: '{ "name": "authenticated_users", "description" : "All newly authenticated users are added to this group", "autoJoin" : true }'
-        force_basic_auth: yes
-        status_code: 201
-        validate_certs: no
-      ignore_errors: yes
-
     - name: Update reader's group
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/security/groups/readers"
@@ -268,7 +253,7 @@
       ignore_errors: yes
       loop: "{{ repo_list }}"
 
-    - name: Update authenticated_users's group
+    - name: Create authenticated_users's group
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
         user: "admin"
@@ -277,9 +262,24 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ lookup('file', 'templates/authenticated_users_permissions.json') }}"
+        body: "{{ lookup('file', 'templates/authenticated_users_group.json') }}"
         force_basic_auth: yes
         status_code: 201
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Create authenticated_users's permission target
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/v2/security/permissions/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', 'templates/authenticated_users_priv.json') }}"
+        force_basic_auth: yes
+        status_code: 200
         validate_certs: no
       ignore_errors: yes
 
