@@ -1,0 +1,170 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+   usage: tmp-upgrade-object
+    app: sso-prod
+    app-name: sso
+    app.kubernetes.io/component: server
+    app.kubernetes.io/instance: sso-prod
+    app.kubernetes.io/managed-by: template
+    app.kubernetes.io/name: rh-sso
+    app.kubernetes.io/part-of: rh-sso
+    app.kubernetes.io/phase: dev
+    app.kubernetes.io/version: 7.3-48
+    env-id: "48"
+    env-name: prod
+    github-owner: bcgov
+    github-repo: ocp-sso
+    template: sso73-x509-postgresql-persistent
+    template-hash: 7d56d3f9ab4d7ce9dbe3038f32cc12cb860a02e4
+    xpaas: 1.4.14
+  name: sso-prod-upgrade
+  namespace: devops-sso-prod
+spec:
+  replicas: 0
+  selector:
+    deploymentConfig: sso-prod
+  strategy:
+    activeDeadlineSeconds: 21600
+    recreateParams:
+      timeoutSeconds: 600
+    resources: {}
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sso-prod
+        app-name: sso
+        deploymentConfig: sso-prod
+        env-id: "48"
+        env-name: prod
+        github-owner: bcgov
+        github-repo: ocp-sso
+      name: sso-prod
+    spec:
+      containers:
+      - command:
+        - /bin/sh
+        - -c
+        - cp /provisioning/standalone-openshift.xml /opt/eap/standalone/configuration/standalone-openshift.xml && /opt/eap/bin/openshift-launch.sh
+        env:
+        - name: DB_POSTGRESQL_SERVICE_HOST
+          value: sso-pgsql-master-prod
+        - name: DB_POSTGRESQL_SERVICE_PORT
+          value: "5432"
+        - name: DB_SERVICE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_JNDI
+          value: java:jboss/datasources/KeycloakDS
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: app-db-username
+              name: sso-pgsql-prod
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: app-db-password
+              name: sso-pgsql-prod
+        - name: DB_DATABASE
+          valueFrom:
+            secretKeyRef:
+              key: app-db-name
+              name: sso-pgsql-prod
+        - name: TX_DATABASE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_MIN_POOL_SIZE
+          value: "5"
+        - name: DB_MAX_POOL_SIZE
+          value: "20"
+        - name: DB_TX_ISOLATION
+        - name: JGROUPS_PING_PROTOCOL
+          value: dns.DNS_PING
+        - name: OPENSHIFT_DNS_PING_SERVICE_NAME
+          value: sso-ping-prod
+        - name: OPENSHIFT_DNS_PING_SERVICE_PORT
+          value: "8888"
+        - name: X509_CA_BUNDLE
+          value: /var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
+        - name: JGROUPS_CLUSTER_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-jgroups-prod
+        - name: SSO_ADMIN_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: username
+              name: sso-admin-prod
+        - name: SSO_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-admin-prod
+        - name: SSO_REALM
+        - name: SSO_SERVICE_USERNAME
+        - name: SSO_SERVICE_PASSWORD
+        - name: JAVA_OPTS_APPEND
+          value: -Dkeycloak.profile.feature.authorization=enabled -Djboss.persistent.log.dir=/var/log/eap -Djboss.as.management.blocking.timeout=1200
+        # TODO: update image sha
+        image: docker-registry.default.svc:5000/devops-sso-prod/sso@sha256:00e76ac9254a671bcdaf9eb427304c2794c5e83f8d7f87cda941182dc5607687
+        imagePullPolicy: Always
+        name: rh-sso
+        ports:
+        - containerPort: 8778
+          name: jolokia
+          protocol: TCP
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        - containerPort: 8443
+          name: https
+          protocol: TCP
+        - containerPort: 8888
+          name: ping
+          protocol: TCP
+        resources:
+          limits:
+            cpu: "3"
+            memory: 3Gi
+          requests:
+            cpu: "2"
+            memory: 2Gi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /provisioning
+          name: sso-standalone-openshift-xml-bkup
+          readOnly: true
+        - mountPath: /etc/x509/https
+          name: sso-x509-https-volume
+          readOnly: true
+        - mountPath: /etc/x509/jgroups
+          name: sso-x509-jgroups-volume
+          readOnly: true
+        - mountPath: /var/log/eap
+          name: logs
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 75
+      volumes:
+      - name: sso-standalone-openshift-xml-bkup
+        configMap:
+          defaultMode: 420
+          name: sso-standalone-openshift-xml-bkup
+      - name: sso-x509-https-volume
+        secret:
+          defaultMode: 420
+          secretName: sso-x509-https-secret-prod
+      - name: sso-x509-jgroups-volume
+        secret:
+          defaultMode: 420
+          secretName: sso-x509-jgroups-secret-prod
+      - name: logs
+        persistentVolumeClaim:
+          claimName: sso-logs-prod
+  test: false
