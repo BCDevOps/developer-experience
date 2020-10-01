@@ -84,8 +84,46 @@ npm ERR! 403 In most cases, you or one of your dependencies are requesting
 npm ERR! 403 a package version that is forbidden by your security policy.
 ```
 
+#### Maven
+
+To deploy build artifacts through Artifactory you need to add a deployment element with the URL of a target local repository to which you want to deploy your artifacts. Following is an example snippet
+
+```xml
+
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>artifactory-ha-primary-0-releases</name>
+        <url>https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/test-maven-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory-ha-primary-0-snapshots</name>
+        <url>https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/test-maven-repo</url>
+    </snapshotRepository>
+</distributionManagement>
 
 
+```
+
+#### Docker
+
+To pull/push from docker registries that are hosted in Artifactory, following steps needs to be performed
+
+Login to the registry
+
+```bash
+docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.apps.klab.devops.gov.bc.ca:443
+
+```
+
+Pull from the registry
+
+```bash
+docker pull artifacts.apps.klab.devops.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
+
+```
+*Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
 ## Merging Private repositories with caching repositories
 
 to merge multiple repositories into a single virtual repository, you can request a private repository of type "virtual".
