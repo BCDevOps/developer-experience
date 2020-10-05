@@ -88,7 +88,8 @@
     - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
     - name: Make the Patroni secrets (apply)
       command: >
-        oc apply -f ./processed/patroni-secret.json
+        oc create -f ./processed/patroni-secret.json
+      ignore_errors: yes
 
       # deploy patroni stateful set
     - name: Make the Patroni statefulset (processing)
@@ -141,11 +142,45 @@
       command: >
         oc apply -f ./processed/route.json
 
+      # make secret
+    - name: Make the admin secret (processing)
+      command: >
+        oc process -f ./templates/artifactory-admin-secret.yaml \
+            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+            ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }}
+      register: app_secret_processed
+    - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
+    - name: Make the admin secret (apply)
+      command: >
+        oc create -f ./processed/artifactory-admin-secret.json
+      ignore_errors: true
+      register: secret_create
+
+    - name: Get existing password
+      shell: >
+        oc get secret {{ artifactory_instance_name }}-admin -o json | jq '.data.password' | cut -d'"' -f 2 | base64 -d
+      register: password
+      when: secret_create.failed
+
+    - name: Save password.
+      set_fact:
+        artifactory_password: "{{ password.stdout }}"
+      when: secret_create.failed
+
+    - name: Set deployment password
+      set_fact:
+        deployment_password: "password"
+
+    - name: Set deployment password
+      set_fact:
+        deployment_password:  "{{ password.stdout }}"
+      when: secret_create.failed
+
     - name: Check deployment status for artifactory
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/system/version"
         user: "admin"
-        password: "password"
+        password: "{{ deployment_password }}"
         method: GET
         force_basic_auth: yes
         validate_certs: no
@@ -159,26 +194,15 @@
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/security/users/authorization/changePassword"
         user: "admin"
-        password: "password"
+        password: "{{ deployment_password }}"
         method: POST
         body_format: json
         headers:
           Content-type: "application/json"
-        body: '{"userName": "admin", "oldPassword": "password", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
+        body: '{"userName": "admin", "oldPassword": "{{ deployment_password }}", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
         force_basic_auth: yes
         validate_certs: no
-
-      # make secret
-    - name: Make the admin secret (processing)
-      command: >
-        oc process -f ./templates/artifactory-admin-secret.yaml \
-            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
-            ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }}
-      register: app_secret_processed
-    - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
-    - name: Make the admin secret (apply)
-      command: >
-        oc apply -f ./processed/artifactory-admin-secret.json
+      when: deployment_password != artifactory_password
 
     - name: Set artifactory custom URL base
       uri:
@@ -204,6 +228,7 @@
         body: "{{ artifactory_licenses }}"
         force_basic_auth: yes
         validate_certs: no
+        status_code: 200,400
 
     - name: Create authenticated_users group
       uri:
@@ -265,6 +290,7 @@
           Content-type: "application/json"
         body: '{"key" : "{{ item.repo_key }}", "description" : "{{ item.repo_desc }}", "rclass" : "remote", "url" : "{{ item.remote_url }}", "packageType" : "{{ item.pkg_type }}"}'
         force_basic_auth: yes
+        status_code: 200, 400
       ignore_errors: yes
       loop: "{{ repo_list }}"
 
