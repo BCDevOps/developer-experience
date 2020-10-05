@@ -78,7 +78,7 @@
       # make secret
     - name: Make the Patroni secrets (processing)
       command: >
-        oc process -f ./templates/patroni-prereq.yaml \
+        oc process -f ./templates/patroni-prereq-1.yaml \
                                              -p NAME=patroni \
                                              -p SUFFIX=-001 \
                                              -p APP_DB_PASSWORD={{ db_password }} \
@@ -90,6 +90,33 @@
       command: >
         oc create -f ./processed/patroni-secret.json
       ignore_errors: yes
+      register: patroni_secret_create
+
+    - name: Make the Patroni prerequisites (processing)
+      command: >
+        oc process -f ./templates/patroni-prereq-2.yaml \
+                                             -p NAME=patroni \
+                                             -p SUFFIX=-001
+      register: patroni_prereq_processed
+    - copy: content="{{ patroni_prereq_processed.stdout }}" dest=./processed/patroni-prereq.json
+    - name: Make the Patroni prerequisites (apply)
+      command: >
+        oc create -f ./processed/patroni-prereq.json
+      ignore_errors: yes
+
+    - name: Get existing password
+      shell: >
+        oc get secret patroni-001 -o json | jq '.data["app-db-password"]' | cut -d'"' -f 2 | base64 -d
+      register: patroni_password
+      when: patroni_secret_create.failed
+
+    - debug:
+        var: patroni_password
+
+    - name: Save password.
+      set_fact:
+        db_password: "{{ patroni_password.stdout }}"
+      when: patroni_secret_create.failed
 
       # deploy patroni stateful set
     - name: Make the Patroni statefulset (processing)
@@ -243,7 +270,11 @@
         force_basic_auth: yes
         status_code: 201
         validate_certs: no
+      register: auth_status
       ignore_errors: yes
+      until: auth_status.status == 201
+      retries: 20
+      delay: 10
 
     - name: Update reader's group
       uri:
