@@ -17,7 +17,7 @@ And the new Service name/endpoint to migrate to:
 
 ### When?
 
-Starting on Oct 6th, all dev/test/prod KeyCloak instances are accessible via the new service name. Product team should schedule on follow up actions and start migration.
+Starting on Oct 6th, all dev/test/prod KeyCloak instances are accessible via the new service name. Product team are encouraged to start planning the migration to the new SSO service name over the next 6 weeks.
 
 **Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for 6 weeks/two sprints (will be extended longer if needed), which allows product teams to update integrated applications and conduct thorough testing.** As a result, we are expecting to deprecate the pathfinder service name for the following timeline:
 
