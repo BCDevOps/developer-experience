@@ -9,7 +9,7 @@ For your reference, here are the original SSO service name/endpoint:
 - sso-test.pathfinder.gov.bc.ca
 - sso.pathfinder.gov.bc.ca
 
-And the new Service name/endpoint to migration to:
+And the new Service name/endpoint to migrate to:
 - dev.oidc.gov.bc.ca
 - test.oidc.gov.bc.ca
 - oidc.gov.bc.ca
