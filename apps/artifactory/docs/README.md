@@ -3,42 +3,16 @@
 
 - Description of on-prem artifact repositories, the why and what.
 
-## Private Repositories
-
-### Requesting
-
-To request creation of a private repository, a request in the devops-requests channel needs to be made of the form:
-
-``` yaml
-Artifact Repository Request
-Project Shortname: projectSet shortname (example: {shortname}-[tools|dev|test|prod])
-Repository Type: [docker|maven|npm| ... ] (full list of supported repsitories TBD)
-Repository Locator: [local|virtual]
-Repository Description: "Descriptive information about repository"
-
-[virtual only]
-Repository List: "comma separated list of existing repositories to merge, must all be of same type"
-```
-
-Once your repository has been provisioned, you will be given a service-account and Token that can be used to access your repository.  (better secret distribution TBD)
-
-### Managing additional access for your repository:
-
-To add additional named access to your repository, the user must already exist.  Once you have the username, the following curl command can add that user:
-
-*TBD*
-
 ## Using Caching repositories
-- Current Authentication model
-no anonymous access as we do not lock down remote access to the repository by location, and the tool is meant for cluster use.
 
-this means that in order to effectively use the caching repositories, a service account will be required.  This is currently created with a private repository.
+To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format 
+
 
 ### Pulling Artifacts from caching repositories
 
 Following are some examples of how to pull artifacts from caching repositories:
 
-*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.apps.klab.devops.gov.bc.ca/` and a service account with appropriate permissions (`test-devops-artifactory-gjafwu` in this case) is already assigned.
+*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions (`test-devops-artifactory-gjafwu` in this case) is already assigned.
 
 #### NPM
 
@@ -49,7 +23,7 @@ Steps:
 Set npm registry
 
 ```bash
-$ npm config set registry https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/
+$ npm config set registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
 ```
 
 Authenticate to the registry
@@ -59,13 +33,13 @@ $ npm login
 Username: test-devops-artifactory-gjafwu
 Password:
 Email: (this IS public) test-devops-artifactory-gjafwu@artifactory.local
-Logged in as test-devops-artifactory-gjafwu on https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/.
+Logged in as test-devops-artifactory-gjafwu on https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/.
 ```
 
 Once the authentication is complete, you can now pull artifacts from this registry
 
 ```bash
-$ npm install inspectpack --registry https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/
+$ npm install inspectpack --registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
 + inspectpack@4.5.2
 updated 1 package in 3.131s
 4 packages are looking for funding
@@ -75,7 +49,7 @@ updated 1 package in 3.131s
 
 ```bash
 npm ERR! code E403
-npm ERR! 403 403 Forbidden - GET https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/api/npm/npm-remote/inspectpack
+npm ERR! 403 403 Forbidden - GET https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/inspectpack
 npm ERR! 403 In most cases, you or one of your dependencies are requesting
 npm ERR! 403 a package version that is forbidden by your security policy.
 ```
@@ -90,12 +64,12 @@ To deploy build artifacts through Artifactory you need to add a deployment eleme
     <repository>
         <id>central</id>
         <name>artifactory-ha-primary-0-releases</name>
-        <url>https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/test-maven-repo</url>
+        <url>https://artifacts.developer.gov.bc.ca/artifactory/test-maven-repo</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>artifactory-ha-primary-0-snapshots</name>
-        <url>https://artifacts.apps.klab.devops.gov.bc.ca/artifactory/test-maven-repo</url>
+        <url>https://artifacts.developer.gov.bc.ca/artifactory/test-maven-repo</url>
     </snapshotRepository>
 </distributionManagement>
 
@@ -109,13 +83,13 @@ To pull/push from docker registries that are hosted in Artifactory, following st
 Login to the registry
 
 ```bash
-docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.apps.klab.devops.gov.bc.ca:443
+docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.developer.gov.bc.ca:443
 ```
 
 Pull from the registry
 
 ```bash
-docker pull artifacts.apps.klab.devops.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
+docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
 ```
 *Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
 
