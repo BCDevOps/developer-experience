@@ -5,8 +5,8 @@
 
 ## Using Caching repositories
 
-To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format 
-
+To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format `[acct-name]-[namespace-name]-[license-plate]`.
+You can also find fuller details about your service account by running the command `oc describe artsvcacct [acct-name]`.
 
 ### Pulling Artifacts from caching repositories
 
@@ -78,21 +78,38 @@ To deploy build artifacts through Artifactory you need to add a deployment eleme
 
 #### Docker
 
-To pull/push from docker registries that are hosted in Artifactory, following steps needs to be performed
-
 Login to the registry
 
 ```bash
 docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.developer.gov.bc.ca:443
 ```
 
-Pull from the registry
+Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
 
 ```bash
 docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
 ```
 *Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
 
-## Merging Private repositories with caching repositories
+In order to use these credentials on Openshift...
 
-to merge multiple repositories into a single virtual repository, you can request a private repository of type "virtual".
+Since you've already logged in (that's right, don't skip the steps above, they're important!), you'll find a file with an authorization token here:
+
+`cat ~/.docker/config.json`
+
+and you output will look something like this: 
+
+`{
+    "auths": {
+        "https://index.docker.io/v1/": {
+            "auth": "c3R...zE2"
+        }
+    }
+}`
+
+
+oc create secret docker-registry test-devops-artifactory-oiucsw-pull-secret \
+    --docker-server=artifacts.apps.klab.devops.gov.bc.ca \
+    --docker-username=test-devops-artifactory-oiucsw \
+    --docker-password=abcde \
+    --docker-email=test-devops-artifactory-oiucsw@devops-artifactory.local
