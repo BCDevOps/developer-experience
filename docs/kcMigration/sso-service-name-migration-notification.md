@@ -2,7 +2,7 @@
 ### What is happening?
 
 Hi teams! We have successfully introduced the new SSO service name at `oidc.gov.bc.ca`! The next step is to start migrating your application SSO integration to the new name. Please note that this does not affect the service offering but just to change how you are accessing it. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
-<!-- TODO: update sso wiki, sso service definition, and other reference! Also rename the other notification file -->
+<!-- TODO: update sso wiki, sso service definition, and other reference! -->
 
 For your reference, here are the original SSO service name/endpoint:
 - sso-dev.pathfinder.gov.bc.ca
