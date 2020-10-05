@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-to-migrate-db-to-sso74
+spec:
+  autoSelector: true
+  parallelism: 0
+  completions: 1
+  template:
+    metadata:
+      name: job-to-migrate-db-to-sso74
+    spec:
+      containers:
+      - env:
+        - name: DB_SERVICE_PREFIX_MAPPING
+          value: <<DB_SERVICE_PREFIX_MAPPING_VALUE>>
+        - name: <<PREFIX>>_JNDI
+          value: <<PREFIX_JNDI_VALUE>>
+        - name: <<PREFIX>>_USERNAME
+          value: <<PREFIX_USERNAME_VALUE>>
+        - name: <<PREFIX>>_PASSWORD
+          value: <<PREFIX_PASSWORD_VALUE>>
+        - name: <<PREFIX>>_DATABASE
+          value: <<PREFIX_DATABASE_VALUE>>
+        - name: TX_DATABASE_PREFIX_MAPPING
+          value: <<TX_DATABASE_PREFIX_MAPPING_VALUE>>
+        - name: <<SERVICE_HOST>>
+          value: <<SERVICE_HOST_VALUE>>
+        - name: <<SERVICE_PORT>>
+          value: <<SERVICE_PORT_VALUE>>
+        image: <<SSO_IMAGE_VALUE>>
+        imagePullPolicy: Always
+        name: job-to-migrate-db-to-sso74
+        # Keep the pod running after the SQL migration
+        # file was generated, so we can retrieve it
+        command:
+          - "/bin/bash"
+          - "-c"
+          - "/opt/eap/bin/openshift-launch.sh || sleep 600"
+      restartPolicy: Never

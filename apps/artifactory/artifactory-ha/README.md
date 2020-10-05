@@ -1,124 +1,105 @@
-# Artifactory HA on OpenShift
+## 0. Prerequisites for Installation
 
-Table of contents
-=================
+### a. Your local vars.yaml file
 
-<!--ts-->
-   * [Architecture](#architecture)
-        * [Artifactory HA Architecture](#Artifactory-HA-Architecture)
-        * [Persistent Volumes](#Persistent-Volumes)
-        * [External Database](#External-database)
-   * [How to deploy on OpenShift](#How-to-deploy-on-OpenShift)
-      * [License](#License)
-      * [Parameters](#Parameters)
-   * [Access Artifactory](#Access-Artifactory)
-<!--te-->
+You will need a local version of the `vars.yaml` file for recording the cluster-specific config for your installation.
 
-## Architecture
+1. Copy `vars.yaml` and paste it into the same folder with the name `vars-local.yaml`.
+   * Note that it MUST BE a dash, not an underscore. This name is both already baked into the installation, and it's already present in the .gitignore file, so you need not worry about accidentally uploading it to github.
+2. Find the `master_key` and `join_key` variables in the artifactory settings section. Generate new ones by running `openssl rand -hex 32` twice.
+   * If you're just testing a quick install, you can leave them alone, but each long-term installation should have their own master and join keys.
+   * These are not secrets, and you don't need to worry about hiding them.
+3. The file is commented with explanations of what each variable represents. Go through and change your installation config as required.
+   * Note that there are a few entries currently prefilled with "xxxxxxxxx" - these are secrets or passwords that you will need to fill later.
 
-### Artifactory HA Architecture
 
-![image alt text](../images/artifactory-diagram.png)
+### b. Making a New S3 bucket
 
-Artifactory supports a High Availability network configuration with a cluster of 2 or more, active/active nodes.
+Generally speaking, a new installation of Artifactory should have its own S3 bucket.
+If you are installing for testing purposes, this probably isn't necessary and you can use the "test" bucket.
 
-Artifactory "nodes" are configured as a StatefulSet in OpenShift and Kubernetes.
+Otherwise, follow these instructions to create a new one:
 
-Artifactory HA also requires an external database with a single URL. The external database stores the metadata for the binaries and artifacts which are stored in the internal derby database on the Artifactory nodes.
+* Make sure you are connected to the government network, either by logging onto BCNGN or connecting with the VPN.
+* Go to https://mgmt.objectstore.gov.bc.ca and log in (your username is your gov email address and your password is your IDIR password).
+   * If you don't have access and think you should, speak to another member of the Platform Services team.
+* You will likely open the dashboard with a banner indicating a 500 error or a permissions error. This error is expected and can be safely ignored.
+* On the menu, click on `Manage` and then `Users`
+* Make sure that the button saying "Object Users" has a grey background near the top of the page. If it doesn't, click on "Object Users"
+* Click on "New Object User"
+* Give your new object user a name - the name should be formatted like `artifactory-cluster-user` where cluster is the name of the cluster on which you plan to install artifactory.
+* Ensure the namespace says `citz-dev-exchange` and click on "Next to Add Password"
+* On the next page, under `S3/Atmos` click the "Generate and Add Secret Key" button, then copy down the resulting secret key. 
+* Ignore the other sections (`Swift Groups` and `CAS`) and click "Close"
+* Ensure the new object user shows up on the list of object users on the User Management page.
+* Under `Manage` on the menu, click `Buckets`
+* Make sure the dropdown next to "New Bucket" says `citz-dev-exchange` and then click "New Bucket"
+* Give your new bucket a name - the name should be formatted like `artifactory-cluster-bucket` where cluster is the name of the cluster on which you plan to install artifactory.
+* Ensure the namespace says `citz-dev-exchange` and leave the replication group as the default value.
+* Enter the name of the new object user you just made in the Bucket Owner box.
+* Make sure that `Set current user as Bucket Owner` is **NOT** selected, and then click "Next"
+* On the next page, `Required`, leave everything as default and click "Next"
+* On the next page, `Optional`, turn Quota on, set it to `Notification Only at` and provide a reasonable value, depending on the nature of the installation.
+* Ignore the other sections (`Bucket Tagging` and `Bucket Retention Period`) and click "Save"
+* Your new bucket is ready! Copy down the appropriate information into your `vars-local.yaml` file in the Object Store section.
 
-### Persistent Volumes
+### c. Making a new SSO Client
 
-Before deploying Artifactory nodes, make sure you have Persistent Volumes (PV) or a Dynamic Provisioner available for the following Persistent Volume Claims (PVC).
+Any separate installation of Artifactory currently requires its own SSO client on Keycloak. 
 
-| Name | Access Mode | Description |
-| ---- | ---- | ---- |
-| Artifactory Primary | ReadWriteOnce | Primary node files (application, configuration and logs) |
-| Artifactory Member-n | ReadWriteOnce | Primary node files (application, configuration and logs) |
+* Log into the SSO admin console and go to the devhub realm.
+* On the menu, under `Configure`, click on `Clients`.
+* On the top-right corner of the table listing the existing clients, click "Create"
+* Give your new client a `Client ID` with the format `oauth-artifactory-cluster` where cluster is the name of the cluster on which you plan to install artifactory.
+* Make sure `Client Protocol` says `openid-connect`.
+* The `Root URL` is the URL that your new installation will use. 
+   * The format should be like `https://artifacts.apps.klab.devops.gov.bc.ca/artifactory` - you need to include the `https` and the `/artifactory` at the end.
+   * Your `vars-local.yaml` file has a pretty broad selection of possible URLs that the various clusters might use. It isn't a complete list, but it's a good starting point.
+* Click Save, and you'll find yourself on a page with a broader set of settings to configure for your new client.
+* Change `Access Type` to `confidential`. 
+* Change `Implicit Flow Enabled` to on.
+* Copy the `Admin URL` into the `Base URL` box.
+* Change `Web Origins` to `*`.
+* Click "Save" - now, back at the top of the page, a few new tabs should have appeared.
+* Click on the "Credentials" tab.
+* `Client Authenticator` should say `Client Id and Secret`. If it doesn't, change that. 
+* Copy the `Secret` and paste both it and the client ID into your `vars-local.yaml` file into the appropriate variables under the Keycloak section.
 
-Additional storage is required to store the actual binaries/artifacts.
+### d. Artifactory Licenses
 
-| Name | Access Mode | Description |
-| ---- | ---- | ---- |
-| artifactory-data | ReadWriteMany | Shared Data file storage (Binary data) |
-| artifactory-backup | ReadWriteMany | Shared backup file storage (Pre-built?) |
+* In the same folder as this file, create a local directory called "licenses". This directory is already in .gitignore
+* In that folder, you will need to create a new file (or set of files) with license keys for your new Artifactory installation.
+   * 1 license key is required per node in your installation, so keep that in mind.
+* Once you have created the file, edit your `vars-local.yaml` file to put the filename into the lookup for the variable `artifactory_licenses` in the Artifactory section.
 
-Note that 00-artifactory-prereq.yaml and 00-patroni-pgsql.yaml create the necessary PVCs, so you need not make them manually.
+The license file must be formatted like this:
 
-Outstanding:
-Add an object store for eventual storage of binary data.  This will allow local node storage to be used for staging and caching.  This can be added to the storage chain later.
-
-### External Database
-
-Artifactory HA requires an external database, which is fundamental to management of binaries and is also used to store cluster wide configuration. Currently MySQL, Oracle, MS SQL and PostgreSQL are supported. For details on how to configure any of these databases please refer to [Configuring the Database](https://www.jfrog.com/confluence/display/RTF/Configuring+the+Database). Postgres database for this deployment is [Patroni](https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni).
-
-Since Artifactory HA contains multiple Artifactory cluster nodes, your database must be powerful enough to service all the nodes in the system.  Moreover, your database must be able to support the maximum number of connections possible from all the Artifactory cluster nodes in your system.
-
-If you are replicating your database you must ensure that at any given point in time all nodes see a consistent view of the database, regardless of which specific database instance they access. Eventual consistency, and write-behind database synchronization are not supported.
-
-# How to deploy on OpenShift
-
-### 1) Have a License
-
-#### License
-
-Artifactory HA will **require** the Enterprise license. Each stateful set pod will require a license.
-
-### 2) Configure the Parameters
-
-#### Parameters
-
-Set parameters for artifactory under artifactory-parameters.env.
-
-*Make sure to set the external database parameters including host and secrets*
-
-| Parameter Name | Description|
-| ---- | ---- |
-| DATABASE_NAME | Database name which Artifactory will connect to |
-| ARTIFACTORY_NAME | Name for Artifactory service and service account |
-| ARTIFACTORY_DNS_NAME | DNS Name for the Artifactory route |
-| PATRONI_IMAGE_STREAM_TAG | Version for Patroni |
-| PATRONI_IMAGE_STREAM_NAMESPACE | Namespace where Patroni image is pulled from |
-| ARTIFACTORY_VERSION | Artifactory version |
-| ARTIFACTORY_PVC_SIZE | Size of application persistent volume |
-| ARTIFACTORY_DATA_PVC_SIZE | Size of persistent volume for shared data storage |
-| ARTIFACTORY_BACKUP_PVC_SIZE | Size of PVC to be used for shared backup storage |
-| APP_DB_NAME | Name for the database. This must be Artifactory |
-| APP_DB_USERNAME | Username for the database. This must be Artifactory |
-| PATRONI_PVC_SIZE | Postgresql storage size |
-| NUM_OF_MEMBERS | Number of members to be added to the cluster |
-| ARTIFACTORY_IMAGE_REGISTRY | Registry where Artifactory image|
-| ARTIFACTORY_MASTER_KEY | The Master key is an AES 128 bit secret key that's used by Artifactory to securely synchronize files between cluster nodes. It is responsible to encrypt and decrypt the shared data in the database. |
-| ARTIFACTORY_BOOTSTRAP_CREDS | Creds for admin-access |
-
-### 3) Deploy the template
-
-Before Deploying the templates, create your backup pvc target and ensure the ARTIFACTORY_BACKUP_PVC_NAME is set appropriately before continuing. This is done by running the two 00 yaml files.
-
-The following steps will deploy artifactory:
-
-``` bash
-# Deploy pre-requisite objects (secrets and storage)
-oc process -f 00-artifactory-prereq.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
-oc process -f 00-patroni-pgsql-prereq.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc create -f -
-
-# Deploy postgresql DB
-oc process -f 01-patroni-pgsql.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
-# Wait for patroni statefulSet to complete startup before next step.
-
-oc process -f 02-artifactory-ha.yaml --param-file=artifactory-ha.env --ignore-unknown-parameters=true  | oc apply -f -
+```json
+[
+    {
+        "licenseKey": "tL9r2Y...lDBiktbbt"
+    },
+    {
+        "licenseKey": "DiYgVA...P7nvyNI7q"
+    }
+]
 ```
 
-### Access Artifactory
+The licenseKeys must be on a single line. Any line breaks should be represented by a `\n` character. Many IDEs will allow you to find/replace the linebreak, making conversion much easier.
 
-Run `oc get routes`:
+## 1. Installing Artifactory 7
+
+1. Login to the correct openshift cluster.
+2. Navigate to the correct project.
+3. Run `ansible-playbook install.yaml`.
+
+## 3. Deleting Everything
+
+Don't run unless you're sure ;)
 
 ```
-$ oc get routes
-NAME                     HOST/PORT                                                 PATH      SERVICES      PORT      TERMINATION     WILDCARD
-artifactory              artifacts.pathfinder.gov.bc.ca             artifactory   http      edge/Redirect   None
+oc delete statefulsets,services,routes,secrets,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
+oc delete statefulsets,services,routes,secrets -l app=patroni-001
+oc delete configmaps -l cluster-name=patroni-001
+oc delete pvc -l app=patroni-001
 ```
-https://artifacts.pathfinder.gov.bc.ca/
-
-## Post installation configuration
-
-[Artifactory Configuration](config/README.md)

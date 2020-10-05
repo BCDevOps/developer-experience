@@ -1,0 +1,176 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    app: sso-sbox-78
+    app-name: sso
+    app.kubernetes.io/component: server
+    app.kubernetes.io/instance: sso-sbox-78
+    app.kubernetes.io/managed-by: template
+    app.kubernetes.io/name: rh-sso
+    app.kubernetes.io/part-of: rh-sso
+    app.kubernetes.io/phase: dev
+    app.kubernetes.io/version: 7.4-78
+    env-id: "78"
+    env-name: sbox
+    github-owner: bcgov
+    github-repo: ocp-sso
+    template: sso74-x509-postgresql-persistent
+    # TODO: update hash
+    template-hash: 8908e37675909ec156373f144967bc1290ec3cf7
+    xpaas: 1.4.14
+  name: sso-sbox-78
+  namespace: devops-sso-sandbox
+spec:
+# TODO: 0 reps
+  replicas: 0
+  selector:
+    deploymentConfig: sso-sbox-78
+  strategy:
+    activeDeadlineSeconds: 21600
+    recreateParams:
+      timeoutSeconds: 600
+    resources: {}
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sso-sbox-78
+        app-name: sso
+        deploymentConfig: sso-sbox-78
+        env-id: "78"
+        env-name: sbox
+        github-owner: bcgov
+        github-repo: ocp-sso
+      name: sso-sbox-78
+    spec:
+      containers:
+      - command:
+        - /bin/sh
+        - -c
+        - cp /provisioning/standalone-openshift.xml /opt/eap/standalone/configuration/standalone-openshift.xml && /opt/eap/bin/openshift-launch.sh
+        env:
+        - name: DB_POSTGRESQL_SERVICE_HOST
+          value: sso-pgsql-master-sbox-78
+        - name: DB_POSTGRESQL_SERVICE_PORT
+          value: "5432"
+        - name: DB_SERVICE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_JNDI
+          value: java:jboss/datasources/KeycloakDS
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: app-db-username
+              name: sso-pgsql-sbox-78
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: app-db-password
+              name: sso-pgsql-sbox-78
+        - name: DB_DATABASE
+          valueFrom:
+            secretKeyRef:
+              key: app-db-name
+              name: sso-pgsql-sbox-78
+        - name: TX_DATABASE_PREFIX_MAPPING
+          value: db-postgresql=DB
+        - name: DB_MIN_POOL_SIZE
+          value: "5"
+        - name: DB_MAX_POOL_SIZE
+          value: "20"
+        - name: DB_TX_ISOLATION
+        - name: JGROUPS_PING_PROTOCOL
+          value: dns.DNS_PING
+        - name: OPENSHIFT_DNS_PING_SERVICE_NAME
+          value: sso-ping-sbox-78
+        - name: OPENSHIFT_DNS_PING_SERVICE_PORT
+          value: "8888"
+        - name: X509_CA_BUNDLE
+          value: /var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
+        - name: JGROUPS_CLUSTER_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-jgroups-sbox-78
+        - name: SSO_ADMIN_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: username
+              name: sso-admin-sbox-78
+        - name: SSO_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: sso-admin-sbox-78
+        - name: SSO_REALM
+        - name: SSO_SERVICE_USERNAME
+        - name: SSO_SERVICE_PASSWORD
+        # TODO: add `-Djboss.as.management.blocking.timeout=1200`
+        - name: JAVA_OPTS_APPEND
+          value: -Dkeycloak.profile.feature.authorization=enabled -Djboss.persistent.log.dir=/var/log/eap -Djboss.as.management.blocking.timeout=1200
+        # TODO: update image sha using sso image in the current namespace
+        image: sso:sbox-7.4-78
+        imagePullPolicy: Always
+        # TODO: remove probes
+        name: rh-sso
+        ports:
+        - containerPort: 8778
+          name: jolokia
+          protocol: TCP
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        - containerPort: 8443
+          name: https
+          protocol: TCP
+        - containerPort: 8888
+          name: ping
+          protocol: TCP
+        # TODO: update resources
+        resources:
+          limits:
+            cpu: "3"
+            memory: 3Gi
+          requests:
+            cpu: "2"
+            memory: 2Gi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        # TODO: add volumeMounts + volumes using the bkup configmap
+        volumeMounts:
+        - mountPath: /provisioning
+          name: sso-standalone-openshift-xml-bkup
+          readOnly: true
+        - mountPath: /etc/x509/https
+          name: sso-x509-https-volume
+          readOnly: true
+        - mountPath: /etc/x509/jgroups
+          name: sso-x509-jgroups-volume
+          readOnly: true
+        - mountPath: /var/log/eap
+          name: logs
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 75
+      volumes:
+      - name: sso-standalone-openshift-xml-bkup
+        configMap:
+          defaultMode: 420
+          name: sso-standalone-openshift-xml-bkup
+      - name: sso-x509-https-volume
+        secret:
+          defaultMode: 420
+          secretName: sso-x509-https-secret-sbox-78
+      - name: sso-x509-jgroups-volume
+        secret:
+          defaultMode: 420
+          secretName: sso-x509-jgroups-secret-sbox-78
+      - name: logs
+        persistentVolumeClaim:
+          claimName: sso-logs-sbox-78
+  test: false
+# TODO: remove triggers

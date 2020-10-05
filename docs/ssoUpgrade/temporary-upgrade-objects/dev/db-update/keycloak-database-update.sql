@@ -1,0 +1,169 @@
+-- *********************************************************************
+-- Update Database Script
+-- *********************************************************************
+-- Change Log: META-INF/jpa-changelog-master.xml
+-- Ran at: 8/24/20, 9:18 PM
+-- Against: sso@jdbc:postgresql://sso-pgsql-master-sbox-78:5432/rhsso
+-- Liquibase version: 3.5.4
+-- *********************************************************************
+
+-- Changeset META-INF/jpa-changelog-authz-4.2.0.Final.xml::authz-4.2.0.Final-KEYCLOAK-9944::hmlnarik@redhat.com
+ALTER TABLE public.RESOURCE_URIS ADD CONSTRAINT CONSTRAINT_RESOUR_URIS_PK PRIMARY KEY (RESOURCE_ID, VALUE);
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('authz-4.2.0.Final-KEYCLOAK-9944', 'hmlnarik@redhat.com', 'META-INF/jpa-changelog-authz-4.2.0.Final.xml', NOW(), 73, '7:9ac9e58545479929ba23f4a3087a0346', 'addPrimaryKey constraintName=CONSTRAINT_RESOUR_URIS_PK, tableName=RESOURCE_URIS', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-authz-7.0.0.xml::authz-7.0.0-KEYCLOAK-10443::psilva@redhat.com
+ALTER TABLE public.RESOURCE_SERVER ADD DECISION_STRATEGY SMALLINT DEFAULT 1 NOT NULL;
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('authz-7.0.0-KEYCLOAK-10443', 'psilva@redhat.com', 'META-INF/jpa-changelog-authz-7.0.0.xml', NOW(), 74, '7:b9710f74515a6ccb51b72dc0d19df8c4', 'addColumn tableName=RESOURCE_SERVER', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-8.0.0.xml::8.0.0-adding-credential-columns::keycloak
+ALTER TABLE public.CREDENTIAL ADD USER_LABEL VARCHAR(255);
+
+ALTER TABLE public.CREDENTIAL ADD SECRET_DATA TEXT;
+
+ALTER TABLE public.CREDENTIAL ADD CREDENTIAL_DATA TEXT;
+
+ALTER TABLE public.CREDENTIAL ADD PRIORITY INT;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ADD USER_LABEL VARCHAR(255);
+
+ALTER TABLE public.FED_USER_CREDENTIAL ADD SECRET_DATA TEXT;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ADD CREDENTIAL_DATA TEXT;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ADD PRIORITY INT;
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8.0.0-adding-credential-columns', 'keycloak', 'META-INF/jpa-changelog-8.0.0.xml', NOW(), 75, '7:ec9707ae4d4f0b7452fee20128083879', 'addColumn tableName=CREDENTIAL; addColumn tableName=FED_USER_CREDENTIAL', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-8.0.0.xml::8.0.0-updating-credential-data-not-oracle::keycloak
+UPDATE public.CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"hashIterations":', HASH_ITERATIONS, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '10', SECRET_DATA = CONCAT('{"value":"', VALUE, '","salt":"__SALT__"}') WHERE TYPE = 'password' OR TYPE = 'password-history';
+
+UPDATE public.CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"subType":"totp","digits":', DIGITS, ',"period":', PERIOD, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '20', SECRET_DATA = CONCAT('{"value":"', VALUE, '"}'), TYPE = 'otp' WHERE TYPE = 'totp';
+
+UPDATE public.CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"subType":"hotp","digits":', DIGITS, ',"counter":', COUNTER, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '20', SECRET_DATA = CONCAT('{"value":"', VALUE, '"}'), TYPE = 'otp' WHERE TYPE = 'hotp';
+
+UPDATE public.FED_USER_CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"hashIterations":', HASH_ITERATIONS, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '10', SECRET_DATA = CONCAT('{"value":"', VALUE, '","salt":"__SALT__"}') WHERE TYPE = 'password' OR TYPE = 'password-history';
+
+UPDATE public.FED_USER_CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"subType":"totp","digits":', DIGITS, ',"period":', PERIOD, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '20', SECRET_DATA = CONCAT('{"value":"', VALUE, '"}'), TYPE = 'otp' WHERE TYPE = 'totp';
+
+UPDATE public.FED_USER_CREDENTIAL SET CREDENTIAL_DATA = CONCAT('{"subType":"hotp","digits":', DIGITS, ',"counter":', COUNTER, ',"algorithm":"', ALGORITHM, '"}'), PRIORITY = '20', SECRET_DATA = CONCAT('{"value":"', VALUE, '"}'), TYPE = 'otp' WHERE TYPE = 'hotp';
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8.0.0-updating-credential-data-not-oracle', 'keycloak', 'META-INF/jpa-changelog-8.0.0.xml', NOW(), 76, '7:03b3f4b264c3c68ba082250a80b74216', 'update tableName=CREDENTIAL; update tableName=CREDENTIAL; update tableName=CREDENTIAL; update tableName=FED_USER_CREDENTIAL; update tableName=FED_USER_CREDENTIAL; update tableName=FED_USER_CREDENTIAL', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-8.0.0.xml::8.0.0-updating-credential-data-oracle::keycloak
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8.0.0-updating-credential-data-oracle', 'keycloak', 'META-INF/jpa-changelog-8.0.0.xml', NOW(), 77, '7:64c5728f5ca1f5aa4392217701c4fe23', 'update tableName=CREDENTIAL; update tableName=CREDENTIAL; update tableName=CREDENTIAL; update tableName=FED_USER_CREDENTIAL; update tableName=FED_USER_CREDENTIAL; update tableName=FED_USER_CREDENTIAL', '', 'MARK_RAN', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-8.0.0.xml::8.0.0-credential-cleanup-fixed::keycloak
+ALTER TABLE public.CREDENTIAL ALTER COLUMN  COUNTER SET DEFAULT NULL;
+
+ALTER TABLE public.CREDENTIAL ALTER COLUMN  DIGITS SET DEFAULT NULL;
+
+ALTER TABLE public.CREDENTIAL ALTER COLUMN  PERIOD SET DEFAULT NULL;
+
+ALTER TABLE public.CREDENTIAL ALTER COLUMN  ALGORITHM SET DEFAULT NULL;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN DEVICE;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN HASH_ITERATIONS;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN VALUE;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN COUNTER;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN DIGITS;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN PERIOD;
+
+ALTER TABLE public.CREDENTIAL DROP COLUMN ALGORITHM;
+
+DROP TABLE public.CREDENTIAL_ATTRIBUTE;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ALTER COLUMN  COUNTER SET DEFAULT NULL;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ALTER COLUMN  DIGITS SET DEFAULT NULL;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ALTER COLUMN  PERIOD SET DEFAULT NULL;
+
+ALTER TABLE public.FED_USER_CREDENTIAL ALTER COLUMN  ALGORITHM SET DEFAULT NULL;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN DEVICE;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN HASH_ITERATIONS;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN VALUE;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN COUNTER;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN DIGITS;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN PERIOD;
+
+ALTER TABLE public.FED_USER_CREDENTIAL DROP COLUMN ALGORITHM;
+
+DROP TABLE public.FED_CREDENTIAL_ATTRIBUTE;
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8.0.0-credential-cleanup-fixed', 'keycloak', 'META-INF/jpa-changelog-8.0.0.xml', NOW(), 78, '7:b48da8c11a3d83ddd6b7d0c8c2219345', 'dropDefaultValue columnName=COUNTER, tableName=CREDENTIAL; dropDefaultValue columnName=DIGITS, tableName=CREDENTIAL; dropDefaultValue columnName=PERIOD, tableName=CREDENTIAL; dropDefaultValue columnName=ALGORITHM, tableName=CREDENTIAL; dropColumn ...', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-8.0.0.xml::8.0.0-resource-tag-support::keycloak
+ALTER TABLE public.MIGRATION_MODEL ADD UPDATE_TIME BIGINT DEFAULT 0 NOT NULL;
+
+CREATE INDEX IDX_UPDATE_TIME ON public.MIGRATION_MODEL(UPDATE_TIME);
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('8.0.0-resource-tag-support', 'keycloak', 'META-INF/jpa-changelog-8.0.0.xml', NOW(), 79, '7:a73379915c23bfad3e8f5c6d5c0aa4bd', 'addColumn tableName=MIGRATION_MODEL; createIndex indexName=IDX_UPDATE_TIME, tableName=MIGRATION_MODEL', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.0.xml::9.0.0-always-display-client::keycloak
+ALTER TABLE public.CLIENT ADD ALWAYS_DISPLAY_IN_CONSOLE BOOLEAN DEFAULT FALSE NOT NULL;
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.0-always-display-client', 'keycloak', 'META-INF/jpa-changelog-9.0.0.xml', NOW(), 80, '7:39e0073779aba192646291aa2332493d', 'addColumn tableName=CLIENT', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.0.xml::9.0.0-drop-constraints-for-column-increase::keycloak
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.0-drop-constraints-for-column-increase', 'keycloak', 'META-INF/jpa-changelog-9.0.0.xml', NOW(), 81, '7:81f87368f00450799b4bf42ea0b3ec34', 'dropUniqueConstraint constraintName=UK_FRSR6T700S9V50BU18WS5PMT, tableName=RESOURCE_SERVER_PERM_TICKET; dropUniqueConstraint constraintName=UK_FRSR6T700S9V50BU18WS5HA6, tableName=RESOURCE_SERVER_RESOURCE; dropPrimaryKey constraintName=CONSTRAINT_O...', '', 'MARK_RAN', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.0.xml::9.0.0-increase-column-size-federated-fk::keycloak
+ALTER TABLE public.FED_USER_CONSENT ALTER COLUMN CLIENT_ID TYPE VARCHAR(255) USING (CLIENT_ID::VARCHAR(255));
+
+ALTER TABLE public.KEYCLOAK_ROLE ALTER COLUMN CLIENT_REALM_CONSTRAINT TYPE VARCHAR(255) USING (CLIENT_REALM_CONSTRAINT::VARCHAR(255));
+
+ALTER TABLE public.RESOURCE_SERVER_POLICY ALTER COLUMN OWNER TYPE VARCHAR(255) USING (OWNER::VARCHAR(255));
+
+ALTER TABLE public.USER_CONSENT ALTER COLUMN CLIENT_ID TYPE VARCHAR(255) USING (CLIENT_ID::VARCHAR(255));
+
+ALTER TABLE public.USER_ENTITY ALTER COLUMN SERVICE_ACCOUNT_CLIENT_LINK TYPE VARCHAR(255) USING (SERVICE_ACCOUNT_CLIENT_LINK::VARCHAR(255));
+
+ALTER TABLE public.OFFLINE_CLIENT_SESSION ALTER COLUMN CLIENT_ID TYPE VARCHAR(255) USING (CLIENT_ID::VARCHAR(255));
+
+ALTER TABLE public.RESOURCE_SERVER_PERM_TICKET ALTER COLUMN OWNER TYPE VARCHAR(255) USING (OWNER::VARCHAR(255));
+
+ALTER TABLE public.RESOURCE_SERVER_PERM_TICKET ALTER COLUMN REQUESTER TYPE VARCHAR(255) USING (REQUESTER::VARCHAR(255));
+
+ALTER TABLE public.RESOURCE_SERVER_RESOURCE ALTER COLUMN OWNER TYPE VARCHAR(255) USING (OWNER::VARCHAR(255));
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.0-increase-column-size-federated-fk', 'keycloak', 'META-INF/jpa-changelog-9.0.0.xml', NOW(), 82, '7:20b37422abb9fb6571c618148f013a15', 'modifyDataType columnName=CLIENT_ID, tableName=FED_USER_CONSENT; modifyDataType columnName=CLIENT_REALM_CONSTRAINT, tableName=KEYCLOAK_ROLE; modifyDataType columnName=OWNER, tableName=RESOURCE_SERVER_POLICY; modifyDataType columnName=CLIENT_ID, ta...', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.0.xml::9.0.0-recreate-constraints-after-column-increase::keycloak
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.0-recreate-constraints-after-column-increase', 'keycloak', 'META-INF/jpa-changelog-9.0.0.xml', NOW(), 83, '7:1970bb6cfb5ee800736b95ad3fb3c78a', 'addNotNullConstraint columnName=CLIENT_ID, tableName=OFFLINE_CLIENT_SESSION; addNotNullConstraint columnName=OWNER, tableName=RESOURCE_SERVER_PERM_TICKET; addNotNullConstraint columnName=REQUESTER, tableName=RESOURCE_SERVER_PERM_TICKET; addNotNull...', '', 'MARK_RAN', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.1.xml::9.0.1-add-index-to-client.client_id::keycloak
+CREATE INDEX IDX_CLIENT_ID ON public.CLIENT(CLIENT_ID);
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.1-add-index-to-client.client_id', 'keycloak', 'META-INF/jpa-changelog-9.0.1.xml', NOW(), 84, '7:45d9b25fc3b455d522d8dcc10a0f4c80', 'createIndex indexName=IDX_CLIENT_ID, tableName=CLIENT', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.1.xml::9.0.1-KEYCLOAK-12579-drop-constraints::keycloak
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.1-KEYCLOAK-12579-drop-constraints', 'keycloak', 'META-INF/jpa-changelog-9.0.1.xml', NOW(), 85, '7:890ae73712bc187a66c2813a724d037f', 'dropUniqueConstraint constraintName=SIBLING_NAMES, tableName=KEYCLOAK_GROUP', '', 'MARK_RAN', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.1.xml::9.0.1-KEYCLOAK-12579-add-not-null-constraint::keycloak
+UPDATE public.KEYCLOAK_GROUP SET PARENT_GROUP = ' ' WHERE PARENT_GROUP IS NULL;
+
+ALTER TABLE public.KEYCLOAK_GROUP ALTER COLUMN  PARENT_GROUP SET NOT NULL;
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.1-KEYCLOAK-12579-add-not-null-constraint', 'keycloak', 'META-INF/jpa-changelog-9.0.1.xml', NOW(), 86, '7:0a211980d27fafe3ff50d19a3a29b538', 'addNotNullConstraint columnName=PARENT_GROUP, tableName=KEYCLOAK_GROUP', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.1.xml::9.0.1-KEYCLOAK-12579-recreate-constraints::keycloak
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.1-KEYCLOAK-12579-recreate-constraints', 'keycloak', 'META-INF/jpa-changelog-9.0.1.xml', NOW(), 87, '7:a161e2ae671a9020fff61e996a207377', 'addUniqueConstraint constraintName=SIBLING_NAMES, tableName=KEYCLOAK_GROUP', '', 'MARK_RAN', NULL, NULL, '3.5.4', '8303936484');
+
+-- Changeset META-INF/jpa-changelog-9.0.1.xml::9.0.1-add-index-to-events::keycloak
+CREATE INDEX IDX_EVENT_TIME ON public.EVENT_ENTITY(REALM_ID, EVENT_TIME);
+
+INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('9.0.1-add-index-to-events', 'keycloak', 'META-INF/jpa-changelog-9.0.1.xml', NOW(), 88, '7:01c49302201bdf815b0a18d1f98a55dc', 'createIndex indexName=IDX_EVENT_TIME, tableName=EVENT_ENTITY', '', 'EXECUTED', NULL, NULL, '3.5.4', '8303936484');
+
