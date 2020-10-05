@@ -91,25 +91,27 @@ docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
 ```
 *Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
 
-In order to use these credentials on Openshift...
+In order to use these credentials on Openshift, make a secret using the following command:
 
-Since you've already logged in (that's right, don't skip the steps above, they're important!), you'll find a file with an authorization token here:
+```bash
+oc create secret docker-registry <pull-secret-name> \
+    --docker-server=artifacts.developer.gov.bc.ca \
+    --docker-username=<username> \
+    --docker-password=<password> \
+    --docker-email=<username>@<namespace>.local
+```
 
-`cat ~/.docker/config.json`
+Now you can add your pull secret to your deployment config, like this:
 
-and you output will look something like this: 
-
-`{
-    "auths": {
-        "https://index.docker.io/v1/": {
-            "auth": "c3R...zE2"
-        }
-    }
-}`
-
-
-oc create secret docker-registry test-devops-artifactory-oiucsw-pull-secret \
-    --docker-server=artifacts.apps.klab.devops.gov.bc.ca \
-    --docker-username=test-devops-artifactory-oiucsw \
-    --docker-password=abcde \
-    --docker-email=test-devops-artifactory-oiucsw@devops-artifactory.local
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <pod-name>
+spec:
+  containers:
+  - name: <container-name>
+    image: <your-private-image>
+  imagePullSecrets:
+  - name: <pull-secret-name>
+```
