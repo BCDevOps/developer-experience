@@ -21,18 +21,18 @@ Starting on Oct 6th, all dev/test/prod KeyCloak instances are accessible via the
 
 **Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for 6 weeks/two sprints (will be extended longer if needed), which allows product teams to update integrated applications and conduct thorough testing.** As a result, we are expecting to deprecate the pathfinder service name for the following timeline:
 
-#### Dev SSO pathfinder service name deprecated on `Nov 5th`
+#### Dev SSO pathfinder service name deprecated on `Nov 12sh`
 We will be working with product team to start exploring the migration process once the new service name is in place. All of your Dev application integration on KeyCloak should be updated to dev.oidc.gov.bc.ca before the deprecation to avoid service disruption.
 
 Once you have successfully migrated SSO integration in Dev environment, proceed to Test and Production. Do not wait for the last day before service deprecation. _1 week_ of time are set aside for product teams to finial check for Test environment SSO usage and complete migration.
 
 
-#### Test SSO pathfinder service name deprecated on `Nov 12sh`
+#### Test SSO pathfinder service name deprecated on `Nov 19th`
 Product teams should schedule to migration Test SSO integration before this date, and test on your migration plan/strategy developed from Dev migration process to get prepared for Production migration.
 
 
-#### Production SSO pathfinder service name deprecated on`Nov 19th`
-_Please contact us immediately if your application will require longer support of sso.pathfinder.gov.bc.ca._ If we have not received any request by the end of _Nov 12sh_, production pathfinder SSO service will be stopped as scheduled.
+#### Production SSO pathfinder service name deprecated on`Nov 26th`
+_Please contact us immediately if your application will require longer support of sso.pathfinder.gov.bc.ca._ If we have not received any request by the end of _Nov 19th_, production pathfinder SSO service will be stopped as scheduled.
 
 
 ### Will there be an impact on the Platform apps?
@@ -58,17 +58,17 @@ Once you have validated that both pathfinder and the new oidc SSO services are w
     - etc.
 
 ### BC Services Card Migration:
-Connect with Wesley (BCSC tech lead) to update your BCSC integration to use the new service name.
+Connect with Wesley Gilbert (BCSC Integration Architect; **Wesley.Gilbert@gov.bc.ca**) to update your BCSC integration to use the new service name.
 
-1. login to KeyCloak console with the new service name for all three environments
+1. Login to KeyCloak console with the new service name for all three KeyCloak environments
 2. Check the list of integrated Identity Providers
-3. Provide the following information to Wesley at **Wesley.Gilbert@gov.bc.ca**
+3. Provide the following information to Wesley
   - KeyCloak realm ID and display name
-  - environments integrated
-  - IDP redirect URI per environment (which should have the format `https://oidc.gov.bc.ca/auth/realms/<realm_name>/broker/bcsc/endpoint`)
-4. Prepare your application (test in dev/test namespace) to be able to update SSO configuration and redeploy
-5. Wesley will then connect with you to update BCSC configurations, and immediately you should be able to redeploy your application and test out
-6. Schedule on Production service maintenance window and update in prod integration
+  - Application Environments integrated
+  - IDP redirect URI per environment (which should have the format `https://*.oidc.gov.bc.ca/auth/realms/<realm_name>/broker/bcsc/endpoint`)
+4. Prepare any application changes and updated SSO configuration in preparation of re-deploying
+5. Notify/schedule with Wesley when you re-deploy and he will update the BCSC configurations at the same time. Post deployment, immediately you should be able to test out for non-Production environments.
+6. Schedule with Wesley a Production service maintenance window to do the same. Update both the SSO configuration and BCSC integration and testing of production application login.
 
 
 ### Where do I get help if my app doesn't work after the change is complete?
