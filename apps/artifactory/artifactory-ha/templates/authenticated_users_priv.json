@@ -1,8 +1,6 @@
 {
   "name": "authenticated_users",
   "repo": {
-     "include-patterns": ["**"],
-     "exclude-patterns": [""],
      "repositories": ["ANY REMOTE"],
      "actions": {
           "groups" : {
