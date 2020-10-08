@@ -129,17 +129,17 @@
       pause:
         seconds: 5
 
-      # make route
-    - name: Make the artifactory's route (processing)
+#      # make route
+#    - name: Make the artifactory's route (processing)
+#      command: >
+#        oc process -f ./templates/route.yaml \
+#            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
+#            URL={{ artifactory_url }}
+#      register: route_processed
+#    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
+    - name: Make artifactory's route
       command: >
-        oc process -f ./templates/route.yaml \
-            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
-            URL={{ artifactory_url }}
-      register: route_processed
-    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
-    - name: Make the artifactory's route (apply)
-      command: >
-        oc apply -f ./processed/route.json
+        oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/tls.crt --key=licenses/tls.key --ca-cert=licenses/ca.crt --hostname={{ artifactory_url }}
 
     - name: Check deployment status for artifactory
       uri:
