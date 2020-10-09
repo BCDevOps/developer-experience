@@ -3,6 +3,7 @@
   connection:   local
   gather_facts: no
   tasks:
+
   - name: deploy CRDs
     k8s:
       state: "{{ state | default('present') }}"
@@ -36,6 +37,6 @@
 
   - name: deploy Project RoleBindings
     command: >
-      oc adm policy add-role-to-user artifactory-operator system:serviceaccount:{{ item.namespace }}:{{ item.serviceaccount }} --role-namespace={{ item.namespace }}
+      oc adm policy add-role-to-user artifactory-operator system:serviceaccount:{{ item.namespace }}:{{ item.serviceaccount }} --role-namespace={{ namespace }} -n {{ namespace }}
     with_items:
       - { namespace: "{{ namespace }}", serviceaccount: "{{ svcAcct }}" }
