@@ -33,3 +33,10 @@
     k8s:
       state: "{{ state | default('present') }}"
       definition:  "{{ lookup('template', '../config/rbac/r-artifactory-operator.yaml.j2') }}"
+
+  - name: deploy Project RoleBindings
+    command: >
+      oc adm policy add-role-to-user artifactory-operator system:serviceaccount:{{ item.namespace }}:{{ item.serviceaccount }} --role-namespace={{ item.namespace }}
+    with_items:
+      - { namespace: "{{ namespace }}", serviceaccount: "{{ svcAcct }}" }
+      - { namespace: "openshift", serviceaccount: "bcdevops-admin" }

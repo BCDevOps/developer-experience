@@ -3,10 +3,7 @@
   connection:   local
   gather_facts: no
   tasks:
-#  - name: deploy Project RoleBindings
-#    k8s:
-#      state: "{{ state | default('present') }}"
-#      definition: "{{ lookup('template', '../config/rbac/rb-artifactory-operator.yaml.j2') }}"
+
 #
 ##  - name: create buildConfig? or run local build/push of image?
 #
@@ -14,16 +11,18 @@
 #    k8s:
 #      state: "{{ state | default('present') }}"
 #      definition: "{{ lookup('template', '../config/manager/d-artifactory-operator.yaml.j2') }}"
+#
+# --as="system:serviceaccount:openshift:bcdevops-admin"
 
   - set_fact:
 #      role_template:  "{{ lookup('template', '../config/rbac/r-artifactory-operator.yaml.j2') }}"
-      rolebinding_template: "{{ lookup('template', '../config/rbac/rb-artifactory-operator.yaml.j2') }}"
+#      rolebinding_template: "{{ lookup('template', '../config/rbac/rb-artifactory-operator.yaml.j2') }}"
       operator_template: "{{ lookup('template', '../config/manager/d-artifactory-operator.yaml.j2') }}"
 
 #  - shell: >
-#      echo "{{ role_template }}" | oc --as="system:serviceaccount:openshift:bcdevops-admin" apply -f -
+#      echo "{{ role_template }}" | oc  apply -f -
+#  - shell: >
+#      echo "{{ rolebinding_template }}" | oc apply -f -
   - shell: >
-      echo "{{ rolebinding_template }}" | oc --as="system:serviceaccount:openshift:bcdevops-admin" apply -f -
-  - shell: >
-      echo "{{ operator_template }}" | oc --as="system:serviceaccount:openshift:bcdevops-admin" apply -f -
+      echo "{{ operator_template }}" | oc apply -f -
 
