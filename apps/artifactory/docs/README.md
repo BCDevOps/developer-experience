@@ -12,7 +12,53 @@ You can also find fuller details about your service account by running the comma
 
 Following are some examples of how to pull artifacts from caching repositories:
 
-*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions (`test-devops-artifactory-gjafwu` in this case) is already assigned.
+*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
+
+#### Docker
+
+Login to the registry
+
+```bash
+docker login -u <USER_NAME> -p <USER_PASSWORD> <REPO_NAME>.artifacts.developer.gov.bc.ca
+```
+
+Example of our DockerHub caching repo looks like this:
+
+```bash
+docker login -u <USER_NAME> -p <USER_PASSWORD> docker-remote.artifacts.developer.gov.bc.ca
+```
+
+Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
+
+```bash
+docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
+```
+*Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
+
+In order to use these credentials on Openshift, make a secret using the following command:
+
+```bash
+oc create secret docker-registry <pull-secret-name> \
+    --docker-server=artifacts.developer.gov.bc.ca \
+    --docker-username=<username> \
+    --docker-password=<password> \
+    --docker-email=<username>@<namespace>.local
+```
+
+Now you can add your pull secret to your deployment config, like this:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <pod-name>
+spec:
+  containers:
+  - name: <container-name>
+    image: <your-private-image>
+  imagePullSecrets:
+  - name: <pull-secret-name>
+```
 
 #### NPM
 
@@ -20,7 +66,7 @@ For this guide, we will use a repository in Artifactory called `npm-remote` whic
 
 Steps:
 
-Set npm registry
+Set npm registry -
 
 ```bash
 $ npm config set registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
@@ -30,10 +76,9 @@ Authenticate to the registry
 
 ```bash
 $ npm login
-Username: test-devops-artifactory-gjafwu
+Username: <username>
 Password:
-Email: (this IS public) test-devops-artifactory-gjafwu@artifactory.local
-Logged in as test-devops-artifactory-gjafwu on https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/.
+Email: <username>@<namespace>.local
 ```
 
 Once the authentication is complete, you can now pull artifacts from this registry
@@ -76,42 +121,4 @@ To deploy build artifacts through Artifactory you need to add a deployment eleme
 
 ```
 
-#### Docker
 
-Login to the registry
-
-```bash
-docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.developer.gov.bc.ca:443
-```
-
-Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
-
-```bash
-docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
-```
-*Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
-
-In order to use these credentials on Openshift, make a secret using the following command:
-
-```bash
-oc create secret docker-registry <pull-secret-name> \
-    --docker-server=artifacts.developer.gov.bc.ca \
-    --docker-username=<username> \
-    --docker-password=<password> \
-    --docker-email=<username>@<namespace>.local
-```
-
-Now you can add your pull secret to your deployment config, like this:
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: <pod-name>
-spec:
-  containers:
-  - name: <container-name>
-    image: <your-private-image>
-  imagePullSecrets:
-  - name: <pull-secret-name>
-```
