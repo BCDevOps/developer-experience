@@ -98,6 +98,7 @@
                                              -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
                                              -p IMAGE_REGISTRY={{ image_registry }} \
                                              -p STORAGE_CLASS={{ db_storage_class }} \
+                                             -p PVC_SIZE={{ db_storage_size }} \
                                              -p REPLICAS={{ db_replica_count }} \
                                              -p SUFFIX=-001
       register: patroni_statefulset_processed
