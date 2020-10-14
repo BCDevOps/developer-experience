@@ -110,9 +110,6 @@
       register: patroni_password
       when: patroni_secret_create.failed
 
-    - debug:
-        var: patroni_password
-
     - name: Save password.
       set_fact:
         db_password: "{{ patroni_password.stdout }}"
@@ -158,17 +155,15 @@
       pause:
         seconds: 5
 
-#      # make route
-#    - name: Make the artifactory's route (processing)
-#      command: >
-#        oc process -f ./templates/route.yaml \
-#            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
-#            URL={{ artifactory_url }}
-#      register: route_processed
-#    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
     - name: Make artifactory's route
       command: >
         oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/tls.crt --key=licenses/tls.key --ca-cert=licenses/ca.crt --hostname={{ artifactory_url }}
+      when: ssl
+
+    - name: Make artifactory's route
+      command: >
+        oc create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }}
+      when: not ssl
 
       # make secret
     - name: Make the admin secret (processing)

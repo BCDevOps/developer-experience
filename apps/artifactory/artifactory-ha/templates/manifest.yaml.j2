@@ -5221,7 +5221,7 @@ spec:
   - metadata:
       annotations:
         volume.beta.kubernetes.io/storage-class: "{{ artifactory_data_storage_class }}"
-      name: volume
+      name: data-volume
     spec:
       storageClassName: "{{ artifactory_data_storage_class }}"
       accessModes: [ "ReadWriteOnce" ]
