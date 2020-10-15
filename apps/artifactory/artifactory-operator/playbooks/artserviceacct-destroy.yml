@@ -17,7 +17,7 @@
 
     - name: Set calculated variables
       set_fact:
-        artifactory_url: "{{ test_url | default('http://artifactory.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
+        artifactory_url: "{{ test_url | default('http://artifactory-ha.{{ artifactory_namespace }}.svc.cluster.local:8081') }}"
         service_account_name: "{{ sa_name  | default('MISSING_SA') }}"
 
     - name: Delete artifactory user

@@ -38,7 +38,7 @@ ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
 ansible-playbook install/operatorDeploy.yml -i install/${Inventory File}
 ```
 
-## Cleanup
+## Cleanup!
 
 - Find all existing CR's
 
