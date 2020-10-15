@@ -157,7 +157,7 @@
 
     - name: Make artifactory's route
       command: >
-        oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/tls.crt --key=licenses/tls.key --ca-cert=licenses/ca.crt --hostname={{ artifactory_url }}
+        oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/artifactory/tls.crt --key=licenses/artifactory/tls.key --ca-cert=licenses/artifactory/ca.crt --hostname={{ artifactory_url }}
       when: ssl
 
     - name: Make artifactory's route
@@ -331,6 +331,18 @@
         status_code: 200
         validate_certs: no
       ignore_errors: yes
+
+    - name: Make docker routes
+      command: >
+        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --cert=licenses/wildcard/tls.crt --key=licenses/wildcard/tls.key --ca-cert=licenses/wildcard/ca.crt --hostname={{ item }}.{{ artifactory_url }}  --port=artifactory
+      loop: "{{ docker_list }}"
+      when: ssl
+
+    - name: Make docker routes
+      command: >
+        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --hostname={{ item }}.{{ artifactory_url }} --port=artifactory
+      loop: "{{ docker_list }}"
+      when: not ssl
 
     # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
     # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.

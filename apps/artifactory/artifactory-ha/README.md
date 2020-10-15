@@ -65,7 +65,7 @@ Any separate installation of Artifactory currently requires its own SSO client o
 * `Client Authenticator` should say `Client Id and Secret`. If it doesn't, change that. 
 * Copy the `Secret` and paste both it and the client ID into your `vars-local.yaml` file into the appropriate variables under the Keycloak section.
 
-### d. Artifactory Licenses and Certs
+### d. Artifactory Licenses
 
 * In the same folder as this file, create a local directory called "licenses". This directory is already in .gitignore
 * In that folder, you will need to create a new file (or set of files) with license keys for your new Artifactory installation.
@@ -87,10 +87,18 @@ The license file must be formatted like this:
 
 The licenseKeys must be on a single line. Any line breaks should be represented by a `\n` character. Many IDEs will allow you to find/replace the linebreak, making conversion much easier.
 
-You must also add the appropriate certificates for the installation to the "licenses" directory, with the following names:
-* ca.crt
-* tls.crt
-* key.crt
+### d. Artifactory Certificates
+
+In addition, you must also add two sets of SSL certificates to the licences folder:
+* artifactory/ca.crt
+* artifactory/tls.crt
+* artifactory/key.crt
+* wildcard/ca.crt
+* wildcard/tls.crt
+* wildcard/key.crt
+
+Those in the artifactory folder are for artifacts.developer.gov.bc.ca.
+Those in the wildcard folder are for *.artifacts.developer.gov.bc.ca (for docker subdomains).
 
 ## 1. Installing Artifactory 7
 

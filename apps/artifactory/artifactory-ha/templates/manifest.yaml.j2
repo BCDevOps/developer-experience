@@ -73,7 +73,7 @@ stringData:
     
         <!-- Set max cache-fs size -->
         <provider id="cache-fs" type="cache-fs">
-            <maxCacheSize>5e+10</maxCacheSize>
+            <maxCacheSize>45000000000</maxCacheSize>
             <cacheProviderDir>/var/opt/jfrog/cache</cacheProviderDir>
         </provider>
     
@@ -4803,7 +4803,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4855,7 +4855,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4922,7 +4922,7 @@ spec:
           timeoutSeconds: 10
           failureThreshold: 10
           successThreshold: 1
-      
+
       volumes:
       - name: binarystore-xml
         secret:
@@ -5070,7 +5070,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         resources:
           limits:
@@ -5122,7 +5122,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
