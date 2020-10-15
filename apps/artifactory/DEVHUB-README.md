@@ -10,7 +10,10 @@ You can also find fuller details about your service account by running the comma
 
 ### Pulling Artifacts from caching repositories
 
-Following are some examples of how to pull artifacts from caching repositories:
+The following sections provide some examples for how to pull artifacts through our caching/remote repositories.
+You do not need to do anything special to cache the object in Artifactory - pulling the artifact will do this automatically. 
+If you are pulling the artifact for the first time, it will take a little extra time in order to cache the object in Artifactory.
+After that, pulling the artifact (especially onto a pod on the cluster) should be *much* faster than pulling the image from the internet!
 
 *Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
 
@@ -31,9 +34,9 @@ docker login -u <USER_NAME> -p <USER_PASSWORD> docker-remote.artifacts.developer
 Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
 
 ```bash
-docker pull artifacts.developer.gov.bc.ca:443/<REPOSITORY_KEY>/<IMAGE>:<TAG>
+docker pull <REPO_NAME>.artifacts.developer.gov.bc.ca/<IMAGE>:<TAG>
 ```
-*Note*: `REPOSITORY_KEY` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory
+*Note*: `REPO_NAME` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory.
 
 In order to use these credentials on Openshift, make a secret using the following command:
 
