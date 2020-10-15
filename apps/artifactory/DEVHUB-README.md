@@ -1,14 +1,15 @@
 
 # Artifact Repositories
 
-- Description of on-prem artifact repositories, the why and what.
+Artifactory is an Artifact Repository system. It serves two primary purposes:
 
-## Using Caching Repositories
+1. It provides caching of artifacts that you would normally pull from a public repository on the internet, allowing faster builds and deployments, as well as more robust security surrounding these public objects.
+2. It provides a private space for your team to upload your own artifacts for production purposes.
 
 To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format `[acct-name]-[namespace-name]-[license-plate]`.
 You can also find fuller details about your service account by running the command `oc describe artsvcacct [acct-name]`.
 
-### Pulling Artifacts from caching repositories
+## Using Caching Repositories
 
 The following sections provide some examples for how to pull artifacts through our caching/remote repositories.
 You do not need to do anything special to cache the object in Artifactory - pulling the artifact will do this automatically. 
@@ -17,7 +18,7 @@ After that, pulling the artifact (especially onto a pod on the cluster) should b
 
 *Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
 
-#### Docker
+### Docker
 
 Login to the registry
 
@@ -63,7 +64,7 @@ spec:
   - name: <pull-secret-name>
 ```
 
-#### NPM
+### NPM
 
 For this guide, we will use a repository in Artifactory called `npm-remote` which is pointing to the remote npm repository `https://registry.npmjs.org`.
 
@@ -102,7 +103,7 @@ npm ERR! 403 In most cases, you or one of your dependencies are requesting
 npm ERR! 403 a package version that is forbidden by your security policy.
 ```
 
-#### Maven
+### Maven
 
 To deploy build artifacts through Artifactory you need to add a deployment element with the URL of a target local repository to which you want to deploy your artifacts. Following is an example snippet
 
@@ -122,7 +123,7 @@ To deploy build artifacts through Artifactory you need to add a deployment eleme
 </distributionManagement>
 ```
 
-#### Other Repo Types
+### Other Repo Types
 
 There are tons of other repository types available on Artifactory! 
 You can browse through them by logging onto artifacts.developer.gov.bc.ca (click the SSO symbol to use either Github or IDIR to log in) and use the UI to see what is available!
