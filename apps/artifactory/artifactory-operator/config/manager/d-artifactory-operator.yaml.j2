@@ -31,6 +31,13 @@ spec:
           - mountPath: /tmp/ansible-operator/cert/
             name: artifactory-cert
             readOnly: true
+          resources:
+            limits:
+              cpu: '1'
+              memory: 3Gi
+            requests:
+              cpu: 50m
+              memory: 256Mi
           env:
             - name: ARTIFACTORY_BASE_DNS
               value: {{ ARTIFACTORY_BASE_DNS }}
