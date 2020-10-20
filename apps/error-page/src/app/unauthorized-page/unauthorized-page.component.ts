@@ -15,7 +15,7 @@ export class UnauthorizedPageComponent implements OnInit {
     })();
   }
   playAudio() {
-    let audio = new Audio();
+    const audio = new Audio();
     audio.src = '../../assets/err-page.mp3';
     audio.load();
     audio.play();
