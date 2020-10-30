@@ -4855,7 +4855,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
