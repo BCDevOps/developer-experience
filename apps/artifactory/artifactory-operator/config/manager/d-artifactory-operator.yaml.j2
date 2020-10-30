@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ DEPLOY_NAME }}
+  namespace: {{ namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: {{ DEPLOY_NAME }}
+  template:
+    metadata:
+      labels:
+        name: {{ DEPLOY_NAME }}
+    spec:
+      serviceAccountName: {{ svcAcct }}
+      containers:
+        - name: {{ DEPLOY_NAME }}
+          # Replace this with the built image name
+          image: {{ IMAGE_REGISTRY }}/{{ IMAGE }}:{{ IMAGE_TAG }}
+          imagePullPolicy: "Always"
+          args:
+            - "--enable-leader-election"
+            - "--leader-election-id=artifactory-operator"
+          volumeMounts:
+          - mountPath: /tmp/ansible-operator/runner
+            name: runner
+          - mountPath: /tmp/ansible-operator/admin/
+            name: artifactory-secret
+            readOnly: true
+          - mountPath: /tmp/ansible-operator/cert/
+            name: artifactory-cert
+            readOnly: true
+          resources:
+            limits:
+              cpu: '1'
+              memory: 3Gi
+            requests:
+              cpu: 50m
+              memory: 256Mi
+          env:
+            - name: ARTIFACTORY_BASE_DNS
+              value: {{ ARTIFACTORY_BASE_DNS }}
+            - name: ARTIFACTORY_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: WATCH_NAMESPACE
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: {{ DEPLOY_NAME }}
+            - name: ANSIBLE_DEBUG_LOGS
+              value: "True"
+      volumes:
+        - name: runner
+          emptyDir: {}
+        - name: artifactory-secret
+          secret:
+            secretName: {{ secretName }}
+        - name: artifactory-cert
+          secret:
+            secretName: {{ dockerSecretName }}
