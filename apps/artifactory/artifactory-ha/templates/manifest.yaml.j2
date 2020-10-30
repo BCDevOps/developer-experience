@@ -4803,7 +4803,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -5070,7 +5070,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         resources:
           limits:
@@ -5122,7 +5122,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: 'artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
