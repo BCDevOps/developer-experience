@@ -157,7 +157,7 @@
 
     - name: Make artifactory's route
       command: >
-        oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/artifactory/tls.crt --key=licenses/artifactory/tls.key --ca-cert=licenses/artifactory/ca.crt --hostname={{ artifactory_url }}
+        oc create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }}
       when: ssl
 
     - name: Make artifactory's route
@@ -248,7 +248,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ artifactory_licenses }}"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
         force_basic_auth: yes
         validate_certs: no
         status_code: 200,400
@@ -334,7 +334,7 @@
 
     - name: Make docker routes
       command: >
-        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --cert=licenses/wildcard/tls.crt --key=licenses/wildcard/tls.key --ca-cert=licenses/wildcard/ca.crt --hostname={{ item }}.{{ artifactory_url }}  --port=artifactory
+        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item }}.{{ artifactory_url }}  --port=artifactory
       loop: "{{ docker_list }}"
       when: ssl
 

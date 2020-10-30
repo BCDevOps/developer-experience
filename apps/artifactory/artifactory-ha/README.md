@@ -67,10 +67,10 @@ Any separate installation of Artifactory currently requires its own SSO client o
 
 ### d. Artifactory Licenses
 
-* In the same folder as this file, create a local directory called "licenses". This directory is already in .gitignore
+* Somewhere not in this git folder, create a folder where you plan to keep the secrets. You can use `~/artifactory-secrets` or something else.
 * In that folder, you will need to create a new file (or set of files) with license keys for your new Artifactory installation.
    * 1 license key is required per node in your installation, so keep that in mind.
-* Once you have created the file, edit your `vars-local.yaml` file to put the filename into the lookup for the variable `artifactory_licenses` in the Artifactory section.
+* Once you have created the file, edit your `vars-local.yaml` file to put the filename and folder into the `folder` and `artifactory_license_filename` variables.
 
 The license file must be formatted like this:
 
@@ -89,7 +89,7 @@ The licenseKeys must be on a single line. Any line breaks should be represented 
 
 ### d. Artifactory Certificates
 
-In addition, you must also add two sets of SSL certificates to the licences folder:
+In addition, you must also add two sets of SSL certificates to the artifactory-secrets folder:
 * artifactory/ca.crt
 * artifactory/tls.crt
 * artifactory/key.crt
