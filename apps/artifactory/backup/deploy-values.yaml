@@ -1,0 +1,29 @@
+image:
+  repository: image-registry.openshift-image-registry.svc:5000/devops-artifactory/backup-postgres
+  pullPolicy: Always
+  tag: latest
+
+persistence:
+  backup:
+    size: 5Gi
+    storageClassName: netapp-file-backup
+  verification:
+    size: 5Gi
+
+db:
+  secretName: patroni-001
+  usernameKey: superuser-username
+  passwordKey: superuser-password
+
+env:
+  DATABASE_SERVICE_NAME:
+    value: patroni-master-001
+  ENVIRONMENT_FRIENDLY_NAME:
+    value: "Artifactory DB Backups"
+  ENVIRONMENT_NAME:
+    value: "klab"
+
+backupConfig: |
+  postgres=patroni-master-001:5432/artifactory
+  0 1 * * * default ./backup.sh -s
+  0 4 * * * default ./backup.sh -s -v all
