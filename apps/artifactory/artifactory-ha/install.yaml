@@ -336,6 +336,21 @@
         validate_certs: no
       ignore_errors: yes
 
+    - name: Update HTTP settings
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/webServer"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', 'templates/http_settings.json') }}"
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
     # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
     # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.
     #
