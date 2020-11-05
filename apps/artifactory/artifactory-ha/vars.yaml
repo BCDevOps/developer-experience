@@ -1,10 +1,14 @@
 # Do you want to build a fresh image of Postgres for your patroni installation?
 # This needs to be set to true the first time you run an installation on a new namespace.
-build: true
+build: false
 
 # Do you need to build the NetworkSecurityPolicy or no?
 # This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
 nsp: true
+
+# Do you need to include SSL certificates or no?
+# This is probably set to true for Silver, and false for the labs.
+ssl: true
 
 # The first registry is for OCP4, the second is for OCP3.
 image_registry: "image-registry.openshift-image-registry.svc:5000"
@@ -17,7 +21,7 @@ image_registry: "image-registry.openshift-image-registry.svc:5000"
 ####################################################
 
 artifactory_instance_name: "artifactory-ha"
-artifactory_version: 7.4.3
+artifactory_version: 7.7.3
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
 # Pick the right URL for the cluster.
@@ -25,8 +29,8 @@ artifactory_password: "{{ lookup('password', './processed/artifactory-admin-pass
 #artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
-#artifactory_url: 'artifacts-test.pathfinder.gov.bc.ca'
-artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
+#artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
+artifactory_url: 'artifacts.developer.gov.bc.ca'
 
 # Which namespace are you installing into?
 project_name: 'devops-artifactory'
@@ -36,15 +40,17 @@ artifactory_replica_count: 1
 
 # netapp-file-standard is better, probably, but broken on KLAB.
 artifactory_storage_class: netapp-block-standard
+artifactory_data_storage_class: netapp-file-standard
 
 # These are not secret, so it's fine if they get uploaded to github.
 # A new installation requires a new master key and join key. See the README for how to generate new ones.
-master_key: 750bdcdb19db56a852ef49cf79f2114f951feacaa6c85d81a12fba237ac99266
-join_key: 2ff3acea396c8e04c9bb474b0dd7a1098c481d1dca9808b1a26554f3ab1ec7f1
+master_key: d98ebf32c64ecb78f7f68cc4e51af5378dcacec145a28a1f0a33e0c06b8ca465
+join_key: cc6b2fb31cd7ce734ae8e79bedc7102c2b5aa908cd0dce0f44326179bd77f395
 
-# Lookup for a file with the license keys for this installation.
+# Filename and location for the license file
 # See the README for more details on the file location and formatting.
-artifactory_licenses: "{{ lookup('file', 'licenses/artifactory.lab.lic') }}"
+folder: "~/artifactory-secrets" #DO NOT include a slash at the end of this path!
+artifactory_license_file: "artifactory.lic"
 
 # These are the requests/limits for the artifactory installation.
 # The primary and all members will each get the same requests/limits.
@@ -52,7 +58,8 @@ cpu_limit: "2"
 memory_limit: "3Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
-storage_size: "10Gi"
+storage_size: "5Gi"
+data_storage_size: "50Gi"
 
 
 
@@ -64,6 +71,7 @@ db_password: "{{ lookup('password', './processed/db-password.txt length=30 chars
 
 db_url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
 db_storage_class: netapp-block-standard
+db_storage_size: 5Gi
 
 # This is the total number of replicas in the Patroni statefulset. Don't set this below 1.
 db_replica_count: 2
@@ -80,7 +88,7 @@ db_version: 11
 # The Client ID name and secret for this installation.
 # See the README for more details.
 sso_id: "artifactory-oauth"
-sso_secret: "xxxxxxxxxxxx"
+sso_secret: "xxxxxxxxxxx"
 
 
 
@@ -96,7 +104,7 @@ s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
 
 # This is the username and secret of the object user you created in section 0b of the README.
 s3_identity: "artifactory-user"
-s3_password: "xxxxxxxxxxxxxxxx"
+s3_password: "xxxxxxxxxxxxx"
 
 
 
@@ -128,3 +136,13 @@ repo_list:
   - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://pypi.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
   - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker'}
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io/', pkg_type: 'docker'}
+
+
+####################################################
+#                DOCKER REPOSITORIES               #
+####################################################
+
+docker_list:
+  - 'docker-remote'
+  - 'redhat-docker-remote'
