@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 require('dotenv').config();
 const fs = require('fs-extra');
-const Octokit = require('@octokit/rest');
+const { Octokit } = require('@octokit/rest');
 
-const octokit = Octokit({
+const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
@@ -11,7 +11,7 @@ const octokit = Octokit({
  * Verify the current login session
  * @param {String} org org of the issue
  */
-const verifyAuth = async org => {
+const verifyAuth = async (org) => {
   try {
     console.log('------starting-------');
     const session = await octokit.users.getAuthenticated();
@@ -34,7 +34,7 @@ const verifyAuth = async org => {
  */
 const checkUserEvents = async (username, expiryDate) => {
   try {
-    const userInfo = await octokit.activity.listEventsForUser({
+    const userInfo = await octokit.activity.listEventsForAuthenticatedUser({
       username,
     });
 
@@ -67,17 +67,11 @@ const checkUserEvents = async (username, expiryDate) => {
  */
 const getOpsTeam = async (org, teamName) => {
   try {
-    const teamInfo = await octokit.teams.getByName({
+    const teamMembers = await octokit.teams.listMembersInOrg({
       org,
       team_slug: teamName,
     });
-
-    const teamId = teamInfo.data.id;
-    const teamMembers = await octokit.teams.listMembers({
-      team_id: teamId,
-    });
-
-    return teamMembers.data.map(user => user.login);
+    return teamMembers.data.map((user) => user.login);
   } catch (err) {
     throw err;
   }
@@ -133,13 +127,32 @@ const getReactions = async (owner, repo, issueNumber) => {
       repo,
       issue_number: issueNumber,
     });
-    return comments.data.map(c => c.user.login);
+    return comments.data.map((c) => c.user.login);
   } catch (err) {
     throw err;
   }
 };
 
-const getAllInactiveUsers = async (org, file) => {
+/**
+ * Add users to repo as collaborator
+ * @param {String} org org of the issue
+ * @param {String} repo repo of the issue
+ * @param {String} username user to add
+ */
+const addRepoCollaborator = async (repo, username, org) => {
+  try {
+    await octokit.repos.addCollaborator({
+      owner: org,
+      repo: repo,
+      username,
+      permission: 'triage',
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const getAllInactiveUsers = async (org, file, addCollaborator = false) => {
   try {
     // TODO: Get users without 2FA:
 
@@ -151,12 +164,26 @@ const getAllInactiveUsers = async (org, file) => {
 
     // filter out the OPS team members:
     const opsTeamMember = await getOpsTeam(org, process.env.OPS_TEAM_NAME);
-    const targetUsers = result.inactiveUsers.filter(user => !opsTeamMember.includes(user));
+    const targetUsers = result.inactiveUsers.filter((user) => !opsTeamMember.includes(user));
 
     console.log(
       `------Total user count in org ${org} is ${result.totalUser}, there are ${result.inactiveUser} inactive users.------`,
     );
     await fs.outputFile(file, targetUsers);
+
+    // adding users as Collaborator to notification repo:
+    if (addCollaborator && process.env.BCDEVOPS_ISSUE_REPO && process.env.BCDEVOPS_ISSUE_OWNER) {
+      console.log(
+        `Adding users as Collaborator to notification repo ${process.env.BCDEVOPS_ISSUE_REPO}@${process.env.BCDEVOPS_ISSUE_OWNER}`,
+      );
+      targetUsers.forEach(async (u) => {
+        await addRepoCollaborator(
+          process.env.BCDEVOPS_ISSUE_REPO,
+          u,
+          process.env.BCDEVOPS_ISSUE_OWNER,
+        );
+      });
+    }
 
     // get the users that have not yet replied to the ticket:
     if (
@@ -169,7 +196,7 @@ const getAllInactiveUsers = async (org, file) => {
         process.env.BCDEVOPS_ISSUE_REPO,
         process.env.BCDEVOPS_ISSUE_ID,
       );
-      const deleteUsers = targetUsers.filter(user => !repliedUsers.includes(user));
+      const deleteUsers = targetUsers.filter((user) => !repliedUsers.includes(user));
 
       console.log('The users that have replied:');
       console.log(repliedUsers);
@@ -193,7 +220,7 @@ const addUserToOrg = async (userId, org) => {
   }
 };
 
-const checkUserExist = async userId => {
+const checkUserExist = async (userId) => {
   try {
     // check if user exists
     const user = await octokit.users.getByUsername({
@@ -206,7 +233,7 @@ const checkUserExist = async userId => {
   }
 };
 
-const detectUserMembership = async (userId, org) => {
+const detectUserMembership = async (userId, org, autoInvite = false) => {
   try {
     // check if user in org
     const membership = await octokit.orgs.checkMembership({
@@ -218,29 +245,67 @@ const detectUserMembership = async (userId, org) => {
     }
   } catch (err) {
     // if not, add user
-    if (err.status === 404) {
+    console.log(`user ${userId} not in org yet`);
+
+    if (err.status === 404 && autoInvite) {
       await addUserToOrg(userId, org);
     }
   }
 };
 
-const inviteUsersToOrg = async (input, org) => {
+const inviteUsersToOrg = async (inputFile, org, autoInvite = false) => {
   try {
     // read from the username list:
     const input = await fs.readFile(inputFile);
     const users = input.toString().split('\n');
 
     // if user exists, check membership, and invite
-    users.forEach(async i => {
+    users.forEach(async (i) => {
       const exist = await checkUserExist(i);
       if (exist) {
-        await detectUserMembership(i, org);
+        await detectUserMembership(i, org, autoInvite);
       } else {
         console.warn(`-------------------User ${i} doesn't exist-----------`);
       }
     });
   } catch (err) {
     console.error(err);
+  }
+};
+
+const createRepo = async (repo, adminUser, org, expiryDate = null) => {
+  try {
+    const repo = await octokit.repos.createInOrg({
+      org,
+      name: repo,
+      private: true,
+      auto_init: true,
+    });
+
+    // console.info(repo);
+
+    const user = await octokit.repos.addCollaborator({
+      owner: org,
+      repo: repo,
+      username: adminUser,
+      permission: 'admin',
+    });
+
+    // console.info(user);
+
+    // Only private repo have expiry date:
+    if (expiryDate) {
+      const expiry = await octokit.repos.replaceTopics({
+        owner: org,
+        repo: repo,
+        names: [expiryDate],
+      });
+    }
+
+    return 0;
+  } catch (err) {
+    console.log(err);
+    return 0;
   }
 };
 
@@ -251,9 +316,15 @@ const inviteUsersToOrg = async (input, org) => {
   const outputFile = './output/inactive_users.json';
 
   try {
+    // Confirm current login session:
     // await verifyAuth(org);
-    // await getAllInactiveUsers(org, outputFile);
-    // await inviteUsersToOrg(inputFile, org);
+    // check for inactive users:
+    // const addCollaborator = false;
+    // await getAllInactiveUsers(org, outputFile, addCollaborator);
+    // invite new users:
+    // await inviteUsersToOrg(inputFile, org, false);
+    // create new private repo with admin user:
+    // await createRepo('<repo_name>', '<username>', org, '<expiry-MM-YYYY>');
   } catch (err) {
     console.error(err);
   }
