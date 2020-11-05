@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/BCDevOps/openshift-tools#readme",
   "dependencies": {
-    "@octokit/rest": "^16.43.2",
+    "@octokit/rest": "^18.0.9",
     "dotenv": "^8.2.0",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^9.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.12.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^1.19.1"
+    "prettier": "^2.1.2"
   }
 }
