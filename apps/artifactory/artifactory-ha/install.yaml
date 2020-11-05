@@ -27,6 +27,11 @@
         oc apply -f ./processed/nsp.yaml
       when: nsp
 
+      # import artifactory image
+    - name: Import Artifactory image
+      command: >
+        oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
+
       # make patroni build
     - name: Build Patroni image (processing)
       command: >
@@ -110,9 +115,6 @@
       register: patroni_password
       when: patroni_secret_create.failed
 
-    - debug:
-        var: patroni_password
-
     - name: Save password.
       set_fact:
         db_password: "{{ patroni_password.stdout }}"
@@ -126,6 +128,7 @@
                                              -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
                                              -p IMAGE_REGISTRY={{ image_registry }} \
                                              -p STORAGE_CLASS={{ db_storage_class }} \
+                                             -p PVC_SIZE={{ db_storage_size }} \
                                              -p REPLICAS={{ db_replica_count }} \
                                              -p SUFFIX=-001
       register: patroni_statefulset_processed
@@ -157,17 +160,15 @@
       pause:
         seconds: 5
 
-#      # make route
-#    - name: Make the artifactory's route (processing)
-#      command: >
-#        oc process -f ./templates/route.yaml \
-#            ARTIFACTORY_NAME={{ artifactory_instance_name }} \
-#            URL={{ artifactory_url }}
-#      register: route_processed
-#    - copy: content="{{ route_processed.stdout }}" dest=./processed/route.json
     - name: Make artifactory's route
       command: >
-        oc create route edge --service={{ artifactory_instance_name }} --cert=licenses/tls.crt --key=licenses/tls.key --ca-cert=licenses/ca.crt --hostname={{ artifactory_url }}
+        oc create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }}
+      when: ssl
+
+    - name: Make artifactory's route
+      command: >
+        oc create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }}
+      when: not ssl
 
       # make secret
     - name: Make the admin secret (processing)
@@ -252,7 +253,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ artifactory_licenses }}"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
         force_basic_auth: yes
         validate_certs: no
         status_code: 200,400
@@ -336,6 +337,7 @@
         validate_certs: no
       ignore_errors: yes
 
+
     - name: Update HTTP settings
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/webServer"
@@ -350,6 +352,19 @@
         status_code: 200
         validate_certs: no
       ignore_errors: yes
+
+    - name: Make docker routes
+      command: >
+        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item }}.{{ artifactory_url }}  --port=artifactory
+      loop: "{{ docker_list }}"
+      when: ssl
+
+    - name: Make docker routes
+      command: >
+        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --hostname={{ item }}.{{ artifactory_url }} --port=artifactory
+      loop: "{{ docker_list }}"
+      when: not ssl
+
 
     # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
     # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.

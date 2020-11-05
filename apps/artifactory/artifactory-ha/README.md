@@ -65,12 +65,12 @@ Any separate installation of Artifactory currently requires its own SSO client o
 * `Client Authenticator` should say `Client Id and Secret`. If it doesn't, change that. 
 * Copy the `Secret` and paste both it and the client ID into your `vars-local.yaml` file into the appropriate variables under the Keycloak section.
 
-### d. Artifactory Licenses and Certs
+### d. Artifactory Licenses
 
-* In the same folder as this file, create a local directory called "licenses". This directory is already in .gitignore
+* Somewhere not in this git folder, create a folder where you plan to keep the secrets. You can use `~/artifactory-secrets` or something else.
 * In that folder, you will need to create a new file (or set of files) with license keys for your new Artifactory installation.
    * 1 license key is required per node in your installation, so keep that in mind.
-* Once you have created the file, edit your `vars-local.yaml` file to put the filename into the lookup for the variable `artifactory_licenses` in the Artifactory section.
+* Once you have created the file, edit your `vars-local.yaml` file to put the filename and folder into the `folder` and `artifactory_license_filename` variables.
 
 The license file must be formatted like this:
 
@@ -87,16 +87,45 @@ The license file must be formatted like this:
 
 The licenseKeys must be on a single line. Any line breaks should be represented by a `\n` character. Many IDEs will allow you to find/replace the linebreak, making conversion much easier.
 
-You must also add the appropriate certificates for the installation to the "licenses" directory, with the following names:
-* ca.crt
-* tls.crt
-* key.crt
+### d. Artifactory Certificates
+
+In addition, you must also add two sets of SSL certificates to the artifactory-secrets folder:
+* artifactory/ca.crt
+* artifactory/tls.crt
+* artifactory/key.crt
+* wildcard/ca.crt
+* wildcard/tls.crt
+* wildcard/key.crt
+
+Those in the artifactory folder are for artifacts.developer.gov.bc.ca.
+Those in the wildcard folder are for *.artifacts.developer.gov.bc.ca (for docker subdomains).
 
 ## 1. Installing Artifactory 7
 
 1. Login to the correct openshift cluster.
 2. Navigate to the correct project.
 3. Run `ansible-playbook install.yaml`.
+
+## 2. Post Installation Steps
+
+There are just a couple of things that I haven't quite figured out how to do through the API yet, but it's coming!
+
+For now, here's what remains
+
+*Changing the Docker Access Method*
+
+* Log into Artifactory using the admin account
+* Go to the administration panel and, down at the bottom of the menu, under `Services`, click `Artifactory`
+* On the page that comes up, click `HTTP Settings` under `General` (bottom of the first box)
+* Switch `Docker Access Method` from `Repository Path` to `Sub Domain`
+
+*Allow Docker Access Tokens*
+
+* Still on the admin panel, click on `Respositories` and then `Respositories` on the dropdown panel (yeah, it's weird that they have the same name twice)
+* Near the top of the page, click `Remote`
+* Navigate a docker repo and click on the name of the repo
+* Check `Enable Token Authentication` and uncheck `Block pulling of image manifest v2 schema 1`
+* Repeat for each remote docker repo.
 
 ## 3. Deleting Everything
 
