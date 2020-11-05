@@ -152,6 +152,12 @@ const addRepoCollaborator = async (repo, username, org) => {
   }
 };
 
+/**
+ * Get list of users that are inactive for 3 months
+ * @param {String} org Github org
+ * @param {String} file path of file to output to
+ * @param {Boolean} addCollaborator whether to add the users to notification repo
+ */
 const getAllInactiveUsers = async (org, file, addCollaborator = false) => {
   try {
     // TODO: Get users without 2FA:
@@ -208,6 +214,11 @@ const getAllInactiveUsers = async (org, file, addCollaborator = false) => {
   }
 };
 
+/**
+ * Add user to a github org
+ * @param {String} userId Github username
+ * @param {String} org Github org
+ */
 const addUserToOrg = async (userId, org) => {
   try {
     const result = await octokit.orgs.addOrUpdateMembership({
@@ -220,6 +231,10 @@ const addUserToOrg = async (userId, org) => {
   }
 };
 
+/**
+ * Verify is user exists
+ * @param {String} userId Github username
+ */
 const checkUserExist = async (userId) => {
   try {
     // check if user exists
@@ -233,6 +248,12 @@ const checkUserExist = async (userId) => {
   }
 };
 
+/**
+ * Detect user membership in org, and invite when needed
+ * @param {String} userId Github username
+ * @param {String} org Github org
+ * @param {Boolean} autoInvite invite user automatically if not a member
+ */
 const detectUserMembership = async (userId, org, autoInvite = false) => {
   try {
     // check if user in org
@@ -253,6 +274,12 @@ const detectUserMembership = async (userId, org, autoInvite = false) => {
   }
 };
 
+/**
+ * Invite list of users to an org
+ * @param {String} inputFile to take list of usernames
+ * @param {String} org Github org
+ * @param {Boolean} autoInvite invite user automatically if not a member
+ */
 const inviteUsersToOrg = async (inputFile, org, autoInvite = false) => {
   try {
     // read from the username list:
@@ -273,6 +300,13 @@ const inviteUsersToOrg = async (inputFile, org, autoInvite = false) => {
   }
 };
 
+/**
+ * Create a private repo with expiry date in topic
+ * @param {String} repo repo name
+ * @param {String} adminUser the admin user for repo
+ * @param {String} org Github org
+ * @param {String} expiryDate expiry date in topic
+ */
 const createRepo = async (repo, adminUser, org, expiryDate = null) => {
   try {
     const repo = await octokit.repos.createInOrg({
@@ -282,16 +316,12 @@ const createRepo = async (repo, adminUser, org, expiryDate = null) => {
       auto_init: true,
     });
 
-    // console.info(repo);
-
     const user = await octokit.repos.addCollaborator({
       owner: org,
       repo: repo,
       username: adminUser,
       permission: 'admin',
     });
-
-    // console.info(user);
 
     // Only private repo have expiry date:
     if (expiryDate) {
@@ -316,14 +346,17 @@ const createRepo = async (repo, adminUser, org, expiryDate = null) => {
   const outputFile = './output/inactive_users.json';
 
   try {
-    // Confirm current login session:
+    // 1. Confirm current login session:
     // await verifyAuth(org);
-    // check for inactive users:
+
+    // - check for inactive users:
     // const addCollaborator = false;
     // await getAllInactiveUsers(org, outputFile, addCollaborator);
-    // invite new users:
+
+    // - invite new users:
     // await inviteUsersToOrg(inputFile, org, false);
-    // create new private repo with admin user:
+
+    // - create new private repo with admin user:
     // await createRepo('<repo_name>', '<username>', org, '<expiry-MM-YYYY>');
   } catch (err) {
     console.error(err);
