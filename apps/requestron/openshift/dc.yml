@@ -81,6 +81,10 @@ objects:
             value: ${REPO_ID_VALUE}
           - name: APP_ID
             value: ${APP_ID_VALUE}
+          - name: OPS_TEAM_ORG
+            value: ${OPS_TEAM_ORG_VALUE}
+          - name: OPS_TEAM_NAME
+            value: ${OPS_TEAM_NAME_VALUE}
           - name: WEBHOOK_PROXY_URL
             value: ${WEBHOOK_PROXY_URL_VALUE}
           - name: TZ
@@ -151,6 +155,16 @@ parameters:
   name: APP_ID_VALUE
   required: true
   value: "46693"
+- description: team org
+  displayName: team org
+  name: OPS_TEAM_ORG_VALUE
+  required: true
+  value: "BCDevOps"
+- description: team name
+  displayName: team name
+  name: OPS_TEAM_NAME_VALUE
+  required: true
+  value: "devops-request"
 - description: webhook proxy url
   displayName: webhook proxy url
   name: WEBHOOK_PROXY_URL_VALUE
