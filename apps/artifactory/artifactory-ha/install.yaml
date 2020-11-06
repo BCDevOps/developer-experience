@@ -164,11 +164,13 @@
       command: >
         oc create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }}
       when: ssl
+      ignore_errors: true
 
     - name: Make artifactory's route
       command: >
         oc create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }}
       when: not ssl
+      ignore_errors: true
 
       # make secret
     - name: Make the admin secret (processing)
@@ -337,33 +339,50 @@
         validate_certs: no
       ignore_errors: yes
 
-
     - name: Update HTTP settings
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/webServer"
         user: "admin"
         password: "{{ artifactory_password }}"
-        method: PUT
+        method: POST
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ lookup('file', 'templates/http_settings.json') }}"
+        body: '{"dockerReverseProxyMethod": "SUBDOMAIN"}'
         force_basic_auth: yes
-        status_code: 200
+        status_code: 201
         validate_certs: no
       ignore_errors: yes
 
     - name: Make docker routes
       command: >
-        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item }}.{{ artifactory_url }}  --port=artifactory
+        oc create route edge {{ item.key }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item.key }}.{{ artifactory_url }}  --port=artifactory
       loop: "{{ docker_list }}"
       when: ssl
+      ignore_errors: yes
 
     - name: Make docker routes
       command: >
-        oc create route edge {{ item }} --service={{ artifactory_instance_name }} --hostname={{ item }}.{{ artifactory_url }} --port=artifactory
+        oc create route edge {{ item.key }} --service={{ artifactory_instance_name }} --hostname={{ item.key }}.{{ artifactory_url }} --port=artifactory
       loop: "{{ docker_list }}"
       when: not ssl
+      ignore_errors: yes
+
+    - name: Update docker repos
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/repositories/{{ item.key }}"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "username": "{{ item.username }}", "password": "{{ item.password }}", "blockPushingSchema1": false, "enableTokenAuthentication": true }'
+        force_basic_auth: yes
+        validate_certs: no
+      loop: "{{ docker_list }}"
+      ignore_errors: yes
+
 
 
     # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,

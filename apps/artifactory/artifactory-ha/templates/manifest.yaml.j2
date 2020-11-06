@@ -4738,8 +4738,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      imagePullSecrets:
-      - name: 4302974-as-mcs-artifactory-pull-secret
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"
@@ -4803,7 +4801,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'artifactory-pro:{{ artifactory_version }}'
+        image: '{{image_registry}}/{{project_name}}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4855,7 +4853,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'artifactory-pro:{{ artifactory_version }}'
+        image: '{{image_registry}}/{{project_name}}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4996,8 +4994,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      imagePullSecrets:
-      - name: 4302974-as-mcs-artifactory-pull-secret
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"
@@ -5070,7 +5066,7 @@ spec:
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'artifactory-pro:{{ artifactory_version }}'
+        image: '{{image_registry}}/{{project_name}}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         resources:
           limits:
@@ -5122,7 +5118,7 @@ spec:
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'artifactory-pro:{{ artifactory_version }}'
+        image: '{{image_registry}}/{{project_name}}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
