@@ -61,6 +61,8 @@
       metadata:
         name: "artifactory-serviceaccount-{{ meta.name }}"
         namespace: "{{ meta.namespace }}"
+        labels:
+          service: artifactory
       type: kubernetes.io/basic-auth
       data:
         username: "{{ service_account_name | b64encode }}"
