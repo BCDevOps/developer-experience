@@ -1,114 +1,138 @@
----
-description: Artifactory is a artifact repository service that will enable teams to store and reference artifacts within the Openshift Cluster.
----
-# Using Artifactory
 
-## Artifactory: What It Does and What It Doesn't.
+# Artifact Repositories
 
-Artifactory is an artifact repository by JFrog. The software documentation can be found here: https://www.jfrog.com/confluence/display/RTF/Welcome+to+Artifactory
+Artifactory is an Artifact Repository system. It serves two primary purposes:
 
-The Developer Experience Team provides Artifactory for two purposes:
-1. Caching artifacts from the public internet to allow faster builds.
-2. Private repositories for artifacts that teams create/use and which cannot be provided to the public.
+1. It provides caching of artifacts that you would normally pull from a public repository on the internet, allowing faster builds and deployments, as well as more robust security surrounding these public objects.
+2. It provides a private space for your team to upload your own artifacts for production purposes.
 
-The first purpose is fulfilled with caching proxy repos, all of which follow the naming scheme `<source>-<type>-remote`.
-The list of available proxy repos is controlled by the Developer Experience Team. If you wish to see another one added to the list, contact the team to discuss.
-Any new Artifactory account automatically comes with access to these proxy repos. You can access it with your personal account, and you can create an ArtifactorySA (service account) to pull artifacts as part of your pipeline.
+To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format `[acct-name]-[namespace-name]-[license-plate]`.
+You can also find fuller details about your service account by running the command `oc describe artsvcacct [acct-name]`.
 
-The second purpose is fulfilled through a request to the Developer Experience Team, requesting an the creation of an ArtifactoryRepo object.
+## Using Caching Repositories
 
-See the next section for more information on how to set yourself up with the appropriate service account(s) and local repos.
+The following sections provide some examples for how to pull artifacts through our caching/remote repositories.
+You do not need to do anything special to cache the object in Artifactory - pulling the artifact will do this automatically. 
+If you are pulling the artifact for the first time, it will take a little extra time in order to cache the object in Artifactory.
+After that, pulling the artifact (especially onto a pod on the cluster) should be *much* faster than pulling the image from the internet!
 
-## Getting Set Up to Use Artifactory
+*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
 
-### Step 1: Create Your Personal Artifactory Account
+### Docker
 
-Artifactory can be found here: https://artifacts.developer.gov.bc.ca
+Login to the registry
 
-Sign in with Keycloak.
-
-The resulting account will be in the form of `<github_name>@github ` or `<idir_name>@idir`, depending on which method you use to sign in through Keycloak. 
-This will allow you to log in and see the proxy repos mentioned in the previous section.
-See Step 4 below to learn how to gain access to private local and virtual repos.
-
-### Step 2: Create an Artifactory Service Account
-
-When connecting to Artifactory for the purposes of pulling artifacts for your application to use, you should not use your personal credentials. Instead, use an artifactory service account.
-
-There is an operator running on the cluster which watches for the creation of ArtifactorySA objects in any project on the cluster. 
-When one is created, it automatically acts to create a matching service account in artifactory. This service account will have a "license-plate" style name, and the ArtifactorySA object will be updated to include this name once the operator has created the account.
-It will also create a secret in the same project with both the name of the service account and a token for accessing the account.
-
-Find a template for creating an ArtifactorySA object at `artifactory-sa-operator/deploy/crds/artifactory-sa-cr-template.yaml`
-
-Find the variable definition file at `artifactory-sa-operator/deploy/crds/serviceaccount.env`
-
-Download both to your local machine and update the serviceaccount.env file to reflect the information you require. 
-Note that CR_NAME will be the name of the custom resource in your project for ease of searching, not the name of the service account itself.
-
-Log into OpenShift with your personal credentials. Switch to your project, then run the following command:
-
-```
-oc process -f artifactory-sa-cr-template.yaml --param-file=serviceaccount.env --ignore-unknown-parameters=true | oc create -f -`
+```bash
+docker login -u <USER_NAME> -p <USER_PASSWORD> <REPO_NAME>.artifacts.developer.gov.bc.ca
 ```
 
-You will require admin or edit privileges on the project to create the service account custom resource object.
+Example of our DockerHub caching repo looks like this:
 
-When the service account is created, it will automatically have access to the proxy repos. If that's all you require, you can stop here! Otherwise, continue to learn about creating local repos and granting access to them.
+```bash
+docker login -u <USER_NAME> -p <USER_PASSWORD> docker-remote.artifacts.developer.gov.bc.ca
+```
 
-### Step 3: Requesting a Local or Virtual Repo
+Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
 
-Request an new local or virtual repo here: https://github.com/BCDevOps/devops-requests/issues/new?template=artifactory_repo_request.md
+```bash
+docker pull <REPO_NAME>.artifacts.developer.gov.bc.ca/<IMAGE>:<TAG>
+```
+*Note*: `REPO_NAME` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory.
 
-Please group your requests together - if you want to request both a local and virtual repo, just copy the list of required information and fill it out multiple times in the same issue.
+In order to use these credentials on Openshift, make a secret using the following command:
 
-The following information is necessary for creating a repo:
+```bash
+oc create secret docker-registry <pull-secret-name> \
+    --docker-server=docker-remote.artifacts.developer.gov.bc.ca \
+    --docker-username=<username> \
+    --docker-password=<password> \
+    --docker-email=<username>@<namespace>.local
+```
 
-* Requester: this is your **Personal Artifactory Username** (`@github` or `@idir`)
-* Team Name: this is the name of the team requesting the repo. 
-* Repo Type: the type of artifacts that belong in the repo (ex: maven, docker, etc)
-* Repo Location: local or virtual.
-   * Local repos provide a private place for you to upload your artifacts.
-   * Virtual repos combine multiple repos under one address.
-* Repo Description: a description of your repo.
-* Primary OpenShift Project: the openshift project where you would like the ArtifactRepo object and the admin token secret to be created.
-* (if virtual) List of Related Repos: if you're creating a virtual repo, list the repos to be combined.
+Now you can add your pull secret to your deployment config, like this:
 
-Once this request is approved, the Developer Experience Team will create an ArtifactoryRepo in your chosen project.
-This will result in the creation of your repo, an admin account through which you can admin access to the repo, and a secret in your project which contains the token to access the admin account.
-
-### Step 4: Granting Access to your Private Repo
-
-Once you have followed the previous steps, you're likely going to want to grant read and/or write access to any new local repos to personal or service accounts.
-To do so, log into the Artifactory GUI (at https://artifacts.developer.gov.bc.ca) and login with your personal credentials. 
-You will only be able to do that if you were the requester indicated in Step 3. If not, please have them perform this task.
-
-Once you are logged in, you will be able to click on the "admin" panel (on the left side menu, it looks like a small bust of a person). From there, click "Permissions".
-On the Permissions screen, you will be able to see all of the repos whose access you can control. Click on any of them.
-Once you've opened the Permission screen for that repository, click Users, and drag any username from the available list into the "Included Users" list to provide access. Use the filter to search for specific names.
-Highlight the user you've added to the "Included Users" list and select any of the appropriate repository actions that you wish them to be able to perform.
-Mouse over the ? next to "Repository Actions" to find out more about what each privilege does. **Avoid providing the Manage privilege to many users.**
-
-Here are some likely privileges that you'll want to provide:
-* Give read, annotate, deploy/cache to other members of your team so that they can read and deploy objects to the repo.
-* Give read, annotate, deploy/cache to any service accounts which should be able to deploy objects to the repo.
-* Give read to service accounts which should be able to build from the local repo.
-
-Do not forget to click "Save and Finish" in the bottom right corner once you've added the appropriate permissions.
-
-## Notes About Logging in from the CLI/API
-
-In order to use your personal credentials to log into the Artifactory API, you must have logged in via the GUI at least once first (in order to create your credentials through Keycloak).
-You must go to your user profile and generate an API key to use. Your idir/github password will not work.
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <pod-name>
+spec:
+  containers:
+  - name: <container-name>
+    image: <your-private-image>
+  imagePullSecrets:
+  - name: <pull-secret-name>
+```
 
 ### NPM
 
-You cannot login to Artifactory with
-``` npm login ```
-due to the use of the @ sign in usernames assigned by Keycloak.
+For this guide, we will use a repository in Artifactory called `npm-remote` which is pointing to the remote npm repository `https://registry.npmjs.org`.
 
-As such, in order to use NPM, you must run the following command:
-``` bash
-curl --user <username>:<api_key> https://artifacts.pathfinder.gov.bc.ca/artifactory/api/npm/auth
+Steps:
+
+Set npm registry -
+
+```bash
+$ npm config set registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
 ```
-Your username should be of the form user@idir or user@github. It will return three lines of information which you can then paste into your ~/.npmrc file to use instead of basic authentication.
+
+Authenticate to the registry
+
+```bash
+$ npm login
+Username: <username>
+Password:
+Email: <username>@<namespace>.local
+```
+
+Once the authentication is complete, you can now pull artifacts from this registry
+
+```bash
+$ npm install inspectpack --registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
++ inspectpack@4.5.2
+updated 1 package in 3.131s
+4 packages are looking for funding
+  run `npm fund` for details
+```
+*Note*: The user that has authenticated to artifactory must have appropriate permissions to pull from the repository, otherwise this command will return with permissions errors, just like the one shown below:
+
+```bash
+npm ERR! code E403
+npm ERR! 403 403 Forbidden - GET https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/inspectpack
+npm ERR! 403 In most cases, you or one of your dependencies are requesting
+npm ERR! 403 a package version that is forbidden by your security policy.
+```
+
+### Maven
+
+To deploy build artifacts through Artifactory you need to add a deployment element with the URL of a target local repository to which you want to deploy your artifacts. Following is an example snippet
+
+```xml
+
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>artifactory-ha-primary-0-releases</name>
+        <url>https://artifacts.developer.gov.bc.ca/artifactory/test-maven-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory-ha-primary-0-snapshots</name>
+        <url>https://artifacts.developer.gov.bc.ca/artifactory/test-maven-repo</url>
+    </snapshotRepository>
+</distributionManagement>
+```
+
+### Other Repo Types
+
+There are tons of other repository types available on Artifactory! 
+You can browse through them by logging onto artifacts.developer.gov.bc.ca (click the SSO symbol to use either Github or IDIR to log in) and use the UI to see what is available!
+We expect these will be very common options for repository types, but if your team uses something else (NuGet, for example), you can find JFrog's complete documentation on the various repo types here:
+https://www.jfrog.com/confluence/display/JFROG/Package+Management
+
+If your team uses a specific package type not listed here, we encourage you to create a PR for this document to provide some of your learnings to other teams!
+
+
+## Using Local Repositories
+
+Private local repos... coming soon!

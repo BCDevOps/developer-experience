@@ -1,19 +1,21 @@
 ---
+# Use the 'create api' subcommand to add watches to this file.
 - version: v1alpha1
-  group: artifactoryrepo.operators.bcgov
-  kind: ArtifactoryRepo
-  playbook: /opt/ansible/artrepository-main.yml
-  reconcilePeriod: 0
-  watchDependentResources: True
+  group: artifactory.devops.gov.bc.ca
+  kind: ArtifactoryRepository
+  playbook: /opt/ansible/playbooks/artrepository-main.yml
+  vars:
+    meta: '{{ ansible_operator_meta }}'
   finalizer:
-    name: finalrepo.artifactoryrepo.operators.bcgov
-    playbook: /opt/ansible/artrepository-destroy.yml
+    name: finalrepo.artifactory.devops.gov.bc.ca
+    playbook: /opt/ansible/playbooks/artrepository-destroy.yml
 - version: v1alpha1
-  group: artifactorysa.operators.bcgov
-  kind: ArtifactorySA
-  playbook: /opt/ansible/artserviceacct-main.yml
-  reconcilePeriod: 0
-  watchDependentResources: True
+  group: artifactory.devops.gov.bc.ca
+  kind: ArtifactoryServiceAccount
+  playbook: /opt/ansible/playbooks/artserviceacct-main.yml
+  vars:
+    meta: '{{ ansible_operator_meta }}'
   finalizer:
-    name: finalsvcacct.artifactorysa.operators.bcgov
-    playbook: /opt/ansible/artserviceacct-destroy.yml
+    name: finalsvcacct.artifactory.devops.gov.bc.ca
+    playbook: /opt/ansible/playbooks/artserviceacct-destroy.yml
+# +kubebuilder:scaffold:watch

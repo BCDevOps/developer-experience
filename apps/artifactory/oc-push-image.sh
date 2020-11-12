@@ -19,6 +19,7 @@ usage() {
     -r Optional.  The address of the OpenShift docker registry,
        such as your local registry, for example 172.30.1.1:5000.
        Defaults to docker-registry.lab.pathfinder.gov.bc.ca
+    -t The tag name for the image.
 
     -h prints the usage for the script
     -x run the script in debug mode to see what's happening
@@ -30,11 +31,12 @@ exit
 # -----------------------------------------------------------------------------------------------------------------
 # Initialization:
 # -----------------------------------------------------------------------------------------------------------------
-while getopts i:n:r:hx FLAG; do
+while getopts i:n:r:t:hx FLAG; do
   case $FLAG in
     i ) export DOCKER_IMAGE=$OPTARG ;;
     n ) export OPENSHIFT_NAMESPACE=$OPTARG ;;
     r ) export OPENSHIFT_REGISTRY_ADDRESS=$OPTARG ;;
+    t ) export OPENSHIFT_IMAGE_TAG=$OPTARG ;;
     x ) export DEBUG=1 ;;
     h ) usage ;;
     \? ) #unrecognized option - show help
@@ -52,8 +54,8 @@ if [ ! -z "${DEBUG}" ]; then
   set -x
 fi
 
-if [ -z "${DOCKER_IMAGE}" ] || [ -z "${OPENSHIFT_NAMESPACE}" ]; then
-  echo -e \\n"Missing parameters - name of Docker Image, OpenShift Namespace"\\n
+if [ -z "${DOCKER_IMAGE}" ] || [ -z "${OPENSHIFT_NAMESPACE}" ] || [ -z "${OPENSHIFT_IMAGE_TAG}" ]; then
+  echo -e \\n"Missing parameters - name of Docker Image, OpenShift Namespace, Image Tag"\\n
   usage
 fi
 
@@ -65,6 +67,7 @@ OPENSHIFT_IMAGE_SNIPPET=${DOCKER_IMAGE#*/}
 OPENSHIFT_IMAGESTREAM_PATH=${OPENSHIFT_REGISTRY_ADDRESS}/${OPENSHIFT_NAMESPACE}/${OPENSHIFT_IMAGE_SNIPPET}
 # =================================================================================================================
 
-docker tag ${DOCKER_IMAGE} ${OPENSHIFT_IMAGESTREAM_PATH}
+#docker tag ${DOCKER_IMAGE} ${OPENSHIFT_IMAGESTREAM_PATH}
 docker login ${OPENSHIFT_REGISTRY_ADDRESS} -u $(oc whoami) -p $(oc whoami -t)
-docker push ${OPENSHIFT_IMAGESTREAM_PATH}
+#docker push ${OPENSHIFT_IMAGESTREAM_PATH}
+make docker-build docker-push IMG=${OPENSHIFT_IMAGESTREAM_PATH}:${OPENSHIFT_IMAGE_TAG}

@@ -6,104 +6,6 @@ This Ansible Operator has been written for Artifactory to handle multi-tenancy, 
 
 ![](images/Artifactory-operator.png) 
 
-## Repository tree
-
-```
-$ tree
-.
-├── artrepository-destroy.yml
-├── artrepository-main.yml
-├── artserviceacct-destroy.yml
-├── artserviceacct-main.yml
-├── build
-│   ├── Dockerfile
-│   └── test-framework
-│       ├── ansible-test.sh
-│       └── Dockerfile
-├── deploy
-│   ├── crds
-│   │   ├── crd-artifactrepo.yaml
-│   │   ├── crd-artifactsvca.yaml
-│   │   ├── jeff-docker-local.env
-│   │   ├── team-type-locator.env
-│   │   ├── tmpl-artifactory-repo.yaml
-│   │   └── tmpl-artifactory-sa.yaml
-│   ├── d-artifactory-operator.yaml.j2
-│   ├── k8s_roles
-│   │   ├── cr-aggregate-artifactrepos-view.yaml
-│   │   ├── cr-aggregate-artifactsvcas-admin-edit.yaml
-│   │   ├── cr-aggregate-artifactsvcas-view.yaml
-│   │   ├── cr-artifactory-cluster-operator.yaml
-│   │   ├── cr-artifactory-object-admin.yaml
-│   │   ├── crb-cluster-object-admin.yaml.j2
-│   │   ├── crb-cluster-operator.yaml.j2
-│   │   ├── r-artifactory-operator.yaml.j2
-│   │   └── rb-artifactory-operator.yaml.j2
-│   └── README.md
-├── images
-│   ├── admin-secret.png
-│   ├── Artifactory-operator.png
-│   ├── Artifactory-repo-automation.drawio
-│   └── Artifactory-repo-automation.png
-├── install
-│   ├── clusterAdmin.yml
-│   ├── inventory
-│   ├── operatorDeploy.yml
-│   ├── README.md
-│   └── test-artifactory.inv
-├── README.md
-├── roles
-│   ├── artifactory_repo
-│   │   ├── defaults
-│   │   │   └── main.yml
-│   │   ├── files
-│   │   │   └── repo.json
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   ├── meta
-│   │   │   └── main.yml
-│   │   ├── README.md
-│   │   ├── tasks
-│   │   │   ├── docker-local.yml
-│   │   │   ├── local.yml
-│   │   │   ├── main.yml
-│   │   │   ├── remote.yml
-│   │   │   └── virtual.yml
-│   │   ├── templates
-│   │   │   ├── artRepository-local.json.j2
-│   │   │   ├── artRepository-virtual.json.j2
-│   │   │   └── PermissionTargetV2.json.j2
-│   │   └── vars
-│   │       └── main.yml
-│   └── artifactory_serviceacct
-│       ├── defaults
-│       │   └── main.yml
-│       ├── files
-│       ├── handlers
-│       │   └── main.yml
-│       ├── meta
-│       │   └── main.yml
-│       ├── README.md
-│       ├── tasks
-│       │   └── main.yml
-│       ├── templates
-│       │   └── create_account.json.j2
-│       └── vars
-│           └── main.yml
-├── test
-│   ├── add-permission-user.yml
-│   ├── clean-test.yml
-│   ├── find-artifactorysa-obj.yml
-│   ├── readme.md
-│   ├── test-vars-artifactoryRepo.yml
-│   ├── test-vars-artifactorySA.yml
-│   ├── test-vars-virtual.yml
-│   ├── token-tests.yml
-│   ├── UpdatePermissionTarget.json.j2
-│   └── user-auth-check.yml
-└── watches.yaml
-```
-
 ## Deployment
 
 In the Artifactory deployment project, confirm that the secret `artifactory-admin` exists with a password for Artifactory. Leave Username blank.
@@ -122,9 +24,9 @@ There are 2 types of Artifactory Custom resources.
 
 > Must have cluster-role artifactory-object-admin for Artifactory Repository creation
 
-Example ArtifactoryRepo CR (Custom Resource) exists under `deploy/crds/tmpl-artifactory-repo.yaml`
+Example ArtifactoryRepo CR (Custom Resource) exists under `config/crd/bases/tmpl-artifactory-repo.yaml`
 
-An example env file also exists under `deploy/crds/team-type-locator.env`
+An example env file also exists under `config/crd/bases/team-type-locator.env`
 
 | Parameter                 | Comments                                                 | 
 |---------------------------|----------------------------------------------------------|
@@ -137,8 +39,8 @@ An example env file also exists under `deploy/crds/team-type-locator.env`
 Create the ArtifactoryRepo Custom Resource:
 
 ``` bash
- oc --as=system:serviceaccount:openshift:bcdevops-admin process -f ./deploy/crds/tmpl-artifactory-repo.yaml --param-file=./deploy/crds/team-type-locator.env --ignore-unknown-parameters=true | oc --as=system:serviceaccount:openshift:bcdevops-admin create -f -
- oc process -f ./deploy/crds/tmpl-artifactory-repo.yaml --param-file=./deploy/crds/team-type-locator.env --ignore-unknown-parameters=true | oc create -f -
+ oc --as=system:serviceaccount:openshift:bcdevops-admin process -f ./config/samples/tmpl-artifactory-repo.yaml --param-file=./config/samples/team-type-locator.env --ignore-unknown-parameters=true | oc --as=system:serviceaccount:openshift:bcdevops-admin create -f -
+ oc process -f ./config/samples/tmpl-artifactory-repo.yaml --param-file=./config/samples/team-type-locator.env --ignore-unknown-parameters=true | oc create -f -
 ```
 
 A repository Service Account user (and namespace secret) is created with each repository.  This service account will be named `{TEAM_NAME}-{REPO_TYPE}-{REPO_LOCATOR}`, and can be used to manage the repository access.
@@ -147,7 +49,7 @@ A repository Service Account user (and namespace secret) is created with each re
 
 > Requires namespace editor (or admin) to create or delete the artifactorySA objects.
 
-Example ArtifactorySA CR (Custom Resource) exists under `deploy/crds/tmpl-artifactory-sa.yaml`
+Example ArtifactorySA CR (Custom Resource) exists under `config/crd/bases/tmpl-artifactory-sa.yaml`
 
 | Parameter                 | Comments                                                 |
 |---------------------------|----------------------------------------------------------|
@@ -156,7 +58,7 @@ Example ArtifactorySA CR (Custom Resource) exists under `deploy/crds/tmpl-artifa
 Create the ArtifactorySA Custom Resource:
 
 ``` bash
- oc process -f ./deploy/crds/tmpl-artifactory-sa.yaml -p DESCRIPTOR="Description of Service Account" | oc create -f -
+ ocas process -f ./config/samples/tmpl-artifactory-sa.yaml -p NAME="test" -p DESCRIPTOR="Description of Service Account" | ocas create -f -
 ```
 
 #### Service Account Permissions

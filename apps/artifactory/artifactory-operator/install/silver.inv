@@ -1,0 +1,14 @@
+localhost
+
+[all:vars]
+svcAcct=artifactory-operator
+installName="artifactory-ha"
+namespace=devops-artifactory
+DEPLOY_NAME="artifactory-operator"
+ARTIFACTORY_BASE_DNS="artifacts.developer.gov.bc.ca"
+IMAGE_REGISTRY="image-registry.openshift-image-registry.svc:5000"
+IMAGE="devops-artifactory/artifactory-operator"
+IMAGE_TAG="v1-1.0.0-stable"
+secretName="artifactory-ha-admin"
+dockerSecretName="artifactory-docker-secret"
+
