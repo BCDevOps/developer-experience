@@ -59,7 +59,7 @@
       apiVersion: v1
       kind: Secret
       metadata:
-        name: "{{ service_account_name }}"
+        name: "artifactory-serviceaccount-{{ meta.name }}"
         namespace: "{{ meta.namespace }}"
       type: kubernetes.io/basic-auth
       data:
