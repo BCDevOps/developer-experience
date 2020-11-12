@@ -8,9 +8,9 @@ security:
       devhub-sso:
         id: {{ sso_id }}
         enabled: true
-        apiUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo"
-        authUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth"
-        basicUrl: "https://sso.pathfinder.gov.bc.ca/"
+        apiUrl: "https://oidc.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/userinfo"
+        authUrl: "https://oidc.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/auth"
+        basicUrl: "https://oidc.gov.bc.ca/"
         providerType: openId
         secret: {{ sso_secret }}
-        tokenUrl: "https://sso.pathfinder.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/token"
+        tokenUrl: "https://oidc.gov.bc.ca/auth/realms/devhub/protocol/openid-connect/token"
