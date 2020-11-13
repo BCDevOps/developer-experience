@@ -339,6 +339,11 @@
         validate_certs: no
       ignore_errors: yes
 
+    - name: Build HTTP settings from template
+      template:
+        src: ./templates/http_settings.json.j2
+        dest: ./processed/http_settings.json
+
     - name: Update HTTP settings
       uri:
         url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/webServer"
@@ -348,7 +353,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: '{"dockerReverseProxyMethod": "SUBDOMAIN"}'
+        body: "{{ lookup('file', 'processed/http_settings.json') }}"
         force_basic_auth: yes
         status_code: 201
         validate_certs: no
