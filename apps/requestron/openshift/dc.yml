@@ -50,32 +50,37 @@ objects:
           - name: PRIVATE_KEY
             valueFrom:
               secretKeyRef:
-                name: github-private-key
-                key: PRIVATE_KEY
+                name: requestron-secrets
+                key: GITHUB_PRIVATE_KEY
           - name: WEBHOOK_SECRET
             valueFrom:
               secretKeyRef:
-                name: webhook-secret
-                key: WEBHOOK_SECRET
+                name: requestron-secrets
+                key: GITHUB_WEBHOOK_SECRET
+          - name: WEBHOOK_PROXY_URL
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: GITHUB_WEBHOOK_URL
           - name: ZENHUB_TOKEN
             valueFrom:
               secretKeyRef:
-                name: zenhub-token
+                name: requestron-secrets
                 key: ZENHUB_TOKEN
           - name: GITHUB_TOKEN
             valueFrom:
               secretKeyRef:
-                name: github-token
+                name: requestron-secrets
                 key: GITHUB_TOKEN
           - name: REPO_NAME
             valueFrom:
               secretKeyRef:
-                name: requestron-repo
+                name: requestron-secrets
                 key: REPO_NAME
           - name: REPO_OWNER
             valueFrom:
               secretKeyRef:
-                name: requestron-repo
+                name: requestron-secrets
                 key: REPO_OWNER
           - name: REPO_ID
             value: ${REPO_ID_VALUE}
@@ -85,8 +90,6 @@ objects:
             value: ${OPS_TEAM_ORG_VALUE}
           - name: OPS_TEAM_NAME
             value: ${OPS_TEAM_NAME_VALUE}
-          - name: WEBHOOK_PROXY_URL
-            value: ${WEBHOOK_PROXY_URL_VALUE}
           - name: TZ
             value: America/Vancouver
     test: false
