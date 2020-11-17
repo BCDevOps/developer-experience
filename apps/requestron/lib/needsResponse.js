@@ -1,16 +1,27 @@
 require('probot');
 const axios = require('axios');
+const jwt = require('jsonwebtoken');
 /**
  * Check for issue staleness
  */
 
-const instance = axios.create({
-  baseURL: 'https://api.github.com/',
-  timeout: 10000,
-  headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
-});
 
 module.exports = async function checkNeedsResponse(context) {
+
+    let payload = {
+      iat: Date.now,
+      exp: Date.now + (60 * 1000 * 10), //lasts 10 minutes
+      iss: process.env.APP_ID
+    };
+
+    let token = jwt.sign(payload, process.env.PRIVATE_KEY);
+
+    let instance = axios.create({
+      baseURL: 'https://api.github.com/',
+      timeout: 10000,
+      headers: {'Authorization': 'Bearer ' + token}
+    });
+
     try {
 
         // get a list of open issues in the repo
