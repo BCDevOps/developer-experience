@@ -82,10 +82,16 @@ objects:
               secretKeyRef:
                 name: requestron-secrets
                 key: REPO_OWNER
-          - name: REPO_ID
-            value: ${REPO_ID_VALUE}
           - name: APP_ID
-            value: ${APP_ID_VALUE}
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: APP_ID
+          - name: REPO_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: REPO_ID
           - name: OPS_TEAM_ORG
             value: ${OPS_TEAM_ORG_VALUE}
           - name: OPS_TEAM_NAME
