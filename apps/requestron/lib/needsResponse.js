@@ -9,8 +9,8 @@ const jwt = require('jsonwebtoken');
 module.exports = async function checkNeedsResponse(context) {
 
     let payload = {
-      iat: Date.now,
-      exp: Date.now + (60 * 1000 * 10), //lasts 10 minutes
+      iat: Date.now * 1000,
+      exp: Date.now * 1000 + (60 * 10), //lasts 10 minutes
       iss: process.env.APP_ID
     };
 
