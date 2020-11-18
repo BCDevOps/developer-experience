@@ -101,11 +101,16 @@ objects:
               secretKeyRef:
                 name: requestron-secrets
                 key: APP_ID
-          - name: REPO_ID
+          - name: REQUEST_REPO_ID
             valueFrom:
               secretKeyRef:
                 name: requestron-secrets
-                key: REPO_ID
+                key: REQUEST_REPO_ID
+          - name: SG_REPO_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: SG_REPO_ID
           - name: ENV
             valueFrom:
               secretKeyRef:
