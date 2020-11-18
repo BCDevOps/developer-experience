@@ -9,6 +9,7 @@ const onboardingComment = require('./onboarding');
 const checkNeedsResponse = require('./needsResponse');
 const checkStaleness = require('./staleIssue');
 const setEstimate = require('./estimate');
+const setEpic = require('./sprintEpic');
 const opsAwayComment = require('./opsAway');
 
 module.exports = (app) => {
@@ -41,6 +42,9 @@ module.exports = (app) => {
 
       // create a link to the Onboarding Journey for new project sets
       await onboardingComment(context);
+
+      // add the new ticket to the appropriate epic on Zenhub
+      await setEpic(context);
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');
