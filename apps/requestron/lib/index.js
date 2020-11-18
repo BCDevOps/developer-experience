@@ -32,7 +32,7 @@ module.exports = (app) => {
       // await setTicketCount(context);
 
       // only do Zenhub stuff in prod, because I don't have a test board available.
-      if (process.env.ENV == 'prod') {
+      if (process.env.ENVIRO == 'prod') {
 
         // add estimate on ZenHub
         await setEstimate(context);
@@ -64,6 +64,7 @@ module.exports = (app) => {
   async function issueClosed(context) {
     try {
 
+      console.log(process.env.ENVIRO);
       const closedIssue = context.issue();
 
       // add a comment to every closed ops ticket explaining stuff
