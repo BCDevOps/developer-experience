@@ -31,20 +31,25 @@ module.exports = (app) => {
       // track number of tickets on ops-controller
       // await setTicketCount(context);
 
-      // add estimate on ZenHub
-      await setEstimate(context);
+      // only do Zenhub stuff in prod, because I don't have a test board available.
+      if (process.env.ENV == 'prod') {
+
+        // add estimate on ZenHub
+        await setEstimate(context);
+
+        // set the swimlane in Zenhub to Operations
+        await setSwimlane(newIssue.number);
+
+        // add the new ticket to the appropriate epic on Zenhub
+        await setEpic(context);
+
+      }
 
       // update the milestone to the most recent one for each new ticket.
       await setMilestone(context);
 
-      // set the swimlane in Zenhub to Operations
-      await setSwimlane(newIssue.number);
-
       // create a link to the Onboarding Journey for new project sets
       await onboardingComment(context);
-
-      // add the new ticket to the appropriate epic on Zenhub
-      await setEpic(context);
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');
