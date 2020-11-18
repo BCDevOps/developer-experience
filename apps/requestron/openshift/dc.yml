@@ -73,10 +73,10 @@ objects:
                 name: requestron-secrets
                 key: GITHUB_TOKEN
           - name: INSTALLATION_ID
-              valueFrom:
-                secretKeyRef:
-                  name: requestron-secrets
-                  key: GITHUB_INSTALLATION_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: GITHUB_INSTALLATION_ID
           - name: GITHUB_CLIENT_ID
               valueFrom:
                 secretKeyRef:
