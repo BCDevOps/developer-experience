@@ -1,16 +1,23 @@
 require('probot');
 const axios = require('axios');
+const createJWT = require('./jwt.js');
+
 /**
  * Create a comment on close that includes some useful instructions/details
  */
 
-const instance = axios.create({
-  baseURL: 'https://api.github.com/',
-  timeout: 10000,
-  headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
-});
-
 module.exports = async function createOnboardingComment(context) {
+
+    let token = await createJWT();
+    let instance = axios.create({
+        baseURL: 'https://api.github.com/',
+        timeout: 10000,
+        headers: {
+          authorization: `bearer ${token}`,
+          accept: 'application/vnd.github.machine-man-preview+json'
+        }
+    });
+
     try {
 
         const closingIssue = context.issue();

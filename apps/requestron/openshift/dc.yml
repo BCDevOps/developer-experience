@@ -11,6 +11,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}
+    labels:
+      app: requestron
   spec:
     lookupPolicy:
       local: false
@@ -19,6 +21,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     replicas: 1
     selector:
@@ -129,6 +133,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     ports:
     - name: api
@@ -142,6 +148,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     host:
     port:

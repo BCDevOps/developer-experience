@@ -1,6 +1,6 @@
 require('probot');
 const createScheduler = require('probot-scheduler');
-const setEstimate = require('./estimate');
+const setTicketCount = require('./ticketCount');
 const setSwimlane = require('./swimlane');
 const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
@@ -8,6 +8,7 @@ const averageTime = require('./averageTime');
 const onboardingComment = require('./onboarding');
 const checkNeedsResponse = require('./needsResponse');
 const checkStaleness = require('./staleIssue');
+const setEstimate = require('./estimate');
 const opsAwayComment = require('./opsAway');
 
 module.exports = (app) => {
@@ -27,6 +28,9 @@ module.exports = (app) => {
       const newIssue = context.issue();
 
       // track number of tickets on ops-controller
+      // await setTicketCount(context);
+
+      // add estimate on ZenHub
       await setEstimate(context);
 
       // update the milestone to the most recent one for each new ticket.
@@ -40,6 +44,8 @@ module.exports = (app) => {
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');
+
+      console.log("new issue #" + newIssue.number  + " updated")
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
@@ -55,7 +61,9 @@ module.exports = (app) => {
       await createClosingComment(context);
 
       // find the average time to close of all ops tickets and stick it on ops-controller
-      await averageTime(context);
+      // await averageTime(context);
+
+      console.log("closed issue #" + closedIssue.number  + " updated")
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)

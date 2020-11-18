@@ -1,30 +1,12 @@
 require('probot');
 const axios = require('axios');
-const jwt = require('jsonwebtoken');
-const { createAppAuth } = require('@octokit/auth-app');
+const createJWT = require('./jwt.js');
+
 /**
  * Check for issue staleness
  */
 
-// let instance = axios.create({
-//   baseURL: 'https://api.github.com/',
-//   timeout: 10000,
-//   headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
-// });
-
 module.exports = async function checkNeedsResponse(context) {
-
-    let payload = {
-      iat: Date.now() * 1000,
-      exp: Date.now() * 1000 + (60 * 10), //lasts 10 minutes
-      iss: process.env.APP_ID
-    };
-
-    // let buff = new Buffer(process.env.PRIVATE_KEY, 'base64');
-    // let key = buff.toString('ascii');
-    // console.log(key);
-    // console.log(payload);
-    // let token = jwt.sign(payload, key);
 
     let token = await createJWT();
     let instance = axios.create({
@@ -41,7 +23,6 @@ module.exports = async function checkNeedsResponse(context) {
         // get a list of open issues in the repo
         const issue_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues');
         const issues = issue_response["data"];
-        console.log("gets issues");
 
         // get a list of team members
         let team_members = [];
@@ -52,7 +33,6 @@ module.exports = async function checkNeedsResponse(context) {
         } else {
             team_members.push("caggles");
         }
-        console.log("gets team members");
 
         //for each open issue, check the most recent comment
         for (let i in issues) {
@@ -73,6 +53,7 @@ module.exports = async function checkNeedsResponse(context) {
                 if ((team_members.includes(recent_comment.user.login) || current_labels.includes('staleness-exception')) &&
                     current_labels.includes('client-response')) {
                     await instance.delete('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels/client-response')
+                    console.log('client-response removed on issue #' + issues[i].number);
 
                 } else if (!current_labels.includes('staleness-exception') &&
                     !current_labels.includes('client-response') &&
@@ -80,7 +61,7 @@ module.exports = async function checkNeedsResponse(context) {
                     // add client-response to the list of labels and push the whole list.
                     current_labels.push('client-response');
                     await instance.put('/repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues/' + issues[i].number + '/labels', {labels: current_labels})
-
+                    console.log('client-response added on issue #' + issues[i].number);
                 }
 
             }
@@ -91,19 +72,3 @@ module.exports = async function checkNeedsResponse(context) {
         throw Error(`Unable to check which tickets need a response: ${err}`);
     }
 };
-
-async function createJWT() {
-
-    let buff = new Buffer(process.env.PRIVATE_KEY, 'base64');
-    let key = buff.toString('ascii');
-    const auth = createAppAuth({
-        appId: process.env.APP_ID,
-        privateKey: key,
-        installationId: process.env.INSTALLATION_ID,
-        clientId: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_TOKEN
-    });
-
-  const { token } = await auth({ type: 'installation' });
-  return token;
-}
