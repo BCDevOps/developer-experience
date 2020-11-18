@@ -31,6 +31,12 @@ module.exports = (app) => {
       // track number of tickets on ops-controller
       // await setTicketCount(context);
 
+      // update the milestone to the most recent one for each new ticket.
+      await setMilestone(context);
+
+      // create a link to the Onboarding Journey for new project sets
+      await onboardingComment(context);
+
       // only do Zenhub stuff in prod, because I don't have a test board available.
       if (process.env.ENVIRO == 'prod') {
 
@@ -44,12 +50,6 @@ module.exports = (app) => {
         await setEpic(context);
 
       }
-
-      // update the milestone to the most recent one for each new ticket.
-      await setMilestone(context);
-
-      // create a link to the Onboarding Journey for new project sets
-      await onboardingComment(context);
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');

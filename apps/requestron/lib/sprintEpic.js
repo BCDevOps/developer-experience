@@ -29,7 +29,7 @@ module.exports = async function setEpic(context) {
         const openingIssue = context.issue();
 
         // get ops-controller ticket
-        const getController = await githubInstance.get('repos/' + openingIssue.owner + '/' + openingIssue.repo + '/issues?labels=ops-controller&status=open');
+        const getController = await githubInstance.get('repos/' + openingIssue.owner + '/' + process.env.SG_REPO_ID + '/issues?labels=ops-controller&status=open');
         const controllerIssueNumber = getController.data[0].number;
 
         // create the post payload
