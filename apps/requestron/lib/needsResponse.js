@@ -1,25 +1,39 @@
 require('probot');
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
+const { createAppAuth } = require('@octokit/auth-app');
 /**
  * Check for issue staleness
  */
 
+// let instance = axios.create({
+//   baseURL: 'https://api.github.com/',
+//   timeout: 10000,
+//   headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
+// });
 
 module.exports = async function checkNeedsResponse(context) {
 
     let payload = {
-      iat: Date.now * 1000,
-      exp: Date.now * 1000 + (60 * 10), //lasts 10 minutes
+      iat: Date.now() * 1000,
+      exp: Date.now() * 1000 + (60 * 10), //lasts 10 minutes
       iss: process.env.APP_ID
     };
 
-    let token = jwt.sign(payload, process.env.PRIVATE_KEY);
+    // let buff = new Buffer(process.env.PRIVATE_KEY, 'base64');
+    // let key = buff.toString('ascii');
+    // console.log(key);
+    // console.log(payload);
+    // let token = jwt.sign(payload, key);
 
+    let token = await createJWT();
     let instance = axios.create({
-      baseURL: 'https://api.github.com/',
-      timeout: 10000,
-      headers: {'Authorization': 'Bearer ' + token}
+        baseURL: 'https://api.github.com/',
+        timeout: 10000,
+        headers: {
+          authorization: `bearer ${token}`,
+          accept: 'application/vnd.github.machine-man-preview+json'
+        }
     });
 
     try {
@@ -27,12 +41,18 @@ module.exports = async function checkNeedsResponse(context) {
         // get a list of open issues in the repo
         const issue_response = await instance.get('repos/' + process.env.REPO_OWNER + '/' + process.env.REPO_NAME + '/issues');
         const issues = issue_response["data"];
+        console.log("gets issues");
 
         // get a list of team members
-        const team_response = await instance.get('/orgs/' + process.env.OPS_TEAM_ORG + '/teams/' + process.env.OPS_TEAM_NAME + '/members');
-        const team = team_response["data"];
         let team_members = [];
-        for (let i in team) {team_members.push(team[i].login)}
+        if (process.env.ENV == 'prod'){
+            const team_response = await instance.get('/orgs/' + process.env.OPS_TEAM_ORG + '/teams/' + process.env.OPS_TEAM_NAME + '/members');
+            const team = team_response["data"];
+            for (let i in team) {team_members.push(team[i].login)}
+        } else {
+            team_members.push("caggles");
+        }
+        console.log("gets team members");
 
         //for each open issue, check the most recent comment
         for (let i in issues) {
@@ -71,3 +91,19 @@ module.exports = async function checkNeedsResponse(context) {
         throw Error(`Unable to check which tickets need a response: ${err}`);
     }
 };
+
+async function createJWT() {
+
+    let buff = new Buffer(process.env.PRIVATE_KEY, 'base64');
+    let key = buff.toString('ascii');
+    const auth = createAppAuth({
+        appId: process.env.APP_ID,
+        privateKey: key,
+        installationId: process.env.INSTALLATION_ID,
+        clientId: process.env.GITHUB_CLIENT_ID,
+        clientSecret: process.env.GITHUB_TOKEN
+    });
+
+  const { token } = await auth({ type: 'installation' });
+  return token;
+}
