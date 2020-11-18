@@ -25,14 +25,14 @@ module.exports = async function checkNeedsResponse(context) {
         const issues = issue_response["data"];
 
         // get a list of team members
-        let team_members = [process.env.APP_NAME];
-        if (process.env.ENVIRO == 'prod'){
-            const team_response = await instance.get('/orgs/' + process.env.OPS_TEAM_ORG + '/teams/' + process.env.OPS_TEAM_NAME + '/members');
-            const team = team_response["data"];
-            for (let i in team) {team_members.push(team[i].login)}
-        } else {
-            team_members.push("caggles");
-        }
+        let team_members = [process.env.APP_NAME, "caggles", "ShellyXueHan", "patricksimonian"];
+        // if (process.env.ENVIRO == 'prod'){
+        //     const team_response = await instance.get('/orgs/' + process.env.OPS_TEAM_ORG + '/teams/' + process.env.OPS_TEAM_NAME + '/members');
+        //     const team = team_response["data"];
+        //     for (let i in team) {team_members.push(team[i].login)}
+        // } else {
+        //     team_members.push("caggles");
+        // }
 
         //for each open issue, check the most recent comment
         for (let i in issues) {
@@ -69,6 +69,7 @@ module.exports = async function checkNeedsResponse(context) {
 
         return true;
     } catch (err) {
+        console.log(err);
         throw Error(`Unable to check which tickets need a response: ${err}`);
     }
 };

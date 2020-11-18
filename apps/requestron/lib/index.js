@@ -91,6 +91,7 @@ module.exports = (app) => {
       await checkStaleness(context);
 
     } catch (err) {
+      console.log(err);
       throw Error('Unable to handle issue: ' + err)
     }
   }
