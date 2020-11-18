@@ -25,7 +25,7 @@ module.exports = async function checkNeedsResponse(context) {
         const issues = issue_response["data"];
 
         // get a list of team members
-        let team_members = [];
+        let team_members = [process.env.APP_NAME];
         if (process.env.ENVIRO == 'prod'){
             const team_response = await instance.get('/orgs/' + process.env.OPS_TEAM_ORG + '/teams/' + process.env.OPS_TEAM_NAME + '/members');
             const team = team_response["data"];

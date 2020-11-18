@@ -64,7 +64,6 @@ module.exports = (app) => {
   async function issueClosed(context) {
     try {
 
-      console.log(process.env.ENVIRO);
       const closedIssue = context.issue();
 
       // add a comment to every closed ops ticket explaining stuff
@@ -82,6 +81,8 @@ module.exports = (app) => {
 
   async function scheduleTriggered(context) {
     try {
+
+      console.log(process.env.ENVIRO);
 
       //check which tickets have been most recently commented-on by a non-platform-ops user, and mark for needing response
       await checkNeedsResponse(context);

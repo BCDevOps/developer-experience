@@ -116,6 +116,11 @@ objects:
               secretKeyRef:
                 name: requestron-secrets
                 key: ENV
+          - name: APP_NAME
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: APP_NAME
           - name: OPS_TEAM_ORG
             value: ${OPS_TEAM_ORG_VALUE}
           - name: OPS_TEAM_NAME
