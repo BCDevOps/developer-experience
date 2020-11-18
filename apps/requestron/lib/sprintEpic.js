@@ -1,5 +1,6 @@
 const axios = require('axios');
 require('probot');
+const createJWT = require('./jwt.js');
 
 /**
  * Adds link to new ticket in ops-controller
