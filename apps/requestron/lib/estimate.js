@@ -21,7 +21,7 @@ module.exports = async function setEstimate(context) {
 
         // set estimate
         const getController = await instance.put(
-            '/p1/repositories/' + process.env.ZENHUB_TOKEN + '/issues/' + openingIssue.number + '/estimate',
+            '/p1/repositories/' + process.env.REQUEST_REPO_ID + '/issues/' + openingIssue.number + '/estimate',
             { "estimate": 0.5 });
 
     } catch (err) {

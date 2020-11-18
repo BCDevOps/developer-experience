@@ -16,7 +16,7 @@ module.exports = async function setSwimlane(issueID) {
         let opPipelineID = '5bb7c5abe135e46293df16aa';
 
         //get the pipeline ID of the Operations swimlane
-        const board = await instance.get('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/board')
+        const board = await instance.get('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/' + process.env.REQUEST_REPO_ID + '/board');
         for (let i = 0; i < board.data.pipelines.length; i++) {
             let pipeline = board.data.pipelines[i];
             if (pipeline.name === "Operations") {
@@ -25,7 +25,7 @@ module.exports = async function setSwimlane(issueID) {
         }
 
         //move the issue from into the Operations swimlane
-        await instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/219808631/issues/' + issueID + "/moves", {"pipeline_id": opPipelineID, "position": "bottom"})
+        await instance.post('p2/workspaces/5bb7c5ab4b5806bc2beb9d15/repositories/' + process.env.REQUEST_REPO_ID + '/issues/' + issueID + "/moves", {"pipeline_id": opPipelineID, "position": "bottom"})
         return true;
 
     } catch (err) {
