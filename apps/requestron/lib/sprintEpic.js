@@ -3,8 +3,7 @@ require('probot');
 const createJWT = require('./jwt.js');
 
 /**
- * Adds link to new ticket in ops-controller
- * Calculates total number of ops tickets in ops-controller
+ * Adds links the new ticket to the relevant Epic
  */
 
 const zenhubInstance = axios.create({
