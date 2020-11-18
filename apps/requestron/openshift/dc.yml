@@ -111,6 +111,11 @@ objects:
               secretKeyRef:
                 name: requestron-secrets
                 key: SG_REPO_ID
+          - name: SG_REPO_NAME
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: SG_REPO_NAME
           - name: ENVIRO
             valueFrom:
               secretKeyRef:
