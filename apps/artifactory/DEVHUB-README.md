@@ -49,6 +49,14 @@ oc create secret docker-registry <pull-secret-name> \
     --docker-email=<username>@<namespace>.local
 ```
 
+and add the secret to the `default` Openshift service account, to allow the account to use this pull secret:
+
+```
+oc secrets link default <pull_secret_name> --for=pull
+```
+
+Note that you may use another service account, if you wish, but the default one is a good, well, default :)
+
 Now you can add your pull secret to your deployment config, like this:
 
 ```yaml
@@ -63,6 +71,8 @@ spec:
   imagePullSecrets:
   - name: <pull-secret-name>
 ```
+
+With these steps completed, you can use this image in your deployment!
 
 ### NPM
 
