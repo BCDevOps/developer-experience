@@ -18,6 +18,16 @@ After that, pulling the artifact (especially onto a pod on the cluster) should b
 
 *Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
 
+The following curl command can be used to collect an up-to-date list of the caching repos available from Artifactory:
+
+`curl -u username:password -X GET "https://artifacts.developer.gov.bc.ca/artifactory/api/repositories?type=remote" | \
+jq -r '(["ARTIFACTORYKEY","SOURCEURL"] | (., map(length*"-"))), (.[] | [.key, .url]) | @tsv' | column -t`
+
+*Hint: use your service account username and password to run this command*
+
+If there is a particular public repository that you would like to see cached through Artifactory, feel free to speak to the Platform Services team about having it added!
+
+
 ### Docker
 
 Login to the registry
