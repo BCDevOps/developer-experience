@@ -36,9 +36,10 @@ module.exports = async function setEpic(context) {
         let payload = {
             "remove_issues": [],
             "add_issues": [
-                { "repo_id": process.env.REQUEST_REPO_ID, "issue_number": openingIssue.number }
+                { "repo_id": parseInt(process.env.REQUEST_REPO_ID), "issue_number": openingIssue.number }
             ]
         };
+        console.log(payload);
 
         // post to the epic
         const postToEpic = await zenhubInstance.post('/p1/repositories/' + process.env.SG_REPO_ID + '/epics/' + controllerIssueNumber + '/update_issues', payload);
