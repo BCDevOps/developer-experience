@@ -56,57 +56,51 @@ metadata:
 stringData:
   binarystore.xml: |-
     
-    <!-- AWS S3 -->
-    <config version="2">
-        <chain> <!--template="cluster-s3"-->
-            <provider id="cache-fs" type="cache-fs">
-                <provider id="sharding-cluster" type="sharding-cluster">
-                    <sub-provider id="eventual-cluster" type="eventual-cluster">
-                        <provider id="retry-s3" type="retry">
-                            <provider id="s3" type="s3"/>
-                        </provider>
-                    </sub-provider>
-                    <dynamic-provider id="remote" type="remote"/>
+        <config version="2">
+            <chain>
+                <provider type="cache-fs" id="cache-fs">
+                    <provider type="sharding-cluster" id="sharding-cluster">
+                        <dynamic-provider type="remote" id="remote"/>
+                        <sub-provider type="eventual-cluster" id="eventual-cluster">
+                            <provider type="retry" id="retry-s3">
+                                <provider type="s3" id="s3"/>
+                            </provider>
+                        </sub-provider>
+                    </provider>
                 </provider>
+            </chain>
+            <provider type="cache-fs" id="cache-fs">
+                <maxCacheSize>45000000000</maxCacheSize>
+                <cacheProviderDir>/var/opt/jfrog/cache</cacheProviderDir>
             </provider>
-        </chain>
-    
-        <!-- Set max cache-fs size -->
-        <provider id="cache-fs" type="cache-fs">
-            <maxCacheSize>45000000000</maxCacheSize>
-            <cacheProviderDir>/var/opt/jfrog/cache</cacheProviderDir>
-        </provider>
-    
-        <provider id="eventual-cluster" type="eventual-cluster">
-            <zone>local</zone>
-        </provider>
-    
-        <provider id="remote" type="remote">
-            <checkPeriod>30</checkPeriod>
-            <timeout>10000</timeout>
-            <zone>remote</zone>
-        </provider>
-    
-        <provider id="sharding-cluster" type="sharding-cluster">
-            <readBehavior>crossNetworkStrategy</readBehavior>
-            <writeBehavior>crossNetworkStrategy</writeBehavior>
-            <redundancy>3</redundancy>
-            <property name="zones" value="local,remote"/>
-        </provider>
-    
-        <provider id="s3" type="s3">
-            <endpoint>{{ s3_endpoint }}</endpoint>
-            <refreshCredentials>true</refreshCredentials>
-            <s3AwsVersion>AWS4-HMAC-SHA256</s3AwsVersion>
-            <testConnection>false</testConnection>
-            <httpsOnly>true</httpsOnly>
-            <region>US-Standard</region>
-            <bucketName>{{ s3_bucket_name }}</bucketName>
-            <identity>{{ s3_identity }}</identity>
-            <credential>{{ s3_password }}</credential>
-            <path>artifactory-ha/filestore</path>
-        </provider>
-    </config>
+            <provider type="eventual-cluster" id="eventual-cluster">
+                <zone>local</zone>
+            </provider>
+            <provider type="remote" id="remote">
+                <zone>remote</zone>
+                <checkPeriod>30</checkPeriod>
+                <timeout>10000</timeout>
+            </provider>
+            <provider type="sharding-cluster" id="sharding-cluster">
+                <writeBehavior>crossNetworkStrategy</writeBehavior>
+                <readBehavior>crossNetworkStrategy</readBehavior>
+                <redundancy>3</redundancy>
+                <property name="zones" value="local,remote"/>
+            </provider>
+            <provider type="s3" id="s3">
+                <bucketName>{{ s3_bucket_name }}</bucketName>
+                <path>artifactory-ha/filestore</path>
+                <endpoint>{{ s3_endpoint }}</endpoint>
+                <credential>{{ s3_password }}</credential>
+                <testConnection>true</testConnection>
+                <httpsOnly>true</httpsOnly>
+                <identity>{{ s3_identity }}</identity>
+                <refreshCredentials>true</refreshCredentials>
+                <s3AwsVersion>AWS4-HMAC-SHA256</s3AwsVersion>
+                <region>US-Standard</region>
+                <property name="s3service.disable-dns-buckets" value="true"></property>
+            </provider>
+        </config>
 ---
 # Source: artifactory-ha/templates/artifactory-secrets.yaml
 apiVersion: v1

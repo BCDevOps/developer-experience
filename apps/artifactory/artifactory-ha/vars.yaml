@@ -102,8 +102,8 @@ s3_bucket_name: "artifactory-bucket"
 # You don't need to touch this.
 s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
 
-# This is the username and secret of the object user you created in section 0b of the README.
-s3_identity: "artifactory-user"
+# This is the id key and secret key of the s3 user you created in section 0b of the README.
+s3_identity: "xxxxxxxxxxxxx"
 s3_password: "xxxxxxxxxxxxx"
 
 
@@ -135,8 +135,8 @@ repo_list:
   - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
   - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://pypi.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
-  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker' }
-  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io/', pkg_type: 'docker'}
+  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io', pkg_type: 'docker' }
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io', pkg_type: 'docker'}
 
 
 ####################################################
