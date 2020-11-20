@@ -30,6 +30,9 @@ If there is a particular public repository that you would like to see cached thr
 
 ### Docker
 
+*Bonus! These steps work perfectly for ANY private docker registry, not just Artifactory!
+All you have to do is swap out the artifactory URL for the URL of your preferred registry!*
+
 Login to the registry
 
 ```bash
@@ -65,6 +68,11 @@ and add the secret to the `default` and `builder` Openshift service account, to 
 oc secrets link default <pull_secret_name>
 oc secrets link builder <pull_secret_name>
 ```
+
+*Note that some Openshift documentation implies that linking the secrets in this way is the only necessary step, 
+without having to add the pullSecret to your deployment/build configs as below. You are welcome to try this simpler way.
+However, we have found that our users run into problems with this method regularly, so we would encourage specifying the
+pullSecret in your configurations to avoid any problems*
 
 Now you can add your pull secret to your deployment config, like this...
 
