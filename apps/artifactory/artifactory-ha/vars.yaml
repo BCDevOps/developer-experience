@@ -133,7 +133,7 @@ repo_list:
   - { repo_key: 'maven-remote', repo_desc: 'Remote Maven Repository', remote_url: 'https://repo1.maven.org/maven2', pkg_type: 'maven' }
   - { repo_key: 'vivid-maven-remote', repo_desc: 'Remote Vivid Maven Repository', remote_url: 'http://mvn.vividsolutions.com/artifactory/repo', pkg_type: 'maven' }
   - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
-  - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://pypi.org/', pkg_type: 'pypi' }
+  - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://files.pythonhosted.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
   - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io', pkg_type: 'docker' }
   - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io', pkg_type: 'docker'}
