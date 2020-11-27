@@ -17,24 +17,22 @@ And the new Service name/endpoint to migrate to:
 
 ### When?
 
-Starting on Oct 6th, all dev/test/prod KeyCloak instances are accessible via the new service name. Product team are encouraged to start planning the migration to the new SSO service name over the next 9 weeks.
+Starting on Oct 6th, all dev/test/prod KeyCloak instances are accessible via the new service name. Product team are encouraged to start planning the migration to the new SSO service name.
 
-**Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for 9 weeks/three sprints (will be extended longer if needed), which allows product teams to update integrated applications and conduct thorough testing.** As a result, we are expecting to deprecate the pathfinder service name for the following timeline:
+**Please note that we are not shutting down the original service name at `sso.pathfinder.gov.bc.ca`. Instead, both pathfinder and the new `oidc.gov.bc.ca` service name will be supported for 12 weeks/four sprints (will be extended longer if needed), which allows product teams to update integrated applications and conduct thorough testing.** Production SSO pathfinder service name will be supported until earlier next year to give teams more time for migration and avoid holiday time. As a result, we are expecting to deprecate the pathfinder service name for the following timeline:
 
-
-#### Dev SSO pathfinder service name deprecated on `Dec 3rd`
-
+#### Dev SSO pathfinder service name deprecated on `Dec 14th 2020`
 We will be working with product team to start exploring the migration process once the new service name is in place. All of your Dev application integration on KeyCloak should be updated to dev.oidc.gov.bc.ca before the deprecation to avoid service disruption.
 
 Once you have successfully migrated SSO integration in Dev environment, proceed to Test and Production. Do not wait for the last day before service deprecation. _1 week_ of time are set aside for product teams to finial check for Test environment SSO usage and complete migration.
 
 
-#### Test SSO pathfinder service name deprecated on `Dec 10th`
+#### Test SSO pathfinder service name deprecated on `Dec 21st 2020`
 Product teams should schedule to migration Test SSO integration before this date, and test on your migration plan/strategy developed from Dev migration process to get prepared for Production migration.
 
 
-#### Production SSO pathfinder service name deprecated on`Dec 17th`
-_Please contact us immediately if your application will require longer support of sso.pathfinder.gov.bc.ca._ If we have not received any request by the end of _Dec 10th_, production pathfinder SSO service will be stopped as scheduled.
+#### Production SSO pathfinder service name deprecated on`Jan 11th 2021`
+_Please contact us immediately if your application will require longer support of sso.pathfinder.gov.bc.ca._ If we have not received any request by the end of _Dec 21st_, production pathfinder SSO service will be stopped as scheduled.
 
 
 ### Will there be an impact on the Platform apps?
