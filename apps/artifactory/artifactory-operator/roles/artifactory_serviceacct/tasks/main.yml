@@ -31,7 +31,7 @@
 
 - name: Generate Password
   set_fact:
-    generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits,hexdigits,punctuation') }}"
+    generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits') }}"
   when: sa_exists.status == 404
 
 - name: Create artifactory user

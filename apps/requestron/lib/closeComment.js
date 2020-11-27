@@ -47,8 +47,7 @@ module.exports = async function createClosingComment(context) {
         // add the unique closing comment lines for each appropriate label
         // this probably shouldn't result in multiple lines at the moment, but just in case we want to add different stuff for the "approved" vs "rejected" labels later.
         for (let i = 0; i < getResponse.data.length; i++) {
-            let label = getResponse.data[i]['name']
-            console.log(label)
+            let label = getResponse.data[i]['name'];
             if (commentDetails[label] != null) {
                 commentContent += '\n' + commentDetails[label] + '\n';
             }

@@ -1,0 +1,22 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  annotations:
+    description: "Template for creating custom resource for Artifactory Service Accounts"
+  name: artifactory-sa-cr-template
+objects:
+- apiVersion: artifactory.devops.gov.bc.ca/v1alpha1
+  kind: ArtifactoryServiceAccount
+  metadata:
+    name: ${NAME}
+  spec:
+    descriptor: "${DESCRIPTOR}"
+parameters:
+- description: Name for the ArtifactSvcA custom resource
+  displayName: CR Name
+  name: NAME
+  value: blank
+- description: Description of the service account, indicating the account's purpose
+  displayName: descriptor
+  name: DESCRIPTOR
+  value: "My artifact service account"

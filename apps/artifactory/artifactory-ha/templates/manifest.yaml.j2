@@ -73,8 +73,8 @@ stringData:
     
         <!-- Set max cache-fs size -->
         <provider id="cache-fs" type="cache-fs">
-            <maxCacheSize>5e+10</maxCacheSize>
-            <cacheProviderDir>cache</cacheProviderDir>
+            <maxCacheSize>45000000000</maxCacheSize>
+            <cacheProviderDir>/var/opt/jfrog/cache</cacheProviderDir>
         </provider>
     
         <provider id="eventual-cluster" type="eventual-cluster">
@@ -4738,8 +4738,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      imagePullSecrets:
-      - name: 4302974-as-mcs-artifactory-pull-secret
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"
@@ -4753,6 +4751,8 @@ spec:
         volumeMounts:
           - mountPath: "/var/opt/jfrog/artifactory"
             name: volume
+          - mountPath: "/var/opt/jfrog/cache"
+            name: data-volume
       - name: "wait-for-primary"
         image: "alpine:3.10"
         imagePullPolicy: IfNotPresent
@@ -4795,11 +4795,13 @@ spec:
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: systemyaml
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: '{{ image_registry }}/{{ project_name }}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4823,7 +4825,6 @@ spec:
             cpu: "{{ cpu_request }}"
             memory: "{{ memory_request }}"
         env:
-      
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -4845,12 +4846,14 @@ spec:
           subPath: migrationStatus.sh
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: binarystore-xml
           mountPath: "/artifactory_bootstrap/binarystore.xml"
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: '{{ image_registry }}/{{ project_name }}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4869,7 +4872,6 @@ spec:
               - >
                 echo;
         env:
-      
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -4885,6 +4887,8 @@ spec:
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: binarystore-xml
           mountPath: "/artifactory_bootstrap/binarystore.xml"
           subPath: binarystore.xml
@@ -4916,7 +4920,7 @@ spec:
           timeoutSeconds: 10
           failureThreshold: 10
           successThreshold: 1
-      
+
       volumes:
       - name: binarystore-xml
         secret:
@@ -4941,6 +4945,16 @@ spec:
       resources:
         requests:
           storage: "{{ storage_size }}"
+  - metadata:
+      annotations:
+        volume.beta.kubernetes.io/storage-class: "{{ artifactory_data_storage_class }}"
+      name: data-volume
+    spec:
+      storageClassName: "{{ artifactory_data_storage_class }}"
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: "{{ data_storage_size }}"
 ---
 # Source: artifactory-ha/templates/artifactory-primary-statefulset.yaml
 apiVersion: apps/v1
@@ -4980,8 +4994,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      imagePullSecrets:
-      - name: 4302974-as-mcs-artifactory-pull-secret
       initContainers:
       - name: "delete-db-properties"
         image: "alpine:3.10"
@@ -4995,6 +5007,8 @@ spec:
         volumeMounts:
         - mountPath: "/var/opt/jfrog/artifactory"
           name: volume
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
       - name: "remove-lost-found"
         image: "alpine:3.10"
         imagePullPolicy: IfNotPresent
@@ -5010,6 +5024,8 @@ spec:
         volumeMounts:
           - name: volume
             mountPath: "/var/opt/jfrog/artifactory"
+          - name: data-volume
+            mountPath: "/var/opt/jfrog/cache"
       - name: 'copy-system-yaml'
         image: 'alpine:3.10'
         resources:
@@ -5044,11 +5060,13 @@ spec:
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: systemyaml
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
       - name: 'migration-artifactory-ha'
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: '{{ image_registry }}/{{ project_name }}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         resources:
           limits:
@@ -5072,7 +5090,6 @@ spec:
           mkdir -p /var/opt/jfrog/artifactory/log;
           bash $scriptsPath/migrationStatus.sh {{ artifactory_version }} 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
         env:
-      
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -5094,12 +5111,14 @@ spec:
           subPath: migrationStatus.sh
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: binarystore-xml
           mountPath: "/artifactory_bootstrap/binarystore.xml"
           subPath: binarystore.xml
       containers:
       - name: artifactory
-        image: 'docker.bintray.io/jfrog/artifactory-pro:{{ artifactory_version }}'
+        image: '{{ image_registry }}/{{ project_name }}/artifactory-pro:{{ artifactory_version }}'
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -5122,7 +5141,6 @@ spec:
               - >
                 echo;
         env:
-      
         - name: JF_SHARED_DATABASE_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -5138,6 +5156,8 @@ spec:
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
+        - name: data-volume
+          mountPath: "/var/opt/jfrog/cache"
         - name: binarystore-xml
           mountPath: "/artifactory_bootstrap/binarystore.xml"
           subPath: binarystore.xml
@@ -5194,3 +5214,13 @@ spec:
       resources:
         requests:
           storage: "{{ storage_size }}"
+  - metadata:
+      annotations:
+        volume.beta.kubernetes.io/storage-class: "{{ artifactory_data_storage_class }}"
+      name: data-volume
+    spec:
+      storageClassName: "{{ artifactory_data_storage_class }}"
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: "{{ data_storage_size }}"

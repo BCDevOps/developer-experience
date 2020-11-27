@@ -13,10 +13,10 @@
 
 The clusterAdmin.yml playbook must be run by a cluster admin
 
-*START in* `{reporoot}/apps/artifactory/artifactory-operator/install`
+*START in* `{reporoot}/apps/artifactory/artifactory-operator`
 
 ``` bash
-ansible-playbook clusterAdmin.yml -i ${Inventory File}
+ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
 ```
 
 ## Artifactory Operator Deployment
@@ -28,20 +28,17 @@ ansible-playbook clusterAdmin.yml -i ${Inventory File}
 *START in* `{reporoot}/apps/artifactory/artifactory-operator`
 
 ``` bash
-operator-sdk build artifactory-operator
-../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r docker-registry.lab.pathfinder.gov.bc.ca
-oc -n devops-artifactory tag artifactory-operator:latest artifactory-operator:v1-0.9.1-stable
+../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.silver.devops.gov.bc.ca -t v1-1.0.0-stable
 ```
-
 ### Deploy Operator
 
-*START in* `{reporoot}/apps/artifactory/artifactory-operator/install`
+*START in* `{reporoot}/apps/artifactory/artifactory-operator`
 
 ``` bash
-ansible-playbook operatorDeploy.yml -i ${Inventory File}
+ansible-playbook install/operatorDeploy.yml -i install/${Inventory File}
 ```
 
-## Cleanup
+## Cleanup!
 
 - Find all existing CR's
 
@@ -53,7 +50,7 @@ oc get <cr plural> --all-namespaces
 - After ALL CR instances of the CRDs have been deleted, then you will be able to simply run:
 
 ``` bash
-ansible-playbook operatorDeploy.yml -i ${Inventory File} -e "state=absent"
+ansible-playbook install/operatorDeploy.yml -i install/${Inventory File} -e "state=absent"
 ```
 
 - and then as cluster-admin:
