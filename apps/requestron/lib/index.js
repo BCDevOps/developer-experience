@@ -33,7 +33,7 @@ module.exports = (app) => {
       await setMilestone(context);
 
       // create a link to the Onboarding Journey for new project sets
-      await onboardingComment(context);
+      // await onboardingComment(context);
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');
@@ -80,8 +80,6 @@ module.exports = (app) => {
 
   async function scheduleTriggered(context) {
     try {
-
-      console.log(process.env.ENVIRO);
 
       //check which tickets have been most recently commented-on by a non-platform-ops user, and mark for needing response
       await checkNeedsResponse(context);

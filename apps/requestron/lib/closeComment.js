@@ -1,6 +1,7 @@
 require('probot');
 const axios = require('axios');
 const createJWT = require('./jwt.js');
+
 /**
  * Create a comment on close that includes some useful instructions/details
  */
@@ -21,11 +22,11 @@ const commentDetails = {
     'keycloak-realm': 'Please follow the instructions above to use realm-o-matic.',
     'openshift-access': 'The user in question should receive an invitation to the BCDevOps organization on GitHub. They must accept this invitation before they will be able to access Openshift. ' +
         'The invitation will show up in the inbox of whatever email address is listed as their primary address in their github profile.',
-    'openshift-project-set': 'Assuming this task was approved, you will find your project set by logging into the Openshift console and navigating to the Application Console. ' +
-        'There, you will find a list of all projects to which you have access. The technical steward will have admin access and can add new users to the projects as required.',
+    'openshift-project-set': 'Assuming this request has been approved, your 3.11 project set has now been deleted. Congratulations on your migration to Openshift 4!',
     'quota-update': 'Assuming this request has been approved, the closure of this ticket means that the platform services team has submitted this change to be implemented on the platform by DXCAS. ' +
         'It is *not* completed yet, and you may need to wait for a while longer before you see the change in your namespace. ' +
-        'If you are concerned by how long it is taking, please ask for further information on rocketchat.',
+        'If you are concerned by how long it is taking, please ask for further information on rocketchat. ' +
+        '\n\nIf you have made this request for an OCP4 namespace, please be aware that this request has not been actioned. Please use the appropriate provisioning tool to make your request instead.',
     'new-request-type': 'Assuming this request has been approved, you will now find the new request type available for submissions. ' +
         'Please note that, if you require action on that new request type yourself, you will need to submit a request of that type as well - the closure of this ticket does not indicate anything beyond the existence of the new request type.'
 };
