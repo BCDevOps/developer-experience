@@ -59,7 +59,7 @@ https://youtu.be/rkxVZgn9icU
 
 **Q: What happens if I don't specify a limit or a request?**  
 A: Your pods will be deployed with the following defaults: 
-- CPU Request: 100m
+- CPU Request: 50m
 - CPU Limit: 250m
 - Memory Request: 256Mi
 - Memory Limit: 1Gi
