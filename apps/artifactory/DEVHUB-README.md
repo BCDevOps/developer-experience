@@ -6,8 +6,17 @@ Artifactory is an Artifact Repository system. It serves two primary purposes:
 1. It provides caching of artifacts that you would normally pull from a public repository on the internet, allowing faster builds and deployments, as well as more robust security surrounding these public objects.
 2. It provides a private space for your team to upload your own artifacts for production purposes.
 
-To start, you will require a service account. Every project set in the cluster is created with one: you will find it in the `tools` namespace, under secrets, with a name of the format `[acct-name]-[namespace-name]-[license-plate]`.
-You can also find fuller details about your service account by running the command `oc describe artsvcacct [acct-name]`.
+### Openshift Objects and Related Commands
+
+To start, you will require a service account. You will find your service account login information in the `tools` namespace, under secrets, with a name of the format `artifactory-serviceaccount-[account-name]`.
+Every project set is created with one service account to start, with the account name `default` - this means that your secret name will be `artifactory-serviceaccount-default`.
+~~You can also find fuller details about your service account by running the command `oc describe artsvcacct [acct-name]`.~~  
+Users *should* be able to `oc get` and `oc describe` service accounts, but there is an ongoing issue preventing the privilege from propagating to users as expected.
+This issue is currently under investigation and should hopefully be fixed soon!
+
+For an easy way to get the secret information out via the CLI, try this command:
+
+`oc get secret/artifactory-serviceaccount-default -o json | jq '.data.password' | tr -d "\"" | base64 -d`
 
 ## Using Caching Repositories
 
@@ -18,7 +27,20 @@ After that, pulling the artifact (especially onto a pod on the cluster) should b
 
 *Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
 
+The following curl command can be used to collect an up-to-date list of the caching repos available from Artifactory:
+
+`curl -u username:password -X GET "https://artifacts.developer.gov.bc.ca/artifactory/api/repositories?type=remote" | \
+jq -r '(["ARTIFACTORYKEY","SOURCEURL"] | (., map(length*"-"))), (.[] | [.key, .url]) | @tsv' | column -t`
+
+*Hint: use your service account username and password to run this command*
+
+If there is a particular public repository that you would like to see cached through Artifactory, feel free to speak to the Platform Services team about having it added!
+
+
 ### Docker
+
+*Bonus! These steps work perfectly for ANY private docker registry, not just Artifactory!
+All you have to do is swap out the artifactory URL for the URL of your preferred registry!*
 
 Login to the registry
 
@@ -49,7 +71,19 @@ oc create secret docker-registry <pull-secret-name> \
     --docker-email=<username>@<namespace>.local
 ```
 
-Now you can add your pull secret to your deployment config, like this:
+and add the secret to the `default` and `builder` Openshift service account, to allow these account to use this pull secret:
+
+```
+oc secrets link default <pull_secret_name>
+oc secrets link builder <pull_secret_name>
+```
+
+*Note that some Openshift documentation implies that linking the secrets in this way is the only necessary step, 
+without having to add the pullSecret to your deployment/build configs as below. You are welcome to try this simpler way.
+However, we have found that our users run into problems with this method regularly, so we would encourage specifying the
+pullSecret in your configurations to avoid any problems*
+
+Now you can add your pull secret to your deployment config, like this...
 
 ```yaml
 apiVersion: v1
@@ -63,6 +97,23 @@ spec:
   imagePullSecrets:
   - name: <pull-secret-name>
 ```
+
+...or to your build config like this:
+
+```yaml
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  name: <build-name>
+spec:
+  strategy:
+      dockerStrategy:
+        pullSecret:
+          name: artifactory-creds
+```
+*Note that you don't need to use dockerStrategy here - it works the same way under other types of strategy as well*
+
+With these steps completed, you can use this image in your build and/or deployment!
 
 ### NPM
 
@@ -102,6 +153,15 @@ npm ERR! 403 403 Forbidden - GET https://artifacts.developer.gov.bc.ca/artifacto
 npm ERR! 403 In most cases, you or one of your dependencies are requesting
 npm ERR! 403 a package version that is forbidden by your security policy.
 ```
+
+Once you're ready to build and deploy on Openshift, you'll need to add the following lines to your assemble file:
+
+```
+npm config set registry https://artifacts.developer.gov.bc.ca/artifactory/api/npm/npm-remote/
+curl -u $AF_USERID:$AF_PASSWD https://artifacts.developer.gov.bc.ca/artifactory/api/npm/auth >> ~/.npmrc
+```
+
+Check out the [repo-mountie assemble file](https://github.com/bcgov/repomountie/blob/master/.s2i/bin/assemble) for an example!
 
 ### Maven
 
