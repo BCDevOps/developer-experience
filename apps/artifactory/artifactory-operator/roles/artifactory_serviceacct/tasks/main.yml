@@ -34,6 +34,10 @@
     generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits') }}"
   when: sa_exists.status == 404
 
+- name: Generate plate
+  set_fact:
+    generated_plate: "{{ lookup('password', '/dev/null length=6 chars=ascii_letters') | lower }}"
+
 - name: Create artifactory user
   uri:
     url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
@@ -59,7 +63,7 @@
       apiVersion: v1
       kind: Secret
       metadata:
-        name: "artifactory-serviceaccount-{{ meta.name }}"
+        name: "artifacts-{{ meta.name }}-{{ generated_plate }}"
         namespace: "{{ meta.namespace }}"
         labels:
           service: artifactory
