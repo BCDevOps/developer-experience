@@ -58,7 +58,7 @@ Example ArtifactorySA CR (Custom Resource) exists under `config/crd/bases/tmpl-a
 Create the ArtifactorySA Custom Resource:
 
 ``` bash
- ocas process -f ./config/samples/tmpl-artifactory-sa.yaml -p NAME="test" -p DESCRIPTOR="Description of Service Account" -p REGISTRIES='["docker-remote","redhat-docker-remote"]' | ocas create -f -
+ ocas process -f ./config/samples/tmpl-artifactory-sa.yaml -p NAME="test2" -p DESCRIPTOR="Description of Service Account" -p REGISTRIES='["docker-remote","redhat-docker-remote"]' | ocas create -f -
 ```
 
 #### Service Account Permissions

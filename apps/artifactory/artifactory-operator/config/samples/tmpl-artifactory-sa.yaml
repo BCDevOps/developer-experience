@@ -24,4 +24,3 @@ parameters:
 - description: Image registries for which to create pull secrets
   displayName: Image Registries
   name: REGISTRIES
-  value: "docker-remote"
