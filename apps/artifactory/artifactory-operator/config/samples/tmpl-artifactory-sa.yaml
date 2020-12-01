@@ -11,6 +11,7 @@ objects:
     name: ${NAME}
   spec:
     descriptor: "${DESCRIPTOR}"
+    image_registries: "${REGISTRIES}"
 parameters:
 - description: Name for the ArtifactSvcA custom resource
   displayName: CR Name
@@ -20,3 +21,7 @@ parameters:
   displayName: descriptor
   name: DESCRIPTOR
   value: "My artifact service account"
+- description: Image registries for which to create pull secrets
+  displayName: Image Registries
+  name: REGISTRIES
+  value: "docker-remote"

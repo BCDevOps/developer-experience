@@ -34,10 +34,6 @@
     generated_password: "{{ lookup('password', '/dev/null length=24 chars=ascii_letters,digits') }}"
   when: sa_exists.status == 404
 
-- name: Generate plate
-  set_fact:
-    generated_plate: "{{ lookup('password', '/dev/null length=6 chars=ascii_letters') | lower }}"
-
 - name: Create artifactory user
   uri:
     url: "{{ artifactory_url }}/artifactory/api/security/users/{{ service_account_name }}"
@@ -72,6 +68,69 @@
         username: "{{ service_account_name | b64encode }}"
         password: "{{ generated_password | b64encode }}"
   when: created_sa.changed
+
+#- name: Create Pull Secret for Service Account
+#  include_tasks: pull-secret.yaml
+#  with_items:
+#    - "{{ image_registries }}"
+#  loop_control:
+#    loop_var: registry_key
+#  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Set pull secret variables
+  set_fact:
+    pull_auth_decode: "{{ service_account_name }}:{{ generated_password }}"
+    pull_email: "{{ service_account_name }}@{{ meta.namespace }}.local"
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Set encoded pull secret variables
+  set_fact:
+    pull_auth: "{{ pull_auth_decode | b64encode }}"
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Start pull secret json
+  set_fact:
+    pull_json: '{"auths":{'
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Loop pull secret json
+  set_fact:
+    pull_json: '{{ pull_json }}"{{ item }}.artifacts.docker.gov.bc.ca":{"username":"{{ service_account_name }}","password":"{{ generated_password }}","email":"{{ pull_email }}","auth":"{{ pull_auth }}"},'
+  loop: "{{ image_registries }}"
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Remove trailing comma from pull secret json
+  set_fact:
+    pull_json: "{{ pull_json | regex_replace(',$', '') }}"
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: End pull secret json
+  set_fact:
+    pull_json: '{{ pull_json }}}}'
+  when: (created_sa.changed) and (image_registries is defined)
+
+- name: Cast pull secret json
+  set_fact:
+    cast_json: "{{ pull_json | to_json }}"
+
+- name: Create Pull Secret for Service Account
+  k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: "artifacts-pull-{{ meta.name }}-{{ generated_plate }}"
+        namespace: "{{ meta.namespace }}"
+        labels:
+          service: artifactory
+      type: kubernetes.io/dockerconfigjson
+      data:
+        .dockerconfigjson: "{{ cast_json | b64encode }}"
+
+
+
+
 
 # # Generating an admin token (to replace a service account user), requires adding to a group for access controls.
 # - name: Generate admin token

@@ -28,7 +28,7 @@ ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
 *START in* `{reporoot}/apps/artifactory/artifactory-operator`
 
 ``` bash
-../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.silver.devops.gov.bc.ca -t v1-1.0.0-stable
+../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.klab.devops.gov.bc.ca -t v1-1.0.0-stable
 ```
 ### Deploy Operator
 
