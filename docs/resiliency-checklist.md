@@ -89,6 +89,18 @@ If your pod has Limits higher than its Requests it will run Burstable and get at
 
 If your pod has the Requests and Limits set to the same value then it will run Guaranteed QoS class. It will have preferential access to compute resources and will be the last to be evicted if a node should become overloaded. This is best for apps in the `prod` namespace as they need the best uptime.
 
+### A Well Behaved App
+
+It is important to ensure your app is well behaved and doesn't impede the clusters operators work or impact the clusters ability to heal.
+
+Review the Kubernetes docs on [pod terminations](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination) to understand the full sequence of events. Ensure that your pods will gracefully exit. This means not setting the `terminationGracePeriod` too high, and ensuring your containers command properly listens for the `SIGTERM` and responds.
+
+When draining nodes for patching, the ops team will cap the grace period to 600s and force kill anything left running after that.
+
+If your application is making use of [PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) make sure that it is set to allow some disruption. Setting `maxUnavailable` to zero will be overridden by the ops team.
+
+Ensure that your pods are not in a `CrashLoopBackOff` state for too long. If they have been crashing for more than a day the Ops team might just delete them or scale down their replicaset.
+
 ## Community Support
 
 You may note that this document is pretty vague about the "hows" of these principles. This is because it can vary from application to application, and technology stack to technology stack.
