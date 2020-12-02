@@ -91,7 +91,7 @@ If your pod has the Requests and Limits set to the same value then it will run G
 
 ### A Well Behaved App
 
-It is important to ensure your app is well behaved and doesn't impede the clusters operators work or impact the clusters ability to heal.
+It is important to ensure your app is well behaved and doesn't impede the cluster's operators work or impact the cluster's ability to heal.
 
 Review the Kubernetes docs on [pod terminations](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination) to understand the full sequence of events. Ensure that your pods will gracefully exit. This means not setting the `terminationGracePeriod` too high, and ensuring your containers command properly listens for the `SIGTERM` and responds.
 
