@@ -1,3 +1,11 @@
+---
+description: KeyCloak (RH-SSO) Migration from Pathfinder to BCGov service
+resourceType: Documentation
+title: BC Government KeyCloak (RH-SSO) Service Name Migration Plan
+labels:
+- sso service name migration
+- keycloak host name change
+---
 
 ### What is happening?
 
