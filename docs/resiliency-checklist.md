@@ -83,11 +83,23 @@ It is preferable to scale horizontally than vertically. Use smaller Request and 
 
 Make use of the [Quality of Service](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#quality-of-service-tiers) options available to ensure your pods are correctly resourced and treated appropriately by the scheduler.
 
-If your pod has its Requests and Limits set to `0` it will run BestEffort and simply use whatever spare capacity is available on its node. This can be good for things like batch jobs that want to go as fast as they can, but don't care about being slowed down from time to time. It will also be the first to be evicted from an overloaded node. Assigning `0` as a request or limit must be done through the CLI or directly in the manifest. 
+If your pod has its Requests and Limits set to `0` it will run BestEffort and simply use whatever spare capacity is available on its node. This can be good for things like batch jobs that want to go as fast as they can, but don't care about being slowed down from time to time. It will also be the first to be evicted from an overloaded node. Assigning `0` as a request or limit must be done through the CLI or directly in the manifest.
 
 If your pod has Limits higher than its Requests it will run Burstable and get at minimum the Requested amount and by burst up to its Limit depending on how busy the node is with other pods.
 
 If your pod has the Requests and Limits set to the same value then it will run Guaranteed QoS class. It will have preferential access to compute resources and will be the last to be evicted if a node should become overloaded. This is best for apps in the `prod` namespace as they need the best uptime.
+
+### A Well Behaved App
+
+It is important to ensure your app is well behaved and doesn't impede the cluster's operators work or impact the cluster's ability to heal.
+
+Review the Kubernetes docs on [pod terminations](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination) to understand the full sequence of events. Ensure that your pods will gracefully exit. This means not setting the `terminationGracePeriod` too high, and ensuring your containers command properly listens for the `SIGTERM` and responds.
+
+When draining nodes for patching, the ops team will cap the grace period to 600s and force kill anything left running after that.
+
+If your application is making use of [PodDisruptionBudgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) make sure that it is set to allow some disruption. Setting `maxUnavailable` to zero will be overridden by the ops team.
+
+Ensure that your pods are not in a `CrashLoopBackOff` state for too long. If they have been crashing for more than a day the Ops team might just delete them or scale down their replicaset.
 
 ## Community Support
 
@@ -108,12 +120,12 @@ The Developer Exchange community is full of great developers seeking ways to hel
 
 **[BCDevOps/backup-container](https://github.com/BCDevOps/backup-container)**
 
-- Features a separate container that can spin up on a schedule in your namespace which connects to your database to perform a backup and/or to perform a test recovery of the most recent backup.
-- Currently works for both Postgres and MongoDB
+* Features a separate container that can spin up on a schedule in your namespace which connects to your database to perform a backup and/or to perform a test recovery of the most recent backup.
+* Currently works for both Postgres and MongoDB
 
 **[BCDevOps/Platform-Services/Patroni](https://github.com/BCDevOps/platform-services/tree/master/apps/pgsql/patroni)**
 
-- An open-source option for creating a highly available Postgres cluster
+* An open-source option for creating a highly available Postgres cluster
 
 ### Examples
 
@@ -125,18 +137,19 @@ And if you have an idea for how any of these projects might improve, offer your 
 
 **[Rocketchat](https://github.com/BCDevOps/platform-services/tree/master/apps/rocketchat)** - Platform Team
 
-- A highly available implementation of Rocketchat with an autoscaler that can change the total number of pods from a minimum of 3 to a maximum of 5, based on CPU usage.
-- A highly available implementation of a MongoDB stateful set.
-- Pod anti-affinity ensures that no two pods are ever spun up on the same node.
-- MongoDB backups are currently performed using a straightforward cronjob that spins up a pod to connect to the database and perform the backup.
+* A highly available implementation of Rocketchat with an autoscaler that can change the total number of pods from a minimum of 3 to a maximum of 5, based on CPU usage.
+* A highly available implementation of a MongoDB stateful set.
+* Pod anti-affinity ensures that no two pods are ever spun up on the same node.
+* MongoDB backups are currently performed using a straightforward cronjob that spins up a pod to connect to the database and perform the backup.
 
 **[Keycloak](https://github.com/bcgov/ocp-sso)** - Platform Team
 
-- A highly available implementation of Keycloak
-- An example of how to implement Patroni (in the future, this will become an example of highly-available EDB instead)
+* A highly available implementation of Keycloak
+* An example of how to implement Patroni (in the future, this will become an example of highly-available EDB instead)
 
 **[Devhub](https://github.com/bcgov/devhub-app-web)** - Developer Experience
-- 3 replica Deployment
-- a chain-build gastby (react app) that builds nodejs into a caddy server
+
+* 3 replica Deployment
+* a chain-build gastby (react app) that builds nodejs into a caddy server
 
 **If your team has a resilient design of any kind - even if you haven't perfected it - please fork this document and add your repo as an example! Nobody is perfect, and in-progress examples are a great help for teams trying to learn where to start!**
