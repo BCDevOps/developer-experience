@@ -1,6 +1,6 @@
 require('probot');
 const createScheduler = require('probot-scheduler');
-const setEstimate = require('./estimate');
+const setTicketCount = require('./ticketCount');
 const setSwimlane = require('./swimlane');
 const setMilestone = require('./milestone');
 const createClosingComment = require('./closeComment');
@@ -8,6 +8,8 @@ const averageTime = require('./averageTime');
 const onboardingComment = require('./onboarding');
 const checkNeedsResponse = require('./needsResponse');
 const checkStaleness = require('./staleIssue');
+const setEstimate = require('./estimate');
+const setEpic = require('./sprintEpic');
 const opsAwayComment = require('./opsAway');
 
 module.exports = (app) => {
@@ -22,24 +24,39 @@ module.exports = (app) => {
   app.on('schedule.repository', scheduleTriggered);
 
   async function issueOpened(context) {
+
+    const newIssue = context.issue();
+
     try {
-
-      const newIssue = context.issue();
-
-      // track number of tickets on ops-controller
-      await setEstimate(context);
 
       // update the milestone to the most recent one for each new ticket.
       await setMilestone(context);
 
-      // set the swimlane in Zenhub to Operations
-      await setSwimlane(newIssue.number);
-
       // create a link to the Onboarding Journey for new project sets
-      await onboardingComment(context);
+      // await onboardingComment(context);
 
       // create a message for service unavailability
       // await opsAwayComment(context, 'next Monday');
+
+      console.log("new issue #" + newIssue.number  + " updated in github")
+
+    } catch (err) {
+      throw Error('Unable to handle issue: ' + err)
+    }
+
+    // separate the zenhub try/catch
+    try {
+
+      // add estimate on ZenHub
+      await setEstimate(context);
+
+      // set the swimlane in Zenhub to Operations
+      await setSwimlane(newIssue.number);
+
+      // add the new ticket to the appropriate epic on Zenhub
+      await setEpic(context);
+
+      console.log("new issue #" + newIssue.number  + " updated in zenhub")
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
@@ -54,8 +71,7 @@ module.exports = (app) => {
       // add a comment to every closed ops ticket explaining stuff
       await createClosingComment(context);
 
-      // find the average time to close of all ops tickets and stick it on ops-controller
-      await averageTime(context);
+      console.log("closed issue #" + closedIssue.number  + " updated")
 
     } catch (err) {
       throw Error('Unable to handle issue: ' + err)
@@ -72,6 +88,7 @@ module.exports = (app) => {
       await checkStaleness(context);
 
     } catch (err) {
+      console.log(err);
       throw Error('Unable to handle issue: ' + err)
     }
   }

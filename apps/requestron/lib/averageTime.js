@@ -1,5 +1,7 @@
 const axios = require('axios');
 require('probot');
+const createJWT = require('./jwt.js');
+
 /**
  * Calculates average time open for each ticket in ops-controller
  */
@@ -11,6 +13,17 @@ const instance = axios.create({
 });
 
 module.exports = async function setEstimate(context) {
+
+    let token = await createJWT();
+    let instance = axios.create({
+        baseURL: 'https://api.github.com/',
+        timeout: 10000,
+        headers: {
+          authorization: `bearer ${token}`,
+          accept: 'application/vnd.github.machine-man-preview+json'
+        }
+    });
+
     try {
 
         const closingIssue = context.issue();

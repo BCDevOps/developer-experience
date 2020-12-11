@@ -6,3 +6,4 @@ npm-debug.log
 .end.old
 coverage
 .nvm
+secrets/*

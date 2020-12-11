@@ -11,6 +11,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}
+    labels:
+      app: requestron
   spec:
     lookupPolicy:
       local: false
@@ -19,6 +21,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     replicas: 1
     selector:
@@ -50,43 +54,82 @@ objects:
           - name: PRIVATE_KEY
             valueFrom:
               secretKeyRef:
-                name: github-private-key
-                key: PRIVATE_KEY
+                name: requestron-secrets
+                key: GITHUB_PRIVATE_KEY
           - name: WEBHOOK_SECRET
             valueFrom:
               secretKeyRef:
-                name: webhook-secret
-                key: WEBHOOK_SECRET
+                name: requestron-secrets
+                key: GITHUB_WEBHOOK_SECRET
+          - name: WEBHOOK_PROXY_URL
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: GITHUB_WEBHOOK_URL
           - name: ZENHUB_TOKEN
             valueFrom:
               secretKeyRef:
-                name: zenhub-token
+                name: requestron-secrets
                 key: ZENHUB_TOKEN
           - name: GITHUB_TOKEN
             valueFrom:
               secretKeyRef:
-                name: github-token
+                name: requestron-secrets
                 key: GITHUB_TOKEN
+          - name: INSTALLATION_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: GITHUB_INSTALLATION_ID
+          - name: GITHUB_CLIENT_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: GITHUB_CLIENT_ID
           - name: REPO_NAME
             valueFrom:
               secretKeyRef:
-                name: requestron-repo
+                name: requestron-secrets
                 key: REPO_NAME
           - name: REPO_OWNER
             valueFrom:
               secretKeyRef:
-                name: requestron-repo
+                name: requestron-secrets
                 key: REPO_OWNER
-          - name: REPO_ID
-            value: ${REPO_ID_VALUE}
           - name: APP_ID
-            value: ${APP_ID_VALUE}
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: APP_ID
+          - name: REQUEST_REPO_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: REQUEST_REPO_ID
+          - name: SG_REPO_ID
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: SG_REPO_ID
+          - name: SG_REPO_NAME
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: SG_REPO_NAME
+          - name: ENVIRO
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: ENV
+          - name: APP_NAME
+            valueFrom:
+              secretKeyRef:
+                name: requestron-secrets
+                key: APP_NAME
           - name: OPS_TEAM_ORG
             value: ${OPS_TEAM_ORG_VALUE}
           - name: OPS_TEAM_NAME
             value: ${OPS_TEAM_NAME_VALUE}
-          - name: WEBHOOK_PROXY_URL
-            value: ${WEBHOOK_PROXY_URL_VALUE}
           - name: TZ
             value: America/Vancouver
     test: false
@@ -105,6 +148,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     ports:
     - name: api
@@ -118,6 +163,8 @@ objects:
   metadata:
     creationTimestamp: null
     name: ${NAME}${SUFFIX}
+    labels:
+      app: requestron
   spec:
     host:
     port:
