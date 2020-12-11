@@ -42,6 +42,17 @@
           apiVersion: v1
           kind: Secret
           metadata:
-            name: "{{ service_account_name }}"
+            name: "artifacts-{{ meta.name }}"
+            namespace: "{{ meta.namespace }}"
+      when: sa_name is defined
+
+    - name: Delete Pull Secrets for Service Account
+      k8s:
+        state: absent
+        definition:
+          apiVersion: v1
+          kind: Secret
+          metadata:
+            name: "artifacts-pull-{{ meta.name }}"
             namespace: "{{ meta.namespace }}"
       when: sa_name is defined
