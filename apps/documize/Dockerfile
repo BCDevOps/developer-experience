@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM docker.io/alpine:3.10
 MAINTAINER leo.lou@gov.bc.ca
 
 ARG DVER=3.7.0
