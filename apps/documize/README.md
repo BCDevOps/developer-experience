@@ -16,6 +16,15 @@ Documize is an open source content authoring & automation system that allows tea
 - Postgres & Patroni version 10
 - Authentication with RedHat Keycloak 4.8
 
+### Pre-Requisites
+Set up the docker account. In your namespace, run the command 
+    ```oc create secret docker-registry <secret-name> --docker-server=docker.io --docker-username=<docker-username> --docker-password=<docker-password> --docker-email=unused```
+
+Then link your secret with the command
+    ```oc process -f ./apps/documize/openshift/sa-linked-image-pull-secrets.yml -p NAMESPACE=<namespace> -p SECRET_NAME=<secret-name> | oc apply -f - -n <namespace>```
+
+Now your docker account will be used to pull images from docker.
+
 ### Deployment
 The application is built and deployed on OpenShift Project Set `hmg6pw-*`. Pipeline is setup with [BCDK](https://github.com/BCDevOps/bcdk).
 
