@@ -6,7 +6,7 @@ labels:
 - sso service name migration
 - keycloak host name change
 ---
-
+> Update!! The test and production migrations will now happen on ___January 11th 2021___
 ### What is happening?
 
 Hi teams! We have successfully introduced the new SSO service name at `oidc.gov.bc.ca`! The next step is to start migrating your application SSO integration to the new name. Please note that this change did not affect the service offering (no changes to the functionality) and only changes how the SSO service is accessed by applications. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
