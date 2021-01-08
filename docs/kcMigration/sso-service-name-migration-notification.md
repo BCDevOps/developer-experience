@@ -6,7 +6,7 @@ labels:
 - sso service name migration
 - keycloak host name change
 ---
-> Update!! The test and production migrations will now happen on ___January 11th 2021___
+> Update!! The test and production migrations will now happen on ___January 18th 2021___
 ### What is happening?
 
 Hi teams! We have successfully introduced the new SSO service name at `oidc.gov.bc.ca`! The next step is to start migrating your application SSO integration to the new name. Please note that this change did not affect the service offering (no changes to the functionality) and only changes how the SSO service is accessed by applications. For more information on this Single Sign-On service, refer to [here](https://developer.gov.bc.ca/BC-Government-SSO-Service-Definition).
@@ -35,11 +35,11 @@ We will be working with product team to start exploring the migration process on
 Once you have successfully migrated SSO integration in Dev environment, proceed to Test and Production. Do not wait for the last day before service deprecation. _1 week_ of time are set aside for product teams to finial check for Test environment SSO usage and complete migration.
 
 
-#### Test SSO pathfinder service name deprecated on `Dec 21st 2020`
+#### Test SSO pathfinder service name deprecated on `Jan 18th 2020` (was Dec 21st 2020)
 Product teams should schedule to migration Test SSO integration before this date, and test on your migration plan/strategy developed from Dev migration process to get prepared for Production migration.
 
 
-#### Production SSO pathfinder service name deprecated on`Jan 11th 2021`
+#### Production SSO pathfinder service name deprecated on`Jan 18th 2021`(was Jan 11th 2021)
 _Please contact us immediately if your application will require longer support of sso.pathfinder.gov.bc.ca._ If we have not received any request by the end of _Dec 21st_, production pathfinder SSO service will be stopped as scheduled.
 
 
