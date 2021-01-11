@@ -18,7 +18,7 @@ Direct sale is a new offering of PayBC platform where external application can u
 
 From a User interface perspective, the below screen is what is rendered by PayBC as part of the Client application UI flow. The remaining data exchange, functions are background processes transparent to the User.
 
-![](C:\Users\menac\Desktop\PCI Patterns\paybc.png)
+![payBC](images/paybc.png)
 
  
 
@@ -26,7 +26,7 @@ From a User interface perspective, the below screen is what is rendered by PayBC
 
 # Context diagram
 
-![payment flow](C:\Users\menac\Desktop\PCI Patterns\payment flow.png)
+![payment flow](images/paymentflow.png)
 
  **Payment data flow:**
 
@@ -54,7 +54,7 @@ Further technical details can be found in the PayBC GitHub repository: https://g
 
 ## **ARCHITECTURE**
 
-![CAS Direct Sale Architecture](C:\Users\menac\Desktop\PCI Patterns\CAS Direct Sale Architecture.png)
+![CAS Direct Sale Architecture](images/CASDirectSaleArchitecture.png)
 
 
 
