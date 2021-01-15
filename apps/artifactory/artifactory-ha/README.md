@@ -16,7 +16,6 @@ You will need a local version of the `vars.yaml` file for recording the cluster-
 ### b. Making a New S3 bucket
 
 Generally speaking, a new installation of Artifactory should have its own S3 bucket.
-If you are installing for testing purposes, this probably isn't necessary and you can use the "test" bucket.
 
 Otherwise, follow these instructions to create a new one:
 
@@ -24,24 +23,39 @@ Otherwise, follow these instructions to create a new one:
 * Go to https://mgmt.objectstore.gov.bc.ca and log in (your username is your gov email address and your password is your IDIR password).
    * If you don't have access and think you should, speak to another member of the Platform Services team.
 * You will likely open the dashboard with a banner indicating a 500 error or a permissions error. This error is expected and can be safely ignored.
-* On the menu, click on `Manage` and then `Users`
-* Make sure that the button saying "Object Users" has a grey background near the top of the page. If it doesn't, click on "Object Users"
-* Click on "New Object User"
-* Give your new object user a name - the name should be formatted like `artifactory-cluster-user` where cluster is the name of the cluster on which you plan to install artifactory.
-* Ensure the namespace says `citz-dev-exchange` and click on "Next to Add Password"
-* On the next page, under `S3/Atmos` click the "Generate and Add Secret Key" button, then copy down the resulting secret key. 
-* Ignore the other sections (`Swift Groups` and `CAS`) and click "Close"
-* Ensure the new object user shows up on the list of object users on the User Management page.
-* Under `Manage` on the menu, click `Buckets`
-* Make sure the dropdown next to "New Bucket" says `citz-dev-exchange` and then click "New Bucket"
-* Give your new bucket a name - the name should be formatted like `artifactory-cluster-bucket` where cluster is the name of the cluster on which you plan to install artifactory.
-* Ensure the namespace says `citz-dev-exchange` and leave the replication group as the default value.
-* Enter the name of the new object user you just made in the Bucket Owner box.
-* Make sure that `Set current user as Bucket Owner` is **NOT** selected, and then click "Next"
-* On the next page, `Required`, leave everything as default and click "Next"
-* On the next page, `Optional`, turn Quota on, set it to `Notification Only at` and provide a reasonable value, depending on the nature of the installation.
-* Ignore the other sections (`Bucket Tagging` and `Bucket Retention Period`) and click "Save"
+* On the menu, click on `Identity and Access`
+* Make sure that you are on the "Users" tab near the top of the screen
+* Select the `citz-dev-exchange` namespace from the dropdown - this should cause the "New User" button to become functional, and cause several other users to appear in the table below.
+* Click on "Add User"
+* Give your new object user a name - the name should be formatted like `artifactory-cluster-s3` where cluster is the name of the cluster on which you plan to install artifactory.
+* Click "Next" to go to the "Permissions" page.
+* Click "ATTACH POLICIES" and select "ECSS3FullAccess"
+* Click "Next" to go to the "Tags" page, which you can ignore, so click "Next" again to go to "Review"
+* Check that everything looks right, and click "Create User"
+* You will be taken to a page where you are given the account's "Access Key ID" and "Access Secret Key" - you can download the csv (which contains both) for future reference.
+* Now you can disconnect from the VPN if you want to :)
+* Create or update your ~/.s3curl file with your new access keys (see below for instructions). Give it a sensible profile name, like the cluster name.
+* Issue this command in your terminal: `./s3curl.pl --id=profile_name --createBucket -- https://citz-dev-exchange.objectstore.gov.bc.ca/bucket_name`
+   * use a bucket name of the format `artifactory-cluster` if possible.
 * Your new bucket is ready! Copy down the appropriate information into your `vars-local.yaml` file in the Object Store section.
+
+Here is an example of what you .s3curl file should look like:
+
+```
+%awsSecretAccessKeys = (
+    profile1 => {
+        id => 'ID1GOESHERE',
+        key => 'KEY1GOESHERE',
+    },
+   profile2 => {
+        id => 'ID2GOESHERE',
+        key => 'KEY2GOESHERE',
+    },
+);
+push @endpoints , (
+    'citz-dev-exchange.objectstore.gov.bc.ca',
+);
+```
 
 ### c. Making a new SSO Client
 
@@ -132,7 +146,8 @@ For now, here's what remains
 Don't run unless you're sure ;)
 
 ```
-oc delete statefulsets,services,routes,secrets,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
+oc delete statefulsets,services,routes,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
+oc delete secrets -l app=artifactory-ha
 oc delete statefulsets,services,routes,secrets -l app=patroni-001
 oc delete configmaps -l cluster-name=patroni-001
 oc delete pvc -l app=patroni-001
