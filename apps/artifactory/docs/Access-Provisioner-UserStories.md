@@ -44,17 +44,31 @@ As an OPS team member, I would like to be able to reconcile *Artifactory Service
 
 To consume Artifactory Services a container in a namespace requires a provisioned account in the Artifactory service, and an accessible secret containing the access token(s) for the provisioned account.
 
-The current implementation uses a cluster-based operator that provisions the Artifactory service access, and creates a namespaced secret that contains the initially provisioned access token.
+The current implementation uses a cluster-based operator (Docent) that provisions the Artifactory service access.  The operator creates a namespaced secret that contains the initially provisioned access token, and will create additional Docker secrets if the ArtifactorySA Custom Resource specifies docker URLs to be associated with the secret.
 
 #### BCGov Artifactory Operator
 
-The current version of the Artifactory Operator is able to perform the provisioning/decommission of the Artifactory service access.  The default namespace access provisioning is currently automated through the Project Registry pipeline.  The improvements recommended are targeted specifically at the following areas:
+The current version of the Docent Operator is able to perform the provisioning/decommission of the Artifactory service accounts and both docker and regular secrets.  The default namespace access provisioning is currently automated through the Project Registry pipeline and creates a single Artifactory Service account in the `-tools` namespace for a team.
+
+The improvements recommended are targeted specifically at the following areas:
 
 - Formalize the documentation for Developers to leverage the service for Builds
 - Formalize the documentation for Developers to leverage the service for deployments
 - Update the Operator to add [Manage Artifactory Credentials](#manage-artifactory-credentials)
 - Update the Operator to add [Access Control and Audit](#access-control-and-audit)
 - Update the Operator and deployments to validate [Provide Access from Multiple Clusters](#provide-access-from-multiple-clusters)
+
+##### Known Issues and enchancements
+
+[# 863](https://github.com/BCDevOps/developer-experience/issues/863) - Namespace Admin role is unable to create an ArtifactorySA resource.
+
+[# 865](https://github.com/BCDevOps/developer-experience/issues/865) - Default provisioned access requires manual secret management
+
+[# 621](https://github.com/BCDevOps/developer-experience/issues/621) - Enhancement for automated secret reset/recovery
+
+**Proposed User Provisioning Workflow**
+
+![UserProvisioning](images/ArtSupply-workflow.png)
 
 #### BCGov Artifactory Service
 
