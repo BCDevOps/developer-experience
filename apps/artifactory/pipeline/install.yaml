@@ -202,10 +202,25 @@ objects:
     - services
   - verbs:
     - patch
+    - create
     apiGroups:
     - ""
     resources:
     - pods
+    - services
+    - configmaps
+    - replicationcontrollers
+    - secrets
+  - verbs:
+    - get
+    - list
+    - watch
+    - patch
+    - create
+    apiGroups:
+    - image.openshift.io
+    resources:
+    - imagestreams
 
 - apiVersion: rbac.authorization.k8s.io/v1
   kind: RoleBinding
