@@ -56,6 +56,16 @@ If you have deleted the secret of a service account that you have created, you m
 Wait until Archeobot has finished cleaning up all the necessary bits, and then simply create a new object with the same name. 
 This will result in a new account being created with new secret(s) present in the appropriate namespace for you to use!
 
+### I can't find the secret for my default service account!
+
+You might have deleted it previously! It's also quite possible that you have one of the older formatted secret names.
+Shortly after OCP4 went live, we made the decision to change the artifactory secret names to something clearer, as they were extremely opaque at release.
+If you are working in a namespace that was created early in the lifespan of the Silver cluster, this might be why you can't find your secret.
+You may find it with the name `default-[namespacename]-[plate]` - see? Not very descriptive!
+
+If this is the case, you can follow the instructions above to delete the `default` ArtifactoryServiceAccount object. 
+It will be automatically recreated for you - this time with the more descriptive name!
+
 ## Using Caching Repositories
 
 The following sections provide some examples for how to pull artifacts through our caching/remote repositories.
