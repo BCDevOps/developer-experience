@@ -6,10 +6,10 @@ Artifactory is an Artifact Repository system. It serves two primary purposes:
 1. It provides caching of artifacts that you would normally pull from a public repository on the internet, allowing faster builds and deployments, as well as more robust security surrounding these public objects.
 2. It provides a private space for your team to upload your own artifacts for production purposes.
 
-## Archeobot
+## Docent
 
-Archeobot is a little bot that lives on each cluster that helps you to "dig" for artifacts!
-For the time being Archeobot is in charge of creating an maintaining your Artifactory Service Accounts.
+Docent is a little bot that lives on each cluster that helps you access artifacts!
+For the time being Docent is in charge of creating an maintaining your Artifactory Service Accounts.
 Soon, he will also be able to help you create and maintain a private artifact respository in Artifactory, where you will be able to push your own images and other objects!
 
 ## Service Accounts
@@ -24,14 +24,14 @@ For an easy way to get the secret information out via the CLI, try this command:
 
 ### Creating New Service Accounts
 
-Those with edit or admin access to their project set can create new Artifactory Service Account objects, and Archeobot will help set up all the various parts necessary to make it work!
+Those with edit or admin access to their project set can create new Artifactory Service Account objects, and Docent will help set up all the various parts necessary to make it work!
 
 You can use the following command to do so:
 
 `oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="accountname" -p DESCRIPTOR="Description of Service Account" -p REGISTRIES='["key1","key2"]' | oc create -f -`
 
 Make sure you change the name and description parameters to suit your needs. 
-The registries parameter is optional - including it causes Archeobot to create a pull secret in addition to the normal secret for every docker registry key you include in the list.
+The registries parameter is optional - including it causes Docent to create a pull secret in addition to the normal secret for every docker registry key you include in the list.
 You will need to ensure that you are including only the registry keys, not the full registry url in this list; for example, `REGISTRIES='["docker-remote","redhat-docker-remote"]`.
 
 This will create an object in your namespace with whatever name you have given it. 
@@ -53,7 +53,7 @@ you just delete the ArtifactoryServiceAccount object called `default`, which you
 The project provisioning bot will detect that this object has been deleted, and will recreate it automatically. No further action is required from you.
 
 If you have deleted the secret of a service account that you have created, you must delete the relevant ArtifactoryServiceAccount object in the relevant namespace.
-Wait until Archeobot has finished cleaning up all the necessary bits, and then simply create a new object with the same name. 
+Wait until Docent has finished cleaning up all the necessary bits, and then simply create a new object with the same name. 
 This will result in a new account being created with new secret(s) present in the appropriate namespace for you to use!
 
 ### I can't find the secret for my default service account!
