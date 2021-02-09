@@ -8,9 +8,7 @@ tags:
   - artifacts
   - repositories
   - images
-  - 
-  - resilient
-  - devops
+  - docker
 description: How to design your application to have as much uptime as possible.
 ---
 
