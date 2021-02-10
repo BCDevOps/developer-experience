@@ -120,9 +120,6 @@ repo_list:
   - { repo_key: 'boundlessgeo-maven-remote', repo_desc: 'Remote BoundlessGeo Maven Repository', remote_url: 'http://repo.boundlessgeo.com/main/', pkg_type: 'maven' }
   - { repo_key: 'geosolutions-maven-remote', repo_desc: 'Remote Geo-Solutions Maven Repository', remote_url: 'http://maven.geo-solutions.it/', pkg_type: 'maven' }
   - { repo_key: 'jasperreports-maven-remote', repo_desc: 'Remote JasperReports Maven Repository', remote_url: 'http://jasperreports.sourceforge.net/maven2', pkg_type: 'maven' }
-  - { repo_key: 'jaspersoftjr-maven-remote', repo_desc: 'Remote Jaspersoft JR Maven Repository', remote_url: 'http://jaspersoft.artifactoryonline.com/jaspersoft/jr-ce-releases/', pkg_type: 'maven' }
-  - { repo_key: 'jaspersoftjrs-maven-remote', repo_desc: 'Remote Jaspersoft JRS Maven Repository', remote_url: 'http://jaspersoft.artifactoryonline.com/jaspersoft/jrs-ce-releases/', pkg_type: 'maven' }
-  - { repo_key: 'jaspersoft3p-maven-remote', repo_desc: 'Remote Jaspersoft 3rd Party Maven Repository', remote_url: 'https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/', pkg_type: 'maven' }
   - { repo_key: 'jcenter-maven-remote', repo_desc: 'Remote JCenter Maven Repository', remote_url: 'http://jcenter.bintray.com', pkg_type: 'maven' }
   - { repo_key: 'jfrog-maven-remote', repo_desc: 'Remote JFrog Artifactory Maven Repository', remote_url: 'https://jfrog.bintray.com/artifactory/', pkg_type: 'maven' }
   - { repo_key: 'oracle-maven-remote', repo_desc: 'Remote Oracle Maven Repository', remote_url: 'https://maven.oracle.com', pkg_type: 'maven' }
