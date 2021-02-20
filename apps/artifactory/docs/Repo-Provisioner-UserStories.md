@@ -17,13 +17,30 @@ Artifactory repositories for OpenShift applications are provisioned using a cust
 
 As an Application Developer, I would like to be able to use the Artifactory Service to store containers, rpms, and/or libraries I use to build and run my applications from within my project space.
 
+##### Required technical features
+- [ ] Docent/Archeobot has the ability to create/delete a private repository.
+    - [x] Cluster has ArtifactoryRepository CRD.
+    - [ ] Docent/Archeobot responds to the creation of an ArtRepo resource by creating a private repository with the appropriate settings in Artifactory.
+        - [ ] ArtRepo creation privileges are limited to the Platform Services team, so a ticket exists in `devops-requests` for teams to request a member of the team to create the resource on their behalf.
+    - [ ] Docent/Archeobot responds to the deletion of an ArtRepo resource by deleting the private repository with the appropriate settings in Artifactory.
+        - [ ] ArtRepo creation privileges are limited to the Platform Services team, so a ticket exists in `devops-requests` for teams to request a member of the team to delete the resource on their behalf.
+
 #### Manage Repository Access
 
 As an Application Developer, I would like to be able to manage access permissions to my Artifactory repositories from within my project space.
 
+##### Required technical features
+- [ ] Docent/Archeobot has the ability to edit a private repository's access permissions.
+    - [ ] Docent/Archeobot responds to the alteration of an ArtRepo resource by checking for the nature of the change and, if it's a change to the listed permissions, adding or removing permissions on the relevant repo.
+    - [ ] ArtRepo update privileges should be granted to those with admin privileges on the namespace.
+
 #### Multiple Cluster Access
 
 As an Application Developer, I would like to be able to access all use cases from any cluster my app is deployed to.
+
+##### Required technical features
+- [ ] Docent/Archeobot is fully available on all clusters, connecting to the prod Artifactory instance.
+    - [ ] No functionality of Docent/Archeobot requires installation on the same cluster as Artifactory.
 
 ### Implementation Details/Notes/Constraints
 

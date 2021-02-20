@@ -19,7 +19,7 @@ As an Application Developer, I would like to be able to use the Artifactory Serv
 
 ##### Required technical features
 - [x] Artifactory has a list of commonly-used caching repos.
-- [x] Docent/Archeobot has the ability to  a service account and secret.
+- [x] Docent/Archeobot has the ability to create/delete a service account and secret.
     - [x] Cluster has ArtifactoryServiceAccount CRD
     - [x] Docent/Archeobot responds to the creation of an ArtSvcAcct resource by creating an account in Artifactory with privileges on the caching repos and creating a secret in the relevant namespace with the service account's password.
     - [x] Docent/Archeobot responds to the deletion of an ArtSvcAcct resource by deleting the relevant account in Artifactory (if it exists) and the related secret in the relevant namespace.
@@ -30,7 +30,7 @@ As an Application Developer, I would like to be able to use an artifactory conta
 
 ##### Required technical features
 - [x] Artifactory has a list of commonly-used caching repos.
-- [x] Docent/Archeobot has the ability to create a service account and secret.
+- [x] Docent/Archeobot has the ability to create/delete a service account and secret.
     - [x] Cluster has ArtifactoryServiceAccount CRD
     - [x] Docent/Archeobot responds to the creation of an ArtSvcAcct resource by creating an account in Artifactory with privileges on the caching repos and creating a regular secret and pull secret in the relevant namespace with the service account's password.
     - [x] Docent/Archeobot responds to the deletion of an ArtSvcAcct resource by deleting the relevant account in Artifactory (if it exists) and the related secrets in the relevant namespace.
