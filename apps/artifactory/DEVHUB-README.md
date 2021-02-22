@@ -1,4 +1,12 @@
-
+---
+tags:
+- artifactory
+- cache
+- caching
+- jfrog
+title: Artifactory
+description: How-to utilize the Artifact service operated by Platform Services
+---
 # Artifact Repositories
 
 Artifactory is an Artifact Repository system. It serves two primary purposes:
