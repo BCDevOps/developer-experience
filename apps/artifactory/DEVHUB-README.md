@@ -1,5 +1,18 @@
+---
+title: Artifact Repositories (Artifactory)
+resourceType: Documentation
+personas: 
+  - Developer
+tags:
+  - openshift
+  - artifacts
+  - repositories
+  - images
+  - docker
+description: How to design your application to have as much uptime as possible.
+---
 
-# Artifact Repositories
+# Artifact Repositories (Artifactory)
 
 Artifactory is an Artifact Repository system. It serves two primary purposes:
 
