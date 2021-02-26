@@ -64,7 +64,7 @@ Head straight to RocketChat’s 911 channel: `#devops-sos`
 
 #### Platform issue (i.e., suspected outage)
 
-Hop onto our [status page](https://status.pathfinder.gov.bc.ca), or RocketChat `#devops-alerts` and/or `#general` to see if we’re  already aware of a Platform-wide problem. If you don't see anything there, then RocketChat `#devops-operations` is a good place to begin. However, you should always be sure that it's a Platform issue before posting there. If you're not sure, start on RocketChat `#devops-how-to` to see if you can get some help there.
+Hop onto our [status page](https://status.developer.gov.bc.ca), or RocketChat `#devops-alerts` and/or `#general` to see if we’re  already aware of a Platform-wide problem. If you don't see anything there, then RocketChat `#devops-operations` is a good place to begin. However, you should always be sure that it's a Platform issue before posting there. If you're not sure, start on RocketChat `#devops-how-to` to see if you can get some help there.
 
 If you're from elsewhere in government, this support model is likely different from what you're used to. Normally, you'd call 7-7000 and someone else would swing in to fix things up for you. Self-service cuts both ways: you have all kinds of freedom and flexibility, but it also means responsibility. The more you provide your support to others, the more others will be able to support you.
 
@@ -108,14 +108,15 @@ Here's a good example of the difference:
 
 ### We Provide Community-Wide Tools
 
-If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the [Platform Services team](https://docs.pathfinder.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g) is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
+If you need help using any of these tools, you're not alone: seek out your new (smart) friends in the Platform community. Remember: the [Platform Services team](https://docs.developer.gov.bc.ca/s/bk07fg8i4dscrcq7posg/devops-platform-services/d/bpp916b0acqjm3hnvd10/platform-services-org-chart?currentPageId=bpp91db0acqjm3hnvd1g) is heads-down supporting the actual Platform and doesn't provide general user support for these tools. It's time for you to start growing your network!
 
 One of our primary mandates is to provide the whole community with a suite of tools that will allow you to make full use of the Platform. At the moment, these include:
 
-* RocketChat (https://chat.pathfinder.gov.bc.ca or download an app), on-prem hosted
-* Keycloak Single Sign-On and Federated Identity Service (https://sso.pathfinder.gov.bc.ca/), on-prem hosted
-* Aporeto (coming in the new OCP 4 Platform in summer 2020), on-prem and SaaS components
-* Documize Document Management (https://docs.pathfinder.gov.bc.ca/), on-prem hosted, supports public and protected content
+* RocketChat (https://chat.developer.gov.bc.ca or download an app), on-prem hosted
+* Keycloak Single Sign-On and Federated Identity Service (https://oidc.gov.bc.ca/), on-prem hosted
+* Documize Document Management (https://docs.developer.gov.bc.ca/), on-prem hosted, supports public and protected content
+* Sysdig, on-prem hosted
+* Aqua, on-prem hosted (coming to silver)
 * GitHub - online code management for open-source projects SaaS, all government repos are part of the bcgov organization.
 * ... and obviously the Platform itself: OpenShift.
 
