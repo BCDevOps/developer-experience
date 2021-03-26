@@ -1,9 +1,0 @@
-node_modules
-npm-debug.log
-*.pem
-!mock-cert.pem
-.env
-.end.old
-coverage
-.nvm
-secrets/*
