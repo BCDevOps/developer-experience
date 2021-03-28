@@ -1,9 +1,5 @@
 # Migration from Subdomain to Path
 
-## Does it work for us?
-
-We will need to perform a load test once we move to the path method because using path may cause additional load on the artifactory pods. Plan to come.
-
 ## Migrating the Service
 
 - changing the status is simply a matter of one API call to change the config.
