@@ -1,5 +1,9 @@
 # Migration from Subdomain to Path
 
+## Does it Work for Us?
+
+The load tests showed a small increase in load on the artifactory pods during the initial test, which seemed like an acceptable additional load. However, after further reading, I found that there is additional load likely to be found on the master nodes in addition to what shows up on the artifactory pods themselves. I am no longer comfortable with the idea of placing this additional load on the platform, as higher load against the master nodes is more likely to cause problems for the entire cluster (and because it is harder for me to sufficiently test the impact of this load).
+
 ## Migrating the Service
 
 - changing the status is simply a matter of one API call to change the config.
