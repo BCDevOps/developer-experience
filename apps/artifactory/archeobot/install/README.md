@@ -13,7 +13,7 @@
 
 The clusterAdmin.yml playbook must be run by a cluster admin
 
-*START in* `{reporoot}/apps/artifactory/artifactory-operator`
+*START in* `{reporoot}/apps/artifactory/archeobot/`
 
 ``` bash
 ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
@@ -25,14 +25,14 @@ ansible-playbook install/clusterAdmin.yml -i install/${Inventory File}
 
 ### Build/push/tag image
 
-*START in* `{reporoot}/apps/artifactory/artifactory-operator`
+*START in* `{reporoot}/apps/artifactory/archeobot/`
 
 ``` bash
 ../oc-push-image.sh -i artifactory-operator -n devops-artifactory -r image-registry.apps.silver.devops.gov.bc.ca -t v1-1.0.0-stable
 ```
 ### Deploy Operator
 
-*START in* `{reporoot}/apps/artifactory/artifactory-operator`
+*START in* `{reporoot}/apps/artifactory/archeobot/`
 
 ``` bash
 ansible-playbook install/operatorDeploy.yml -i install/${Inventory File}

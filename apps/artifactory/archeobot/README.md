@@ -4,13 +4,13 @@ This Ansible Operator has been written for Artifactory to handle multi-tenancy, 
 
 ## High-level architecture
 
-![](images/Artifactory-operator.png) 
+![missing](images/Artifactory-operator.png) 
 
 ## Deployment
 
 In the Artifactory deployment project, confirm that the secret `artifactory-admin` exists with a password for Artifactory. Leave Username blank.
 
-![](images/admin-secret.png)
+![missing](images/admin-secret.png)
 
 ### Operator Install automation
 

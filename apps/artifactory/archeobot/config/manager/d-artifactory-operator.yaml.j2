@@ -28,9 +28,6 @@ spec:
           - mountPath: /tmp/ansible-operator/admin/
             name: artifactory-secret
             readOnly: true
-          - mountPath: /tmp/ansible-operator/cert/
-            name: artifactory-cert
-            readOnly: true
           resources:
             limits:
               cpu: '1'
@@ -60,6 +57,3 @@ spec:
         - name: artifactory-secret
           secret:
             secretName: {{ secretName }}
-        - name: artifactory-cert
-          secret:
-            secretName: {{ dockerSecretName }}
