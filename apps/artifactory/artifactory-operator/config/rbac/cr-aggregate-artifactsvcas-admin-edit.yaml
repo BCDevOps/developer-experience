@@ -8,8 +8,8 @@ metadata:
 rules:
 - apiGroups:
   - artifactory.devops.gov.bc.ca
-  attributeRestrictions: null
-  resources: ["ArtifactoryServiceAccount"]
+  resources:
+  - artifactoryserviceaccounts
   verbs:
   - create
   - delete

@@ -6,6 +6,11 @@ metadata:
     rbac.authorization.k8s.io/aggregate-to-view: "true"
     rbac.authorization.k8s.io/aggregate-to-cluster-reader: "true"
 rules:
-- apiGroups: ["artifactory.devops.gov.bc.ca"]
-  resources: ["ArtifactoryServiceAccount"]
-  verbs: ["get", "list", "watch"]
+- apiGroups:
+  - artifactory.devops.gov.bc.ca
+  resources:
+  - artifactoryserviceaccounts
+  verbs:
+  - get
+  - list
+  - watch
