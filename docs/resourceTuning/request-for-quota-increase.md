@@ -21,9 +21,17 @@ Is your application failing to scale due to resource limit? Are you seeing OOM p
 
 **Now if you are pretty sure that you do need a quota increase, please continue!**
 
+Resource quota increase can be requested by a Product Owner or a Tech Lead of the project on the project edit page in [Openshift 4 Project Registry](https://registry.developer.gov.bc.ca/public-landing) and will **require the approval** by the Platform Service Team before it is processed.  
+
+**We currently do not support quota increases for a specific resource (i.e. just RAM, or just CPU, or just Storage) or for a specific namespace (i.e. prod only).**  Teams requiring more resources in any of the 3 resource categories such as CPU/RAM/Storage in any of the 4 namespaces (dev, test, tool or prod), will have to submit a standard quota increase request through the Project Registry.  The upgrade path will only be available in this order: from small -> medium -> large. You cannot skip medium and upgrade from small to large.
+
+Once the quota increase request is approved (see below what information is required before the request can be approved), all 4 namespaces in a project set will be upgraded to the next quota size which includes a double amount of resources in all 3 categories.
+
+*Example: If your prod namespace needs more storage and you request a standard quota increase from small to medium, the resource allocations for all 4 of your namespaces will be upgraded to the medium size quota as per the [OCP 4 resource quota definition](link).*
+
 ## What does the Platform Services Team need to know?
 
-Before we provide more resource for you, we need to know if you are making good use of the current quota and any expected load increase to your application.
+Before we provide more resources for you, we need to know if you are making good use of the current quota and any expected load increase to your application.
 
 If you are currently running out of quota, we'd like to see some statistics of resource consumption and utilization. If you are getting prepared for an application load increase, we'd like to know the expected increase and how much growth room you still have.
 
@@ -79,3 +87,8 @@ Here are some things to include:
 
 **Step 4:**
 Send the above to Platform Services team at pathfinder@gov.bc.ca. Someone from the team will follow up with you soon!
+
+When requesting a quota increase from **medium** to **large**, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
+
+If you have a need to store a large amount of **unstructures data**, you may want to consider to leverage the [S3 Object Storage Service](https://github.com/BCDevOps/OpenShift4-Migration/issues/59) provided by Enterprise Hosting.
+
