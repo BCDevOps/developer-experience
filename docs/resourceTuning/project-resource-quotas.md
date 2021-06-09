@@ -1,4 +1,4 @@
-All project sets in the new OpenShift Container Platform (OCP) 4 Platform are provisioned by default with a "small" resource quota size that includes a certain amout of CPU, RAM and Storage.  The amount of resources within each quota size - small, medium and large are as follows:
+All project sets in the new OpenShift Container Platform (OCP) 4 Platform are provisioned by default with a **"small"** resource quota size that includes a certain amout of CPU, RAM and Storage.  The amount of resources within each quota size - small, medium and large are as follows:
 
 **CPU/RAM/Storage resource quotas (per namespace)**:
 * **Small (Default)**:<br/> 
