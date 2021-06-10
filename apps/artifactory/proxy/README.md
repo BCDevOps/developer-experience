@@ -11,6 +11,8 @@ It will allow the existing URLs to continue to work even though artifactory itse
 
 The manifest is not overly generic so it takes one one mandatory parameter, the `DOMAIN_NAME`. This is how it can be adapted to run in a lab environnement or production cluster. For the lab, it is recommended to include the optional REPLICAS parameter set to `1`.
 
+The deployment will pull the `caddy:latest` from artifactory; make sure the credentials are setup before deploying and update the manifests as needed.
+
 ```console
 oc process -f deploy.yaml -p DOMAIN_NAME=apps.klab.devops.gov.bc.ca | \
 oc apply -f -
@@ -30,7 +32,7 @@ The any HTTP(S) traffic to these routes will be directed to the proxy where the 
 
 **Pro Tip 🤓**
 
-The deployment expects to create routes. If routes already exists comment out route creation and just update existing routes OR (better solution) delete existing routes and let the proxy deployment create its own.
+- The deployment expects to create routes. If routes already exists comment out route creation and just update existing routes OR (better solution) delete existing routes and let the proxy deployment create its own.
 
 ### Docker Example
 
