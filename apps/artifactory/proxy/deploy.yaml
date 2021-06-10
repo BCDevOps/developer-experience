@@ -1,0 +1,213 @@
+# Copyright 2021 The Province of British Columbia
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+---
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  annotations:
+    description: |
+      Deployment for artifactory URL proxy.
+  name: proxy
+objects:
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      labels:
+        app: proxy
+      name: docker-remote
+    spec:
+      host: docker-remote.${DOMAIN_NAME}
+      port:
+        targetPort: 2015-tcp
+      tls:
+        termination: edge
+      to:
+        kind: Service
+        name: proxy
+        weight: 100
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      labels:
+        app: proxy
+      name: redhat-docker-remote
+    spec:
+      host: redhat-docker-remote.${DOMAIN_NAME}
+      port:
+        targetPort: 2015-tcp
+      tls:
+        termination: edge
+      to:
+        kind: Service
+        name: proxy
+        weight: 100
+  - apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: proxy-config
+      labels:
+        app: proxy
+    data:
+      Caddyfile: |
+        (revpx) {
+          reverse_proxy * https://artifacts.apps.klab.devops.gov.bc.ca {
+            header_up Host {http.reverse_proxy.upstream.hostport}
+            header_up X-Forwarded-Port {server_port}
+            header_up X-Real-IP {remote_host}
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Forwarded-Proto {scheme}
+            header_up X-JFrog-Override-Base-Url https://artifacts.apps.klab.devops.gov.bc.ca:443
+          }
+        }
+
+        (logging) {
+          log {
+            # errors stdout
+            output stdout 
+            #format single_field common_log
+            level DEBUG
+          }
+        }
+
+        http://docker-remote.apps.klab.devops.gov.bc.ca:2015 {
+            uri replace /v2/ /v2/docker-remote/ 1
+
+            import revpx "Proxy Commands"
+            import logging "Log Config"
+        }
+
+        http://redhat-docker-remote.apps.klab.devops.gov.bc.ca:2015 {
+            uri replace /v2/ /v2/redhat-docker-remote/ 1
+
+            import revpx "Proxy Commands"
+            import logging "Log Config"
+        }
+
+        :2015 {
+            respond /ehlo 200
+            
+            import logging "Log Config"
+        }
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      selector:
+        role: proxy
+      ports:
+        - name: 2015-tcp
+          port: 2015
+          protocol: TCP
+          targetPort: 2015
+  - apiVersion: v1
+    kind: DeploymentConfig
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      strategy:
+        type: Rolling
+      triggers:
+        - type: ConfigChange
+      replicas: ${{REPLICA_COUNT}}
+      selector:
+        role: proxy
+      template:
+        metadata:
+          labels:
+            app: proxy
+            role: proxy
+          name: proxy
+        spec:
+          containers:
+            - name: proxy
+              imagePullPolicy: Always
+              image: "${DOMAIN_NAME}/caddy:latest"
+              env:
+                - name: XDG_DATA_HOME
+                  value: /tmp
+              startupProbe:
+                httpGet:
+                  path: /ehlo
+                  port: 2015
+                  scheme: HTTP
+                failureThreshold: 5
+                periodSeconds: 3
+              readinessProbe:
+                httpGet:
+                  path: /ehlo
+                  port: 2015
+                timeoutSeconds: 10
+              ports:
+                - containerPort: 2015
+              resources:
+                limits:
+                  cpu: 100m
+                  memory: 92Mi
+                requests:
+                  cpu: 30m
+                  memory: 48Mi
+              volumeMounts:
+                - name: config-vol
+                  mountPath: /etc/caddy/Caddyfile
+                  subPath: Caddyfile
+          volumes:
+            - name: config-vol
+              configMap:
+                name: proxy-config
+          imagePullSecrets:
+            - name: bcdevops-dockercfg
+  # - apiVersion: autoscaling/v1
+  #   kind: HorizontalPodAutoscaler
+  #   metadata:
+  #     labels:
+  #       app: proxy
+  #     name: proxy
+  #   spec:
+  #     scaleTargetRef:
+  #       apiVersion: apps/v1
+  #       kind: DeploymentConfig 
+  #       name: proxy
+  #     minReplicas: ${{ROCKETCHAT_MIN_HPA}}
+  #     maxReplicas: ${{ROCKETCHAT_MAX_HPA}}
+  #     metrics:
+  #     - type: Resource
+  #       resource:
+  #         name: cpu
+  #         target:
+  #           type: Utilization
+  #           averageUtilization: 60
+parameters:
+  - name: DOMAIN_NAME
+    description:
+      xxx
+    displayName: xxx
+    required: true
+  - name: REPLICA_COUNT
+    description: The number of PROXY pods to start
+    displayName: Replica Count
+    value: "1"
+  # - name: PROXY_MIN_HPA
+  #   description: Min Number of PROXY pods for HPA
+  #   displayName: PROXY Min HPA
+  #   value: 3
+  # - name: PROXY_MAX_HPA
+  #   description: Max Number of PROXY pods for HPA
+  #   displayName: PROXY Max HPA
+  #   value: 9
