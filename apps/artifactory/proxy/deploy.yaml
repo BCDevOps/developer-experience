@@ -158,10 +158,10 @@ objects:
                 - containerPort: 2015
               resources:
                 limits:
-                  cpu: 100m
-                  memory: 92Mi
+                  cpu: 60m
+                  memory: 64Mi
                 requests:
-                  cpu: 30m
+                  cpu: 20m
                   memory: 48Mi
               volumeMounts:
                 - name: config-vol
@@ -192,7 +192,7 @@ objects:
           name: cpu
           target:
             type: Utilization
-            averageUtilization: 60
+            averageUtilization: 80
 parameters:
   - name: DOMAIN_NAME
     description:
