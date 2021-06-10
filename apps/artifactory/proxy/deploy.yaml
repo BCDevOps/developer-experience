@@ -28,7 +28,7 @@ objects:
         app: proxy
       name: docker-remote
     spec:
-      host: docker-remote.${DOMAIN_NAME}
+      host: docker-remote.artifacts.${DOMAIN_NAME}
       port:
         targetPort: 2015-tcp
       tls:
@@ -44,7 +44,7 @@ objects:
         app: proxy
       name: redhat-docker-remote
     spec:
-      host: redhat-docker-remote.${DOMAIN_NAME}
+      host: redhat-docker-remote.artifacts.${DOMAIN_NAME}
       port:
         targetPort: 2015-tcp
       tls:
@@ -62,13 +62,13 @@ objects:
     data:
       Caddyfile: |
         (revpx) {
-          reverse_proxy * https://artifacts.apps.klab.devops.gov.bc.ca {
+          reverse_proxy * https://artifacts.${DOMAIN_NAME} {
             header_up Host {http.reverse_proxy.upstream.hostport}
             header_up X-Forwarded-Port {server_port}
             header_up X-Real-IP {remote_host}
             header_up X-Forwarded-For {remote_host}
             header_up X-Forwarded-Proto {scheme}
-            header_up X-JFrog-Override-Base-Url https://artifacts.apps.klab.devops.gov.bc.ca:443
+            header_up X-JFrog-Override-Base-Url https://artifacts.${DOMAIN_NAME}:443
           }
         }
 
@@ -81,14 +81,14 @@ objects:
           }
         }
 
-        http://docker-remote.apps.klab.devops.gov.bc.ca:2015 {
+        http://docker-remote.artifacts.${DOMAIN_NAME}:2015 {
             uri replace /v2/ /v2/docker-remote/ 1
 
             import revpx "Proxy Commands"
             import logging "Log Config"
         }
 
-        http://redhat-docker-remote.apps.klab.devops.gov.bc.ca:2015 {
+        http://redhat-docker-remote.artifacts.${DOMAIN_NAME}:2015 {
             uri replace /v2/ /v2/redhat-docker-remote/ 1
 
             import revpx "Proxy Commands"
@@ -196,13 +196,15 @@ objects:
 parameters:
   - name: DOMAIN_NAME
     description:
-      xxx
-    displayName: xxx
+      Verry the domain name to deploy to a lab or prod environment. For 
+      example use `developer.gov.bc.ca` for production or
+      `apps.klab.devops.gov.bc.ca` for a lab.
+    displayName: Domain Name
     required: true
   - name: REPLICA_COUNT
     description: The number of PROXY pods to start
     displayName: Replica Count
-    value: "1"
+    value: "3"
   # - name: PROXY_MIN_HPA
   #   description: Min Number of PROXY pods for HPA
   #   displayName: PROXY Min HPA
