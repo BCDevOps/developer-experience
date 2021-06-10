@@ -28,6 +28,10 @@ Once deployed it will create two routes:
 
 The any HTTP(S) traffic to these routes will be directed to the proxy where the URL will be adapted for the correct destination. For example, any traffic from docker to `docker-remote.apps.klab.devops.gov.bc.ca/caddy:latest` will be redirected to the URL `artifacts.apps.klab.devops.gov.bc.ca/docker-remote/caddy:latest`
 
+**Pro Tip 🤓**
+
+The deployment expects to create routes. If routes already exists comment out route creation and just update existing routes OR (better solution) delete existing routes and let the proxy deployment create its own.
+
 ### Docker Example
 
 ```console
@@ -71,4 +75,6 @@ and the `image:` used in a deployment manifest:
 
 ## TODO
 
-The proxy uses the external URL for artifactory. It maybe more effective to use the internal address (service name) for a more direct connection and to reduce both network latency, traffic, and network path complexity.
+- The proxy uses the external URL for artifactory. It maybe more effective to use the internal address (service name) for a more direct connection and to reduce both network latency, traffic, and network path complexity.
+
+- Add support to read in TLS certificate information as needed
