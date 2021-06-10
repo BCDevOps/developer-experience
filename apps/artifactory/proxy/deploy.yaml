@@ -138,7 +138,7 @@ objects:
           containers:
             - name: proxy
               imagePullPolicy: Always
-              image: "${DOMAIN_NAME}/caddy:latest"
+              image: "artifacts.${DOMAIN_NAME}/caddy:latest"
               env:
                 - name: XDG_DATA_HOME
                   value: /tmp
@@ -173,26 +173,26 @@ objects:
                 name: proxy-config
           imagePullSecrets:
             - name: bcdevops-dockercfg
-  # - apiVersion: autoscaling/v1
-  #   kind: HorizontalPodAutoscaler
-  #   metadata:
-  #     labels:
-  #       app: proxy
-  #     name: proxy
-  #   spec:
-  #     scaleTargetRef:
-  #       apiVersion: apps/v1
-  #       kind: DeploymentConfig 
-  #       name: proxy
-  #     minReplicas: ${{ROCKETCHAT_MIN_HPA}}
-  #     maxReplicas: ${{ROCKETCHAT_MAX_HPA}}
-  #     metrics:
-  #     - type: Resource
-  #       resource:
-  #         name: cpu
-  #         target:
-  #           type: Utilization
-  #           averageUtilization: 60
+  - apiVersion: v1
+    kind: HorizontalPodAutoscaler
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      scaleTargetRef:
+        apiVersion: apps/v1
+        kind: DeploymentConfig 
+        name: proxy
+      minReplicas: ${{REPLICA_COUNT}}
+      maxReplicas: ${{PROXY_MAX_HPA}}
+      metrics:
+      - type: Resource
+        resource:
+          name: cpu
+          target:
+            type: Utilization
+            averageUtilization: 60
 parameters:
   - name: DOMAIN_NAME
     description:
@@ -205,11 +205,7 @@ parameters:
     description: The number of PROXY pods to start
     displayName: Replica Count
     value: "3"
-  # - name: PROXY_MIN_HPA
-  #   description: Min Number of PROXY pods for HPA
-  #   displayName: PROXY Min HPA
-  #   value: 3
-  # - name: PROXY_MAX_HPA
-  #   description: Max Number of PROXY pods for HPA
-  #   displayName: PROXY Max HPA
-  #   value: 9
+  - name: PROXY_MAX_HPA
+    description: Max Number of PROXY pods for HPA
+    displayName: PROXY Max HPA
+    value: "5"
