@@ -40,12 +40,9 @@ jobs:
         run: |
           echo INSTALL_TARGET=nonprod >> $GITHUB_ENV
           echo ARTIFACTORY_LICENSE=\"${{ secrets.KLAB_ARTIFACTORY_LICENSE }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_CA_CRT=\"${{ secrets.KLAB_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.KLAB_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.KLAB_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_CA_CRT=\"${{ secrets.KLAB_WILDCARD_CA_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_TLS_CRT=\"${{ secrets.KLAB_WILDCARD_TLS_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_KEY_CRT=\"${{ secrets.KLAB_WILDCARD_KEY_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_CA_CRT=\"${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
           echo SSO_ID=\"${{ secrets.KLAB_SSO_ID }}\" >> $GITHUB_ENV
           echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
           echo OPENSHIFT_TOKEN=\"${{ secrets.KLAB_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
