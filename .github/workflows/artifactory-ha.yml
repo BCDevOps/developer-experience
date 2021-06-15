@@ -40,12 +40,12 @@ jobs:
 
       - name: Create certificate files
         run: |
-          printf "${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
-          printf "${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
-          printf "${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
-          printf "${{ secrets.SILVER_WILDCARD_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
-          printf "${{ secrets.SILVER_WILDCARD_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
-          printf "${{ secrets.SILVER_WILDCARD_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
 
       # If the trigger was manual or a push, we're deploying to KLAB
       - name: Prepare KLAB params
