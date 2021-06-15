@@ -1,7 +1,20 @@
 name: Artifactory Installation
 
+env:
+  GITHUB_CONTEXT: ${{ toJson(github) }}
+
 on:
+  # For KLAB, trigger on push to master or manual run
+  #push:
+  #  branches:
+  #    - master
+  #  paths:
+  #    - "apps/artifactory/artifactory-ha/**"
   workflow_dispatch:
+
+  # For PROD, trigger on publication of release
+  #release:
+  #  types: [published]
 
 defaults:
   run:
@@ -20,6 +33,42 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      # If the trigger was manual or a push, we're deploying to KLAB
+      # Use the KLAB-specific secrets
+      - name: Prepare KLAB params
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }} 
+        run: |
+          echo INSTALL_TARGET=nonprod >> $GITHUB_ENV
+          echo ARTIFACTORY_LICENSE=\"${{ secrets.KLAB_ARTIFACTORY_LICENSE }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_CA_CRT=\"${{ secrets.KLAB_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.KLAB_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.KLAB_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_CA_CRT=\"${{ secrets.KLAB_WILDCARD_CA_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_TLS_CRT=\"${{ secrets.KLAB_WILDCARD_TLS_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_KEY_CRT=\"${{ secrets.KLAB_WILDCARD_KEY_CRT }}\" >> $GITHUB_ENV
+          echo SSO_ID=\"${{ secrets.KLAB_SSO_ID }}\" >> $GITHUB_ENV
+          echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_TOKEN=\"${{ secrets.KLAB_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_URL=\"${{ secrets.KLAB_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+
+      # If the trigger was a release publication, we're deploying to PROD
+      # Use the PROD-specific secrets
+      - name: Prepare PROD params
+        if: ${{ github.event_name == 'release' }} 
+        run: |
+          echo INSTALL_TARGET=prod >> $GITHUB_ENV
+          echo ARTIFACTORY_LICENSE=\"${{ secrets.SILVER_ARTIFACTORY_LICENSE }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_CA_CRT=\"${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_CA_CRT=\"${{ secrets.SILVER_WILDCARD_CA_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_TLS_CRT=\"${{ secrets.SILVER_WILDCARD_TLS_CRT }}\" >> $GITHUB_ENV
+          echo WILDCARD_KEY_CRT=\"${{ secrets.SILVER_WILDCARD_KEY_CRT }}\" >> $GITHUB_ENV
+          echo SSO_ID=\"${{ secrets.SILVER_SSO_ID }}\" >> $GITHUB_ENV
+          echo SSO_SECRET=\"${{ secrets.SILVER_SSO_SECRET }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_TOKEN=\"${{ secrets.SILVER_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_URL=\"${{ secrets.SILVER_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+
       # Pre-installation steps
       # ----------------------
       - name: Generate master_key
@@ -37,7 +86,7 @@ jobs:
       - name: Create certificate directories
         env:
           DIRS: artifactory wildcard
-        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/artifactory-secrets/$dir; done
+        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/$dir; done
 
       - name: Create artifactory certificate files
         #if: ${{ env.INSTALL_TARGET == 'prod' }}
@@ -60,13 +109,67 @@ jobs:
         run: |
           sed -i "s/^master_key:.*/master_key: ${{ env.MASTER_KEY }}/" vars-local.yaml
           sed -i "s/^join_key:.*/join_key: ${{ env.JOIN_KEY }}/" vars-local.yaml
-          sed -i "s/^sso_id:.*/sso_id: ${{ env.SSO_ID }}/" vars-local.yaml
-          sed -i "s/^sso_secret:.*/sso_secret: ${{ env.SSO_SECRET }}/" vars-local.yaml
+          #sed -i "s/^sso_id:.*/sso_id: ${{ env.SSO_ID }}/" vars-local.yaml
+          #sed -i "s/^sso_secret:.*/sso_secret: ${{ env.SSO_SECRET }}/" vars-local.yaml
           sed -i "s/^folder:.*/folder: ${{ env.FILE_STAGING_DIR }}/" vars-local.yaml
           sed -i "s/^artifactory_license_file:.*/artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}/" vars-local.yaml
 
       - name: Verify pre-installation
         if: ${{ failure() }}
         run: echo "Pre-installation steps were not entirely successful"; exit 1
+
+      - name: vars debug
+        run: cat vars-local.yaml
+
+      - name: version debug
+        run: echo "--> ${{ env.ARTIFACTORY_VERSION }}"
+
+      # Installation steps
+      # ------------------
+      #- name: Log in to OpenShift
+      #  run: |
+      #    oc version
+      #    oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
+      #    oc project ${{ env.OCP_PROJECT_NAME }}
+
+      #- name: Verify login and make sure we connected to the right namespace
+      #  if: ${{ failure() }}
+      #  run: echo "OCP login to ${{ env.OCP_PROJECT_NAME }} failed"; exit 1
+
+      # Verify that at least one backup member is up by checking the 'ping'
+      # health check API
+      #- name: Check that at least one "member" (backup) instance is up
+      #  run: |
+      #    MEMBER_PING_CHECK=0
+      #    for i in 0 1; do
+      #      PING=`oc exec artifactory-ha-member-$i -- curl -s http://localhost:8040/artifactory/api/system/ping`
+      #      if [ "$PING" == "OK" ]; then MEMBER_PING_CHECK=1; fi
+      #    done
+      #    if [ "$MEMBER_PING_CHECK" == "0" ]; then
+      #      echo "Artifactory backup member health check failed."
+      #      echo "Cancelling installation"
+      #      exit 1
+      #    fi
+
+      #- name: Run the playbook
+      #  run: ansible-playbook install.yaml
+
+      # Post-installation steps?
+      # ------------------------
+      # <change the Docker access method>
+
+      # Create a draft release.  When the release is published, the Prod
+      # deployment will be triggered
+      # See also: https://github.com/elgohr/Github-Release-Action
+      #- name: Create a draft release
+      #  uses: ncipollo/release-action@v1
+      #  with:
+      #    token: ${{ secrets.GITHUB_TOKEN }}
+      #    draft: true
+      #    name: "artifactory-${{ env.ARTIFACTORY_VERSION }}"
+      #    tag: "artifactory-${{ env.ARTIFACTORY_VERSION }}"
+      #    allowUpdates: true
+      #    body: "Installation of Artifactory ${{ env.env.ARTIFACTORY_VERSION }} in ${{ env.INSTALL_TARGET }}"
+
 
 
