@@ -32,7 +32,7 @@ jobs:
         run: echo ${{ env.ARTIFACTORY_LICENSE }} >> ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
 
       - name: Get version number from vars.yaml
-        run: echo ARTIFACTORY_VERSION=\"`grep ^artifactory_version: vars.yaml | awk '{ print $2 }'`\" >> $GITHUB_ENV
+        run: echo ARTIFACTORY_VERSION=\"`grep ^artifactory_version vars.yaml | awk '{ print $2 }'`\" >> $GITHUB_ENV
 
       - name: Create certificate directories
         env:
