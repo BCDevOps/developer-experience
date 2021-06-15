@@ -33,34 +33,37 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Create certificate directories
+        env:
+          DIRS: artifactory wildcard
+        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/$dir; done
+
+      - name: Create certificate files
+        run: |
+          printf "${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
+          printf "${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
+          printf "${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
+          printf "${{ secrets.SILVER_WILDCARD_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
+          printf "${{ secrets.SILVER_WILDCARD_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
+          printf "${{ secrets.SILVER_WILDCARD_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
+
       # If the trigger was manual or a push, we're deploying to KLAB
-      # Use the KLAB-specific secrets
       - name: Prepare KLAB params
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }} 
         run: |
           echo INSTALL_TARGET=nonprod >> $GITHUB_ENV
-          echo ARTIFACTORY_LICENSE=\"${{ secrets.KLAB_ARTIFACTORY_LICENSE }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_CA_CRT=\"${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
+          printf "${{ secrets.KLAB_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
           echo SSO_ID=\"${{ secrets.KLAB_SSO_ID }}\" >> $GITHUB_ENV
           echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
           echo OPENSHIFT_TOKEN=\"${{ secrets.KLAB_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
           echo OPENSHIFT_URL=\"${{ secrets.KLAB_OPENSHIFT_URL }}\" >> $GITHUB_ENV
 
       # If the trigger was a release publication, we're deploying to PROD
-      # Use the PROD-specific secrets
       - name: Prepare PROD params
         if: ${{ github.event_name == 'release' }} 
         run: |
           echo INSTALL_TARGET=prod >> $GITHUB_ENV
-          echo ARTIFACTORY_LICENSE=\"${{ secrets.SILVER_ARTIFACTORY_LICENSE }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_CA_CRT=\"${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_TLS_CRT=\"${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}\" >> $GITHUB_ENV
-          echo ARTIFACTORY_KEY_CRT=\"${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_CA_CRT=\"${{ secrets.SILVER_WILDCARD_CA_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_TLS_CRT=\"${{ secrets.SILVER_WILDCARD_TLS_CRT }}\" >> $GITHUB_ENV
-          echo WILDCARD_KEY_CRT=\"${{ secrets.SILVER_WILDCARD_KEY_CRT }}\" >> $GITHUB_ENV
+          printf "${{ secrets.SILVER_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
           echo SSO_ID=\"${{ secrets.SILVER_SSO_ID }}\" >> $GITHUB_ENV
           echo SSO_SECRET=\"${{ secrets.SILVER_SSO_SECRET }}\" >> $GITHUB_ENV
           echo OPENSHIFT_TOKEN=\"${{ secrets.SILVER_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
@@ -79,24 +82,6 @@ jobs:
 
       - name: Get version number from vars.yaml
         run: echo ARTIFACTORY_VERSION=`grep ^artifactory_version vars.yaml | awk '{ print $2 }'` >> $GITHUB_ENV
-
-      - name: Create certificate directories
-        env:
-          DIRS: artifactory wildcard
-        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/$dir; done
-
-      - name: Create artifactory certificate files
-        run: |
-          echo ${{ env.ARTIFACTORY_CA_CRT }}  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
-          echo ${{ env.ARTIFACTORY_TLS_CRT }} > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
-          echo ${{ env.ARTIFACTORY_KEY_CRT }} > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
-
-      - name: Create wildcard certificate files
-        if: ${{ env.INSTALL_TARGET == 'prod' }}
-        run: |
-          echo ${{ env.WILDCARD_CA_CRT }}  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
-          echo ${{ env.WILDCARD_TLS_CRT }} > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
-          echo ${{ env.WILDCARD_KEY_CRT }} > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
 
       - name: Stage the vars-local.yaml file
         run: cp vars.yaml vars-local.yaml
