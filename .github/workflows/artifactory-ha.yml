@@ -107,10 +107,10 @@ jobs:
       # Re-add sso_id and sso_secret after testing
       - name: Set vars in vars-local.yaml
         run: |
-          sed -i 's/^master_key:.*/master_key: ${{ env.MASTER_KEY }}/' vars-local.yaml
-          sed -i 's/^join_key:.*/join_key: ${{ env.JOIN_KEY }}/' vars-local.yaml
-          sed -i 's/^folder:.*/folder: ${{ env.FILE_STAGING_DIR }}/' vars-local.yaml
-          sed -i 's/^artifactory_license_file:.*/artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}/' vars-local.yaml
+          sed -i 's|^master_key:.*|master_key: ${{ env.MASTER_KEY }}|' vars-local.yaml
+          sed -i 's|^join_key:.*|join_key: ${{ env.JOIN_KEY }}|' vars-local.yaml
+          sed -i 's|^folder:.*|folder: ${{ env.FILE_STAGING_DIR }}|' vars-local.yaml
+          sed -i 's|^artifactory_license_file:.*|artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}|' vars-local.yaml
 
       - name: Verify pre-installation
         if: ${{ failure() }}
