@@ -32,6 +32,8 @@ jobs:
       OCP_PROJECT_NAME: devops-artifactory
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: feature/initial-artifactory-workflow
 
       - name: Create certificate directories
         env:
@@ -111,6 +113,7 @@ jobs:
           oc version
           oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
           oc project ${{ env.OCP_PROJECT_NAME }}
+          oc get pods
 
       - name: Verify login and make sure we connected to the right namespace
         if: ${{ failure() }}
