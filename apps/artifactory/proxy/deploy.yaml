@@ -1,0 +1,229 @@
+# Copyright 2021 The Province of British Columbia
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+---
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  annotations:
+    description: |
+      Deployment for artifactory URL proxy.
+  name: proxy
+objects:
+  # - apiVersion: v1
+  #   kind: Route
+  #   metadata:
+  #     labels:
+  #       app: proxy
+  #     name: docker-remote
+  #   spec:
+  #     host: docker-remote.artifacts.${DOMAIN_NAME}
+  #     port:
+  #       targetPort: 2015-tcp
+  #     tls:
+  #       termination: edge
+  #     to:
+  #       kind: Service
+  #       name: proxy
+  #       weight: 100
+  # - apiVersion: v1
+  #   kind: Route
+  #   metadata:
+  #     labels:
+  #       app: proxy
+  #     name: redhat-docker-remote
+  #   spec:
+  #     host: redhat-docker-remote.artifacts.${DOMAIN_NAME}
+  #     port:
+  #       targetPort: 2015-tcp
+  #     tls:
+  #       termination: edge
+  #     to:
+  #       kind: Service
+  #       name: proxy
+  #       weight: 100
+  - apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: proxy-config
+      labels:
+        app: proxy
+    data:
+      Caddyfile: |
+        (revpx) {
+          reverse_proxy * https://artifacts.${DOMAIN_NAME} {
+            header_up Host {http.reverse_proxy.upstream.hostport}
+            header_up X-Forwarded-Port {server_port}
+            header_up X-Real-IP {remote_host}
+            header_up X-Forwarded-For {remote_host}
+            header_up X-Forwarded-Proto {scheme}
+            header_up X-JFrog-Override-Base-Url https://artifacts.${DOMAIN_NAME}:443
+          }
+        }
+
+        (logging) {
+          log {
+            # errors stdout
+            output stdout 
+            #format single_field common_log
+            level DEBUG
+          }
+        }
+
+        http://docker-remote.artifacts.${DOMAIN_NAME}:2015 {
+            uri replace /v2/ /v2/docker-remote/ 1
+
+            import revpx "Proxy Commands"
+            import logging "Log Config"
+        }
+
+        http://redhat-docker-remote.artifacts.${DOMAIN_NAME}:2015 {
+            uri replace /v2/ /v2/redhat-docker-remote/ 1
+
+            import revpx "Proxy Commands"
+            import logging "Log Config"
+        }
+
+        :2015 {
+            respond /ehlo 200
+            
+            import logging "Log Config"
+        }
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      selector:
+        role: proxy
+      ports:
+        - name: 2015-tcp
+          port: 2015
+          protocol: TCP
+          targetPort: 2015
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      strategy:
+        type: RollingUpdate
+      # triggers:
+      #   - type: ConfigChange
+      replicas: ${{REPLICA_COUNT}}
+      selector:
+        matchLabels:
+          app: proxy
+          role: proxy
+      template:
+        metadata:
+          labels:
+            app: proxy
+            role: proxy
+          name: proxy
+        spec:
+          containers:
+            - name: proxy
+              imagePullPolicy: Always
+              image: "caddy:latest"
+              #image: "artifacts.${DOMAIN_NAME}/caddy:latest"
+              env:
+                - name: XDG_DATA_HOME
+                  value: /tmp
+              startupProbe:
+                httpGet:
+                  path: /ehlo
+                  port: 2015
+                  scheme: HTTP
+                failureThreshold: 5
+                periodSeconds: 3
+              readinessProbe:
+                httpGet:
+                  path: /ehlo
+                  port: 2015
+                timeoutSeconds: 10
+              ports:
+                - containerPort: 2015
+              resources:
+                limits:
+                  cpu: 40m
+                  memory: 64Mi
+                requests:
+                  cpu: 10m
+                  memory: 48Mi
+              volumeMounts:
+                - name: config-vol
+                  mountPath: /etc/caddy/Caddyfile
+                  subPath: Caddyfile
+          volumes:
+            - name: config-vol
+              configMap:
+                name: proxy-config
+          imagePullSecrets:
+            - name: dockerhub-creds
+  - apiVersion: autoscaling/v2beta2
+    kind: HorizontalPodAutoscaler
+    metadata:
+      labels:
+        app: proxy
+      name: proxy
+    spec:
+      scaleTargetRef:
+        apiVersion: apps/v1
+        kind: Deployment 
+        name: proxy
+      minReplicas: ${{REPLICA_COUNT}}
+      maxReplicas: ${{PROXY_MAX_HPA}}
+      metrics:
+      - type: Resource
+        resource:
+          name: cpu
+          target:
+            type: Utilization
+            averageUtilization: 80
+  # - apiVersion: networking.k8s.io/v1
+  #   kind: NetworkPolicy
+  #   metadata:
+  #     name: allow-proxy-ingress
+  #   spec:
+  #     ingress:
+  #       - from:
+  #           - namespaceSelector:
+  #               matchLabels:
+  #                 network.openshift.io/policy-group: ingress
+  #     podSelector:
+  #       matchLabels:
+  #         role: proxy
+  #     policyTypes:
+  #       - Ingress
+parameters:
+  - name: DOMAIN_NAME
+    description:
+      Verry the domain name to deploy to a lab or prod environment. For 
+      example use `developer.gov.bc.ca` for production or
+      `apps.klab.devops.gov.bc.ca` for a lab.
+    displayName: Domain Name
+    required: true
+  - name: REPLICA_COUNT
+    description: The number of PROXY pods to start
+    displayName: Replica Count
+    value: "3"
+  - name: PROXY_MAX_HPA
+    description: Max Number of PROXY pods for HPA
+    displayName: PROXY Max HPA
+    value: "5"
