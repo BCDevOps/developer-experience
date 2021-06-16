@@ -43,9 +43,9 @@ jobs:
           printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
           printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
           printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
-          printf '%s\n' "${{ secrets.SILVER_WILDCARD_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
-          printf '%s\n' "${{ secrets.SILVER_WILDCARD_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
-          printf '%s\n' "${{ secrets.SILVER_WILDCARD_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_CA_CRT }}"     > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_TLS_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_KEY_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
 
       # If the trigger was manual or a push, we're deploying to KLAB
       - name: Prepare KLAB params
@@ -106,15 +106,15 @@ jobs:
 
       # Installation steps
       # ------------------
-      #- name: Log in to OpenShift
-      #  run: |
-      #    oc version
-      #    oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
-      #    oc project ${{ env.OCP_PROJECT_NAME }}
+      - name: Log in to OpenShift
+        run: |
+          oc version
+          oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
+          oc project ${{ env.OCP_PROJECT_NAME }}
 
-      #- name: Verify login and make sure we connected to the right namespace
-      #  if: ${{ failure() }}
-      #  run: echo "OCP login to ${{ env.OCP_PROJECT_NAME }} failed"; exit 1
+      - name: Verify login and make sure we connected to the right namespace
+        if: ${{ failure() }}
+        run: echo "OCP login to ${{ env.OCP_PROJECT_NAME }} failed"; exit 1
 
       # Verify that at least one backup member is up by checking the 'ping'
       # health check API
