@@ -66,7 +66,7 @@ If you are requesting for CPU or Memory quota increase, please collect the avera
 
 **Part 2 - Storage Quota Increase**
 
-If you are requesting for an increase of storage quota, list all the PVCs that you have and the components that are mounting the volume. We'd like to know what they are used for and its utilization. See the following as an example:
+If you are requesting for an increase of a storage quota, list all the PVCs that you have and the components that are mounting the volume. We'd like to know what they are used for and its utilization. See the following as an example:
 
 | Component name | Description (Optional) | PVC type | PVC size | Storage Utilization |
 |----------------|------------------------|----------|----------|---------------------|
@@ -90,5 +90,5 @@ Send the above to Platform Services team at pathfinder@gov.bc.ca. Someone from t
 
 When requesting a quota increase from **medium** to **large**, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
 
-If you have a need to store a large amount of **unstructures data**, you may want to consider to leverage the [S3 Object Storage Service](https://github.com/BCDevOps/OpenShift4-Migration/issues/59) provided by Enterprise Hosting.
+If you have a need to store a large amount of **unstructured data**, you may want to consider to leverage the [S3 Object Storage Service](https://github.com/BCDevOps/OpenShift4-Migration/issues/59) provided by Enterprise Hosting.
 
