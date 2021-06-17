@@ -59,6 +59,7 @@ jobs:
           echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
           echo OPENSHIFT_TOKEN=\"${{ secrets.KLAB_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
           echo OPENSHIFT_URL=\"${{ secrets.KLAB_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_URL=artifacts.apps.klab.devops.gov.bc.ca >> $GITHUB_ENV
 
       # If the trigger was a release publication, we're deploying to PROD
       - name: Prepare PROD params
@@ -70,6 +71,7 @@ jobs:
           echo SSO_SECRET=\"${{ secrets.SILVER_SSO_SECRET }}\" >> $GITHUB_ENV
           echo OPENSHIFT_TOKEN=\"${{ secrets.SILVER_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
           echo OPENSHIFT_URL=\"${{ secrets.SILVER_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_URL=artifacts.developer.gov.bc.ca >> $GITHUB_ENV
 
       # Pre-installation steps
       # ----------------------
@@ -97,13 +99,19 @@ jobs:
           sed -i 's|^sso_id:.*|sso_id: ${{ env.SSO_ID }}|' vars-local.yaml
           sed -i 's|^sso_secret:.*|sso_secret: ${{ env.SSO_SECRET }}|' vars-local.yaml
           sed -i 's|^project_name:.*|project_name: ${{ env.OCP_PROJECT_NAME }}|' vars-local.yaml
+          sed -i 's|^artifactory_url:.*|artifactory_url: ${{ env.ARTIFACTORY_URL }}|' vars-local.yaml
+          sed -i "s|key: 'docker-remote'.*|key: 'docker-remote', username: '${{ secrets.DOCKER_REMOTE_ID }}', password: '${{ secrets.DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
+          sed -i "s|key: 'redhat-docker-remote'.*|key: 'redhat-docker-remote', username: '${{ secrets.REDHAT_DOCKER_REMOTE_ID }}', password: '${{ secrets.REDHAT_DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
 
       - name: Verify pre-installation
         if: ${{ failure() }}
         run: echo "Pre-installation steps were not entirely successful"; exit 1
 
-      #- name: vars debug
-      #  run: cat vars-local.yaml
+      - name: vars debug
+        run: tail -1 vars-local.yaml
+
+      - name: artifactory url debug
+        run: echo "--> ${{ env.ARTIFACTORY_URL }}"
 
       - name: version debug
         run: echo "--> ${{ env.ARTIFACTORY_VERSION }}"
