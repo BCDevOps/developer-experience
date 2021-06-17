@@ -106,8 +106,8 @@ jobs:
           sed -i 's|^sso_secret:.*|sso_secret: ${{ env.SSO_SECRET }}|' vars-local.yaml
           sed -i 's|^project_name:.*|project_name: ${{ env.OCP_PROJECT_NAME }}|' vars-local.yaml
           sed -i 's|^artifactory_url:.*|artifactory_url: ${{ env.ARTIFACTORY_URL }}|' vars-local.yaml
-          sed -i "s|key: 'docker-remote'.*|key: 'docker-remote', username: '${{ secrets.DOCKER_REMOTE_ID }}', password: '${{ secrets.DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
-          sed -i "s|key: 'redhat-docker-remote'.*|key: 'redhat-docker-remote', username: '${{ secrets.REDHAT_DOCKER_REMOTE_ID }}', password: '${{ secrets.REDHAT_DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
+          #sed -i "s|key: 'docker-remote'.*|key: 'docker-remote', username: '${{ secrets.DOCKER_REMOTE_ID }}', password: '${{ secrets.DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
+          #sed -i "s|key: 'redhat-docker-remote'.*|key: 'redhat-docker-remote', username: '${{ secrets.REDHAT_DOCKER_REMOTE_ID }}', password: '${{ secrets.REDHAT_DOCKER_REMOTE_PASSWORD }}'|" vars-local.yaml
           sed -i 's|^s3_bucket_name:.*|s3_bucket_name: ${{ env.S3_BUCKET_NAME }}|' vars-local.yaml
           sed -i 's|^s3_identity:.*|s3_identity: ${{ env.S3_ID }}|' vars-local.yaml
           sed -i 's|^s3_password:.*|s3_password: ${{ env.S3_PASSWORD }}|' vars-local.yaml
