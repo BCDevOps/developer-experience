@@ -137,7 +137,7 @@ jobs:
             echo "Artifactory backup member health check failed."
             echo "Cancelling installation"
             exit 1
-          elif [ "$MEMBER_PODS_EXIST" == "1" ]
+          elif [ "$MEMBER_PODS_EXIST" == "1" ]; then
             echo "Member health check passed"
           else
             echo "There are no backup members - continuing with installation"
