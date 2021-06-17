@@ -10,12 +10,12 @@
         state: directory
         mode: '0755'
 
-      # setup
-    - name: Change to Artifactory namespace
-      command: >
-        oc project {{ project_name }}
+    # Removing: this is done in the GitHub Action
+    #- name: Change to Artifactory namespace
+    #  command: >
+    #    oc project {{ project_name }}
 
-    - name: Build network security policy from template
+    - name: Prepare network security policy template
       template:
         src: ./templates/nsp.yaml.j2
         dest: ./processed/nsp.yaml

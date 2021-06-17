@@ -88,20 +88,22 @@ jobs:
       - name: Stage the vars-local.yaml file
         run: cp vars.yaml vars-local.yaml
 
-      # Re-add sso_id and sso_secret after testing
       - name: Set vars in vars-local.yaml
         run: |
           sed -i 's|^master_key:.*|master_key: ${{ env.MASTER_KEY }}|' vars-local.yaml
           sed -i 's|^join_key:.*|join_key: ${{ env.JOIN_KEY }}|' vars-local.yaml
           sed -i 's|^folder:.*|folder: ${{ env.FILE_STAGING_DIR }}|' vars-local.yaml
           sed -i 's|^artifactory_license_file:.*|artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}|' vars-local.yaml
+          sed -i 's|^sso_id:.*|sso_id: ${{ env.SSO_ID }}|' vars-local.yaml
+          sed -i 's|^sso_secret:.*|sso_secret: ${{ env.SSO_SECRET }}|' vars-local.yaml
+          sed -i 's|^project_name:.*|project_name: ${{ env.OCP_PROJECT_NAME }}|' vars-local.yaml
 
       - name: Verify pre-installation
         if: ${{ failure() }}
         run: echo "Pre-installation steps were not entirely successful"; exit 1
 
-      - name: vars debug
-        run: cat vars-local.yaml
+      #- name: vars debug
+      #  run: cat vars-local.yaml
 
       - name: version debug
         run: echo "--> ${{ env.ARTIFACTORY_VERSION }}"
@@ -119,20 +121,27 @@ jobs:
         if: ${{ failure() }}
         run: echo "OCP login to ${{ env.OCP_PROJECT_NAME }} failed"; exit 1
 
-      # Verify that at least one backup member is up by checking the 'ping'
-      # health check API
-      #- name: Check that at least one "member" (backup) instance is up
-      #  run: |
-      #    MEMBER_PING_CHECK=0
-      #    for i in 0 1; do
-      #      PING=`oc exec artifactory-ha-member-$i -- curl -s http://localhost:8040/artifactory/api/system/ping`
-      #      if [ "$PING" == "OK" ]; then MEMBER_PING_CHECK=1; fi
-      #    done
-      #    if [ "$MEMBER_PING_CHECK" == "0" ]; then
-      #      echo "Artifactory backup member health check failed."
-      #      echo "Cancelling installation"
-      #      exit 1
-      #    fi
+      # Verify that all backup members are up by checking the 'ping' health
+      # check API.
+      # If there are no backup members, carry on with the installation.
+      - name: Check that "member" (backup) instances are up
+        run: |
+          MEMBER_PODS_EXIST=0
+          MEMBER_PING_FAILED=0
+          for pod in `oc get pods | grep ^artifactory-ha-member | awk '{ print $1 }'`; do
+            MEMBER_PODS_EXIST=1
+            PING=`oc exec $pod -- curl -s http://localhost:8040/artifactory/api/system/ping`
+            if [ "$PING" != "OK" ]; then MEMBER_PING_FAILED=1; fi
+          done
+          if [ "$MEMBER_PODS_EXIST" == "1" ] && [ "$MEMBER_PING_FAILED" == "1" ]; then
+            echo "Artifactory backup member health check failed."
+            echo "Cancelling installation"
+            exit 1
+          elif [ "$MEMBER_PODS_EXIST" == "1" ]
+            echo "Member health check passed"
+          else
+            echo "There are no backup members - continuing with installation"
+          fi
 
       #- name: Run the playbook
       #  run: ansible-playbook install.yaml
