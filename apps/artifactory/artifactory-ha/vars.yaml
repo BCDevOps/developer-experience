@@ -4,11 +4,11 @@ build: false
 
 # Do you need to build the NetworkSecurityPolicy or no?
 # This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
-nsp: true
+nsp: false
 
 # Do you need to include SSL certificates or no?
 # This is probably set to true for Silver, and false for the labs.
-ssl: true
+ssl: false
 
 # The first registry is for OCP4, the second is for OCP3.
 image_registry: "image-registry.openshift-image-registry.svc:5000"
@@ -21,16 +21,16 @@ image_registry: "image-registry.openshift-image-registry.svc:5000"
 ####################################################
 
 artifactory_instance_name: "artifactory-ha"
-artifactory_version: 7.7.3
+artifactory_version: 7.15.4-1
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
 # Pick the right URL for the cluster.
 # If you're installing on a cluster that already has artifactory installed, you'll need to change the "artifacts" to something else, like "artifacts-test".
 #artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
-#artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
+artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
-artifactory_url: 'artifacts.developer.gov.bc.ca'
+#artifactory_url: 'artifacts.developer.gov.bc.ca'
 
 # Which namespace are you installing into?
 project_name: 'devops-artifactory'
@@ -55,11 +55,11 @@ artifactory_license_file: "artifactory.lic"
 # These are the requests/limits for the artifactory installation.
 # The primary and all members will each get the same requests/limits.
 cpu_limit: "2"
-memory_limit: "3Gi"
+memory_limit: "1Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
 storage_size: "5Gi"
-data_storage_size: "50Gi"
+data_storage_size: "5Gi"
 
 
 
