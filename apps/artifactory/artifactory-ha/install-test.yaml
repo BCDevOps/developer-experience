@@ -15,6 +15,10 @@
         msg: "join_key: {{ join_key }}"
 
     - name: Testing...
+      register: pods
       command: >
         oc get pods
 
+    - name: Show pods
+      debug:
+        msg: "Pods: {{ pods }}"
