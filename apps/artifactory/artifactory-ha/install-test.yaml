@@ -1,0 +1,16 @@
+- hosts: localhost
+  vars_files:
+    vars-local.yaml
+  tasks:
+
+      # create processed folder
+    - name: Create processed directory if it does not exist
+      file:
+        path: ./processed
+        state: directory
+        mode: '0755'
+
+    - name: Debug join_key
+      debug:
+        msg: "join_key: {{ join_key }}"
+

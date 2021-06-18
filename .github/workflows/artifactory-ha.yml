@@ -160,8 +160,8 @@ jobs:
             echo "There are no backup members - continuing with installation"
           fi
 
-      #- name: Run the playbook
-      #  run: ansible-playbook install.yaml
+      - name: Run the playbook
+        run: ansible-playbook install-test.yaml
 
       # Post-installation steps?
       # ------------------------
@@ -179,6 +179,5 @@ jobs:
       #    tag: "artifactory-${{ env.ARTIFACTORY_VERSION }}"
       #    allowUpdates: true
       #    body: "Installation of Artifactory ${{ env.env.ARTIFACTORY_VERSION }} in ${{ env.INSTALL_TARGET }}"
-
 
 
