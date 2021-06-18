@@ -14,3 +14,7 @@
       debug:
         msg: "join_key: {{ join_key }}"
 
+    - name: Testing...
+      command: >
+        oc get pods
+
