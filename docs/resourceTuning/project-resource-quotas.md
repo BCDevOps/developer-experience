@@ -1,3 +1,19 @@
+---
+title: Project Resource Quotas in BC Gov's PaaS (Openshift 4 Platform)
+resourceType: Documentation
+personas: 
+  - Developer
+  - Product Owner
+tags:
+  - openshift
+  - resources
+  - resource quotas
+  - RAM
+  - CPU
+  - storage
+description: The quota based resource allocation for project sets in Openshift 4 Platform.
+---
+
 All project sets in the new OpenShift Container Platform (OCP) 4 Platform are provisioned by default with a "small" resource quota size that includes a certain amout of CPU, RAM and Storage.  The amount of resources within each quota size - small, medium and large are as follows:
 
 **CPU/RAM/Storage resource quotas (per namespace)**:
