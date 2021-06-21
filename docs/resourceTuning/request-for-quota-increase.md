@@ -27,7 +27,7 @@ Resource quota increase can be requested by a Product Owner or a Tech Lead of th
 
 Once the quota increase request is approved (see below what information is required before the request can be approved), all 4 namespaces in a project set will be upgraded to the next quota size which includes a double amount of resources in all 3 categories.
 
-*Example: If your prod namespace needs more storage and you request a standard quota increase from small to medium, the resource allocations for all 4 of your namespaces will be upgraded to the medium size quota as per the [OCP 4 resource quota definition](link).*
+*Example: If your prod namespace needs more storage and you request a standard quota increase from small to medium, the resource allocations for all 4 of your namespaces will be upgraded to the medium size quota as per the [OCP 4 resource quota definition](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)).*
 
 ## What does the Platform Services Team need to know?
 
