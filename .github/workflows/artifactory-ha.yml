@@ -63,6 +63,8 @@ jobs:
           echo S3_BUCKET_NAME=\"${{ secrets.KLAB_S3_BUCKET_NAME }}\" >> $GITHUB_ENV
           echo S3_ID=\"${{ secrets.KLAB_S3_ID }}\" >> $GITHUB_ENV
           echo S3_PASSWORD=\"${{ secrets.KLAB_S3_PASSWORD }}\" >> $GITHUB_ENV
+          echo MASTER_KEY=\"${{ secrets.KLAB_MASTER_KEY }}\" >> $GITHUB_ENV
+          echo JOIN_KEY=\"${{ secrets.KLAB_JOIN_KEY }}\" >> $GITHUB_ENV
 
       # If the trigger was a release publication, we're deploying to PROD
       - name: Prepare PROD params
@@ -78,15 +80,11 @@ jobs:
           echo S3_BUCKET_NAME=\"${{ secrets.SILVER_S3_BUCKET_NAME }}\" >> $GITHUB_ENV
           echo S3_ID=\"${{ secrets.SILVER_S3_ID }}\" >> $GITHUB_ENV
           echo S3_PASSWORD=\"${{ secrets.SILVER_S3_PASSWORD }}\" >> $GITHUB_ENV
+          echo MASTER_KEY=\"${{ secrets.SILVER_MASTER_KEY }}\" >> $GITHUB_ENV
+          echo JOIN_KEY=\"${{ secrets.SILVER_JOIN_KEY }}\" >> $GITHUB_ENV
 
       # Pre-installation steps
       # ----------------------
-      - name: Generate master_key
-        run: echo MASTER_KEY=`openssl rand -hex 32` >> $GITHUB_ENV
-
-      - name: Generate join_key
-        run: echo JOIN_KEY=`openssl rand -hex 32` >> $GITHUB_ENV
-
       - name: Prepare Artifactory license file
         run: echo ${{ env.ARTIFACTORY_LICENSE }} >> ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
 
