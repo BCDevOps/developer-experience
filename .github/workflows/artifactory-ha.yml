@@ -161,7 +161,7 @@ jobs:
           fi
 
       - name: Run the playbook
-        run: ansible-playbook install-test.yaml
+        run: ansible-playbook install.yaml
 
       # Post-installation steps?
       # ------------------------
