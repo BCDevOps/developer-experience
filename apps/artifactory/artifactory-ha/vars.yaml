@@ -58,8 +58,8 @@ cpu_limit: "2"
 memory_limit: "1Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
-storage_size: "5Gi"
-data_storage_size: "5Gi"
+storage_size: "1Gi"
+data_storage_size: "1Gi"
 
 
 
