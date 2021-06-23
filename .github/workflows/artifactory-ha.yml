@@ -1,20 +1,12 @@
 name: Artifactory Installation
 
-env:
-  GITHUB_CONTEXT: ${{ toJson(github) }}
-
 on:
-  # For KLAB, trigger on push to master or manual run
-  #push:
-  #  branches:
-  #    - master
-  #  paths:
-  #    - "apps/artifactory/artifactory-ha/**"
   workflow_dispatch:
-
-  # For PROD, trigger on publication of release
-  #release:
-  #  types: [published]
+    inputs:
+      target_cluster:
+        description: "Install to which cluster? klab or silver"
+        required: true
+        default: 'klab'
 
 defaults:
   run:
@@ -22,15 +14,23 @@ defaults:
 
 jobs:
   artifactory_installation:
-    if: |
-      (github.event_name == 'release' && contains(github.event.release.name, 'artifactory-ha')) ||
-      github.event_name != 'release'
     runs-on: ubuntu-latest
     env:
       FILE_STAGING_DIR: /tmp
       ARTIFACTORY_LICENSE_FILE: artifactory_license.txt
       OCP_PROJECT_NAME: devops-artifactory
     steps:
+      - name: Set target cluster
+        run: |
+          if [ "${{ github.event.inputs.target_cluster }}" == "klab" ]; then
+            echo TARGET_CLUSTER=klab >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.target_cluster }}" == "silver" ]; then
+            echo TARGET_CLUSTER=silver >> $GITHUB_ENV
+          else
+            echo "Enter a valid target cluster: klab or silver"
+            exit 1
+          fi
+
       - uses: actions/checkout@v2
         with:
           ref: feature/initial-artifactory-workflow
@@ -49,11 +49,10 @@ jobs:
           printf '%s\n' "${{ secrets.SILVER_WILDCARD_TLS_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
           printf '%s\n' "${{ secrets.SILVER_WILDCARD_KEY_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
 
-      # If the trigger was manual or a push, we're deploying to KLAB
+      # Set cluster-specific properties for KLAB
       - name: Prepare KLAB params
-        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }} 
+        if: ${{ env.TARGET_CLUSTER == 'klab' }}
         run: |
-          echo INSTALL_TARGET=nonprod >> $GITHUB_ENV
           printf "${{ secrets.KLAB_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
           echo SSO_ID=\"${{ secrets.KLAB_SSO_ID }}\" >> $GITHUB_ENV
           echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
@@ -66,11 +65,10 @@ jobs:
           echo MASTER_KEY=\"${{ secrets.KLAB_MASTER_KEY }}\" >> $GITHUB_ENV
           echo JOIN_KEY=\"${{ secrets.KLAB_JOIN_KEY }}\" >> $GITHUB_ENV
 
-      # If the trigger was a release publication, we're deploying to PROD
-      - name: Prepare PROD params
-        if: ${{ github.event_name == 'release' }} 
+      # Set cluster-specific properties for SILVER
+      - name: Prepare SILVER params
+        if: ${{ env.TARGET_CLUSTER == 'silver' }}
         run: |
-          echo INSTALL_TARGET=prod >> $GITHUB_ENV
           printf "${{ secrets.SILVER_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
           echo SSO_ID=\"${{ secrets.SILVER_SSO_ID }}\" >> $GITHUB_ENV
           echo SSO_SECRET=\"${{ secrets.SILVER_SSO_SECRET }}\" >> $GITHUB_ENV
@@ -160,19 +158,5 @@ jobs:
 
       # Post-installation steps?
       # ------------------------
-      # <change the Docker access method>
-
-      # Create a draft release.  When the release is published, the Prod
-      # deployment will be triggered
-      # See also: https://github.com/elgohr/Github-Release-Action
-      #- name: Create a draft release
-      #  uses: ncipollo/release-action@v1
-      #  with:
-      #    token: ${{ secrets.GITHUB_TOKEN }}
-      #    draft: true
-      #    name: "artifactory-${{ env.ARTIFACTORY_VERSION }}"
-      #    tag: "artifactory-${{ env.ARTIFACTORY_VERSION }}"
-      #    allowUpdates: true
-      #    body: "Installation of Artifactory ${{ env.env.ARTIFACTORY_VERSION }} in ${{ env.INSTALL_TARGET }}"
 
 
