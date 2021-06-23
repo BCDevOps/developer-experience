@@ -114,14 +114,11 @@ jobs:
         if: ${{ failure() }}
         run: echo "Pre-installation steps were not entirely successful"; exit 1
 
-      - name: vars debug
-        run: tail -1 vars-local.yaml
-
       - name: artifactory url debug
         run: echo "--> ${{ env.ARTIFACTORY_URL }}"
 
-      - name: version debug
-        run: echo "--> ${{ env.ARTIFACTORY_VERSION }}"
+      - name: repo vars debug
+        run: grep repo vars-local.yaml
 
       # Installation steps
       # ------------------
