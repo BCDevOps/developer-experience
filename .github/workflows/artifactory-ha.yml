@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       target_cluster:
-        description: "Install to which cluster? klab or silver"
+        description: "Install to which cluster? klab, silver"
         required: true
         default: 'klab'
 
@@ -86,11 +86,11 @@ jobs:
       - name: Prepare Artifactory license file
         run: echo ${{ env.ARTIFACTORY_LICENSE }} >> ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
 
-      - name: Get version number from vars.yaml
-        run: echo ARTIFACTORY_VERSION=`grep ^artifactory_version vars.yaml | awk '{ print $2 }'` >> $GITHUB_ENV
+      - name: Get version number from vars
+        run: echo ARTIFACTORY_VERSION=`grep ^artifactory_version vars-${{ env.TARGET_CLUSTER }}.yaml | awk '{ print $2 }'` >> $GITHUB_ENV
 
       - name: Stage the vars-local.yaml file
-        run: cp vars.yaml vars-local.yaml
+        run: cp vars-${{ env.TARGET_CLUSTER }}.yaml vars-local.yaml
 
       - name: Set vars in vars-local.yaml
         run: |
@@ -115,9 +115,6 @@ jobs:
       - name: artifactory url debug
         run: echo "--> ${{ env.ARTIFACTORY_URL }}"
 
-      - name: repo vars debug
-        run: grep repo vars-local.yaml
-
       # Installation steps
       # ------------------
       - name: Log in to OpenShift
@@ -125,7 +122,6 @@ jobs:
           oc version
           oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
           oc project ${{ env.OCP_PROJECT_NAME }}
-          oc get pods
 
       - name: Verify login and make sure we connected to the right namespace
         if: ${{ failure() }}
