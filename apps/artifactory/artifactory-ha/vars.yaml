@@ -55,7 +55,7 @@ artifactory_license_file: "artifactory.lic"
 # These are the requests/limits for the artifactory installation.
 # The primary and all members will each get the same requests/limits.
 cpu_limit: "2"
-memory_limit: "2Gi"
+memory_limit: "3Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
 storage_size: "1Gi"
@@ -132,8 +132,8 @@ repo_list:
   - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
   - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://files.pythonhosted.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
-  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io', pkg_type: 'docker' }
-  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io', pkg_type: 'docker'}
+  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker' }
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io/', pkg_type: 'docker'}
 
 
 ####################################################
