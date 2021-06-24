@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       target_cluster:
-        description: "Install to which cluster? klab, silver"
+        description: "Enter target cluster (klab, silver):"
         required: true
         default: 'klab'
 
@@ -110,7 +110,7 @@ jobs:
 
       - name: Verify pre-installation
         if: ${{ failure() }}
-        run: echo "Pre-installation steps were not entirely successful"; exit 1
+        run: echo "There was an error in the pre-installation steps"; exit 1
 
       - name: artifactory url debug
         run: echo "--> ${{ env.ARTIFACTORY_URL }}"
