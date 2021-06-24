@@ -20,23 +20,25 @@ jobs:
       ARTIFACTORY_LICENSE_FILE: artifactory_license.txt
       OCP_PROJECT_NAME: devops-artifactory
     steps:
-      - name: Set target cluster
-        run: |
-          if [ "${{ github.event.inputs.target_cluster }}" == "klab" ]; then
-            #echo TARGET_CLUSTER=klab >> $GITHUB_ENV
-            echo "--> klab"
-          elif [ "${{ github.event.inputs.target_cluster }}" == "silver" ]; then
-            #echo TARGET_CLUSTER=silver >> $GITHUB_ENV
-            echo "--> silver"
-          else
-            echo "Enter a valid target cluster: klab or silver"
-            exit 1
-          fi
-          exit 1
-
       - uses: actions/checkout@v2
         with:
           ref: feature/initial-artifactory-workflow
+
+      - name: Set target cluster
+        run: |
+          #if [ "${{ github.event.inputs.target_cluster }}" == "klab" ]; then
+            #echo TARGET_CLUSTER=klab >> $GITHUB_ENV
+          #  echo "--> klab"
+          #elif [ "${{ github.event.inputs.target_cluster }}" == "silver" ]; then
+            #echo TARGET_CLUSTER=silver >> $GITHUB_ENV
+          #  echo "--> silver"
+          #else
+          #  echo "Enter a valid target cluster: klab or silver"
+          #  exit 1
+          #fi
+          #exit 1
+          echo "--> ${{ github.event.inputs.target_cluster }}"
+          echo TARGET_CLUSTER=klab >> $GITHUB_ENV
 
       - name: Create certificate directories
         env:
