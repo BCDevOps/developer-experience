@@ -52,8 +52,10 @@ There is a random plate assigned to the end of each object name, in order to ens
 **Tip! There's a short-name in Openshift for ArtifactoryServiceAccount objects so you don't have to type out such a long object type every time! You can use `ArtSvcAcct` instead!**
 
 You can get the username and password out of the secret using the CLI, like this:
-`oc get secret/artifacts-default-[random] -o json | jq '.data.username' | tr -d "\"" | base64 -d`
-`oc get secret/artifacts-default-[random] -o json | jq '.data.password' | tr -d "\"" | base64 -d`
+```bash
+oc get secret/artifacts-default-[random] -o json | jq '.data.username' | tr -d "\"" | base64 -d
+oc get secret/artifacts-default-[random] -o json | jq '.data.password' | tr -d "\"" | base64 -d
+```
 
 ### Can We Have More Than One Artifactory Service Account?
 
