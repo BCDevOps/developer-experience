@@ -259,7 +259,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') | b64decode }}"
         force_basic_auth: yes
         validate_certs: no
         status_code: 200
