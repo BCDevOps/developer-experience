@@ -113,6 +113,9 @@ jobs:
           sed -i 's|^s3_identity:.*|s3_identity: ${{ env.S3_ID }}|' vars-local.yaml
           sed -i 's|^s3_password:.*|s3_password: ${{ env.S3_PASSWORD }}|' vars-local.yaml
 
+      - name: Debug - Show license line from vars-local.yaml
+        run: grep "^artifactory_license_file" vars-local.yaml
+
       - name: Verify pre-installation
         if: ${{ failure() }}
         run: echo "There was an error in the pre-installation steps"; exit 1
