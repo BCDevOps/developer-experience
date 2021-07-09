@@ -262,7 +262,7 @@
         body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
         force_basic_auth: yes
         validate_certs: no
-        status_code: 200,400
+        status_code: 200
         
     - name: Update reader's group
       uri:
