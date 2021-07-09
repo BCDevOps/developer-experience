@@ -116,6 +116,11 @@ jobs:
       - name: Debug - Show license line from vars-local.yaml
         run: grep "^artifactory_license_file" vars-local.yaml
 
+      - name: Debug - Show license file
+        run: |
+          cp ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }} /tmp/tt
+          cat /tmp/tt
+
       - name: Verify pre-installation
         if: ${{ failure() }}
         run: echo "There was an error in the pre-installation steps"; exit 1
