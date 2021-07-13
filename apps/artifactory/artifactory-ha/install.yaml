@@ -10,12 +10,12 @@
         state: directory
         mode: '0755'
 
-      # setup
-    - name: Change to Artifactory namespace
-      command: >
-        oc project {{ project_name }}
+    # Removing: this is done in the GitHub Action
+    #- name: Change to Artifactory namespace
+    #  command: >
+    #    oc project {{ project_name }}
 
-    - name: Build network security policy from template
+    - name: Prepare network security policy template
       template:
         src: ./templates/nsp.yaml.j2
         dest: ./processed/nsp.yaml
@@ -28,9 +28,9 @@
       when: nsp
 
       # import artifactory image
-    - name: Import Artifactory image
-      command: >
-        oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
+    #- name: Import Artifactory image
+    #  command: >
+    #    oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
 
       # make patroni build
     - name: Build Patroni image (process)
@@ -218,7 +218,7 @@
       ignore_errors: yes
       until: artifactory_status.status == 200
       retries: 20
-      delay: 10
+      delay: 30
 
 
     # POST-INSTALLATION
@@ -259,7 +259,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') | b64decode }}"
         force_basic_auth: yes
         validate_certs: no
         status_code: 200,400
