@@ -218,7 +218,7 @@
       ignore_errors: yes
       until: artifactory_status.status == 200
       retries: 20
-      delay: 10
+      delay: 30
 
 
     # POST-INSTALLATION
