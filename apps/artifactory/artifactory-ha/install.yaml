@@ -28,9 +28,9 @@
       when: nsp
 
       # import artifactory image
-    - name: Import Artifactory image
-      command: >
-        oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
+    #- name: Import Artifactory image
+    #  command: >
+    #    oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
 
       # make patroni build
     - name: Build Patroni image (process)
