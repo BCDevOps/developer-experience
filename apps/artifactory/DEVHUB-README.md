@@ -63,7 +63,7 @@ Absolutely! You can make your own, however you like. The default one in your too
 
 You can make one by running this command:
 
-`oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="ASAname" -p DESCRIPTOR="Description of Service Account" | oc create -f -`
+`oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="[ASAname]" -p DESCRIPTOR="[Description of Service Account]" | oc create -f -`
 
 The 'ASAname' will be the name of the the ArtifactoryServiceAccount object - like 'default' above, for the one that is made for you in your tools namespace. It is _not_ the name of the actual account.
 
