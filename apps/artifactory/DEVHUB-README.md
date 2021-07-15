@@ -65,9 +65,11 @@ You can make one by running this command:
 
 `oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="[ASAname]" -p DESCRIPTOR="[Description of Service Account]" | oc create -f -`
 
-The 'ASAname' will be the name of the the ArtifactoryServiceAccount object - like 'default' above, for the one that is made for you in your tools namespace. It is _not_ the name of the actual account.
+The 'ASAname' will be the name of the the ArtifactoryServiceAccount object - like 'default' above, for the one that is made for you in your tools namespace. It is _not_ the name of the actual account. We recommend using a name that describes the way the account will be used. 
 
 Once Archeobot has reconciled your changes, you'll be able to use this account to access Artifactory as you like. You can use all the same commands outlined in the last section - just change `default` to whatever you've named your new ArtSvcAcct object!
+
+For example, if you're making an account specifically for use in your Jenkins pipeline, you might want to use the name 'jenkins' for the Artifactory Service Account object. This will result in a secret called `artifacts-jenkins-[random]` and an account name called `jenkins-[namespace]-[random]`. You don't need to worry about name collisions with other teams - your account name has your namespace plate in it (the six alphanumeric characters that go before the `-tools`, `-dev`, `-test` or `-prod` in the namespace name), so even if there's another team who called their ArtifactoryServiceAccount 'jenkins', they'll still end up with a different name!
 
 ### How Do I Delete an Artifactory Service Account?
 
