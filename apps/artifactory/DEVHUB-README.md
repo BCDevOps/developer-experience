@@ -47,7 +47,7 @@ Check your `tools` namespace, where you should find the following objects:
     - a username for the Artifactory Service Account (probably something like `default-[namespace-plate]-[random]`)
     - a password for the Artifactory Service Account
 
-There is a random plate assigned to the end of each object name, in order to ensure uniqueness. You can collect this information by running `oc describe artsvcacct default`. This will also provide some information about reconciliation status, as well as other details about the account! If you're looking for support with the Artifactory Service Account object, including the spec and status information in your ticket is extremely useful!
+There is a random license plate assigned to the end of each object name, in order to ensure uniqueness. You can collect this information by running `oc describe artsvcacct default`. This will also provide some information about reconciliation status, as well as other details about the account! If you're looking for support with the Artifactory Service Account object, including the spec and status information in your ticket is extremely useful!
 
 **Tip! There's a short-name in Openshift for ArtifactoryServiceAccount objects so you don't have to type out such a long object type every time! You can use `ArtSvcAcct` instead!**
 
