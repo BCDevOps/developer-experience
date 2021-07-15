@@ -14,79 +14,91 @@ description: How to design your application to have as much uptime as possible.
 
 # Artifact Repositories (Artifactory)
 
-Artifactory is an Artifact Repository system. It serves two primary purposes:
+Artifactory is an artifact repository system by JFrog. You can find their documentation [here](https://www.jfrog.com/confluence/site/documentation).
 
-1. It provides caching of artifacts that you would normally pull from a public repository on the internet, allowing faster builds and deployments, as well as more robust security surrounding these public objects.
-2. It provides a private space for your team to upload your own artifacts for production purposes.
+## What Can I Do With Artifactory?
 
-## Docent
+There are three major features bundled with Artifactory:
+1. Caching repositories - these allow you to pull publicly accessible images through Artifactory instead of directly from the internet! The benefits include:
+    - Your builds and deployments will be faster, because you're getting your images and packages from the local cluster instead of downloading them!
+    - You will use less network bandwidth. Thanks for being such a good cluster citizen and caring for shared resources like bandwidth!
+    - You can avoid pull limits, like the one on DockerHub! No more `toomanyrequests: You have reached your pull rate limit.` errors!
+    - You can share access to private repositories, like the RedHat repositories, without having to pay for additional accounts!
+1. Private repositories - a private place to push your own artifacts and images, with your own control over access!
+    - coming soon!
+1. Xray artifact scanning - this tool scans all artifacts for security issues, giving you a heads up about concerns and providing an opportunity to deal with issues before they become a problem!
+    - coming soon!
+    
+## How Do I Get Started?
 
-Docent is a little bot that lives on each cluster that helps you access artifacts!
-For the time being Docent is in charge of creating an maintaining your Artifactory Service Accounts.
-Soon, he will also be able to help you create and maintain a private artifact respository in Artifactory, where you will be able to push your own images and other objects!
+Access to Artifactory is controlled through Artifactory Service Accounts. These are accounts that are intended to be shared by teams and used by automation tools like pipelines.
 
-## Service Accounts
+You won't need to do anything in the Artifactory application itself in order to get an Artifactory Service Account, because we have a helpful little robot that does that for you! Meet [Archeobot](bcgov/platform-services-archeobot) - a custom operator that we use to give our amazing teams the freedom to manage their own Artifactory resources!
 
-To start, you will require a service account. You will find your service account login information in the `tools` namespace, under secrets, with a name of the format `artifactory-serviceaccount-[account-name]`.
-Every project set is created with one service account to start, with the account name `default` - this means that your secret name will be `artifacts-default-[plate]` where the plate is random set of 6 alphanumeric characters.
-You can also find fuller details about your service account (including the current plate) by running the command `oc describe ArtifactoryServiceAccount default` or `oc describe artsvcacct default`
+For now, you'll want to get started by getting your hands on an Artifactory Service Account, which you can then use to pull images and packages through Artifactory!
 
-For an easy way to get the secret information out via the CLI, try this command:
+## How Do I Get An Artifactory Service Account?
 
-`oc get secret/artifact-default-[plate] -o json | jq '.data.password' | tr -d "\"" | base64 -d`
+Good news, you already have one! Or, you do if you have a project set somewhere on our Openshift 4 clusters!
 
-### Creating New Service Accounts
+Check your `tools` namespace, where you should find the following objects:
+1. An ArtifactoryServiceAccount called `default`
+2. A secret called `artifacts-default-[random]` containing:
+    - a username for the Artifactory Service Account (probably something like `default-[namespace-plate]-[random]`)
+    - a password for the Artifactory Service Account
 
-Those with edit or admin access to their project set can create new Artifactory Service Account objects, and Docent will help set up all the various parts necessary to make it work!
+There is a random license plate assigned to the end of each object name, in order to ensure uniqueness. You can collect this information by running `oc describe artsvcacct default`. This will also provide some information about reconciliation status, as well as other details about the account! If you're looking for support with the Artifactory Service Account object, including the spec and status information in your ticket is extremely useful!
 
-You can use the following command to do so:
+**Tip! There's a short-name in Openshift for ArtifactoryServiceAccount objects so you don't have to type out such a long object type every time! You can use `ArtSvcAcct` instead!**
 
-`oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="accountname" -p DESCRIPTOR="Description of Service Account" -p REGISTRIES='["key1","key2"]' | oc create -f -`
+You can get the username and password out of the secret using the CLI, like this:
+```bash
+oc get secret/artifacts-default-[random] -o json | jq '.data.username' | tr -d "\"" | base64 -d
+oc get secret/artifacts-default-[random] -o json | jq '.data.password' | tr -d "\"" | base64 -d
+```
 
-Make sure you change the name and description parameters to suit your needs. 
-The registries parameter is optional - including it causes Docent to create a pull secret in addition to the normal secret for every docker registry key you include in the list.
-You will need to ensure that you are including only the registry keys, not the full registry url in this list; for example, `REGISTRIES='["docker-remote","redhat-docker-remote"]`.
+### Can We Have More Than One Artifactory Service Account?
 
-This will create an object in your namespace with whatever name you have given it. 
-You can find details about your object like this: `oc describe ArtifactoryServiceAccount [accountname]` or `oc describe artsvcacct [accountname]`
-and your relevant secret will be called `artifacts-[accountname]-[plate]` (as well as `artifacts-pull-[accountname]-[plate]` if you have chosen to include a registry list).
+Absolutely! You can make your own, however you like. The default one in your tools namespace is there to get you started, but you're welcome to make more to suit your needs. You can make as many as you like, in as many namespaces as you like (though we ask that you not go too crazy, as our friend Archeobot needs to be able to keep up with all of them)!
 
-### Deleting Service Accounts
+You can make one by running this command:
+
+`oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="[ASAname]" -p DESCRIPTOR="[Description of Service Account]" | oc create -f -`
+
+The 'ASAname' will be the name of the the ArtifactoryServiceAccount object - like 'default' above, for the one that is made for you in your tools namespace. It is _not_ the name of the actual account.
+
+Once Archeobot has reconciled your changes, you'll be able to use this account to access Artifactory as you like. You can use all the same commands outlined in the last section - just change `default` to whatever you've named your new ArtSvcAcct object!
+
+### How Do I Delete an Artifactory Service Account?
 
 If you want to delete your service account for some reason, you can do so by deleting the ArtifactoryServiceAccount object through the Openshift CLI, like this:
-`oc delete ArtifactoryServiceAccount [accountname]` or `oc delete artsvcacct [accountname]`. 
+`oc delete ArtifactoryServiceAccount [ASAname]` or `oc delete artsvcacct [ASAname]`. 
 
-### I deleted my Artifactory Service Account secret(s)! What do I do now?!
+Archeobot will notice that you've done this and will clean up all the relevant bits - including any secrets it generated for you, so be careful!
+
+If you try to delete the default one in your tools namespace, it will delete - but a new one (also called `default`) will be recreated, likely within about 5 minutes.
+
+### I Deleted my Artifactory Service Account Secret(s)! What Do I Do Now?!
 
 If you have deleted the secret for the default service account that is automatically created alongside your project set, 
 you just delete the ArtifactoryServiceAccount object called `default`, which you will find in your `tools` namespace, like so:
 
 `oc delete ArtifactoryServiceAccount default`
 
-The project provisioning bot will detect that this object has been deleted, and will recreate it automatically. No further action is required from you.
+Archeobot will detect that this object has been deleted and will remove the service account from Artifactory itself. 
 
-If you have deleted the secret of a service account that you have created, you must delete the relevant ArtifactoryServiceAccount object in the relevant namespace.
-Wait until Docent has finished cleaning up all the necessary bits, and then simply create a new object with the same name. 
-This will result in a new account being created with new secret(s) present in the appropriate namespace for you to use!
+Then, the project provisioner will detect the missing ArtifactoryServiceAccount object and will create a new one in your tools namespace, also called `default`. This will likely happen within about 5 minutes. Once that happens, Archeobot will detect this 'new' object and create a new service account for you in Artifactory. The username will be different from before - the random string at the end will change to reflect that this is, technically, a new account with a new password and new privileges. 
 
-### I can't find the secret for my default service account!
+If you've accidentally deleted the secret(s) for a different Artifactory Service Account (one you created yourself, not the default on in your tools namespace), you follow the same process. The only difference is that the project provisioner will not recreate the object for you. You'll need to do that yourself. Delete the object, wait a few minutes for Archeobot to clean everything up, and then create a new ArtifactoryServiceAccount object. You can use the same ASA name if you'd like - but remember the actual username for the account will be different, because it will have a different random string at the end.
 
-You might have deleted it previously! It's also quite possible that you have one of the older formatted secret names.
-Shortly after OCP4 went live, we made the decision to change the artifactory secret names to something clearer, as they were extremely opaque at release.
-If you are working in a namespace that was created early in the lifespan of the Silver cluster, this might be why you can't find your secret.
-You may find it with the name `default-[namespacename]-[plate]` - see? Not very descriptive!
 
-If this is the case, you can follow the instructions above to delete the `default` ArtifactoryServiceAccount object. 
-It will be automatically recreated for you - this time with the more descriptive name!
+## How Do I Use An Artifactory Service Account?
 
-## Using Caching Repositories
+You can use your Artifactory Service Account to pull public images through Artifactory instead of over the internet. This is faster for you, helps to ease bandwidth pressure on the cluster, and allows us to implement additional security scanning! Win-win-win, with just a little extra setup!
 
-The following sections provide some examples for how to pull artifacts through our caching/remote repositories.
-You do not need to do anything special to cache the object in Artifactory - pulling the artifact will do this automatically. 
-If you are pulling the artifact for the first time, it will take a little extra time in order to cache the object in Artifactory.
-After that, pulling the artifact (especially onto a pod on the cluster) should be *much* faster than pulling the image from the internet!
+*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created. All accounts are automatically granted the necessary permissions to access the public caching repos in Artifactory.
 
-*Note*: These instructions assume that the Artifactory instance is hosted at `https://artifacts.developer.gov.bc.ca/` and a service account with appropriate permissions is already created.
+### How Do I Find Out What Repos Are Available?
 
 The following curl command can be used to collect an up-to-date list of the caching repos available from Artifactory:
 
@@ -100,39 +112,53 @@ If there is a particular public repository that you would like to see cached thr
 
 ### Docker
 
+Note that these steps apply to all docker-type repositories, not just DockerHub!
+
 *Bonus! These steps work perfectly for ANY private docker registry, not just Artifactory!
 All you have to do is swap out the artifactory URL for the URL of your preferred registry!*
 
-Login to the registry
+#### Testing Your Account and Pulling Locally
+
+On your command line, login to the registry like so:
 
 ```bash
-docker login -u <USER_NAME> -p <USER_PASSWORD> <REPO_NAME>.artifacts.developer.gov.bc.ca
+docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.developer.gov.bc.ca/<REPO_NAME>
 ```
 
 Example of our DockerHub caching repo looks like this:
 
 ```bash
-docker login -u <USER_NAME> -p <USER_PASSWORD> docker-remote.artifacts.developer.gov.bc.ca
+docker login -u <USER_NAME> -p <USER_PASSWORD> artifacts.developer.gov.bc.ca/docker-remote
 ```
 
 Pull from the registry from your local machine. Use this step for local development, and to test your account credentials.
 
 ```bash
-docker pull <REPO_NAME>.artifacts.developer.gov.bc.ca/<IMAGE>:<TAG>
+docker pull artifacts.developer.gov.bc.ca/<REPO_NAME>/<IMAGE>:<TAG>
 ```
 *Note*: `REPO_NAME` is unique to each docker repository and must be a part of the URL to pull/push from docker registries hosted in Artifactory.
 
-In order to use these credentials on Openshift, make a secret using the following command:
+
+#### Pulling from Artifactory in Openshift
+
+In order to pull from Artifactory in Openshift, you'll need:
+- a pull secret in the correct namespace
+- a reference to that pull secret in your build/deployment config
+- a reference to the artifactory URL wherever you reference your image
+
+You can make your pull secret like this:
 
 ```bash
 oc create secret docker-registry <pull-secret-name> \
-    --docker-server=docker-remote.artifacts.developer.gov.bc.ca \
+    --docker-server=artifacts.developer.gov.bc.ca \
     --docker-username=<username> \
     --docker-password=<password> \
     --docker-email=<username>@<namespace>.local
 ```
 
-and add the secret to the `default` and `builder` Openshift service account, to allow these account to use this pull secret:
+Make sure you get the **correct** username and password from the `artifacts-[ASAname]-[random]` secret!
+
+Now, add the secret to the `default` and `builder` Openshift service account, to allow these account to use this pull secret:
 
 ```
 oc secrets link default <pull_secret_name>
@@ -154,7 +180,7 @@ metadata:
 spec:
   containers:
   - name: <container-name>
-    image: <your-private-image>
+    image: artifacts.developer.gov.bc.ca/<repo-name>/<image>:<tag>
   imagePullSecrets:
   - name: <pull-secret-name>
 ```
@@ -171,8 +197,13 @@ spec:
       dockerStrategy:
         pullSecret:
           name: artifactory-creds
+        from:
+          kind: DockerImage
+          name: artifacts.developer.gov.bc.ca/<repo-name>/<image>:<tag>
 ```
-*Note that you don't need to use dockerStrategy here - it works the same way under other types of strategy as well*
+*Notes*:
+ - you don't need to use dockerStrategy here - it works the same way under other types of strategy as well
+ - don't forget that you need to update the image url to point explicitly at Artifactory. If there's no URL, it will default to DockerHub.
 
 With these steps completed, you can use this image in your build and/or deployment!
 
