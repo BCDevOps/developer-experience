@@ -401,9 +401,9 @@
     # will fail if a member is in the middle of joining the cluster when we try to hit the API.
     #
     # this is not ideal, but it works for now - i'm waiting on jfrog to get me a better way to do this.
-    - name: Turn on members
-      command: >
-        oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
+    #- name: Turn on members
+    #  command: >
+    #    oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
 
       # delete processed folder
     - name: Remove proccessed directory

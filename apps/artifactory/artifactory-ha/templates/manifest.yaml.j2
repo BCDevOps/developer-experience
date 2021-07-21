@@ -6,7 +6,7 @@ metadata:
   name: artifactory-ha-artifactory-networkpolicy
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     release: artifactory
     heritage: Helm  
 spec:
@@ -27,7 +27,7 @@ kind: ServiceAccount
 metadata:
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -41,7 +41,7 @@ metadata:
   name: artifactory-ha-binarystore
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     heritage: Helm
     release: artifactory
 stringData:
@@ -106,7 +106,7 @@ metadata:
   name: artifactory-ha
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     heritage: Helm
     release: artifactory
 type: Opaque
@@ -123,7 +123,7 @@ metadata:
   name: artifactory-ha-primary-system-yaml
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -175,12 +175,12 @@ metadata:
   name: artifactory-ha-installer-info
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     heritage: Helm
     release: artifactory
 data:
   installer-info.json: |
-    {"productId": "Helm_artifactory-ha/107.19.4", "features": [ { "featureId": "Platform/kubernetes"}]}
+    {"productId": "Helm_artifactory-ha/{{ artifactory_version_full }}", "features": [ { "featureId": "Platform/kubernetes"}]}
 ---
 # Source: artifactory-ha/templates/artifactory-migration-scripts.yaml
 apiVersion: v1
@@ -189,7 +189,7 @@ metadata:
   name: artifactory-ha-migration-scripts
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     heritage: Helm
     release: artifactory
 data:
@@ -4618,7 +4618,7 @@ kind: Role
 metadata:
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -4641,7 +4641,7 @@ kind: RoleBinding
 metadata:
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -4662,7 +4662,7 @@ metadata:
   name: artifactory-ha
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -4692,7 +4692,7 @@ metadata:
   name: artifactory-ha-primary
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -4721,7 +4721,7 @@ metadata:
   name: artifactory-ha-member
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
     heritage: Helm
     release: artifactory
@@ -4739,7 +4739,7 @@ spec:
     metadata:
       labels:
         app: artifactory-ha
-        chart: artifactory-ha-107.19.4
+        chart: artifactory-ha-{{ artifactory_version_full }}
         role: artifactory-ha-member
         heritage: Helm
         component: artifactory-ha
@@ -4756,7 +4756,7 @@ spec:
         fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         command:
           - 'sh'
@@ -4770,7 +4770,7 @@ spec:
           - mountPath: "/var/opt/jfrog/cache"
             name: data-volume
       - name: "wait-for-primary"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         command:
         - 'sh'
@@ -4784,7 +4784,7 @@ spec:
         resources:
           {}
       - name: 'copy-system-yaml'
-        image: 'releases-docker.jfrog.io/alpine:3.13.5'
+        image: 'registry.connect.redhat.com/alpine:3.13.5'
         command:
         - '/bin/sh'
         - '-c'
@@ -4819,7 +4819,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"
       - name: "wait-for-db"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         command:
         - 'sh'
         - '-c'
@@ -4830,7 +4830,7 @@ spec:
         resources:
           {}
       - name: 'migration-artifactory-ha'
-        image: releases-docker.jfrog.io/jfrog/artifactory-pro:7.19.4
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4845,7 +4845,7 @@ spec:
           cp -fv /tmp/migrationHelmInfo.yaml $scriptsPath/migrationHelmInfo.yaml;
           cp -fv /tmp/migrationStatus.sh $scriptsPath/migrationStatus.sh;
           mkdir -p /var/opt/jfrog/artifactory/log;
-          bash $scriptsPath/migrationStatus.sh 7.19.4 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
+          bash $scriptsPath/migrationStatus.sh {{ artifactory_version_short }} 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
         resources:
           {}
         env:
@@ -4876,7 +4876,7 @@ spec:
           mountPath: "/var/opt/jfrog/cache"
       containers:
       - name: artifactory-ha
-        image: releases-docker.jfrog.io/jfrog/artifactory-pro:7.19.4
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4985,9 +4985,9 @@ metadata:
   name: artifactory-ha-primary
   labels:
     app: artifactory-ha
-    chart: artifactory-ha-107.19.4
+    chart: artifactory-ha-{{ artifactory_version_full }}
     component: artifactory-ha
-    version: 7.19.4
+    version: {{ artifactory_version_short }}
     heritage: Helm
     release: artifactory
 spec:
@@ -5004,7 +5004,7 @@ spec:
     metadata:
       labels:
         app: artifactory-ha
-        chart: artifactory-ha-107.19.4
+        chart: artifactory-ha-{{ artifactory_version_full }}
         role: artifactory-ha-primary
         component: artifactory-ha
         heritage: Helm
@@ -5023,7 +5023,7 @@ spec:
         fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5037,7 +5037,7 @@ spec:
         - mountPath: "/var/opt/jfrog/cache"
           name: data-volume
       - name: "remove-lost-found"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5054,7 +5054,7 @@ spec:
           - mountPath: "/var/opt/jfrog/cache"
             name: data-volume
       - name: 'copy-system-yaml'
-        image: 'releases-docker.jfrog.io/alpine:3.13.5'
+        image: 'registry.connect.redhat.com/alpine:3.13.5'
         resources:
           {}
         command:
@@ -5093,7 +5093,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"  
       - name: "wait-for-db"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
+        image: "registry.connect.redhat.com/alpine:3.13.5"
         command:
         - 'sh'
         - '-c'
@@ -5104,7 +5104,7 @@ spec:
         resources:
           {}
       - name: 'migration-artifactory-ha'
-        image: releases-docker.jfrog.io/jfrog/artifactory-pro:7.19.4
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5121,7 +5121,7 @@ spec:
           cp -fv /tmp/migrationHelmInfo.yaml $scriptsPath/migrationHelmInfo.yaml;
           cp -fv /tmp/migrationStatus.sh $scriptsPath/migrationStatus.sh;
           mkdir -p /var/opt/jfrog/artifactory/log;
-          bash $scriptsPath/migrationStatus.sh 7.19.4 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
+          bash $scriptsPath/migrationStatus.sh {{ artifactory_version_short }} 3600 > >(tee /var/opt/jfrog/artifactory/log/helm-migration.log) 2>&1;
         env:
       
         - name: JF_SHARED_DATABASE_PASSWORD
@@ -5150,7 +5150,7 @@ spec:
           mountPath: "/var/opt/jfrog/cache"
       containers:
       - name: artifactory-ha
-        image: releases-docker.jfrog.io/jfrog/artifactory-pro:7.19.4
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
