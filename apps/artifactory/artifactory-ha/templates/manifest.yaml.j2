@@ -5052,12 +5052,6 @@ spec:
           cp -fv /tmp/etc/system.yaml /var/opt/jfrog/artifactory/etc/system.yaml;
           echo "Remove /var/opt/jfrog/artifactory/lost+found folder if exists";
           rm -rfv /var/opt/jfrog/artifactory/lost+found;
-          echo "Copy joinKey to /var/opt/jfrog/artifactory/bootstrap/access/etc/security";
-          mkdir -p /var/opt/jfrog/artifactory/bootstrap/access/etc/security;
-          echo -n ${ARTIFACTORY_JOIN_KEY} > /var/opt/jfrog/artifactory/bootstrap/access/etc/security/join.key;
-          echo "Copy masterKey to /var/opt/jfrog/artifactory/etc/security";
-          mkdir -p /var/opt/jfrog/artifactory/etc/security;
-          echo -n ${ARTIFACTORY_MASTER_KEY} > /var/opt/jfrog/artifactory/etc/security/master.key;
         env:
         - name: ARTIFACTORY_JOIN_KEY
           valueFrom:
@@ -5077,17 +5071,6 @@ spec:
           subPath: system.yaml
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"  
-      - name: "wait-for-db"
-        image: "releases-docker.jfrog.io/alpine:3.13.5"
-        command:
-        - 'sh'
-        - '-c'
-        - >
-          until nc -z -w 2 postgresql 5432 && echo database ok; do
-            sleep 2;
-          done;
-        resources:
-          {}
       - name: 'migration-artifactory-ha'
         image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
         imagePullPolicy: IfNotPresent
