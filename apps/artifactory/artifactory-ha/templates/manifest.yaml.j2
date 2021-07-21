@@ -2936,7 +2936,9 @@ data:
     trimMasterKey () {
         local masterKeyDir=/opt/jfrog/artifactory/var/etc/security
         local oldMasterKey=$(<${masterKeyDir}/master.key)
-        local oldMasterKey_Length=$(echo ${#oldMasterKey})
+        #local oldMasterKey_Length=$(echo ${#oldMasterKey})
+        # "{#" breaks the jinja template for Ansible
+        local oldMasterKey_Length=$(echo $oldMasterKey | awk '{ print length($0) }')
         local newMasterKey=
         if [[ ${oldMasterKey_Length} -gt 32 ]]; then
             bannerSection "TRIM MASTERKEY"
