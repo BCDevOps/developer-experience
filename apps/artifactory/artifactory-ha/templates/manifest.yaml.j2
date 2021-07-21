@@ -5013,7 +5013,6 @@ spec:
         checksum/database-secrets: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/binarystore: 85ca9aa8b17116796aee4d257196d454fa0f12cff1e0436d82896eab8fe3518c
         checksum/systemyaml: b4a9b02b95cb2dac1ab9d182092617f73249a0f9b07b1ffef1c2443849c21d41
-        checksum/access-config: 66b06b609fece4b86a593b0d09d06f1846c577db6d18b0a2c77200ae2f67d9bf
         checksum/admin-creds: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
     spec:
       serviceAccountName: artifactory-ha
@@ -5084,9 +5083,6 @@ spec:
         - name: systemyaml
           mountPath: "/tmp/etc/system.yaml"
           subPath: system.yaml
-        - name: access-config
-          mountPath: "/tmp/etc/access.config.patch.yml"
-          subPath: access.config.patch.yml
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"  
       - name: "wait-for-db"
@@ -5231,9 +5227,6 @@ spec:
       - name: systemyaml
         secret:
           secretName: artifactory-ha-primary-system-yaml
-      - name: access-config
-        secret:
-          secretName: artifactory-ha-access-config
   volumeClaimTemplates:
   - metadata:
       annotations:
