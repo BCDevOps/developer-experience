@@ -5018,9 +5018,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      securityContext:
-        runAsUser: 1030
-        fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
         image: "registry.connect.redhat.com/alpine:3.13.5"
