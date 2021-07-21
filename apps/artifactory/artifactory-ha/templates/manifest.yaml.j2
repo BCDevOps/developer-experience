@@ -4819,7 +4819,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"
       - name: 'migration-artifactory-ha'
-        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -4865,7 +4865,7 @@ spec:
           mountPath: "/var/opt/jfrog/cache"
       containers:
       - name: artifactory-ha
-        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -5072,7 +5072,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"  
       - name: 'migration-artifactory-ha'
-        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5118,7 +5118,7 @@ spec:
           mountPath: "/var/opt/jfrog/cache"
       containers:
       - name: artifactory-ha
-        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version_short }}
+        image: registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }}
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
