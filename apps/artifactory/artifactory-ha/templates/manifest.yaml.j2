@@ -4756,7 +4756,7 @@ spec:
         fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         command:
           - 'sh'
@@ -4770,7 +4770,7 @@ spec:
           - mountPath: "/var/opt/jfrog/cache"
             name: data-volume
       - name: "wait-for-primary"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         command:
         - 'sh'
@@ -4784,7 +4784,7 @@ spec:
         resources:
           {}
       - name: 'copy-system-yaml'
-        image: 'registry.connect.redhat.com/alpine:3.13.5'
+        image: 'releases-docker.jfrog.io/alpine:3.13.5'
         command:
         - '/bin/sh'
         - '-c'
@@ -4819,7 +4819,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"
       - name: "wait-for-db"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         command:
         - 'sh'
         - '-c'
@@ -5019,7 +5019,7 @@ spec:
       terminationGracePeriodSeconds: 30
       initContainers:
       - name: "delete-db-properties"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5033,7 +5033,7 @@ spec:
         - mountPath: "/var/opt/jfrog/cache"
           name: data-volume
       - name: "remove-lost-found"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         imagePullPolicy: IfNotPresent
         resources:
           {}
@@ -5050,7 +5050,7 @@ spec:
           - mountPath: "/var/opt/jfrog/cache"
             name: data-volume
       - name: 'copy-system-yaml'
-        image: 'registry.connect.redhat.com/alpine:3.13.5'
+        image: 'releases-docker.jfrog.io/alpine:3.13.5'
         resources:
           {}
         command:
@@ -5086,7 +5086,7 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"  
       - name: "wait-for-db"
-        image: "registry.connect.redhat.com/alpine:3.13.5"
+        image: "releases-docker.jfrog.io/alpine:3.13.5"
         command:
         - 'sh'
         - '-c'
