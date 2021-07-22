@@ -4672,11 +4672,11 @@ spec:
   - port: 8082
     targetPort: 8082
     protocol: TCP
-    name: http-router
+    name: router
   - port: 8081
     targetPort: 8081
     protocol: TCP
-    name: http-artifactory
+    name: artifactory
   selector:
     app: artifactory-ha
     component: "artifactory-ha"
@@ -4702,11 +4702,11 @@ spec:
   - port: 8082
     targetPort: 8082
     protocol: TCP
-    name: http-router
+    name: router
   - port: 8081
     targetPort: 8081
     protocol: TCP
-    name: http-artifactory
+    name: artifactory
   selector:
     role: artifactory-ha-primary
     app: artifactory-ha
