@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: feature/initial-artifactory-workflow
+          ref: artifactory/7.15.4
 
       - name: Set target cluster
         run: |
