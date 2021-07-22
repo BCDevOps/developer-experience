@@ -142,8 +142,8 @@
         oc get statefulset patroni-001
       register: patroni_status
       until: '"{{ db_replica_count }}/{{ db_replica_count}}" in patroni_status.stdout_lines[1]'
-      retries: 10
-      delay: 10
+      retries: 30
+      delay: 20
 
     - name: Build manifest from template
       template:
