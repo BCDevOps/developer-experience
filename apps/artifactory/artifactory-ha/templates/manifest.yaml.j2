@@ -133,7 +133,7 @@ stringData:
     shared:
       logging:
         consoleLog:
-          enabled: false
+          enabled: true
       extraJavaOpts: >
         -Dartifactory.access.client.max.connections=50
         -Dartifactory.async.corePoolSize=16
@@ -4898,7 +4898,12 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"
         resources:
-          {}
+          limits:
+            cpu: "{{ cpu_limit }}"
+            memory: "{{ memory_limit }}"
+          requests:
+            cpu: "{{ cpu_request }}"
+            memory: "{{ memory_request }}"
         startupProbe:
           httpGet:
             path: /router/api/v1/system/health
@@ -5149,7 +5154,12 @@ spec:
         - name: data-volume
           mountPath: "/var/opt/jfrog/cache"
         resources:
-          {}
+          limits:
+            cpu: "{{ cpu_limit }}"
+            memory: "{{ memory_limit }}"
+          requests:
+            cpu: "{{ cpu_request }}"
+            memory: "{{ memory_request }}"
         startupProbe:
           httpGet:
             path: /router/api/v1/system/health
