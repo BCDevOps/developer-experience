@@ -392,18 +392,9 @@
       loop: "{{ docker_list }}"
       ignore_errors: yes
 
-
-
-    # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
-    # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.
-    #
-    # if we try to run the rest of the processing while the members are booting up, it causes issues where certain steps
-    # will fail if a member is in the middle of joining the cluster when we try to hit the API.
-    #
-    # this is not ideal, but it works for now - i'm waiting on jfrog to get me a better way to do this.
-    #- name: Turn on members
-    #  command: >
-    #    oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
+    - name: Turn on members
+      command: >
+        oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
 
       # delete processed folder
     - name: Remove proccessed directory

@@ -4750,9 +4750,6 @@ spec:
     spec:
       serviceAccountName: artifactory-ha
       terminationGracePeriodSeconds: 30
-      securityContext:
-        runAsUser: 1030
-        fsGroup: 1030
       initContainers:
       - name: "delete-db-properties"
         image: "releases-docker.jfrog.io/alpine:3.13.5"
