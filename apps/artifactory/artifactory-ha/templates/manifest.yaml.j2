@@ -4883,9 +4883,7 @@ spec:
           value: "true"
         ports:
         - containerPort: 8082
-          name: http
         - containerPort: 8081
-          name: http-internal
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
@@ -5139,9 +5137,7 @@ spec:
           value: "true"
         ports:
         - containerPort: 8082
-          name: http
         - containerPort: 8081
-          name: http-internal
         volumeMounts:
         - name: volume
           mountPath: "/var/opt/jfrog/artifactory"
