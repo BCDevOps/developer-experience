@@ -402,9 +402,10 @@
       loop: "{{ docker_list }}"
       ignore_errors: yes
 
-    - name: Turn on members
+    - name: Turn on members and re-add pod selection label
       command: >
         oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
+        oc patch service artifactory-ha -p '{"spec":{"selector":{"component":"artifactory-ha"}}}'
 
       # delete processed folder
     - name: Remove proccessed directory
