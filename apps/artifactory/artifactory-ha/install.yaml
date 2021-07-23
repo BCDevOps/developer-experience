@@ -150,6 +150,11 @@
         src: ./templates/manifest.yaml.j2
         dest: ./processed/manifest.yaml
 
+    - name: Build member manifest from template
+      template:
+        src: ./templates/manifest_members.yaml.j2
+        dest: ./processed/manifest_members.yaml
+
       # deploy template
     - name: Apply artifactory manifest
       command: >
@@ -219,6 +224,11 @@
       until: artifactory_status.status == 200
       retries: 20
       delay: 30
+
+      # deploy template for members
+    - name: Apply artifactory members manifest
+      command: >
+        oc apply -f ./processed/manifest_members.yaml
 
 
     # POST-INSTALLATION
