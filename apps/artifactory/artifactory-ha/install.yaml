@@ -225,7 +225,7 @@
     #  retries: 20
     #  delay: 30
     - name: Ensure that the primary node is up
-      shell: |
+      command: >
         x=20; i=1
         while [ "$i" -lt "$x" ]; do 
           NODE_CHECK=`oc exec artifactory-ha-primary-0 -- curl -s http://localhost:8040/artifactory/api/system/ping`
