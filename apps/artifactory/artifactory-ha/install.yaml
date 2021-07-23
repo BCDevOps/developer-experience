@@ -211,19 +211,34 @@
         deployment_password:  "{{ password.stdout }}"
       when: secret_create.failed
 
-    - name: Check deployment status for artifactory
-      uri:
-        url: "https://{{ artifactory_url }}/artifactory/api/system/version"
-        user: "admin"
-        password: "{{ deployment_password }}"
-        method: GET
-        force_basic_auth: yes
-        validate_certs: no
-      register: artifactory_status
-      ignore_errors: yes
-      until: artifactory_status.status == 200
-      retries: 20
-      delay: 30
+    #- name: Check deployment status for artifactory
+    #  uri:
+    #    url: "https://{{ artifactory_url }}/artifactory/api/system/version"
+    #    user: "admin"
+    #    password: "{{ deployment_password }}"
+    #    method: GET
+    #    force_basic_auth: yes
+    #    validate_certs: no
+    #  register: artifactory_status
+    #  ignore_errors: yes
+    #  until: artifactory_status.status == 200
+    #  retries: 20
+    #  delay: 30
+    - name: Ensure that the primary node is up
+      shell: >
+        x=20; i=1;
+        while [ "$i" -lt "$x" ]; do 
+          NODE_CHECK=`oc exec artifactory-ha-primary-0 -- curl -s http://localhost:8040/artifactory/api/system/ping`
+          if [[ "$NODE_CHECK" == "OK" ]]; then
+            echo "Primary node is up"
+            exit 0
+          else
+            i=`expr $i + 1`
+            sleep 10
+          fi
+        done
+        exit 1
+
 
       # deploy template for members
     - name: Apply artifactory members manifest
