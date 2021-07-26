@@ -239,6 +239,17 @@
       command: >
         oc apply -f ./processed/manifest_members.yaml
 
+    - name: Ensure that member nodes are up before continuing
+      command: >
+        oc exec artifactory-ha-member-{{ item }} -- curl -s http://localhost:8040/artifactory/api/system/ping
+      register: check_member
+      until:
+        - check_member.stdout_lines
+        - '"OK" in check_member.stdout_lines[0]'
+      retries: 30
+      delay: 10
+      with_sequence: start=0 end={{ artifactory_replica_count - 1 }}
+
 
     # POST-INSTALLATION
     # -----------------
