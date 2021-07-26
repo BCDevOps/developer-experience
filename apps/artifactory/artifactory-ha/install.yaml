@@ -228,7 +228,9 @@
       command: >
         oc exec artifactory-ha-primary-0 -- curl -s http://localhost:8040/artifactory/api/system/ping
       register: check_primary
-      until: '"OK" in check_primary.stdout_lines[0]'
+      until:
+        - check_primary.stdout_lines
+        - '"OK" in check_primary.stdout_lines[0]'
       retries: 30
       delay: 10
 
