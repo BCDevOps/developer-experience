@@ -146,9 +146,9 @@ For now, here's what remains
 Don't run unless you're sure ;)
 
 ```
-oc delete statefulsets,services,routes,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
-oc delete secrets -l app=artifactory-ha
-oc delete statefulsets,services,routes,secrets -l app=patroni-001
-oc delete configmaps -l cluster-name=patroni-001
-oc delete pvc -l app=patroni-001
+oc -n devops-artifactory delete statefulsets,services,routes,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
+oc -n devops-artifactory delete secrets -l app=artifactory-ha
+oc -n devops-artifactory delete statefulsets,services,routes,secrets -l app=patroni-001
+oc -n devops-artifactory delete configmaps -l cluster-name=patroni-001
+oc -n devops-artifactory delete pvc -l app=patroni-001
 ```

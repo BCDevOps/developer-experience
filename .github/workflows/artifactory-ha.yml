@@ -131,7 +131,6 @@ jobs:
         run: |
           oc version
           oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
-          oc project ${{ env.OCP_PROJECT_NAME }}
 
       - name: Verify login and make sure we connected to the right namespace
         if: ${{ failure() }}
@@ -144,9 +143,9 @@ jobs:
         run: |
           MEMBER_PODS_EXIST=0
           MEMBER_PING_FAILED=0
-          for pod in `oc get pods | grep ^artifactory-ha-member | awk '{ print $1 }'`; do
+          for pod in `oc -n devops-artifactory get pods | grep ^artifactory-ha-member | awk '{ print $1 }'`; do
             MEMBER_PODS_EXIST=1
-            PING=`oc exec $pod -- curl -s http://localhost:8040/artifactory/api/system/ping`
+            PING=`oc -n devops-artifactory exec $pod -- curl -s http://localhost:8040/artifactory/api/system/ping`
             if [ "$PING" != "OK" ]; then MEMBER_PING_FAILED=1; fi
           done
           if [ "$MEMBER_PODS_EXIST" == "1" ] && [ "$MEMBER_PING_FAILED" == "1" ]; then
