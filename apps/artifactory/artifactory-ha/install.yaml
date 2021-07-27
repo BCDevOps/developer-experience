@@ -214,7 +214,7 @@
 
     - name: Give the instance a little more time to finish starting up
       pause:
-        seconds: 60
+        seconds: 120
 
       # deploy template for members
     - name: Apply artifactory members manifest
