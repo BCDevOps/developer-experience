@@ -1,0 +1,370 @@
+- hosts: localhost
+  vars_files:
+    vars-local.yaml
+  tasks:
+
+
+    ############################
+    #       Secret Junk        #
+    ############################
+
+    - name: Make all the various predefined secrets.
+      k8s:
+        state: present
+        definition: "{{ lookup('template', './templates/secrets.yaml.j2') }}"
+
+    - name: Generate passwords.
+      set_fact:
+        db_password: "{{ lookup('password', '/tmp/db_password length=30 chars=ascii_letters,digits') }}"
+        patroni_replication_password: "{{ lookup('password', '/tmp/patroni_replication_password length=30 chars=ascii_letters,digits') }}"
+        patroni_superuser_password: "{{ lookup('password', '/tmp/patroni_superuser_password length=30 chars=ascii_letters,digits') }}"
+        artifactory_password: "{{ lookup('password', '/tmp/artifactory_password length=30 chars=ascii_letters,digits') }}"
+
+    - name: Generate join key
+      command: >
+        openssl rand -hex 32
+      register: join_key_fullcmd
+
+    - name: Generate master key
+      command: >
+        openssl rand -hex 32
+      register: master_key_fullcmd
+
+    - name: Format keys
+      set_fact:
+        join_key: "{{ join_key_fullcmd.stdout }}"
+        master_key: "{{ master_key_fullcmd.stdout }}"
+
+    - name: Get the key secret.
+      k8s_info:
+        api_version: v1
+        kind: Secret
+        name: artifactory-keys
+        namespace: "{{ project_name }}"
+      register: key_secret
+
+    - name: If the artifactory keys secret doesn't exist, make one.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/artifactory-keys-secret.yaml.j2') }}"
+      when: key_secret.resources | length == 0
+
+    - name: If the artifactory keys secret does exist, get the keys.
+      set_fact:
+        join_key: "{{ key_secret.resources[0].data['join-key'] | b64decode }}"
+        master_key: "{{ key_secret.resources[0].data['master-key'] | b64decode }}"
+      when: key_secret.resources | length > 0
+
+    - name: Get the artifactory admin secret.
+      k8s_info:
+        api_version: v1
+        kind: Secret
+        name: artifactory-ha-admin
+        namespace: "{{ project_name }}"
+      register: admin_secret
+
+    - name: If the artifactory admin secret doesn't exist, make one.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/admin-secret.yaml.j2') }}"
+      when: admin_secret.resources | length == 0
+
+    - name: If the artifactory admin secret does exist, get the password.
+      set_fact:
+        artifactory_password: "{{ admin_secret.resources[0].data['password'] | b64decode }}"
+      when: admin_secret.resources | length > 0
+
+    - name: Get the patroni secret.
+      k8s_info:
+        api_version: v1
+        kind: Secret
+        name: patroni-001
+        namespace: "{{ project_name }}"
+      register: patroni_secret
+
+    - name: If the patroni secret doesn't exist, make one.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/patroni-secret.yaml.j2') }}"
+      when: patroni_secret.resources | length == 0
+
+    - name: If the patroni secret does exist, get the password.
+      set_fact:
+        db_password: "{{ patroni_secret.resources[0].data['app-db-password'] | b64decode }}"
+        patroni_replication_password: "{{ patroni_secret.resources[0].data['replication-password'] | b64decode }}"
+        patroni_superuser_password: "{{ patroni_secret.resources[0].data['superuser-password'] | b64decode }}"
+      when: patroni_secret.resources | length > 0
+
+
+    ##############################
+    #        Patroni Build       #
+    ##############################
+
+    - name: Create patroni build.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/patroni-build.yaml.j2') }}"
+      when: db_build | bool
+
+    - name: Wait for the build to start.
+      pause:
+        seconds: 5
+      when: db_build | bool
+
+    - name: Get the buildconfig object.
+      k8s_info:
+        api_version: v1
+        kind: BuildConfig
+        name: patroni-001
+        namespace: "{{ project_name }}"
+      register: patroni_buildconfig
+      when: db_build | bool
+
+    - name: Get the latest build object for build "patroni-001-{{ patroni_buildconfig.resources[0].status.lastVersion }}".
+      k8s_info:
+        api_version: build.openshift.io/v1
+        kind: Build
+        name: "patroni-001-{{ patroni_buildconfig.resources[0].status.lastVersion }}"
+        namespace: "{{ project_name }}"
+      register: patroni_build
+      until: '"Complete" in patroni_build.resources[0].status.phase'
+      retries: 30
+      delay: 30
+      when: db_build | bool
+
+    - name: Tag patroni build
+      command: >
+        oc -n {{ project_name }} tag patroni:{{ postgres_version }}{{ postgres_tag }} patroni:{{ postgres_version }}{{ postgres_tag }}-stable
+      when: db_build | bool
+
+
+    ##############################
+    #      Patroni Deployment    #
+    ##############################
+
+    - name: Make the prerequisite patroni objects.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/patroni-prereq.yaml.j2') }}"
+
+    - name: Deploy patroni.
+      k8s:
+        state: "{{ state | default('present') }}"
+        definition: "{{ lookup('template', './templates/patroni-deploy.yaml.j2') }}"
+
+    - name: Wait for patroni to be fully deployed.
+      k8s_info:
+        api_version: v1
+        kind: StatefulSet
+        name: patroni-001
+        namespace: "{{ project_name }}"
+      register: patroni_deployment
+      until: "'readyReplicas' in patroni_deployment.resources[0].status and patroni_deployment.resources[0].status.readyReplicas == patroni_replicas"
+      retries: 30
+      delay: 10
+
+    ##############################
+    #   Artifactory Deployment   #
+    ##############################
+
+    - name: Install/upgrade artifactory with helm.
+      command: >
+        helm upgrade --install artifactory-ha jfrog/artifactory-ha -f helm-vars-klab.yaml
+
+    - name: Wait for artifactory primary instance to be fully deployed.
+      k8s_info:
+        api_version: v1
+        kind: StatefulSet
+        name: artifactory-ha-primary
+        namespace: "{{ project_name }}"
+      register: artifactory_p_deployment
+      until: "'readyReplicas' in artifactory_p_deployment.resources[0].status and artifactory_p_deployment.resources[0].status.readyReplicas == 1"
+      retries: 30
+      delay: 10
+
+    - name: Wait for artifactory member instance to be fully deployed.
+      k8s_info:
+        api_version: v1
+        kind: StatefulSet
+        name: artifactory-ha-member
+        namespace: "{{ project_name }}"
+      register: artifactory_m_deployment
+      until: "'replicas' in artifactory_m_deployment.resources[0].status and 'readyReplicas' in artifactory_m_deployment.resources[0].status and artifactory_m_deployment.resources[0].status.readyReplicas == artifactory_m_deployment.resources[0].status.replicas"
+      retries: 30
+      delay: 10
+
+    - name: Give the instance a little more time to finish starting up.
+      pause:
+        seconds: 120
+
+    ##############################
+    #         Networking         #
+    ##############################
+
+    - name: Make artifactory's SSL route
+      command: >
+        oc -n devops-artifactory create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }}
+      when: ssl
+      ignore_errors: true
+
+    - name: Make artifactory's non-SSL route
+      command: >
+        oc -n devops-artifactory create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }}
+      when: not ssl
+      ignore_errors: true
+
+    ##############################
+    #        Configuration       #
+    ##############################
+
+    - name: Set deployment password.
+      set_fact:
+        deployment_password: password
+
+    - name: Set Artifactory admin password
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/users/authorization/changePassword"
+        user: "admin"
+        password: "{{ deployment_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{"userName": "admin", "oldPassword": "{{ deployment_password }}", "newPassword1": "{{ artifactory_password }}", "newPassword2": "{{ artifactory_password }}"}'
+        force_basic_auth: yes
+        validate_certs: no
+      when: admin_secret.resources | length == 0
+
+    - name: Set artifactory custom URL base
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/baseUrl"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        headers:
+          Content-type: "text/plain"
+        body: "https://{{ artifactory_url }}/artifactory"
+        force_basic_auth: yes
+        validate_certs: no
+
+    - name: Upload artifactory licenses
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/licenses"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') | b64decode }}"
+        force_basic_auth: yes
+        validate_certs: no
+        status_code: 200,400
+
+    - name: Give the licenses a little more time to apply to the nodes.
+      pause:
+        seconds: 120
+
+    - name: Update reader's group
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/readers"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "autoJoin" : false }'
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Apply artifactory configuration (including SSO)
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PATCH
+        headers:
+          Content-type: "application/yaml"
+        body: "{{ lookup('template', './templates/artifactory-config.yaml.j2') }}"
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Create remote repos
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/repositories/{{ item.repo_key }}"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{"key" : "{{ item.repo_key }}", "description" : "{{ item.repo_desc }}", "rclass" : "remote", "url" : "{{ item.remote_url }}", "packageType" : "{{ item.pkg_type }}"}'
+        force_basic_auth: yes
+        status_code: 200, 400
+      ignore_errors: yes
+      loop: "{{ repo_list }}"
+
+    - name: Create authenticated_users's group
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/security/groups/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', 'templates/authenticated_users_group.json') }}"
+        force_basic_auth: yes
+        status_code: 201
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Create authenticated_users's permission target
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/v2/security/permissions/authenticated_users"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: PUT
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('file', 'templates/authenticated_users_priv.json') }}"
+        force_basic_auth: yes
+        status_code: 200
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Update HTTP settings
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/system/configuration/webServer"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: "{{ lookup('template', 'processed/http_settings.json.j2') }}"
+        force_basic_auth: yes
+        status_code: 201
+        validate_certs: no
+      ignore_errors: yes
+
+    - name: Update docker repos
+      uri:
+        url: "https://{{ artifactory_url }}/artifactory/api/repositories/{{ item.key }}"
+        user: "admin"
+        password: "{{ artifactory_password }}"
+        method: POST
+        body_format: json
+        headers:
+          Content-type: "application/json"
+        body: '{ "username": "{{ item.username }}", "password": "{{ item.password }}", "blockPushingSchema1": false, "enableTokenAuthentication": true }'
+        force_basic_auth: yes
+        validate_certs: no
+      loop: "{{ docker_list }}"
+      ignore_errors: yes

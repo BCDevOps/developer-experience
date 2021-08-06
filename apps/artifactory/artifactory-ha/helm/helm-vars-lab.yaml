@@ -1,4 +1,5 @@
 namespace: devops-artifactory
+nameOverride: artifactory-ha
 
 imagePullSecrets:
  - 4302974-as-mcs-artifactory-pull-secret
@@ -21,7 +22,6 @@ metadata:
 database:
   type: postgresql
   driver: org.postgresql.Driver
-  url: "jdbc:postgresql://patroni-master-001:5432/artifactory"
   secrets:
     user:
       name: patroni-001
@@ -29,12 +29,18 @@ database:
     password:
       name: patroni-001
       key: app-db-password
+    url:
+      name: patroni-001
+      key: db-url
+
+
 
 artifactory:
   name: artifactory-ha
   image:
     registry: registry.connect.redhat.com
     repository: jfrog/artifactory-pro
+    tag: 7.19.4-1
 
   joinKeySecretName: artifactory-keys
   masterKeySecretName: artifactory-keys
@@ -47,7 +53,9 @@ artifactory:
     maxOpenConnections: 200
 
   primary:
+    name: primary
     minAvailable: false
+    replicaCount: 2
     resources:
       requests:
         memory: "1Gi"
@@ -60,7 +68,9 @@ artifactory:
       xmx: "2g"
 
   node:
+    name: member
     minAvailable: false
+    replicaCount: 0
     resources:
       requests:
         memory: "1Gi"

@@ -1,0 +1,11 @@
+{
+  "name": "authenticated_users",
+  "repo": {
+     "repositories": ["ANY REMOTE"],
+     "actions": {
+          "groups" : {
+            "authenticated_users" : ["read", "write"]
+          }
+    }
+  }
+}

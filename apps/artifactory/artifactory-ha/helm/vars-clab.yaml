@@ -1,0 +1,97 @@
+state: present # present|absent
+
+db_build: false
+ssl: false
+
+project_name: devops-artifactory
+artifactory_instance_name: artifactory-ha
+
+artifactory_url: "artifacts.apps.clab.devops.gov.bc.ca"
+
+local_image_registry: "image-registry.openshift-image-registry.svc:5000"
+
+folder: "licenses"
+artifactory_license_file: "artifactory.clab.2022.b64"
+
+
+####################################################
+#               POSTGRES SETTINGS                  #
+####################################################
+
+postgres_version: 11
+postgres_tag: v1
+patroni_replicas: 2
+patroni_git_ref: master
+patroni_git_uri: https://github.com/BCDevOps/platform-services.git
+db_name: artifactory
+
+patroni_cpu_request: 250m
+patroni_cpu_limit: 1
+patroni_memory_request: 512Mi
+patroni_memory_limit: 512Mi
+patroni_storage_class: netapp-block-standard
+patroni_storage_size: 5Gi
+
+
+####################################################
+#                 PULL SECRETS                     #
+####################################################
+
+docker_account_username: bcdevopsartifactory
+docker_account_password: xxxxxxxxx
+redhat_pull_secret: xxxxxxxxxx #this needs to be the b64 encoded string for the whole secret
+
+####################################################
+#               KEYCLOAK SETTINGS                  #
+####################################################
+
+sso_id: "artifactory-oauth-clab"
+sso_secret: "xxxxxxxxxxx"
+
+
+####################################################
+#              OBJECT STORE SETTINGS               #
+####################################################
+
+s3_bucket_name: "artifactory-clab"
+s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
+s3_identity: "xxxxxxxxxxx"
+s3_password: "xxxxxxxxxxx"
+
+
+####################################################
+#               CACHING REPOSITORIES               #
+####################################################
+
+repo_list:
+  - { repo_key: 'python-remote', repo_desc: 'Remote Python Repository', remote_url: 'https://www.python.org', pkg_type: 'generic' }
+  - { repo_key: 'jenkins-remote', repo_desc: 'Remote Jenkins Repository', remote_url: 'https://updates.jenkins.io/download/', pkg_type: 'generic' }
+  - { repo_key: 'npm-remote', repo_desc: 'Remote NPM Repository', remote_url: 'https://registry.npmjs.org', pkg_type: 'npm' }
+  - { repo_key: 'atlassian-maven-remote', repo_desc: 'Remote Atlassian Maven Repository', remote_url: 'https://maven.atlassian.com/repository/public/', pkg_type: 'maven' }
+  - { repo_key: 'boundlessgeo-maven-remote', repo_desc: 'Remote BoundlessGeo Maven Repository', remote_url: 'http://repo.boundlessgeo.com/main/', pkg_type: 'maven' }
+  - { repo_key: 'geosolutions-maven-remote', repo_desc: 'Remote Geo-Solutions Maven Repository', remote_url: 'http://maven.geo-solutions.it/', pkg_type: 'maven' }
+  - { repo_key: 'jasperreports-maven-remote', repo_desc: 'Remote JasperReports Maven Repository', remote_url: 'http://jasperreports.sourceforge.net/maven2', pkg_type: 'maven' }
+  - { repo_key: 'jcenter-maven-remote', repo_desc: 'Remote JCenter Maven Repository', remote_url: 'http://jcenter.bintray.com', pkg_type: 'maven' }
+  - { repo_key: 'jfrog-maven-remote', repo_desc: 'Remote JFrog Artifactory Maven Repository', remote_url: 'https://jfrog.bintray.com/artifactory/', pkg_type: 'maven' }
+  - { repo_key: 'oracle-maven-remote', repo_desc: 'Remote Oracle Maven Repository', remote_url: 'https://maven.oracle.com', pkg_type: 'maven' }
+  - { repo_key: 'osgeo-maven-remote', repo_desc: 'Remote OSGeo Maven Repository', remote_url: 'http://download.osgeo.org/webdav/geotools/', pkg_type: 'maven' }
+  - { repo_key: 'primefaces-maven-remote', repo_desc: 'Remote PrimeFaces Maven Repository', remote_url: 'http://repository.primefaces.org', pkg_type: 'maven' }
+  - { repo_key: 'jenkinspub-maven-remote', repo_desc: 'Remote Jenkins Public Maven Repository', remote_url: 'http://repo.jenkins-ci.org/public', pkg_type: 'maven' }
+  - { repo_key: 'jenkinsrel-maven-remote', repo_desc: 'Remote Jenkins Releases Maven Repository', remote_url: 'http://repo.jenkins-ci.org/releases', pkg_type: 'maven' }
+  - { repo_key: 'maven-remote', repo_desc: 'Remote Maven Repository', remote_url: 'https://repo1.maven.org/maven2', pkg_type: 'maven' }
+  - { repo_key: 'vivid-maven-remote', repo_desc: 'Remote Vivid Maven Repository', remote_url: 'http://mvn.vividsolutions.com/artifactory/repo', pkg_type: 'maven' }
+  - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
+  - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://files.pythonhosted.org/', pkg_type: 'pypi' }
+  - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
+  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker' }
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: 'https://registry.redhat.io/', pkg_type: 'docker' }
+
+
+####################################################
+#                DOCKER REPOSITORIES               #
+####################################################
+
+docker_list:
+  - { key: 'docker-remote', username: 'bcdevopsartifactory', password: 'xxxxxxxxxx' }
+  - { key: 'redhat-docker-remote', username: '4302974|as-mcs-artifactory', password: 'xxxxxxxxxxx' }
+

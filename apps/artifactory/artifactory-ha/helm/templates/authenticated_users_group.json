@@ -1,0 +1,5 @@
+{
+  "name": "authenticated_users",
+  "description" : "All newly authenticated users are added to this group",
+  "autoJoin" : true
+}

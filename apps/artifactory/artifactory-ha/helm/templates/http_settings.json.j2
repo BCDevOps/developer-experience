@@ -1,0 +1,19 @@
+{
+    "artifactoryAppContext": "artifactory",
+    "artifactoryPort": 8081,
+    "artifactoryServerName": "{{ artifactory_url }}",
+    "dockerReverseProxyMethod": "REPOPATHPREFIX",
+    "httpPort": -1,
+    "httpsPort": 443,
+    "key": "direct",
+    "publicAppContext": "artifactory",
+    "routerPort": 8082,
+    "serverName": "{{ artifactory_url }}",
+    "serverNameExpression": "*.{{ artifactory_url }}",
+    "sslCertificate": "",
+    "sslKey": "",
+    "upStreamName": "artifactory",
+    "useHttp": false,
+    "useHttps": true,
+    "webServerType": "DIRECT"
+}
