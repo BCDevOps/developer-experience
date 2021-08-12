@@ -21,7 +21,9 @@ image_registry: "image-registry.openshift-image-registry.svc:5000"
 ####################################################
 
 artifactory_instance_name: "artifactory-ha"
-artifactory_version: 7.15.4-1
+artifactory_version: 7.19.4-1
+artifactory_version_full: 107.19.4
+artifactory_version_short: 7.19.4
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
 # Pick the right URL for the cluster.
