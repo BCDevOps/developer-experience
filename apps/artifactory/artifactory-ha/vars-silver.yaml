@@ -99,7 +99,7 @@ sso_secret: "xxxxxxxxxxx"
 ####################################################
 
 # This is the name if the bucket you created in section 0b of the README.
-s3_bucket_name: "artifactory-bucket"
+s3_bucket_name: "artifactory-silver"
 
 # You don't need to touch this.
 s3_endpoint: "citz-dev-exchange.objectstore.gov.bc.ca"
