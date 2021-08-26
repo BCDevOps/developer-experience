@@ -60,8 +60,8 @@ cpu_limit: "2"
 memory_limit: "3Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
-storage_size: "1Gi"
-data_storage_size: "1Gi"
+storage_size: "6Gi"
+data_storage_size: "60Gi"
 
 
 
