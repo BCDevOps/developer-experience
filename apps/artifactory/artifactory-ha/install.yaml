@@ -10,12 +10,7 @@
         state: directory
         mode: '0755'
 
-      # setup
-    - name: Change to Artifactory namespace
-      command: >
-        oc project {{ project_name }}
-
-    - name: Build network security policy from template
+    - name: Prepare network security policy template
       template:
         src: ./templates/nsp.yaml.j2
         dest: ./processed/nsp.yaml
@@ -24,29 +19,25 @@
       # deploy template
     - name: Apply network security policy
       command: >
-        oc apply -f ./processed/nsp.yaml
+        oc -n devops-artifactory apply -f ./processed/nsp.yaml 
       when: nsp
-
-      # import artifactory image
-    - name: Import Artifactory image
-      command: >
-        oc import-image registry.connect.redhat.com/jfrog/artifactory-pro:{{ artifactory_version }} --confirm
 
       # make patroni build
     - name: Build Patroni image (process)
       command: >
-        oc process -f ./templates/patroni-build.yaml -p GIT_URI=https://github.com/BCDevOps/platform-services \
-                                           -p GIT_REF=master \
-                                           -p SUFFIX=-pg{{ db_version }} \
-                                           -p OUT_VERSION=v{{ db_version }}-latest \
-                                           -p PG_VERSION={{ db_version }}
+        oc -n devops-artifactory process -f ./templates/patroni-build.yaml \
+           -p GIT_URI=https://github.com/BCDevOps/platform-services \
+           -p GIT_REF=master \
+           -p SUFFIX=-pg{{ db_version }} \
+           -p OUT_VERSION=v{{ db_version }}-latest \
+           -p PG_VERSION={{ db_version }}
       register: patroni_build_processed
       when: build
     - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
       when: build
     - name: Build Patroni image (apply)
       command: >
-        oc apply -f ./processed/patroni-build.json
+        oc -n devops-artifactory apply -f ./processed/patroni-build.json
       when: build
 
       # wait for the service to show up
@@ -56,7 +47,7 @@
 
     - name: Get patroni build information
       command: >
-        oc get buildconfig patroni-pg{{ db_version}}
+        oc -n devops-artifactory get buildconfig patroni-pg{{ db_version}} 
       when: build
       register: build_result
       ignore_errors: yes
@@ -68,7 +59,7 @@
 
     - name: Get build status for patroni-pg{{ db_version}}-{{ build_number }}
       command: >
-        oc get build patroni-pg{{ db_version}}-{{ build_number }}
+        oc -n devops-artifactory get build patroni-pg{{ db_version}}-{{ build_number }} 
       register: build_status
       until: '"Complete" in build_status.stdout_lines[1]'
       retries: 30
@@ -77,41 +68,41 @@
 
     - name: Tag Patroni build
       command: >
-        oc tag patroni:v{{ db_version }}-latest patroni:v{{ db_version }}-stable
+        oc -n devops-artifactory tag patroni:v{{ db_version }}-latest patroni:v{{ db_version }}-stable 
       when: build
 
       # make secret
     - name: Make the Patroni secrets (process)
       command: >
-        oc process -f ./templates/patroni-prereq-1.yaml \
-                                             -p NAME=patroni \
-                                             -p SUFFIX=-001 \
-                                             -p APP_DB_PASSWORD={{ db_password }} \
-                                             -p APP_DB_USERNAME=artifactory \
-                                             -p APP_DB_NAME=artifactory
+        oc -n devops-artifactory process -f ./templates/patroni-prereq-1.yaml \
+           -p NAME=patroni \
+           -p SUFFIX=-001 \
+           -p APP_DB_PASSWORD={{ db_password }} \
+           -p APP_DB_USERNAME=artifactory \
+           -p APP_DB_NAME=artifactory
       register: patroni_secret_processed
     - copy: content="{{ patroni_secret_processed.stdout }}" dest=./processed/patroni-secret.json
     - name: Make the Patroni secrets (apply)
       command: >
-        oc create -f ./processed/patroni-secret.json
+        oc -n devops-artifactory create -f ./processed/patroni-secret.json 
       ignore_errors: yes
       register: patroni_secret_create
 
     - name: Make the Patroni prerequisites (process)
       command: >
-        oc process -f ./templates/patroni-prereq-2.yaml \
-                                             -p NAME=patroni \
-                                             -p SUFFIX=-001
+        oc -n devops-artifactory process -f ./templates/patroni-prereq-2.yaml \
+           -p NAME=patroni \
+           -p SUFFIX=-001
       register: patroni_prereq_processed
     - copy: content="{{ patroni_prereq_processed.stdout }}" dest=./processed/patroni-prereq.json
     - name: Make the Patroni prerequisites (create)
       command: >
-        oc create -f ./processed/patroni-prereq.json
+        oc -n devops-artifactory create -f ./processed/patroni-prereq.json 
       ignore_errors: yes
 
     - name: Get existing password
       shell: >
-        oc get secret patroni-001 -o json | jq '.data["app-db-password"]' | cut -d'"' -f 2 | base64 -d
+        oc -n devops-artifactory get secret patroni-001 -o json | jq '.data["app-db-password"]' | cut -d'"' -f 2 | base64 -d
       register: patroni_password
       when: patroni_secret_create.failed
 
@@ -123,23 +114,23 @@
       # deploy patroni stateful set
     - name: Make the Patroni statefulset (process)
       command: >
-        oc process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
-                                             -p "IMAGE_STREAM_NAMESPACE={{ project_name }}" \
-                                             -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
-                                             -p IMAGE_REGISTRY={{ image_registry }} \
-                                             -p STORAGE_CLASS={{ db_storage_class }} \
-                                             -p PVC_SIZE={{ db_storage_size }} \
-                                             -p REPLICAS={{ db_replica_count }} \
-                                             -p SUFFIX=-001
+        oc -n devops-artifactory process -f ./templates/patroni-deploy.yaml -p NAME=patroni \
+           -p "IMAGE_STREAM_NAMESPACE={{ project_name }}" \
+           -p "IMAGE_STREAM_TAG=patroni:v{{ db_version }}-stable" \
+           -p IMAGE_REGISTRY={{ image_registry }} \
+           -p STORAGE_CLASS={{ db_storage_class }} \
+           -p PVC_SIZE={{ db_storage_size }} \
+           -p REPLICAS={{ db_replica_count }} \
+           -p SUFFIX=-001
       register: patroni_statefulset_processed
     - copy: content="{{ patroni_statefulset_processed.stdout }}" dest=./processed/patroni-statefulset.json
     - name: Make the Patroni statefulset (apply)
       command: >
-        oc apply -f ./processed/patroni-statefulset.json
+        oc -n devops-artifactory apply -f ./processed/patroni-statefulset.json 
 
     - name: Check deployment status for patroni statefulset
       command: >
-        oc get statefulset patroni-001
+        oc -n devops-artifactory get statefulset patroni-001 
       register: patroni_status
       until: '"{{ db_replica_count }}/{{ db_replica_count}}" in patroni_status.stdout_lines[1]'
       retries: 10
@@ -150,10 +141,15 @@
         src: ./templates/manifest.yaml.j2
         dest: ./processed/manifest.yaml
 
+    - name: Build member manifest from template
+      template:
+        src: ./templates/manifest_members.yaml.j2
+        dest: ./processed/manifest_members.yaml
+
       # deploy template
     - name: Apply artifactory manifest
       command: >
-        oc apply -f ./processed/manifest.yaml
+        oc -n devops-artifactory apply -f ./processed/manifest.yaml 
 
       # wait for the service to show up
     - name: Wait for the artifactory service to create before continuing.
@@ -162,33 +158,33 @@
 
     - name: Make artifactory's SSL route
       command: >
-        oc create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }}
+        oc -n devops-artifactory create route edge --service={{ artifactory_instance_name }} --cert={{ folder }}/artifactory/tls.crt --key={{ folder }}/artifactory/tls.key --ca-cert={{ folder }}/artifactory/ca.crt --hostname={{ artifactory_url }} 
       when: ssl
       ignore_errors: true
 
     - name: Make artifactory's non-SSL route
       command: >
-        oc create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }}
+        oc -n devops-artifactory create route edge --service={{ artifactory_instance_name }} --hostname={{ artifactory_url }} 
       when: not ssl
       ignore_errors: true
 
       # make secret
     - name: Make the admin secret (process)
       command: >
-        oc process -f ./templates/artifactory-admin-secret.yaml \
+        oc -n devops-artifactory process -f ./templates/artifactory-admin-secret.yaml \
             ARTIFACTORY_NAME={{ artifactory_instance_name }} \
             ARTIFACTORY_ADMIN_PASSWORD={{ artifactory_password }}
       register: app_secret_processed
     - copy: content="{{ app_secret_processed.stdout }}" dest=./processed/artifactory-admin-secret.json
     - name: Make the admin secret (create)
       command: >
-        oc create -f ./processed/artifactory-admin-secret.json
+        oc -n devops-artifactory create -f ./processed/artifactory-admin-secret.json 
       ignore_errors: true
       register: secret_create
 
     - name: Get existing password
       shell: >
-        oc get secret {{ artifactory_instance_name }}-admin -o json | jq '.data.password' | cut -d'"' -f 2 | base64 -d
+        oc -n devops-artifactory get secret {{ artifactory_instance_name }}-admin -o json | jq '.data.password' | cut -d'"' -f 2 | base64 -d
       register: password
       when: secret_create.failed
 
@@ -206,19 +202,35 @@
         deployment_password:  "{{ password.stdout }}"
       when: secret_create.failed
 
-    - name: Check deployment status for artifactory
-      uri:
-        url: "https://{{ artifactory_url }}/artifactory/api/system/version"
-        user: "admin"
-        password: "{{ deployment_password }}"
-        method: GET
-        force_basic_auth: yes
-        validate_certs: no
-      register: artifactory_status
-      ignore_errors: yes
-      until: artifactory_status.status == 200
-      retries: 20
+    - name: Ensure that the primary node is up
+      command: >
+        oc -n devops-artifactory exec artifactory-ha-primary-0 -- curl -s http://localhost:8040/artifactory/api/system/ping
+      register: check_primary
+      until:
+        - check_primary.stdout_lines
+        - '"OK" in check_primary.stdout_lines[0]'
+      retries: 30
       delay: 10
+
+    - name: Give the instance a little more time to finish starting up
+      pause:
+        seconds: 120
+
+      # deploy template for members
+    - name: Apply artifactory members manifest
+      command: >
+        oc -n devops-artifactory apply -f ./processed/manifest_members.yaml
+
+    - name: Ensure that member nodes are up before continuing
+      command: >
+        oc -n devops-artifactory exec artifactory-ha-member-{{ item }} -- curl -s http://localhost:8040/artifactory/api/system/ping
+      register: check_member
+      until:
+        - check_member.stdout_lines
+        - '"OK" in check_member.stdout_lines[0]'
+      retries: 30
+      delay: 10
+      with_sequence: start=0 end={{ artifactory_replica_count - 1 }}
 
 
     # POST-INSTALLATION
@@ -259,7 +271,7 @@
         body_format: json
         headers:
           Content-type: "application/json"
-        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') }}"
+        body: "{{ lookup('file', '{{ folder }}/{{ artifactory_license_file }}') | b64decode }}"
         force_basic_auth: yes
         validate_certs: no
         status_code: 200,400
@@ -365,14 +377,14 @@
 
     - name: Make docker routes
       command: >
-        oc create route edge {{ item.key }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item.key }}.{{ artifactory_url }}  --port=artifactory
+        oc -n devops-artifactory create route edge {{ item.key }} --service={{ artifactory_instance_name }} --cert={{ folder }}/wildcard/tls.crt --key={{ folder }}/wildcard/tls.key --ca-cert={{ folder }}/wildcard/ca.crt --hostname={{ item.key }}.{{ artifactory_url }}  --port=artifactory
       loop: "{{ docker_list }}"
       when: ssl
       ignore_errors: yes
 
     - name: Make docker routes
       command: >
-        oc create route edge {{ item.key }} --service={{ artifactory_instance_name }} --hostname={{ item.key }}.{{ artifactory_url }} --port=artifactory
+        oc -n devops-artifactory create route edge {{ item.key }} --service={{ artifactory_instance_name }} --hostname={{ item.key }}.{{ artifactory_url }} --port=artifactory
       loop: "{{ docker_list }}"
       when: not ssl
       ignore_errors: yes
@@ -392,18 +404,9 @@
       loop: "{{ docker_list }}"
       ignore_errors: yes
 
-
-
-    # right now, there is no way to confirm that the members are up before starting the rest of the config after installation,
-    # so, this work around involves setting the number of member nodes to 0 and then patching the new replica numbers in last.
-    #
-    # if we try to run the rest of the processing while the members are booting up, it causes issues where certain steps
-    # will fail if a member is in the middle of joining the cluster when we try to hit the API.
-    #
-    # this is not ideal, but it works for now - i'm waiting on jfrog to get me a better way to do this.
-    - name: Turn on members
+    - name: Re-add pod selection label
       command: >
-        oc patch statefulset artifactory-ha-member -p '{"spec":{"replicas":{{ artifactory_replica_count }}}}'
+        oc -n devops-artifactory patch service artifactory-ha -p '{"spec":{"selector":{"component":"artifactory-ha"}}}'
 
       # delete processed folder
     - name: Remove proccessed directory

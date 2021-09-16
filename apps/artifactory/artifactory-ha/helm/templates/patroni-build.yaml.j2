@@ -1,0 +1,68 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+    name: postgres
+    namespace: {{ project_name }}
+spec:
+    lookupPolicy:
+        local: false
+---
+apiVersion: v1
+kind: ImageStreamTag
+lookupPolicy:
+    local: false
+metadata:
+    name: postgres:{{ postgres_version }}
+    namespace: {{ project_name }}
+tag:
+    annotations: null
+    from:
+        kind: DockerImage
+        name: registry.hub.docker.com/library/postgres:{{ postgres_version }}
+    importPolicy:
+        scheduled: true
+    name: "{{ postgres_version }}"
+    referencePolicy:
+        type: Source
+---
+apiVersion: v1
+kind: ImageStream
+metadata:
+    name: patroni
+    namespace: {{ project_name }}
+spec:
+    lookupPolicy:
+        local: false
+status:
+    dockerImageRepository: ""
+---
+apiVersion: v1
+kind: BuildConfig
+metadata:
+    namespace: {{ project_name }}
+    name: patroni-001
+spec:
+    nodeSelector: null
+    output:
+        to:
+            kind: ImageStreamTag
+            name: "patroni:{{ postgres_version }}{{ postgres_tag }}"
+    postCommit: {}
+    resources: {}
+    source:
+        contextDir: apps/pgsql/patroni/docker
+        git:
+            ref: {{ patroni_git_ref }}
+            uri: {{ patroni_git_uri }}
+        type: Git
+    strategy:
+        dockerStrategy:
+            from:
+                kind: ImageStreamTag
+                name: postgres:{{ postgres_version }}
+        type: Docker
+    triggers:
+    - type: ConfigChange
+    - type: ImageChange
+status:
+    lastVersion: 0

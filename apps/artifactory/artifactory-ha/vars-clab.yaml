@@ -4,11 +4,11 @@ build: false
 
 # Do you need to build the NetworkSecurityPolicy or no?
 # This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
-nsp: true
+nsp: false
 
 # Do you need to include SSL certificates or no?
 # This is probably set to true for Silver, and false for the labs.
-ssl: true
+ssl: false
 
 # The first registry is for OCP4, the second is for OCP3.
 image_registry: "image-registry.openshift-image-registry.svc:5000"
@@ -21,16 +21,18 @@ image_registry: "image-registry.openshift-image-registry.svc:5000"
 ####################################################
 
 artifactory_instance_name: "artifactory-ha"
-artifactory_version: 7.7.3
+artifactory_version: 7.19.4-1
+artifactory_version_full: 107.19.4
+artifactory_version_short: 7.19.4
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
 # Pick the right URL for the cluster.
 # If you're installing on a cluster that already has artifactory installed, you'll need to change the "artifacts" to something else, like "artifacts-test".
 #artifactory_url: 'artifacts.apps.klab.devops.gov.bc.ca'
-#artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
+artifactory_url: 'artifacts.apps.thetis.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.platform-services.aro.devops.gov.bc.ca'
 #artifactory_url: 'artifacts.apps.silver.devops.gov.bc.ca'
-artifactory_url: 'artifacts.developer.gov.bc.ca'
+#artifactory_url: 'artifacts.developer.gov.bc.ca'
 
 # Which namespace are you installing into?
 project_name: 'devops-artifactory'
@@ -58,8 +60,8 @@ cpu_limit: "2"
 memory_limit: "3Gi"
 cpu_request: "0.5"
 memory_request: "1Gi"
-storage_size: "5Gi"
-data_storage_size: "50Gi"
+storage_size: "1Gi"
+data_storage_size: "1Gi"
 
 
 
@@ -132,8 +134,8 @@ repo_list:
   - { repo_key: 'windward-maven-remote', repo_desc: 'Remote Windward Maven Repository', remote_url: 'http://maven-repository.windward.net/artifactory/libs-release', pkg_type: 'maven' }
   - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://files.pythonhosted.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
-  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io', pkg_type: 'docker' }
-  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io', pkg_type: 'docker'}
+  - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker' }
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io/', pkg_type: 'docker'}
 
 
 ####################################################
@@ -143,3 +145,4 @@ repo_list:
 docker_list:
   - { key: 'docker-remote', username: 'xxxxxxxxxxxx', password: 'xxxxxxxxxxxx' }
   - { key: 'redhat-docker-remote', username: 'xxxxxxxxxxxx', password: 'xxxxxxxxxxxx' }
+# Testing...

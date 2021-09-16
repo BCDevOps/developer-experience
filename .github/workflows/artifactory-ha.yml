@@ -2,6 +2,11 @@ name: Artifactory Installation
 
 on:
   workflow_dispatch:
+    inputs:
+      target_cluster:
+        description: "Enter target cluster (klab, silver):"
+        required: true
+        default: 'klab'
 
 defaults:
   run:
@@ -9,9 +14,6 @@ defaults:
 
 jobs:
   artifactory_installation:
-    if: |
-      (github.event_name == 'release' && contains(github.event.release.name, 'artifactory-ha')) ||
-      github.event_name != 'release'
     runs-on: ubuntu-latest
     env:
       FILE_STAGING_DIR: /tmp
@@ -19,54 +21,147 @@ jobs:
       OCP_PROJECT_NAME: devops-artifactory
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: feature/initial-artifactory-workflow
 
-      # Pre-installation steps
-      # ----------------------
-      - name: Generate master_key
-        run: echo MASTER_KEY=\"`openssl rand -hex 32`\" >> $GITHUB_ENV
-
-      - name: Generate join_key
-        run: echo JOIN_KEY=\"`openssl rand -hex 32`\" >> $GITHUB_ENV
-
-      - name: Prepare Artifactory license file
-        run: echo ${{ env.ARTIFACTORY_LICENSE }} >> ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
-
-      - name: Get version number from vars.yaml
-        run: echo ARTIFACTORY_VERSION=\"`grep ^artifactory_version vars.yaml | awk '{ print $2 }'`\" >> $GITHUB_ENV
+      - name: Set target cluster
+        run: |
+          if [ "${{ github.event.inputs.target_cluster }}" == "klab" ]; then
+            echo TARGET_CLUSTER=klab >> $GITHUB_ENV
+            echo "--> klab"
+          elif [ "${{ github.event.inputs.target_cluster }}" == "silver" ]; then
+            echo TARGET_CLUSTER=silver >> $GITHUB_ENV
+            echo "--> silver"
+          else
+            echo "Enter a valid target cluster: klab or silver"
+            exit 1
+          fi
 
       - name: Create certificate directories
         env:
           DIRS: artifactory wildcard
-        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/artifactory-secrets/$dir; done
+        run: for dir in $DIRS; do mkdir -p ${{ env.FILE_STAGING_DIR }}/$dir; done
 
-      - name: Create artifactory certificate files
-        #if: ${{ env.INSTALL_TARGET == 'prod' }}
+      - name: Create certificate files
         run: |
-          echo ${{ env.ARTIFACTORY_CA_CRT }}  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
-          echo ${{ env.ARTIFACTORY_TLS_CRT }} > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
-          echo ${{ env.ARTIFACTORY_KEY_CRT }} > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_CA_CRT }}"  > ${{ env.FILE_STAGING_DIR }}/artifactory/ca.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_TLS_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/tls.crt
+          printf '%s\n' "${{ secrets.SILVER_ARTIFACTORY_KEY_CRT }}" > ${{ env.FILE_STAGING_DIR }}/artifactory/key.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_CA_CRT }}"     > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_TLS_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
+          printf '%s\n' "${{ secrets.SILVER_WILDCARD_KEY_CRT }}"    > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
 
-      - name: Create wildcard certificate files
-        #if: ${{ env.INSTALL_TARGET == 'nonprod' }}
+      # Set cluster-specific properties for KLAB
+      - name: Prepare KLAB params
+        if: ${{ env.TARGET_CLUSTER == 'klab' }}
         run: |
-          echo ${{ env.WILDCARD_CA_CRT }}  > ${{ env.FILE_STAGING_DIR }}/wildcard/ca.crt
-          echo ${{ env.WILDCARD_TLS_CRT }} > ${{ env.FILE_STAGING_DIR }}/wildcard/tls.crt
-          echo ${{ env.WILDCARD_KEY_CRT }} > ${{ env.FILE_STAGING_DIR }}/wildcard/key.crt
+          printf "${{ secrets.KLAB_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
+          echo SSO_ID=\"${{ secrets.KLAB_SSO_ID }}\" >> $GITHUB_ENV
+          echo SSO_SECRET=\"${{ secrets.KLAB_SSO_SECRET }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_TOKEN=\"${{ secrets.KLAB_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_URL=\"${{ secrets.KLAB_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_URL=artifacts.apps.klab.devops.gov.bc.ca >> $GITHUB_ENV
+          echo S3_BUCKET_NAME=\"${{ secrets.KLAB_S3_BUCKET_NAME }}\" >> $GITHUB_ENV
+          echo S3_ID=\"${{ secrets.KLAB_S3_ID }}\" >> $GITHUB_ENV
+          echo S3_PASSWORD=\"${{ secrets.KLAB_S3_PASSWORD }}\" >> $GITHUB_ENV
+          echo MASTER_KEY=\"${{ secrets.KLAB_MASTER_KEY }}\" >> $GITHUB_ENV
+          echo JOIN_KEY=\"${{ secrets.KLAB_JOIN_KEY }}\" >> $GITHUB_ENV
+
+      # Set cluster-specific properties for SILVER
+      - name: Prepare SILVER params
+        if: ${{ env.TARGET_CLUSTER == 'silver' }}
+        run: |
+          printf "${{ secrets.SILVER_ARTIFACTORY_LICENSE }}" > ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
+          echo SSO_ID=\"${{ secrets.SILVER_SSO_ID }}\" >> $GITHUB_ENV
+          echo SSO_SECRET=\"${{ secrets.SILVER_SSO_SECRET }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_TOKEN=\"${{ secrets.SILVER_OPENSHIFT_TOKEN }}\" >> $GITHUB_ENV
+          echo OPENSHIFT_URL=\"${{ secrets.SILVER_OPENSHIFT_URL }}\" >> $GITHUB_ENV
+          echo ARTIFACTORY_URL=artifacts.developer.gov.bc.ca >> $GITHUB_ENV
+          echo S3_BUCKET_NAME=\"${{ secrets.SILVER_S3_BUCKET_NAME }}\" >> $GITHUB_ENV
+          echo S3_ID=\"${{ secrets.SILVER_S3_ID }}\" >> $GITHUB_ENV
+          echo S3_PASSWORD=\"${{ secrets.SILVER_S3_PASSWORD }}\" >> $GITHUB_ENV
+          echo MASTER_KEY=\"${{ secrets.SILVER_MASTER_KEY }}\" >> $GITHUB_ENV
+          echo JOIN_KEY=\"${{ secrets.SILVER_JOIN_KEY }}\" >> $GITHUB_ENV
+
+      # Pre-installation steps
+      # ----------------------
+      - name: Prepare Artifactory license file
+        run: echo ${{ env.ARTIFACTORY_LICENSE }} >> ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }}
+
+      - name: Get version number from vars
+        run: echo ARTIFACTORY_VERSION=`grep ^artifactory_version vars-${{ env.TARGET_CLUSTER }}.yaml | awk '{ print $2 }'` >> $GITHUB_ENV
 
       - name: Stage the vars-local.yaml file
-        run: cp vars.yaml vars-local.yaml
+        run: cp vars-${{ env.TARGET_CLUSTER }}.yaml vars-local.yaml
 
       - name: Set vars in vars-local.yaml
         run: |
-          sed -i "s/^master_key:.*/master_key: ${{ env.MASTER_KEY }}/" vars-local.yaml
-          sed -i "s/^join_key:.*/join_key: ${{ env.JOIN_KEY }}/" vars-local.yaml
-          sed -i "s/^sso_id:.*/sso_id: ${{ env.SSO_ID }}/" vars-local.yaml
-          sed -i "s/^sso_secret:.*/sso_secret: ${{ env.SSO_SECRET }}/" vars-local.yaml
-          sed -i "s/^folder:.*/folder: ${{ env.FILE_STAGING_DIR }}/" vars-local.yaml
-          sed -i "s/^artifactory_license_file:.*/artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}/" vars-local.yaml
+          sed -i 's|^master_key:.*|master_key: ${{ env.MASTER_KEY }}|' vars-local.yaml
+          sed -i 's|^join_key:.*|join_key: ${{ env.JOIN_KEY }}|' vars-local.yaml
+          sed -i 's|^folder:.*|folder: ${{ env.FILE_STAGING_DIR }}|' vars-local.yaml
+          sed -i 's|^artifactory_license_file:.*|artifactory_license_file: ${{ env.ARTIFACTORY_LICENSE_FILE }}|' vars-local.yaml
+          sed -i 's|^sso_id:.*|sso_id: ${{ env.SSO_ID }}|' vars-local.yaml
+          sed -i 's|^sso_secret:.*|sso_secret: ${{ env.SSO_SECRET }}|' vars-local.yaml
+          sed -i 's|^project_name:.*|project_name: ${{ env.OCP_PROJECT_NAME }}|' vars-local.yaml
+          sed -i 's|^artifactory_url:.*|artifactory_url: ${{ env.ARTIFACTORY_URL }}|' vars-local.yaml
+          sed -i "s| key: 'docker-remote'.*|key: 'docker-remote', username: '${{ secrets.DOCKER_REMOTE_ID }}', password: '${{ secrets.DOCKER_REMOTE_PASSWORD }}' }|" vars-local.yaml
+          sed -i "s| key: 'redhat-docker-remote'.*|key: 'redhat-docker-remote', username: '${{ secrets.REDHAT_DOCKER_REMOTE_ID }}', password: '${{ secrets.REDHAT_DOCKER_REMOTE_PASSWORD }}' }|" vars-local.yaml
+          sed -i 's|^s3_bucket_name:.*|s3_bucket_name: ${{ env.S3_BUCKET_NAME }}|' vars-local.yaml
+          sed -i 's|^s3_identity:.*|s3_identity: ${{ env.S3_ID }}|' vars-local.yaml
+          sed -i 's|^s3_password:.*|s3_password: ${{ env.S3_PASSWORD }}|' vars-local.yaml
+
+      - name: Debug - Show license line from vars-local.yaml
+        run: grep "^artifactory_license_file" vars-local.yaml
+
+      - name: Debug - Show license file
+        run: |
+          cp ${{ env.FILE_STAGING_DIR }}/${{ env.ARTIFACTORY_LICENSE_FILE }} /tmp/tt
+          cat /tmp/tt
 
       - name: Verify pre-installation
         if: ${{ failure() }}
-        run: echo "Pre-installation steps were not entirely successful"; exit 1
+        run: echo "There was an error in the pre-installation steps"; exit 1
+
+      - name: artifactory url debug
+        run: echo "--> ${{ env.ARTIFACTORY_URL }}"
+
+      # Installation steps
+      # ------------------
+      - name: Log in to OpenShift
+        run: |
+          oc version
+          oc login --token=${{ env.OPENSHIFT_TOKEN }} --server=${{ env.OPENSHIFT_URL }}
+
+      - name: Verify login and make sure we connected to the right namespace
+        if: ${{ failure() }}
+        run: echo "OCP login to ${{ env.OCP_PROJECT_NAME }} failed"; exit 1
+
+      # Verify that all backup members are up by checking the 'ping' health
+      # check API.
+      # If there are no backup members, carry on with the installation.
+      - name: Check that "member" (backup) instances are up
+        run: |
+          MEMBER_PODS_EXIST=0
+          MEMBER_PING_FAILED=0
+          for pod in `oc -n devops-artifactory get pods | grep ^artifactory-ha-member | awk '{ print $1 }'`; do
+            MEMBER_PODS_EXIST=1
+            PING=`oc -n devops-artifactory exec $pod -- curl -s http://localhost:8040/artifactory/api/system/ping`
+            if [ "$PING" != "OK" ]; then MEMBER_PING_FAILED=1; fi
+          done
+          if [ "$MEMBER_PODS_EXIST" == "1" ] && [ "$MEMBER_PING_FAILED" == "1" ]; then
+            echo "Artifactory backup member health check failed."
+            echo "Cancelling installation"
+            exit 1
+          elif [ "$MEMBER_PODS_EXIST" == "1" ]; then
+            echo "Member health check passed"
+          else
+            echo "There are no backup members - continuing with installation"
+          fi
+
+      - name: Run the playbook
+        run: ansible-playbook install.yaml
+
+      # Post-installation steps?
+      # ------------------------
 
 

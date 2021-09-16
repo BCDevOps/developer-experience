@@ -120,35 +120,23 @@ Those in the wildcard folder are for *.artifacts.developer.gov.bc.ca (for docker
 2. Navigate to the correct project.
 3. Run `ansible-playbook install.yaml`.
 
-## 2. Post Installation Steps
-
-There are just a couple of things that I haven't quite figured out how to do through the API yet, but it's coming!
-
-For now, here's what remains
-
-*Changing the Docker Access Method*
-
-* Log into Artifactory using the admin account
-* Go to the administration panel and, down at the bottom of the menu, under `Services`, click `Artifactory`
-* On the page that comes up, click `HTTP Settings` under `General` (bottom of the first box)
-* Switch `Docker Access Method` from `Repository Path` to `Sub Domain`
-
-*Allow Docker Access Tokens*
-
-* Still on the admin panel, click on `Respositories` and then `Respositories` on the dropdown panel (yeah, it's weird that they have the same name twice)
-* Near the top of the page, click `Remote`
-* Navigate a docker repo and click on the name of the repo
-* Check `Enable Token Authentication` and uncheck `Block pulling of image manifest v2 schema 1`
-* Repeat for each remote docker repo.
-
-## 3. Deleting Everything
+## 2. Deleting Everything
 
 Don't run unless you're sure ;)
 
 ```
-oc delete statefulsets,services,routes,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
-oc delete secrets -l app=artifactory-ha
-oc delete statefulsets,services,routes,secrets -l app=patroni-001
-oc delete configmaps -l cluster-name=patroni-001
-oc delete pvc -l app=patroni-001
+oc -n devops-artifactory delete statefulsets,services,routes,poddisruptionbudget,configmaps,pvc -l app=artifactory-ha
+oc -n devops-artifactory delete secrets -l app=artifactory-ha
+oc -n devops-artifactory delete statefulsets,services,routes,secrets -l app=patroni-001
+oc -n devops-artifactory delete configmaps -l cluster-name=patroni-001
+oc -n devops-artifactory delete pvc -l app=patroni-001
 ```
+
+## 3. Generating a New Template
+
+```bash
+cd helm
+helm template artifactory-ha jfrog/artifactory-ha -f helm-vars-klab.yaml > manifest.yaml
+```
+
+Everything should work!

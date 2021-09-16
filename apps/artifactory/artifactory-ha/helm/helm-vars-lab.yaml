@@ -1,0 +1,99 @@
+namespace: devops-artifactory
+nameOverride: artifactory-ha
+
+imagePullSecrets:
+ - 4302974-as-mcs-artifactory-pull-secret
+ - artifactory-dockerhub
+
+nginx:
+  enabled: false
+
+postgresql:
+  enabled: false
+
+access:
+  database:
+    maxOpenConnections: 200
+
+metadata:
+  database:
+    maxOpenConnections: 200
+
+database:
+  type: postgresql
+  driver: org.postgresql.Driver
+  secrets:
+    user:
+      name: patroni-001
+      key: app-db-username
+    password:
+      name: patroni-001
+      key: app-db-password
+    url:
+      name: patroni-001
+      key: db-url
+
+
+
+artifactory:
+  name: artifactory-ha
+  image:
+    registry: registry.connect.redhat.com
+    repository: jfrog/artifactory-pro
+    tag: 7.19.4-1
+
+  joinKeySecretName: artifactory-keys
+  masterKeySecretName: artifactory-keys
+
+  setSecurityContext: false
+
+  consoleLog: true
+
+  database:
+    maxOpenConnections: 200
+
+  primary:
+    name: primary
+    minAvailable: false
+    replicaCount: 2
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "500m"
+      limits:
+        memory: "3Gi"
+        cpu: "2"
+    javaOpts:
+      xms: "2g"
+      xmx: "2g"
+
+  node:
+    name: member
+    minAvailable: false
+    replicaCount: 0
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "500m"
+      limits:
+        memory: "3Gi"
+        cpu: "2"
+
+  copyOnEveryStartup:
+    - source: /artifactory_bootstrap/binarystore.xml
+      target: etc/artifactory/
+
+  customPersistentPodVolumeClaim:
+    name: data-volume
+    mountPath: "/var/opt/jfrog/cache"
+    accessModes:
+     - "ReadWriteOnce"
+    size: 1Gi
+    storageClassName: netapp-file-standard
+    skipPrepareContainer: true
+
+  persistence:
+    enabled: true
+    storageClassName: netapp-block-standard
+    size: 1Gi
+    customBinarystoreXmlSecret: artifactory-custom-binarystore
