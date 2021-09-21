@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: feature/initial-artifactory-workflow
+          ref: ${{GITHUB_REF}}
 
       - name: Set target cluster
         run: |
