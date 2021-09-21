@@ -21,8 +21,6 @@ jobs:
       OCP_PROJECT_NAME: devops-artifactory
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{GITHUB_REF}}
 
       - name: Set target cluster
         run: |
