@@ -21,8 +21,6 @@ jobs:
       OCP_PROJECT_NAME: devops-artifactory
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: feature/initial-artifactory-workflow
 
       - name: Set target cluster
         run: |
