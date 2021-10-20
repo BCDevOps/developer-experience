@@ -86,7 +86,7 @@ Here are some things to include:
 
 
 **Step 4:**
-Send the above to Platform Services team at pathfinder@gov.bc.ca. Someone from the team will follow up with you soon!
+Send the above to Platform Services team at PlatformServicesTeam@gov.bc.ca. Someone from the team will follow up with you soon!
 
 When requesting a quota increase from **medium** to **large**, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
 
