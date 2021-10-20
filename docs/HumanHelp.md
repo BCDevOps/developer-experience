@@ -37,10 +37,10 @@ Let us know if you think there are any missing from this list! :)
 
 If that doesn't help, your next stop should be `#devops-how-to` on Rocketchat. There are plenty of people in our 2000+ strong community who can offer their expertise!
 To find out if there is a current service alert or operational work that might be impacting your application, you can check the following:
-- https://status.pathfinder.gov.bc.ca
-- `#bcdevops-alerts`
-- `#bcdevops-operations`
-- `#bcdevops-sos`
+- https://status.developer.gov.bc.ca
+- [#devops-alerts](https://chat.developer.gov.bc.ca/channel/devops-alerts) channel in Rocketchat
+- [#devops-operations](https://chat.developer.gov.bc.ca/channel/devops-sos) channel in Rocketchat
+- [#bcdevops-sos](https://chat.developer.gov.bc.ca/channel/devops-sos) channel in Rocketchat
 
 Please note: the channels above are not "please help" channels, and are used for communication related to the platform itself (not individual application support).
 
@@ -48,7 +48,7 @@ Please note: the channels above are not "please help" channels, and are used for
 
 As above, check the available platform alerts and operations channels and please feel free to raise a suspected platform issue there.  (The `#devops-sos` is the **Everything is on FIRE** channel, that can be leveraged for emergency assistance.)
 
-Otherwise, go to our [Status Page](https://status.pathfinder.gov.bc.ca/d/homedashboard/bcgov-devhub-status-page) to check on the status of our services. 
+Otherwise, go to our [Status Page](http://status.developer.gov.bc.ca) to check on the status of our services. 
 Make sure you scroll down to check the Operations Notices - if there's something there about this issue, the Platform Services team is aware and is working on it!
 
 Next, check `#general` and `#devops-alerts` to see if any member of Platform Services has made an announcement about the issue.
