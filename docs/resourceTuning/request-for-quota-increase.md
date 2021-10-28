@@ -19,6 +19,13 @@ Is your application failing to scale due to resource limit? Are you seeing OOM p
 - [Resource Management Guidelines](https://github.com/BCDevOps/developer-experience/blob/master/docs/ResourceManagementGuidelines.md)
 - [Application Resource Tuning](https://github.com/BCDevOps/developer-experience/blob/master/docs/resource-tuning-recommendations.md)
 
+## First thing first: setup resource monitoring with Sysdig Monitor
+
+Begin a monitoring journey with Sysdig, where you can access dashboards showing your application memory, CPU and storage usage. Before connecting with us for the quota increase request, we will ask you to start monitoring and collecting metrics to show your application resource utilization status. Refer to our Sysdig documentation for self-serve onboarding [here](https://developer.gov.bc.ca/OpenShift-User-Guide-to-Creating-and-Using-a-Sysdig-Team-for-Monitoring). It has all you would need to onboard onto Sysdig and make use of the default dashboards that get created automatically. Should you have any trouble with it, please reach out to us on [Rocketchat channel](https://chat.developer.gov.bc.ca/channel/devops-sysdig)!
+
+> A side note: Sysdig is a great and powerful tool for service monitoring and applying SRE practice! Having you to get started using Sysdig is not just for this one time quota request, but with the goal to leverage it for service monitoring and alerting purpose for the long run.
+
+
 **Now if you are pretty sure that you do need a quota increase, please continue!**
 
 Resource quota increase can be requested by a Product Owner or a Tech Lead of the project on the project edit page in [Openshift 4 Project Registry](https://registry.developer.gov.bc.ca/public-landing) and will **require the approval** by the Platform Service Team before it is processed.  
@@ -57,7 +64,7 @@ Here are some things to note:
 
 **Part 1 - Compute Resource Quota Increase**
 
-If you are requesting for CPU or Memory quota increase, please collect the average from each replica pods and fill in the table. See the following as an example:
+If you are requesting for CPU or Memory quota increase, please collect the average from each replica pods and fill in the table. Also present the Sysdig dashboard so we can leverage on more accurate figures to make the decision! See the following as an example:
 
 | Component name | Description (Optional) | # of Replicas (and range if using auto scaler) | Resource Requested | Resource Limit | Average Consumption | Spikes |
 |----------------|------------------------|------------------------------------------------|--------------------|----------------|---------------------|--------|
@@ -66,7 +73,7 @@ If you are requesting for CPU or Memory quota increase, please collect the avera
 
 **Part 2 - Storage Quota Increase**
 
-If you are requesting for an increase of a storage quota, list all the PVCs that you have and the components that are mounting the volume. We'd like to know what they are used for and its utilization. See the following as an example:
+If you are requesting for an increase of a storage quota, list all the PVCs that you have and the components that are mounting the volume, together with the sysdig dashboard that shows the past usage metrics. We'd like to know what they are used for and its utilization. See the following as an example:
 
 | Component name | Description (Optional) | PVC type | PVC size | Storage Utilization |
 |----------------|------------------------|----------|----------|---------------------|
