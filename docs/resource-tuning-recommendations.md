@@ -19,7 +19,7 @@ As touched upon in the [Resiliency Guidelines](https://developer.gov.bc.ca/Resil
 - Resource availability for your own applications
 - Resource availability for other tenant applications
 
-While [*Resource Quota's*](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#dev-quotas) are quite generous, it's important that this quota is seen as a tool to allow tenants enough resources to temporarily burst usage for experimentation, rather than an upper limit of consistent use. The platform is not sized to support every tenant fully utilizing their *Resource Quota*.
+While [*Resource Quotas*](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#dev-quotas) are quite generous, these quotas must be seen as a tool to allow tenants enough resources to temporarily burst usage for experimentation, rather than an upper limit of consistent use. The platform is not sized to support every tenant fully utilizing their *Resource Quota*.
 
 **Resource Requests**  
 Resource requests are guaranteed and reserved for the pod. *Scheduling decisions are made based on the request* to ensure that a node has enough capacity available to meet the requested value.
@@ -29,13 +29,13 @@ Resource limits set an upper limit of what a pod can burst to if the resources a
 
 ## Setting Requests and Limits
 
-:exclamation: **If you set a resource Limit, you should also set a resource Request.** Otherwise the Request will match the Limit. For example, a Deployment with *no* defined cpu request and a definted cpu limit of 1 core will *result in a pod with a request of 1 cpu and a limit of 1 cpu*.
+:exclamation: **If you set a resource Limit, you should also set a resource Request.** Otherwise the Request will match the Limit. For example, a Deployment with *no* defined CPU request and a defined CPU limit of 1 core will *result in a pod with a request of 1 CPU and a limit of 1 CPU*.
 
 **General Guidelines**\
 :ballot_box_with_check: Set requests and limits.\
 :ballot_box_with_check: Set requests to the *minimum* of what your application needs.\
-:ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.\
-:ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large cpu and memory limits.
+:ballot_box_with_check: Set limits to a reasonable burstable number of what a single pod should support.\
+:ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large CPU and memory limits.
 
 **Being A Good Resource Citizen**
 
@@ -71,9 +71,9 @@ A: Your pods will be deployed with the following defaults:
 This is the NOT same as specifying a resource request or limit of 0.
 
 **Q: What happens if I set the request and limits to 0?**  
-A: Your pods will run under the BestEffort QoS class, using whatever spare capacity is available on node.
+A: Your pods will run under the BestEffort QoS class, using whatever spare capacity is available on the node.
 
-:small_red_triangle: Assigning `0` as a request or limit must be done through the CLI or directly in the manifest. The Web Console will not accept `0` as a request or limit while editing the resources on a deployment; it will apply the platform defaults outlined in the previous answer.
+:small_red_triangle: Assigning `0` as a request or limit must be done through the CLI or directly in the manifest. The Web Console will not accept `0` as a request or limit while editing the resources on a Deployment; it will apply the platform defaults outlined in the previous answer.
 
 **Q: What happens if I create a deployment and only specify a limit?**  
 A: Your Pods will be deployed with a Request that is identical to the Limit.
@@ -88,7 +88,7 @@ A: Your Pods will be deployed with the configured request, and will have the def
 A: You will be required to define a limit.
 
 **Q: Is there any way I can check for myself the actual CPU consumption of running pods in my project?"**
-A: There is a way which requires you to make use of the `oc` client versus using the web console. Additional math will be required past this point as there is no way of automating this in a cross-platform fashion using just `oc`.
+A: There is a way that requires you to make use of the `oc` client versus using the web console. Additional math will be required past this point as there is no way of automating this in a cross-platform fashion using just `oc`.
 
 ```bash
 oc adm top pod
@@ -106,13 +106,13 @@ NAME              CPU(cores)   MEMORY(bytes)
 For the above, the column of numbers involving `CPU(cores)` is what you want to add up. the `m` suffix stands for millicores, so for the above, add up the numbers and divide by 1000 to get the actual consumption of CPU cores by the pods in the current project. If the CPU usage has no `m` suffix, then that is just measured in cores, and not millicores. For the above example, the total would then be 2 + (3+3+3+9+4)/1000 = 2.022 CPU cores of actual CPU consumption.
 
 **Q: Is there an easy way to use `oc` to get the current value of CPU Requests allowed for the project currently logged into with `oc`?
-A: Certainly. The following one-liner will display the current value of CPU requests as currently alloted for the current project.
+A: Certainly. The following one-liner will display the current value of CPU requests as currently allotted for the current project.
 
 ```bash
 oc get quota compute-long-running-quota -o=custom-columns=Requests:.status.used."requests\.cpu"
 ```
 
-Example output of the above, the `m` at the end again means millicores, so dividing the number by 1000 tells us the current project per this example has a total alloted CPU Requests value of 14.5 CPU cores.
+Example output of the above, the `m` at the end again means millicores, so dividing the number by 1000 tells us the current project per this example has a total allotted CPU Requests value of 14.5 CPU cores.
 
 ```bash
 Requests
@@ -121,10 +121,10 @@ Requests
 
 ## Jenkins Resource Configuration Recommendations
 
-Tuning the resources of Jenkins deployments can have a large affect on the available resources of the platform. As of the this writing, Jenkins accounts for the largest user of CPU Requests and Limits on the platform. Recent analysis has indicated:
+Tuning the resources of Jenkins deployments can have a large effect on the available resources of the platform. As of writing, Jenkins accounts for the largest user of CPU Requests and Limits on the platform. Recent analysis has indicated:
 
 - **15-25% of CPU Requests** on the platform are related to Jenkins
-- **7% of the CPU Requests** are actually used, on average, over a 1 Day period
+- **7% of the CPU Requests** are actually used, on average, over 1 day
 - **10% or More CPU Requests** for the overall platform can be saved by tuning Jenkins resources
 
 ### Recommended Configuration
@@ -158,7 +158,7 @@ oc patch dc/jenkins -p '{"spec": {"template": {"spec": {"containers":[{"name":"j
 
 The reason that Jenkins is often deployed with such high CPU and Memory Requests was related to previous scheduler issues that have since been fixed on the platform. As a result, the templates **and existing Jenkins deployments** should be tuned to reduce the CPU requests.
 
-A test was performed to collect the startup time of Jenkins under various resource configurations. Each test was performed 3 times and the startup time was averaged out across each iteration. The name of each test is in the format of `[cpu_requests_in_milllicores]-[cpu_limits_in_millicores]-[memory_requests_in_mb]`.
+A test was performed to collect the startup time of Jenkins under various resource configurations. Each test was performed 3 times and the startup time was averaged out across each iteration. The name of each test is in the format of `[cpu_requests_in_millicores]-[cpu_limits_in_millicores]-[memory_requests_in_mb]`.
 
 ![Jenkins performance test results](images/jenkins_performance_test_results.png)
 
@@ -178,11 +178,11 @@ A test was performed to collect the startup time of Jenkins under various resour
 
 The observations from the testing can be summarized as follows:
 
-- CPU Limit has the largest affect on Startup Performance
-- CPU Request has little affect on Startup Performance
+- CPU Limit has the largest effect on Startup Performance
+- CPU Request has little effect on Startup Performance
 - The gain from a CPU Limit of 500m to 1000m is major
 - The gain from a CPU Limit of 1000m to 2000m is minor
-- One ideal configuration looks like:
+- One ideal configuration looks like this:
   - CPU Request: 100m
   - CPU Limit: 1000m+
   - Memory Request: 512M
