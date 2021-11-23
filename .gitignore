@@ -5,3 +5,4 @@ setenv-prod.sh
 vars-local.yaml
 *node_modules/
 *.nvm/
+.vscode/
