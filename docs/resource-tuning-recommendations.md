@@ -33,8 +33,11 @@ Resource limits set an upper limit of what a pod can burst to if the resources a
 
 **General Guidelines**  
 :ballot_box_with_check: Set requests and limits.
+
 :ballot_box_with_check: Set requests to the *minimum* of what your application needs.
+
 :ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.
+
 :ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large cpu and memory limits.
 
 **Being A Good Resource Citizen**
