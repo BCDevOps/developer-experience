@@ -31,16 +31,14 @@ Resource limits set an upper limit of what a pod can burst to if the resources a
 
 :exclamation: **If you set a resource Limit, you should also set a resource Request.** Otherwise the Request will match the Limit. For example, a Deployment with *no* defined cpu request and a definted cpu limit of 1 core will *result in a pod with a request of 1 cpu and a limit of 1 cpu*.
 
-**General Guidelines**  
-:ballot_box_with_check: Set requests and limits.
-
-:ballot_box_with_check: Set requests to the *minimum* of what your application needs.
-
-:ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.
-
+**General Guidelines**\
+:ballot_box_with_check: Set requests and limits.\
+:ballot_box_with_check: Set requests to the *minimum* of what your application needs.\
+:ballot_box_with_check: Set limits to a resonable burstable number of what a single pod should support.\
 :ballot_box_with_check: Use horizontal pod autoscalers where possible, rather than large cpu and memory limits.
 
 **Being A Good Resource Citizen**
+
 :star: :star: :star:
 
 Having a **3:1 ratio** of CPU Limit:CPU Request is a good starting place for new applications that haven't yet been tuned. Using a 3:1 ratio makes you a **good community member**!
