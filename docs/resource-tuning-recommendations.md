@@ -187,3 +187,58 @@ The observations from the testing can be summarized as follows:
   - CPU Limit: 1000m+
   - Memory Request: 512M
   - Memory Limit: 1-2GB (May vary depending on usage)
+
+## Tools Namespaces Resource Quota Recommendations
+
+Every product in a cluster is provided a GUID and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<guid>-tools`, where tooling such as Jenkins are deployed in.
+
+As of writing, there is a discrepancy between compute resources (especially CPU) requested compared to actual usage.
+
+Jenkins instances in tools namespaces across the cluster are requesting much more resources than they are utilizing on average. These overcommitted Jenkins instances are one of the largest contributors to this over-allocation problem.
+
+In short, the recommendation is to lower compute resource requests and leverage resource limits in a burstable fashion.
+
+This section identifies the problem and mitigation recommendation of resource over-allocation in tools namespaces.
+
+### Decoupling Tools Namespaces Quotas and Limit Ranges
+
+Currently, all namespaces provided to a product in a cluster are assigned the same T-shirt-sized resource quotas and limit ranges.
+
+It is recommended to decouple the quotas and limits sizing of the tools namespace from the other environment namespaces (i.e., dev, test, prod) to adjust the only the quotas and limits of the tools namespaces separately.
+
+###
+
+
+
+
+### Viewing Quota Usage
+
+You can identify current resource quota consumption and properly size resource requests and limits of existing/new workloads using either the OpenShift web console or `oc` command-line tool.
+
+#### Viewing Quota Usage (GUI)
+
+From the OpenShift web console, in the **Administrator** perspective, proceed to **Administration** > **ResourceQuotas** and select the appropriate `ResourceQuota` (i.e., `compute-long-running-quota`). Here is an example:
+
+![tools example compute-long-running-quota](images/tools-example-compute-long-running-quota.png)
+
+#### Viewing Quota Usage (CLI)
+
+To describe a specific quota, use the `oc` tool:
+
+```bash
+$ oc describe resourcequotas compute-long-running-quota # -n <project>
+Name:       compute-long-running-quota
+Namespace:  <guid>-tools
+Scopes:     NotBestEffort, NotTerminating
+ * Matches all pods that have at least one resource requirement set. These pods have a burstable or guaranteed quality of service.
+ * Matches all pods that do not have an active deadline. These pods usually include long running pods whose container command is not expected to terminate.
+Resource         Used    Hard
+--------         ----    ----
+limits.cpu       1860m   8
+limits.memory    5184Mi  32Gi
+pods             9       100
+requests.cpu     610m    4
+requests.memory  2752Mi  16Gi
+```
+
+### 
