@@ -32,7 +32,7 @@ There have been changes to the Github Access management workflow to __better aut
 ### Requesting membership to bcgov and BCDevOps orgs
 
 If you are making a simple request to invite someone or yourself to the bcgov or BCDevOps organizations in GitHub, this can now be done with the
-[Platform Service's Github Access Management Tool](https://just-ask-web-bdec76-prod.apps.silver.devops.gov.bc.ca/). You do not need to open a ticket or create a GitHub issue anymore, please use the app for all org membership requests. 
+[Platform Service's Github Access Management Tool](https://just-ask.developer.gov.bc.ca/). You do not need to open a ticket or create a GitHub issue anymore, please use the app for all org membership requests. 
 
 If you are a member in bcgov or BCDevOps org and are inviting another user to the org, your request will be approved automatically and processed right away.  The invited user will get an invite in the email to join the org. Only after the invite is accepted, the membership will be granted to the invited user's GitHub ID account.
 
