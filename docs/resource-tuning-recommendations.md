@@ -241,4 +241,22 @@ requests.cpu     610m    4
 requests.memory  2752Mi  16Gi
 ```
 
-### 
+### Risks Reducing Resource Reservation
+
+Consider these risks when reducing resource quotas (and subsequently, requests/limits).
+
+See [Configuring your cluster to place pods on overcommitted nodes](https://docs.openshift.com/container-platform/latest/nodes/clusters/nodes-cluster-overcommit.html) for more details.
+
+#### Simultaneous Resource Claiming
+
+Reducing resource requests ["works on the assumption that not all the pods will claim all of their usable resources at the same time"](https://cloud.redhat.com/blog/full-cluster-part-2-protecting-nodes).
+
+Consideration must be made to determine if several workloads across the cluster would be bursting above their requests, simultaneously at a specific time of day.
+
+#### Node CPU Saturation
+
+
+
+#### Node Memory Saturation
+
+
