@@ -222,6 +222,8 @@ While teams are encouraged to patch the CPU and memory requests and limits of ex
 
 #### Tools Namespaces Quota Reduction Process
 
+Consider lowering resource quotas incrementally (i.e., reduce resource maximums by 25% of original value every 2 weeks). This is to mitigate issues that may arise for consumers of the tools namespaces, and monitor any increases of pod evictions or `OOM`-based termination.
+
 Reducing a resource quota will not impact running workloads immediately. If the sum of any resource constraints will be above the alloted after modifying the quota, running workloads will **not** be terminated or modified in any way. The resource quota will display over resource requests/limits, as in the example below:
 
 ![Tools example quota overage](assets/../images/tools-example-quota-overage.png)
