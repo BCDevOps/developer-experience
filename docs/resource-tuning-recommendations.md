@@ -210,6 +210,14 @@ It is recommended to decouple the quotas and limits sizing of the tools namespac
 
 
 
+#### Tools Namespaces Quota Sizing Recommendation
+
+
+
+#### Tools Namespaces Quota Reduction Process
+
+
+
 ### OpenShift Templates Consideration for Reduced Quota
 
 When deploying a workload such as Jenkins from the OpenShift Catalog, you may not be prompted to configure all of the cpu and memory requests and limits. In the case of Jenkins, you may only define the memory limit (defaults to 1Gi) which will set the memory requests to the same value.
