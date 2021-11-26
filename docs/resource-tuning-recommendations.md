@@ -188,6 +188,12 @@ The observations from the testing can be summarized as follows:
   - Memory Request: 512M
   - Memory Limit: 1-2GB (May vary depending on usage)
 
+### Advanced Jenkins Resource Tuning
+
+Consider monitoring the upper and lower bounds of CPU and memory usage of Jenkins instances over time. When idle, it has been observed that Jenkins uses under `5m` of CPU and about `650Mi` of memory. As per the **General Guidelines** above, "set requests to the *minimum* of what your application needs." It is ideal to reserve resources conservatively (especially for workloads that are often idle), and leverage resource limits and burst when active.
+
+Also consider other workloads you may need to run in the tools namespace when accounting for requests/limits allocation to be within the allotted maximums.
+
 ## Tools Namespaces Resource Quota Recommendations
 
 Every product in a cluster is provided a GUID and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<guid>-tools`, where tooling such as Jenkins are deployed in.
@@ -268,7 +274,7 @@ Consideration must be made to determine if several workloads across the cluster 
 
 #### Node CPU Saturation
 
-Very low CPU requests (i.e., 5m) may be assigned to workloads such as Jenkins that have minuscule CPU usage when idle, and rely on CPU limits to burst during pipeline runs. A potential risk with this configuration is if the node a workload is scheduled on is being heavily utilized, the workload will not be able to burst much higher than the given CPU requests, potentially causing significant slowdown.
+Very low CPU requests (i.e., `5m`) may be assigned to workloads such as Jenkins that have minuscule CPU usage when idle, and rely on CPU limits to burst during pipeline runs. A potential risk with this configuration is if the node a workload is scheduled on is being heavily utilized, the workload will not be able to burst much higher than the given CPU requests, potentially causing significant slowdown.
 
 However, this will not cause pod evictions, and CPU throttling (extensively below CPU limits) can be mitigated ensuring nodes across the cluster are evenly balanced and not overutilized.
 
