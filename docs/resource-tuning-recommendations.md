@@ -206,10 +206,15 @@ Currently, all namespaces provided to a product in a cluster are assigned the sa
 
 It is recommended to decouple the quotas and limits sizing of the tools namespace from the other environment namespaces (i.e., dev, test, prod) to adjust the only the quotas and limits of the tools namespaces separately.
 
-###
+### Tools Namespaces Quota Tuning
 
 
 
+### OpenShift Templates Consideration for Reduced Quota
+
+When deploying a workload such as Jenkins from the OpenShift Catalog, you may not be prompted to configure all of the cpu and memory requests and limits. In the case of Jenkins, you may only define the memory limit (defaults to 1Gi) which will set the memory requests to the same value.
+
+To accommodate a reduced project quota, the `oc patch` command (depicted above) should be used with more appropriate cpu and memory requests and quotas for all workloads in the tools project. Otherwise, these workloads may not become schedulable if their combined total requests/limits exceed the maximums defined by project quotas.
 
 ### Viewing Quota Usage
 
