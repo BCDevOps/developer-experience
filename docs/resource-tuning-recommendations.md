@@ -255,8 +255,12 @@ Consideration must be made to determine if several workloads across the cluster 
 
 #### Node CPU Saturation
 
+Very low CPU requests (i.e., 5m) may be assigned to workloads such as Jenkins that have minuscule CPU usage when idle, and rely on CPU limits to burst during pipeline runs. A potential risk with this configuration is if the node a workload is scheduled on is being heavily utilized, the workload will not be able to burst much higher than the given CPU requests, potentially causing significant slowdown.
 
+However, this will not cause pod evictions, and CPU throttling (extensively below CPU limits) can be mitigated ensuring nodes across the cluster are evenly balanced and not overutilized.
 
 #### Node Memory Saturation
 
+Nodes running out of memory can be more troublesome than CPU saturation. Regardless of node capacity, workloads that consume beyond their configured memory limits will immediately be terminated. However, if the workload is above its memory requests (but within its memory limits) and its node is running out of memory, the workload may be evicted (depending on the scheduler and priority) to reclaim that memory.
 
+Because memory is incompressible, memory requests and limits should be a little more generous to mitigate pod eviction/termination.
