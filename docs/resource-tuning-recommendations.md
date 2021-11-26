@@ -140,18 +140,18 @@ On a typical Jenkins deployment, the following snippet could be used if you are 
 
 ```YAML
         resources:
-          requests:  
+          requests:
             cpu: "100m"
-            memory: "128Mi"
+            memory: "512Mi"
           limits:
             cpu: "1"
-            memory: "512Mi"
+            memory: "1Gi"
 ```
 
 The following command can also be used to update a Jenkins DeploymentConfig:
 
 ```bash
-oc patch dc/jenkins -p '{"spec": {"template": {"spec": {"containers":[{"name":"jenkins", "resources":{"requests": {"cpu":"100m", "memory":"128Mi"}, "limits": {"cpu":"1", "memory":"512Mi"}}}]}}}}'
+oc patch dc/jenkins -p '{"spec": {"template": {"spec": {"containers":[{"name":"jenkins", "resources":{"requests": {"cpu":"100m", "memory":"512Mi"}, "limits": {"cpu":"1", "memory":"1Gi"}}}]}}}}'
 ```
 
 ### Performance Testing Details
