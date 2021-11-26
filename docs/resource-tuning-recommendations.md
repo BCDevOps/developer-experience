@@ -214,7 +214,7 @@ It is recommended to decouple the quotas and limits sizing of the tools namespac
 
 ### Tools Namespaces Quota Tuning
 
-
+While teams are encouraged to patch the CPU and memory requests and limits of existing tools (i.e., Jenkins instances) to reduce over-allocation of resources, current resource quotas do not enforce this. Reducing resource quotas in the tools namespaces will dissuade and prevent this practice moving forward.
 
 #### Tools Namespaces Quota Sizing Recommendation
 
@@ -222,7 +222,13 @@ It is recommended to decouple the quotas and limits sizing of the tools namespac
 
 #### Tools Namespaces Quota Reduction Process
 
+Reducing a resource quota will not impact running workloads immediately. If the sum of any resource constraints will be above the alloted after modifying the quota, running workloads will **not** be terminated or modified in any way. The resource quota will display over resource requests/limits, as in the example below:
 
+![Tools example quota overage](assets/../images/tools-example-quota-overage.png)
+
+Existing pods that are terminated (manually or by other means) will not be rescheduled if resource requests/limits cannot be satisfied. Patching a `Deployment(Config)` will terminate any existing pod(s). If new pods do not come up, the configured resource requests/limits may need to be adjusted to accommodate the resized resource quota.
+
+Because resource quota changes do not impact existing pods, coordination with teams during this transition process will be crucial to ensure workloads are patched accordingly and will redeploy within the bounds of the resource quota.
 
 ### OpenShift Templates Consideration for Reduced Quota
 
