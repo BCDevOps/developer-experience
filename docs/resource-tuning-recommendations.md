@@ -190,15 +190,15 @@ The observations from the testing can be summarized as follows:
 
 ### Advanced Jenkins Resource Tuning
 
-Consider monitoring the upper and lower bounds of CPU and memory usage of Jenkins instances over time. When idle, it has been observed that Jenkins uses under `5m` of CPU and about `650Mi` of memory. As per the **General Guidelines** above, "set requests to the *minimum* of what your application needs." It is ideal to reserve resources conservatively (especially for workloads that are often idle), and leverage resource limits and burst when active.
+Consider monitoring the upper and lower bounds of CPU and memory usage of Jenkins instances over time. When idle, it has been observed that Jenkins uses under `5m` of CPU and about `650Mi` of memory. As per the **General Guidelines** above, "set requests to the *minimum* of what your application needs." It is ideal to reserve resources conservatively (especially for workloads that are often idle), and leverage resource limits to burst when active.
 
 ![Jenkins CPU usage](assets/../images/jenkins-cpu-usage.png)
 
-Also consider other workloads you may need to run in the tools namespace when accounting for requests/limits allocation to be within the allotted maximums.
+Also, consider other workloads you may need to run in the tools namespace when accounting for requests/limits allocation to be within the allotted maximums.
 
 ## Tools Namespaces Resource Quota Recommendations
 
-Every product in a cluster is provided a GUID and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<guid>-tools`, where tooling such as Jenkins are deployed in.
+Every product in a cluster is provided a GUID and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<guid>-tools`, where tooling such as Jenkins are deployed.
 
 As of writing, there is a discrepancy between compute resources (especially CPU) requested compared to actual usage.
 
@@ -212,7 +212,7 @@ This section identifies the problem and mitigation recommendation of resource ov
 
 Currently, all namespaces provided to a product in a cluster are assigned the same T-shirt-sized resource quotas and limit ranges.
 
-It is recommended to decouple the quotas and limits sizing of the tools namespace from the other environment namespaces (i.e., dev, test, prod) to adjust the only the quotas and limits of the tools namespaces separately.
+It is recommended to decouple the quotas and limits sizing of the tools namespace from the other environment namespaces (i.e., dev, test, prod) to adjust only the quotas and limits of the tools namespaces separately.
 
 ### Tools Namespaces Quota Tuning
 
@@ -222,7 +222,7 @@ While teams are encouraged to patch the CPU and memory requests and limits of ex
 
 According to Cost Management and OpenShift Monitoring, the median CPU usage (per pod) is below `10m` on average (including idling). Namespace-wide CPU usage was measured at about `50m`-`100m` on average (some exceptions below or above).
 
-This allocation affects the `compute-long-running-quota` `ResourceQuota`. Modifying or creating a new based off of this resource quota to will be required reduce current maximums for the tools namespaces.
+This allocation affects the `compute-long-running-quota` `ResourceQuota`. Modifying or creating a new based on this resource quota will be required to reduce current maximums for the tools namespaces.
 
 Based on these statistics, it is recommended to reduce CPU requests and limits in the `compute-long-running-quota` `ResourceQuota`. To start, CPU requests may be dropped to as low as `500m`, and potentially lower after evaluating with time if this change does not inhibit work. CPU limits should be several multiples of the proposed CPU requests (i.e., `2000m`, `4000m`, `8000m`, or more) depending on realistic CPU usage of the average tools namespace workload when experiencing high load.
 
@@ -232,9 +232,9 @@ As of writing, oversized CPU requests are the focus of concern. Memory is an inc
 
 #### Tools Namespaces Quota Reduction Process
 
-Consider lowering resource quotas incrementally (i.e., reduce resource maximums by 25% of original value every 2 weeks). This is to mitigate issues that may arise for consumers of the tools namespaces, and monitor any increases of pod evictions or `OOM`-based termination. This approach can indicate (less detrimentally) when a resource quota is becoming too small.
+Consider lowering resource quotas incrementally (i.e., reduce resource maximums by 25% of original value every 2 weeks). This is to mitigate issues that may arise for consumers of the tools namespaces and monitor any increases of pod evictions or `OOM`-based termination. This approach can indicate (less detrimentally) when a resource quota is becoming too small.
 
-Reducing a resource quota will not impact running workloads immediately. If the sum of any resource constraints will be above the alloted after modifying the quota, running workloads will **not** be terminated or modified in any way. The resource quota will display over resource requests/limits, as in the example below:
+Reducing a resource quota will not impact running workloads immediately. If the sum of any resource constraints will be above the allotted after modifying the quota, running workloads will **not** be terminated or modified in any way. The resource quota will display over resource requests/limits, as in the example below:
 
 ![Tools example quota overage](assets/../images/tools-example-quota-overage.png)
 
@@ -244,9 +244,9 @@ Because resource quota changes do not impact existing pods, coordination with te
 
 ### OpenShift Templates Consideration for Reduced Quota
 
-When deploying a workload such as Jenkins from the OpenShift Catalog, you may not be prompted to configure all of the cpu and memory requests and limits. In the case of Jenkins, you may only define the memory limit (defaults to 1Gi) which will set the memory requests to the same value.
+When deploying a workload such as Jenkins from the OpenShift Catalog, you may not be prompted to configure all of the CPU and memory requests and limits. In the case of Jenkins, you may only define the memory limit (defaults to 1Gi) which will set the memory requests to the same value.
 
-To accommodate a reduced project quota, the `oc patch` command (depicted above) should be used with more appropriate cpu and memory requests and quotas for all workloads in the tools project. Otherwise, these workloads may not become schedulable if their combined total requests/limits exceed the maximums defined by project quotas.
+To accommodate a reduced project quota, the `oc patch` command (depicted above) should be used with more appropriate CPU and memory requests and quotas for all workloads in the tools project. Otherwise, these workloads may not become schedulable if their combined total requests/limits exceed the maximums defined by project quotas.
 
 ### Viewing Quota Usage
 
@@ -292,7 +292,7 @@ Consideration must be made to determine if several workloads across the cluster 
 
 #### Node CPU Saturation
 
-Very low CPU requests (i.e., `5m`) may be assigned to workloads such as Jenkins that have minuscule CPU usage when idle, and rely on CPU limits to burst during pipeline runs. A potential risk with this configuration is if the node a workload is scheduled on is being heavily utilized, the workload will not be able to burst much higher than the given CPU requests, potentially causing significant slowdown.
+Very low CPU requests (i.e., `5m`) may be assigned to workloads such as Jenkins that have minuscule CPU usage when idle, and rely on CPU limits to burst during pipeline runs. A potential risk with this configuration is if the node a workload is scheduled on is being heavily utilized, the workload will not be able to burst much higher than the given CPU requests, potentially causing a significant slowdown.
 
 However, this will not cause pod evictions, and CPU throttling (extensively below CPU limits) can be mitigated ensuring nodes across the cluster are evenly balanced and not overutilized.
 
