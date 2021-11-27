@@ -192,6 +192,8 @@ The observations from the testing can be summarized as follows:
 
 Consider monitoring the upper and lower bounds of CPU and memory usage of Jenkins instances over time. When idle, it has been observed that Jenkins uses under `5m` of CPU and about `650Mi` of memory. As per the **General Guidelines** above, "set requests to the *minimum* of what your application needs." It is ideal to reserve resources conservatively (especially for workloads that are often idle), and leverage resource limits and burst when active.
 
+![Jenkins CPU usage](assets/../images/jenkins-cpu-usage.png)
+
 Also consider other workloads you may need to run in the tools namespace when accounting for requests/limits allocation to be within the allotted maximums.
 
 ## Tools Namespaces Resource Quota Recommendations
