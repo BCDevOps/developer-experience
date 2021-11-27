@@ -100,7 +100,7 @@ NAME              CPU(cores)   MEMORY(bytes)
 <redacted>        9m           61Mi
 <redacted>        4m           98Mi
 <redacted>        0m           28Mi
-<redacted>        2            26Mi
+<redacted>        2m           26Mi
 ```
 
 For the above, the column of numbers involving `CPU(cores)` is what you want to add up. the `m` suffix stands for millicores, so for the above, add up the numbers and divide by 1000 to get the actual consumption of CPU cores by the pods in the current project. If the CPU usage has no `m` suffix, then that is just measured in cores, and not millicores. For the above example, the total would then be 2 + (3+3+3+9+4)/1000 = 2.022 CPU cores of actual CPU consumption.
