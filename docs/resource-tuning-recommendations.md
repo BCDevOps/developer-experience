@@ -218,11 +218,19 @@ While teams are encouraged to patch the CPU and memory requests and limits of ex
 
 #### Tools Namespaces Quota Sizing Recommendation
 
+According to Cost Management and OpenShift Monitoring, the median CPU usage (per pod) is below `10m` on average (including idling). Namespace-wide CPU usage was measured at about `50m`-`100m` on average (some exceptions below or above).
 
+This allocation affects the `compute-long-running-quota` `ResourceQuota`. Modifying or creating a new based off of this resource quota to will be required reduce current maximums for the tools namespaces.
+
+Based on these statistics, it is recommended to reduce CPU requests and limits in the `compute-long-running-quota` `ResourceQuota`. To start, CPU requests may be dropped to as low as `500m`, and potentially lower after evaluating with time if this change does not inhibit work. CPU limits should be several multiples of the proposed CPU requests (i.e., `2000m`, `4000m`, `8000m`, or more) depending on realistic CPU usage of the average tools namespace workload when experiencing high load.
+
+However, as this is a substantial difference from current tools namespaces quota sizing, refer to [Tools Namespaces Quota Reduction Process](#tools-namespaces-quota-reduction-process) for considerations to alleviate undesired outcomes.
+
+As of writing, oversized CPU requests are the focus of concern. Memory is an incompressible resource that cannot be throttled as with CPU. If reduction of memory allocation is also considered, a conservative approach should be applied to lessen the risk of pod evictions and `OOM`-based termination.
 
 #### Tools Namespaces Quota Reduction Process
 
-Consider lowering resource quotas incrementally (i.e., reduce resource maximums by 25% of original value every 2 weeks). This is to mitigate issues that may arise for consumers of the tools namespaces, and monitor any increases of pod evictions or `OOM`-based termination.
+Consider lowering resource quotas incrementally (i.e., reduce resource maximums by 25% of original value every 2 weeks). This is to mitigate issues that may arise for consumers of the tools namespaces, and monitor any increases of pod evictions or `OOM`-based termination. This approach can indicate (less detrimentally) when a resource quota is becoming too small.
 
 Reducing a resource quota will not impact running workloads immediately. If the sum of any resource constraints will be above the alloted after modifying the quota, running workloads will **not** be terminated or modified in any way. The resource quota will display over resource requests/limits, as in the example below:
 
