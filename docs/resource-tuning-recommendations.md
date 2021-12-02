@@ -90,8 +90,8 @@ A: You will be required to define a limit.
 **Q: Is there any way I can check for myself the actual CPU consumption of running pods in my project?"**
 A: There is a way that requires you to make use of the `oc` client versus using the web console. Additional math will be required past this point as there is no way of automating this in a cross-platform fashion using just `oc`.
 
-```bash
-oc adm top pod
+```console
+$ oc adm top pod
 NAME              CPU(cores)   MEMORY(bytes)
 <redacted>        3m           285Mi
 <redacted>        3m           299Mi
