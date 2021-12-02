@@ -262,7 +262,7 @@ From the OpenShift web console, in the **Administrator** perspective, proceed to
 
 To describe a specific quota, use the `oc` tool:
 
-```bash
+```console
 $ oc describe resourcequotas compute-long-running-quota # -n <project>
 Name:       compute-long-running-quota
 Namespace:  <guid>-tools
