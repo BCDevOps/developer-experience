@@ -19,7 +19,7 @@ As touched upon in the [Resiliency Guidelines](https://developer.gov.bc.ca/Resil
 - Resource availability for your own applications
 - Resource availability for other tenant applications
 
-While [*Resource Quotas*](https://docs.openshift.com/container-platform/3.11/dev_guide/compute_resources.html#dev-quotas) are quite generous, these quotas must be seen as a tool to allow tenants enough resources to temporarily burst usage for experimentation, rather than an upper limit of consistent use. The platform is not sized to support every tenant fully utilizing their *Resource Quota*.
+While [*Resource Quotas*](https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html) are quite generous, these quotas must be seen as a tool to allow tenants enough resources to temporarily burst usage for experimentation, rather than an upper limit of consistent use. The platform is not sized to support every tenant fully utilizing their *Resource Quota*.
 
 **Resource Requests**  
 Resource requests are guaranteed and reserved for the pod. *Scheduling decisions are made based on the request* to ensure that a node has enough capacity available to meet the requested value.
