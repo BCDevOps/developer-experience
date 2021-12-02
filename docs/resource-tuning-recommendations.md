@@ -114,7 +114,7 @@ oc get quota compute-long-running-quota -o=custom-columns=Requests:.status.used.
 
 Example output of the above, the `m` at the end again means millicores, so dividing the number by 1000 tells us the current project per this example has a total allotted CPU Requests value of 14.5 CPU cores.
 
-```bash
+```console
 Requests
 14500m
 ```
