@@ -198,7 +198,7 @@ Also, consider other workloads you may need to run in the tools namespace when a
 
 ## Tools Namespaces Resource Quota Recommendations
 
-Every product in a cluster is provided a GUID and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<guid>-tools`, where tooling such as Jenkins are deployed.
+Every product in a cluster is provided a licence plate and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<license>-tools`, where tooling such as Jenkins are deployed.
 
 As of writing, there is a discrepancy between compute resources (especially CPU) requested compared to actual usage.
 
