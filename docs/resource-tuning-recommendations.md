@@ -198,7 +198,7 @@ Also, consider other workloads you may need to run in the tools namespace when a
 
 ## Tools Namespaces Resource Quota Recommendations
 
-Every product in a cluster is provided a licence plate and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<license>-tools`, where tooling such as Jenkins are deployed.
+Every product in a cluster is provided a license plate and a namespace for each environment (i.e., dev, test, prod). These products also have a **tools** namespace defined as `<license>-tools`, where tooling such as Jenkins are deployed.
 
 As of writing, there is a discrepancy between compute resources (especially CPU) requested compared to actual usage.
 
@@ -265,7 +265,7 @@ To describe a specific quota, use the `oc` tool:
 ```console
 $ oc describe resourcequotas compute-long-running-quota # -n <project>
 Name:       compute-long-running-quota
-Namespace:  <guid>-tools
+Namespace:  <license>-tools
 Scopes:     NotBestEffort, NotTerminating
  * Matches all pods that have at least one resource requirement set. These pods have a burstable or guaranteed quality of service.
  * Matches all pods that do not have an active deadline. These pods usually include long running pods whose container command is not expected to terminate.
