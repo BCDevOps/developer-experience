@@ -22,7 +22,7 @@ All new project sets in the OpenShift Container Platform (OCP) 4 Platform provis
   60 PVC count , 1Gbs overall storage with 521 MBs for backup storage and 5 snapshot<br/>
 
 
-**If your app is fount not using all resources within the current quota, you will be approached by the Platform Services Team to discuss the downgrade to a smaller quota size.**
+**If your app is found not to be using all resources within the current quota, you will be approached by the Platform Services Team to discuss the downgrade to a smaller quota size.**
 
 If you find that the new default allocations are insufficient, you can request a quota increase as described in [How to request a resource quota increase for a project on the Openshift 4 Platform](https://developer.gov.bc.ca/Need-more-quota-for-OpenShift-project-set). **Note: A Sysdig dashboard that demonstrates the application's need for the increase in a specific resource type (CPU or RAM or Storage) must be provided to the Platform Services Team before any quota increase requests can be approved.**
 
