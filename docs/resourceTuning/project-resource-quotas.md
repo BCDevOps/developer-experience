@@ -14,7 +14,7 @@ tags:
 description: The quota based resource allocation for project sets in Openshift 4 Platform.
 ---
 
-All project sets in the new OpenShift Container Platform (OCP) 4 Platform are provisioned by default with a set of resource quotas that include a certain amout of CPU, RAM and Storage:
+All new project sets in the OpenShift Container Platform (OCP) 4 Platform provisioned after Dec 14, 2021 will have the following default resource quotas that include a certain amout of CPU, RAM and Storage:
 
 **CPU/RAM/Storage resource quotas (per namespace by defauly on create)**:
   CPU: 0.5 cores as request, 1.5 cores as limit <br/>
