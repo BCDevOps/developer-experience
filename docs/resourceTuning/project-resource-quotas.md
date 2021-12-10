@@ -14,15 +14,15 @@ tags:
 description: The quota based resource allocation for project sets in Openshift 4 Platform.
 ---
 
-All project sets in the new OpenShift Container Platform (OCP) 4 Platform are provisioned by default with a set of resource quotas that include a certain amout of CPU, RAM and Storage:
+All new project sets in the OpenShift Container Platform (OCP) 4 Platform provisioned after Dec 14, 2021 will have the following default resource quotas that include a certain amout of CPU, RAM and Storage:
 
-**CPU/RAM/Storage resource quotas (per namespace)**:
-  CPU: 4 cores as request, 8 cores as limit <br/>
-  RAM: 16GBs as request, 32GBs as limit<br/>
-  20 PVC count , 50Gbs overall storage with 25 GBs for backup storage<br/>
+**CPU/RAM/Storage resource quotas (per namespace by defauly on create)**:
+  CPU: 0.5 cores as request, 1.5 cores as limit <br/>
+  RAM: 2GBs as request, 4GBs as limit<br/>
+  60 PVC count , 1Gbs overall storage with 521 MBs for backup storage and 5 snapshot<br/>
 
 
-**If your app is fount not using all resources within the current quota, you will be approached by the Platform Services Team to discuss the downgrade to a smaller quota size.**
+**If your app is found not to be using all resources within the current quota, you will be approached by the Platform Services Team to discuss the downgrade to a smaller quota size.**
 
 If you find that the new default allocations are insufficient, you can request a quota increase as described in [How to request a resource quota increase for a project on the Openshift 4 Platform](https://developer.gov.bc.ca/Need-more-quota-for-OpenShift-project-set). **Note: A Sysdig dashboard that demonstrates the application's need for the increase in a specific resource type (CPU or RAM or Storage) must be provided to the Platform Services Team before any quota increase requests can be approved.**
 
