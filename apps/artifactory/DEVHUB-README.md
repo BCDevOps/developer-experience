@@ -24,10 +24,15 @@ There are three major features bundled with Artifactory:
     - You will use less network bandwidth. Thanks for being such a good cluster citizen and caring for shared resources like bandwidth!
     - You can avoid pull limits, like the one on DockerHub! No more `toomanyrequests: You have reached your pull rate limit.` errors!
     - You can share access to private repositories, like the RedHat repositories, without having to pay for additional accounts!
-1. Private repositories - a private place to push your own artifacts and images, with your own control over access!
-    - coming soon!
-1. Xray artifact scanning - this tool scans all artifacts for security issues, giving you a heads up about concerns and providing an opportunity to deal with issues before they become a problem!
-    - coming soon!
+1. Private repositories - a private place to push your own artifacts and images, with your own control over access! The benefits include:
+    - You'll have a common space to store artifacts and images that may be sensitive!
+    - You can still share artifacts with other teams working on openshift!
+    - You get flexible control over who and how your team can access the artifacts!
+    - You can use the same pull secrets you use to access the caching repos!
+1. Xray artifact scanning - this tool scans all artifacts for security issues, giving you a heads up about concerns and providing an opportunity to deal with issues before they become a problem! The benefits include:
+    - Having your images scanned is easy - all you need to do is have a private repo in Artifactory!
+    - Our amazing resident security expert can easily have access to the scan reports for your artifacts if you need help with them!
+    - You can ensure all of your images - especially your production images - are secure without placing additional load on your devs!
     
 ## How Do I Get Started?
 
@@ -35,7 +40,9 @@ Access to Artifactory is controlled through Artifactory Service Accounts. These 
 
 You won't need to do anything in the Artifactory application itself in order to get an Artifactory Service Account, because we have a helpful little robot that does that for you! Meet [Archeobot](bcgov/platform-services-archeobot) - a custom operator that we use to give our amazing teams the freedom to manage their own Artifactory resources!
 
-For now, you'll want to get started by getting your hands on an Artifactory Service Account, which you can then use to pull images and packages through Artifactory!
+You'll want to get started by getting your hands on an Artifactory Service Account, which you can then use to pull images and packages through Artifactory!
+
+Once you have one of those, you might want to consider getting your team an Artifactory Project, which you can use to get your hands on those private repositories!
 
 ## How Do I Get An Artifactory Service Account?
 
@@ -63,7 +70,7 @@ Absolutely! You can make your own, however you like. The default one in your too
 
 You can make one by running this command:
 
-`oc process -f https://raw.githubusercontent.com/BCDevOps/developer-experience/master/apps/artifactory/artifactory-operator/config/samples/tmpl-artifactory-sa.yaml -p NAME="[ASAname]" -p DESCRIPTOR="[Description of Service Account]" | oc create -f -`
+`oc process -f https://raw.githubusercontent.com/bcgov/platform-services-archeobot/master/archeobot/config/samples/tmpl-artifactoryserviceaccount.yaml -p NAME="[ASAname]" -p DESCRIPTOR="[Description of Service Account]" | oc create -f -`
 
 The 'ASAname' will be the name of the the ArtifactoryServiceAccount object - like 'default' above, for the one that is made for you in your tools namespace. It is _not_ the name of the actual account. We recommend using a name that describes the way the account will be used. 
 
@@ -111,8 +118,71 @@ jq -r '(["ARTIFACTORYKEY","SOURCEURL"] | (., map(length*"-"))), (.[] | [.key, .u
 
 If there is a particular public repository that you would like to see cached through Artifactory, feel free to speak to the Platform Services team about having it added!
 
+## How Do I Get An Artifactory Private Repository (aka How Do I Get An Artifactory Project)?
 
-### Docker
+We use Artifactory Projects to provide teams with access to private repositories - if you want a private repository where you can push your own images or other artifacts, you'll need a project. If you don't want to be able to push your own images or other artifacts, you don't need a project.
+
+If you want a project, the first thing you'll need to do is login to [Artifactory](https://artifacts.developer.gov.bc.ca) using SSO at least once. When a new project is created, Archeobot uses the list of admins in your namespace to grant those people access to the new Project - they can then turn around and grant other people access as required. But Artifactory doesn't know about those accounts if those people have never logged in before! So be sure to do that - and be sure to login with GitHub (and not IDIR) because your Openshift access is bound to your github account. If you'd like to swap to IDIR later, that's fine, but you should use Github to start!
+
+Once you've done that, create an ArtifactoryProject object on your Openshift namespace, like this:
+
+`oc process -f https://raw.githubusercontent.com/bcgov/platform-services-archeobot/master/archeobot/config/samples/tmpl-artifactoryproject.yaml -p NAME="[APname]" | oc create -f -`
+
+Like with the `ASAname` in the previous section, the `APname` isn't going to completely reflect the name of the Project as it will appear in Artifactory. The Project's name in Artifactory will look something like `[NamespacePlate]-[APname]`. So, if you create an ArtifactoryProject object in the `a1b2c3-tools` namespace and give it an `APname` of `test`, then the Project's full name is going to be `a1b2c3-test`.
+
+The project will *also* be given a shortname, called a Project Key. This will be created automatically using the first letter of your `APname` and 3 digits of your namespace name. So in our example Project, named `a1b2c3-test`, the Project Key will be `ta1b`. The Project Key must be unique. 
+
+When Archeobot sees a new ArtifactoryProject in your namespace, the first thing it'll do is send the Platform Team a note that you want a new Project, which we must approve. While you wait for your new ArtifactoryProject to be approved, you can look at it using the command `oc describe artproj [APname]`. You'll see that, under `spec`, there's an entry for your project key, and an `approval_status` field. It should read "pending" (though it might take a few minutes for Archeobot to notice and update the status, so don't fret if it doesn't say 'pending' immediately). This means that we haven't approved or rejected your request for an Artifactory project quite yet!
+
+Once it's approved, you may see the `approval_status` field say "approved". In this situation, Archeobot knows that your ArtifactoryProject has been approved, but it hasn't had a chance to act on it yet and actually make the Project for you in Artifactory. More likely, though, you'll see a status of `nothing-to-approve`. This is the sort of "neutral" status that just tells you that there are no outstanding changes to be made. If you see this, it means that your Project has been created in Artifactory, and you can go [login](https://artifacts.developer.gov.bc.ca)! Yay!
+
+You may notice that... why yes, you *can* patch the `approval_status` field. Does this mean that you can approve your own Project?! No, no it does not. That field is there for informational purposes only, and to let Archeobot know to take a second look at your ArtifactoryProject if it changes. You can change it to `approved` if you want, but that won't do anything and will, rather quickly, result in Archeobot setting it right back to `pending` again.
+
+### My Request For a New Artifactory Project or Quota Increase Was Rejected - What Now?
+
+Chances are, we've already talked to you about your request, so this shouldn't come as a surprise. If it does, please feel free to hit up the Platform Services team to ask some questions if you're not sure why your request was rejected! If you feel your request was rejected in error, let us know - if we talk about it and agree that it should be approved after all, we'll just go ahead and switch the status to `approved` and you should see those changes applied soon.
+
+If the rejection is maintained, then you'll want to acknowledge the rejection - otherwise, any further change requests will be ignored. In order to acknowledge the rejection, you'll want to change your ArtifactoryProject object back to the state it was in before you made the request. If you were requesting a new Project, then all you need to do is delete the ArtifactoryProject object from your namespace! If you were requesting an increased quota, change the quota in the spec of your ArtifactoryProject back to match whatever quota your project currently has (hint: if you're not sure what this is, you can check in the Overview page for your Project in the Artifactory web GUI). 
+
+Once you've made the change, Archeobot will reconcile once more, and then you'll see that your `approval_status` will have changed back to `nothing-to-approve` (or you will have deleted the ArtifactoryProject object, in which case you won't see anything at all!) - this means your rejection has been acknowledged and you can make further change requests as you require.
+
+### What Do I Do Once I Have An Artifactory Project?
+
+You'll be able to add repositories, add users to your project (who will then have access to your repositories), adjust the roles that your project uses to determine who has the authorization to perform which tasks in your project, and check the results of any Xray scans on your artifacts!
+
+But first, you'll need to enter the Project in the Artifactory UI so you can see all this neat stuff! Once you've logged in, you'll see a drop-down box at the top of the screen that probably currently says "All". Click on this and select the name of your new Project to enter that project space! If you don't see it, that's because you're either not an admin in the relevant Openshift namespace (in which case you should go ask one of the admins to add you to the Artifactory Project), or you didn't login to Artifactory before creating the project (in which case you need to hit up the Platform Services team to fix it for you). 
+
+A couple of little tabs should now have appeared over the menu on the left - one with some boxes, and one with some gears. Click on the gears to enter the administrative tab of your Artifactory Project!
+
+### How Do I Make A Repository?
+
+You can add a new repository to your project by clicking on the gear at the top of the menu on the left, then clicking the "Repositories" button and then clicking "Add Repositories" in the top corner. Most of the time, you'll be using a Local repository - though you may have occasion to use a virtual one. We'll get into the differences between those later. If you just want to push images to Artifactory, local is the one you want.
+
+You'll need to pick a package type first. Once you've done that, you'll need to name your new repository. Notice that there's a little greyed-out box with your project key in front of the box where you can enter a name? All repos contained in projects will have the project key as a prefix. You don't need to add that yourself. As for the rest of the name, you should follow this naming convention: `[desc]-[pkgtype]-[location]`. So let's say you want to make just a general use docker repository for your team to push images to Artifactory. You might call your repo `gen-docker-local`. If we continue with the example from the Project creation section with a key of `ta1b`, then the whole name is going to be `ta1b-gen-docker-local`. In order to access this repo later, you'll use the URL `https://artifacts.developer.gov.bc.ca/ta1b-gen-docker-local`.
+
+You might notice that our caching repos follow the same naming scheme - our repo for caching images from RedHat's docker repository, for example, is `redhat-docker-remote`.
+
+You'll also need to pick your environments. These tags only affect access. You can grant a user in your project the ability to pull from all repos with the 'dev' tag, but not the 'prod' tag. Or you can do it vice versa. Make sure that you grant the appropriate access to the users who will need the artifacts in this repo!
+
+You'll also definitely want to enable Xray Indexing at the bottom. Everything else can be left as default (though if you are familiar with these options and wish to change them, feel free to do so).
+
+Click "Save and Finish." Congrats, you have a new repository that you can use! If you haven't done so already, be sure to grant the necessary access to your Artifactory Service Accounts!
+
+### How Do I Add Users or Service Accounts to My Project?
+
+To add a new account to your project, click on the little gear at the top of the menu on the left, then click on "Identity and Access" --> Members, and then click on "Add Member" in the top right corner.
+
+Switch to the "Users" tab at the top of the popup, and then search for a username. You can add the IDIR or GitHub user account of anyone who has already logged into Artifactory's GUI at least once - so if you have a team member who hasn't done that, make sure they do! You can also add any Artifactory Service Account. You can select multiple users to add them all at once. Then, you can specify the role you want to grant them. Typically, an Artifactory Service Account should be given the Contributor role, while a user should be given either the Developer role (to manage artifacts) or the Admin role (to manage access to the Project). You can also add additional roles to the Project, if you would prefer more finely-tuned control over who gets access to what.
+
+### How Do I Find Out More About How To Use My Artifactory Project?
+
+Check out JFrog's extensive [documentation on Artifactory Projects](https://www.jfrog.com/confluence/display/JFROG/Projects)! There are plenty of features not covered here - including sharing repos between projects, more information on Xray reports and explanations of virtual repositories!
+
+## How Do I Push and Pull Artifacts?
+
+So, you have an Artifactory Service Account, and maybe even a Project and some private repos. And now you find yourself wondering... how exactly do I actually use these? How do I make my BuildConfigs and DeploymentConfigs look to Artifactory for my images and other artifacts? Let's find out!
+
+### Docker Images
 
 Note that these steps apply to all docker-type repositories, not just DockerHub!
 
@@ -285,8 +355,3 @@ We expect these will be very common options for repository types, but if your te
 https://www.jfrog.com/confluence/display/JFROG/Package+Management
 
 If your team uses a specific package type not listed here, we encourage you to create a PR for this document to provide some of your learnings to other teams!
-
-
-## Using Local Repositories
-
-Private local repos... coming soon!
