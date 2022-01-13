@@ -1,0 +1,31 @@
+{
+  "name": "github-awesomer",
+  "version": "1.0.0",
+  "description": "GitHub Organization Management Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inspect": "node index.js",
+    "lint": "eslint --fix *.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCDevOps/openshift-tools.git"
+  },
+  "author": "ShellyXueHan",
+  "bugs": {
+    "url": "https://github.com/BCDevOps/openshift-tools/issues"
+  },
+  "homepage": "https://github.com/BCDevOps/openshift-tools#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.0.9",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
+}
