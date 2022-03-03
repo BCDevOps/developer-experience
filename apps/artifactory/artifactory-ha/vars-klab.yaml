@@ -1,6 +1,6 @@
 # Do you want to build a fresh image of Postgres for your patroni installation?
 # This needs to be set to true the first time you run an installation on a new namespace.
-build: true
+build: false
 
 # Do you need to build the NetworkSecurityPolicy or no?
 # This should pretty much always be true - only set to false if you're installing on a cluster where Aporeto hasn't been installed yet.
