@@ -21,9 +21,9 @@ image_registry: "image-registry.openshift-image-registry.svc:5000"
 ####################################################
 
 artifactory_instance_name: "artifactory-ha"
-artifactory_version: 7.19.4-1
-artifactory_version_full: 107.19.4
-artifactory_version_short: 7.19.4
+artifactory_version: 7.33.12-1
+artifactory_version_full: 107.33.12
+artifactory_version_short: 7.33.12
 artifactory_password: "{{ lookup('password', './processed/artifactory-admin-password.txt length=30 chars=ascii_letters,digits') }}"
 
 # Pick the right URL for the cluster.
@@ -56,8 +56,8 @@ artifactory_license_file: "artifactory.lic"
 
 # These are the requests/limits for the artifactory installation.
 # The primary and all members will each get the same requests/limits.
-cpu_limit: "2"
-memory_limit: "5Gi"
+cpu_limit: "4"
+memory_limit: "8Gi"
 cpu_request: "0.5"
 memory_request: "3Gi"
 storage_size: "5Gi"
