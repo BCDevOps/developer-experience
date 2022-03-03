@@ -56,8 +56,8 @@ artifactory_license_file: "artifactory.lic"
 
 # These are the requests/limits for the artifactory installation.
 # The primary and all members will each get the same requests/limits.
-cpu_limit: "2"
-memory_limit: "5Gi"
+cpu_limit: "4"
+memory_limit: "8Gi"
 cpu_request: "0.5"
 memory_request: "3Gi"
 storage_size: "5Gi"
