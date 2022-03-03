@@ -81,6 +81,8 @@ db_replica_count: 2
 # Postgres major version to use.
 db_version: 11
 
+# Patroni version to use.
+patroni_version: "2.0.1"
 
 
 ####################################################

@@ -30,7 +30,8 @@
            -p GIT_REF=master \
            -p SUFFIX=-pg{{ db_version }} \
            -p OUT_VERSION=v{{ db_version }}-latest \
-           -p PG_VERSION={{ db_version }}
+           -p PG_VERSION={{ db_version }} \
+           -p PATRONI_VERSION={{ patroni_version }}
       register: patroni_build_processed
       when: build
     - copy: content="{{ patroni_build_processed.stdout }}" dest=./processed/patroni-build.json
