@@ -30,9 +30,7 @@ Begin a monitoring journey with Sysdig, where you can access dashboards showing 
 
 Resource quota increase can be requested by a Product Owner or a Tech Lead of the project on the project edit page in [Openshift 4 Project Registry](https://registry.developer.gov.bc.ca/public-landing) and will **require the approval** by the Platform Service Team before it is processed.  
 
-Teams requiring more resources in any of the 3 resource categories such as CPU/RAM/Storage in any of the 4 namespaces (dev, test, tool or prod), will have to submit a standard quota increase request through the Project Registry.  The upgrade path will only be available in this order: from small -> medium -> large. You cannot skip medium and upgrade from small to large.
-
-Once the quota increase request is approved (see below what information is required before the request can be approved), the namespaces specified will be upgraded to the next quota size. Refer to [OCP 4 resource quota definition](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)) for more details on each level of quota set.
+Teams requiring more resources in any of the 3 resource categories such as CPU/RAM/Storage in any of the 4 namespaces (dev, test, tool or prod), will have to submit a standard quota increase request through the Project Registry. Refer to [OCP 4 resource quota definition](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)) for more details on each level of quota set. Once the quota increase request is approved (see below what information is required before the request can be approved), the namespaces specified will be upgraded to the next quota size.
 
 ## What does the Platform Services Team need to know?
 
