@@ -91,7 +91,7 @@ Here are some things to include:
 ### Step 4:
 Send the above to Platform Services team at PlatformServicesTeam@gov.bc.ca. Someone from the team will follow up with you soon!
 
-When requesting a quota increase from **medium** to **large**, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
+When requesting a quota increase for more than one increment, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
 
 If you have a need to store a large amount of **unstructured data**, you may want to consider to leverage the [S3 Object Storage Service](https://github.com/BCDevOps/OpenShift4-Migration/issues/59) provided by Enterprise Hosting.
 
