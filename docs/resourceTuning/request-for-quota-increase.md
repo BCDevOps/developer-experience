@@ -30,11 +30,7 @@ Begin a monitoring journey with Sysdig, where you can access dashboards showing 
 
 Resource quota increase can be requested by a Product Owner or a Tech Lead of the project on the project edit page in [Openshift 4 Project Registry](https://registry.developer.gov.bc.ca/public-landing) and will **require the approval** by the Platform Service Team before it is processed.  
 
-**We currently do not support quota increases for a specific resource (i.e. just RAM, or just CPU, or just Storage) or for a specific namespace (i.e. prod only).**  Teams requiring more resources in any of the 3 resource categories such as CPU/RAM/Storage in any of the 4 namespaces (dev, test, tool or prod), will have to submit a standard quota increase request through the Project Registry.  The upgrade path will only be available in this order: from small -> medium -> large. You cannot skip medium and upgrade from small to large.
-
-Once the quota increase request is approved (see below what information is required before the request can be approved), all 4 namespaces in a project set will be upgraded to the next quota size which includes a double amount of resources in all 3 categories.
-
-*Example: If your prod namespace needs more storage and you request a standard quota increase from small to medium, the resource allocations for all 4 of your namespaces will be upgraded to the medium size quota as per the [OCP 4 resource quota definition](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)).*
+Teams requiring more resources in any of the 3 resource categories such as CPU/RAM/Storage in any of the 4 namespaces (dev, test, tool or prod), will have to submit a standard quota increase request through the Project Registry. Refer to [OCP 4 resource quota definition](https://developer.gov.bc.ca/Project-Resource-Quotas-in-BC-Gov's-PaaS-(Openshift-4-Platform)) for more details on each level of quota set. Once the quota increase request is approved (see below what information is required before the request can be approved), the namespaces specified will be upgraded to the next quota size.
 
 ## What does the Platform Services Team need to know?
 
@@ -82,7 +78,7 @@ If you are requesting for an increase of a storage quota, list all the PVCs that
 *Note: provide monitoring data or screenshots if needed*
 
 
-**Step 3:**
+### Step 3:
 
 Conclude what is the current level of resource consumption and compare with the quota. Also explain in details on how much more quota is required, and for what usage.
 
@@ -92,7 +88,7 @@ Here are some things to include:
 - expected quota increase amount and detailed allocation plan
 
 
-**Step 4:**
+### Step 4:
 Send the above to Platform Services team at PlatformServicesTeam@gov.bc.ca. Someone from the team will follow up with you soon!
 
 When requesting a quota increase from **medium** to **large**, book a 30 min meeting with the Platform Services Team (send the invite to Olena Mitovska, our Platform PO and she will pull in team's operations experts as needed). The Platform Services Team will be looking for an overview of the application design and architecture that clearly demonstrate why more resources are required for its operations.
