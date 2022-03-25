@@ -34,7 +34,6 @@ database:
       key: db-url
 
 
-
 artifactory:
   name: artifactory-ha
   image:

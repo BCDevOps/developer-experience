@@ -169,7 +169,7 @@
 
     - name: Install/upgrade artifactory with helm.
       command: >
-        helm upgrade --install artifactory-ha jfrog/artifactory-ha -f helm-vars-klab.yaml
+        helm upgrade --install artifactory-ha jfrog/artifactory-ha -f helm-vars-lab.yaml
 
     - name: Wait for artifactory primary instance to be fully deployed.
       k8s_info:
