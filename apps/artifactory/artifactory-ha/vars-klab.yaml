@@ -135,7 +135,9 @@ repo_list:
   - { repo_key: 'pypi-remote', repo_desc: 'Remote PyPi Repository', remote_url: 'https://files.pythonhosted.org/', pkg_type: 'pypi' }
   - { repo_key: 'nuget-remote', repo_desc: 'Remote NuGet Repository', remote_url: 'https://nuget.org/', pkg_type: 'nuget' }
   - { repo_key: 'docker-remote', repo_desc: 'Remote DockerHub Repository', remote_url: 'https://registry-1.docker.io/', pkg_type: 'docker' }
-  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: ' https://registry.redhat.io/', pkg_type: 'docker'}
+  - { repo_key: 'redhat-docker-remote', repo_desc: 'Remote RedHat Repository', remote_url: 'https://registry.redhat.io/', pkg_type: 'docker'}
+  - { repo_key: 'google-docker-remote', repo_desc: 'Remote Google Repository', remote_url: 'https://gcr.io/', pkg_type: 'docker'}
+  - { repo_key: 'amazon-docker-remote', repo_desc: 'Remote Amazon Repository', remote_url: 'https://public.ecr.aws/', pkg_type: 'docker'}
 
 
 ####################################################
