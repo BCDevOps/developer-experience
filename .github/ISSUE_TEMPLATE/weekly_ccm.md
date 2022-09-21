@@ -15,6 +15,6 @@ This ticket will track efforts spent toward creating the next CCM release and pr
 - [ ] Create suitable Standard Change RFCs and assign to team members as appropriate
 - [ ] Create and Receive approval for PR incrementing CCM version for PROD clusters
 - [ ] Ensure version increment PR is merged before executing any RFCs
-- [ ] Execute RFC for SILVER cluster
+- [ ] Execute RFC for SILVER & EMERALD cluster
 - [ ] Execute RFC for GOLD cluster
 - [ ] Execute RFC for GOLDDR cluster
