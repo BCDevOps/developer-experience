@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-If your issue relates to language/grammar/spelling, please do not open a new ticket. Instead, edit ticket #3286 with your observation. This template is for any bugs that may occur during testing, causing an unexpected result. **Add this ticket to the UI Design Changes for Product Registry #3217 epic for tracking.**
+If your issue relates to language/grammar/spelling, please do not open a new ticket. Instead, edit ticket #3286 with your observation. This template is functional problems that may occur during testing, causing an unexpected result. **Add this ticket to the UI Design Changes for Product Registry #3217 epic for tracking.**
 
 **Describe the bug**
 A clear and concise description of what the bug is.
