@@ -2,7 +2,8 @@
 name: Ops and Shared Services
 about: Describe this issue template's purpose here.
 title: ''
-labels: *team/ ops and shared services*
+labels: 
+- "*team/ ops and shared services*"
 assignees: ''
 
 ---
